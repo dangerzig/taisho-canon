@@ -1,0 +1,26 @@
+# CBETA XML corpus (2.4 GB, not redistributable)
+xml/
+
+# Extracted text cache (211 MB, regenerable via pipeline)
+data/texts/
+
+# Per-pair alignment JSON files (382 MB, regenerable via pipeline)
+results/alignments/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Environment
+.env
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
