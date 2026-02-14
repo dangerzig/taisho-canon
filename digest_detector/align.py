@@ -54,6 +54,9 @@ def _find_seeds(digest: str, source: str, k: int = None) -> list[tuple[int, int,
             d_pos += 1
             continue
 
+        # Keep only the longest match at this digest position. This greedy
+        # choice trades a small risk of suboptimal chaining for much fewer
+        # seeds passed to the DP, which matters for large texts.
         best_match = None
         for s_pos in source_table[kgram]:
             # Extend the match greedily
@@ -153,6 +156,10 @@ def _extend_seeds(
     """Extend exact seeds with fuzzy matching at boundaries.
 
     Returns list of (d_start, d_end, s_start, s_end, match_type) tuples.
+
+    Note: fuzzy extensions may include gap characters (single-char insertions
+    or deletions), so the digest and source spans of a fuzzy segment may differ
+    in length and the segment text includes the gap characters.
     """
     extended = []
     for d_start, s_start, length in seeds:
@@ -195,8 +202,9 @@ def _chain_seeds(
     # Sort by digest end position
     sorted_seeds = sorted(seeds, key=lambda s: s[1])
 
-    # Remove duplicate/contained seeds: if two seeds cover the same digest
-    # range, keep the longer one
+    # Remove obviously duplicate/contained seeds by checking adjacent pairs.
+    # This is a fast pre-filter only — the DP below handles any remaining
+    # overlaps correctly via weighted interval scheduling.
     filtered = []
     for seed in sorted_seeds:
         d_start, d_end = seed[0], seed[1]
@@ -334,13 +342,20 @@ def align_pair(
     novel_fraction = 1.0 - coverage
 
     # Source span: fraction of source text that contributes
+    # Uses interval merging rather than per-position sets for efficiency
     matched_segments = [s for s in segments if s.match_type != "novel"]
     if matched_segments and s_len > 0:
-        source_positions = set()
-        for seg in matched_segments:
-            for p in range(seg.source_start, seg.source_end):
-                source_positions.add(p)
-        source_span = len(source_positions) / s_len
+        intervals = sorted((seg.source_start, seg.source_end) for seg in matched_segments)
+        merged_len = 0
+        cur_start, cur_end = intervals[0]
+        for s, e in intervals[1:]:
+            if s <= cur_end:
+                cur_end = max(cur_end, e)
+            else:
+                merged_len += cur_end - cur_start
+                cur_start, cur_end = s, e
+        merged_len += cur_end - cur_start
+        source_span = merged_len / s_len
     else:
         source_span = 0.0
 

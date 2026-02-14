@@ -5,6 +5,16 @@ Unique texts involved: **1412**
 Texts with English translations: **567** / 1412  
 Pinyin romanization: auto-generated for all texts via pypinyin
 
+### Breakdown by Classification
+
+| Classification | Count | Description |
+|----------------|------:|-------------|
+| Retranslations | 288 | Two texts of similar length sharing significant content (different translations of the same source) |
+| Full Digests | 181 | Shorter text draws >70% of its content from the longer text |
+| Partial Digests | 484 | Shorter text draws 30-70% of its content from the longer text |
+| Commentaries | 621 | Shorter text quotes portions of the longer text with added material |
+| Shared Tradition | 1238 | Texts sharing content through common tradition rather than direct derivation |
+
 Format: `Text_ID Chinese_Title (Pinyin / English Translation)`
 
 ---

@@ -93,7 +93,7 @@ def run_pipeline(
         (c.digest_id, c.source_id) for c in candidates if c.from_docnumber
     }
     scores = score_all(alignments, metadata_map, docnum_pair_set, text_map=text_map)
-    multi_source = detect_multi_source_digests(scores, alignments)
+    multi_source = detect_multi_source_digests(scores, alignments, metadata_map)
 
     logger.info("Stage 4 complete: %d scored relationships in %.1f seconds",
                 len(scores), time.time() - t0)
@@ -134,7 +134,7 @@ def run_pipeline(
 
 def main():
     """Entry point for running the pipeline from command line."""
-    import argparse
+    import argparse  # lazy: only needed when invoked as CLI
 
     parser = argparse.ArgumentParser(
         description='Taisho Canon Digest Detection Pipeline'

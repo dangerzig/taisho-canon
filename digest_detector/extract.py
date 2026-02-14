@@ -58,13 +58,6 @@ INCLUDE_TAGS = frozenset([
     f'{TEI}app',     # we walk into app to find lem
 ])
 
-# Punctuation and non-CJK characters to strip
-STRIP_PUNCT = re.compile(
-    r'[，。；：「」（）！？、．…　\u3000-\u303F\uFF00-\uFFEF'
-    r'\s\d\u0000-\u007F\u0080-\u024F\u2000-\u206F\u2E00-\u2E7F'
-    r'\u3000\u3001-\u303F]'
-)
-
 # CJK character ranges
 CJK_RE = re.compile(
     r'[\u4E00-\u9FFF'       # CJK Unified Ideographs
@@ -86,10 +79,8 @@ def build_char_map(xml_files: list[Path]) -> dict[str, str]:
     4. Fallback: skip (log warning)
     """
     char_map = {}
-    seen_files = set()
 
     for xml_path in xml_files:
-        # charDecl is per-file but IDs are global; avoid re-parsing
         try:
             tree = etree.parse(str(xml_path))
         except etree.XMLSyntaxError:
@@ -177,37 +168,35 @@ def _extract_text_recursive(elem, char_map: dict[str, str], div_stack: list[str]
 
     # Track div type
     current_div = div_stack[-1] if div_stack else 'body'
-    if tag == f'{CB}div':
+    is_div = tag == f'{CB}div'
+    if is_div:
         div_type = elem.get('type', 'unknown')
         div_stack.append(div_type)
         current_div = div_type
 
-    # Handle <g ref="#CBnnnnn"/> (special character reference)
-    if tag == f'{TEI}g':
-        ref = elem.get('ref', '')
-        if ref.startswith('#'):
-            char_id = ref[1:]
-            resolved = char_map.get(char_id, '')
-            if resolved:
-                results.append((resolved, current_div))
+    try:
+        # Handle <g ref="#CBnnnnn"/> (special character reference)
+        if tag == f'{TEI}g':
+            ref = elem.get('ref', '')
+            if ref.startswith('#'):
+                char_id = ref[1:]
+                resolved = char_map.get(char_id, '')
+                if resolved:
+                    results.append((resolved, current_div))
 
-    # Include text content from this element
-    if elem.text:
-        results.append((elem.text, current_div))
+        # Include text content from this element
+        if elem.text:
+            results.append((elem.text, current_div))
 
-    # Recurse into children
-    for child in elem:
-        results.extend(_extract_text_recursive(child, char_map, div_stack))
-        # Include tail text (text after child element, still part of parent)
-        if child.tag not in SKIP_TAGS and child.tail:
-            results.append((child.tail, current_div))
-        elif child.tag in SKIP_TAGS and child.tail:
-            # Tail of skipped elements still belongs to parent
-            results.append((child.tail, current_div))
-
-    # Pop div stack
-    if tag == f'{CB}div':
-        div_stack.pop()
+        # Recurse into children
+        for child in elem:
+            results.extend(_extract_text_recursive(child, char_map, div_stack))
+            # Tail text always belongs to the parent, even for skipped elements
+            if child.tail:
+                results.append((child.tail, current_div))
+    finally:
+        if is_div:
+            div_stack.pop()
 
     return results
 

@@ -32,7 +32,7 @@ class ExtractedText:
     text_id: str
     full_text: str  # all CJK chars concatenated
     segments: list[DivSegment] = field(default_factory=list)
-    metadata: TextMetadata = None
+    metadata: TextMetadata | None = None
 
     @property
     def jing_text(self) -> str:

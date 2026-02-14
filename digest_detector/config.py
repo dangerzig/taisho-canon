@@ -34,7 +34,7 @@ COMMENTARY_AVG_SEG_LEN = 10  # Below this avg segment length → commentary
 SHARED_TRADITION_THRESHOLD = 0.10  # Below partial, above this → shared tradition
 RETRANSLATION_SIZE_RATIO = 3.0  # Texts within this ratio may be retranslations
 
-# Confidence score weights
+# Confidence score weights (must sum to 1.0)
 WEIGHT_CONTAINMENT = 0.35
 WEIGHT_LONGEST_SEGMENT = 0.20
 WEIGHT_NUM_REGIONS = 0.10

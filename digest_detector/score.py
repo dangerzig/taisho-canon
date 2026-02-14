@@ -198,6 +198,7 @@ def score_all(
 def detect_multi_source_digests(
     scores: list[DigestScore],
     alignments: list[AlignmentResult],
+    metadata_map: dict[str, TextMetadata],
 ) -> list[MultiSourceDigest]:
     """Detect texts that are digests of multiple sources.
 
@@ -223,24 +224,33 @@ def detect_multi_source_digests(
         # Best single source
         best_single = max(digest_scores, key=lambda s: s.coverage)
 
-        # Estimate combined coverage (union of matched positions)
-        covered_positions = set()
+        # Estimate combined coverage (union of matched intervals)
+        intervals = []
         for score in digest_scores:
             key = (score.digest_id, score.source_id)
             alignment = alignment_map.get(key)
             if alignment:
                 for seg in alignment.segments:
                     if seg.match_type != "novel":
-                        for p in range(seg.digest_start, seg.digest_end):
-                            covered_positions.add(p)
+                        intervals.append((seg.digest_start, seg.digest_end))
 
-        # Get digest length from best score
-        d_meta_len = max(s.coverage for s in digest_scores)
-        # Actually compute from positions
-        if covered_positions:
-            # Use the max position + 1 as approximate digest length
-            d_len_approx = max(covered_positions) + 1
-            combined_coverage = len(covered_positions) / d_len_approx
+        # Use actual digest length from metadata
+        d_meta = metadata_map.get(digest_id)
+        d_len = d_meta.char_count if d_meta else 0
+
+        if intervals and d_len > 0:
+            # Merge overlapping intervals to compute union coverage
+            intervals.sort()
+            merged_len = 0
+            cur_start, cur_end = intervals[0]
+            for s, e in intervals[1:]:
+                if s <= cur_end:
+                    cur_end = max(cur_end, e)
+                else:
+                    merged_len += cur_end - cur_start
+                    cur_start, cur_end = s, e
+            merged_len += cur_end - cur_start
+            combined_coverage = merged_len / d_len
         else:
             combined_coverage = 0.0
 

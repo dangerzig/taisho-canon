@@ -762,6 +762,22 @@ def main():
     lines.append(f"Texts with English translations: **{has_english}** / {len(all_ids)}  ")
     lines.append("Pinyin romanization: auto-generated for all texts via pypinyin")
     lines.append("")
+    lines.append("### Breakdown by Classification")
+    lines.append("")
+    lines.append("| Classification | Count | Description |")
+    lines.append("|----------------|------:|-------------|")
+    descs = {
+        "full_digest": "Shorter text draws >70% of its content from the longer text",
+        "partial_digest": "Shorter text draws 30-70% of its content from the longer text",
+        "retranslation": "Two texts of similar length sharing significant content (different translations of the same source)",
+        "commentary": "Shorter text quotes portions of the longer text with added material",
+        "shared_tradition": "Texts sharing content through common tradition rather than direct derivation",
+    }
+    for cls_key, cls_label in classifications:
+        count = len(grouped[cls_key])
+        desc = descs.get(cls_key, "")
+        lines.append(f"| {cls_label} | {count} | {desc} |")
+    lines.append("")
     lines.append("Format: `Text_ID Chinese_Title (Pinyin / English Translation)`")
     lines.append("")
     lines.append("---")

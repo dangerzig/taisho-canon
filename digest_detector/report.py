@@ -281,9 +281,8 @@ def _generate_summary(
     lines.append("|------|--------|--------|----------------|------------|----------|")
 
     for i, s in enumerate(scores[:50], 1):
-        d_title = metadata_map.get(s.digest_id, TextMetadata(
-            text_id='', title='', author='', extent_juan=0,
-            char_count=0, file_count=0)).title
+        d_meta = metadata_map.get(s.digest_id)
+        d_title = d_meta.title if d_meta else ''
         lines.append(
             f"| {i} | {s.digest_id} ({d_title}) | {s.source_id} | "
             f"{s.classification} | {s.confidence:.3f} | {s.coverage:.1%} |"
