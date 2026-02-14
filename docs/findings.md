@@ -132,6 +132,60 @@ The pipeline also correctly detected the broader Heart Sutra textual network:
 - T08n0250 (Kumarajiva Heart Sutra): detected as multi-source with 95.6% combined coverage from T223, the Dazhidu lun (T25n1509), and several commentaries
 - Multiple retranslation relationships among the various Heart Sutra translations (T250, T251, T252, T253, T254)
 
+### Novel Segment Analysis: Searching for Additional Sources
+
+A natural follow-up question arises from the alignment data: the 27% of T250 and 55% of T251 that do *not* match T223 -- could this "novel" material come from some other text in the Taisho? If so, the Heart Sutras might be multi-source digests rather than single-source digests with original framing material.
+
+To investigate, we extracted all novel segments from both alignments and searched for each across the full corpus of extracted texts (all ~2,920 texts in the Taisho).
+
+#### T250 (Kumarajiva): Novel material is unique
+
+The novel segments in T250 total approximately 80 characters and consist of:
+
+| Novel Passage | Chars | Found elsewhere? |
+|---------------|------:|-----------------|
+| 觀世音菩 (opening name fragment) | 4 | **No** -- unique to T250 |
+| 照見五陰空度一切苦厄 | 10 | **No** -- unique; the 五陰 phrasing (vs. 五蘊) appears nowhere else |
+| 心無罣礙無罣礙故無有恐怖離一切顛倒夢想苦惱究竟涅槃三世諸佛 | 29 | **No** -- the specific phrasing with 離一切 and 苦惱 is unique |
+| 能除一切苦真實不虛 | 9 | Yes -- 13 other texts, all later Heart Sutra translations and commentaries |
+| 竭帝竭帝波羅竭帝波羅僧竭帝菩提僧莎呵 (dharani) | 19 | **No** -- this transliteration is unique to T250 |
+| Small connectives (以無, 依, 故, 知) | ~5 | -- |
+
+The only passage found elsewhere is the formulaic 能除一切苦真實不虛, which appears in later Heart Sutra translations (T252, T253, T254), commentaries (T33n1710--1714), and anthologies (T48n2009, T51n2075) -- all texts that derive this phrase *from* the Heart Sutra tradition, not vice versa. The opening scene, the framing passages, the dharani transliteration, and the distinctive 五陰 vocabulary are all without parallel in any other Taisho text.
+
+#### T251 (Xuanzang): Novel material matches only derivative texts
+
+T251's novel segments are more extensive (144 characters, 55% of jing text) because cross-translator matching captures less of the shared Prajnaparamita content. Searching these passages across the corpus:
+
+| Novel Passage | Chars | Found in |
+|---------------|------:|----------|
+| 觀自在菩薩行 (opening) | 6 | Commentaries on T251 only (T33n1702, T33n1714, T85n2747) |
+| 照見五蘊皆空度一切苦厄... | 20 | Same commentaries + T39n1791, T47n1970 |
+| 空即是色受想行識亦復如是...不增不減 | 33 | Later Heart Sutra translations (T252, T253), commentaries, T07n0220 (partial) |
+| 菩提薩埵依般若波羅蜜多 | 11 | Later translations (T252--T254), commentaries (T33n1710--14, T85n2746--47) |
+| 心無罣礙...遠離顛倒夢想究竟涅槃三世諸佛依 | 28 | Later translations (T252, T253), commentaries |
+| 是大神咒是大明咒是無上咒是無等等咒能除一切苦真實不虛 | 26 | **No** -- the 是大神咒 phrasing is unique to T251 |
+| 揭帝揭帝般羅揭帝般羅僧揭帝菩提莎婆訶 (dharani) | 19 | **No** -- this transliteration is unique to T251 |
+
+All matches fall into three categories: (1) later Heart Sutra translations from the Tang dynasty (T252 by Dharmacandra, T253 by Prajna, T254 by Prajnacakra), (2) Heart Sutra commentaries (T33n1710 by Kuiji, T33n1711 by Yuance, T33n1712 by Fazang, T33n1714 by Zongxie and Rujing), and (3) Dunhuang Heart Sutra manuscripts (T85n2746, T85n2747). None of these is a plausible source for T251; all are derivative.
+
+We specifically investigated **T07n0220** (Xuanzang's own 600-fascicle Mahaprajnaparamita translation, 4.76 million characters) as a potential second source. While it contains some shared Prajnaparamita vocabulary (色不異空, 心無罣礙), it **lacks all the distinctive Heart Sutra passages**: no 照見五蘊皆空, no 遠離顛倒夢想, no 揭帝揭帝 dharani, no 是大神咒. T07n0220 is not a source for T251's novel material.
+
+We also checked **T25n1509** (Kumarajiva's Dazhidu lun, 2.85 million characters) as a potential source for T250's novel passages. It contains only generic Buddhist vocabulary (觀世音菩薩, 心無罣礙) but none of the distinctive T250 phrasing.
+
+#### Implications for the Heart Sutra origins debate
+
+Neither T250 nor T251 is a multi-source digest. The novel material in both texts is **not traceable to any other extant text** in the Taisho. Structurally, the novel passages serve a consistent function: they provide the **narrative wrapper** that transforms an excerpt from Prajnaparamita philosophical discourse into a self-contained sutra:
+
+1. **Opening scene** -- Avalokitesvara practicing Prajnaparamita (no 如是我聞 formula, no Buddha as speaker -- a highly unusual feature)
+2. **Connective tissue** -- 心無罣礙, 遠離/離一切顛倒夢想, etc., linking the excerpted doctrinal passages
+3. **Dharani and mantra description** -- entirely novel, with unique transliterations in each version
+4. **Power attribution** -- 能除一切苦真實不虛, identifying the teaching's soteriological function
+
+The matched material is the **doctrinal core** (negation of skandhas, sense-bases, dependent origination, the four noble truths, wisdom, and attainment) drawn from the Prajnaparamita literature. The novel material is precisely the apparatus that an editor/compiler would need to add when constructing a standalone sutra from extracted philosophical material.
+
+This structural pattern -- doctrinal core excerpted verbatim, narrative apparatus composed fresh -- is consistent with Nattier's Chinese-composition hypothesis. It is also compatible with derivation from a Sanskrit source (now lost or unrepresented in the Taisho) that itself shared its doctrinal core with the Prajnaparamita literature. What our analysis can establish is that no *Chinese* text other than T223 served as a source, and that the novel material was not borrowed from any identifiable text in the canon.
+
 ---
 
 ## 5. Notable Discoveries
@@ -438,7 +492,7 @@ The complete pipeline source code is organized in the following modules:
 - `digest_detector/config.py` -- All tunable parameters
 - `digest_detector/models.py` -- Data models
 
-Test suite: 51 tests covering all stages plus integration tests on T250/T251 -> T223.
+Test suite: 97 tests covering all stages plus integration tests on T250/T251 -> T223.
 
 ---
 
