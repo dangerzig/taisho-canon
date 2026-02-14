@@ -4,7 +4,6 @@ import pytest
 
 from digest_detector.fingerprint import (
     generate_ngrams,
-    generate_ngram_hashes,
     compute_document_frequencies,
     identify_stopgrams,
     build_inverted_index,

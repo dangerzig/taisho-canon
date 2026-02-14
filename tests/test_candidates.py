@@ -48,7 +48,8 @@ class TestParseDocnumberToTextIds:
             'T08n0250': _make_metadata('T08n0250', 300),
         }
         result = _parse_docnumber_to_text_ids(meta_map)
-        assert 'T08n0250' in result.get('T08:0250', set())
+        # Leading zeros stripped: "0250" → "250"
+        assert 'T08n0250' in result.get('T08:250', set())
 
     def test_cross_reference(self):
         meta_map = {
@@ -57,9 +58,9 @@ class TestParseDocnumberToTextIds:
             'T08n0251': _make_metadata('T08n0251', 1000),
         }
         result = _parse_docnumber_to_text_ids(meta_map)
-        # T08n0250 references docnumber 251, and T08n0251 is docnumber 251
+        # Both T08n0250 (via ref) and T08n0251 (via self) share key "T08:251"
         assert 'T08n0250' in result.get('T08:251', set())
-        assert 'T08n0251' in result.get('T08:0251', set())
+        assert 'T08n0251' in result.get('T08:251', set())
 
     def test_malformed_text_id_skipped(self):
         meta_map = {
@@ -77,21 +78,19 @@ class TestParseDocnumberToTextIds:
                                         docnumber_refs=[]),
         }
         result = _parse_docnumber_to_text_ids(meta_map)
-        # Should only have self-reference
-        assert 'T08n0250' in result.get('T08:0250', set())
+        # Should only have self-reference (leading zeros stripped)
+        assert 'T08n0250' in result.get('T08:250', set())
         assert len(result) == 1
 
 
 class TestFindDocnumberPairs:
     def test_pair_ordering_by_size(self):
         """Shorter text should be first (potential digest)."""
-        # Note: refs must include leading zeros to match text_id format
-        # (text_id regex extracts "0250" from "T08n0250")
         meta_map = {
             'T08n0250': _make_metadata('T08n0250', 300,
-                                        docnumber_refs=['0251']),
+                                        docnumber_refs=['251']),
             'T08n0251': _make_metadata('T08n0251', 1000,
-                                        docnumber_refs=['0250']),
+                                        docnumber_refs=['250']),
         }
         pairs = _find_docnumber_pairs(meta_map)
         # T250 (300 chars) should come first as the shorter text
@@ -102,7 +101,7 @@ class TestFindDocnumberPairs:
         """If the second text is shorter, it should come first."""
         meta_map = {
             'T08n0300': _make_metadata('T08n0300', 50000,
-                                        docnumber_refs=['0301']),
+                                        docnumber_refs=['301']),
             'T08n0301': _make_metadata('T08n0301', 500),
         }
         pairs = _find_docnumber_pairs(meta_map)
@@ -168,7 +167,7 @@ class TestGenerateCandidates:
 
         texts = [
             _make_text("T08n0250", digest_content,
-                        docnumber_refs=['0251']),
+                        docnumber_refs=['251']),
             _make_text("T08n0251", source_content),
         ]
         doc_freq = compute_document_frequencies(texts, n=5)

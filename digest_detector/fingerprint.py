@@ -22,14 +22,6 @@ def generate_ngrams(text: str, n: int = None) -> list[str]:
     return [text[i:i + n] for i in range(len(text) - n + 1)]
 
 
-def generate_ngram_hashes(text: str, n: int = None) -> list[int]:
-    """Generate hashed n-grams from text for faster comparison."""
-    if n is None:
-        n = config.NGRAM_SIZE
-    if len(text) < n:
-        return []
-    return [hash(text[i:i + n]) for i in range(len(text) - n + 1)]
-
 
 def compute_document_frequencies(
     texts: list[ExtractedText],

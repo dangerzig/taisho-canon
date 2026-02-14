@@ -31,14 +31,16 @@ def _parse_docnumber_to_text_ids(
         if not vol_match:
             continue
         vol_prefix = vol_match.group(1)
-        main_num = vol_match.group(2)
+        # Strip leading zeros so "0250" and "250" map to the same key
+        main_num = vol_match.group(2).lstrip('0') or '0'
 
         # The text references itself
         docnum_to_texts[f"{vol_prefix}:{main_num}"].add(text_id)
 
         # It also references these other docnumbers
         for ref in meta.docnumber_refs:
-            docnum_to_texts[f"{vol_prefix}:{ref}"].add(text_id)
+            normalized_ref = ref.lstrip('0') or '0'
+            docnum_to_texts[f"{vol_prefix}:{normalized_ref}"].add(text_id)
 
     return dict(docnum_to_texts)
 
