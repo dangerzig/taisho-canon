@@ -1,5 +1,6 @@
 # CBETA XML corpus (2.4 GB, not redistributable)
 xml/
+cbeta-xml-p5/
 
 # Extracted text cache (211 MB, regenerable via pipeline)
 data/texts/
