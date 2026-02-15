@@ -2,6 +2,10 @@
 xml/
 cbeta-xml-p5/
 
+# External data sources (cloned for cross-referencing)
+sc-data/
+84000-data-tei/
+
 # Extracted text cache (211 MB, regenerable via pipeline)
 data/texts/
 
