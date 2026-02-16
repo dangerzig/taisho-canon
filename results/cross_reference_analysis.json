@@ -1,0 +1,5350 @@
+{
+  "unique_text_coverage": {
+    "total_unique_texts": 1412,
+    "with_any_parallel": 614,
+    "pct_any": 43.5,
+    "with_tibetan": 481,
+    "pct_tibetan": 34.1,
+    "with_pali": 75,
+    "pct_pali": 5.3,
+    "with_sanskrit": 531,
+    "pct_sanskrit": 37.6
+  },
+  "retranslation_validation": {
+    "total_retranslations": 288,
+    "validated_by_shared_tibetan_id": 87,
+    "validated_with_tohoku": 87,
+    "validated_with_otani": 51,
+    "different_tibetan_parallels": 7,
+    "one_has_tibetan": 70,
+    "neither_has_tibetan": 124,
+    "validated_pairs": [
+      {
+        "digest_id": "T16n0663",
+        "source_id": "T16n0664",
+        "coverage": 0.8975,
+        "confidence": 0.7363,
+        "shared_tohoku": [
+          "Toh 4379",
+          "Toh 555",
+          "Toh 556",
+          "Toh 557"
+        ],
+        "shared_otani": [
+          "Otani 174",
+          "Otani 175",
+          "Otani 176"
+        ]
+      },
+      {
+        "digest_id": "T09n0262",
+        "source_id": "T09n0264",
+        "coverage": 0.9198,
+        "confidence": 0.7345,
+        "shared_tohoku": [
+          "Toh 113"
+        ],
+        "shared_otani": [
+          "Otani 781"
+        ]
+      },
+      {
+        "digest_id": "T19n1013",
+        "source_id": "T19n1015",
+        "coverage": 0.8528,
+        "confidence": 0.6975,
+        "shared_tohoku": [
+          "Toh 140",
+          "Toh 525",
+          "Toh 914"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T18n0893b",
+        "source_id": "T18n0893a",
+        "coverage": 0.8239,
+        "confidence": 0.6488,
+        "shared_tohoku": [
+          "Toh 4394",
+          "Toh 807"
+        ],
+        "shared_otani": [
+          "Otani 431"
+        ]
+      },
+      {
+        "digest_id": "T11n0315b",
+        "source_id": "T11n0315a",
+        "coverage": 0.7359,
+        "confidence": 0.6475,
+        "shared_tohoku": [
+          "Toh 54"
+        ],
+        "shared_otani": [
+          "Otani 760"
+        ]
+      },
+      {
+        "digest_id": "T18n0893c",
+        "source_id": "T18n0893a",
+        "coverage": 0.8191,
+        "confidence": 0.6472,
+        "shared_tohoku": [
+          "Toh 4394",
+          "Toh 807"
+        ],
+        "shared_otani": [
+          "Otani 431"
+        ]
+      },
+      {
+        "digest_id": "T25n1510a",
+        "source_id": "T25n1510b",
+        "coverage": 0.7969,
+        "confidence": 0.6436,
+        "shared_tohoku": [
+          "Toh 3816"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T12n0362",
+        "source_id": "T12n0361",
+        "coverage": 0.7985,
+        "confidence": 0.6416,
+        "shared_tohoku": [
+          "Toh 49"
+        ],
+        "shared_otani": [
+          "Otani 760"
+        ]
+      },
+      {
+        "digest_id": "T18n0893b",
+        "source_id": "T18n0893c",
+        "coverage": 0.7805,
+        "confidence": 0.6399,
+        "shared_tohoku": [
+          "Toh 4394",
+          "Toh 807"
+        ],
+        "shared_otani": [
+          "Otani 431"
+        ]
+      },
+      {
+        "digest_id": "T12n0334",
+        "source_id": "T12n0335",
+        "coverage": 0.8919,
+        "confidence": 0.6374,
+        "shared_tohoku": [
+          "Toh 74"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T14n0450",
+        "source_id": "T14n0451",
+        "coverage": 0.7147,
+        "confidence": 0.6253,
+        "shared_tohoku": [
+          "Toh 503",
+          "Toh 504"
+        ],
+        "shared_otani": [
+          "Otani 136"
+        ]
+      },
+      {
+        "digest_id": "T20n1057b",
+        "source_id": "T20n1058",
+        "coverage": 0.7174,
+        "confidence": 0.6214,
+        "shared_tohoku": [
+          "Toh 690",
+          "Toh 691",
+          "Toh 897"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T20n1064",
+        "source_id": "T20n1060",
+        "coverage": 0.6231,
+        "confidence": 0.6194,
+        "shared_tohoku": [
+          "Toh 690"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T19n0992",
+        "source_id": "T19n0991",
+        "coverage": 0.8094,
+        "confidence": 0.6124,
+        "shared_tohoku": [
+          "Toh 1063",
+          "Toh 235",
+          "Toh 657"
+        ],
+        "shared_otani": [
+          "Otani 334"
+        ]
+      },
+      {
+        "digest_id": "T21n1252a",
+        "source_id": "T21n1252b",
+        "coverage": 0.8519,
+        "confidence": 0.6103,
+        "shared_tohoku": [
+          "Toh 1005",
+          "Toh 1006",
+          "Toh 740",
+          "Toh 741"
+        ],
+        "shared_otani": [
+          "Otani 399",
+          "Otani 400",
+          "Otani 630",
+          "Otani 631"
+        ]
+      },
+      {
+        "digest_id": "T20n1044",
+        "source_id": "T20n1045a",
+        "coverage": 0.7951,
+        "confidence": 0.5982,
+        "shared_tohoku": [
+          "Toh 1"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T14n0465",
+        "source_id": "T26n1531",
+        "coverage": 0.9998,
+        "confidence": 0.598,
+        "shared_tohoku": [
+          "Toh 109"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T18n0895b",
+        "source_id": "T18n0895a",
+        "coverage": 0.6731,
+        "confidence": 0.5939,
+        "shared_tohoku": [
+          "Toh 805"
+        ],
+        "shared_otani": [
+          "Otani 428"
+        ]
+      },
+      {
+        "digest_id": "T08n0250",
+        "source_id": "T08n0252",
+        "coverage": 0.6376,
+        "confidence": 0.5928,
+        "shared_tohoku": [
+          "Toh 21",
+          "Toh 531"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T19n1022A",
+        "source_id": "T19n1022B",
+        "coverage": 0.699,
+        "confidence": 0.575,
+        "shared_tohoku": [
+          "Toh 507"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T20n1057a",
+        "source_id": "T20n1058",
+        "coverage": 0.6052,
+        "confidence": 0.5692,
+        "shared_tohoku": [
+          "Toh 690",
+          "Toh 691",
+          "Toh 897"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T15n0586",
+        "source_id": "T15n0587",
+        "coverage": 0.6445,
+        "confidence": 0.5688,
+        "shared_tohoku": [
+          "Toh 160"
+        ],
+        "shared_otani": [
+          "Otani 827"
+        ]
+      },
+      {
+        "digest_id": "T08n0250",
+        "source_id": "T08n0253",
+        "coverage": 0.6376,
+        "confidence": 0.5653,
+        "shared_tohoku": [
+          "Toh 21",
+          "Toh 531"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T08n0253",
+        "source_id": "T08n0252",
+        "coverage": 0.6661,
+        "confidence": 0.5608,
+        "shared_tohoku": [
+          "Toh 21",
+          "Toh 531"
+        ],
+        "shared_otani": [
+          "Otani 160"
+        ]
+      },
+      {
+        "digest_id": "T08n0253",
+        "source_id": "T08n0254",
+        "coverage": 0.7817,
+        "confidence": 0.5576,
+        "shared_tohoku": [
+          "Toh 21",
+          "Toh 531"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T20n1044",
+        "source_id": "T20n1045b",
+        "coverage": 0.6584,
+        "confidence": 0.5564,
+        "shared_tohoku": [
+          "Toh 1"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T08n0250",
+        "source_id": "T08n0251",
+        "coverage": 0.6544,
+        "confidence": 0.5374,
+        "shared_tohoku": [
+          "Toh 21",
+          "Toh 531"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T08n0240",
+        "source_id": "T08n0241",
+        "coverage": 0.5752,
+        "confidence": 0.5294,
+        "shared_tohoku": [
+          "Toh 17",
+          "Toh 487",
+          "Toh 489"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T08n0235",
+        "source_id": "T08n0236a",
+        "coverage": 0.7807,
+        "confidence": 0.527,
+        "shared_tohoku": [
+          "Toh 16"
+        ],
+        "shared_otani": [
+          "Otani 739"
+        ]
+      },
+      {
+        "digest_id": "T20n1045a",
+        "source_id": "T20n1045b",
+        "coverage": 0.652,
+        "confidence": 0.5163,
+        "shared_tohoku": [
+          "Toh 1"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T14n0561",
+        "source_id": "T14n0559",
+        "coverage": 0.672,
+        "confidence": 0.5117,
+        "shared_tohoku": [
+          "Toh 171"
+        ],
+        "shared_otani": [
+          "Otani 838"
+        ]
+      },
+      {
+        "digest_id": "T14n0464",
+        "source_id": "T14n0465",
+        "coverage": 0.548,
+        "confidence": 0.5108,
+        "shared_tohoku": [
+          "Toh 109"
+        ],
+        "shared_otani": [
+          "Otani 777"
+        ]
+      },
+      {
+        "digest_id": "T08n0253",
+        "source_id": "T08n0251",
+        "coverage": 0.5046,
+        "confidence": 0.5044,
+        "shared_tohoku": [
+          "Toh 21",
+          "Toh 531"
+        ],
+        "shared_otani": [
+          "Otani 160"
+        ]
+      },
+      {
+        "digest_id": "T19n0989",
+        "source_id": "T19n0991",
+        "coverage": 0.4149,
+        "confidence": 0.5001,
+        "shared_tohoku": [
+          "Toh 1063",
+          "Toh 235",
+          "Toh 657"
+        ],
+        "shared_otani": [
+          "Otani 334",
+          "Otani 689",
+          "Otani 901"
+        ]
+      },
+      {
+        "digest_id": "T08n0250",
+        "source_id": "T08n0254",
+        "coverage": 0.5201,
+        "confidence": 0.4948,
+        "shared_tohoku": [
+          "Toh 21",
+          "Toh 531"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T14n0475",
+        "source_id": "T85n2777",
+        "coverage": 0.8041,
+        "confidence": 0.4932,
+        "shared_tohoku": [
+          "Toh 64"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T21n1264a",
+        "source_id": "T21n1264b",
+        "coverage": 0.4828,
+        "confidence": 0.4878,
+        "shared_tohoku": [
+          "Toh 571",
+          "Toh 990"
+        ],
+        "shared_otani": [
+          "Otani 189",
+          "Otani 615"
+        ]
+      },
+      {
+        "digest_id": "T08n0252",
+        "source_id": "T08n0251",
+        "coverage": 0.4306,
+        "confidence": 0.4828,
+        "shared_tohoku": [
+          "Toh 21",
+          "Toh 531"
+        ],
+        "shared_otani": [
+          "Otani 160"
+        ]
+      },
+      {
+        "digest_id": "T08n0235",
+        "source_id": "T08n0237",
+        "coverage": 0.5061,
+        "confidence": 0.4826,
+        "shared_tohoku": [
+          "Toh 16"
+        ],
+        "shared_otani": [
+          "Otani 739"
+        ]
+      },
+      {
+        "digest_id": "T21n1314",
+        "source_id": "T21n1313",
+        "coverage": 0.5229,
+        "confidence": 0.4821,
+        "shared_tohoku": [
+          "Toh 1079",
+          "Toh 1080",
+          "Toh 646",
+          "Toh 647"
+        ],
+        "shared_otani": [
+          "Otani 355",
+          "Otani 356",
+          "Otani 700",
+          "Otani 701"
+        ]
+      },
+      {
+        "digest_id": "T20n1077",
+        "source_id": "T20n1075",
+        "coverage": 0.4224,
+        "confidence": 0.4797,
+        "shared_tohoku": [
+          "Toh 613",
+          "Toh 989"
+        ],
+        "shared_otani": [
+          "Otani 188",
+          "Otani 614"
+        ]
+      },
+      {
+        "digest_id": "T08n0232",
+        "source_id": "T08n0233",
+        "coverage": 0.4517,
+        "confidence": 0.4795,
+        "shared_tohoku": [
+          "Toh 24"
+        ],
+        "shared_otani": [
+          "Otani 737"
+        ]
+      },
+      {
+        "digest_id": "T20n1081",
+        "source_id": "T20n1082",
+        "coverage": 0.3582,
+        "confidence": 0.4753,
+        "shared_tohoku": [
+          "Toh 692",
+          "Toh 898"
+        ],
+        "shared_otani": [
+          "Otani 370",
+          "Otani 523"
+        ]
+      },
+      {
+        "digest_id": "T08n0236a",
+        "source_id": "T08n0236b",
+        "coverage": 0.5458,
+        "confidence": 0.4748,
+        "shared_tohoku": [
+          "Toh 16"
+        ],
+        "shared_otani": [
+          "Otani 739"
+        ]
+      },
+      {
+        "digest_id": "T08n0236a",
+        "source_id": "T08n0237",
+        "coverage": 0.5394,
+        "confidence": 0.4726,
+        "shared_tohoku": [
+          "Toh 16"
+        ],
+        "shared_otani": [
+          "Otani 739"
+        ]
+      },
+      {
+        "digest_id": "T19n0986",
+        "source_id": "T19n0987",
+        "coverage": 0.7394,
+        "confidence": 0.4719,
+        "shared_tohoku": [
+          "Toh 559"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T21n1360",
+        "source_id": "T21n1361",
+        "coverage": 0.3842,
+        "confidence": 0.4694,
+        "shared_tohoku": [
+          "Toh 141"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T19n0982",
+        "source_id": "T19n0985",
+        "coverage": 0.3933,
+        "confidence": 0.467,
+        "shared_tohoku": [
+          "Toh 559"
+        ],
+        "shared_otani": [
+          "Otani 178"
+        ]
+      },
+      {
+        "digest_id": "T19n0992",
+        "source_id": "T19n0989",
+        "coverage": 0.3777,
+        "confidence": 0.4649,
+        "shared_tohoku": [
+          "Toh 1063",
+          "Toh 235",
+          "Toh 657"
+        ],
+        "shared_otani": [
+          "Otani 334"
+        ]
+      },
+      {
+        "digest_id": "T16n0686",
+        "source_id": "T16n0685",
+        "coverage": 0.8537,
+        "confidence": 0.4646,
+        "shared_tohoku": [
+          "Toh 315"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T12n0344",
+        "source_id": "T12n0343",
+        "coverage": 0.5684,
+        "confidence": 0.4596,
+        "shared_tohoku": [
+          "Toh 81"
+        ],
+        "shared_otani": [
+          "Otani 760"
+        ]
+      },
+      {
+        "digest_id": "T08n0227",
+        "source_id": "T08n0228",
+        "coverage": 0.4444,
+        "confidence": 0.4533,
+        "shared_tohoku": [
+          "Toh 12"
+        ],
+        "shared_otani": [
+          "Otani 734"
+        ]
+      },
+      {
+        "digest_id": "T14n0467",
+        "source_id": "T14n0465",
+        "coverage": 0.3666,
+        "confidence": 0.4528,
+        "shared_tohoku": [
+          "Toh 109"
+        ],
+        "shared_otani": [
+          "Otani 777"
+        ]
+      },
+      {
+        "digest_id": "T16n0664",
+        "source_id": "T16n0665",
+        "coverage": 0.3679,
+        "confidence": 0.4517,
+        "shared_tohoku": [
+          "Toh 4379",
+          "Toh 555",
+          "Toh 556",
+          "Toh 557"
+        ],
+        "shared_otani": [
+          "Otani 174",
+          "Otani 175",
+          "Otani 176"
+        ]
+      },
+      {
+        "digest_id": "T14n0449",
+        "source_id": "T14n0451",
+        "coverage": 0.3562,
+        "confidence": 0.442,
+        "shared_tohoku": [
+          "Toh 503",
+          "Toh 504"
+        ],
+        "shared_otani": [
+          "Otani 135",
+          "Otani 136"
+        ]
+      },
+      {
+        "digest_id": "T14n0449",
+        "source_id": "T14n0450",
+        "coverage": 0.4713,
+        "confidence": 0.4406,
+        "shared_tohoku": [
+          "Toh 503",
+          "Toh 504"
+        ],
+        "shared_otani": [
+          "Otani 136"
+        ]
+      },
+      {
+        "digest_id": "T21n1255a",
+        "source_id": "T21n1255b",
+        "coverage": 0.3058,
+        "confidence": 0.4312,
+        "shared_tohoku": [
+          "Toh 564",
+          "Toh 988"
+        ],
+        "shared_otani": [
+          "Otani 182",
+          "Otani 613"
+        ]
+      },
+      {
+        "digest_id": "T08n0254",
+        "source_id": "T08n0252",
+        "coverage": 0.4754,
+        "confidence": 0.4294,
+        "shared_tohoku": [
+          "Toh 21",
+          "Toh 531"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T08n0250",
+        "source_id": "T08n0257",
+        "coverage": 0.4161,
+        "confidence": 0.428,
+        "shared_tohoku": [
+          "Toh 21",
+          "Toh 531"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T08n0239",
+        "source_id": "T08n0235",
+        "coverage": 0.3611,
+        "confidence": 0.4251,
+        "shared_tohoku": [
+          "Toh 16"
+        ],
+        "shared_otani": [
+          "Otani 739"
+        ]
+      },
+      {
+        "digest_id": "T08n0224",
+        "source_id": "T08n0221",
+        "coverage": 0.3528,
+        "confidence": 0.4236,
+        "shared_tohoku": [
+          "Toh 9"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T08n0239",
+        "source_id": "T08n0236a",
+        "coverage": 0.3607,
+        "confidence": 0.4224,
+        "shared_tohoku": [
+          "Toh 16"
+        ],
+        "shared_otani": [
+          "Otani 739"
+        ]
+      },
+      {
+        "digest_id": "T08n0228",
+        "source_id": "T08n0223",
+        "coverage": 0.3557,
+        "confidence": 0.4209,
+        "shared_tohoku": [
+          "Toh 21"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T19n0991",
+        "source_id": "T19n0993",
+        "coverage": 0.3175,
+        "confidence": 0.4165,
+        "shared_tohoku": [
+          "Toh 1063",
+          "Toh 235",
+          "Toh 657"
+        ],
+        "shared_otani": [
+          "Otani 334",
+          "Otani 689",
+          "Otani 901"
+        ]
+      },
+      {
+        "digest_id": "T14n0475",
+        "source_id": "T14n0476",
+        "coverage": 0.3095,
+        "confidence": 0.4151,
+        "shared_tohoku": [
+          "Toh 176",
+          "Toh 64"
+        ],
+        "shared_otani": [
+          "Otani 843"
+        ]
+      },
+      {
+        "digest_id": "T14n0454",
+        "source_id": "T14n0456",
+        "coverage": 0.5965,
+        "confidence": 0.4137,
+        "shared_tohoku": [
+          "Toh 199"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T16n0670",
+        "source_id": "T16n0672",
+        "coverage": 0.3209,
+        "confidence": 0.4134,
+        "shared_tohoku": [
+          "Toh 107",
+          "Toh 108"
+        ],
+        "shared_otani": [
+          "Otani 775",
+          "Otani 776"
+        ]
+      },
+      {
+        "digest_id": "T08n0221",
+        "source_id": "T08n0223",
+        "coverage": 0.3518,
+        "confidence": 0.4127,
+        "shared_tohoku": [
+          "Toh 9"
+        ],
+        "shared_otani": [
+          "Otani 731"
+        ]
+      },
+      {
+        "digest_id": "T08n0239",
+        "source_id": "T08n0237",
+        "coverage": 0.3335,
+        "confidence": 0.4121,
+        "shared_tohoku": [
+          "Toh 16"
+        ],
+        "shared_otani": [
+          "Otani 739"
+        ]
+      },
+      {
+        "digest_id": "T08n0222",
+        "source_id": "T08n0221",
+        "coverage": 0.3314,
+        "confidence": 0.4119,
+        "shared_tohoku": [
+          "Toh 9"
+        ],
+        "shared_otani": [
+          "Otani 731"
+        ]
+      },
+      {
+        "digest_id": "T18n0865",
+        "source_id": "T18n0866",
+        "coverage": 0.3131,
+        "confidence": 0.4076,
+        "shared_tohoku": [
+          "Toh 479"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T17n0829",
+        "source_id": "T17n0830",
+        "coverage": 0.3185,
+        "confidence": 0.391,
+        "shared_tohoku": [
+          "Toh 259"
+        ],
+        "shared_otani": [
+          "Otani 925"
+        ]
+      },
+      {
+        "digest_id": "T08n0253",
+        "source_id": "T08n0257",
+        "coverage": 0.4679,
+        "confidence": 0.3882,
+        "shared_tohoku": [
+          "Toh 21",
+          "Toh 531"
+        ],
+        "shared_otani": [
+          "Otani 160"
+        ]
+      },
+      {
+        "digest_id": "T08n0255",
+        "source_id": "T08n0257",
+        "coverage": 0.4335,
+        "confidence": 0.3819,
+        "shared_tohoku": [
+          "Toh 21",
+          "Toh 531"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T08n0254",
+        "source_id": "T08n0251",
+        "coverage": 0.3187,
+        "confidence": 0.3788,
+        "shared_tohoku": [
+          "Toh 21",
+          "Toh 531"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T08n0255",
+        "source_id": "T08n0252",
+        "coverage": 0.4007,
+        "confidence": 0.3754,
+        "shared_tohoku": [
+          "Toh 21",
+          "Toh 531"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T19n0974A",
+        "source_id": "T19n0974C",
+        "coverage": 0.4329,
+        "confidence": 0.3743,
+        "shared_tohoku": [
+          "Toh 594",
+          "Toh 595",
+          "Toh 596",
+          "Toh 597",
+          "Toh 598",
+          "Toh 984"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T08n0253",
+        "source_id": "T08n0255",
+        "coverage": 0.4477,
+        "confidence": 0.3692,
+        "shared_tohoku": [
+          "Toh 21",
+          "Toh 531"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T08n0254",
+        "source_id": "T08n0257",
+        "coverage": 0.4542,
+        "confidence": 0.3681,
+        "shared_tohoku": [
+          "Toh 21",
+          "Toh 531"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T08n0257",
+        "source_id": "T08n0252",
+        "coverage": 0.437,
+        "confidence": 0.3657,
+        "shared_tohoku": [
+          "Toh 21",
+          "Toh 531"
+        ],
+        "shared_otani": [
+          "Otani 160"
+        ]
+      },
+      {
+        "digest_id": "T08n0250",
+        "source_id": "T08n0255",
+        "coverage": 0.3221,
+        "confidence": 0.3638,
+        "shared_tohoku": [
+          "Toh 21",
+          "Toh 531"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T08n0255",
+        "source_id": "T08n0251",
+        "coverage": 0.3368,
+        "confidence": 0.3493,
+        "shared_tohoku": [
+          "Toh 21",
+          "Toh 531"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T08n0254",
+        "source_id": "T08n0255",
+        "coverage": 0.412,
+        "confidence": 0.3476,
+        "shared_tohoku": [
+          "Toh 21",
+          "Toh 531"
+        ],
+        "shared_otani": []
+      },
+      {
+        "digest_id": "T08n0257",
+        "source_id": "T08n0251",
+        "coverage": 0.3017,
+        "confidence": 0.3422,
+        "shared_tohoku": [
+          "Toh 21",
+          "Toh 531"
+        ],
+        "shared_otani": [
+          "Otani 160"
+        ]
+      },
+      {
+        "digest_id": "T14n0428",
+        "source_id": "T14n0427",
+        "coverage": 0.3475,
+        "confidence": 0.3369,
+        "shared_tohoku": [
+          "Toh 271",
+          "Toh 278"
+        ],
+        "shared_otani": [
+          "Otani 937"
+        ]
+      },
+      {
+        "digest_id": "T04n0210",
+        "source_id": "T04n0211",
+        "coverage": 0.3285,
+        "confidence": 0.3337,
+        "shared_tohoku": [
+          "Toh 326",
+          "Toh 4099"
+        ],
+        "shared_otani": [
+          "Otani 992"
+        ]
+      },
+      {
+        "digest_id": "T21n1256",
+        "source_id": "T21n1255b",
+        "coverage": 0.3164,
+        "confidence": 0.2434,
+        "shared_tohoku": [
+          "Toh 564",
+          "Toh 988"
+        ],
+        "shared_otani": [
+          "Otani 182",
+          "Otani 613"
+        ]
+      }
+    ],
+    "different_parallel_pairs": [
+      {
+        "digest_id": "T31n1605",
+        "source_id": "T31n1606",
+        "coverage": 0.8323,
+        "confidence": 0.6569,
+        "digest_tibetan": [
+          "Toh 4049"
+        ],
+        "source_tibetan": [
+          "Toh 4054"
+        ]
+      },
+      {
+        "digest_id": "T31n1612",
+        "source_id": "T31n1613",
+        "coverage": 0.6141,
+        "confidence": 0.5742,
+        "digest_tibetan": [
+          "Toh 4059"
+        ],
+        "source_tibetan": [
+          "Toh 4066"
+        ]
+      },
+      {
+        "digest_id": "T31n1597",
+        "source_id": "T31n1598",
+        "coverage": 0.4978,
+        "confidence": 0.5078,
+        "digest_tibetan": [
+          "Toh 4050"
+        ],
+        "source_tibetan": [
+          "Toh 4051"
+        ]
+      },
+      {
+        "digest_id": "T08n0227",
+        "source_id": "T08n0221",
+        "coverage": 0.3536,
+        "confidence": 0.4232,
+        "digest_tibetan": [
+          "Otani 734",
+          "Toh 12"
+        ],
+        "source_tibetan": [
+          "Otani 731",
+          "Toh 9"
+        ]
+      },
+      {
+        "digest_id": "T10n0286",
+        "source_id": "T26n1522",
+        "coverage": 0.4357,
+        "confidence": 0.3231,
+        "digest_tibetan": [
+          "Otani 761",
+          "Toh 44"
+        ],
+        "source_tibetan": [
+          "Toh 3993"
+        ]
+      },
+      {
+        "digest_id": "T08n0236a",
+        "source_id": "T25n1510a",
+        "coverage": 0.3679,
+        "confidence": 0.2798,
+        "digest_tibetan": [
+          "Otani 739",
+          "Toh 16"
+        ],
+        "source_tibetan": [
+          "Toh 3816"
+        ]
+      },
+      {
+        "digest_id": "T08n0226",
+        "source_id": "T08n0222",
+        "coverage": 0.3463,
+        "confidence": 0.2682,
+        "digest_tibetan": [
+          "Otani 734",
+          "Toh 12"
+        ],
+        "source_tibetan": [
+          "Otani 731",
+          "Toh 9"
+        ]
+      }
+    ]
+  },
+  "coverage_by_classification": {
+    "full_digest": {
+      "total": 181,
+      "has_any_parallel": 105,
+      "pct_any": 58.0,
+      "has_tibetan": 83,
+      "pct_tibetan": 45.9,
+      "has_pali": 9,
+      "pct_pali": 5.0,
+      "has_sanskrit": 89,
+      "pct_sanskrit": 49.2
+    },
+    "partial_digest": {
+      "total": 484,
+      "has_any_parallel": 249,
+      "pct_any": 51.4,
+      "has_tibetan": 191,
+      "pct_tibetan": 39.5,
+      "has_pali": 25,
+      "pct_pali": 5.2,
+      "has_sanskrit": 218,
+      "pct_sanskrit": 45.0
+    },
+    "retranslation": {
+      "total": 288,
+      "has_any_parallel": 191,
+      "pct_any": 66.3,
+      "has_tibetan": 163,
+      "pct_tibetan": 56.6,
+      "has_pali": 8,
+      "pct_pali": 2.8,
+      "has_sanskrit": 172,
+      "pct_sanskrit": 59.7
+    },
+    "commentary": {
+      "total": 621,
+      "has_any_parallel": 502,
+      "pct_any": 80.8,
+      "has_tibetan": 425,
+      "pct_tibetan": 68.4,
+      "has_pali": 19,
+      "pct_pali": 3.1,
+      "has_sanskrit": 431,
+      "pct_sanskrit": 69.4
+    },
+    "shared_tradition": {
+      "total": 1238,
+      "has_any_parallel": 791,
+      "pct_any": 63.9,
+      "has_tibetan": 658,
+      "pct_tibetan": 53.2,
+      "has_pali": 88,
+      "pct_pali": 7.1,
+      "has_sanskrit": 698,
+      "pct_sanskrit": 56.4
+    }
+  },
+  "pair_parallel_status": {
+    "total": 2812,
+    "both_have_any_parallel": 872,
+    "only_digest_has_parallel": 416,
+    "only_source_has_parallel": 550,
+    "neither_has_parallel": 974,
+    "same_tibetan_parallel": 313,
+    "different_tibetan_parallel": 406,
+    "same_tibetan_pairs": [
+      {
+        "digest_id": "T16n0663",
+        "source_id": "T16n0664",
+        "classification": "retranslation",
+        "coverage": 0.8975,
+        "confidence": 0.7363,
+        "shared_tibetan": [
+          "Otani 174",
+          "Otani 175",
+          "Otani 176",
+          "Toh 4379",
+          "Toh 555",
+          "Toh 556",
+          "Toh 557"
+        ]
+      },
+      {
+        "digest_id": "T09n0262",
+        "source_id": "T09n0264",
+        "classification": "retranslation",
+        "coverage": 0.9198,
+        "confidence": 0.7345,
+        "shared_tibetan": [
+          "Otani 781",
+          "Toh 113"
+        ]
+      },
+      {
+        "digest_id": "T10n0295",
+        "source_id": "T10n0279",
+        "classification": "full_digest",
+        "coverage": 0.8162,
+        "confidence": 0.7333,
+        "shared_tibetan": [
+          "Otani 761",
+          "Toh 44"
+        ]
+      },
+      {
+        "digest_id": "T10n0295",
+        "source_id": "T09n0278",
+        "classification": "full_digest",
+        "coverage": 1.0,
+        "confidence": 0.721,
+        "shared_tibetan": [
+          "Otani 761",
+          "Toh 44"
+        ]
+      },
+      {
+        "digest_id": "T19n1013",
+        "source_id": "T19n1015",
+        "classification": "retranslation",
+        "coverage": 0.8528,
+        "confidence": 0.6975,
+        "shared_tibetan": [
+          "Toh 140",
+          "Toh 525",
+          "Toh 914"
+        ]
+      },
+      {
+        "digest_id": "T08n0232",
+        "source_id": "T11n0310",
+        "classification": "full_digest",
+        "coverage": 0.9709,
+        "confidence": 0.6612,
+        "shared_tibetan": [
+          "Otani 760",
+          "Toh 24"
+        ]
+      },
+      {
+        "digest_id": "T08n0250",
+        "source_id": "T08n0223",
+        "classification": "full_digest",
+        "coverage": 0.7315,
+        "confidence": 0.6598,
+        "shared_tibetan": [
+          "Toh 21"
+        ]
+      },
+      {
+        "digest_id": "T18n0893b",
+        "source_id": "T18n0893a",
+        "classification": "retranslation",
+        "coverage": 0.8239,
+        "confidence": 0.6488,
+        "shared_tibetan": [
+          "Otani 431",
+          "Toh 4394",
+          "Toh 807"
+        ]
+      },
+      {
+        "digest_id": "T11n0315b",
+        "source_id": "T11n0315a",
+        "classification": "retranslation",
+        "coverage": 0.7359,
+        "confidence": 0.6475,
+        "shared_tibetan": [
+          "Otani 760",
+          "Toh 54"
+        ]
+      },
+      {
+        "digest_id": "T18n0893c",
+        "source_id": "T18n0893a",
+        "classification": "retranslation",
+        "coverage": 0.8191,
+        "confidence": 0.6472,
+        "shared_tibetan": [
+          "Otani 431",
+          "Toh 4394",
+          "Toh 807"
+        ]
+      },
+      {
+        "digest_id": "T25n1510a",
+        "source_id": "T25n1510b",
+        "classification": "retranslation",
+        "coverage": 0.7969,
+        "confidence": 0.6436,
+        "shared_tibetan": [
+          "Toh 3816"
+        ]
+      },
+      {
+        "digest_id": "T12n0362",
+        "source_id": "T12n0361",
+        "classification": "retranslation",
+        "coverage": 0.7985,
+        "confidence": 0.6416,
+        "shared_tibetan": [
+          "Otani 760",
+          "Toh 49"
+        ]
+      },
+      {
+        "digest_id": "T18n0893b",
+        "source_id": "T18n0893c",
+        "classification": "retranslation",
+        "coverage": 0.7805,
+        "confidence": 0.6399,
+        "shared_tibetan": [
+          "Otani 431",
+          "Toh 4394",
+          "Toh 807"
+        ]
+      },
+      {
+        "digest_id": "T12n0334",
+        "source_id": "T12n0335",
+        "classification": "retranslation",
+        "coverage": 0.8919,
+        "confidence": 0.6374,
+        "shared_tibetan": [
+          "Toh 74"
+        ]
+      },
+      {
+        "digest_id": "T02n0128b",
+        "source_id": "T02n0125",
+        "classification": "full_digest",
+        "coverage": 0.9973,
+        "confidence": 0.6365,
+        "shared_tibetan": [
+          "Toh 346"
+        ]
+      },
+      {
+        "digest_id": "T20n1098",
+        "source_id": "T20n1092",
+        "classification": "partial_digest",
+        "coverage": 0.5883,
+        "confidence": 0.6253,
+        "shared_tibetan": [
+          "Toh 686"
+        ]
+      },
+      {
+        "digest_id": "T14n0450",
+        "source_id": "T14n0451",
+        "classification": "retranslation",
+        "coverage": 0.7147,
+        "confidence": 0.6253,
+        "shared_tibetan": [
+          "Otani 136",
+          "Toh 503",
+          "Toh 504"
+        ]
+      },
+      {
+        "digest_id": "T20n1057b",
+        "source_id": "T20n1058",
+        "classification": "retranslation",
+        "coverage": 0.7174,
+        "confidence": 0.6214,
+        "shared_tibetan": [
+          "Toh 690",
+          "Toh 691",
+          "Toh 897"
+        ]
+      },
+      {
+        "digest_id": "T20n1057b",
+        "source_id": "T20n1057a",
+        "classification": "full_digest",
+        "coverage": 0.9661,
+        "confidence": 0.6199,
+        "shared_tibetan": [
+          "Toh 690",
+          "Toh 691",
+          "Toh 897"
+        ]
+      },
+      {
+        "digest_id": "T20n1064",
+        "source_id": "T20n1060",
+        "classification": "retranslation",
+        "coverage": 0.6231,
+        "confidence": 0.6194,
+        "shared_tibetan": [
+          "Toh 690"
+        ]
+      },
+      {
+        "digest_id": "T20n1035",
+        "source_id": "T18n0901",
+        "classification": "full_digest",
+        "coverage": 0.8115,
+        "confidence": 0.6156,
+        "shared_tibetan": [
+          "Otani 216",
+          "Otani 555",
+          "Toh 710",
+          "Toh 930"
+        ]
+      },
+      {
+        "digest_id": "T19n0992",
+        "source_id": "T19n0991",
+        "classification": "retranslation",
+        "coverage": 0.8094,
+        "confidence": 0.6124,
+        "shared_tibetan": [
+          "Otani 334",
+          "Toh 1063",
+          "Toh 235",
+          "Toh 657"
+        ]
+      },
+      {
+        "digest_id": "T21n1252a",
+        "source_id": "T21n1252b",
+        "classification": "retranslation",
+        "coverage": 0.8519,
+        "confidence": 0.6103,
+        "shared_tibetan": [
+          "Otani 399",
+          "Otani 400",
+          "Otani 630",
+          "Otani 631",
+          "Toh 1005",
+          "Toh 1006",
+          "Toh 740",
+          "Toh 741"
+        ]
+      },
+      {
+        "digest_id": "T20n1044",
+        "source_id": "T20n1045a",
+        "classification": "retranslation",
+        "coverage": 0.7951,
+        "confidence": 0.5982,
+        "shared_tibetan": [
+          "Toh 1"
+        ]
+      },
+      {
+        "digest_id": "T14n0465",
+        "source_id": "T26n1531",
+        "classification": "retranslation",
+        "coverage": 0.9998,
+        "confidence": 0.598,
+        "shared_tibetan": [
+          "Toh 109"
+        ]
+      },
+      {
+        "digest_id": "T18n0895b",
+        "source_id": "T18n0895a",
+        "classification": "retranslation",
+        "coverage": 0.6731,
+        "confidence": 0.5939,
+        "shared_tibetan": [
+          "Otani 428",
+          "Toh 805"
+        ]
+      },
+      {
+        "digest_id": "T08n0250",
+        "source_id": "T08n0252",
+        "classification": "retranslation",
+        "coverage": 0.6376,
+        "confidence": 0.5928,
+        "shared_tibetan": [
+          "Toh 21",
+          "Toh 531"
+        ]
+      },
+      {
+        "digest_id": "T12n0347",
+        "source_id": "T11n0310",
+        "classification": "partial_digest",
+        "coverage": 0.619,
+        "confidence": 0.5922,
+        "shared_tibetan": [
+          "Toh 83"
+        ]
+      },
+      {
+        "digest_id": "T19n1022A",
+        "source_id": "T19n1022B",
+        "classification": "retranslation",
+        "coverage": 0.699,
+        "confidence": 0.575,
+        "shared_tibetan": [
+          "Toh 507"
+        ]
+      },
+      {
+        "digest_id": "T20n1057a",
+        "source_id": "T20n1058",
+        "classification": "retranslation",
+        "coverage": 0.6052,
+        "confidence": 0.5692,
+        "shared_tibetan": [
+          "Toh 690",
+          "Toh 691",
+          "Toh 897"
+        ]
+      },
+      {
+        "digest_id": "T15n0586",
+        "source_id": "T15n0587",
+        "classification": "retranslation",
+        "coverage": 0.6445,
+        "confidence": 0.5688,
+        "shared_tibetan": [
+          "Otani 827",
+          "Toh 160"
+        ]
+      },
+      {
+        "digest_id": "T08n0250",
+        "source_id": "T08n0253",
+        "classification": "retranslation",
+        "coverage": 0.6376,
+        "confidence": 0.5653,
+        "shared_tibetan": [
+          "Toh 21",
+          "Toh 531"
+        ]
+      },
+      {
+        "digest_id": "T08n0253",
+        "source_id": "T08n0252",
+        "classification": "retranslation",
+        "coverage": 0.6661,
+        "confidence": 0.5608,
+        "shared_tibetan": [
+          "Otani 160",
+          "Toh 21",
+          "Toh 531"
+        ]
+      },
+      {
+        "digest_id": "T08n0253",
+        "source_id": "T08n0254",
+        "classification": "retranslation",
+        "coverage": 0.7817,
+        "confidence": 0.5576,
+        "shared_tibetan": [
+          "Toh 21",
+          "Toh 531"
+        ]
+      },
+      {
+        "digest_id": "T20n1044",
+        "source_id": "T20n1045b",
+        "classification": "retranslation",
+        "coverage": 0.6584,
+        "confidence": 0.5564,
+        "shared_tibetan": [
+          "Toh 1"
+        ]
+      },
+      {
+        "digest_id": "T08n0250",
+        "source_id": "T08n0251",
+        "classification": "retranslation",
+        "coverage": 0.6544,
+        "confidence": 0.5374,
+        "shared_tibetan": [
+          "Toh 21",
+          "Toh 531"
+        ]
+      },
+      {
+        "digest_id": "T14n0475",
+        "source_id": "T38n1775",
+        "classification": "full_digest",
+        "coverage": 0.911,
+        "confidence": 0.5338,
+        "shared_tibetan": [
+          "Toh 64"
+        ]
+      },
+      {
+        "digest_id": "T10n0289",
+        "source_id": "T10n0279",
+        "classification": "commentary",
+        "coverage": 0.3624,
+        "confidence": 0.5307,
+        "shared_tibetan": [
+          "Otani 772",
+          "Toh 104"
+        ]
+      },
+      {
+        "digest_id": "T08n0240",
+        "source_id": "T08n0241",
+        "classification": "retranslation",
+        "coverage": 0.5752,
+        "confidence": 0.5294,
+        "shared_tibetan": [
+          "Toh 17",
+          "Toh 487",
+          "Toh 489"
+        ]
+      },
+      {
+        "digest_id": "T08n0235",
+        "source_id": "T08n0236a",
+        "classification": "retranslation",
+        "coverage": 0.7807,
+        "confidence": 0.527,
+        "shared_tibetan": [
+          "Otani 739",
+          "Toh 16"
+        ]
+      },
+      {
+        "digest_id": "T10n0286",
+        "source_id": "T09n0278",
+        "classification": "full_digest",
+        "coverage": 0.805,
+        "confidence": 0.5242,
+        "shared_tibetan": [
+          "Otani 761",
+          "Toh 44"
+        ]
+      },
+      {
+        "digest_id": "T13n0417",
+        "source_id": "T13n0418",
+        "classification": "partial_digest",
+        "coverage": 0.5332,
+        "confidence": 0.5169,
+        "shared_tibetan": [
+          "Otani 801",
+          "Toh 133"
+        ]
+      },
+      {
+        "digest_id": "T20n1045a",
+        "source_id": "T20n1045b",
+        "classification": "retranslation",
+        "coverage": 0.652,
+        "confidence": 0.5163,
+        "shared_tibetan": [
+          "Toh 1"
+        ]
+      },
+      {
+        "digest_id": "T14n0561",
+        "source_id": "T14n0559",
+        "classification": "retranslation",
+        "coverage": 0.672,
+        "confidence": 0.5117,
+        "shared_tibetan": [
+          "Otani 838",
+          "Toh 171"
+        ]
+      },
+      {
+        "digest_id": "T14n0464",
+        "source_id": "T14n0465",
+        "classification": "retranslation",
+        "coverage": 0.548,
+        "confidence": 0.5108,
+        "shared_tibetan": [
+          "Otani 777",
+          "Toh 109"
+        ]
+      },
+      {
+        "digest_id": "T08n0253",
+        "source_id": "T08n0251",
+        "classification": "retranslation",
+        "coverage": 0.5046,
+        "confidence": 0.5044,
+        "shared_tibetan": [
+          "Otani 160",
+          "Toh 21",
+          "Toh 531"
+        ]
+      },
+      {
+        "digest_id": "T19n0989",
+        "source_id": "T19n0991",
+        "classification": "retranslation",
+        "coverage": 0.4149,
+        "confidence": 0.5001,
+        "shared_tibetan": [
+          "Otani 334",
+          "Otani 689",
+          "Otani 901",
+          "Toh 1063",
+          "Toh 235",
+          "Toh 657"
+        ]
+      },
+      {
+        "digest_id": "T08n0250",
+        "source_id": "T08n0254",
+        "classification": "retranslation",
+        "coverage": 0.5201,
+        "confidence": 0.4948,
+        "shared_tibetan": [
+          "Toh 21",
+          "Toh 531"
+        ]
+      },
+      {
+        "digest_id": "T12n0336",
+        "source_id": "T11n0310",
+        "classification": "partial_digest",
+        "coverage": 0.5201,
+        "confidence": 0.4945,
+        "shared_tibetan": [
+          "Otani 760",
+          "Toh 74"
+        ]
+      },
+      {
+        "digest_id": "T14n0475",
+        "source_id": "T85n2777",
+        "classification": "retranslation",
+        "coverage": 0.8041,
+        "confidence": 0.4932,
+        "shared_tibetan": [
+          "Toh 64"
+        ]
+      },
+      {
+        "digest_id": "T21n1264a",
+        "source_id": "T21n1264b",
+        "classification": "retranslation",
+        "coverage": 0.4828,
+        "confidence": 0.4878,
+        "shared_tibetan": [
+          "Otani 189",
+          "Otani 615",
+          "Toh 571",
+          "Toh 990"
+        ]
+      },
+      {
+        "digest_id": "T10n0287",
+        "source_id": "T10n0279",
+        "classification": "partial_digest",
+        "coverage": 0.4045,
+        "confidence": 0.4875,
+        "shared_tibetan": [
+          "Otani 761",
+          "Toh 44"
+        ]
+      },
+      {
+        "digest_id": "T19n0974F",
+        "source_id": "T19n0974E",
+        "classification": "partial_digest",
+        "coverage": 0.4404,
+        "confidence": 0.4837,
+        "shared_tibetan": [
+          "Toh 594",
+          "Toh 595",
+          "Toh 596",
+          "Toh 597",
+          "Toh 598",
+          "Toh 984"
+        ]
+      },
+      {
+        "digest_id": "T19n1029",
+        "source_id": "T21n1353",
+        "classification": "partial_digest",
+        "coverage": 0.6104,
+        "confidence": 0.4835,
+        "shared_tibetan": [
+          "Toh 858"
+        ]
+      },
+      {
+        "digest_id": "T08n0252",
+        "source_id": "T08n0251",
+        "classification": "retranslation",
+        "coverage": 0.4306,
+        "confidence": 0.4828,
+        "shared_tibetan": [
+          "Otani 160",
+          "Toh 21",
+          "Toh 531"
+        ]
+      },
+      {
+        "digest_id": "T08n0235",
+        "source_id": "T08n0237",
+        "classification": "retranslation",
+        "coverage": 0.5061,
+        "confidence": 0.4826,
+        "shared_tibetan": [
+          "Otani 739",
+          "Toh 16"
+        ]
+      },
+      {
+        "digest_id": "T21n1314",
+        "source_id": "T21n1313",
+        "classification": "retranslation",
+        "coverage": 0.5229,
+        "confidence": 0.4821,
+        "shared_tibetan": [
+          "Otani 355",
+          "Otani 356",
+          "Otani 700",
+          "Otani 701",
+          "Toh 1079",
+          "Toh 1080",
+          "Toh 646",
+          "Toh 647"
+        ]
+      },
+      {
+        "digest_id": "T20n1077",
+        "source_id": "T20n1075",
+        "classification": "retranslation",
+        "coverage": 0.4224,
+        "confidence": 0.4797,
+        "shared_tibetan": [
+          "Otani 188",
+          "Otani 614",
+          "Toh 613",
+          "Toh 989"
+        ]
+      },
+      {
+        "digest_id": "T08n0232",
+        "source_id": "T08n0233",
+        "classification": "retranslation",
+        "coverage": 0.4517,
+        "confidence": 0.4795,
+        "shared_tibetan": [
+          "Otani 737",
+          "Toh 24"
+        ]
+      },
+      {
+        "digest_id": "T20n1070",
+        "source_id": "T18n0901",
+        "classification": "partial_digest",
+        "coverage": 0.6482,
+        "confidence": 0.4789,
+        "shared_tibetan": [
+          "Otani 373",
+          "Otani 374",
+          "Otani 524",
+          "Toh 693",
+          "Toh 694",
+          "Toh 899"
+        ]
+      },
+      {
+        "digest_id": "T19n0974D",
+        "source_id": "T19n0974C",
+        "classification": "partial_digest",
+        "coverage": 0.3886,
+        "confidence": 0.4754,
+        "shared_tibetan": [
+          "Toh 594",
+          "Toh 595",
+          "Toh 596",
+          "Toh 597",
+          "Toh 598",
+          "Toh 984"
+        ]
+      },
+      {
+        "digest_id": "T20n1081",
+        "source_id": "T20n1082",
+        "classification": "retranslation",
+        "coverage": 0.3582,
+        "confidence": 0.4753,
+        "shared_tibetan": [
+          "Otani 370",
+          "Otani 523",
+          "Toh 692",
+          "Toh 898"
+        ]
+      },
+      {
+        "digest_id": "T08n0236a",
+        "source_id": "T08n0236b",
+        "classification": "retranslation",
+        "coverage": 0.5458,
+        "confidence": 0.4748,
+        "shared_tibetan": [
+          "Otani 739",
+          "Toh 16"
+        ]
+      },
+      {
+        "digest_id": "T08n0236a",
+        "source_id": "T08n0237",
+        "classification": "retranslation",
+        "coverage": 0.5394,
+        "confidence": 0.4726,
+        "shared_tibetan": [
+          "Otani 739",
+          "Toh 16"
+        ]
+      },
+      {
+        "digest_id": "T19n0986",
+        "source_id": "T19n0987",
+        "classification": "retranslation",
+        "coverage": 0.7394,
+        "confidence": 0.4719,
+        "shared_tibetan": [
+          "Toh 559"
+        ]
+      },
+      {
+        "digest_id": "T21n1360",
+        "source_id": "T21n1361",
+        "classification": "retranslation",
+        "coverage": 0.3842,
+        "confidence": 0.4694,
+        "shared_tibetan": [
+          "Toh 141"
+        ]
+      },
+      {
+        "digest_id": "T19n0982",
+        "source_id": "T19n0985",
+        "classification": "retranslation",
+        "coverage": 0.3933,
+        "confidence": 0.467,
+        "shared_tibetan": [
+          "Otani 178",
+          "Toh 559"
+        ]
+      },
+      {
+        "digest_id": "T19n0992",
+        "source_id": "T19n0989",
+        "classification": "retranslation",
+        "coverage": 0.3777,
+        "confidence": 0.4649,
+        "shared_tibetan": [
+          "Otani 334",
+          "Toh 1063",
+          "Toh 235",
+          "Toh 657"
+        ]
+      },
+      {
+        "digest_id": "T16n0686",
+        "source_id": "T16n0685",
+        "classification": "retranslation",
+        "coverage": 0.8537,
+        "confidence": 0.4646,
+        "shared_tibetan": [
+          "Toh 315"
+        ]
+      },
+      {
+        "digest_id": "T10n0295",
+        "source_id": "T10n0293",
+        "classification": "partial_digest",
+        "coverage": 0.6353,
+        "confidence": 0.4619,
+        "shared_tibetan": [
+          "Otani 761",
+          "Toh 44"
+        ]
+      },
+      {
+        "digest_id": "T12n0344",
+        "source_id": "T12n0343",
+        "classification": "retranslation",
+        "coverage": 0.5684,
+        "confidence": 0.4596,
+        "shared_tibetan": [
+          "Otani 760",
+          "Toh 81"
+        ]
+      },
+      {
+        "digest_id": "T08n0227",
+        "source_id": "T08n0228",
+        "classification": "retranslation",
+        "coverage": 0.4444,
+        "confidence": 0.4533,
+        "shared_tibetan": [
+          "Otani 734",
+          "Toh 12"
+        ]
+      },
+      {
+        "digest_id": "T14n0467",
+        "source_id": "T14n0465",
+        "classification": "retranslation",
+        "coverage": 0.3666,
+        "confidence": 0.4528,
+        "shared_tibetan": [
+          "Otani 777",
+          "Toh 109"
+        ]
+      },
+      {
+        "digest_id": "T16n0664",
+        "source_id": "T16n0665",
+        "classification": "retranslation",
+        "coverage": 0.3679,
+        "confidence": 0.4517,
+        "shared_tibetan": [
+          "Otani 174",
+          "Otani 175",
+          "Otani 176",
+          "Toh 4379",
+          "Toh 555",
+          "Toh 556",
+          "Toh 557"
+        ]
+      },
+      {
+        "digest_id": "T10n0286",
+        "source_id": "T10n0279",
+        "classification": "commentary",
+        "coverage": 0.3443,
+        "confidence": 0.4448,
+        "shared_tibetan": [
+          "Otani 761",
+          "Toh 44"
+        ]
+      },
+      {
+        "digest_id": "T21n1266",
+        "source_id": "T18n0901",
+        "classification": "partial_digest",
+        "coverage": 0.5095,
+        "confidence": 0.4437,
+        "shared_tibetan": [
+          "Toh 665"
+        ]
+      },
+      {
+        "digest_id": "T08n0242",
+        "source_id": "T08n0244",
+        "classification": "commentary",
+        "coverage": 0.3262,
+        "confidence": 0.4432,
+        "shared_tibetan": [
+          "Otani 119",
+          "Otani 121",
+          "Toh 17",
+          "Toh 487",
+          "Toh 489"
+        ]
+      },
+      {
+        "digest_id": "T14n0449",
+        "source_id": "T14n0451",
+        "classification": "retranslation",
+        "coverage": 0.3562,
+        "confidence": 0.442,
+        "shared_tibetan": [
+          "Otani 135",
+          "Otani 136",
+          "Toh 503",
+          "Toh 504"
+        ]
+      },
+      {
+        "digest_id": "T14n0449",
+        "source_id": "T14n0450",
+        "classification": "retranslation",
+        "coverage": 0.4713,
+        "confidence": 0.4406,
+        "shared_tibetan": [
+          "Otani 136",
+          "Toh 503",
+          "Toh 504"
+        ]
+      },
+      {
+        "digest_id": "T10n0290",
+        "source_id": "T10n0279",
+        "classification": "shared_tradition",
+        "coverage": 0.1676,
+        "confidence": 0.4398,
+        "shared_tibetan": [
+          "Otani 772",
+          "Toh 104"
+        ]
+      },
+      {
+        "digest_id": "T10n0294",
+        "source_id": "T10n0279",
+        "classification": "commentary",
+        "coverage": 0.3096,
+        "confidence": 0.4333,
+        "shared_tibetan": [
+          "Otani 761",
+          "Toh 1095",
+          "Toh 44"
+        ]
+      },
+      {
+        "digest_id": "T08n0251",
+        "source_id": "T08n0223",
+        "classification": "partial_digest",
+        "coverage": 0.4462,
+        "confidence": 0.4322,
+        "shared_tibetan": [
+          "Toh 21"
+        ]
+      },
+      {
+        "digest_id": "T21n1255a",
+        "source_id": "T21n1255b",
+        "classification": "retranslation",
+        "coverage": 0.3058,
+        "confidence": 0.4312,
+        "shared_tibetan": [
+          "Otani 182",
+          "Otani 613",
+          "Toh 564",
+          "Toh 988"
+        ]
+      },
+      {
+        "digest_id": "T08n0254",
+        "source_id": "T08n0252",
+        "classification": "retranslation",
+        "coverage": 0.4754,
+        "confidence": 0.4294,
+        "shared_tibetan": [
+          "Toh 21",
+          "Toh 531"
+        ]
+      },
+      {
+        "digest_id": "T08n0241",
+        "source_id": "T07n0220",
+        "classification": "partial_digest",
+        "coverage": 0.5152,
+        "confidence": 0.4286,
+        "shared_tibetan": [
+          "Toh 17",
+          "Toh 487",
+          "Toh 489"
+        ]
+      },
+      {
+        "digest_id": "T08n0250",
+        "source_id": "T08n0257",
+        "classification": "retranslation",
+        "coverage": 0.4161,
+        "confidence": 0.428,
+        "shared_tibetan": [
+          "Toh 21",
+          "Toh 531"
+        ]
+      },
+      {
+        "digest_id": "T08n0239",
+        "source_id": "T08n0235",
+        "classification": "retranslation",
+        "coverage": 0.3611,
+        "confidence": 0.4251,
+        "shared_tibetan": [
+          "Otani 739",
+          "Toh 16"
+        ]
+      },
+      {
+        "digest_id": "T10n0295",
+        "source_id": "T10n0294",
+        "classification": "shared_tradition",
+        "coverage": 0.2866,
+        "confidence": 0.4246,
+        "shared_tibetan": [
+          "Otani 761",
+          "Toh 44"
+        ]
+      },
+      {
+        "digest_id": "T08n0224",
+        "source_id": "T08n0221",
+        "classification": "retranslation",
+        "coverage": 0.3528,
+        "confidence": 0.4236,
+        "shared_tibetan": [
+          "Toh 9"
+        ]
+      },
+      {
+        "digest_id": "T08n0239",
+        "source_id": "T08n0236a",
+        "classification": "retranslation",
+        "coverage": 0.3607,
+        "confidence": 0.4224,
+        "shared_tibetan": [
+          "Otani 739",
+          "Toh 16"
+        ]
+      },
+      {
+        "digest_id": "T02n0138",
+        "source_id": "T02n0125",
+        "classification": "commentary",
+        "coverage": 0.4592,
+        "confidence": 0.4223,
+        "shared_tibetan": [
+          "Otani 752",
+          "Toh 36"
+        ]
+      },
+      {
+        "digest_id": "T08n0243",
+        "source_id": "T08n0244",
+        "classification": "shared_tradition",
+        "coverage": 0.2804,
+        "confidence": 0.4216,
+        "shared_tibetan": [
+          "Otani 119",
+          "Otani 121",
+          "Toh 17",
+          "Toh 487",
+          "Toh 489"
+        ]
+      },
+      {
+        "digest_id": "T08n0228",
+        "source_id": "T08n0223",
+        "classification": "retranslation",
+        "coverage": 0.3557,
+        "confidence": 0.4209,
+        "shared_tibetan": [
+          "Toh 21"
+        ]
+      },
+      {
+        "digest_id": "T08n0253",
+        "source_id": "T08n0223",
+        "classification": "commentary",
+        "coverage": 0.4642,
+        "confidence": 0.4208,
+        "shared_tibetan": [
+          "Toh 21"
+        ]
+      },
+      {
+        "digest_id": "T15n0641",
+        "source_id": "T15n0639",
+        "classification": "partial_digest",
+        "coverage": 0.6048,
+        "confidence": 0.4183,
+        "shared_tibetan": [
+          "Otani 795",
+          "Toh 127"
+        ]
+      },
+      {
+        "digest_id": "T19n0991",
+        "source_id": "T19n0993",
+        "classification": "retranslation",
+        "coverage": 0.3175,
+        "confidence": 0.4165,
+        "shared_tibetan": [
+          "Otani 334",
+          "Otani 689",
+          "Otani 901",
+          "Toh 1063",
+          "Toh 235",
+          "Toh 657"
+        ]
+      },
+      {
+        "digest_id": "T14n0475",
+        "source_id": "T14n0476",
+        "classification": "retranslation",
+        "coverage": 0.3095,
+        "confidence": 0.4151,
+        "shared_tibetan": [
+          "Otani 843",
+          "Toh 176",
+          "Toh 64"
+        ]
+      },
+      {
+        "digest_id": "T20n1095",
+        "source_id": "T20n1092",
+        "classification": "shared_tradition",
+        "coverage": 0.1928,
+        "confidence": 0.4142,
+        "shared_tibetan": [
+          "Toh 682",
+          "Toh 683",
+          "Toh 686",
+          "Toh 901"
+        ]
+      },
+      {
+        "digest_id": "T14n0454",
+        "source_id": "T14n0456",
+        "classification": "retranslation",
+        "coverage": 0.5965,
+        "confidence": 0.4137,
+        "shared_tibetan": [
+          "Toh 199"
+        ]
+      },
+      {
+        "digest_id": "T16n0670",
+        "source_id": "T16n0672",
+        "classification": "retranslation",
+        "coverage": 0.3209,
+        "confidence": 0.4134,
+        "shared_tibetan": [
+          "Otani 775",
+          "Otani 776",
+          "Toh 107",
+          "Toh 108"
+        ]
+      },
+      {
+        "digest_id": "T08n0221",
+        "source_id": "T08n0223",
+        "classification": "retranslation",
+        "coverage": 0.3518,
+        "confidence": 0.4127,
+        "shared_tibetan": [
+          "Otani 731",
+          "Toh 9"
+        ]
+      },
+      {
+        "digest_id": "T08n0239",
+        "source_id": "T08n0237",
+        "classification": "retranslation",
+        "coverage": 0.3335,
+        "confidence": 0.4121,
+        "shared_tibetan": [
+          "Otani 739",
+          "Toh 16"
+        ]
+      },
+      {
+        "digest_id": "T08n0222",
+        "source_id": "T08n0221",
+        "classification": "retranslation",
+        "coverage": 0.3314,
+        "confidence": 0.4119,
+        "shared_tibetan": [
+          "Otani 731",
+          "Toh 9"
+        ]
+      },
+      {
+        "digest_id": "T08n0240",
+        "source_id": "T08n0244",
+        "classification": "shared_tradition",
+        "coverage": 0.2477,
+        "confidence": 0.4094,
+        "shared_tibetan": [
+          "Otani 119",
+          "Otani 121",
+          "Toh 17",
+          "Toh 487",
+          "Toh 489"
+        ]
+      },
+      {
+        "digest_id": "T18n0865",
+        "source_id": "T18n0866",
+        "classification": "retranslation",
+        "coverage": 0.3131,
+        "confidence": 0.4076,
+        "shared_tibetan": [
+          "Toh 479"
+        ]
+      },
+      {
+        "digest_id": "T21n1313",
+        "source_id": "T21n1318",
+        "classification": "partial_digest",
+        "coverage": 0.5251,
+        "confidence": 0.4018,
+        "shared_tibetan": [
+          "Toh 647"
+        ]
+      },
+      {
+        "digest_id": "T19n1011",
+        "source_id": "T19n1012",
+        "classification": "shared_tradition",
+        "coverage": 0.2665,
+        "confidence": 0.4014,
+        "shared_tibetan": [
+          "Otani 539",
+          "Otani 808",
+          "Toh 140",
+          "Toh 525",
+          "Toh 914"
+        ]
+      },
+      {
+        "digest_id": "T08n0241",
+        "source_id": "T08n0244",
+        "classification": "shared_tradition",
+        "coverage": 0.2237,
+        "confidence": 0.3999,
+        "shared_tibetan": [
+          "Toh 17",
+          "Toh 487",
+          "Toh 489"
+        ]
+      },
+      {
+        "digest_id": "T16n0678",
+        "source_id": "T16n0675",
+        "classification": "shared_tradition",
+        "coverage": 0.2318,
+        "confidence": 0.3996,
+        "shared_tibetan": [
+          "Otani 774",
+          "Toh 106"
+        ]
+      },
+      {
+        "digest_id": "T08n0224",
+        "source_id": "T08n0223",
+        "classification": "shared_tradition",
+        "coverage": 0.2768,
+        "confidence": 0.3994,
+        "shared_tibetan": [
+          "Toh 9"
+        ]
+      },
+      {
+        "digest_id": "T08n0254",
+        "source_id": "T08n0223",
+        "classification": "commentary",
+        "coverage": 0.4208,
+        "confidence": 0.3985,
+        "shared_tibetan": [
+          "Toh 21"
+        ]
+      },
+      {
+        "digest_id": "T08n0225",
+        "source_id": "T08n0224",
+        "classification": "shared_tradition",
+        "coverage": 0.2766,
+        "confidence": 0.3975,
+        "shared_tibetan": [
+          "Otani 734",
+          "Toh 12"
+        ]
+      },
+      {
+        "digest_id": "T10n0281",
+        "source_id": "T10n0279",
+        "classification": "shared_tradition",
+        "coverage": 0.1446,
+        "confidence": 0.3975,
+        "shared_tibetan": [
+          "Otani 761",
+          "Toh 44"
+        ]
+      },
+      {
+        "digest_id": "T16n0679",
+        "source_id": "T16n0675",
+        "classification": "shared_tradition",
+        "coverage": 0.2225,
+        "confidence": 0.3973,
+        "shared_tibetan": [
+          "Toh 106"
+        ]
+      },
+      {
+        "digest_id": "T12n0353",
+        "source_id": "T11n0310",
+        "classification": "partial_digest",
+        "coverage": 0.5011,
+        "confidence": 0.3968,
+        "shared_tibetan": [
+          "Otani 760",
+          "Toh 92"
+        ]
+      },
+      {
+        "digest_id": "T12n0363",
+        "source_id": "T12n0364",
+        "classification": "shared_tradition",
+        "coverage": 0.2264,
+        "confidence": 0.3963,
+        "shared_tibetan": [
+          "Toh 49"
+        ]
+      },
+      {
+        "digest_id": "T08n0243",
+        "source_id": "T08n0241",
+        "classification": "shared_tradition",
+        "coverage": 0.2807,
+        "confidence": 0.3958,
+        "shared_tibetan": [
+          "Toh 17",
+          "Toh 487",
+          "Toh 489"
+        ]
+      },
+      {
+        "digest_id": "T12n0325",
+        "source_id": "T11n0310",
+        "classification": "partial_digest",
+        "coverage": 0.4596,
+        "confidence": 0.3952,
+        "shared_tibetan": [
+          "Otani 760",
+          "Toh 68"
+        ]
+      },
+      {
+        "digest_id": "T08n0233",
+        "source_id": "T11n0310",
+        "classification": "commentary",
+        "coverage": 0.5182,
+        "confidence": 0.3947,
+        "shared_tibetan": [
+          "Toh 24"
+        ]
+      },
+      {
+        "digest_id": "T14n0474",
+        "source_id": "T14n0475",
+        "classification": "shared_tradition",
+        "coverage": 0.2571,
+        "confidence": 0.3942,
+        "shared_tibetan": [
+          "Otani 843",
+          "Toh 176",
+          "Toh 64"
+        ]
+      },
+      {
+        "digest_id": "T16n0670",
+        "source_id": "T16n0671",
+        "classification": "shared_tradition",
+        "coverage": 0.2656,
+        "confidence": 0.3924,
+        "shared_tibetan": [
+          "Otani 775",
+          "Otani 776",
+          "Toh 107",
+          "Toh 108"
+        ]
+      },
+      {
+        "digest_id": "T20n1094",
+        "source_id": "T20n1092",
+        "classification": "shared_tradition",
+        "coverage": 0.1445,
+        "confidence": 0.3923,
+        "shared_tibetan": [
+          "Otani 366",
+          "Otani 526",
+          "Toh 682",
+          "Toh 683",
+          "Toh 686",
+          "Toh 901"
+        ]
+      },
+      {
+        "digest_id": "T17n0829",
+        "source_id": "T17n0830",
+        "classification": "retranslation",
+        "coverage": 0.3185,
+        "confidence": 0.391,
+        "shared_tibetan": [
+          "Otani 925",
+          "Toh 259"
+        ]
+      },
+      {
+        "digest_id": "T12n0360",
+        "source_id": "T12n0364",
+        "classification": "shared_tradition",
+        "coverage": 0.2246,
+        "confidence": 0.3902,
+        "shared_tibetan": [
+          "Toh 49"
+        ]
+      },
+      {
+        "digest_id": "T12n0358",
+        "source_id": "T12n0357",
+        "classification": "shared_tradition",
+        "coverage": 0.2494,
+        "confidence": 0.3893,
+        "shared_tibetan": [
+          "Otani 768",
+          "Toh 100"
+        ]
+      },
+      {
+        "digest_id": "T08n0222",
+        "source_id": "T08n0223",
+        "classification": "shared_tradition",
+        "coverage": 0.2525,
+        "confidence": 0.3893,
+        "shared_tibetan": [
+          "Otani 731",
+          "Toh 9"
+        ]
+      },
+      {
+        "digest_id": "T14n0575",
+        "source_id": "T11n0310",
+        "classification": "commentary",
+        "coverage": 0.4108,
+        "confidence": 0.3892,
+        "shared_tibetan": [
+          "Toh 226"
+        ]
+      },
+      {
+        "digest_id": "T14n0464",
+        "source_id": "T14n0467",
+        "classification": "shared_tradition",
+        "coverage": 0.2672,
+        "confidence": 0.3889,
+        "shared_tibetan": [
+          "Otani 777",
+          "Toh 109"
+        ]
+      },
+      {
+        "digest_id": "T08n0224",
+        "source_id": "T08n0222",
+        "classification": "shared_tradition",
+        "coverage": 0.2886,
+        "confidence": 0.3885,
+        "shared_tibetan": [
+          "Toh 9"
+        ]
+      },
+      {
+        "digest_id": "T08n0257",
+        "source_id": "T08n0228",
+        "classification": "commentary",
+        "coverage": 0.4712,
+        "confidence": 0.3884,
+        "shared_tibetan": [
+          "Toh 21"
+        ]
+      },
+      {
+        "digest_id": "T08n0253",
+        "source_id": "T08n0257",
+        "classification": "retranslation",
+        "coverage": 0.4679,
+        "confidence": 0.3882,
+        "shared_tibetan": [
+          "Otani 160",
+          "Toh 21",
+          "Toh 531"
+        ]
+      },
+      {
+        "digest_id": "T14n0466",
+        "source_id": "T14n0465",
+        "classification": "shared_tradition",
+        "coverage": 0.2639,
+        "confidence": 0.3872,
+        "shared_tibetan": [
+          "Otani 777",
+          "Toh 109"
+        ]
+      },
+      {
+        "digest_id": "T16n0663",
+        "source_id": "T16n0665",
+        "classification": "shared_tradition",
+        "coverage": 0.2237,
+        "confidence": 0.3872,
+        "shared_tibetan": [
+          "Otani 174",
+          "Otani 175",
+          "Otani 176",
+          "Toh 4379",
+          "Toh 555",
+          "Toh 556",
+          "Toh 557"
+        ]
+      },
+      {
+        "digest_id": "T20n1099",
+        "source_id": "T20n1092",
+        "classification": "shared_tradition",
+        "coverage": 0.1381,
+        "confidence": 0.3871,
+        "shared_tibetan": [
+          "Otani 366",
+          "Otani 526",
+          "Toh 682",
+          "Toh 683",
+          "Toh 686",
+          "Toh 901"
+        ]
+      },
+      {
+        "digest_id": "T14n0467",
+        "source_id": "T14n0466",
+        "classification": "shared_tradition",
+        "coverage": 0.2467,
+        "confidence": 0.3864,
+        "shared_tibetan": [
+          "Otani 777",
+          "Toh 109"
+        ]
+      },
+      {
+        "digest_id": "T12n0376",
+        "source_id": "T12n0375",
+        "classification": "shared_tradition",
+        "coverage": 0.2229,
+        "confidence": 0.3864,
+        "shared_tibetan": [
+          "Otani 788",
+          "Toh 120"
+        ]
+      },
+      {
+        "digest_id": "T13n0407",
+        "source_id": "T13n0405",
+        "classification": "shared_tradition",
+        "coverage": 0.2484,
+        "confidence": 0.3857,
+        "shared_tibetan": [
+          "Otani 926",
+          "Toh 260"
+        ]
+      },
+      {
+        "digest_id": "T08n0252",
+        "source_id": "T08n0223",
+        "classification": "commentary",
+        "coverage": 0.3858,
+        "confidence": 0.3851,
+        "shared_tibetan": [
+          "Toh 21"
+        ]
+      },
+      {
+        "digest_id": "T21n1344",
+        "source_id": "T21n1345",
+        "classification": "shared_tradition",
+        "coverage": 0.277,
+        "confidence": 0.3838,
+        "shared_tibetan": [
+          "Otani 807",
+          "Toh 139"
+        ]
+      },
+      {
+        "digest_id": "T08n0255",
+        "source_id": "T08n0257",
+        "classification": "retranslation",
+        "coverage": 0.4335,
+        "confidence": 0.3819,
+        "shared_tibetan": [
+          "Toh 21",
+          "Toh 531"
+        ]
+      },
+      {
+        "digest_id": "T30n1581",
+        "source_id": "T30n1579",
+        "classification": "shared_tradition",
+        "coverage": 0.1957,
+        "confidence": 0.3816,
+        "shared_tibetan": [
+          "Toh 4037"
+        ]
+      },
+      {
+        "digest_id": "T20n1188",
+        "source_id": "T20n1189",
+        "classification": "shared_tradition",
+        "coverage": 0.235,
+        "confidence": 0.3811,
+        "shared_tibetan": [
+          "Toh 360"
+        ]
+      },
+      {
+        "digest_id": "T04n0213",
+        "source_id": "T04n0212",
+        "classification": "partial_digest",
+        "coverage": 0.4628,
+        "confidence": 0.3802,
+        "shared_tibetan": [
+          "Otani 992",
+          "Toh 326",
+          "Toh 4099"
+        ]
+      },
+      {
+        "digest_id": "T08n0239",
+        "source_id": "T07n0220",
+        "classification": "commentary",
+        "coverage": 0.4441,
+        "confidence": 0.3797,
+        "shared_tibetan": [
+          "Toh 16"
+        ]
+      },
+      {
+        "digest_id": "T14n0430",
+        "source_id": "T14n0431",
+        "classification": "shared_tradition",
+        "coverage": 0.1989,
+        "confidence": 0.3793,
+        "shared_tibetan": [
+          "Otani 937",
+          "Otani 943",
+          "Toh 271",
+          "Toh 277",
+          "Toh 278"
+        ]
+      },
+      {
+        "digest_id": "T08n0227",
+        "source_id": "T08n0224",
+        "classification": "shared_tradition",
+        "coverage": 0.2723,
+        "confidence": 0.3789,
+        "shared_tibetan": [
+          "Otani 734",
+          "Toh 12"
+        ]
+      },
+      {
+        "digest_id": "T08n0254",
+        "source_id": "T08n0251",
+        "classification": "retranslation",
+        "coverage": 0.3187,
+        "confidence": 0.3788,
+        "shared_tibetan": [
+          "Toh 21",
+          "Toh 531"
+        ]
+      },
+      {
+        "digest_id": "T08n0257",
+        "source_id": "T08n0223",
+        "classification": "commentary",
+        "coverage": 0.4059,
+        "confidence": 0.3783,
+        "shared_tibetan": [
+          "Toh 21"
+        ]
+      },
+      {
+        "digest_id": "T20n1163",
+        "source_id": "T20n1164",
+        "classification": "shared_tradition",
+        "coverage": 0.2216,
+        "confidence": 0.377,
+        "shared_tibetan": [
+          "Otani 341",
+          "Otani 632",
+          "Toh 1007",
+          "Toh 662"
+        ]
+      },
+      {
+        "digest_id": "T10n0296",
+        "source_id": "T09n0278",
+        "classification": "commentary",
+        "coverage": 0.4477,
+        "confidence": 0.3765,
+        "shared_tibetan": [
+          "Otani 716",
+          "Otani 761",
+          "Toh 1095",
+          "Toh 4377",
+          "Toh 44"
+        ]
+      },
+      {
+        "digest_id": "T16n0679",
+        "source_id": "T16n0676",
+        "classification": "shared_tradition",
+        "coverage": 0.1644,
+        "confidence": 0.376,
+        "shared_tibetan": [
+          "Toh 106"
+        ]
+      },
+      {
+        "digest_id": "T14n0464",
+        "source_id": "T26n1531",
+        "classification": "partial_digest",
+        "coverage": 0.5535,
+        "confidence": 0.3758,
+        "shared_tibetan": [
+          "Toh 109"
+        ]
+      },
+      {
+        "digest_id": "T08n0255",
+        "source_id": "T08n0252",
+        "classification": "retranslation",
+        "coverage": 0.4007,
+        "confidence": 0.3754,
+        "shared_tibetan": [
+          "Toh 21",
+          "Toh 531"
+        ]
+      },
+      {
+        "digest_id": "T31n1596",
+        "source_id": "T31n1595",
+        "classification": "shared_tradition",
+        "coverage": 0.2275,
+        "confidence": 0.3744,
+        "shared_tibetan": [
+          "Toh 4050"
+        ]
+      },
+      {
+        "digest_id": "T19n0974A",
+        "source_id": "T19n0974C",
+        "classification": "retranslation",
+        "coverage": 0.4329,
+        "confidence": 0.3743,
+        "shared_tibetan": [
+          "Toh 594",
+          "Toh 595",
+          "Toh 596",
+          "Toh 597",
+          "Toh 598",
+          "Toh 984"
+        ]
+      },
+      {
+        "digest_id": "T24n1489",
+        "source_id": "T24n1490",
+        "classification": "shared_tradition",
+        "coverage": 0.2381,
+        "confidence": 0.3743,
+        "shared_tibetan": [
+          "Otani 846",
+          "Toh 179"
+        ]
+      },
+      {
+        "digest_id": "T16n0678",
+        "source_id": "T16n0676",
+        "classification": "shared_tradition",
+        "coverage": 0.1748,
+        "confidence": 0.3736,
+        "shared_tibetan": [
+          "Otani 774",
+          "Toh 106"
+        ]
+      },
+      {
+        "digest_id": "T20n1081",
+        "source_id": "T20n1080",
+        "classification": "shared_tradition",
+        "coverage": 0.161,
+        "confidence": 0.3735,
+        "shared_tibetan": [
+          "Otani 370",
+          "Otani 523",
+          "Toh 692",
+          "Toh 898"
+        ]
+      },
+      {
+        "digest_id": "T11n0314",
+        "source_id": "T11n0316",
+        "classification": "shared_tradition",
+        "coverage": 0.1397,
+        "confidence": 0.3728,
+        "shared_tibetan": [
+          "Otani 760"
+        ]
+      },
+      {
+        "digest_id": "T31n1596",
+        "source_id": "T31n1597",
+        "classification": "shared_tradition",
+        "coverage": 0.2266,
+        "confidence": 0.3711,
+        "shared_tibetan": [
+          "Toh 4050"
+        ]
+      },
+      {
+        "digest_id": "T12n0360",
+        "source_id": "T12n0361",
+        "classification": "shared_tradition",
+        "coverage": 0.1655,
+        "confidence": 0.371,
+        "shared_tibetan": [
+          "Otani 760",
+          "Toh 49"
+        ]
+      },
+      {
+        "digest_id": "T08n0243",
+        "source_id": "T08n0240",
+        "classification": "shared_tradition",
+        "coverage": 0.206,
+        "confidence": 0.3708,
+        "shared_tibetan": [
+          "Otani 119",
+          "Otani 121",
+          "Toh 17",
+          "Toh 487",
+          "Toh 489"
+        ]
+      },
+      {
+        "digest_id": "T19n1014",
+        "source_id": "T19n1018",
+        "classification": "shared_tradition",
+        "coverage": 0.1822,
+        "confidence": 0.3703,
+        "shared_tibetan": [
+          "Otani 539",
+          "Otani 808",
+          "Toh 140",
+          "Toh 525",
+          "Toh 914"
+        ]
+      },
+      {
+        "digest_id": "T19n0992",
+        "source_id": "T19n0993",
+        "classification": "shared_tradition",
+        "coverage": 0.2327,
+        "confidence": 0.3698,
+        "shared_tibetan": [
+          "Otani 334",
+          "Toh 1063",
+          "Toh 235",
+          "Toh 657"
+        ]
+      },
+      {
+        "digest_id": "T08n0253",
+        "source_id": "T08n0255",
+        "classification": "retranslation",
+        "coverage": 0.4477,
+        "confidence": 0.3692,
+        "shared_tibetan": [
+          "Toh 21",
+          "Toh 531"
+        ]
+      },
+      {
+        "digest_id": "T12n0360",
+        "source_id": "T12n0362",
+        "classification": "shared_tradition",
+        "coverage": 0.1611,
+        "confidence": 0.3686,
+        "shared_tibetan": [
+          "Otani 760",
+          "Toh 49"
+        ]
+      },
+      {
+        "digest_id": "T19n1016",
+        "source_id": "T19n1018",
+        "classification": "shared_tradition",
+        "coverage": 0.1956,
+        "confidence": 0.3686,
+        "shared_tibetan": [
+          "Otani 539",
+          "Otani 808",
+          "Toh 140",
+          "Toh 525",
+          "Toh 914"
+        ]
+      },
+      {
+        "digest_id": "T08n0254",
+        "source_id": "T08n0257",
+        "classification": "retranslation",
+        "coverage": 0.4542,
+        "confidence": 0.3681,
+        "shared_tibetan": [
+          "Toh 21",
+          "Toh 531"
+        ]
+      },
+      {
+        "digest_id": "T31n1594",
+        "source_id": "T31n1593",
+        "classification": "shared_tradition",
+        "coverage": 0.2066,
+        "confidence": 0.3677,
+        "shared_tibetan": [
+          "Toh 4048"
+        ]
+      },
+      {
+        "digest_id": "T08n0236a",
+        "source_id": "T07n0220",
+        "classification": "commentary",
+        "coverage": 0.4303,
+        "confidence": 0.3673,
+        "shared_tibetan": [
+          "Toh 16"
+        ]
+      },
+      {
+        "digest_id": "T20n1154",
+        "source_id": "T20n1153",
+        "classification": "shared_tradition",
+        "coverage": 0.1334,
+        "confidence": 0.3672,
+        "shared_tibetan": [
+          "Otani 179",
+          "Toh 561"
+        ]
+      },
+      {
+        "digest_id": "T11n0319",
+        "source_id": "T11n0310",
+        "classification": "commentary",
+        "coverage": 0.476,
+        "confidence": 0.3669,
+        "shared_tibetan": [
+          "Otani 760",
+          "Toh 59"
+        ]
+      },
+      {
+        "digest_id": "T10n0296",
+        "source_id": "T10n0294",
+        "classification": "shared_tradition",
+        "coverage": 0.1023,
+        "confidence": 0.3662,
+        "shared_tibetan": [
+          "Otani 761",
+          "Toh 1095",
+          "Toh 44"
+        ]
+      },
+      {
+        "digest_id": "T08n0257",
+        "source_id": "T08n0252",
+        "classification": "retranslation",
+        "coverage": 0.437,
+        "confidence": 0.3657,
+        "shared_tibetan": [
+          "Otani 160",
+          "Toh 21",
+          "Toh 531"
+        ]
+      },
+      {
+        "digest_id": "T08n0255",
+        "source_id": "T08n0223",
+        "classification": "commentary",
+        "coverage": 0.3592,
+        "confidence": 0.3651,
+        "shared_tibetan": [
+          "Toh 21"
+        ]
+      },
+      {
+        "digest_id": "T10n0304",
+        "source_id": "T10n0302",
+        "classification": "shared_tradition",
+        "coverage": 0.2027,
+        "confidence": 0.3651,
+        "shared_tibetan": [
+          "Otani 852",
+          "Toh 185"
+        ]
+      },
+      {
+        "digest_id": "T12n0336",
+        "source_id": "T12n0339",
+        "classification": "shared_tradition",
+        "coverage": 0.1699,
+        "confidence": 0.3644,
+        "shared_tibetan": [
+          "Otani 760"
+        ]
+      },
+      {
+        "digest_id": "T08n0253",
+        "source_id": "T08n0228",
+        "classification": "commentary",
+        "coverage": 0.4092,
+        "confidence": 0.3642,
+        "shared_tibetan": [
+          "Toh 21"
+        ]
+      },
+      {
+        "digest_id": "T17n0829",
+        "source_id": "T17n0828",
+        "classification": "shared_tradition",
+        "coverage": 0.1994,
+        "confidence": 0.3641,
+        "shared_tibetan": [
+          "Otani 925",
+          "Toh 259"
+        ]
+      },
+      {
+        "digest_id": "T21n1352",
+        "source_id": "T21n1354",
+        "classification": "shared_tradition",
+        "coverage": 0.1163,
+        "confidence": 0.364,
+        "shared_tibetan": [
+          "Otani 195",
+          "Otani 483",
+          "Toh 528",
+          "Toh 858"
+        ]
+      },
+      {
+        "digest_id": "T08n0240",
+        "source_id": "T07n0220",
+        "classification": "commentary",
+        "coverage": 0.4003,
+        "confidence": 0.3639,
+        "shared_tibetan": [
+          "Toh 17",
+          "Toh 487",
+          "Toh 489"
+        ]
+      },
+      {
+        "digest_id": "T20n1111",
+        "source_id": "T20n1112",
+        "classification": "shared_tradition",
+        "coverage": 0.1172,
+        "confidence": 0.3638,
+        "shared_tibetan": [
+          "Toh 697",
+          "Toh 905"
+        ]
+      },
+      {
+        "digest_id": "T08n0250",
+        "source_id": "T08n0255",
+        "classification": "retranslation",
+        "coverage": 0.3221,
+        "confidence": 0.3638,
+        "shared_tibetan": [
+          "Toh 21",
+          "Toh 531"
+        ]
+      },
+      {
+        "digest_id": "T16n0709",
+        "source_id": "T16n0711",
+        "classification": "shared_tradition",
+        "coverage": 0.1922,
+        "confidence": 0.3633,
+        "shared_tibetan": [
+          "Otani 876",
+          "Toh 210"
+        ]
+      },
+      {
+        "digest_id": "T08n0235",
+        "source_id": "T07n0220",
+        "classification": "commentary",
+        "coverage": 0.4141,
+        "confidence": 0.3631,
+        "shared_tibetan": [
+          "Toh 16"
+        ]
+      },
+      {
+        "digest_id": "T16n0672",
+        "source_id": "T16n0671",
+        "classification": "shared_tradition",
+        "coverage": 0.2037,
+        "confidence": 0.3628,
+        "shared_tibetan": [
+          "Otani 775",
+          "Otani 776",
+          "Toh 107",
+          "Toh 108"
+        ]
+      },
+      {
+        "digest_id": "T12n0348",
+        "source_id": "T12n0323",
+        "classification": "shared_tradition",
+        "coverage": 0.1375,
+        "confidence": 0.3627,
+        "shared_tibetan": [
+          "Otani 760"
+        ]
+      },
+      {
+        "digest_id": "T12n0348",
+        "source_id": "T12n0341",
+        "classification": "shared_tradition",
+        "coverage": 0.1078,
+        "confidence": 0.3626,
+        "shared_tibetan": [
+          "Otani 760"
+        ]
+      },
+      {
+        "digest_id": "T12n0336",
+        "source_id": "T12n0341",
+        "classification": "shared_tradition",
+        "coverage": 0.1294,
+        "confidence": 0.3622,
+        "shared_tibetan": [
+          "Otani 760"
+        ]
+      },
+      {
+        "digest_id": "T30n1582",
+        "source_id": "T30n1579",
+        "classification": "shared_tradition",
+        "coverage": 0.1387,
+        "confidence": 0.3622,
+        "shared_tibetan": [
+          "Toh 4037"
+        ]
+      },
+      {
+        "digest_id": "T08n0242",
+        "source_id": "T08n0240",
+        "classification": "shared_tradition",
+        "coverage": 0.2206,
+        "confidence": 0.3621,
+        "shared_tibetan": [
+          "Otani 119",
+          "Otani 121",
+          "Toh 17",
+          "Toh 487",
+          "Toh 489"
+        ]
+      },
+      {
+        "digest_id": "T20n1138a",
+        "source_id": "T20n1138b",
+        "classification": "shared_tradition",
+        "coverage": 0.2012,
+        "confidence": 0.3617,
+        "shared_tibetan": [
+          "Toh 614",
+          "Toh 915"
+        ]
+      },
+      {
+        "digest_id": "T16n0711",
+        "source_id": "T16n0712",
+        "classification": "shared_tradition",
+        "coverage": 0.167,
+        "confidence": 0.3609,
+        "shared_tibetan": [
+          "Toh 210"
+        ]
+      },
+      {
+        "digest_id": "T08n0242",
+        "source_id": "T08n0241",
+        "classification": "shared_tradition",
+        "coverage": 0.2108,
+        "confidence": 0.3607,
+        "shared_tibetan": [
+          "Toh 17",
+          "Toh 487",
+          "Toh 489"
+        ]
+      },
+      {
+        "digest_id": "T12n0348",
+        "source_id": "T11n0310",
+        "classification": "commentary",
+        "coverage": 0.3494,
+        "confidence": 0.3599,
+        "shared_tibetan": [
+          "Otani 760",
+          "Toh 85"
+        ]
+      },
+      {
+        "digest_id": "T14n0464",
+        "source_id": "T14n0466",
+        "classification": "shared_tradition",
+        "coverage": 0.182,
+        "confidence": 0.3598,
+        "shared_tibetan": [
+          "Otani 777",
+          "Toh 109"
+        ]
+      },
+      {
+        "digest_id": "T19n1022A",
+        "source_id": "T19n1023",
+        "classification": "shared_tradition",
+        "coverage": 0.1715,
+        "confidence": 0.3591,
+        "shared_tibetan": [
+          "Toh 507"
+        ]
+      },
+      {
+        "digest_id": "T10n0295",
+        "source_id": "T10n0286",
+        "classification": "shared_tradition",
+        "coverage": 0.1189,
+        "confidence": 0.3591,
+        "shared_tibetan": [
+          "Otani 761",
+          "Toh 44"
+        ]
+      },
+      {
+        "digest_id": "T16n0710",
+        "source_id": "T16n0712",
+        "classification": "shared_tradition",
+        "coverage": 0.1793,
+        "confidence": 0.3585,
+        "shared_tibetan": [
+          "Toh 210"
+        ]
+      },
+      {
+        "digest_id": "T21n1355",
+        "source_id": "T21n1354",
+        "classification": "shared_tradition",
+        "coverage": 0.1776,
+        "confidence": 0.3583,
+        "shared_tibetan": [
+          "Otani 195",
+          "Otani 483",
+          "Toh 528",
+          "Toh 858"
+        ]
+      },
+      {
+        "digest_id": "T17n0828",
+        "source_id": "T17n0830",
+        "classification": "shared_tradition",
+        "coverage": 0.2045,
+        "confidence": 0.3579,
+        "shared_tibetan": [
+          "Otani 925",
+          "Toh 259"
+        ]
+      },
+      {
+        "digest_id": "T21n1334",
+        "source_id": "T21n1333",
+        "classification": "shared_tradition",
+        "coverage": 0.1915,
+        "confidence": 0.3572,
+        "shared_tibetan": [
+          "Otani 152",
+          "Otani 477",
+          "Otani 936",
+          "Toh 270",
+          "Toh 512",
+          "Toh 852"
+        ]
+      },
+      {
+        "digest_id": "T11n0319",
+        "source_id": "T11n0316",
+        "classification": "shared_tradition",
+        "coverage": 0.1423,
+        "confidence": 0.3563,
+        "shared_tibetan": [
+          "Otani 760"
+        ]
+      },
+      {
+        "digest_id": "T20n1082",
+        "source_id": "T20n1080",
+        "classification": "shared_tradition",
+        "coverage": 0.1472,
+        "confidence": 0.3554,
+        "shared_tibetan": [
+          "Otani 370",
+          "Otani 523",
+          "Toh 692",
+          "Toh 898"
+        ]
+      },
+      {
+        "digest_id": "T49n2031",
+        "source_id": "T49n2033",
+        "classification": "shared_tradition",
+        "coverage": 0.1694,
+        "confidence": 0.3552,
+        "shared_tibetan": [
+          "Toh 4138"
+        ]
+      },
+      {
+        "digest_id": "T12n0364",
+        "source_id": "T12n0362",
+        "classification": "shared_tradition",
+        "coverage": 0.16,
+        "confidence": 0.3545,
+        "shared_tibetan": [
+          "Toh 49"
+        ]
+      },
+      {
+        "digest_id": "T08n0254",
+        "source_id": "T08n0228",
+        "classification": "commentary",
+        "coverage": 0.3838,
+        "confidence": 0.3543,
+        "shared_tibetan": [
+          "Toh 21"
+        ]
+      },
+      {
+        "digest_id": "T08n0224",
+        "source_id": "T08n0228",
+        "classification": "shared_tradition",
+        "coverage": 0.1823,
+        "confidence": 0.3522,
+        "shared_tibetan": [
+          "Otani 734",
+          "Toh 12"
+        ]
+      },
+      {
+        "digest_id": "T08n0236b",
+        "source_id": "T07n0220",
+        "classification": "commentary",
+        "coverage": 0.3894,
+        "confidence": 0.3516,
+        "shared_tibetan": [
+          "Toh 16"
+        ]
+      },
+      {
+        "digest_id": "T13n0407",
+        "source_id": "T13n0406",
+        "classification": "shared_tradition",
+        "coverage": 0.1796,
+        "confidence": 0.3509,
+        "shared_tibetan": [
+          "Toh 260"
+        ]
+      },
+      {
+        "digest_id": "T13n0406",
+        "source_id": "T13n0405",
+        "classification": "shared_tradition",
+        "coverage": 0.1644,
+        "confidence": 0.3505,
+        "shared_tibetan": [
+          "Toh 260"
+        ]
+      },
+      {
+        "digest_id": "T19n0989",
+        "source_id": "T19n0993",
+        "classification": "shared_tradition",
+        "coverage": 0.1692,
+        "confidence": 0.3505,
+        "shared_tibetan": [
+          "Otani 334",
+          "Otani 689",
+          "Otani 901",
+          "Toh 1063",
+          "Toh 235",
+          "Toh 657"
+        ]
+      },
+      {
+        "digest_id": "T21n1353",
+        "source_id": "T21n1354",
+        "classification": "shared_tradition",
+        "coverage": 0.1126,
+        "confidence": 0.3504,
+        "shared_tibetan": [
+          "Otani 195",
+          "Otani 483",
+          "Toh 528",
+          "Toh 858"
+        ]
+      },
+      {
+        "digest_id": "T09n0267",
+        "source_id": "T09n0268",
+        "classification": "shared_tradition",
+        "coverage": 0.1855,
+        "confidence": 0.3503,
+        "shared_tibetan": [
+          "Otani 906",
+          "Toh 240"
+        ]
+      },
+      {
+        "digest_id": "T21n1356",
+        "source_id": "T21n1358",
+        "classification": "shared_tradition",
+        "coverage": 0.1159,
+        "confidence": 0.35,
+        "shared_tibetan": [
+          "Otani 316",
+          "Otani 511",
+          "Toh 516",
+          "Toh 886"
+        ]
+      },
+      {
+        "digest_id": "T20n1057b",
+        "source_id": "T20n1060",
+        "classification": "shared_tradition",
+        "coverage": 0.1408,
+        "confidence": 0.3496,
+        "shared_tibetan": [
+          "Toh 690",
+          "Toh 691",
+          "Toh 897"
+        ]
+      },
+      {
+        "digest_id": "T15n0629",
+        "source_id": "T15n0626",
+        "classification": "shared_tradition",
+        "coverage": 0.111,
+        "confidence": 0.3493,
+        "shared_tibetan": [
+          "Otani 882",
+          "Toh 216"
+        ]
+      },
+      {
+        "digest_id": "T08n0255",
+        "source_id": "T08n0251",
+        "classification": "retranslation",
+        "coverage": 0.3368,
+        "confidence": 0.3493,
+        "shared_tibetan": [
+          "Toh 21",
+          "Toh 531"
+        ]
+      },
+      {
+        "digest_id": "T11n0314",
+        "source_id": "T11n0312",
+        "classification": "shared_tradition",
+        "coverage": 0.1136,
+        "confidence": 0.3493,
+        "shared_tibetan": [
+          "Otani 760"
+        ]
+      },
+      {
+        "digest_id": "T19n1019",
+        "source_id": "T10n0279",
+        "classification": "commentary",
+        "coverage": 0.3406,
+        "confidence": 0.3492,
+        "shared_tibetan": [
+          "Toh 44"
+        ]
+      },
+      {
+        "digest_id": "T08n0242",
+        "source_id": "T08n0243",
+        "classification": "shared_tradition",
+        "coverage": 0.1956,
+        "confidence": 0.349,
+        "shared_tibetan": [
+          "Otani 119",
+          "Otani 121",
+          "Toh 17",
+          "Toh 487",
+          "Toh 489"
+        ]
+      },
+      {
+        "digest_id": "T12n0364",
+        "source_id": "T12n0361",
+        "classification": "shared_tradition",
+        "coverage": 0.153,
+        "confidence": 0.3477,
+        "shared_tibetan": [
+          "Toh 49"
+        ]
+      },
+      {
+        "digest_id": "T08n0254",
+        "source_id": "T08n0255",
+        "classification": "retranslation",
+        "coverage": 0.412,
+        "confidence": 0.3476,
+        "shared_tibetan": [
+          "Toh 21",
+          "Toh 531"
+        ]
+      },
+      {
+        "digest_id": "T20n1071",
+        "source_id": "T20n1070",
+        "classification": "shared_tradition",
+        "coverage": 0.1628,
+        "confidence": 0.3476,
+        "shared_tibetan": [
+          "Otani 373",
+          "Otani 374",
+          "Otani 524",
+          "Toh 693",
+          "Toh 694",
+          "Toh 899"
+        ]
+      },
+      {
+        "digest_id": "T19n1012",
+        "source_id": "T19n1018",
+        "classification": "shared_tradition",
+        "coverage": 0.141,
+        "confidence": 0.3475,
+        "shared_tibetan": [
+          "Otani 539",
+          "Otani 808",
+          "Toh 140",
+          "Toh 525",
+          "Toh 914"
+        ]
+      },
+      {
+        "digest_id": "T08n0237",
+        "source_id": "T07n0220",
+        "classification": "commentary",
+        "coverage": 0.3779,
+        "confidence": 0.3469,
+        "shared_tibetan": [
+          "Toh 16"
+        ]
+      },
+      {
+        "digest_id": "T30n1582",
+        "source_id": "T30n1581",
+        "classification": "shared_tradition",
+        "coverage": 0.1717,
+        "confidence": 0.3467,
+        "shared_tibetan": [
+          "Toh 4037"
+        ]
+      },
+      {
+        "digest_id": "T14n0576",
+        "source_id": "T11n0310",
+        "classification": "shared_tradition",
+        "coverage": 0.2974,
+        "confidence": 0.3465,
+        "shared_tibetan": [
+          "Toh 226"
+        ]
+      },
+      {
+        "digest_id": "T19n0974B",
+        "source_id": "T19n0974C",
+        "classification": "shared_tradition",
+        "coverage": 0.1847,
+        "confidence": 0.3453,
+        "shared_tibetan": [
+          "Toh 594",
+          "Toh 595",
+          "Toh 596",
+          "Toh 597",
+          "Toh 598",
+          "Toh 984"
+        ]
+      },
+      {
+        "digest_id": "T12n0358",
+        "source_id": "T12n0359",
+        "classification": "shared_tradition",
+        "coverage": 0.1248,
+        "confidence": 0.345,
+        "shared_tibetan": [
+          "Otani 768",
+          "Toh 100"
+        ]
+      },
+      {
+        "digest_id": "T13n0406",
+        "source_id": "T13n0408",
+        "classification": "shared_tradition",
+        "coverage": 0.1428,
+        "confidence": 0.3449,
+        "shared_tibetan": [
+          "Toh 260"
+        ]
+      },
+      {
+        "digest_id": "T20n1162",
+        "source_id": "T20n1163",
+        "classification": "shared_tradition",
+        "coverage": 0.2307,
+        "confidence": 0.3445,
+        "shared_tibetan": [
+          "Otani 341",
+          "Otani 632",
+          "Toh 1007",
+          "Toh 662"
+        ]
+      },
+      {
+        "digest_id": "T31n1597",
+        "source_id": "T31n1595",
+        "classification": "shared_tradition",
+        "coverage": 0.1465,
+        "confidence": 0.3435,
+        "shared_tibetan": [
+          "Toh 4050"
+        ]
+      },
+      {
+        "digest_id": "T19n1016",
+        "source_id": "T19n1014",
+        "classification": "shared_tradition",
+        "coverage": 0.15,
+        "confidence": 0.3434,
+        "shared_tibetan": [
+          "Otani 539",
+          "Otani 808",
+          "Toh 140",
+          "Toh 525",
+          "Toh 914"
+        ]
+      },
+      {
+        "digest_id": "T13n0405",
+        "source_id": "T13n0408",
+        "classification": "shared_tradition",
+        "coverage": 0.1674,
+        "confidence": 0.343,
+        "shared_tibetan": [
+          "Otani 926",
+          "Toh 260"
+        ]
+      },
+      {
+        "digest_id": "T20n1138a",
+        "source_id": "T20n1139",
+        "classification": "shared_tradition",
+        "coverage": 0.1282,
+        "confidence": 0.3428,
+        "shared_tibetan": [
+          "Toh 614",
+          "Toh 915"
+        ]
+      },
+      {
+        "digest_id": "T20n1138a",
+        "source_id": "T20n1137",
+        "classification": "shared_tradition",
+        "coverage": 0.1248,
+        "confidence": 0.3424,
+        "shared_tibetan": [
+          "Toh 614",
+          "Toh 915"
+        ]
+      },
+      {
+        "digest_id": "T08n0257",
+        "source_id": "T08n0251",
+        "classification": "retranslation",
+        "coverage": 0.3017,
+        "confidence": 0.3422,
+        "shared_tibetan": [
+          "Otani 160",
+          "Toh 21",
+          "Toh 531"
+        ]
+      },
+      {
+        "digest_id": "T13n0407",
+        "source_id": "T13n0408",
+        "classification": "shared_tradition",
+        "coverage": 0.1383,
+        "confidence": 0.3421,
+        "shared_tibetan": [
+          "Otani 926",
+          "Toh 260"
+        ]
+      },
+      {
+        "digest_id": "T21n1352",
+        "source_id": "T21n1353",
+        "classification": "shared_tradition",
+        "coverage": 0.1128,
+        "confidence": 0.3418,
+        "shared_tibetan": [
+          "Otani 195",
+          "Otani 483",
+          "Toh 528",
+          "Toh 858"
+        ]
+      },
+      {
+        "digest_id": "T11n0312",
+        "source_id": "T11n0316",
+        "classification": "shared_tradition",
+        "coverage": 0.1349,
+        "confidence": 0.3417,
+        "shared_tibetan": [
+          "Otani 760"
+        ]
+      },
+      {
+        "digest_id": "T10n0294",
+        "source_id": "T09n0278",
+        "classification": "commentary",
+        "coverage": 0.4316,
+        "confidence": 0.3413,
+        "shared_tibetan": [
+          "Otani 761",
+          "Toh 1095",
+          "Toh 44"
+        ]
+      },
+      {
+        "digest_id": "T19n1017",
+        "source_id": "T19n1018",
+        "classification": "shared_tradition",
+        "coverage": 0.1507,
+        "confidence": 0.341,
+        "shared_tibetan": [
+          "Otani 539",
+          "Otani 808",
+          "Toh 140",
+          "Toh 525",
+          "Toh 914"
+        ]
+      },
+      {
+        "digest_id": "T08n0243",
+        "source_id": "T07n0220",
+        "classification": "commentary",
+        "coverage": 0.3193,
+        "confidence": 0.3405,
+        "shared_tibetan": [
+          "Toh 17",
+          "Toh 487",
+          "Toh 489"
+        ]
+      },
+      {
+        "digest_id": "T08n0251",
+        "source_id": "T08n0228",
+        "classification": "commentary",
+        "coverage": 0.3231,
+        "confidence": 0.3391,
+        "shared_tibetan": [
+          "Toh 21"
+        ]
+      },
+      {
+        "digest_id": "T19n1009",
+        "source_id": "T19n1018",
+        "classification": "shared_tradition",
+        "coverage": 0.1467,
+        "confidence": 0.3389,
+        "shared_tibetan": [
+          "Otani 539",
+          "Otani 808",
+          "Toh 140",
+          "Toh 525",
+          "Toh 914"
+        ]
+      },
+      {
+        "digest_id": "T08n0242",
+        "source_id": "T07n0220",
+        "classification": "commentary",
+        "coverage": 0.3346,
+        "confidence": 0.3388,
+        "shared_tibetan": [
+          "Toh 17",
+          "Toh 487",
+          "Toh 489"
+        ]
+      },
+      {
+        "digest_id": "T19n1019",
+        "source_id": "T10n0293",
+        "classification": "commentary",
+        "coverage": 0.3614,
+        "confidence": 0.3383,
+        "shared_tibetan": [
+          "Toh 44"
+        ]
+      },
+      {
+        "digest_id": "T20n1083",
+        "source_id": "T20n1082",
+        "classification": "shared_tradition",
+        "coverage": 0.1272,
+        "confidence": 0.338,
+        "shared_tibetan": [
+          "Otani 370",
+          "Otani 523",
+          "Toh 692",
+          "Toh 898"
+        ]
+      },
+      {
+        "digest_id": "T10n0302",
+        "source_id": "T10n0303",
+        "classification": "shared_tradition",
+        "coverage": 0.1291,
+        "confidence": 0.3374,
+        "shared_tibetan": [
+          "Otani 852",
+          "Toh 185"
+        ]
+      },
+      {
+        "digest_id": "T19n1016",
+        "source_id": "T19n1009",
+        "classification": "shared_tradition",
+        "coverage": 0.1405,
+        "confidence": 0.3373,
+        "shared_tibetan": [
+          "Otani 539",
+          "Otani 808",
+          "Toh 140",
+          "Toh 525",
+          "Toh 914"
+        ]
+      },
+      {
+        "digest_id": "T08n0255",
+        "source_id": "T08n0228",
+        "classification": "commentary",
+        "coverage": 0.3351,
+        "confidence": 0.3372,
+        "shared_tibetan": [
+          "Toh 21"
+        ]
+      },
+      {
+        "digest_id": "T14n0428",
+        "source_id": "T14n0427",
+        "classification": "retranslation",
+        "coverage": 0.3475,
+        "confidence": 0.3369,
+        "shared_tibetan": [
+          "Otani 937",
+          "Toh 271",
+          "Toh 278"
+        ]
+      },
+      {
+        "digest_id": "T10n0286",
+        "source_id": "T10n0287",
+        "classification": "shared_tradition",
+        "coverage": 0.1486,
+        "confidence": 0.3368,
+        "shared_tibetan": [
+          "Otani 761",
+          "Toh 44"
+        ]
+      },
+      {
+        "digest_id": "T15n0652",
+        "source_id": "T15n0650",
+        "classification": "shared_tradition",
+        "coverage": 0.1258,
+        "confidence": 0.3368,
+        "shared_tibetan": [
+          "Toh 180"
+        ]
+      },
+      {
+        "digest_id": "T20n1140",
+        "source_id": "T20n1139",
+        "classification": "shared_tradition",
+        "coverage": 0.1221,
+        "confidence": 0.3367,
+        "shared_tibetan": [
+          "Otani 309",
+          "Otani 540",
+          "Toh 614",
+          "Toh 915"
+        ]
+      },
+      {
+        "digest_id": "T19n1022B",
+        "source_id": "T19n1023",
+        "classification": "shared_tradition",
+        "coverage": 0.1093,
+        "confidence": 0.3358,
+        "shared_tibetan": [
+          "Toh 507"
+        ]
+      },
+      {
+        "digest_id": "T16n0709",
+        "source_id": "T16n0712",
+        "classification": "shared_tradition",
+        "coverage": 0.1101,
+        "confidence": 0.3353,
+        "shared_tibetan": [
+          "Toh 210"
+        ]
+      },
+      {
+        "digest_id": "T19n1012",
+        "source_id": "T19n1017",
+        "classification": "shared_tradition",
+        "coverage": 0.1157,
+        "confidence": 0.3345,
+        "shared_tibetan": [
+          "Otani 539",
+          "Otani 808",
+          "Toh 140",
+          "Toh 525",
+          "Toh 914"
+        ]
+      },
+      {
+        "digest_id": "T19n1009",
+        "source_id": "T19n1014",
+        "classification": "shared_tradition",
+        "coverage": 0.1386,
+        "confidence": 0.334,
+        "shared_tibetan": [
+          "Otani 539",
+          "Otani 808",
+          "Toh 140",
+          "Toh 525",
+          "Toh 914"
+        ]
+      },
+      {
+        "digest_id": "T12n0340",
+        "source_id": "T12n0341",
+        "classification": "shared_tradition",
+        "coverage": 0.1145,
+        "confidence": 0.3339,
+        "shared_tibetan": [
+          "Otani 760"
+        ]
+      },
+      {
+        "digest_id": "T12n0339",
+        "source_id": "T12n0341",
+        "classification": "shared_tradition",
+        "coverage": 0.1129,
+        "confidence": 0.3338,
+        "shared_tibetan": [
+          "Otani 760"
+        ]
+      },
+      {
+        "digest_id": "T04n0210",
+        "source_id": "T04n0211",
+        "classification": "retranslation",
+        "coverage": 0.3285,
+        "confidence": 0.3337,
+        "shared_tibetan": [
+          "Otani 992",
+          "Toh 326",
+          "Toh 4099"
+        ]
+      },
+      {
+        "digest_id": "T19n1016",
+        "source_id": "T19n1017",
+        "classification": "shared_tradition",
+        "coverage": 0.1218,
+        "confidence": 0.3337,
+        "shared_tibetan": [
+          "Otani 539",
+          "Otani 808",
+          "Toh 140",
+          "Toh 525",
+          "Toh 914"
+        ]
+      },
+      {
+        "digest_id": "T11n0319",
+        "source_id": "T11n0312",
+        "classification": "shared_tradition",
+        "coverage": 0.1101,
+        "confidence": 0.3337,
+        "shared_tibetan": [
+          "Otani 760"
+        ]
+      },
+      {
+        "digest_id": "T11n0314",
+        "source_id": "T11n0310",
+        "classification": "commentary",
+        "coverage": 0.3722,
+        "confidence": 0.3335,
+        "shared_tibetan": [
+          "Otani 760",
+          "Toh 53"
+        ]
+      },
+      {
+        "digest_id": "T02n0128a",
+        "source_id": "T02n0128b",
+        "classification": "shared_tradition",
+        "coverage": 0.1041,
+        "confidence": 0.3327,
+        "shared_tibetan": [
+          "Toh 346"
+        ]
+      },
+      {
+        "digest_id": "T19n1019",
+        "source_id": "T09n0278",
+        "classification": "commentary",
+        "coverage": 0.3073,
+        "confidence": 0.3313,
+        "shared_tibetan": [
+          "Toh 44"
+        ]
+      },
+      {
+        "digest_id": "T11n0314",
+        "source_id": "T11n0319",
+        "classification": "shared_tradition",
+        "coverage": 0.1049,
+        "confidence": 0.3311,
+        "shared_tibetan": [
+          "Otani 760"
+        ]
+      },
+      {
+        "digest_id": "T20n1075",
+        "source_id": "T20n1076",
+        "classification": "shared_tradition",
+        "coverage": 0.1101,
+        "confidence": 0.3293,
+        "shared_tibetan": [
+          "Otani 188",
+          "Toh 613",
+          "Toh 989"
+        ]
+      },
+      {
+        "digest_id": "T08n0232",
+        "source_id": "T07n0220",
+        "classification": "commentary",
+        "coverage": 0.346,
+        "confidence": 0.3288,
+        "shared_tibetan": [
+          "Toh 24"
+        ]
+      },
+      {
+        "digest_id": "T12n0357",
+        "source_id": "T12n0359",
+        "classification": "shared_tradition",
+        "coverage": 0.1243,
+        "confidence": 0.3286,
+        "shared_tibetan": [
+          "Otani 768",
+          "Toh 100"
+        ]
+      },
+      {
+        "digest_id": "T12n0348",
+        "source_id": "T12n0324",
+        "classification": "shared_tradition",
+        "coverage": 0.119,
+        "confidence": 0.3282,
+        "shared_tibetan": [
+          "Otani 760"
+        ]
+      },
+      {
+        "digest_id": "T20n1138a",
+        "source_id": "T20n1140",
+        "classification": "shared_tradition",
+        "coverage": 0.103,
+        "confidence": 0.3268,
+        "shared_tibetan": [
+          "Toh 614",
+          "Toh 915"
+        ]
+      },
+      {
+        "digest_id": "T19n1012",
+        "source_id": "T19n1016",
+        "classification": "shared_tradition",
+        "coverage": 0.1085,
+        "confidence": 0.3249,
+        "shared_tibetan": [
+          "Otani 539",
+          "Otani 808",
+          "Toh 140",
+          "Toh 525",
+          "Toh 914"
+        ]
+      },
+      {
+        "digest_id": "T19n1009",
+        "source_id": "T19n1017",
+        "classification": "shared_tradition",
+        "coverage": 0.1116,
+        "confidence": 0.3242,
+        "shared_tibetan": [
+          "Otani 539",
+          "Otani 808",
+          "Toh 140",
+          "Toh 525",
+          "Toh 914"
+        ]
+      },
+      {
+        "digest_id": "T21n1351",
+        "source_id": "T21n1352",
+        "classification": "shared_tradition",
+        "coverage": 0.1219,
+        "confidence": 0.323,
+        "shared_tibetan": [
+          "Otani 195",
+          "Otani 483",
+          "Toh 528",
+          "Toh 858"
+        ]
+      },
+      {
+        "digest_id": "T20n1097",
+        "source_id": "T20n1096",
+        "classification": "shared_tradition",
+        "coverage": 0.1107,
+        "confidence": 0.3228,
+        "shared_tibetan": [
+          "Toh 686"
+        ]
+      },
+      {
+        "digest_id": "T08n0233",
+        "source_id": "T07n0220",
+        "classification": "commentary",
+        "coverage": 0.3304,
+        "confidence": 0.3224,
+        "shared_tibetan": [
+          "Toh 24"
+        ]
+      },
+      {
+        "digest_id": "T16n0676",
+        "source_id": "T16n0675",
+        "classification": "shared_tradition",
+        "coverage": 0.1081,
+        "confidence": 0.3219,
+        "shared_tibetan": [
+          "Otani 774",
+          "Toh 106"
+        ]
+      },
+      {
+        "digest_id": "T12n0348",
+        "source_id": "T12n0327",
+        "classification": "shared_tradition",
+        "coverage": 0.1004,
+        "confidence": 0.3212,
+        "shared_tibetan": [
+          "Otani 760"
+        ]
+      },
+      {
+        "digest_id": "T19n0974D",
+        "source_id": "T19n0974E",
+        "classification": "shared_tradition",
+        "coverage": 0.1705,
+        "confidence": 0.3203,
+        "shared_tibetan": [
+          "Toh 594",
+          "Toh 595",
+          "Toh 596",
+          "Toh 597",
+          "Toh 598",
+          "Toh 984"
+        ]
+      },
+      {
+        "digest_id": "T12n0341",
+        "source_id": "T12n0342",
+        "classification": "shared_tradition",
+        "coverage": 0.1128,
+        "confidence": 0.3192,
+        "shared_tibetan": [
+          "Otani 760",
+          "Toh 80"
+        ]
+      },
+      {
+        "digest_id": "T12n0341",
+        "source_id": "T11n0310",
+        "classification": "commentary",
+        "coverage": 0.3751,
+        "confidence": 0.3182,
+        "shared_tibetan": [
+          "Otani 760",
+          "Toh 80",
+          "Toh 83"
+        ]
+      },
+      {
+        "digest_id": "T18n0865",
+        "source_id": "T18n0882",
+        "classification": "commentary",
+        "coverage": 0.4125,
+        "confidence": 0.3131,
+        "shared_tibetan": [
+          "Otani 112",
+          "Toh 479"
+        ]
+      },
+      {
+        "digest_id": "T12n0363",
+        "source_id": "T11n0310",
+        "classification": "commentary",
+        "coverage": 0.327,
+        "confidence": 0.3112,
+        "shared_tibetan": [
+          "Otani 760",
+          "Toh 49"
+        ]
+      },
+      {
+        "digest_id": "T14n0467",
+        "source_id": "T26n1531",
+        "classification": "partial_digest",
+        "coverage": 0.3669,
+        "confidence": 0.3109,
+        "shared_tibetan": [
+          "Toh 109"
+        ]
+      },
+      {
+        "digest_id": "T12n0340",
+        "source_id": "T11n0310",
+        "classification": "commentary",
+        "coverage": 0.3276,
+        "confidence": 0.3109,
+        "shared_tibetan": [
+          "Otani 760",
+          "Toh 79"
+        ]
+      },
+      {
+        "digest_id": "T19n0974D",
+        "source_id": "T19n0972",
+        "classification": "partial_digest",
+        "coverage": 0.3977,
+        "confidence": 0.3083,
+        "shared_tibetan": [
+          "Toh 594",
+          "Toh 595",
+          "Toh 596",
+          "Toh 597",
+          "Toh 598"
+        ]
+      },
+      {
+        "digest_id": "T24n1449",
+        "source_id": "T24n1453",
+        "classification": "partial_digest",
+        "coverage": 0.3475,
+        "confidence": 0.3062,
+        "shared_tibetan": [
+          "Toh 1"
+        ]
+      },
+      {
+        "digest_id": "T02n0124",
+        "source_id": "T02n0099",
+        "classification": "shared_tradition",
+        "coverage": 0.2157,
+        "confidence": 0.3056,
+        "shared_tibetan": [
+          "Otani 877",
+          "Toh 211"
+        ]
+      },
+      {
+        "digest_id": "T02n0119",
+        "source_id": "T02n0125",
+        "classification": "shared_tradition",
+        "coverage": 0.2625,
+        "confidence": 0.3026,
+        "shared_tibetan": [
+          "Otani 879",
+          "Toh 213"
+        ]
+      },
+      {
+        "digest_id": "T21n1357",
+        "source_id": "T21n1358",
+        "classification": "shared_tradition",
+        "coverage": 0.162,
+        "confidence": 0.3012,
+        "shared_tibetan": [
+          "Otani 316",
+          "Otani 511",
+          "Toh 516",
+          "Toh 886"
+        ]
+      },
+      {
+        "digest_id": "T02n0123",
+        "source_id": "T02n0125",
+        "classification": "shared_tradition",
+        "coverage": 0.2499,
+        "confidence": 0.3009,
+        "shared_tibetan": [
+          "Otani 877",
+          "Toh 211"
+        ]
+      },
+      {
+        "digest_id": "T20n1071",
+        "source_id": "T18n0901",
+        "classification": "shared_tradition",
+        "coverage": 0.2873,
+        "confidence": 0.299,
+        "shared_tibetan": [
+          "Otani 373",
+          "Otani 374",
+          "Otani 524",
+          "Toh 693",
+          "Toh 694",
+          "Toh 899"
+        ]
+      },
+      {
+        "digest_id": "T24n1449",
+        "source_id": "T23n1442",
+        "classification": "shared_tradition",
+        "coverage": 0.2632,
+        "confidence": 0.2982,
+        "shared_tibetan": [
+          "Toh 1"
+        ]
+      },
+      {
+        "digest_id": "T11n0311",
+        "source_id": "T11n0310",
+        "classification": "shared_tradition",
+        "coverage": 0.2828,
+        "confidence": 0.2924,
+        "shared_tibetan": [
+          "Otani 760",
+          "Toh 45"
+        ]
+      },
+      {
+        "digest_id": "T04n0210",
+        "source_id": "T04n0212",
+        "classification": "shared_tradition",
+        "coverage": 0.2335,
+        "confidence": 0.2899,
+        "shared_tibetan": [
+          "Otani 992",
+          "Toh 326",
+          "Toh 4099"
+        ]
+      },
+      {
+        "digest_id": "T19n0974D",
+        "source_id": "T19n0974A",
+        "classification": "shared_tradition",
+        "coverage": 0.1636,
+        "confidence": 0.2883,
+        "shared_tibetan": [
+          "Toh 594",
+          "Toh 595",
+          "Toh 596",
+          "Toh 597",
+          "Toh 598",
+          "Toh 984"
+        ]
+      },
+      {
+        "digest_id": "T12n0339",
+        "source_id": "T11n0310",
+        "classification": "shared_tradition",
+        "coverage": 0.2628,
+        "confidence": 0.2878,
+        "shared_tibetan": [
+          "Otani 760",
+          "Toh 77"
+        ]
+      },
+      {
+        "digest_id": "T19n0986",
+        "source_id": "T19n0988",
+        "classification": "shared_tradition",
+        "coverage": 0.2078,
+        "confidence": 0.2872,
+        "shared_tibetan": [
+          "Toh 559"
+        ]
+      },
+      {
+        "digest_id": "T12n0351",
+        "source_id": "T11n0310",
+        "classification": "shared_tradition",
+        "coverage": 0.2556,
+        "confidence": 0.2865,
+        "shared_tibetan": [
+          "Otani 760",
+          "Toh 87"
+        ]
+      },
+      {
+        "digest_id": "T14n0576",
+        "source_id": "T14n0575",
+        "classification": "shared_tradition",
+        "coverage": 0.1603,
+        "confidence": 0.2788,
+        "shared_tibetan": [
+          "Toh 226"
+        ]
+      },
+      {
+        "digest_id": "T12n0346",
+        "source_id": "T11n0310",
+        "classification": "shared_tradition",
+        "coverage": 0.2527,
+        "confidence": 0.2757,
+        "shared_tibetan": [
+          "Otani 760",
+          "Toh 261",
+          "Toh 82"
+        ]
+      },
+      {
+        "digest_id": "T10n0281",
+        "source_id": "T09n0278",
+        "classification": "shared_tradition",
+        "coverage": 0.2067,
+        "confidence": 0.275,
+        "shared_tibetan": [
+          "Otani 761",
+          "Toh 44"
+        ]
+      },
+      {
+        "digest_id": "T10n0290",
+        "source_id": "T10n0289",
+        "classification": "shared_tradition",
+        "coverage": 0.1155,
+        "confidence": 0.2673,
+        "shared_tibetan": [
+          "Otani 772",
+          "Toh 104"
+        ]
+      },
+      {
+        "digest_id": "T21n1314",
+        "source_id": "T21n1318",
+        "classification": "partial_digest",
+        "coverage": 0.304,
+        "confidence": 0.267,
+        "shared_tibetan": [
+          "Toh 647"
+        ]
+      },
+      {
+        "digest_id": "T23n1446",
+        "source_id": "T24n1453",
+        "classification": "shared_tradition",
+        "coverage": 0.2419,
+        "confidence": 0.2539,
+        "shared_tibetan": [
+          "Toh 1"
+        ]
+      },
+      {
+        "digest_id": "T10n0294",
+        "source_id": "T10n0293",
+        "classification": "shared_tradition",
+        "coverage": 0.2575,
+        "confidence": 0.2513,
+        "shared_tibetan": [
+          "Otani 761",
+          "Toh 1095",
+          "Toh 44"
+        ]
+      },
+      {
+        "digest_id": "T14n0474",
+        "source_id": "T38n1775",
+        "classification": "shared_tradition",
+        "coverage": 0.2247,
+        "confidence": 0.244,
+        "shared_tibetan": [
+          "Toh 64"
+        ]
+      },
+      {
+        "digest_id": "T21n1256",
+        "source_id": "T21n1255b",
+        "classification": "retranslation",
+        "coverage": 0.3164,
+        "confidence": 0.2434,
+        "shared_tibetan": [
+          "Otani 182",
+          "Otani 613",
+          "Toh 564",
+          "Toh 988"
+        ]
+      },
+      {
+        "digest_id": "T19n0974A",
+        "source_id": "T19n0967",
+        "classification": "commentary",
+        "coverage": 0.3582,
+        "confidence": 0.2249,
+        "shared_tibetan": [
+          "Toh 594",
+          "Toh 595",
+          "Toh 596",
+          "Toh 598"
+        ]
+      },
+      {
+        "digest_id": "T23n1445",
+        "source_id": "T24n1453",
+        "classification": "shared_tradition",
+        "coverage": 0.1657,
+        "confidence": 0.2162,
+        "shared_tibetan": [
+          "Toh 1"
+        ]
+      }
+    ],
+    "different_tibetan_pairs": [
+      {
+        "digest_id": "T29n1560",
+        "source_id": "T29n1558",
+        "classification": "full_digest",
+        "coverage": 0.9945,
+        "confidence": 0.7401,
+        "digest_tibetan": [
+          "Toh 4089"
+        ],
+        "source_tibetan": [
+          "Toh 4090"
+        ]
+      },
+      {
+        "digest_id": "T02n0110",
+        "source_id": "T24n1451",
+        "classification": "full_digest",
+        "coverage": 1.0,
+        "confidence": 0.7368,
+        "digest_tibetan": [
+          "Otani 1003",
+          "Otani 747",
+          "Toh 31",
+          "Toh 337"
+        ],
+        "source_tibetan": [
+          "Otani 1035",
+          "Toh 282",
+          "Toh 312",
+          "Toh 57",
+          "Toh 58",
+          "Toh 6"
+        ]
+      },
+      {
+        "digest_id": "T31n1601",
+        "source_id": "T31n1600",
+        "classification": "full_digest",
+        "coverage": 0.997,
+        "confidence": 0.736,
+        "digest_tibetan": [
+          "Toh 4021"
+        ],
+        "source_tibetan": [
+          "Toh 4027"
+        ]
+      },
+      {
+        "digest_id": "T31n1593",
+        "source_id": "T31n1595",
+        "classification": "full_digest",
+        "coverage": 0.9634,
+        "confidence": 0.7161,
+        "digest_tibetan": [
+          "Toh 4048"
+        ],
+        "source_tibetan": [
+          "Toh 4050"
+        ]
+      },
+      {
+        "digest_id": "T31n1594",
+        "source_id": "T31n1597",
+        "classification": "full_digest",
+        "coverage": 0.9817,
+        "confidence": 0.7155,
+        "digest_tibetan": [
+          "Toh 4048"
+        ],
+        "source_tibetan": [
+          "Toh 4050"
+        ]
+      },
+      {
+        "digest_id": "T31n1594",
+        "source_id": "T31n1598",
+        "classification": "full_digest",
+        "coverage": 0.959,
+        "confidence": 0.7107,
+        "digest_tibetan": [
+          "Toh 4048"
+        ],
+        "source_tibetan": [
+          "Toh 4051"
+        ]
+      },
+      {
+        "digest_id": "T25n1518",
+        "source_id": "T25n1517",
+        "classification": "full_digest",
+        "coverage": 0.9029,
+        "confidence": 0.702,
+        "digest_tibetan": [
+          "Toh 3809",
+          "Toh 3908"
+        ],
+        "source_tibetan": [
+          "Toh 3810"
+        ]
+      },
+      {
+        "digest_id": "T31n1605",
+        "source_id": "T31n1606",
+        "classification": "retranslation",
+        "coverage": 0.8323,
+        "confidence": 0.6569,
+        "digest_tibetan": [
+          "Toh 4049"
+        ],
+        "source_tibetan": [
+          "Toh 4054"
+        ]
+      },
+      {
+        "digest_id": "T08n0250",
+        "source_id": "T25n1509",
+        "classification": "full_digest",
+        "coverage": 0.7282,
+        "confidence": 0.6173,
+        "digest_tibetan": [
+          "Otani 16",
+          "Toh 21",
+          "Toh 531"
+        ],
+        "source_tibetan": [
+          "Toh 292",
+          "Toh 331",
+          "Toh 334",
+          "Toh 3786",
+          "Toh 9",
+          "up1.032",
+          "up5.003"
+        ]
+      },
+      {
+        "digest_id": "T14n0453",
+        "source_id": "T02n0125",
+        "classification": "full_digest",
+        "coverage": 0.7304,
+        "confidence": 0.5836,
+        "digest_tibetan": [
+          "Toh 199"
+        ],
+        "source_tibetan": [
+          "Otani 752",
+          "Otani 877",
+          "Otani 879",
+          "Otani 982",
+          "Toh 211",
+          "Toh 213",
+          "Toh 293",
+          "Toh 305",
+          "Toh 316",
+          "Toh 346",
+          "Toh 36",
+          "Toh 9"
+        ]
+      },
+      {
+        "digest_id": "T29n1560",
+        "source_id": "T29n1563",
+        "classification": "full_digest",
+        "coverage": 0.9637,
+        "confidence": 0.5834,
+        "digest_tibetan": [
+          "Toh 4089"
+        ],
+        "source_tibetan": [
+          "Toh 4091"
+        ]
+      },
+      {
+        "digest_id": "T08n0236a",
+        "source_id": "T25n1510b",
+        "classification": "full_digest",
+        "coverage": 0.9689,
+        "confidence": 0.5758,
+        "digest_tibetan": [
+          "Otani 739",
+          "Toh 16"
+        ],
+        "source_tibetan": [
+          "Toh 3816"
+        ]
+      },
+      {
+        "digest_id": "T31n1612",
+        "source_id": "T31n1613",
+        "classification": "retranslation",
+        "coverage": 0.6141,
+        "confidence": 0.5742,
+        "digest_tibetan": [
+          "Toh 4059"
+        ],
+        "source_tibetan": [
+          "Toh 4066"
+        ]
+      },
+      {
+        "digest_id": "T16n0676",
+        "source_id": "T30n1579",
+        "classification": "full_digest",
+        "coverage": 0.8654,
+        "confidence": 0.5682,
+        "digest_tibetan": [
+          "Otani 774",
+          "Toh 106"
+        ],
+        "source_tibetan": [
+          "Toh 109",
+          "Toh 4035",
+          "Toh 4036",
+          "Toh 4037",
+          "Toh 4038",
+          "Toh 4039",
+          "Toh 4040",
+          "Toh 4041",
+          "Toh 4042",
+          "Toh 4085"
+        ]
+      },
+      {
+        "digest_id": "T24n1455",
+        "source_id": "T23n1443",
+        "classification": "full_digest",
+        "coverage": 0.8807,
+        "confidence": 0.5505,
+        "digest_tibetan": [
+          "Otani 1033",
+          "Toh 4"
+        ],
+        "source_tibetan": [
+          "Otani 1034",
+          "Toh 335",
+          "Toh 5"
+        ]
+      },
+      {
+        "digest_id": "T24n1454",
+        "source_id": "T24n1458",
+        "classification": "full_digest",
+        "coverage": 0.819,
+        "confidence": 0.53,
+        "digest_tibetan": [
+          "Otani 1031",
+          "Toh 2"
+        ],
+        "source_tibetan": [
+          "Toh 4105"
+        ]
+      },
+      {
+        "digest_id": "T21n1254",
+        "source_id": "T18n0901",
+        "classification": "full_digest",
+        "coverage": 0.706,
+        "confidence": 0.5105,
+        "digest_tibetan": [
+          "Otani 182",
+          "Otani 613",
+          "Toh 564",
+          "Toh 988"
+        ],
+        "source_tibetan": [
+          "Otani 216",
+          "Otani 373",
+          "Otani 374",
+          "Otani 379",
+          "Otani 524",
+          "Otani 531",
+          "Otani 555",
+          "Toh 21",
+          "Toh 665",
+          "Toh 686",
+          "Toh 693",
+          "Toh 694",
+          "Toh 710",
+          "Toh 712",
+          "Toh 733",
+          "Toh 899",
+          "Toh 906",
+          "Toh 930"
+        ]
+      },
+      {
+        "digest_id": "T31n1597",
+        "source_id": "T31n1598",
+        "classification": "retranslation",
+        "coverage": 0.4978,
+        "confidence": 0.5078,
+        "digest_tibetan": [
+          "Toh 4050"
+        ],
+        "source_tibetan": [
+          "Toh 4051"
+        ]
+      },
+      {
+        "digest_id": "T08n0227",
+        "source_id": "T08n0223",
+        "classification": "commentary",
+        "coverage": 0.5446,
+        "confidence": 0.5022,
+        "digest_tibetan": [
+          "Otani 734",
+          "Toh 12"
+        ],
+        "source_tibetan": [
+          "Otani 731",
+          "Toh 21",
+          "Toh 9"
+        ]
+      },
+      {
+        "digest_id": "T24n1454",
+        "source_id": "T23n1443",
+        "classification": "partial_digest",
+        "coverage": 0.6925,
+        "confidence": 0.4921,
+        "digest_tibetan": [
+          "Otani 1031",
+          "Toh 2"
+        ],
+        "source_tibetan": [
+          "Otani 1034",
+          "Toh 335",
+          "Toh 5"
+        ]
+      },
+      {
+        "digest_id": "T08n0235",
+        "source_id": "T25n1510b",
+        "classification": "full_digest",
+        "coverage": 0.7898,
+        "confidence": 0.4894,
+        "digest_tibetan": [
+          "Otani 739",
+          "Toh 16"
+        ],
+        "source_tibetan": [
+          "Toh 3816"
+        ]
+      },
+      {
+        "digest_id": "T24n1454",
+        "source_id": "T23n1442",
+        "classification": "partial_digest",
+        "coverage": 0.6356,
+        "confidence": 0.4856,
+        "digest_tibetan": [
+          "Otani 1031",
+          "Toh 2"
+        ],
+        "source_tibetan": [
+          "Otani 1032",
+          "Toh 1",
+          "Toh 3",
+          "up8.029"
+        ]
+      },
+      {
+        "digest_id": "T19n1019",
+        "source_id": "T05n0220",
+        "classification": "partial_digest",
+        "coverage": 0.6031,
+        "confidence": 0.4856,
+        "digest_tibetan": [
+          "Toh 44"
+        ],
+        "source_tibetan": [
+          "Toh 10",
+          "Toh 12",
+          "Toh 13",
+          "Toh 14",
+          "Toh 16",
+          "Toh 17",
+          "Toh 181",
+          "Toh 24",
+          "Toh 487",
+          "Toh 489",
+          "Toh 8",
+          "Toh 9"
+        ]
+      },
+      {
+        "digest_id": "T08n0236a",
+        "source_id": "T08n0223",
+        "classification": "commentary",
+        "coverage": 0.4123,
+        "confidence": 0.4855,
+        "digest_tibetan": [
+          "Otani 739",
+          "Toh 16"
+        ],
+        "source_tibetan": [
+          "Otani 731",
+          "Toh 21",
+          "Toh 9"
+        ]
+      },
+      {
+        "digest_id": "T08n0235",
+        "source_id": "T08n0223",
+        "classification": "commentary",
+        "coverage": 0.4001,
+        "confidence": 0.4827,
+        "digest_tibetan": [
+          "Otani 739",
+          "Toh 16"
+        ],
+        "source_tibetan": [
+          "Otani 731",
+          "Toh 21",
+          "Toh 9"
+        ]
+      },
+      {
+        "digest_id": "T08n0236a",
+        "source_id": "T08n0228",
+        "classification": "commentary",
+        "coverage": 0.4046,
+        "confidence": 0.4716,
+        "digest_tibetan": [
+          "Otani 739",
+          "Toh 16"
+        ],
+        "source_tibetan": [
+          "Otani 734",
+          "Toh 12",
+          "Toh 21"
+        ]
+      },
+      {
+        "digest_id": "T08n0235",
+        "source_id": "T08n0228",
+        "classification": "commentary",
+        "coverage": 0.3831,
+        "confidence": 0.4664,
+        "digest_tibetan": [
+          "Otani 739",
+          "Toh 16"
+        ],
+        "source_tibetan": [
+          "Otani 734",
+          "Toh 12",
+          "Toh 21"
+        ]
+      },
+      {
+        "digest_id": "T21n1348",
+        "source_id": "T14n0443",
+        "classification": "partial_digest",
+        "coverage": 0.5277,
+        "confidence": 0.4663,
+        "digest_tibetan": [
+          "Otani 151",
+          "Otani 478",
+          "Otani 939",
+          "Toh 273",
+          "Toh 511",
+          "Toh 853"
+        ],
+        "source_tibetan": [
+          "Otani 928",
+          "Toh 262"
+        ]
+      },
+      {
+        "digest_id": "T08n0236a",
+        "source_id": "T08n0227",
+        "classification": "commentary",
+        "coverage": 0.3972,
+        "confidence": 0.461,
+        "digest_tibetan": [
+          "Otani 739",
+          "Toh 16"
+        ],
+        "source_tibetan": [
+          "Otani 734",
+          "Toh 12"
+        ]
+      },
+      {
+        "digest_id": "T08n0235",
+        "source_id": "T08n0227",
+        "classification": "commentary",
+        "coverage": 0.3892,
+        "confidence": 0.4608,
+        "digest_tibetan": [
+          "Otani 739",
+          "Toh 16"
+        ],
+        "source_tibetan": [
+          "Otani 734",
+          "Toh 12"
+        ]
+      }
+    ]
+  },
+  "concordance_summary": {
+    "total_texts": 2455,
+    "with_tibetan": 722,
+    "with_pali": 75,
+    "with_sanskrit": 845,
+    "with_any_parallel": 941,
+    "no_known_parallel": 1514,
+    "sources": [
+      "SuttaCentral parallels.json",
+      "84000 data-tei",
+      "Manual scholarship mappings",
+      "Lancaster Korean Buddhist Canon catalogue (via acmuller.net)",
+      "CBETA Jinglu Tibetan catalogue (jinglu.cbeta.org)"
+    ],
+    "note": "Concordance covers 38% of texts. Absence does NOT confirm no parallel exists."
+  }
+}

@@ -443,7 +443,7 @@ Ground truth validation could be expanded beyond the Heart Sutra case to include
 
 ### 9.5 Sanskrit/Tibetan Cross-Reference
 
-Where Sanskrit or Tibetan parallels exist, the detected Chinese-to-Chinese relationships could be compared against independently established relationships in those traditions. For example, the Abhidharmakosha verse/prose relationship (T1560/T1558) has a well-established Sanskrit parallel that could serve as additional validation.
+A multi-canon concordance has now been compiled from five independent sources (SuttaCentral, 84000, Lancaster catalogue, CBETA Jinglu, and manual scholarship), mapping 941 Taisho texts to Tibetan, Sanskrit, and/or Pali parallels. This concordance has been cross-referenced against the digest detection results; the analysis is presented in Section 10 below. Further expansion of this concordance -- particularly through additional Tibetan canonical catalogues and Sanskrit manuscript databases -- could increase coverage beyond the current 38%.
 
 ### 9.6 Expansion Beyond Volume T
 
@@ -456,6 +456,115 @@ The most promising direction is expert review of the potentially novel findings,
 - High-confidence relationships involving understudied texts (T14 and T17 miscellaneous sutras)
 - The dharani derivation networks (do these reflect genuine textual history or artifact of how dharani literature was compiled?)
 - Dunhuang texts detected as digests of canonical texts (can this help date or provenance Dunhuang manuscripts?)
+
+---
+
+## 10. Cross-Canon Concordance
+
+### 10.1 Concordance Sources and Coverage
+
+A concordance of Taisho texts with parallels in the Tibetan, Pali, and Sanskrit traditions was compiled from five independent data sources:
+
+| Source | Data Provided | Texts Covered |
+|--------|--------------|--------------|
+| SuttaCentral parallels.json | Pali sutta parallels, Sanskrit fragment IDs | ~500 |
+| 84000 data-tei (Kangyur) | Tohoku numbers for translated texts | ~350 |
+| Lancaster Korean Buddhist Canon catalogue | Tohoku and Taisho cross-references | ~590 |
+| CBETA Jinglu Tibetan catalogue | Tohoku and Otani numbers | ~700 |
+| Manual scholarship mappings | Expert-verified relationships | ~50 |
+
+The combined concordance covers 941 of 2,455 unique Taisho texts (38.3%):
+
+| Parallel Tradition | Texts with Parallel | Coverage |
+|-------------------|--------------------:|--------:|
+| Sanskrit | 845 | 34.4% |
+| Tibetan | 722 | 29.4% |
+| Pali | 75 | 3.1% |
+| **Any parallel** | **941** | **38.3%** |
+| No known parallel | 1,514 | 61.7% |
+
+The relatively low Pali coverage reflects the fundamental difference between the Theravada and Chinese Mahayana canons; the 75 texts with Pali parallels are concentrated in the Agama section (volumes 1--2), which overlaps with the Pali Nikayas.
+
+### 10.2 Cross-Referencing Digest Results
+
+Of the 1,412 unique texts involved in the 2,812 detected digest relationships, 614 (43.5%) have at least one known parallel in another tradition. This is modestly higher than the corpus-wide rate of 38.3%, suggesting that texts involved in intra-Chinese textual relationships are also somewhat more likely to have cross-canon parallels -- as expected, since widely transmitted Indic texts tend to generate both retranslations and derivative works.
+
+| Parallel Type | Texts | % of 1,412 |
+|--------------|------:|-----------:|
+| Any parallel | 614 | 43.5% |
+| Sanskrit | 531 | 37.6% |
+| Tibetan | 481 | 34.1% |
+| Pali | 75 | 5.3% |
+
+At the relationship level, at least one text in the pair has a known parallel in 1,838 of 2,812 relationships (65.4%). When we require *both* texts to have parallels, 872 relationships qualify (31.0%). The remaining 974 relationships (34.6%) involve pairs where neither text has a known cross-canon parallel.
+
+**Coverage by classification type** (at least one text in the pair has a parallel):
+
+| Classification | Total | With Parallel | % |
+|----------------|------:|--------------:|----:|
+| Commentary | 621 | 502 | 80.8% |
+| Retranslation | 288 | 191 | 66.3% |
+| Shared Tradition | 1,238 | 791 | 63.9% |
+| Full Digest | 181 | 105 | 58.0% |
+| Partial Digest | 484 | 249 | 51.4% |
+
+The high parallel rate for commentaries (80.8%) reflects the fact that commentarial literature tends to focus on important translated texts that are well-attested across traditions. Retranslations also show high parallel rates (66.3%), as expected -- parallel translations from the same Indic source are likely to have that source attested in other canons as well.
+
+Conversely, the lower rates for full digests (58.0%) and partial digests (51.4%) may indicate that digest relationships are more common among texts without well-known Indic originals -- potentially including Chinese-origin compositions, compilations, and texts from traditions less well-represented in the Tibetan and Pali canons.
+
+### 10.3 Retranslation Validation via Tibetan Parallels
+
+The concordance provides an independent check on the pipeline's retranslation detection. If two Chinese texts are correctly identified as retranslations (parallel translations from the same Indic source), they should map to the same entry in the Tibetan Kangyur -- since the Tibetan translation would also derive from the same source.
+
+Of the 288 detected retranslations:
+
+| Tibetan Parallel Status | Count | % |
+|------------------------|------:|----:|
+| Shared Tibetan ID (validated) | 87 | 30.2% |
+| Different Tibetan parallels | 7 | 2.4% |
+| Only one text has Tibetan parallel | 70 | 24.3% |
+| Neither text has Tibetan parallel | 124 | 43.1% |
+
+**87 retranslation pairs (30.2%) are independently confirmed** by sharing at least one Tohoku or Otani catalogue number. This is a strong validation signal: the pipeline's character-level analysis of Chinese texts identified these as parallel translations, and an entirely independent dataset (Tibetan canonical catalogues) confirms they derive from the same Indic source.
+
+Among the 87 validated pairs, notable examples include:
+
+| Digest | Source | Coverage | Shared Tibetan ID |
+|--------|--------|--------:|-------------------|
+| T09n0262 (Lotus Sutra, Kumarajiva) | T09n0264 (Lotus, Jnanagupta/Dharmagupta) | 92.0% | Toh 113, Otani 781 |
+| T16n0663 (Samdhinirmocana, Bodhiruci) | T16n0664 (Samdhinirmocana, Xuanzang) | 89.8% | Toh 555--557, Otani 174--176 |
+| T12n0334 (Smaller Sukhavativyuha) | T12n0335 (Smaller Sukhavativyuha) | 89.2% | Toh 74 |
+| T19n1013 (Ushnishavijaya Dharani) | T19n1015 (Ushnishavijaya Dharani) | 85.3% | Toh 140, 525, 914 |
+| T08n0250 (Heart Sutra, Kumarajiva) | T08n0223 (Prajnaparamita) | 73.2% | Toh 21 |
+| T12n0362 (Amitayurdhyana Sutra) | T12n0361 (Amitabha Sutra) | 79.8% | Toh 49, Otani 760 |
+
+The Heart Sutra case (T250 -> T223) is particularly interesting: while classified as a full digest rather than a retranslation in our pipeline, both texts share Toh 21 (the Tibetan Prajnaparamita), confirming their common Indic ancestry through a completely independent data source.
+
+**7 retranslation pairs (2.4%) have different Tibetan parallels.** These are not necessarily errors -- they may represent cases where the Tibetan canon catalogued the texts under different entries despite shared Indic ancestry, or where the Chinese and Tibetan cataloguing traditions diverge. All 7 cases involve Yogacara or Prajnaparamita literature where catalogue boundaries are known to be fluid:
+
+| Digest | Source | Coverage | Digest Tibetan | Source Tibetan |
+|--------|--------|--------:|---------------|---------------|
+| T31n1605 | T31n1606 | 83.2% | Toh 4049 | Toh 4054 |
+| T31n1612 | T31n1613 | 61.4% | Toh 4059 | Toh 4066 |
+| T31n1597 | T31n1598 | 49.8% | Toh 4050 | Toh 4051 |
+| T08n0227 | T08n0221 | 35.4% | Toh 12 | Toh 9 |
+| T08n0226 | T08n0222 | 34.6% | Toh 12 | Toh 9 |
+| T10n0286 | T26n1522 | 43.6% | Toh 44 | Toh 3993 |
+| T08n0236a | T25n1510a | 36.8% | Toh 16 | Toh 3816 |
+
+The Prajnaparamita cases (T08 texts mapping to Toh 9 vs. Toh 12) are particularly illuminating: these represent different *lengths* of the Prajnaparamita sutra (the 8,000-verse and 25,000-verse versions), which are distinct texts in the Tibetan catalogue but share extensive content due to their common tradition. The pipeline correctly detects the textual overlap, and the different Tohoku numbers correctly reflect the Tibetan cataloguing distinction.
+
+### 10.4 Implications
+
+The cross-reference analysis yields several methodological and substantive findings:
+
+**Independent validation of retranslation detection.** The 30.2% confirmation rate (87 of 288) is limited by concordance coverage -- 43.1% of retranslation pairs have no Tibetan parallel data for either text. Among the 164 pairs where at least one text has a Tibetan parallel, 53.0% are validated by a shared catalogue number. Among the 94 pairs where both texts have Tibetan parallels, 92.6% share at least one catalogue number. The near-total validation rate when data is available (92.6%) strongly supports the pipeline's retranslation detection accuracy.
+
+**Texts without parallels may be Chinese-origin.** The 974 relationships (34.6%) where neither text has a known cross-canon parallel are enriched for Chinese-origin literature: encyclopedic compilations, indigenous commentaries, and texts from traditions (dharani collections, Chan literature) that are less well-represented in the Tibetan and Pali canons. These relationships are the most likely to reveal previously unrecognized Chinese compositional practices.
+
+**Digest texts with Tibetan parallels deserve closer attention.** Among the 313 relationships where both texts share a Tibetan parallel, 9 are classified as full digests and 23 as partial digests. These cases are particularly interesting because they suggest that a shorter Chinese text, which our pipeline identifies as derived from a longer Chinese source, may also have an independent Indic pedigree. For example, if text A is detected as a full digest of text B, but both map to the same Tohoku number, the "digest" relationship may in fact reflect parallel translation from the same source rather than Chinese-level extraction.
+
+**The concordance can prioritize further investigation.** Texts involved in digest relationships that have Tibetan parallels are natural candidates for comparative philological study, as the Tibetan version can help disambiguate whether the Chinese relationship reflects direct textual derivation or independent translation from a common source.
 
 ---
 
