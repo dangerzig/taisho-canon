@@ -1,0 +1,5237 @@
+{
+  "1": {
+    "tohoku": 1,
+    "taisho_numbers": [
+      "1444",
+      "1445",
+      "1446",
+      "1447",
+      "1448",
+      "1449",
+      "1450"
+    ],
+    "sanskrit_title": "Vinaya-vastu",
+    "tibetan_title_romanized": "Ḥdul-ba gshi",
+    "chinese_title": "律本事"
+  },
+  "2": {
+    "tohoku": 2,
+    "taisho_numbers": [
+      "1454"
+    ],
+    "sanskrit_title": "Prātimokṣa-sūtra",
+    "tibetan_title_romanized": "So-sor-thar-baḥi mdo",
+    "chinese_title": "波羅提木叉經"
+  },
+  "3": {
+    "tohoku": 3,
+    "taisho_numbers": [
+      "1442"
+    ],
+    "sanskrit_title": "Vinaya-vibhaṅga",
+    "tibetan_title_romanized": "Ḥdul-ba rnam-par-ḥbyed-pa",
+    "chinese_title": "律分別"
+  },
+  "4": {
+    "tohoku": 4,
+    "taisho_numbers": [
+      "1455"
+    ],
+    "sanskrit_title": "Bhikṣuṇīprātimokṣa-sūtra",
+    "tibetan_title_romanized": "Dge-sloṅ-maḥi so-sor thar-baḥi mdo",
+    "chinese_title": "比丘尼波羅提木叉經"
+  },
+  "5": {
+    "tohoku": 5,
+    "taisho_numbers": [
+      "1443"
+    ],
+    "sanskrit_title": "Bhikṣuṇī-vinaya-vibhaṅga",
+    "tibetan_title_romanized": "Dge-sloṅ-maḥi ḥdul-ba rnam-par-ḥbyed-pa",
+    "chinese_title": "比丘尼律分別"
+  },
+  "6": {
+    "tohoku": 6,
+    "taisho_numbers": [
+      "1451"
+    ],
+    "sanskrit_title": "Vinaya-kṣudraka-vastu",
+    "tibetan_title_romanized": "Ḥdul-ba phran-tshegs-kyi gshi",
+    "chinese_title": "律小事"
+  },
+  "8": {
+    "tohoku": 8,
+    "taisho_numbers": [
+      "220"
+    ],
+    "sanskrit_title": "Śatasāhasrikā-prajñāpāramitā",
+    "tibetan_title_romanized": "Śes-rab-kyi-pha-rol-tu-phyin-pa stoṅ-phrag-brgya-ba",
+    "chinese_title": "般若波羅蜜多十萬頌"
+  },
+  "9": {
+    "tohoku": 9,
+    "taisho_numbers": [
+      "220",
+      "222",
+      "223"
+    ],
+    "sanskrit_title": "Pañcaviṃśatisāhasrikā-prajñāpāramitā",
+    "tibetan_title_romanized": "Śes-rab-kyi-pha-rol-tu-phyin-pa stoṅ-phrag-ñi-śu-lṅa-pa",
+    "chinese_title": "般若波羅蜜多二萬五千頌"
+  },
+  "10": {
+    "tohoku": 10,
+    "taisho_numbers": [
+      "220"
+    ],
+    "sanskrit_title": "Ārya-aṣṭādaśasāhasrikā-prajñāpāramitā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa śes-rab-kyi-pha-rol-tu-phyin-pa khri-brgyad-stoṅ-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖般若波羅蜜多一萬八千頌大乘經"
+  },
+  "12": {
+    "tohoku": 12,
+    "taisho_numbers": [
+      "220",
+      "224",
+      "225",
+      "226",
+      "228",
+      "229"
+    ],
+    "sanskrit_title": "Ārya-aṣṭasāhasrikā-prajñāpāramitā",
+    "tibetan_title_romanized": "Ḥphags-pa śes-rab-kyi-pha-rol-tu-phyin-pa brgyad-stoṅ-pa",
+    "chinese_title": "聖般若波羅蜜多八千（頌）"
+  },
+  "13": {
+    "tohoku": 13,
+    "taisho_numbers": [
+      "220",
+      "229"
+    ],
+    "sanskrit_title": "Ārya- prajñāpāramitā-sañcayagāthā",
+    "tibetan_title_romanized": "Ḥphags-pa śes-rab-kyi-pha-rol-tu-phyin-pa sdud-pa tshig-su-bcad-pa",
+    "chinese_title": "聖般若波羅蜜多攝要頌"
+  },
+  "14": {
+    "tohoku": 14,
+    "taisho_numbers": [
+      "220"
+    ],
+    "sanskrit_title": "Ārya-suvikrāntavikrami-paripṛcchā- prajñāpāramitā-nirdeśa",
+    "tibetan_title_romanized": "Ḥphags-pa rab-kyi-rtsal-gyis rnam-par-gnon-pas shus-pa śes-rab-kyi-pha-rol-tu-phyin-pa bstan-pa",
+    "chinese_title": "聖因善勇猛所問說般若波羅蜜多"
+  },
+  "15": {
+    "tohoku": 15,
+    "taisho_numbers": [
+      "260"
+    ],
+    "sanskrit_title": "Ārya-pañcaśatikā- prajñāpāramitā",
+    "tibetan_title_romanized": "Ḥphags-pa śes-rab-kyi-pha-rol-tu-phyin-pa lṅa-brgya-pa",
+    "chinese_title": "聖般若波羅蜜多五百（頌）"
+  },
+  "16": {
+    "tohoku": 16,
+    "taisho_numbers": [
+      "220",
+      "235",
+      "237",
+      "238",
+      "239"
+    ],
+    "sanskrit_title": "Ārya-vajracchedikā-nāma-prajñāpāramitā-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa śes-rab-kyi-pha-rol-tu-phyin-pa rdo-rje gcod-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖般若波羅蜜多金剛能斷大乘經"
+  },
+  "17": {
+    "tohoku": 17,
+    "taisho_numbers": [
+      "220",
+      "240",
+      "241",
+      "242",
+      "243",
+      "244"
+    ],
+    "sanskrit_title": "Ārya-prajñāpāramitā-naya-śatapañcāśatikā",
+    "tibetan_title_romanized": "Ḥphags-pa śes-rab-kyi-pha-rol-tu-phyin-paḥi tshul brgya-lṅa-bcu-pa",
+    "chinese_title": "聖般若波羅蜜多趣百五十（頌）"
+  },
+  "18": {
+    "tohoku": 18,
+    "taisho_numbers": [
+      "248"
+    ],
+    "sanskrit_title": "Ārya-bhagavatī-prajñāpāramitā-pañcaśā-tikā",
+    "tibetan_title_romanized": "Ḥphags-pa bcom-ldan-ḥdas-ma śes-rab-kyi-pha-rol-tu-phyin-pa lṅa-bcu-pa",
+    "chinese_title": "聖薄伽梵母般若波羅多五十頌（頌）"
+  },
+  "19": {
+    "tohoku": 19,
+    "taisho_numbers": [
+      "249"
+    ],
+    "sanskrit_title": "Ārya-kauśika-prajñāpāramitā-nāma",
+    "tibetan_title_romanized": "Ḥphags-pa śes-rab-kyi-pha-rol-tu-phyin-pa kauśika shes-bya-ba",
+    "chinese_title": "聖帝釋般若波羅蜜多（經）"
+  },
+  "21": {
+    "tohoku": 21,
+    "taisho_numbers": [
+      "250",
+      "251",
+      "252",
+      "253",
+      "254",
+      "255",
+      "256",
+      "257"
+    ],
+    "sanskrit_title": "Bhagavatī-prajñāpāramitā-hṛdaya",
+    "tibetan_title_romanized": "Bcom-ldan-ḥdas-ma śes-rab-kyi-pha-rol-tu-phyin-paḥi sñiṅ-po",
+    "chinese_title": "薄伽梵母般若波羅蜜多心（經）"
+  },
+  "22": {
+    "tohoku": 22,
+    "taisho_numbers": [
+      "258"
+    ],
+    "sanskrit_title": "Ārya-svalpākṣara-prajñāpāramitā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa śes-rab-kyi-pha-rol-tu-phyin-pa yi-ge ñuṅ-ṅu shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖般若波羅蜜多少字大乘經"
+  },
+  "24": {
+    "tohoku": 24,
+    "taisho_numbers": [
+      "220",
+      "310"
+    ],
+    "sanskrit_title": "Ārya-saptaśatikā-nāma-prajñāpāramitā-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa śes-rab-kyi-pha-rol-tu-phyin-pa bdun-brgya-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖般若波羅多七百（頌）大乘經"
+  },
+  "25": {
+    "tohoku": 25,
+    "taisho_numbers": [
+      "230"
+    ],
+    "sanskrit_title": "Ārya-prajñāpāramitānāmāṣṭāśataka",
+    "tibetan_title_romanized": "Ḥphags-pa śes-rab-kyi-pha-rol-tu-phyin-paḥi mtshan brgya-rtsa-brgyad-pa shes-bya-ba",
+    "chinese_title": "聖般若波羅蜜多一百八名（經）"
+  },
+  "31": {
+    "tohoku": 31,
+    "taisho_numbers": [
+      "99",
+      "109",
+      "110"
+    ],
+    "sanskrit_title": "Dharmacakrapravartana-sūtra",
+    "tibetan_title_romanized": "Chos-kyi-ḥkhor-lo rab-tu bskor-baḥi mdo",
+    "chinese_title": "轉法輪經"
+  },
+  "33": {
+    "tohoku": 33,
+    "taisho_numbers": [
+      "1244",
+      "1245"
+    ],
+    "sanskrit_title": "Āṭānāṭiya-sūtra",
+    "tibetan_title_romanized": "Lcaṅ-lo-can-gyi pho-braṅ-gi mdo",
+    "chinese_title": "柳葉宮殿經"
+  },
+  "34": {
+    "tohoku": 34,
+    "taisho_numbers": [
+      "1",
+      "19",
+      "99",
+      "100"
+    ],
+    "sanskrit_title": "Mahāsamaya-sūtra",
+    "tibetan_title_romanized": "Ḥdus-pa chen-poḥi mdo",
+    "chinese_title": "大會經"
+  },
+  "36": {
+    "tohoku": 36,
+    "taisho_numbers": [
+      "125"
+    ],
+    "sanskrit_title": "Maitrī-bhāvanā-sūtra",
+    "tibetan_title_romanized": "Byams-pa bsgom-paḥi mdo",
+    "chinese_title": "慈觀經"
+  },
+  "39": {
+    "tohoku": 39,
+    "taisho_numbers": [
+      "597"
+    ],
+    "sanskrit_title": "Nandopanandanāgarājadamana-sūtra",
+    "tibetan_title_romanized": "Kluḥi rgyal-po dgaḥ-bo ñer-dgaḥ ḥdul-baḥi mdo",
+    "chinese_title": "龍王難陀優波難陀調伏經"
+  },
+  "41": {
+    "tohoku": 41,
+    "taisho_numbers": [
+      "99"
+    ],
+    "sanskrit_title": "Sūrya-sūtra",
+    "tibetan_title_romanized": "Ñi-maḥi mdo",
+    "chinese_title": "日經"
+  },
+  "42": {
+    "tohoku": 42,
+    "taisho_numbers": [
+      "99"
+    ],
+    "sanskrit_title": "Candra-sūtra",
+    "tibetan_title_romanized": "Zla-baḥi mdo",
+    "chinese_title": "月經"
+  },
+  "44": {
+    "tohoku": 44,
+    "taisho_numbers": [
+      "278",
+      "279",
+      "297"
+    ],
+    "sanskrit_title": "Buddha-avataṁsaka-nāma-mahāvaipūlya-sūtra",
+    "tibetan_title_romanized": "Saṅs-rgyas phal-po-che shes-bya-ba śin-tu-rgyas-pa-chen-poḥi mdo",
+    "chinese_title": "佛華嚴大方廣經"
+  },
+  "45": {
+    "tohoku": 45,
+    "taisho_numbers": [
+      "310",
+      "311"
+    ],
+    "sanskrit_title": "Ārya-mahāratnakūṭadharmaparyāyaśatasāhasrikagranthe trisaṁvaranirdeśaparivarta-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa dkon-mchog brtsegs-pa chen-poḥi chos-kyi-rnam-graṅs stoṅ-phrag-brgya-pa-las sdom-pa gsum bstan-paḥi leḥu shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖大寶積法門十萬中說三律儀品大乘經"
+  },
+  "46": {
+    "tohoku": 46,
+    "taisho_numbers": [
+      "310"
+    ],
+    "sanskrit_title": "Ārya-anantamukhapariśodhananirdeśaparivarta-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa sgo mthaḥ-yas-pa rnam-par-sbyoṅ-ba bstan-paḥi leḥu shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖說無邊門清淨品大乘經"
+  },
+  "47": {
+    "tohoku": 47,
+    "taisho_numbers": [
+      "310",
+      "312"
+    ],
+    "sanskrit_title": "Ārya-tathāgatācintyaguhyanirdeśa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa de-bshin-gśegs-paḥi gsaṅ-ba bsam-gyis-mi-khyab-pa bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖說如來秘密不思議大乘經"
+  },
+  "48": {
+    "tohoku": 48,
+    "taisho_numbers": [
+      "310"
+    ],
+    "sanskrit_title": "Ārya-svapnanirdeśa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa rmi-lam bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖說夢大乘經"
+  },
+  "49": {
+    "tohoku": 49,
+    "taisho_numbers": [
+      "310",
+      "360",
+      "361",
+      "362",
+      "363",
+      "364"
+    ],
+    "sanskrit_title": "Ārya-amitābhavyūha-nāma-mahāyāna-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa ḥod-dpag-med-kyi bkod-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖無量光莊嚴大乘經"
+  },
+  "50": {
+    "tohoku": 50,
+    "taisho_numbers": [
+      "310",
+      "313"
+    ],
+    "sanskrit_title": "Ārya-akṣobhyatathāgatasya vyūha-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa de-bshin-gśegs-pa mi-ḥkhrugs-paḥi bkod-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖阿[門@(人/(人+人))]如來莊嚴大乘經"
+  },
+  "51": {
+    "tohoku": 51,
+    "taisho_numbers": [
+      "310"
+    ],
+    "sanskrit_title": "Ārya-varmavyūhanirdeśa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa go-chaḥi bkod-pa bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖說被甲莊嚴大乘經"
+  },
+  "52": {
+    "tohoku": 52,
+    "taisho_numbers": [
+      "310"
+    ],
+    "sanskrit_title": "Ārya-dharmadhātuprakṛti-asaṁbhedanirdeśa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa chos-kyi-dbyiṅs-kyi raṅ-bshin dbyer med-pa bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖說法界自性無差別大乘經"
+  },
+  "53": {
+    "tohoku": 53,
+    "taisho_numbers": [
+      "310",
+      "314"
+    ],
+    "sanskrit_title": "Ārya-daśadharmaka-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa chos-bcu-pa shes-ba-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖十法大乘經經"
+  },
+  "54": {
+    "tohoku": 54,
+    "taisho_numbers": [
+      "310",
+      "315"
+    ],
+    "sanskrit_title": "Ārya-samantamukhaparivarta-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa kun-nas-sgoḥi leḥu shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖普門品大乘經"
+  },
+  "55": {
+    "tohoku": 55,
+    "taisho_numbers": [
+      "310"
+    ],
+    "sanskrit_title": "Ārya-raśmisamantamuktanirdeśa-nāma-mahāyāna-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa ḥod-zer kun-du-dkye-ba bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖說光明遍放大乘經"
+  },
+  "56": {
+    "tohoku": 56,
+    "taisho_numbers": [
+      "310",
+      "316"
+    ],
+    "sanskrit_title": "Ārya-bodhisattvapiṭaka-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa byaṅ-chub-sems-dpaḥi sde-snod ces-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖菩薩藏大乘經"
+  },
+  "57": {
+    "tohoku": 57,
+    "taisho_numbers": [
+      "310"
+    ],
+    "sanskrit_title": "Ārya-ānandagarbhāvakrāntinirdeśa",
+    "tibetan_title_romanized": "Ḥphags-pa dgaḥ-bo-la mṅal-na gnas-pa bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖為阿難說處胎大乘經"
+  },
+  "58": {
+    "tohoku": 58,
+    "taisho_numbers": [
+      "310",
+      "317"
+    ],
+    "sanskrit_title": "Ārya-āyuṣmannandagarbhāvakrāntinirdeśa",
+    "tibetan_title_romanized": "Ḥphags-pa tshe-daṅ-ldan-pa dgaḥ-bo-la mṅal du ḥjug-pa bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖為長者難陀說入胎大乘經"
+  },
+  "59": {
+    "tohoku": 59,
+    "taisho_numbers": [
+      "310",
+      "318",
+      "319"
+    ],
+    "sanskrit_title": "Ārya-mañjuśrībuddhakṣetraguṇavyūha-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa ḥjam-dpal gyi saṅs-rgyas-kyi shiṅ-gi yon-tan bkod-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖文殊師利佛國土功德莊嚴大乘經"
+  },
+  "60": {
+    "tohoku": 60,
+    "taisho_numbers": [
+      "310",
+      "320"
+    ],
+    "sanskrit_title": "Ārya-pitāputrasamāgamana-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa yab daṅ sras mjal-ba shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖父子會合大乘經"
+  },
+  "61": {
+    "tohoku": 61,
+    "taisho_numbers": [
+      "310"
+    ],
+    "sanskrit_title": "Ārya-pūrṇaparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa gaṅ-pos shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖富樓那所問大乘經"
+  },
+  "62": {
+    "tohoku": 62,
+    "taisho_numbers": [
+      "310",
+      "321"
+    ],
+    "sanskrit_title": "Ārya-rāṣtrapālaparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa yul-ḥkhor-skyoṅ-gis shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖持國天所問大乘經"
+  },
+  "63": {
+    "tohoku": 63,
+    "taisho_numbers": [
+      "310",
+      "322",
+      "323"
+    ],
+    "sanskrit_title": "Ārya-gṛhapati-ugraparipṛcchā-nāma",
+    "tibetan_title_romanized": "Ḥphags-pa khyim-bdag-drag-śul-can-gyi shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖郁伽長者所問大乘經"
+  },
+  "64": {
+    "tohoku": 64,
+    "taisho_numbers": [
+      "310"
+    ],
+    "sanskrit_title": "Ārya-vidyutprāptaparipṛccā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa glog-thob-kyis shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖電得所問大乘經"
+  },
+  "65": {
+    "tohoku": 65,
+    "taisho_numbers": [
+      "310",
+      "324"
+    ],
+    "sanskrit_title": "Ārya-bhadramāyākāravyākaraṇa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa sgyu-ma-mkhan bzaṅ-po luṅ-bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖幻師仁賢授記大乘經"
+  },
+  "66": {
+    "tohoku": 66,
+    "taisho_numbers": [
+      "310"
+    ],
+    "sanskrit_title": "Ārya-mahāprātihāryanirdeśa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa cho-ḥphrul chen-po bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖說大神變大乘經"
+  },
+  "67": {
+    "tohoku": 67,
+    "taisho_numbers": [
+      "310"
+    ],
+    "sanskrit_title": "Ārya-maitreyamahāsiṁhanāda-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa byams-paḥi seṅ-geḥi-sgra chen-po shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖彌勒大師子吼大乘經"
+  },
+  "68": {
+    "tohoku": 68,
+    "taisho_numbers": [
+      "310",
+      "325",
+      "326"
+    ],
+    "sanskrit_title": "Ārya-vinayaviniścaya-upāliparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa ḥdul-ba rnam-par-gtan-la-dbab-pa ñe-bar-ḥkhor gyis shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖律決定優波離所問大乘經"
+  },
+  "69": {
+    "tohoku": 69,
+    "taisho_numbers": [
+      "310",
+      "327"
+    ],
+    "sanskrit_title": "Ārya-adhyāśayasañcodana-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa lhag-paḥi-bsam-pa bskul-ba shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖僧上意樂促進大乘經"
+  },
+  "70": {
+    "tohoku": 70,
+    "taisho_numbers": [
+      "310"
+    ],
+    "sanskrit_title": "Ārya-subāhuparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa lag-bzaṅs-kyis shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖善臂所問大乘經"
+  },
+  "71": {
+    "tohoku": 71,
+    "taisho_numbers": [
+      "310",
+      "328",
+      "329"
+    ],
+    "sanskrit_title": "Ārya-surataparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa ṅes-pas shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖了義所問大乘經"
+  },
+  "72": {
+    "tohoku": 72,
+    "taisho_numbers": [
+      "310",
+      "330",
+      "331"
+    ],
+    "sanskrit_title": "Ārya-viradattagṛhapatiparipṛccha-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa khyim-bdag-dpas-byin-gyis shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖勤授長者所問大乘經"
+  },
+  "73": {
+    "tohoku": 73,
+    "taisho_numbers": [
+      "310",
+      "332",
+      "333"
+    ],
+    "sanskrit_title": "Ārya-udayanavatsarājaparipṛcchā-nāmaparivarta",
+    "tibetan_title_romanized": "Ḥphags-pa vatsaḥi-rgyal-po ḥchar-byed kyis shus-pa shes-bya-baḥi mdo",
+    "chinese_title": "聖伐蹉王優陀延所問品"
+  },
+  "74": {
+    "tohoku": 74,
+    "taisho_numbers": [
+      "310",
+      "334",
+      "335",
+      "336"
+    ],
+    "sanskrit_title": "Ārya-sumatidārikā-paripṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa bu-mo blo-gros-bzaṅ-mos shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖童女賢慧所問大乘經"
+  },
+  "75": {
+    "tohoku": 75,
+    "taisho_numbers": [
+      "310"
+    ],
+    "sanskrit_title": "Ārya-gaṅgottarāparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa gaṅ-gāḥi-mchog-gis shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖恒河上所問大乘經"
+  },
+  "76": {
+    "tohoku": 76,
+    "taisho_numbers": [
+      "310",
+      "337"
+    ],
+    "sanskrit_title": "Ārya-aśokadattavyākaraṇa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa mya-ṅan-med-kyis-byin-pa luṅ-bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖無憂施授記大乘經"
+  },
+  "77": {
+    "tohoku": 77,
+    "taisho_numbers": [
+      "310",
+      "338",
+      "339"
+    ],
+    "sanskrit_title": "Ārya-vimaladattāparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa dri-ma-med-kyis-byin-pas shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖無垢施所問大乘經"
+  },
+  "78": {
+    "tohoku": 78,
+    "taisho_numbers": [
+      "310"
+    ],
+    "sanskrit_title": "Ārya-guṇaratnasaṅkusumitaparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa yon-tan rin-chen-me-tog kun-tu-rgyas-pas shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖功德寶華開敷所問大乘經"
+  },
+  "79": {
+    "tohoku": 79,
+    "taisho_numbers": [
+      "310",
+      "340"
+    ],
+    "sanskrit_title": "Ārya-acintyabuddhaviṣayanirdeśa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa saṅs-rgyas-kyi yul bsam-kyis-mi-khyab-pa bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖說佛國不思議大乘經"
+  },
+  "80": {
+    "tohoku": 80,
+    "taisho_numbers": [
+      "310",
+      "341",
+      "342"
+    ],
+    "sanskrit_title": "Ārya-susthitamatidevaputraparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa lhaḥi-bu blo-gros-rab-gnas-kyis shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖天子慧善住所問大乘經"
+  },
+  "81": {
+    "tohoku": 81,
+    "taisho_numbers": [
+      "310",
+      "343",
+      "344"
+    ],
+    "sanskrit_title": "Ārya-siṁhaparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa seṅ-ges shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖師子所問大乘經"
+  },
+  "82": {
+    "tohoku": 82,
+    "taisho_numbers": [
+      "310",
+      "345",
+      "346"
+    ],
+    "sanskrit_title": "Ārya-sarvabuddhamahārahasyopāyakauśalya-jñānottarabodhisattvaparipṛcchā-parivata-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa saṅs-rgyas thams-cad-kyi gsaṅ chen thabs-la-mkhas-pa byaṅ-chub-sems-dpaḥ ye-śes dam-pas shus-paḥi leḥu shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖最勝慧菩薩所問一切佛大秘密善巧方便品大乘經"
+  },
+  "83": {
+    "tohoku": 83,
+    "taisho_numbers": [
+      "310",
+      "347"
+    ],
+    "sanskrit_title": "Ārya-bhadrapālaśreṣṭhiparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa tshoṅ-dpon bzaṅ-skyoṅ-gis shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖商主賢護所問大乘經"
+  },
+  "84": {
+    "tohoku": 84,
+    "taisho_numbers": [
+      "310"
+    ],
+    "sanskrit_title": "Ārya-dārikā-vimalaśraddhāparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa bu-mo rnam-dag-dad-pas shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖童女清淨信所問大乘經"
+  },
+  "85": {
+    "tohoku": 85,
+    "taisho_numbers": [
+      "310",
+      "348"
+    ],
+    "sanskrit_title": "Ārya-maitreyaparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa byams-pas shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖彌勒所問大乘經"
+  },
+  "86": {
+    "tohoku": 86,
+    "taisho_numbers": [
+      "310",
+      "349"
+    ],
+    "sanskrit_title": "Ārya-maitreyaparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa byams-pas shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖彌勒所問大乘經"
+  },
+  "87": {
+    "tohoku": 87,
+    "taisho_numbers": [
+      "310",
+      "350",
+      "351",
+      "352"
+    ],
+    "sanskrit_title": "Ārya-kāśyapaparivarta-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa ḥod-sruṅ-gi-leḥu shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖迦葉品大乘經"
+  },
+  "88": {
+    "tohoku": 88,
+    "taisho_numbers": [
+      "310"
+    ],
+    "sanskrit_title": "Ārya-ratnarāśi-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa rin-po-cheḥi phuṅ-po shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖寶聚大乘經"
+  },
+  "89": {
+    "tohoku": 89,
+    "taisho_numbers": [
+      "310"
+    ],
+    "sanskrit_title": "Ārya-akṣayamatiparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa blo-gros-mi-zad-pas shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖無盡慧所問大乘經"
+  },
+  "90": {
+    "tohoku": 90,
+    "taisho_numbers": [
+      "310"
+    ],
+    "sanskrit_title": "Ārya-saptaśatikā-nāma-prajñāpāramitā-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa śes-rab-kyi-pha-rol-tu-phyin-pa bdun-brgya-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖般若波羅蜜多七百（頌）大乘經"
+  },
+  "91": {
+    "tohoku": 91,
+    "taisho_numbers": [
+      "310"
+    ],
+    "sanskrit_title": "Ārya-ratnacūḍaparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa gtsug-na-rin-po-ches shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖寶髻所問大乘經"
+  },
+  "92": {
+    "tohoku": 92,
+    "taisho_numbers": [
+      "310",
+      "353"
+    ],
+    "sanskrit_title": "Ārya-śrīmālādevīsiṁhanāda-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa lha-mo dpal-phreṅ-gi-seṅ-geḥi sgra shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖王妃勝鬘師子吼大乘經"
+  },
+  "93": {
+    "tohoku": 93,
+    "taisho_numbers": [
+      "310",
+      "354"
+    ],
+    "sanskrit_title": "Ārya-ṛṣi-vyāsaparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa draṅ-sroṅ-rgyas-pas shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖仙人廣博所問大乘經"
+  },
+  "94": {
+    "tohoku": 94,
+    "taisho_numbers": [
+      "425"
+    ],
+    "sanskrit_title": "Ārya-bhadrakalpika-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa bskal-ba bzaṅ-po shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖賢劫大乘經"
+  },
+  "95": {
+    "tohoku": 95,
+    "taisho_numbers": [
+      "186",
+      "187"
+    ],
+    "sanskrit_title": "Ārya-latitavistara-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa rgya-cher-rol-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖廣大遊戲大乘經"
+  },
+  "96": {
+    "tohoku": 96,
+    "taisho_numbers": [
+      "817",
+      "818"
+    ],
+    "sanskrit_title": "Ārya-mañjuśrivikrīḍita-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa ḥjam-dpal rnam-par rol-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖文殊師利戲喜大乘經"
+  },
+  "97": {
+    "tohoku": 97,
+    "taisho_numbers": [
+      "589"
+    ],
+    "sanskrit_title": "Ārya-mañjuśrīvikurvāṇaparivarta-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa ḥjam-dpal rnam-par ḥphrul-baḥi leḥu shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖文殊師利神變品大乘經"
+  },
+  "98": {
+    "tohoku": 98,
+    "taisho_numbers": [
+      "1375"
+    ],
+    "sanskrit_title": "Ārya-sarvatathāgatādhiṣṭhānasattvāvalokena buddhakṣetranirdeśavyūha-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa de-bshin-gśegs-pa thams-cad-kyi byin-gyi-rlabs sems-can-la gzigs śiṅ saṅs-rgyas-kyi shiṅ-gi bkod-pa kun-tu-ston-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖以一切如來加持力觀眾生說佛國土莊嚴大乘經"
+  },
+  "100": {
+    "tohoku": 100,
+    "taisho_numbers": [
+      "357",
+      "358",
+      "359"
+    ],
+    "sanskrit_title": "Ārya sarvabuddhaviṣayāvatārajñānālokālaṁkāra-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa saṅs-rgyas thams-cad-kyi yul-la ḥjug-paḥi ye-śes snaṅ-baḥi rgyan shes-bya-ba theg-pa chen-poḥi mod",
+    "chinese_title": "聖入一切諸佛境界智慧光明莊嚴大乘經"
+  },
+  "101": {
+    "tohoku": 101,
+    "taisho_numbers": [
+      "657"
+    ],
+    "sanskrit_title": "Ārya-kuśalamūlasaṁparigraha-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa dge-baḥi rtsa-ba yoṅs-su ḥdsin-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖善根攝持大乘經"
+  },
+  "102": {
+    "tohoku": 102,
+    "taisho_numbers": [
+      "423",
+      "424"
+    ],
+    "sanskrit_title": "Ārya-saṁghāṭasūtradharmaparyāya",
+    "tibetan_title_romanized": "Ḥphags-pa zuṅ-gi mdoḥi chos-kyi-rnam graṅs",
+    "chinese_title": "聖雙經法門"
+  },
+  "103": {
+    "tohoku": 103,
+    "taisho_numbers": [
+      "484"
+    ],
+    "sanskrit_title": "Ārya-acintyaprabhāsanirdeśa-nāma-dharmaparyāya",
+    "tibetan_title_romanized": "Ḥphags-pa khyeḥu snaṅ-ba bsam-gyis mi khyab-pas bstan-pa shes-bya-baḥi chos-kyi-rnam-graṅs",
+    "chinese_title": "聖光明不思議童子所說法門"
+  },
+  "104": {
+    "tohoku": 104,
+    "taisho_numbers": [
+      "278",
+      "279",
+      "289",
+      "290"
+    ],
+    "sanskrit_title": "Ārya-tathāgatānāṁ buddhakṣetraguṇoktadharmaparyāya",
+    "tibetan_title_romanized": "Ḥphags-pa de-bshin-gśegs-pa rnams-kyi saṅs-rgyas-kyi shiṅ-gi yon-tan brjod-paḥi chos-kyi-rnam-graṅs",
+    "chinese_title": "聖諸如來所說佛國土功德法門"
+  },
+  "105": {
+    "tohoku": 105,
+    "taisho_numbers": [
+      "486"
+    ],
+    "sanskrit_title": "Ārya-maṇḍalāṣṭaka-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa dkyil-ḥkhor brgyad ces-bya-baḥi chos-kyi-rnam-graṅs theg-pa chen-poḥi mdo",
+    "chinese_title": "聖八曼荼羅法門大乘經"
+  },
+  "106": {
+    "tohoku": 106,
+    "taisho_numbers": [
+      "675",
+      "676",
+      "677",
+      "678",
+      "679"
+    ],
+    "sanskrit_title": "Ārya-saṁdhinirmocana-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa dgoṅs-pa ṅes par ḥgrel-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖密意決解大乘經"
+  },
+  "107": {
+    "tohoku": 107,
+    "taisho_numbers": [
+      "670",
+      "671",
+      "672"
+    ],
+    "sanskrit_title": "Ārya-laṅkāvatāra-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa laṅ-kar-gśegs-paḥi theg-pa chen-poḥi mdo",
+    "chinese_title": "聖逝於楞伽大乘經"
+  },
+  "108": {
+    "tohoku": 108,
+    "taisho_numbers": [
+      "670",
+      "671",
+      "672"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Ḥphags-pa laṅ-kar-gśegs-pa rin-po-cheḥi mdo-las saṅs-rgyas thams-cad-kyi gsuṅ-gi sñiṅ-po shes-bya-baḥi leḥu",
+    "chinese_title": "聖逝於楞伽寶經中一切佛所說說心髓品"
+  },
+  "109": {
+    "tohoku": 109,
+    "taisho_numbers": [
+      "464",
+      "465",
+      "466",
+      "467"
+    ],
+    "sanskrit_title": "Ārya-gayāśīrṣa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa ga-yā mgoḥi ri shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖伽耶山頭大乘經"
+  },
+  "110": {
+    "tohoku": 110,
+    "taisho_numbers": [
+      "681",
+      "682"
+    ],
+    "sanskrit_title": "Ārya-ghanavyūha-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa rgyan stug-po bkod-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖厚莊嚴大乘經"
+  },
+  "111": {
+    "tohoku": 111,
+    "taisho_numbers": [
+      "380"
+    ],
+    "sanskrit_title": "Ārya-mahākaruṇāpuṇḍarīka-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa sñiṅ-rje-chen-poḥi pad-ma dkar-po shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖大悲白蓮華大乘經"
+  },
+  "112": {
+    "tohoku": 112,
+    "taisho_numbers": [
+      "157",
+      "158"
+    ],
+    "sanskrit_title": "Ārya-karuṇāpuṇḍarīka-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa sñiṅ-rje pad-ma dkar-po shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖悲白蓮華大乘經"
+  },
+  "113": {
+    "tohoku": 113,
+    "taisho_numbers": [
+      "262",
+      "263",
+      "264"
+    ],
+    "sanskrit_title": "Saddharmapuṇḍarīka-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Dam-paḥi chos pad-ma dkar-po shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "正法白蓮華大乘經"
+  },
+  "114": {
+    "tohoku": 114,
+    "taisho_numbers": [
+      "1374"
+    ],
+    "sanskrit_title": "Ārya-sarvadharmaguṇavyūharāja-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa chos thams-cad-kyi yon-tan bkod-paḥi rgyal-po shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖一切法功德莊嚴大乘經"
+  },
+  "115": {
+    "tohoku": 115,
+    "taisho_numbers": [
+      "366",
+      "367"
+    ],
+    "sanskrit_title": "Ārya-sukhāvatīvyūha-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa bde-ba-can-gyi bkod-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖有樂莊嚴大乘經"
+  },
+  "116": {
+    "tohoku": 116,
+    "taisho_numbers": [
+      "1050"
+    ],
+    "sanskrit_title": "Ārya-karaṇḍavyūha-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa za-ma-tog bkod-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖篋莊嚴大乘經"
+  },
+  "117": {
+    "tohoku": 117,
+    "taisho_numbers": [
+      "461",
+      "462"
+    ],
+    "sanskrit_title": "Ārya-ratnakaraṇḍa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa dkon-mchog-gi za-ma-tog ces-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖寶篋大乘經"
+  },
+  "118": {
+    "tohoku": 118,
+    "taisho_numbers": [
+      "355",
+      "356"
+    ],
+    "sanskrit_title": "Ārya-ratnakoṭi-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa rin-po-cheḥi mthaḥ shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖寶邊大乘經"
+  },
+  "119": {
+    "tohoku": 119,
+    "taisho_numbers": [
+      "374"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Ḥphags-pa yoṅs-su-mya-ṅan-las-ḥdas-pa chen-poḥi mdo",
+    "chinese_title": "聖大涅槃經"
+  },
+  "120": {
+    "tohoku": 120,
+    "taisho_numbers": [
+      "374",
+      "375",
+      "376"
+    ],
+    "sanskrit_title": "Ārya-mahāparinirvāṇa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa yoṅs-su-mya-ṅan-las-ḥdas-pa chen-po theg-pa chen-poḥi mdo",
+    "chinese_title": "聖大涅槃大乘經"
+  },
+  "121": {
+    "tohoku": 121,
+    "taisho_numbers": [
+      "390"
+    ],
+    "sanskrit_title": "Ārya-mahāparinirvāṇasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa yoṅs-su-mya-ṅan-las-ḥdas-pa chen-poḥi mdo",
+    "chinese_title": "聖大涅槃經"
+  },
+  "123": {
+    "tohoku": 123,
+    "taisho_numbers": [
+      "653"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Saṅs-rgyas-kyi mdsod-kyi chos-kyi yi-ge",
+    "chinese_title": "佛藏法字"
+  },
+  "127": {
+    "tohoku": 127,
+    "taisho_numbers": [
+      "639",
+      "640"
+    ],
+    "sanskrit_title": "Ārya-sarvadharmasvabhāvasamatāvipañcitasamādhirāja-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa chos thams-cad-kyi ran-bshiṅ mñam-pa-ñid rnam-par-spros-pa tiṅ-ṅe-ḥdsin-gyi rgyal-po shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖顯一切法自性平等三昧王大乘經"
+  },
+  "129": {
+    "tohoku": 129,
+    "taisho_numbers": [
+      "648"
+    ],
+    "sanskrit_title": "Ārya-praśāntaviniścayaprātiharyasamādhi-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa rab-tu-shi-ba rnam-par-ṅes-paḥi cho-ḥphrul-gyi tiṅ-ṅe-ḥdsiṅ shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖寂靜決定神變三昧大乘經"
+  },
+  "130": {
+    "tohoku": 130,
+    "taisho_numbers": [
+      "371",
+      "372"
+    ],
+    "sanskrit_title": "Ārya-māyopamāsamādhi-nāma-mahāyāna-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa sgyu-ma lta-buḥi tiṅ-ṅe-ḥdsin shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖如幻三昧大乘經"
+  },
+  "131": {
+    "tohoku": 131,
+    "taisho_numbers": [
+      "632",
+      "633",
+      "634"
+    ],
+    "sanskrit_title": "Ārya-tathāgatajñānamudrāsamādhi-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa de-bshin-gśegs-paḥi ye-śes-kyi phyag-rgyaḥi tiṅ-ṅe-ḥdsin- shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖如來智慧印契三昧大乘經"
+  },
+  "132": {
+    "tohoku": 132,
+    "taisho_numbers": [
+      "642"
+    ],
+    "sanskrit_title": "Ārya-śūraṅgamasamādhi-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa dpaḥ-bar-ḥgro-baḥi tiṅ-ṅe-ḥdsin shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖勇行三昧大乘經"
+  },
+  "133": {
+    "tohoku": 133,
+    "taisho_numbers": [
+      "416",
+      "417",
+      "418",
+      "419"
+    ],
+    "sanskrit_title": "Ārya-pratyutpanne buddhasaṁmukhāvasthitasamādhi-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa da-ltar-gyi saṅs-rgyas mṅon-sum du bshugs-paḥi tiṅ-ṅe-ḥdsin shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖現前住佛面前三昧大乘經"
+  },
+  "134": {
+    "tohoku": 134,
+    "taisho_numbers": [
+      "381",
+      "382"
+    ],
+    "sanskrit_title": "Ārya-sarvapuṇyasamuccayasamādhi-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa bsod-nams thams-cad bsdus-paḥi tiṅ-ṅe-ḥdsin shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖集一切福德三昧大乘經"
+  },
+  "135": {
+    "tohoku": 135,
+    "taisho_numbers": [
+      "273"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Rdo-rjeḥi tiṅ-ṅe-ḥdsin-gyi chos-kyi yi-ge",
+    "chinese_title": "金剛三昧法字"
+  },
+  "136": {
+    "tohoku": 136,
+    "taisho_numbers": [
+      "378",
+      "379"
+    ],
+    "sanskrit_title": "Ārya-caturdārakasamādhi-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa khyeḥu bshiḥi tiṅ-ṅe-ḥdsin shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖四童子三昧大乘經"
+  },
+  "138": {
+    "tohoku": 138,
+    "taisho_numbers": [
+      "397",
+      "402"
+    ],
+    "sanskrit_title": "Ārya-mahāsannipātaratnaketudhāraṇi-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa ḥdus-pa chen-po rin-po-che-tog-gi gzuṅs shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖大集寶幢陀羅尼大乘經"
+  },
+  "139": {
+    "tohoku": 139,
+    "taisho_numbers": [
+      "1344",
+      "1345"
+    ],
+    "sanskrit_title": "Ārya-vajramaṇḍa-nāma-dhāraṇī-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa rdo-rje sñiṅ-poḥi gzuṅs shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖金剛道場陀羅尼大乘經"
+  },
+  "140": {
+    "tohoku": 140,
+    "taisho_numbers": [
+      "1009",
+      "1011",
+      "1012",
+      "1013",
+      "1014",
+      "1015",
+      "1016",
+      "1017",
+      "1018"
+    ],
+    "sanskrit_title": "Ārya-anantamukhasādhaka-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa sgo mthaḥ-yas-pa sgrub-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖無邊門成就陀羅尼"
+  },
+  "141": {
+    "tohoku": 141,
+    "taisho_numbers": [
+      "1360"
+    ],
+    "sanskrit_title": "Ārya-ṣaṇmukha-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa sgo drug-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖六門陀羅尼"
+  },
+  "142": {
+    "tohoku": 142,
+    "taisho_numbers": [
+      "654"
+    ],
+    "sanskrit_title": "Ārya-avikalpapraveśa-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa rnam-par mi-rtog-par ḥjug-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖入無分別陀羅尼"
+  },
+  "145": {
+    "tohoku": 145,
+    "taisho_numbers": [
+      "299"
+    ],
+    "sanskrit_title": "Ārya-ratnolka-nāma-dhāraṇī mahāyāna-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa dkon-mchog ta-la-laḥi gzuṅs shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖寶燈明陀羅尼大乘經"
+  },
+  "146": {
+    "tohoku": 146,
+    "taisho_numbers": [
+      "271",
+      "272"
+    ],
+    "sanskrit_title": "Ārya-bodhisattvagocaropāyaviṣayavikurvāṇanirdeśa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa byaṅ-chub-sems-dpaḥi spyod-yul-gyi thabs-kyi yul-la rnam-par-ḥphrul-ba bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖說菩薩行境變現方便境大乘經"
+  },
+  "147": {
+    "tohoku": 147,
+    "taisho_numbers": [
+      "397",
+      "398"
+    ],
+    "sanskrit_title": "Ārya-tathāgatamahākaruṇānirdeśa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa de-bshin-gśegs-paḥi sñiṅ-rje chen-po ṅes-par bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖決定說如來大悲大乘經"
+  },
+  "148": {
+    "tohoku": 148,
+    "taisho_numbers": [
+      "397",
+      "404"
+    ],
+    "sanskrit_title": "Ārya-gaganagañjaparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa nam-mkhaḥ-mdsod-kyis shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖虛空藏所問大乘經"
+  },
+  "149": {
+    "tohoku": 149,
+    "taisho_numbers": [
+      "310",
+      "349"
+    ],
+    "sanskrit_title": "Ārya-maitreyaparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa byams-pas shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖慈氏所問大乘經"
+  },
+  "151": {
+    "tohoku": 151,
+    "taisho_numbers": [
+      "544"
+    ],
+    "sanskrit_title": "Ārya-pratībhānamatiparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa spobs-paḥi blo-gros-kyis shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖辯意所問大乘經"
+  },
+  "152": {
+    "tohoku": 152,
+    "taisho_numbers": [
+      "397",
+      "400"
+    ],
+    "sanskrit_title": "Ārya-sāgaramatiparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa blo-gros rgya-mtshos shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖意海所問大乘經"
+  },
+  "153": {
+    "tohoku": 153,
+    "taisho_numbers": [
+      "598"
+    ],
+    "sanskrit_title": "Ārya-sāgaranāgarājaparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa kluḥi rgyal-po rgya-mtshos shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖海龍王所問大乘經"
+  },
+  "154": {
+    "tohoku": 154,
+    "taisho_numbers": [
+      "601"
+    ],
+    "sanskrit_title": "Ārya-sāgaranāgarājaparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa kluḥi rgyal-po rgya-mtshos shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖海龍王所問大乘經"
+  },
+  "155": {
+    "tohoku": 155,
+    "taisho_numbers": [
+      "599"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Ḥphags-pa kluḥi rgyal-po rgya-mtshos shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖海龍王所問大乘經"
+  },
+  "156": {
+    "tohoku": 156,
+    "taisho_numbers": [
+      "635"
+    ],
+    "sanskrit_title": "Ārya-anavataptanāgarājaparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa kluḥi rgyal-po ma-dros-pas shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖無熱龍王所問大乘經"
+  },
+  "157": {
+    "tohoku": 157,
+    "taisho_numbers": [
+      "624",
+      "625"
+    ],
+    "sanskrit_title": "Ārya-drumakiṁnararājaparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa mi-ḥam-ciḥi rgyal-po sdoṅ-pos shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖緊那羅王所問大乘經"
+  },
+  "160": {
+    "tohoku": 160,
+    "taisho_numbers": [
+      "585",
+      "586",
+      "587"
+    ],
+    "sanskrit_title": "Ārya-brahmaviśeṣacintiparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa tshaṅs-pa khyad-par-sems-kyis shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖梵勝心所問大乘經"
+  },
+  "161": {
+    "tohoku": 161,
+    "taisho_numbers": [
+      "588"
+    ],
+    "sanskrit_title": "Ārya-suvikrāntacintadevaputraparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa lhaḥi-bu rab-rtsal-sems-kyis shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖天子勇猛心所問大乘經"
+  },
+  "163": {
+    "tohoku": 163,
+    "taisho_numbers": [
+      "433"
+    ],
+    "sanskrit_title": "Ārya-ratnajāliparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa rin-chen-dra-ba-can-gyis shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖寶網主所問大乘經"
+  },
+  "164": {
+    "tohoku": 164,
+    "taisho_numbers": [
+      "437"
+    ],
+    "sanskrit_title": "Ārya-ratnacandraparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa rin-chen-zla-bas shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖寶月所問大乘經"
+  },
+  "165": {
+    "tohoku": 165,
+    "taisho_numbers": [
+      "533"
+    ],
+    "sanskrit_title": "Ārya-kṣemaṅkaraparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa bde-byed-kyis shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖作樂所問大乘經"
+  },
+  "167": {
+    "tohoku": 167,
+    "taisho_numbers": [
+      "420",
+      "421"
+    ],
+    "sanskrit_title": "Ārya-vikurvāṇarājaparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa rnam-par-ḥphrul-baḥi rgyal-pos shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖神變王所問大乘經"
+  },
+  "169": {
+    "tohoku": 169,
+    "taisho_numbers": [
+      "397",
+      "399"
+    ],
+    "sanskrit_title": "Ārya-mahāyānopadeśa-nāma-mahāyāna-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa theg-pa chen-poḥi man-ṅag ces-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖大乘教大經經"
+  },
+  "170": {
+    "tohoku": 170,
+    "taisho_numbers": [
+      "567",
+      "568"
+    ],
+    "sanskrit_title": "Ārya-śrīmatībrāhmaṇīparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa bram-ze-mo dpal-ldam-mas shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖婆羅門婦具吉祥所問大乘經"
+  },
+  "171": {
+    "tohoku": 171,
+    "taisho_numbers": [
+      "559",
+      "560",
+      "561"
+    ],
+    "sanskrit_title": "Ārya-mahālalikāparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa bgres-mos shus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖魔女所問大乘經"
+  },
+  "172": {
+    "tohoku": 172,
+    "taisho_numbers": [
+      "473",
+      "661",
+      "662"
+    ],
+    "sanskrit_title": "Ārya-mañjuśrīparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa ḥjam-dpal-gyis dris-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖文殊師利所問大乘經"
+  },
+  "173": {
+    "tohoku": 173,
+    "taisho_numbers": [
+      "846",
+      "1643"
+    ],
+    "sanskrit_title": "Ārya-nairātmyaparipṛcchā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa bdag-med-pa dris-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖無我所問大乘經"
+  },
+  "174": {
+    "tohoku": 174,
+    "taisho_numbers": [
+      "481",
+      "482"
+    ],
+    "sanskrit_title": "Ārya-lokadharaparipṛcchā-nāma-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa ḥjig-rten-ḥdsin-gyis yoṅs-su dris-pa shes-bya-baḥi mdo",
+    "chinese_title": "聖持世所問經"
+  },
+  "175": {
+    "tohoku": 175,
+    "taisho_numbers": [
+      "397",
+      "403"
+    ],
+    "sanskrit_title": "Ārya-akṣayamatinirdeśa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa blo-gros-mi-zad-pas bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖無盡意所問大乘經"
+  },
+  "176": {
+    "tohoku": 176,
+    "taisho_numbers": [
+      "474",
+      "475",
+      "476"
+    ],
+    "sanskrit_title": "Ārya-vimalakīrtinirdeśa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa dri-ma-med-par-grags-pas bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖無垢稱所問大乘經"
+  },
+  "177": {
+    "tohoku": 177,
+    "taisho_numbers": [
+      "774"
+    ],
+    "sanskrit_title": "Ārya-mañjuśrīnirdeśa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa ḥjam-dpal-gyis bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖文殊師利所說大乘經"
+  },
+  "178": {
+    "tohoku": 178,
+    "taisho_numbers": [
+      "472"
+    ],
+    "sanskrit_title": "Ārya-bodhipakṣanirdeśa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa byaṅ-chub-kyi phyogs bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖說菩提分大乘經"
+  },
+  "179": {
+    "tohoku": 179,
+    "taisho_numbers": [
+      "460",
+      "1489",
+      "1490"
+    ],
+    "sanskrit_title": "Ārya-samvṛtiparamārthasatyanirdeśa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa kun-rdsob daṅ don-dam-paḥi-bden-pa bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖說俗諦與真諦大乘經"
+  },
+  "180": {
+    "tohoku": 180,
+    "taisho_numbers": [
+      "650",
+      "651",
+      "652"
+    ],
+    "sanskrit_title": "Ārya-sarvadharmāpravṛttinirdeśa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa chos thams-cad ḥbyuṅ-ba med-par bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖說一切法無生大乘經"
+  },
+  "181": {
+    "tohoku": 181,
+    "taisho_numbers": [
+      "220"
+    ],
+    "sanskrit_title": "Ārya-pañcapāramitānirdeśa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa pha-rol-tu-phyin-pa lṅa bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖說五波羅蜜多大乘經"
+  },
+  "183": {
+    "tohoku": 183,
+    "taisho_numbers": [
+      "705"
+    ],
+    "sanskrit_title": "Ārya-dānānuśaṁsānirdeśa",
+    "tibetan_title_romanized": "Ḥphags-pa sbyin-paḥi phan-yon bstan-pa",
+    "chinese_title": "聖說布施利益"
+  },
+  "184": {
+    "tohoku": 184,
+    "taisho_numbers": [
+      "488"
+    ],
+    "sanskrit_title": "Ārya-bodhisattvacaryānirdeśa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa byaṅ-chub-sems-dpaḥi spyod-pa bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖說菩薩行大乘經"
+  },
+  "185": {
+    "tohoku": 185,
+    "taisho_numbers": [
+      "302",
+      "303",
+      "304"
+    ],
+    "sanskrit_title": "Ārya-tathāgataguṇajñānācintyaviṣayāvatāranirdeśa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa de-bshin-gśegs-paḥi yon-tan daṅ ye-śes bsam-gyis-mi-khyab-paḥi yul-la ḥjug-pa bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖說入如來功德智慧不可思議境界大乘經"
+  },
+  "187": {
+    "tohoku": 187,
+    "taisho_numbers": [
+      "278",
+      "279"
+    ],
+    "sanskrit_title": "Ārya-buddhadharmācintyanirdeśa",
+    "tibetan_title_romanized": "Ḥphags-pa saṅs-rgyas-kyi chos bsam-gyis-mi-khyab-ba bstan-pa",
+    "chinese_title": "聖說佛法不可思議"
+  },
+  "190": {
+    "tohoku": 190,
+    "taisho_numbers": [
+      "565",
+      "566"
+    ],
+    "sanskrit_title": "Ārya-strīvivartavyākaraṇa-nāma-mahāyānāsūtra",
+    "tibetan_title_romanized": "Ḥphags-pa bud-med ḥgyur-ba luṅ-bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖轉女身授記大乘經"
+  },
+  "191": {
+    "tohoku": 191,
+    "taisho_numbers": [
+      "480"
+    ],
+    "sanskrit_title": "Ārya-candrottarādārikāvyākaraṇa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa bu-mo zla-mchog luṅ-bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖童女最上月授記大乘經"
+  },
+  "192": {
+    "tohoku": 192,
+    "taisho_numbers": [
+      "573"
+    ],
+    "sanskrit_title": "Ārya-kṣemavatīvyākaraṇa-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa bde-ldan-ma luṅ-bstan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖有樂夫人授記大乘經"
+  },
+  "196": {
+    "tohoku": 196,
+    "taisho_numbers": [
+      "470",
+      "471"
+    ],
+    "sanskrit_title": "Ārya-mañjuśrīvihāna-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa ḥjam-dpal gnas-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖文殊師利住大乘經"
+  },
+  "199": {
+    "tohoku": 199,
+    "taisho_numbers": [
+      "452"
+    ],
+    "sanskrit_title": "Kwan-ji-liu-phus-shaṅ-śyan-ten-śi-sthy-an-kyin",
+    "tibetan_title_romanized": "Ḥphags-pa byaṅ-chub-sems-dpaḥ byams-pa dgaḥ-ldan gnam-du skye-ba blaṅs-paḥi mdo",
+    "chinese_title": "聖彌勒菩薩兜率天受生經"
+  },
+  "200": {
+    "tohoku": 200,
+    "taisho_numbers": [
+      "807"
+    ],
+    "sanskrit_title": "Ārya-lokānuvartana-nāma-mahāyāna-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa ḥjig-rten-gyi rjes-su-ḥthun-par ḥjug-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖世間隨入大乘經"
+  },
+  "201": {
+    "tohoku": 201,
+    "taisho_numbers": [
+      "305"
+    ],
+    "sanskrit_title": "Ārya-śraddhābalādhānāvatāramudrā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa dad-paḥi stobs bskyed-pa-la ḥjug-paḥi phyag-rgya shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖入信力生印契大乘經"
+  },
+  "202": {
+    "tohoku": 202,
+    "taisho_numbers": [
+      "645",
+      "646"
+    ],
+    "sanskrit_title": "Ārya-niyatāniyatagatimudrāvatāra-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa ṅes-pa daṅ ma-ṅes-par ḥgro-baḥi phyag-rgya-la ḥjug-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖入決定未決定行印契大乘經"
+  },
+  "204": {
+    "tohoku": 204,
+    "taisho_numbers": [
+      "702"
+    ],
+    "sanskrit_title": "Ārya-pradīpadāniya-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa mar-me ḥbul-ba shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖燈明奉施大乘經"
+  },
+  "207": {
+    "tohoku": 207,
+    "taisho_numbers": [
+      "813",
+      "814"
+    ],
+    "sanskrit_title": "Hastikakṣya-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Glaṅ-poḥi rtsal shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "象腋大乘經"
+  },
+  "209": {
+    "tohoku": 209,
+    "taisho_numbers": [
+      "835",
+      "836"
+    ],
+    "sanskrit_title": "Ārya-siṁhanādika-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa seṅ-geḥi sgra bsgrags-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖師子吼大乘經"
+  },
+  "210": {
+    "tohoku": 210,
+    "taisho_numbers": [
+      "708",
+      "709",
+      "710",
+      "711",
+      "712"
+    ],
+    "sanskrit_title": "Ārya-sālistabha-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa sā-luḥi ljaṅ-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖稻芉大乘經"
+  },
+  "211": {
+    "tohoku": 211,
+    "taisho_numbers": [
+      "99",
+      "123",
+      "124",
+      "125"
+    ],
+    "sanskrit_title": "Pratītyasamutpādādivibhaṅganirdeśa-nāma-sūtra",
+    "tibetan_title_romanized": "Rten-ciṅ-ḥbrel-bar-ḥbyuṅ-ba daṅ-po daṅ rnam-par dbye-ba bstan-pa shes-bya-baḥi mdo",
+    "chinese_title": "說緣起初及分別經"
+  },
+  "213": {
+    "tohoku": 213,
+    "taisho_numbers": [
+      "99",
+      "100",
+      "118",
+      "119",
+      "120",
+      "125"
+    ],
+    "sanskrit_title": "Ārya-aṅgulimālīya-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa sor-moḥi phreṅ-ba-la phan-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖利益指鬘大乘經"
+  },
+  "216": {
+    "tohoku": 216,
+    "taisho_numbers": [
+      "626",
+      "627",
+      "628",
+      "629"
+    ],
+    "sanskrit_title": "Ārya-ajātaśatrukaukṛittyavinodanā-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa ma-skyes-dgraḥi ḥgyod-pa bsal-ba shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖阿闍世懺悔大乘經"
+  },
+  "217": {
+    "tohoku": 217,
+    "taisho_numbers": [
+      "545"
+    ],
+    "sanskrit_title": "Ārya-śrīgupta-nāma-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa dpal-sbas shes-bya-baḥi mdo",
+    "chinese_title": "聖吉祥護經"
+  },
+  "218": {
+    "tohoku": 218,
+    "taisho_numbers": [
+      "1494"
+    ],
+    "sanskrit_title": "Ārya-karmāvaraṇaviśuddhi-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa sgrib-pa rnam-par-dag-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖障清淨大乘經"
+  },
+  "219": {
+    "tohoku": 219,
+    "taisho_numbers": [
+      "1491",
+      "1493"
+    ],
+    "sanskrit_title": "Ārya-karmāvaraṇapratiprasrabdhi-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa las-kyi sgrib-pa rgyun gcod-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖斷滅業障相續大乘經"
+  },
+  "220": {
+    "tohoku": 220,
+    "taisho_numbers": [
+      "653"
+    ],
+    "sanskrit_title": "Buddhapiṭakaduḥśīlanigraha-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Saṅs-rgyas-kyi sde-snod tshul-khrims ḥchal-ba tshar-gcod-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "制佛藏破戒大乘經"
+  },
+  "221": {
+    "tohoku": 221,
+    "taisho_numbers": [
+      "514",
+      "515",
+      "516"
+    ],
+    "sanskrit_title": "Ārya-rājavavādaka-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa rgyal-po-la gdams-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖王訓誡大乘經"
+  },
+  "222": {
+    "tohoku": 222,
+    "taisho_numbers": [
+      "270"
+    ],
+    "sanskrit_title": "Ārya-mahābherīhārakaparivarta-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa rṅa-bo-che chen-poḥi leḥu shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖大鼓品大乘經"
+  },
+  "226": {
+    "tohoku": 226,
+    "taisho_numbers": [
+      "575",
+      "576",
+      "577"
+    ],
+    "sanskrit_title": "Ārya-bhavasaṁkrānti-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa srid-pa ḥpho-ba shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖轉有大乘經"
+  },
+  "227": {
+    "tohoku": 227,
+    "taisho_numbers": [
+      "274",
+      "275"
+    ],
+    "sanskrit_title": "Ārya-sarvavaidalyasaṁgraha-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa rnam-par ḥthag-pa thams-cad bsdus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖攝一切細破大乘經"
+  },
+  "228": {
+    "tohoku": 228,
+    "taisho_numbers": [
+      "810"
+    ],
+    "sanskrit_title": "Ārya-buddhasaṅgīti-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa saṅs-rgyas bgro-ba shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖讚佛大乘經"
+  },
+  "230": {
+    "tohoku": 230,
+    "taisho_numbers": [
+      "397"
+    ],
+    "sanskrit_title": "Mahāsannipātān mahāyānasūtrāt tathāgataśrīsamaya-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥdus-pa chen-po theg-pa chen-poḥi mdo-sde-las de-bshin-gśegs-paḥi dpal-gyi dam-tshig ces-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "大集大乘經中如來吉祥三摩耶大乘經"
+  },
+  "231": {
+    "tohoku": 231,
+    "taisho_numbers": [
+      "489",
+      "658",
+      "659"
+    ],
+    "sanskrit_title": "Ārya-ratnamegha-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa dkon-mchog sprin shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖寶雲大乘經"
+  },
+  "232": {
+    "tohoku": 232,
+    "taisho_numbers": [
+      "387"
+    ],
+    "sanskrit_title": "Ārya-mahāmegha-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa sprin chen-po shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖大雲大乘經"
+  },
+  "235": {
+    "tohoku": 235,
+    "taisho_numbers": [
+      "989",
+      "991",
+      "992",
+      "993"
+    ],
+    "sanskrit_title": "Ārya-mahāmegha",
+    "tibetan_title_romanized": "Ḥphags-pa sprin chen-po",
+    "chinese_title": "聖大雲"
+  },
+  "236": {
+    "tohoku": 236,
+    "taisho_numbers": [
+      "945"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Bcom-ldan-ḥdas-kyi gtsug-gtor chen-po de-bshin-gśegs-paḥi gsaṅ-ba sgrub-paḥi don gṅon-par thob-paḥi rgyu byaṅ-chub-sems-dpaḥ thams-cad-kyi spyod-pa dpaḥ-bar-ḥgro-baḥi mdo leḥu stoṅ-phrag-bcu-pa-las leḥu bcu-pa",
+    "chinese_title": "證得薄伽梵大髻頂如來秘密成就義因一切菩薩行首楞嚴經十萬品中第十品"
+  },
+  "238": {
+    "tohoku": 238,
+    "taisho_numbers": [
+      "761"
+    ],
+    "sanskrit_title": "Ārya-dharmasaṁgīti-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa chos yaṅ-dag-par sdud-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖法集大乘經"
+  },
+  "239": {
+    "tohoku": 239,
+    "taisho_numbers": [
+      "410",
+      "411"
+    ],
+    "sanskrit_title": "Daśacakrakṣitigarbha-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥdus-pa chen-po-las saḥi-sñiṅ-poḥi ḥkhor-lo bcu-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "大集經中地藏十輪大乘經"
+  },
+  "240": {
+    "tohoku": 240,
+    "taisho_numbers": [
+      "266",
+      "267",
+      "268"
+    ],
+    "sanskrit_title": "Ārya-avaivartacakra-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa phyir-mi-ldog-paḥi ḥkhor-lo shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖不退轉輪大乘經"
+  },
+  "242": {
+    "tohoku": 242,
+    "taisho_numbers": [
+      "998"
+    ],
+    "sanskrit_title": "Ārya-pariṇatacakra-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa yoṅs-su bsṅo-baḥi ḥkhor-lo shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖正迴向輪大乘經"
+  },
+  "246": {
+    "tohoku": 246,
+    "taisho_numbers": [
+      "833",
+      "834"
+    ],
+    "sanskrit_title": "Ārya-paramārthadharmavijaya-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa don-dam-paḥi chos-kyis rnam-par rgyal-ba shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖第一義諦法勝利大乘經"
+  },
+  "251": {
+    "tohoku": 251,
+    "taisho_numbers": [
+      "772",
+      "773"
+    ],
+    "sanskrit_title": "Ārya-caturdharmaka-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa chos-bshi-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖四法大乘經"
+  },
+  "252": {
+    "tohoku": 252,
+    "taisho_numbers": [
+      "774"
+    ],
+    "sanskrit_title": "Ārya-catuṣkanirhāra-nāma-mahāyāna-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa bshi-pa sgrub-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖四成就大乘經"
+  },
+  "256": {
+    "tohoku": 256,
+    "taisho_numbers": [
+      "1484"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Chos-kyi rgya-mo saṅs-rgyas rnam-par snaṅ-mdsad-kyis byaṅ-chub-sems-dpaḥ sems-kyi gnas bśad-pa leḥu bcu-pa",
+    "chinese_title": "法大母；毘盧舍那佛說菩提心住第十品"
+  },
+  "257": {
+    "tohoku": 257,
+    "taisho_numbers": [
+      "397"
+    ],
+    "sanskrit_title": "Ārya-sūryagarbha-nāma-mahāvaipulyasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa śin-tu rgyas-pa chen-poḥi sde ñi-maḥi sñiṅ-po shes-bya-baḥi mdo",
+    "chinese_title": "聖大方廣日藏經"
+  },
+  "258": {
+    "tohoku": 258,
+    "taisho_numbers": [
+      "666",
+      "667"
+    ],
+    "sanskrit_title": "Ārya-tathāgatagarbha-nāma-mahāyāna-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa de-bshin-gśegs-paḥi sñiṅ-po shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖如來藏大乘經"
+  },
+  "259": {
+    "tohoku": 259,
+    "taisho_numbers": [
+      "828",
+      "829",
+      "830"
+    ],
+    "sanskrit_title": "Ārya-anakṣarakaraṇḍakavairocanagarbha-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa yi-ge med-paḥi za-ma-tog rnam-par-snaṅ-mdsad-kyi sñiṅ-po shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖無字篋毘盧舍那藏大乘經"
+  },
+  "260": {
+    "tohoku": 260,
+    "taisho_numbers": [
+      "405",
+      "406",
+      "407",
+      "408"
+    ],
+    "sanskrit_title": "Ārya-ākāśagarbha-nāma-mahāyāna-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa nam-mkhaḥi sñiṅ-po shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖虛空藏大乘經"
+  },
+  "261": {
+    "tohoku": 261,
+    "taisho_numbers": [
+      "310",
+      "345",
+      "346"
+    ],
+    "sanskrit_title": "Ārya-upāyakauśalya-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa thabs mkhas-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖善巧方便大乘經"
+  },
+  "262": {
+    "tohoku": 262,
+    "taisho_numbers": [
+      "443"
+    ],
+    "sanskrit_title": "Buddhanāmasahasrapañcaśatacaturtripañcadaśa",
+    "tibetan_title_romanized": "Saṅs-rgyas-kyi mtshan lṅa-stoṅ-bshi-brgya-lṅa-bcu-rtsa-gsum-pa",
+    "chinese_title": "五千四百五十三佛名"
+  },
+  "266": {
+    "tohoku": 266,
+    "taisho_numbers": [
+      "434"
+    ],
+    "sanskrit_title": "Ārya-kusumasañcaya-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa me-tog-gi tshogs shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖華聚大乘經"
+  },
+  "269": {
+    "tohoku": 269,
+    "taisho_numbers": [
+      "435"
+    ],
+    "sanskrit_title": "Ārya-daśadigandhakāravidhvaṁsana-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa phyogs-bcuḥi mun-pa rnam-par-sel-ba shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖消除十方冥闇大乘經"
+  },
+  "270": {
+    "tohoku": 270,
+    "taisho_numbers": [
+      "1147",
+      "1333",
+      "1334"
+    ],
+    "sanskrit_title": "Ārya-saptabuddhaka-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa saṅs-rgyas bdun-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖七佛大乘經"
+  },
+  "271": {
+    "tohoku": 271,
+    "taisho_numbers": [
+      "430",
+      "431"
+    ],
+    "sanskrit_title": "Ārya-aṣṭabuddha-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa saṅs-rgyas brgyad-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖八佛大乘經"
+  },
+  "272": {
+    "tohoku": 272,
+    "taisho_numbers": [
+      "310"
+    ],
+    "sanskrit_title": "Daśabuddhaka-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Saṅs-rygas bcu-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "十佛大乘經"
+  },
+  "273": {
+    "tohoku": 273,
+    "taisho_numbers": [
+      "1348",
+      "1349"
+    ],
+    "sanskrit_title": "Ārya-dvādaśabuddhaka-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa saṅs-rgyas bcu-gñis-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖十二佛大乘經"
+  },
+  "274": {
+    "tohoku": 274,
+    "taisho_numbers": [
+      "438"
+    ],
+    "sanskrit_title": "Ārya-buddhakuṭa-nāma-mahāyānasūtra-mahādharmaparyāya",
+    "tibetan_title_romanized": "Ḥphags-pa saṅs-rgyas-kyi dbu-rgyan shes-bya-ba theg-pa chen-poḥi mdo chos-kyi rnam-graṅs chen-po",
+    "chinese_title": "聖佛寶冠大乘經大法門"
+  },
+  "275": {
+    "tohoku": 275,
+    "taisho_numbers": [
+      "680"
+    ],
+    "sanskrit_title": "Ārya-buddhabhūmi-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa saṅs-rgyas-kyi sa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖佛地大乘經"
+  },
+  "277": {
+    "tohoku": 277,
+    "taisho_numbers": [
+      "430",
+      "431"
+    ],
+    "sanskrit_title": "Ārya-aṣṭamaṇḍalaka-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa dkyil-ḥkhor brgyad-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖八曼荼羅大乘經"
+  },
+  "278": {
+    "tohoku": 278,
+    "taisho_numbers": [
+      "429"
+    ],
+    "sanskrit_title": "Ārya-maṅgalāṣṭaka-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa bkra-śis brgyad-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖八吉祥大乘經"
+  },
+  "287": {
+    "tohoku": 287,
+    "taisho_numbers": [
+      "721"
+    ],
+    "sanskrit_title": "Ārya-saddharmasmṛtyupasthāna",
+    "tibetan_title_romanized": "Ḥphags-pa dam-paḥi chos dran-pa ñe-bar gshag-pa",
+    "chinese_title": "聖正法念處"
+  },
+  "291": {
+    "tohoku": 291,
+    "taisho_numbers": [
+      "26"
+    ],
+    "sanskrit_title": "Mahāśūnyatā-nāma-mahāsūtra",
+    "tibetan_title_romanized": "Mdo chen-po stoṅ-pa-ñid chen-po shes-bya-ba",
+    "chinese_title": "大空大經"
+  },
+  "292": {
+    "tohoku": 292,
+    "taisho_numbers": [
+      "99"
+    ],
+    "sanskrit_title": "Dhvajāgra-nāma-mahāsūtra",
+    "tibetan_title_romanized": "Mdo chen-po rgyal-mtshan mchog ces-bya-ba",
+    "chinese_title": "上勝幢大經"
+  },
+  "293": {
+    "tohoku": 293,
+    "taisho_numbers": [
+      "99"
+    ],
+    "sanskrit_title": "Dhvajāgra-nāma-mahāsūtra",
+    "tibetan_title_romanized": "Mdo chen-po rgyal-mtshan dam-pa",
+    "chinese_title": "大經妙勝幢"
+  },
+  "296": {
+    "tohoku": 296,
+    "taisho_numbers": [
+      "99"
+    ],
+    "sanskrit_title": "Kumāradṛṣṭānta-sūtra",
+    "tibetan_title_romanized": "Gshon-nu dpeḥi mdo",
+    "chinese_title": "壯者譬經"
+  },
+  "297": {
+    "tohoku": 297,
+    "taisho_numbers": [
+      "26",
+      "776"
+    ],
+    "sanskrit_title": "Dhātubahuka-sūtra",
+    "tibetan_title_romanized": "Khams maṅ-poḥi mdo",
+    "chinese_title": "多界經"
+  },
+  "300": {
+    "tohoku": 300,
+    "taisho_numbers": [
+      "99"
+    ],
+    "sanskrit_title": "Ārya-kalyāṇamitrasevana-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa dge-baḥi bśes-gñen bsten-paḥi mdo",
+    "chinese_title": "聖善知識奉事經"
+  },
+  "307": {
+    "tohoku": 307,
+    "taisho_numbers": [
+      "759"
+    ],
+    "sanskrit_title": "Āyuṣaryanta-sūtra",
+    "tibetan_title_romanized": "Tsheḥi mthaḥi mdo",
+    "chinese_title": "壽命終經"
+  },
+  "309": {
+    "tohoku": 309,
+    "taisho_numbers": [
+      "801"
+    ],
+    "sanskrit_title": "Anityatā-sūtra",
+    "tibetan_title_romanized": "Mi-rtag-pa-ñid-kyi mdo",
+    "chinese_title": "無常經"
+  },
+  "310": {
+    "tohoku": 310,
+    "taisho_numbers": [
+      "758"
+    ],
+    "sanskrit_title": "Anityatā-sūtra",
+    "tibetan_title_romanized": "Mi-rtag-pa-ñid-kyi mdo",
+    "chinese_title": "無常經"
+  },
+  "313": {
+    "tohoku": 313,
+    "taisho_numbers": [
+      "26",
+      "1362"
+    ],
+    "sanskrit_title": "Ārya-bhadrakarātrī-nāma-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa mtshan-mo bzaṅ-po shes-bya-baḥi mdo",
+    "chinese_title": "聖善夜經"
+  },
+  "316": {
+    "tohoku": 316,
+    "taisho_numbers": [
+      "99",
+      "125"
+    ],
+    "sanskrit_title": "Ārya-catuḥsatya-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa bden-pa bshiḥi mdo",
+    "chinese_title": "聖四諦經"
+  },
+  "317": {
+    "tohoku": 317,
+    "taisho_numbers": [
+      "762",
+      "763"
+    ],
+    "sanskrit_title": "Arthaviniścaya-nāma-dharmaparyāya",
+    "tibetan_title_romanized": "Don rnam-par ṅes-pa shes-bya-baḥi chos-kyi rnam-graṅs",
+    "chinese_title": "義決定法門"
+  },
+  "318": {
+    "tohoku": 318,
+    "taisho_numbers": [
+      "97",
+      "98"
+    ],
+    "sanskrit_title": "Ārya-arthavistara-nāma-dharmaparyāya",
+    "tibetan_title_romanized": "Ḥphags-pa don rgyas-pa shes-bya-baḥi chos-kyi rnam-graṅs",
+    "chinese_title": "聖廣義法門"
+  },
+  "319": {
+    "tohoku": 319,
+    "taisho_numbers": [
+      "688",
+      "689"
+    ],
+    "sanskrit_title": "Ārya-adbhutadharmaparyāya-nāma",
+    "tibetan_title_romanized": "Ḥphags-pa rmad-du-byuṅ-ba shes-bya-baḥi chos-kyi rnam-graṅs",
+    "chinese_title": "聖希有法門"
+  },
+  "321": {
+    "tohoku": 321,
+    "taisho_numbers": [
+      "700"
+    ],
+    "sanskrit_title": "Caityapradakṣiṇa-gāthā",
+    "tibetan_title_romanized": "Mchod rten bskor-baḥi tshigs-su-bcad-pa",
+    "chinese_title": "制多遶行偈"
+  },
+  "326": {
+    "tohoku": 326,
+    "taisho_numbers": [
+      "210",
+      "212",
+      "213"
+    ],
+    "sanskrit_title": "Udānavarga",
+    "tibetan_title_romanized": "Ched-du brjod-paḥi tshoms",
+    "chinese_title": "優陀那品"
+  },
+  "329": {
+    "tohoku": 329,
+    "taisho_numbers": [
+      "592"
+    ],
+    "sanskrit_title": "Devatā-sūtra",
+    "tibetan_title_romanized": "Lhaḥi mdo",
+    "chinese_title": "天經"
+  },
+  "330": {
+    "tohoku": 330,
+    "taisho_numbers": [
+      "99"
+    ],
+    "sanskrit_title": "Alpadevatā-sūtra",
+    "tibetan_title_romanized": "Lhaḥi mdo ñuṅ-ṅu",
+    "chinese_title": "天經小品"
+  },
+  "331": {
+    "tohoku": 331,
+    "taisho_numbers": [
+      "99"
+    ],
+    "sanskrit_title": "Candra-sūtra",
+    "tibetan_title_romanized": "Zla-baḥi mdo",
+    "chinese_title": "月經"
+  },
+  "332": {
+    "tohoku": 332,
+    "taisho_numbers": [
+      "704"
+    ],
+    "sanskrit_title": "Kūṭāgāra-sūtra",
+    "tibetan_title_romanized": "Khaṅ-bu brtsegs-paḥi mdo",
+    "chinese_title": "家屋建立經"
+  },
+  "335": {
+    "tohoku": 335,
+    "taisho_numbers": [
+      "785"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Ḥphags-pa ḥkhar-gsil-gyi mdo",
+    "chinese_title": "聖錫杖經"
+  },
+  "336": {
+    "tohoku": 336,
+    "taisho_numbers": [
+      "785"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Ḥkhar-gsil ḥchaṅ-baḥi kun-tu-spyod-pa cho-ga",
+    "chinese_title": "執錫杖作法儀軌"
+  },
+  "337": {
+    "tohoku": 337,
+    "taisho_numbers": [
+      "99",
+      "109",
+      "110"
+    ],
+    "sanskrit_title": "Dharmacakra-sūtra",
+    "tibetan_title_romanized": "Chos-kyi ḥkhor-loḥi mdo",
+    "chinese_title": "法輪經"
+  },
+  "338": {
+    "tohoku": 338,
+    "taisho_numbers": [
+      "80"
+    ],
+    "sanskrit_title": "Karmavibhaṅga",
+    "tibetan_title_romanized": "Las rnam-par-ḥbyed-pa",
+    "chinese_title": "業分別"
+  },
+  "339": {
+    "tohoku": 339,
+    "taisho_numbers": [
+      "26",
+      "78",
+      "79",
+      "81"
+    ],
+    "sanskrit_title": "Karmavibhaṅga-nāma-dharmagrantha",
+    "tibetan_title_romanized": "Las-kyi rnam-par ḥgyur-ba shes-bya-baḥi chos-kyi-gshuṅ",
+    "chinese_title": "業成就經"
+  },
+  "341": {
+    "tohoku": 341,
+    "taisho_numbers": [
+      "202"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Mdsaṅs blun shes-bya-baḥi mdo",
+    "chinese_title": "賢愚經"
+  },
+  "342": {
+    "tohoku": 342,
+    "taisho_numbers": [
+      "584"
+    ],
+    "sanskrit_title": "Dīrghanakhaparivrājakaparipṛcchā-nāmasūtra",
+    "tibetan_title_romanized": "Kun-tu-rgyu-pa sen-riṅs-kyis shus-pa shes-bya-baḥi mdo",
+    "chinese_title": "梵志長爪所問經"
+  },
+  "343": {
+    "tohoku": 343,
+    "taisho_numbers": [
+      "200"
+    ],
+    "sanskrit_title": "Pūrṇapramukhāvadānaśataka",
+    "tibetan_title_romanized": "Gaṅ-po la-sogs-paḥi rtogs-pa-brjod-pa brgya-pa",
+    "chinese_title": "富樓那等阿波陀那一百"
+  },
+  "345": {
+    "tohoku": 345,
+    "taisho_numbers": [
+      "595"
+    ],
+    "sanskrit_title": "Sūkarikāvadāna-nāma-sūtra",
+    "tibetan_title_romanized": "Phag-moḥi rtogs-pa-brjod-pa shes-bya-baḥi mdo",
+    "chinese_title": "牝豚阿波陀那經"
+  },
+  "347": {
+    "tohoku": 347,
+    "taisho_numbers": [
+      "173"
+    ],
+    "sanskrit_title": "Puṇyabalāvadāna",
+    "tibetan_title_romanized": "Bsod-nams-kyi stobs-kyi rtogs-pa-brjod-pa",
+    "chinese_title": "福力阿波陀那"
+  },
+  "348": {
+    "tohoku": 348,
+    "taisho_numbers": [
+      "153",
+      "166"
+    ],
+    "sanskrit_title": "Candraprabhāvadāna",
+    "tibetan_title_romanized": "Zla ḥod-kyi rtogs-pa-brjod-pa",
+    "chinese_title": "月光阿波陀那"
+  },
+  "350": {
+    "tohoku": 350,
+    "taisho_numbers": [
+      "162"
+    ],
+    "sanskrit_title": "Kanakavarṇapūrvayoga-nāma",
+    "tibetan_title_romanized": "Gser-mdog-gi sṅon-gyi sbyor-ba shes-bya-ba",
+    "chinese_title": "金色前生瑜伽"
+  },
+  "351": {
+    "tohoku": 351,
+    "taisho_numbers": [
+      "152",
+      "171"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Ḥphags-pa rgyal-bu don-grub-kyi mdo",
+    "chinese_title": "聖義成就王子經"
+  },
+  "352": {
+    "tohoku": 352,
+    "taisho_numbers": [
+      "1",
+      "21"
+    ],
+    "sanskrit_title": "Brahmajāla-sūtra",
+    "tibetan_title_romanized": "Tshaṅs-paḥi dra-baḥi mdo",
+    "chinese_title": "梵網經"
+  },
+  "353": {
+    "tohoku": 353,
+    "taisho_numbers": [
+      "156"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Thabs-mkhas-pa chen-po saṅs-rgyas drin-lan bsab-paḥi mdo",
+    "chinese_title": "大善巧方便佛報恩經"
+  },
+  "358": {
+    "tohoku": 358,
+    "taisho_numbers": [
+      "1300"
+    ],
+    "sanskrit_title": "Śārdūlakarṇāvadāna",
+    "tibetan_title_romanized": "Stag rnaḥi rtogs-pa brjod-pa",
+    "chinese_title": "虎耳阿波陀那"
+  },
+  "360": {
+    "tohoku": 360,
+    "taisho_numbers": [
+      "1187",
+      "1188",
+      "1189",
+      "1190"
+    ],
+    "sanskrit_title": "Mañjuśrījñānasattvasya paramārthanāmasaṁgīti",
+    "tibetan_title_romanized": "Ḥjam-dpal ye-śes-sems-dpaḥi don-dam-paḥi mtshan yaṅ-dag-par brjod-pa",
+    "chinese_title": "文殊智慧有情勝義名集"
+  },
+  "417": {
+    "tohoku": 417,
+    "taisho_numbers": [
+      "892"
+    ],
+    "sanskrit_title": "Hevajra-tantra-nāma",
+    "tibetan_title_romanized": "Kyeḥi rdo-rje shes-bya-ba rgyud-kyi rgyal-po",
+    "chinese_title": "呼金剛怛特羅王"
+  },
+  "442": {
+    "tohoku": 442,
+    "taisho_numbers": [
+      "885"
+    ],
+    "sanskrit_title": "Sarvatathāgatakāyavākcittarahasyaguhyasamāja-nāma-mahākalparāja",
+    "tibetan_title_romanized": "De-bshin-bśegs-pa thams-cad-kyi sku-gsuṅ thugs-kyi gsaṅ chen gsaṅ-ba ḥdus-pa shes-bya-ba brtag-paḥi rgyal-po chen-po",
+    "chinese_title": "一切如來身口意大秘密秘密集會儀軌大王"
+  },
+  "452": {
+    "tohoku": 452,
+    "taisho_numbers": [
+      "887"
+    ],
+    "sanskrit_title": "Ārya-advayasamatāvijayākhyā-kalpamahārāja",
+    "tibetan_title_romanized": "Ḥphags-pa gñis-su-med-pa mñam-pa-ñid rnam-par-rgyal-ba shes-bya-baḥi rtog-paḥi rgyal-po chen-po",
+    "chinese_title": "聖無二平等勝儀軌大王"
+  },
+  "466": {
+    "tohoku": 466,
+    "taisho_numbers": [
+      "890"
+    ],
+    "sanskrit_title": "Māyājāla-mahātantrarāja-nāma",
+    "tibetan_title_romanized": "Rgyud-kyi rgyal-po chen-po sgyu-ḥphrul dra-ba shes-bya-ba",
+    "chinese_title": "怛特羅大王幻網"
+  },
+  "479": {
+    "tohoku": 479,
+    "taisho_numbers": [
+      "865",
+      "866",
+      "882"
+    ],
+    "sanskrit_title": "Sarvatathāgatatattvasaṁgraha-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "De-bshin-gśegs-pa thams-cad-kyi de-kho-na-ñid bsdus-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "一切如來真性攝大乘經"
+  },
+  "481": {
+    "tohoku": 481,
+    "taisho_numbers": [
+      "888"
+    ],
+    "sanskrit_title": "Sarvarahasya-nāma-tantrarāja",
+    "tibetan_title_romanized": "Thams-cad gsaṅ-ba shes-bya-ba rgyud-kyi rgyal-po",
+    "chinese_title": "一切秘密怛特羅王"
+  },
+  "482": {
+    "tohoku": 482,
+    "taisho_numbers": [
+      "1171",
+      "1172"
+    ],
+    "sanskrit_title": "Trailokyavijaya-mahākalparāja",
+    "tibetan_title_romanized": "Ḥjig-rten gsum-las rnam-par rgyal-ba rtog-paḥi rgyal-po chen-po",
+    "chinese_title": "三世間勝儀軌大王"
+  },
+  "487": {
+    "tohoku": 487,
+    "taisho_numbers": [
+      "220",
+      "240",
+      "241",
+      "242",
+      "243",
+      "244"
+    ],
+    "sanskrit_title": "Śrī-paramādya-nāma-mahāyānakalparāja",
+    "tibetan_title_romanized": "Dpal mchog daṅ-po shes-bya-ba theg-pa chen-poḥi rtog-paḥi rgyal-po",
+    "chinese_title": "吉祥最勝本初大乘儀軌王"
+  },
+  "488": {
+    "tohoku": 488,
+    "taisho_numbers": [
+      "244"
+    ],
+    "sanskrit_title": "Śrī-paramādyamantrakalpakhaṇḍa-nāma",
+    "tibetan_title_romanized": "Dpal mchog daṅ-poḥi sṅags-kyi rtog-paḥi dum-bu shes-bya-ba",
+    "chinese_title": "吉祥最勝本初真言儀軌品"
+  },
+  "489": {
+    "tohoku": 489,
+    "taisho_numbers": [
+      "220",
+      "240",
+      "241",
+      "242",
+      "243",
+      "244"
+    ],
+    "sanskrit_title": "Ārya-prajñāpāramitānayaśatapañcaśatikā",
+    "tibetan_title_romanized": "Ḥphags-pa śes-rab-kyi-pha-rol-tu-phyin-paḥi tshul brgya lṅa-bcu-pa",
+    "chinese_title": "聖般若波羅蜜多理趣百五十（頌）"
+  },
+  "490": {
+    "tohoku": 490,
+    "taisho_numbers": [
+      "886"
+    ],
+    "sanskrit_title": "Śrī-vajramaṇḍalālaṁkāra-nāma-mahā-tantrarāja",
+    "tibetan_title_romanized": "Dpal rdo-rje sñiṅ-po rgyan-shes-bya-baḥi rgyud-kyi rgyal-po chen-po",
+    "chinese_title": "吉祥金剛道場莊嚴怛特羅大王"
+  },
+  "494": {
+    "tohoku": 494,
+    "taisho_numbers": [
+      "848",
+      "849"
+    ],
+    "sanskrit_title": "Mahāvairocanābhisaṁbodhivikurvitādhiṣthānavaipulyasūtrendrarāja-nāma-dharmaparyāya",
+    "tibetan_title_romanized": "Rnam-par-snaṅ-mdsad chen-po mṅon-par-rdsogs-par byaṅ-chub-pa rnam-par-sprul-ba byin-gyis-rlob-pa śin-tu rgyas-pa mdo-sdeḥi dbaṅ-poḥi rgyal-po shes-bya-baḥi chos-kyi rnam-graṅs",
+    "chinese_title": "大毗盧遮那現等覺神變加持方廣經帝王法門"
+  },
+  "503": {
+    "tohoku": 503,
+    "taisho_numbers": [
+      "449",
+      "450",
+      "451",
+      "1331"
+    ],
+    "sanskrit_title": "Ārya-saptatathāgatapūrvapraṇidhānaviśeṣavistāra-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa de-bshin-gśegs-pa bdun-gyi sṅon-gyi smon-lam-gyi khyad-par rgyas-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖七如來本願差別廣大大乘經"
+  },
+  "504": {
+    "tohoku": 504,
+    "taisho_numbers": [
+      "449",
+      "450",
+      "451",
+      "1331"
+    ],
+    "sanskrit_title": "Ārya-bhagavato bhaiṣajyaguruvaiḍūryaprabhasya pūrvapraṇidhānaviśeṣavistāra-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa bcom-ldan-ḥdas sman-gyi bla-bai-ḍūryaḥi ḥod-kyi sṅon-gyi smon-lam-gyi khyad-par rgyas-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖薄伽梵藥師毗琉璃光本願差別廣大大乘經"
+  },
+  "506": {
+    "tohoku": 506,
+    "taisho_numbers": [
+      "1006",
+      "1007"
+    ],
+    "sanskrit_title": "Ārya-mahāmaṇivipulavimānasupratiṣṭhitaguhyaparamarahasyakalparāja-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa nor-bu chen-po rygas-paḥi gshal-med-khaṅ śin-tu rab-tu-gnas-pa gsaṅ-ba dam-paḥi gsaṅ-baḥi cho-ga shib-moḥi rgyal-po shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖善住廣大摩尼無量殿秘密勝義秘密儀軌微細王陀羅尼"
+  },
+  "507": {
+    "tohoku": 507,
+    "taisho_numbers": [
+      "1023"
+    ],
+    "sanskrit_title": "Ārya-sarvatathāgatādhiṣṭhānahṛdayaguhyadhātukaraṇḍa-nāma-dhāraṇīmahāyānāsūtra",
+    "tibetan_title_romanized": "Ḥphags-pa de-bshin-gśegs-pa thams-cad-kyi byin-gyis-brlabs-kyi sñiṅ-po gsaṅ-ba riṅ-bsrel-gyi za-ma-tog ces-bya-baḥi gzuṅs theg-pa chen-poḥi mdo",
+    "chinese_title": "聖一切如來加持心秘密舍利篋陀羅尼大乘經"
+  },
+  "508": {
+    "tohoku": 508,
+    "taisho_numbers": [
+      "1008"
+    ],
+    "sanskrit_title": "Bodhimaṇḍalalakṣālaṁkāra-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Byaṅ-chub sñiṅ-poḥi rgyan-ḥbum shes-bya-baḥi gzuṅs",
+    "chinese_title": "菩提道場十萬莊嚴陀羅尼"
+  },
+  "510": {
+    "tohoku": 510,
+    "taisho_numbers": [
+      "1024"
+    ],
+    "sanskrit_title": "Ārya-raśmivimalaviśuddhaprabhā-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa ḥod-zer dri-ma-med-pa rnam-par dag-paḥi ḥod ces-bya-baḥi gzuṅs",
+    "chinese_title": "聖光明無垢清淨光陀羅尼"
+  },
+  "511": {
+    "tohoku": 511,
+    "taisho_numbers": [
+      "1348",
+      "1349"
+    ],
+    "sanskrit_title": "Ārya-dvādaśabuddhaka-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa saṅs-rgyas bcu-gñis-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖十二佛大乘經"
+  },
+  "512": {
+    "tohoku": 512,
+    "taisho_numbers": [
+      "1147",
+      "1333",
+      "1334"
+    ],
+    "sanskrit_title": "Ārya-saptabuddha-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa saṅs-rgyas bdum-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖七佛大乘經"
+  },
+  "513": {
+    "tohoku": 513,
+    "taisho_numbers": [
+      "1346",
+      "1347"
+    ],
+    "sanskrit_title": "Ārya-sarvabuddhāṅgavatī-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa saṅs-rgyas thams-cad-kyi yan-lag daṅ-ldan-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖具一切諸佛支陀羅尼"
+  },
+  "514": {
+    "tohoku": 514,
+    "taisho_numbers": [
+      "918",
+      "919"
+    ],
+    "sanskrit_title": "Ārya-buddhahṛdaya-nāma-dhāraṇīdharmaparyāya",
+    "tibetan_title_romanized": "Ḥphags-pa saṅs-rgyas-kyi sñiṅ-po shes-bya-baḥi gzuṅs-kyi chos-kyi-rnam-graṅs",
+    "chinese_title": "聖佛心陀羅尼法門"
+  },
+  "516": {
+    "tohoku": 516,
+    "taisho_numbers": [
+      "1356",
+      "1357",
+      "1358",
+      "1359"
+    ],
+    "sanskrit_title": "Ārya-puṣpakūṭa-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa me-tog brtsegs-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖華積陀羅尼"
+  },
+  "518": {
+    "tohoku": 518,
+    "taisho_numbers": [
+      "1387"
+    ],
+    "sanskrit_title": "Ārya-candanaṅga-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa tsandan-gyi yan-lag ces-bya-baḥi gzuṅs",
+    "chinese_title": "聖栴檀支陀羅尼"
+  },
+  "531": {
+    "tohoku": 531,
+    "taisho_numbers": [
+      "250",
+      "251",
+      "252",
+      "253",
+      "254",
+      "255",
+      "256",
+      "257"
+    ],
+    "sanskrit_title": "Bhagavatīprajñāpāramitāhṛdaya",
+    "tibetan_title_romanized": "Bcom-ldan-ḥdas-ma śes-rab-kyi-pha-rol-tu-phyin-paḥi sñiṅ-po",
+    "chinese_title": "薄伽婆帝般若波羅蜜多心"
+  },
+  "539": {
+    "tohoku": 539,
+    "taisho_numbers": [
+      "1411"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Phyag daṅ bstod-pa daṅ byin-rlabs daṅ mchod-paḥi sprin ḥbyuṅ-pa daṅ mchod-pa daṅ bsñen-gnas daṅ phyag byas-par ḥgyur-ba daṅ rin-po-che brdar-baḥi gzuṅs-padmaḥi spyan-paḥi gzuṅs",
+    "chinese_title": "禮拜讚嘆加持供養雲聚供養潔齋禮拜奉事寶磨陀羅尼蓮華眼陀羅尼"
+  },
+  "540": {
+    "tohoku": 540,
+    "taisho_numbers": [
+      "1386"
+    ],
+    "sanskrit_title": "Surūpa-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Su-rū-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "須留波陀羅尼"
+  },
+  "542": {
+    "tohoku": 542,
+    "taisho_numbers": [
+      "1409"
+    ],
+    "sanskrit_title": "Ārya-viśeṣavati-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa khyad-par-can shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖最上陀羅尼"
+  },
+  "543": {
+    "tohoku": 543,
+    "taisho_numbers": [
+      "1191",
+      "1215",
+      "1216"
+    ],
+    "sanskrit_title": "Ārya-mañjuśrīmūlatantra",
+    "tibetan_title_romanized": "Ḥphags-pa ḥjam-dpal-gyi rtsa-baḥi rgyud",
+    "chinese_title": "聖文殊師利根本怛特羅"
+  },
+  "552": {
+    "tohoku": 552,
+    "taisho_numbers": [
+      "1190"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Ḥjam-dpal ṅag-gi dbaṅ-phyug-la bu-mo brgyad-kyis bstod-pa",
+    "chinese_title": "八童女讚嘆文殊師利"
+  },
+  "553": {
+    "tohoku": 553,
+    "taisho_numbers": [
+      "230"
+    ],
+    "sanskrit_title": "Ārya-prajñāpāramitānāmāṣṭāśataka",
+    "tibetan_title_romanized": "Ḥphags-pa śes-rab-kyi-pha-rol-tu-phyin-paḥi mtshan brgya-rtsa-brgyad-pa shes-bya-ba",
+    "chinese_title": "聖般若波羅蜜多一百八名"
+  },
+  "554": {
+    "tohoku": 554,
+    "taisho_numbers": [
+      "249"
+    ],
+    "sanskrit_title": "Ārya-kauśikaprajñāpāramitā-nāma",
+    "tibetan_title_romanized": "Ḥphags-pa śes-rab-kyi-pha-rol-tu-phyin-pa kau-śi-ka shes-bya-ba",
+    "chinese_title": "聖般若波羅蜜多心經"
+  },
+  "555": {
+    "tohoku": 555,
+    "taisho_numbers": [
+      "663",
+      "664",
+      "665"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Ḥphags-pa gser-ḥod dam-pa mchog-tu rnam-par rgyal-baḥi mdo-sdeḥi rgyal-po theg-pa chen-poḥi mdo",
+    "chinese_title": "聖金光明最上勝經王大乘經"
+  },
+  "556": {
+    "tohoku": 556,
+    "taisho_numbers": [
+      "663",
+      "664",
+      "665"
+    ],
+    "sanskrit_title": "Ārya-suvarṇaprabhāsottamasūtredrarāja-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa gser-ḥod dam-pa mdo-sdeḥi dbaṅ-poḥi rgyal-po shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖金光明勝經帝王大乘經"
+  },
+  "557": {
+    "tohoku": 557,
+    "taisho_numbers": [
+      "663",
+      "664",
+      "665"
+    ],
+    "sanskrit_title": "Ārya-suvarṇaprabhāsottamasūtrendrarāja-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa gser-ḥod dam-pa mdo-sdeḥi dbaṅ-poḥi rgyal-po shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖金光明勝經帝王大乘經"
+  },
+  "558": {
+    "tohoku": 558,
+    "taisho_numbers": [
+      "999"
+    ],
+    "sanskrit_title": "Mahāsahasrapramardana-nāma-sūtra",
+    "tibetan_title_romanized": "Stoṅ chen-mo rab-tu ḥjoms-pa shes-bya-baḥi mdo",
+    "chinese_title": "大千母善摧經"
+  },
+  "559": {
+    "tohoku": 559,
+    "taisho_numbers": [
+      "982",
+      "984",
+      "985"
+    ],
+    "sanskrit_title": "Mahāmāyūrīvidyārājñī",
+    "tibetan_title_romanized": "Rig-sṅags-kyi rgyal-mo rma-bya chen-mo",
+    "chinese_title": "明咒王大孔維妃"
+  },
+  "561": {
+    "tohoku": 561,
+    "taisho_numbers": [
+      "1153",
+      "1154"
+    ],
+    "sanskrit_title": "Ārya-mahāpratisarāvidyārājñī",
+    "tibetan_title_romanized": "Ḥphags-pa rig-paḥi rgyal-mo so-sor ḥbraṅ-ba chen-mo",
+    "chinese_title": "聖明（咒）妃大隨求母"
+  },
+  "564": {
+    "tohoku": 564,
+    "taisho_numbers": [
+      "1254",
+      "1255",
+      "1256",
+      "1257"
+    ],
+    "sanskrit_title": "Ārya-mārīcī-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa ḥod-zer-can shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖摩利支天陀羅尼"
+  },
+  "565": {
+    "tohoku": 565,
+    "taisho_numbers": [
+      "1257"
+    ],
+    "sanskrit_title": "Māyāmārīcījātatantrād uddhṛtakalparāja-nāma",
+    "tibetan_title_romanized": "Sgyu-maḥi ḥod-zer-can ḥbyuṅ-baḥi rgyud-las ḥbyuṅ-baḥi rtog-paḥi rgyal-po shes-bya-ba",
+    "chinese_title": "幻摩利支天出生怛特羅中所出儀軌王"
+  },
+  "566": {
+    "tohoku": 566,
+    "taisho_numbers": [
+      "1257"
+    ],
+    "sanskrit_title": "Ārya-mārīcīmaṇḍalavidhimārīcījātadvādaśasahasrād uddhṛtakalpahṛdayasaptaśata-nāma",
+    "tibetan_title_romanized": "Ḥphags-ma ḥod-zer-can-gyi dkyil-ḥkhor-gyi cho-ga ḥod-zer-can ḥbyuṅ-baḥi rgyud stoṅ-phrag-bcu-gñis-pa-las phyuṅ-baḥi rtog-paḥi sñiṅ-po bdun-brgya-pa shes-bya-ba",
+    "chinese_title": "聖母摩利支天曼荼羅儀軌摩利支天出生怛特羅一萬二千中所出怛特羅心七百"
+  },
+  "570": {
+    "tohoku": 570,
+    "taisho_numbers": [
+      "1404"
+    ],
+    "sanskrit_title": "Ārya-hiraṇyavatī-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa dbyig daṅ ldan-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖有財寶陀羅尼"
+  },
+  "571": {
+    "tohoku": 571,
+    "taisho_numbers": [
+      "1264"
+    ],
+    "sanskrit_title": "Ārya-jāṅguli-nāma-vidyā",
+    "tibetan_title_romanized": "Ḥphags-pa dug sel shes-bya-baḥi rig sṅags",
+    "chinese_title": "聖消毒明咒"
+  },
+  "575": {
+    "tohoku": 575,
+    "taisho_numbers": [
+      "1047"
+    ],
+    "sanskrit_title": "Ārya-ṣaḍakṣara-vidyā",
+    "tibetan_title_romanized": "Ḥphags-pa yi-ge drug-paḥi rig-sṅags",
+    "chinese_title": "聖六字明咒"
+  },
+  "585": {
+    "tohoku": 585,
+    "taisho_numbers": [
+      "1021"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Ḥphags-pa sdoṅ-po bkod-paḥi sñiṅ-po",
+    "chinese_title": "聖寶樹莊嚴心"
+  },
+  "590": {
+    "tohoku": 590,
+    "taisho_numbers": [
+      "976",
+      "977"
+    ],
+    "sanskrit_title": "Ārya-sarvatathāgatoṣṇīṣasitātapatrā-nāma-aparājitapratyaṅgirāmahāvidyārājñī",
+    "tibetan_title_romanized": "Ḥphags-pa de-bshin-gśegs-pa thams-cad-kyi gtsug-tor-nas byuṅ-ba gdugs-dkar-po-can shes-bya-ba gshan-gyis mi thub-ma phyir-zlog-paḥi rig-sṅags-kyi rgyal-mo chen-mo",
+    "chinese_title": "聖一切如來頂髻所出白傘蓋無能勝退轉明咒大王母"
+  },
+  "592": {
+    "tohoku": 592,
+    "taisho_numbers": [
+      "976",
+      "977"
+    ],
+    "sanskrit_title": "Ārya-tathāgatoṣṇīṣasitātapatrāparājita-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa de-bshin-gśegs-paḥi gtsug-tor-nas byuṅ-baḥi gdugs-dkar-po-can gshan-gyis mi thub-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖如來頂髻所出白傘蓋無能勝陀羅尼"
+  },
+  "593": {
+    "tohoku": 593,
+    "taisho_numbers": [
+      "976",
+      "977"
+    ],
+    "sanskrit_title": "Ārya-tathāgatoṣṇīṣasitātapatrā-nāma-aparājitadhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa de-bshin-gśegs-paḥi gtsug-tor-nas byuṅ-baḥi gdugs-dkar-po-can gshan-gyis mi thub-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖如來頂髻所出白傘蓋無能勝陀羅尼"
+  },
+  "594": {
+    "tohoku": 594,
+    "taisho_numbers": [
+      "978"
+    ],
+    "sanskrit_title": "Sarvatathāgatoṣṇīṣavijaya-nāma-dhāraṇīkalpa-sahita",
+    "tibetan_title_romanized": "De-bshin-gśegs-pa thams-cad-kyi gtsug-tor rnam-par rgyal-ba shes-bya-baḥi gzuṅs rtog-pa daṅ-bcas-pa",
+    "chinese_title": "一切如來頂髻陀羅尼儀軌"
+  },
+  "595": {
+    "tohoku": 595,
+    "taisho_numbers": [
+      "978",
+      "979"
+    ],
+    "sanskrit_title": "Sarvatathāgatoṣṇīṣavijaya-nāma-dhāraṇīkalpa-sahita",
+    "tibetan_title_romanized": "De-bshin-gśegs-pa thams-cad-kyi gtsug-tor rnam-par rgyal-ba shes-bya-baḥi gzuṅs rtog-pa daṅ-bcas-pa",
+    "chinese_title": "一切如來頂髻勝陀羅尼儀軌"
+  },
+  "596": {
+    "tohoku": 596,
+    "taisho_numbers": [
+      "978",
+      "979"
+    ],
+    "sanskrit_title": "Sarvatathāgatoṣṇīṣavijaya-nāma-dhāraṇīkalpa-sahita",
+    "tibetan_title_romanized": "De-bshin-gśegs-pa thams-cad-kyi gtsug-tor rnam-par rgyal-ba shes-bya-baḥi gzuṅs rtog-pa daṅ-bcas-pa",
+    "chinese_title": "一切如來頂髻勝陀羅尼儀軌"
+  },
+  "597": {
+    "tohoku": 597,
+    "taisho_numbers": [
+      "974"
+    ],
+    "sanskrit_title": "Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa ṅan-ḥgro thams-cad yoṅs-su sbyoṅ-ba gtsug-tor rnam-par rgyal-ba shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖清一切惡趣頂髻勝陀羅尼"
+  },
+  "598": {
+    "tohoku": 598,
+    "taisho_numbers": [
+      "978"
+    ],
+    "sanskrit_title": "Sarvatathāgatoṣṇīṣavijaya-nāma-dhāraṇī-kalpa",
+    "tibetan_title_romanized": "De-bshin-gśegs-pa thams-cad-kyi gtsug-tor rnam-par rgyal-maḥi gzuṅs shes-bya-baḥi rtog-pa",
+    "chinese_title": "一切如來頂髻勝陀羅尼儀軌"
+  },
+  "599": {
+    "tohoku": 599,
+    "taisho_numbers": [
+      "1025"
+    ],
+    "sanskrit_title": "Samantamukhapraveśaraśmivimaloṣṇīṣa-prabhasasarvatathāgatahṛdayasamayavilokita-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Kun-nas sgor ḥjug-paḥi ḥod-zer gtsug-tor dri-ma med-par snaṅ-ba de-bshin-gśegs-pa thams-cad-kyi sñiṅ-po daṅ dam-tshig-la rnam-par-lta-ba shes-bya-baḥi gzuṅs",
+    "chinese_title": "觀普門入光明頂髻無垢照一切如來心及三摩耶陀羅尼"
+  },
+  "604": {
+    "tohoku": 604,
+    "taisho_numbers": [
+      "1217"
+    ],
+    "sanskrit_title": "Krodhavijayakalpaguhyatantra",
+    "tibetan_title_romanized": "Khro-bo rnam-par rgyal-baḥi rtog-pa gsaṅ-baḥi rgyud",
+    "chinese_title": "忿怒勝儀軌秘密怛特羅"
+  },
+  "606": {
+    "tohoku": 606,
+    "taisho_numbers": [
+      "1392"
+    ],
+    "sanskrit_title": "Ārya-mahādaṇḍa-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa be-con chen-po shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖大杖陀羅尼"
+  },
+  "609": {
+    "tohoku": 609,
+    "taisho_numbers": [
+      "1373"
+    ],
+    "sanskrit_title": "Ārya-sarvābhayapradā-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa thams-cad-la mi ḥjigs-pa rab-tu sbyin-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖一切無畏施陀羅尼"
+  },
+  "612": {
+    "tohoku": 612,
+    "taisho_numbers": [
+      "943"
+    ],
+    "sanskrit_title": "Ārya-dhvajāgrakeyūra-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa rgyal-mtshan-gyi rtse-moḥi dpuṅ-rgyan shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖勝幡頂飾陀羅尼"
+  },
+  "613": {
+    "tohoku": 613,
+    "taisho_numbers": [
+      "1075",
+      "1076",
+      "1077"
+    ],
+    "sanskrit_title": "Ārya-cundīdevī-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa lha-mo skul byed-ma shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖天女純陀羅尼"
+  },
+  "614": {
+    "tohoku": 614,
+    "taisho_numbers": [
+      "1137",
+      "1138",
+      "1139",
+      "1140"
+    ],
+    "sanskrit_title": "Ārya-sumukha-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa sgo bzaṅ-po shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖善門陀羅尼"
+  },
+  "617": {
+    "tohoku": 617,
+    "taisho_numbers": [
+      "26",
+      "1362"
+    ],
+    "sanskrit_title": "Ārya-bhadrarātrī-nāma-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa mtshan-mo bzaṅ-po shes-bya-baḥi mdo",
+    "chinese_title": "聖賢夜經"
+  },
+  "619": {
+    "tohoku": 619,
+    "taisho_numbers": [
+      "1324"
+    ],
+    "sanskrit_title": "Ārya-cakṣurviśodhanī-nāma-vidyāmantra",
+    "tibetan_title_romanized": "Ḥphags-pa mig rnam-par sbyoṅ-ba shes-bya-baḥi rig-sṅags",
+    "chinese_title": "聖眼清淨明咒"
+  },
+  "637": {
+    "tohoku": 637,
+    "taisho_numbers": [
+      "1127"
+    ],
+    "sanskrit_title": "Ārya-samantabhadrāṣṭottaraśatakanāma-dhāraṇī-mantra-sahita",
+    "tibetan_title_romanized": "Ḥphags-pa kun-tu-bzaṅ-poḥi mtshan-brgya-rtsa brgyad-pa gzuṅs-sṅags daṅ-bcas-pa",
+    "chinese_title": "聖普賢一百八名陀羅尼真言"
+  },
+  "642": {
+    "tohoku": 642,
+    "taisho_numbers": [
+      "1190",
+      "1197"
+    ],
+    "sanskrit_title": "Ārya-mañjuśrīnāmāṣṭaśataka",
+    "tibetan_title_romanized": "Ḥphags-pa ḥjam-dpal-gyi mtshan brgya-rtsa-brgyad-pa shes-bya-ba",
+    "chinese_title": "聖文殊一百八名"
+  },
+  "643": {
+    "tohoku": 643,
+    "taisho_numbers": [
+      "1143"
+    ],
+    "sanskrit_title": "Ārya-maitreyapratījñā-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa byams-pas dam-bcas-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖彌勒本願陀羅尼"
+  },
+  "644": {
+    "tohoku": 644,
+    "taisho_numbers": [
+      "1167"
+    ],
+    "sanskrit_title": "Ārya-aṣṭamaṇḍalaka-nāma-mahāyāna-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa dkyil-ḥkhor brgyad-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖八曼荼羅大乘經"
+  },
+  "646": {
+    "tohoku": 646,
+    "taisho_numbers": [
+      "1313",
+      "1314"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Yi-dwags kha-nas-me-ḥbar-ba-la skyab mdsas-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "救焰口鬼陀羅尼"
+  },
+  "647": {
+    "tohoku": 647,
+    "taisho_numbers": [
+      "1313",
+      "1314"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Yi-dwags-mo kha ḥbar-ma dbugs dbyuṅ-baḥi gtor-maḥi cho-ga",
+    "chinese_title": "焰口鬼女通息供養儀軌"
+  },
+  "656": {
+    "tohoku": 656,
+    "taisho_numbers": [
+      "1244",
+      "1245"
+    ],
+    "sanskrit_title": "Āṭānāṭīyasūtra-nāma-mahāsūtra",
+    "tibetan_title_romanized": "Mdo chen-po kun-tu-rgyu-ba daṅ kun-tu-rgyu-ba ma-yin-pa daṅ mthun-paḥi mdo shes-bya-ba",
+    "chinese_title": "大經遊行者非遊行者和合經"
+  },
+  "657": {
+    "tohoku": 657,
+    "taisho_numbers": [
+      "989",
+      "991",
+      "992",
+      "993"
+    ],
+    "sanskrit_title": "Ārya-mahāmegha",
+    "tibetan_title_romanized": "Ḥphags-pa sprin chen-po",
+    "chinese_title": "聖大雲"
+  },
+  "660": {
+    "tohoku": 660,
+    "taisho_numbers": [
+      "1302",
+      "1303"
+    ],
+    "sanskrit_title": "Ārya-grahamātṛkā-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-ma gzaḥ rnams-kyi yum shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖母星辰母陀羅尼"
+  },
+  "661": {
+    "tohoku": 661,
+    "taisho_numbers": [
+      "1302",
+      "1303"
+    ],
+    "sanskrit_title": "Grahamātṛikā-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Gzaḥ rnams-kyi yum shes-bya-baḥi gzuṅs",
+    "chinese_title": "星辰母陀羅尼"
+  },
+  "662": {
+    "tohoku": 662,
+    "taisho_numbers": [
+      "1162",
+      "1163",
+      "1164"
+    ],
+    "sanskrit_title": "Ārya-vasudhārā-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa nor-gyi rgyun shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖持世陀羅尼"
+  },
+  "663": {
+    "tohoku": 663,
+    "taisho_numbers": [
+      "1165"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Bcom-ldan-ḥdas-ma nor rgyun-maḥi rtog-pa",
+    "chinese_title": "薄伽梵母持世儀軌"
+  },
+  "664": {
+    "tohoku": 664,
+    "taisho_numbers": [
+      "1165"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Bcom-ldan-ḥdas-ma nor-rgyun-maḥi gzuṅs-kyi rtog-pa",
+    "chinese_title": "薄伽梵母持世陀羅尼儀軌"
+  },
+  "674": {
+    "tohoku": 674,
+    "taisho_numbers": [
+      "936",
+      "937"
+    ],
+    "sanskrit_title": "Ārya-aparimitāyurjñāna-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa tshe daṅ ye-śes dpag-tu-med-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖無量壽智大乘經"
+  },
+  "675": {
+    "tohoku": 675,
+    "taisho_numbers": [
+      "936",
+      "937"
+    ],
+    "sanskrit_title": "Ārya-aparimitāyurjñāna-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa tshe daṅ ye-śes dpag-tu-med-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖無量壽智大乘經"
+  },
+  "676": {
+    "tohoku": 676,
+    "taisho_numbers": [
+      "370"
+    ],
+    "sanskrit_title": "Ārya-aparimitāyurjñānahṛdaya-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa tshe daṅ ye-śes dpag-tu-med-paḥi sñiṅ-po shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖無量壽智陀羅尼"
+  },
+  "679": {
+    "tohoku": 679,
+    "taisho_numbers": [
+      "369",
+      "934",
+      "1316",
+      "1317"
+    ],
+    "sanskrit_title": "Ārya-aparimitaguṇānuśaṁsā-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa yon-tan bsṅags-pa dpag-tu-med-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖無量功德讚嘆陀羅尼"
+  },
+  "682": {
+    "tohoku": 682,
+    "taisho_numbers": [
+      "1092",
+      "1093",
+      "1094",
+      "1095",
+      "1099"
+    ],
+    "sanskrit_title": "Ārya-amoghapāśahṛdaya-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa don-yod-shags-paḥi sñiṅ-po shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖不空羂索心髓大乘經"
+  },
+  "683": {
+    "tohoku": 683,
+    "taisho_numbers": [
+      "1092",
+      "1093",
+      "1094",
+      "1095",
+      "1099"
+    ],
+    "sanskrit_title": "Ārya-amoghapāśahṛdaya-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa don-yod-shags-paḥi sñiṅ-po shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖不空羂索心髓陀羅尼"
+  },
+  "686": {
+    "tohoku": 686,
+    "taisho_numbers": [
+      "901",
+      "1092",
+      "1093",
+      "1094",
+      "1095",
+      "1096",
+      "1097",
+      "1098",
+      "1099"
+    ],
+    "sanskrit_title": "Ārya-amoghapāśa-kalparāja",
+    "tibetan_title_romanized": "Ḥphags-pa don-yod-paḥi-shags-paḥi cho-ga shib-moḥi rgyal-po",
+    "chinese_title": "聖不空羂索儀軌細釋王"
+  },
+  "687": {
+    "tohoku": 687,
+    "taisho_numbers": [
+      "1092"
+    ],
+    "sanskrit_title": "Ārya-amoghapāśapāramitāṣaṭparipūraka-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa don-yod-shags-paḥi pha-rol-tu-phyin-pa drug yoṅs-su rdsogs-par-byed-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖不空羂索六波羅蜜多圓滿陀羅尼"
+  },
+  "688": {
+    "tohoku": 688,
+    "taisho_numbers": [
+      "1092"
+    ],
+    "sanskrit_title": "Daśabhūmi-dhāraṇī",
+    "tibetan_title_romanized": "Sa bcu-paḥi gzuṅs",
+    "chinese_title": "十地陀羅尼"
+  },
+  "690": {
+    "tohoku": 690,
+    "taisho_numbers": [
+      "1056",
+      "1057",
+      "1058",
+      "1060",
+      "1061",
+      "1063",
+      "1064"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Byaṅ-chub-sems-dpaḥ ḥphags-pa spyan-ras-gzigs dbaṅ-phyug lag-pa stoṅ daṅ mig stoṅ daṅ-ldan-paḥi cho-ga shib-mo",
+    "chinese_title": "千手千眼聖觀自在菩薩儀軌細釋"
+  },
+  "691": {
+    "tohoku": 691,
+    "taisho_numbers": [
+      "1057",
+      "1058",
+      "1060"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Ḥphags-pa byaṅ-chub-sems-dpaḥ spyan-ras-gzigs dbaṅ-phyug phyag stoṅ spyan stoṅ daṅ-ldan-pa thogs-pa mi mṅaḥ-baḥi thugs-rje chen-poḥi sems rgya-cher yoṅs-su rdsogs-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖千手千眼觀自在菩薩無礙大悲心廣大正圓滿陀羅尼"
+  },
+  "692": {
+    "tohoku": 692,
+    "taisho_numbers": [
+      "1080",
+      "1081",
+      "1082",
+      "1083"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Ḥphags-pa spyan-ras-gzigs dbaṅ-phyug-gi gsaṅ-baḥi mdsod thogs-pa med-paḥi yid-bshin-gyi-ḥkhor-loḥi sñiṅ-po shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖觀自在秘密藏無礙如意輪心陀羅尼"
+  },
+  "693": {
+    "tohoku": 693,
+    "taisho_numbers": [
+      "901",
+      "1070",
+      "1071"
+    ],
+    "sanskrit_title": "Ārya-avalokiteśvaraikādaśamukha-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa spyan-ras-gzigs dbaṅ-phyug shal bcu-gcig-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖觀自在十一面陀羅尼"
+  },
+  "694": {
+    "tohoku": 694,
+    "taisho_numbers": [
+      "901",
+      "1070",
+      "1071"
+    ],
+    "sanskrit_title": "Ārya-mukhaikādaśavidyāmantrahṛdaya-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa shal bcu-gcig-paḥi rig-sṅags-kyi sñiṅ-po shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖十一面明咒心陀羅尼"
+  },
+  "697": {
+    "tohoku": 697,
+    "taisho_numbers": [
+      "1061",
+      "1111",
+      "1112"
+    ],
+    "sanskrit_title": "Ārya-karuṇānāvṛtta-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa nī-la-kaṇṭha shes-bya-baḥi gzuṅs",
+    "chinese_title": "觀青頸陀羅尼"
+  },
+  "699": {
+    "tohoku": 699,
+    "taisho_numbers": [
+      "1037",
+      "1038"
+    ],
+    "sanskrit_title": "Ārya-samantabhadra-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa kun-tu-bzaṅ-po shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖普賢陀羅尼"
+  },
+  "705": {
+    "tohoku": 705,
+    "taisho_numbers": [
+      "1054"
+    ],
+    "sanskrit_title": "Ārya-avalokiteśvaranāmāṣṭaśataka",
+    "tibetan_title_romanized": "Ḥphags-pa spyan-ras-gzigs dbaṅ-phyug-gi mtshan brgya-rtsa-brgyad-pa",
+    "chinese_title": "聖觀自在一百八名"
+  },
+  "710": {
+    "tohoku": 710,
+    "taisho_numbers": [
+      "1035"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Stoṅ-ḥgyur shes-bya-baḥi gzuṅs",
+    "chinese_title": "千轉陀羅尼"
+  },
+  "711": {
+    "tohoku": 711,
+    "taisho_numbers": [
+      "1036"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Ślo-ka brgya lobs-pa",
+    "chinese_title": "一百首盧迦轉得"
+  },
+  "712": {
+    "tohoku": 712,
+    "taisho_numbers": [
+      "901"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Ślo-ka brgya lobs-pa",
+    "chinese_title": "一百首盧迦轉得"
+  },
+  "733": {
+    "tohoku": 733,
+    "taisho_numbers": [
+      "901"
+    ],
+    "sanskrit_title": "Ārya-avalokiteśvarahayagrīva-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa spyan-ras-gzigs dbaṅ-phyug hayagrībaḥi gzuṅs",
+    "chinese_title": "聖觀自在馬頭陀羅尼"
+  },
+  "735": {
+    "tohoku": 735,
+    "taisho_numbers": [
+      "1100"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Ḥphags-pa parṇṇa-śa-ba-riḥi mdo",
+    "chinese_title": "聖葉衣經"
+  },
+  "736": {
+    "tohoku": 736,
+    "taisho_numbers": [
+      "1384"
+    ],
+    "sanskrit_title": "Ārya-parṇṇaśabarī-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa ri-khrod lo-ma gyon-ma shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖山窟葉衣女陀羅尼"
+  },
+  "739": {
+    "tohoku": 739,
+    "taisho_numbers": [
+      "1253"
+    ],
+    "sanskrit_title": "Ārya-srīmahādevī-vyākaraṇa",
+    "tibetan_title_romanized": "Ḥphags-pa lha-mo chen-mo dpal luṅ-bstan-pa",
+    "chinese_title": "聖大天女吉祥授記"
+  },
+  "740": {
+    "tohoku": 740,
+    "taisho_numbers": [
+      "1252"
+    ],
+    "sanskrit_title": "Ārya-mahālakṣmī-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa dpal chen-moḥi mdo",
+    "chinese_title": "聖大吉祥天女經"
+  },
+  "751": {
+    "tohoku": 751,
+    "taisho_numbers": [
+      "1415"
+    ],
+    "sanskrit_title": "Ārya-mahāvajrameruśikharakūṭāgāra-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa rdo-rjeḥi ri-rab chen-poḥi rtse-moḥi khaṅ-pa brtsegs-paḥi gzuṅs",
+    "chinese_title": "聖金剛大山頂高樓閣陀羅尼"
+  },
+  "753": {
+    "tohoku": 753,
+    "taisho_numbers": [
+      "1416"
+    ],
+    "sanskrit_title": "Vajrasūkṣmāpratihata-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Rdo-rje phra-mo thogs-pa med-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "金剛細無礙陀羅尼"
+  },
+  "757": {
+    "tohoku": 757,
+    "taisho_numbers": [
+      "1243"
+    ],
+    "sanskrit_title": "Ārya-mahābala-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa stobs-po-che shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖大力大乘經"
+  },
+  "764": {
+    "tohoku": 764,
+    "taisho_numbers": [
+      "1285"
+    ],
+    "sanskrit_title": "Ārya-maṇibhadra-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa nor-bu bzaṅ-poḥi gzuṅs shes-bya-ba",
+    "chinese_title": "聖寶賢陀羅尼"
+  },
+  "769": {
+    "tohoku": 769,
+    "taisho_numbers": [
+      "1285"
+    ],
+    "sanskrit_title": "Kāruṇikāryajambhalajalendrasuśaṅkara-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa gnod-ḥdsin chu-dbaṅ sñiṅ-rje-can-gyi gzuṅs bde-byed ces-bya-ba",
+    "chinese_title": "聖閻婆羅水帝悲尊陀羅尼作樂"
+  },
+  "770": {
+    "tohoku": 770,
+    "taisho_numbers": [
+      "1283"
+    ],
+    "sanskrit_title": "Ārya-jambhalajalendrayathālabdha-kalpa-nāma",
+    "tibetan_title_romanized": "Ḥphags-pa gnod-gnas dbaṅ-po ci-ltar ḥbyuṅ-baḥi rtog-pa shes-bya-ba",
+    "chinese_title": "聖閻婆羅帝如實出生儀軌"
+  },
+  "772": {
+    "tohoku": 772,
+    "taisho_numbers": [
+      "1377"
+    ],
+    "sanskrit_title": "Ārya-mekhalā-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa me-kha-la shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖金帶陀羅尼"
+  },
+  "805": {
+    "tohoku": 805,
+    "taisho_numbers": [
+      "895",
+      "896"
+    ],
+    "sanskrit_title": "Ārya-subāhuparīpṛcchā-nāma-tantra",
+    "tibetan_title_romanized": "Ḥphags-pa dpuṅ-bzaṅ-gis shus-pa shes-bya-baḥi rgyud",
+    "chinese_title": "聖賢臂所問怛特羅"
+  },
+  "806": {
+    "tohoku": 806,
+    "taisho_numbers": [
+      "897"
+    ],
+    "sanskrit_title": "Sarvamaṇḍalasāmānyavidhīnām guhyatantra",
+    "tibetan_title_romanized": "Dkyil-ḥkhor thams-cad-kyi spyiḥi cho-ga gsaṅ-baḥi rgyud",
+    "chinese_title": "一切曼荼羅總儀軌秘密怛特羅"
+  },
+  "807": {
+    "tohoku": 807,
+    "taisho_numbers": [
+      "893"
+    ],
+    "sanskrit_title": "Susiddhikaramahātantrasādhanopāyikapaṭala",
+    "tibetan_title_romanized": "Legs-par-grub-par-byed-paḥi rgyud chen-po-las sgrub-paḥi thabs rim-par-phye-ba",
+    "chinese_title": "善成就大怛特羅中成就法品"
+  },
+  "847": {
+    "tohoku": 847,
+    "taisho_numbers": [
+      "299"
+    ],
+    "sanskrit_title": "Ārya-ratnolka-nāma-dhāraṇī-mahāyāna-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa dkon-mchog ta-la-laḥi gzuṅs shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖寶燈陀羅尼大乘經"
+  },
+  "848": {
+    "tohoku": 848,
+    "taisho_numbers": [
+      "1397",
+      "1398"
+    ],
+    "sanskrit_title": "Ārya-jñānolka-nāma-dhāraṇī-sarvagati-pariśodhanī",
+    "tibetan_title_romanized": "Ḥphags-pa ye-śes ta-la-la shes-bya-baḥi gzuṅs ḥgro-ba thams-cad yoṅs-su sbyoṅ-ba",
+    "chinese_title": "聖智慧燈明陀羅尼一切趣清淨"
+  },
+  "849": {
+    "tohoku": 849,
+    "taisho_numbers": [
+      "936",
+      "937"
+    ],
+    "sanskrit_title": "Ārya-aparimitāyurjñāna-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa tshe daṅ ye-śes dpag-tu-med-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖壽智無量大乘經"
+  },
+  "850": {
+    "tohoku": 850,
+    "taisho_numbers": [
+      "370"
+    ],
+    "sanskrit_title": "Ārya-aparimitāyurjñānahṛdaya-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa tshe daṅ ye-śes dpag-tu-med-paḥi sñiṅ-po shes-bya-baḥu gzuṅs",
+    "chinese_title": "聖壽智無量心陀羅尼"
+  },
+  "851": {
+    "tohoku": 851,
+    "taisho_numbers": [
+      "369",
+      "934",
+      "1316",
+      "1317"
+    ],
+    "sanskrit_title": "Ārya-aparimitāguṇānuśaṁsā-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa yon-tan bsṅags-pa dpag-tu-med-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖無量功德讚嘆陀羅尼"
+  },
+  "852": {
+    "tohoku": 852,
+    "taisho_numbers": [
+      "1147",
+      "1333",
+      "1334"
+    ],
+    "sanskrit_title": "Ārya-saptabuddha-nāma-mahāyāna-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa saṅs-rgyas bdun-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖七佛大乘經"
+  },
+  "853": {
+    "tohoku": 853,
+    "taisho_numbers": [
+      "1348",
+      "1349"
+    ],
+    "sanskrit_title": "Ārya-dvādaśabuddhaka-nāma-mahāyāna-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa saṅs-rgyas bcu-gñis-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖十二佛大乘經"
+  },
+  "854": {
+    "tohoku": 854,
+    "taisho_numbers": [
+      "918",
+      "919"
+    ],
+    "sanskrit_title": "Ārya-buddhahṛdaya-nāma-dhāraṇī-dharmaparyāya",
+    "tibetan_title_romanized": "Ḥphags-pa saṅs-rgyas-kyi sñiṅ-po shes-bya-baḥi gzuṅs-kyi chos-kyi-rnam-graṅs",
+    "chinese_title": "聖佛心髓陀羅尼法門"
+  },
+  "856": {
+    "tohoku": 856,
+    "taisho_numbers": [
+      "1346",
+      "1347"
+    ],
+    "sanskrit_title": "Ārya-sarvabuddhāṅgavatī-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa saṅs-rgyas thams-cad-yan-lag daṅ-ldan-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖一切佛支具足陀羅尼"
+  },
+  "857": {
+    "tohoku": 857,
+    "taisho_numbers": [
+      "1387"
+    ],
+    "sanskrit_title": "Ārya-candāṅga-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa tsandan-gyi yan-lag ces-bya-baḥi gzuṅs",
+    "chinese_title": "聖栴檀支陀羅尼"
+  },
+  "858": {
+    "tohoku": 858,
+    "taisho_numbers": [
+      "1029",
+      "1351",
+      "1352",
+      "1353",
+      "1354",
+      "1355"
+    ],
+    "sanskrit_title": "Ārya-agrapradīpadhāraṇī-vidyārāja",
+    "tibetan_title_romanized": "Ḥphags-pa rig-sṅags-kyi rgyal-po sgron-ma mchog-gi gzuṅs",
+    "chinese_title": "聖明咒王最勝燈明陀羅尼"
+  },
+  "866": {
+    "tohoku": 866,
+    "taisho_numbers": [
+      "1411"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Ḥphags-pa padmaḥi spyan shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖蓮華眼陀羅尼"
+  },
+  "872": {
+    "tohoku": 872,
+    "taisho_numbers": [
+      "1409"
+    ],
+    "sanskrit_title": "Ārya-viśeṣavatī-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa khyad-par-can shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖最上陀羅尼"
+  },
+  "877": {
+    "tohoku": 877,
+    "taisho_numbers": [
+      "1127"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Ḥphags-pa kun-tu-bzaṅ-poḥi mtshan brgya-rtsa brgyad-pa gzuṅs-sṅags daṅ-bcas-pa",
+    "chinese_title": "聖普賢一百八名陀羅尼真言"
+  },
+  "882": {
+    "tohoku": 882,
+    "taisho_numbers": [
+      "1167"
+    ],
+    "sanskrit_title": "Ārya-aṣṭamaṇḍalaka-nāma-mahāyāna-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa dkyil-ḥkhor brgyad-pa shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖八曼荼羅大乘經"
+  },
+  "883": {
+    "tohoku": 883,
+    "taisho_numbers": [
+      "1023"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Ḥphags-pa de-bshin-gśegs-pa thams-cad-kyi byin-gyis-brlabs-kyi sñiṅ-po gsaṅ-ba riṅ-bsrel-gyi za-ma-tog ces-bya-baḥi gzuṅs theg-pa chen-poḥi mdo",
+    "chinese_title": "聖一切如來加持心秘密舍利篋陀羅尼大乘經"
+  },
+  "885": {
+    "tohoku": 885,
+    "taisho_numbers": [
+      "1006",
+      "1007"
+    ],
+    "sanskrit_title": "Ārya-mahāmaṇivipulavimānasupratṣṭhitaguhyaparamarahasyakalparāja-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa nor-bu chen-po rgyas-paḥi gshal-med-khaṅ śin-tu rab-tu-gnas-pa gsaṅ-ba dam-paḥi gsaṅ-baḥi cho-ga shib-moḥi rgyal-po shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖善住廣大摩尼無量殿秘密勝義秘密儀軌微細母王陀羅尼"
+  },
+  "886": {
+    "tohoku": 886,
+    "taisho_numbers": [
+      "1356",
+      "1357",
+      "1358",
+      "1359"
+    ],
+    "sanskrit_title": "Ārya-puṣpakūṭa-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa me-tog brtsegs-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖華積陀羅尼"
+  },
+  "888": {
+    "tohoku": 888,
+    "taisho_numbers": [
+      "1371"
+    ],
+    "sanskrit_title": "Ārya-mahādhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa gzuṅs chen-po",
+    "chinese_title": "聖大陀羅尼"
+  },
+  "890": {
+    "tohoku": 890,
+    "taisho_numbers": [
+      "1143"
+    ],
+    "sanskrit_title": "Ārya-maitreyapratijñā-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa byams-pas dam-bcas-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖彌勒本願陀羅尼"
+  },
+  "897": {
+    "tohoku": 897,
+    "taisho_numbers": [
+      "1057",
+      "1058",
+      "1060"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Ḥphags-pa byaṅ-chub-sems-dpaḥ spyan-ras-gzigs dbaṅ-phyug phyag stoṅ spyan stoṅ daṅ-ldan-pa thogs-pa mi mṅaḥ-baḥi thugs-rje chen-poḥi sems rgya-cher yoṅs-su rdsogs-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖千手千眼觀自在菩薩無礙大悲心廣大正圓滿陀羅尼"
+  },
+  "898": {
+    "tohoku": 898,
+    "taisho_numbers": [
+      "1080",
+      "1081",
+      "1082",
+      "1083"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Ḥphags-pa spyan-ras-gzigs-dbaṅ-phyug-gi gsaṅ-baḥi mdsod thogs-pa med-paḥi yid-bshin-gyi ḥkhor-loḥi sñiṅ-po shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖觀自在秘密藏無礙如意輪心陀羅尼"
+  },
+  "899": {
+    "tohoku": 899,
+    "taisho_numbers": [
+      "901",
+      "1070",
+      "1071"
+    ],
+    "sanskrit_title": "Ārya-avalokiteśvaraikādaśamukha-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa spyan-ras-gzigs dbaṅ-phyug shal bcu-gcig-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖觀自在十一面陀羅尼"
+  },
+  "900": {
+    "tohoku": 900,
+    "taisho_numbers": [
+      "1054"
+    ],
+    "sanskrit_title": "Ārya-avalokiteśvaranāmāṣṭaśataka",
+    "tibetan_title_romanized": "Ḥphags-pa spyan-ras-gzigs dbaṅ-phyug mtshan brgya-rtsa-brgyad-pa",
+    "chinese_title": "聖觀自在一百八名"
+  },
+  "901": {
+    "tohoku": 901,
+    "taisho_numbers": [
+      "1092",
+      "1093",
+      "1094",
+      "1095",
+      "1099"
+    ],
+    "sanskrit_title": "Ārya-amoghapāśahṛdaya-nāma-mahāyānasūtra",
+    "tibetan_title_romanized": "Ḥphags-pa don-yod-shags-paḥi sñiṅ-po shes-bya-ba theg-pa chen-poḥi mdo",
+    "chinese_title": "聖不空羂索心髓大乘經"
+  },
+  "902": {
+    "tohoku": 902,
+    "taisho_numbers": [
+      "1092"
+    ],
+    "sanskrit_title": "Dsśabūmi-dhāraṇī",
+    "tibetan_title_romanized": "Sa bcu-paḥi gzuṅs",
+    "chinese_title": "十地陀羅尼"
+  },
+  "903": {
+    "tohoku": 903,
+    "taisho_numbers": [
+      "1092"
+    ],
+    "sanskrit_title": "Ārya-amoghapāśapāramitāṣaṭpariūraka-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa don-yod-shags-paḥi pha-rol-tu-phyin-pa drug yoṅs-su-rdsogs-par-byed-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖不空羂索神變真言經真言品"
+  },
+  "904": {
+    "tohoku": 904,
+    "taisho_numbers": [
+      "1037",
+      "1038"
+    ],
+    "sanskrit_title": "Ārya-samantabhadra-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa kun-tu-bzaṅ-po shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖普賢陀羅尼"
+  },
+  "905": {
+    "tohoku": 905,
+    "taisho_numbers": [
+      "1061",
+      "1111",
+      "1112"
+    ],
+    "sanskrit_title": "Ārya-nīlakaṇṭha-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa nī-la-kaṇṭha shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖青頸陀羅尼"
+  },
+  "906": {
+    "tohoku": 906,
+    "taisho_numbers": [
+      "901"
+    ],
+    "sanskrit_title": "Ārya-avalokiteśvarahayagrīva-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa spyan-ras-gzigs dbaṅ-phyug ha-ya-grī-baḥi gzuṅs",
+    "chinese_title": "聖觀自在馬頭陀羅尼"
+  },
+  "907": {
+    "tohoku": 907,
+    "taisho_numbers": [
+      "1377"
+    ],
+    "sanskrit_title": "Ārya-mekhalā-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa me-kha-la shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖金帶陀羅尼"
+  },
+  "909": {
+    "tohoku": 909,
+    "taisho_numbers": [
+      "1117"
+    ],
+    "sanskrit_title": "Ārya-avalokiteśvaramāta-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa spyan-ras-gzigs dbaṅ-phyug-gi yum shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖觀自在母陀羅尼"
+  },
+  "914": {
+    "tohoku": 914,
+    "taisho_numbers": [
+      "1009",
+      "1011",
+      "1012",
+      "1013",
+      "1014",
+      "1015",
+      "1016",
+      "1017",
+      "1018"
+    ],
+    "sanskrit_title": "Ārya-anantamukhasādhaka-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa sgo mthaḥ-yas-pas sgrub-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖無邊門成就陀羅尼"
+  },
+  "915": {
+    "tohoku": 915,
+    "taisho_numbers": [
+      "1137",
+      "1138",
+      "1139",
+      "1140"
+    ],
+    "sanskrit_title": "Ārya-sumukha-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa sgo gzaṅ-po shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖善門陀羅尼"
+  },
+  "916": {
+    "tohoku": 916,
+    "taisho_numbers": [
+      "1360"
+    ],
+    "sanskrit_title": "Ārya-ṣaṇmukha-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa sgo drug-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖六門陀羅尼"
+  },
+  "917": {
+    "tohoku": 917,
+    "taisho_numbers": [
+      "1047"
+    ],
+    "sanskrit_title": "Ārya-ṣaḍakṣara-vidyā",
+    "tibetan_title_romanized": "Ḥphags-pa yi-ge drug-paḥi rig-sṅags",
+    "chinese_title": "聖六字門咒"
+  },
+  "923": {
+    "tohoku": 923,
+    "taisho_numbers": [
+      "943"
+    ],
+    "sanskrit_title": "Ārya-dhvajāgrakeyūra-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa rgyal-mtshan-gyi rtse-moḥi dpuṅ-rgyan shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖勝幡頂飾陀羅尼"
+  },
+  "925": {
+    "tohoku": 925,
+    "taisho_numbers": [
+      "1373"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Ḥphags-pa thams-cad-la mi ḥjigs-pa rab-tu-sbyin-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖一切無畏施陀羅尼"
+  },
+  "930": {
+    "tohoku": 930,
+    "taisho_numbers": [
+      "901",
+      "1035",
+      "1036"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Stoṅ ḥgyur shes-bya-baḥi gzuṅs",
+    "chinese_title": "千轉陀羅尼"
+  },
+  "955": {
+    "tohoku": 955,
+    "taisho_numbers": [
+      "1416"
+    ],
+    "sanskrit_title": "Vajrasūkṣmāpratihata-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Rdo-rje phra-mo thogs-pa med-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "金剛細無礙陀羅尼"
+  },
+  "958": {
+    "tohoku": 958,
+    "taisho_numbers": [
+      "1392"
+    ],
+    "sanskrit_title": "Ārya-mahādaṇḍa-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa be-con chen-po shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖大杖陀羅尼"
+  },
+  "970": {
+    "tohoku": 970,
+    "taisho_numbers": [
+      "1285"
+    ],
+    "sanskrit_title": "Ārya-maṇibhadra-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa nor-bu bzaṅ-poḥi gzuṅs shes-bya-ba",
+    "chinese_title": "聖寶賢陀羅尼"
+  },
+  "971": {
+    "tohoku": 971,
+    "taisho_numbers": [
+      "1285"
+    ],
+    "sanskrit_title": "Kāruṇikāryajambhalajalendrasuśaṅkara-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa gnod-ḥdsin chu-dbaṅ sñiṅ-rje-can-gyi gzuṅs bde-byed ces-bya-ba",
+    "chinese_title": "聖閻婆羅水帝悲尊陀羅尼作樂"
+  },
+  "974": {
+    "tohoku": 974,
+    "taisho_numbers": [
+      "26",
+      "1362"
+    ],
+    "sanskrit_title": "Ārya-bhadrarātrī-nāma-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa mtshan-mo bzaṅ-po shes-bya-baḥi mdo",
+    "chinese_title": "聖善夜經"
+  },
+  "982": {
+    "tohoku": 982,
+    "taisho_numbers": [
+      "1024"
+    ],
+    "sanskrit_title": "Ārya-raśmivimalaviśuddhaprabhā-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa ḥod-zer dri-ma med-pa rnam-par-dag-paḥi ḥod ces-bya-baḥi gzuṅs",
+    "chinese_title": "聖光明無垢清淨光陀羅尼"
+  },
+  "983": {
+    "tohoku": 983,
+    "taisho_numbers": [
+      "1025"
+    ],
+    "sanskrit_title": "Samantamukhapraveśaraśmivimaloṣṇīṣa-prabhāsasarvatathāgatahṛdayasamayavilokita-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Kun-nas sgor ḥjug-paḥi ḥod-zer gtsug-tor dri-ma med-par snaṅ-ba de-bshin-gśegs-pa thams-cad-kyi sñiṅ-po daṅ dam-tshig-la rnam-par-lta-ba shes-bya-ba-baḥi gzuṅs",
+    "chinese_title": "觀普門入光明頂髻無垢照一切如來心及三摩耶陀羅尼"
+  },
+  "984": {
+    "tohoku": 984,
+    "taisho_numbers": [
+      "974"
+    ],
+    "sanskrit_title": "Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa ṅan-ḥgro thams-cad yoṅs-su-sbyoṅ-ba gtsug-tor rnam-par-rgyal-ba shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖清一切惡趣頂髻勝陀羅尼"
+  },
+  "985": {
+    "tohoku": 985,
+    "taisho_numbers": [
+      "976",
+      "977"
+    ],
+    "sanskrit_title": "Ārya-sarvatathāgatoṣṇīṣasitātapatrā-nāma-aparājitapratyaṅgirāmahāvidyārājñīi",
+    "tibetan_title_romanized": "Ḥphags-pa de-bshin-gśegs-pa thams-cad-kyi gtsug-tor-nas byuṅ-baḥi gdugs dkar-po-can shes-bya-ba gshan-gyis mi thub-ma phyir-zlog-paḥi rig-sṅags-kyi rgyal-mo chen-moḥo",
+    "chinese_title": "聖一切如來頂髻所出白傘蓋無能勝退轉明咒大王母"
+  },
+  "986": {
+    "tohoku": 986,
+    "taisho_numbers": [
+      "976",
+      "977"
+    ],
+    "sanskrit_title": "Ārya-tathāgatoṣṇīṣasitātapatrāparajita-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-ma de-bshin-gśegs-paḥi gtsug-tor-nas byuṅ-baḥi gdugs dkar-po-can gshan-gyis-mi-thub-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖如來頂髻所出白傘蓋無能勝陀羅尼"
+  },
+  "988": {
+    "tohoku": 988,
+    "taisho_numbers": [
+      "1254",
+      "1255",
+      "1256",
+      "1257"
+    ],
+    "sanskrit_title": "Ārya-mārīcī-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-ma ḥod-zer-can shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖母摩利支天陀羅尼"
+  },
+  "989": {
+    "tohoku": 989,
+    "taisho_numbers": [
+      "1075",
+      "1076",
+      "1077"
+    ],
+    "sanskrit_title": "Ārya-cundīdevī-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa lha-mo skul-byed-ma shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖天女純陀陀羅尼"
+  },
+  "990": {
+    "tohoku": 990,
+    "taisho_numbers": [
+      "1264"
+    ],
+    "sanskrit_title": "Ārya-jāṅguli-nāma-vidyā",
+    "tibetan_title_romanized": "Ḥphags-pa dug sel shes-bya-baḥi rig-sṅags",
+    "chinese_title": "聖消毒明咒"
+  },
+  "991": {
+    "tohoku": 991,
+    "taisho_numbers": [
+      "1404"
+    ],
+    "sanskrit_title": "Ārya-hiraṇyavatī-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa dbyig daṅ-ldan-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖財寶具有陀羅尼"
+  },
+  "994": {
+    "tohoku": 994,
+    "taisho_numbers": [
+      "1100"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Ḥphags-pa parṇṇa-śa-ba-riḥi mdo",
+    "chinese_title": "聖葉衣經"
+  },
+  "995": {
+    "tohoku": 995,
+    "taisho_numbers": [
+      "1384"
+    ],
+    "sanskrit_title": "Ārya-parṇṇaśabarī-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-ma ri-khrod lo-ma-gyon-paḥi gzuṅs",
+    "chinese_title": "聖母山窟葉衣女陀羅尼"
+  },
+  "997": {
+    "tohoku": 997,
+    "taisho_numbers": [
+      "1302",
+      "1303"
+    ],
+    "sanskrit_title": "Ārya-grahamātṛkā-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-ma gzaḥ rnams-kyi yum shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖母星辰母陀羅尼"
+  },
+  "998": {
+    "tohoku": 998,
+    "taisho_numbers": [
+      "1302",
+      "1303"
+    ],
+    "sanskrit_title": "Grahamātṛkā-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Gzaḥ rnams-kyi yum shes-bya-baḥi gzuṅs",
+    "chinese_title": "星辰母陀羅尼"
+  },
+  "1000": {
+    "tohoku": 1000,
+    "taisho_numbers": [
+      "1105",
+      "1106",
+      "1107"
+    ],
+    "sanskrit_title": "Ārya-tārābhaṭṭārikānāmāṣṭaśataka",
+    "tibetan_title_romanized": "Rje-btsun ḥphags-ma sgrol-maḥi mtshan brgya-rtsa-brgyad-pa shes-bya-ba",
+    "chinese_title": "聖母多羅尊一百八名"
+  },
+  "1005": {
+    "tohoku": 1005,
+    "taisho_numbers": [
+      "1252"
+    ],
+    "sanskrit_title": "Ārya-mahālakṣmī-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa dpal chen-moḥi mdo",
+    "chinese_title": "聖大吉祥女經"
+  },
+  "1006": {
+    "tohoku": 1006,
+    "taisho_numbers": [
+      "1252"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Dpal lha-moḥi mtshan bcu-gñis-pa",
+    "chinese_title": "吉祥天女十二名"
+  },
+  "1007": {
+    "tohoku": 1007,
+    "taisho_numbers": [
+      "1162",
+      "1163",
+      "1164"
+    ],
+    "sanskrit_title": "Ārya-vasudhārā-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa nor-gyi-rgyun shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖持世陀羅尼"
+  },
+  "1008": {
+    "tohoku": 1008,
+    "taisho_numbers": [
+      "1324"
+    ],
+    "sanskrit_title": "Ārya-cakṣurviśodhanī-nāma-vidyāmantra",
+    "tibetan_title_romanized": "Ḥphags-pa mig rnam-par-sbyoṅ-ba shes-bya-baḥi rig-sṅags",
+    "chinese_title": "聖眼清淨明咒"
+  },
+  "1014": {
+    "tohoku": 1014,
+    "taisho_numbers": [
+      "1323"
+    ],
+    "sanskrit_title": "Ārya-sarvarogapraśamani-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Ḥphags-pa nad thams-cad rab-tu-shi-bar-byed-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "聖一切病善治陀羅尼"
+  },
+  "1020": {
+    "tohoku": 1020,
+    "taisho_numbers": [
+      "1325"
+    ],
+    "sanskrit_title": "Ārya-arśapraśamani-sūtra",
+    "tibetan_title_romanized": "Ḥphags-pa gshaṅ-ḥbrum rab-tu-shi-bar-byed-paḥi mdo",
+    "chinese_title": "聖痔病善治經"
+  },
+  "1061": {
+    "tohoku": 1061,
+    "taisho_numbers": [
+      "1244",
+      "1245"
+    ],
+    "sanskrit_title": "Āṭānāṭīyasūtra-nāma-mahāsūtra",
+    "tibetan_title_romanized": "Mdo chen-po kun-tu-rgyu-ba daṅ kun-tu-rgyu-ba ma yin-pa daṅ mthun-paḥi mdo shes-bya-ba",
+    "chinese_title": "大經遊行者非遊行者和合經"
+  },
+  "1063": {
+    "tohoku": 1063,
+    "taisho_numbers": [
+      "989",
+      "991",
+      "992",
+      "993"
+    ],
+    "sanskrit_title": "Ārya-mahāmegha",
+    "tibetan_title_romanized": "Ḥphags-pa sprin chen-po",
+    "chinese_title": "聖大雲"
+  },
+  "1078": {
+    "tohoku": 1078,
+    "taisho_numbers": [
+      "1386"
+    ],
+    "sanskrit_title": "Surūpa-nāma-dhāraṇī",
+    "tibetan_title_romanized": "Su-rū-pa shes-bya-baḥi gzuṅs",
+    "chinese_title": "須留波陀羅尼"
+  },
+  "1079": {
+    "tohoku": 1079,
+    "taisho_numbers": [
+      "1313",
+      "1314"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Yi-dags-mo kha-ḥbar-ma dbugs dbyuṅ-baḥi gtor-maḥi cho-ba",
+    "chinese_title": "焰口鬼女通息供養儀軌"
+  },
+  "1080": {
+    "tohoku": 1080,
+    "taisho_numbers": [
+      "1313",
+      "1314"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Yi-dags kha-nas-me-ḥbar-ba-la skyabs-mdsad-paḥi gzuṅs",
+    "chinese_title": "救焰口鬼陀羅尼"
+  },
+  "1095": {
+    "tohoku": 1095,
+    "taisho_numbers": [
+      "297"
+    ],
+    "sanskrit_title": "Ārya-bhadracaryāpraṇidhānarāja",
+    "tibetan_title_romanized": "Ḥphags-pa bzaṅ-po spyod-paḥi smon-lam-gyi rgyal-po",
+    "chinese_title": "聖普賢行願王"
+  },
+  "1096": {
+    "tohoku": 1096,
+    "taisho_numbers": [
+      "1144"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Ḥphags-pa byams-paḥi smon-lam",
+    "chinese_title": "聖彌勒誓願文"
+  },
+  "1118": {
+    "tohoku": 1118,
+    "taisho_numbers": [
+      "1675"
+    ],
+    "sanskrit_title": "Dharmadhātustava",
+    "tibetan_title_romanized": "Chos-kyi dbyiṅs-su bstod-pa",
+    "chinese_title": "法界讚"
+  },
+  "1123": {
+    "tohoku": 1123,
+    "taisho_numbers": [
+      "1678"
+    ],
+    "sanskrit_title": "Kāyatrayastotra-nāma",
+    "tibetan_title_romanized": "Sku gsum-la bstod-pa shes-bya-ba",
+    "chinese_title": "三身讚"
+  },
+  "1133": {
+    "tohoku": 1133,
+    "taisho_numbers": [
+      "1685"
+    ],
+    "sanskrit_title": "Aṣṭamahāsthānacaityastotra",
+    "tibetan_title_romanized": "Gnas chen-po brgyad-kyi mchod-rten-la bstod-pa",
+    "chinese_title": "八大聖地制多讚"
+  },
+  "1147": {
+    "tohoku": 1147,
+    "taisho_numbers": [
+      "1680"
+    ],
+    "sanskrit_title": "Śatapañcāśatka-nāma-stotra",
+    "tibetan_title_romanized": "Brgya lṅa-bcu-pa shes-bya-baḥi bstod-pa",
+    "chinese_title": "一百五十讚"
+  },
+  "1149": {
+    "tohoku": 1149,
+    "taisho_numbers": [
+      "1683"
+    ],
+    "sanskrit_title": "Gaṇḍīstotragāthā",
+    "tibetan_title_romanized": "Gaṇḍīḥi bstod-pa tshigs-su-bcad-pa",
+    "chinese_title": "犍稚讚偈"
+  },
+  "1168": {
+    "tohoku": 1168,
+    "taisho_numbers": [
+      "1684"
+    ],
+    "sanskrit_title": "Aṣṭamahāsthānacaityavandanāstava",
+    "tibetan_title_romanized": "Gnas chen-po brgyad-kyi mchod-rten-la phyag-ḥtshal-baḥi bstod-pa",
+    "chinese_title": "八大聖地制多禮拜讚"
+  },
+  "3721": {
+    "tohoku": 3721,
+    "taisho_numbers": [
+      "1687"
+    ],
+    "sanskrit_title": "Gurupañcāśikā",
+    "tibetan_title_romanized": "Bla-ma lṅa-bcu-pa",
+    "chinese_title": "上師五十"
+  },
+  "3809": {
+    "tohoku": 3809,
+    "taisho_numbers": [
+      "1518"
+    ],
+    "sanskrit_title": "Ārya-prajñāpāramitāsaṁgrahakārikā",
+    "tibetan_title_romanized": "Ḥphags-pa śes-rab-kyi-pha-rol-tu-phyin-ma bsdus-paḥi tshig-leḥur-byas-pa",
+    "chinese_title": "聖般若波羅密多母攝頌"
+  },
+  "3810": {
+    "tohoku": 3810,
+    "taisho_numbers": [
+      "1517"
+    ],
+    "sanskrit_title": "Ārya-prajñāpāramitāsaṁgrahakārikā-vivaraṇa",
+    "tibetan_title_romanized": "Ḥphags-pa śes-rab-kyi-pha-rol-tu-phyin-ma bsdus-paḥi tshig-leḥur-byas-paḥi rnam-par-ḥgrel-pa",
+    "chinese_title": "聖般若波羅蜜多母攝頌註解"
+  },
+  "3812": {
+    "tohoku": 3812,
+    "taisho_numbers": [
+      "1516"
+    ],
+    "sanskrit_title": "Bhagavatīprajñāpāramitānavaślokapiṇḍārtha",
+    "tibetan_title_romanized": "Bcom-ldan-ḥdas-ma śes-rab-kyi-pha-rol-tu-phyin-paḥi don bsdus-paḥi tshigs-su bcad-pa dgu-pa",
+    "chinese_title": "薄伽梵母波般若波羅蜜多攝義九頌"
+  },
+  "3813": {
+    "tohoku": 3813,
+    "taisho_numbers": [
+      "1516"
+    ],
+    "sanskrit_title": "Bhagavatīprajñāpāramitānavaślokapiṇḍārtha-ṭīkā",
+    "tibetan_title_romanized": "Bcom-ldan-ḥdas-ma śes-rab-kyi-pha-rol-tu-phyin-paḥi don bsdus-paḥi tshigs-su bcad-pa dgu-paḥi rgya-cher bśad-pa",
+    "chinese_title": "薄伽梵母波般若波羅蜜多攝義九頌廣疏"
+  },
+  "3816": {
+    "tohoku": 3816,
+    "taisho_numbers": [
+      "1510"
+    ],
+    "sanskrit_title": "Ārya-bhagavatīprajñāpāramitāvajraccheditāsaptārthaṭīkā",
+    "tibetan_title_romanized": "Ḥphags-pa bcom-ldan-ḥdas-ma śes-rab-kyi-pha-rol-tu-phyin-pa rdo-rje gcod-paḥi don bdun-gyi rgya-cher-ḥgrel-pa",
+    "chinese_title": "聖薄伽梵母般若波羅蜜多金剛能斷七義廣註"
+  },
+  "3824": {
+    "tohoku": 3824,
+    "taisho_numbers": [
+      "1564"
+    ],
+    "sanskrit_title": "Prajñā-nāma-mūlamadhyamakakārīkā",
+    "tibetan_title_romanized": "Dbu-ma rtsa-baḥi tshig-leḥur-byas-pa śes-rab ces-bya-ba",
+    "chinese_title": "根本中觀頌般若"
+  },
+  "3825": {
+    "tohoku": 3825,
+    "taisho_numbers": [
+      "1575"
+    ],
+    "sanskrit_title": "Yuktiṣaṣṭhikākārikā-nāma",
+    "tibetan_title_romanized": "Rigs-pa drug-cu-paḥi tshig-leḥur-byas-pa shes-bya-ba",
+    "chinese_title": "正理六十頌"
+  },
+  "3828": {
+    "tohoku": 3828,
+    "taisho_numbers": [
+      "1631"
+    ],
+    "sanskrit_title": "Vigrahavyāvartanīkārikā-nāma",
+    "tibetan_title_romanized": "Rtsod-pa bzlog-paḥi tshig-leḥur-byas-pa shes-bya-ba",
+    "chinese_title": "諍迴頌"
+  },
+  "3832": {
+    "tohoku": 3832,
+    "taisho_numbers": [
+      "1631"
+    ],
+    "sanskrit_title": "Vigrahavyāvartanīvṛtti",
+    "tibetan_title_romanized": "Rtsod-pa bzlog-paḥi ḥgrel-pa",
+    "chinese_title": "諍迴註"
+  },
+  "3833": {
+    "tohoku": 3833,
+    "taisho_numbers": [
+      "1576"
+    ],
+    "sanskrit_title": "Mahāyānaviṁśikā",
+    "tibetan_title_romanized": "Theg-pa chen-po ñi-śu-pa",
+    "chinese_title": "大乘二十"
+  },
+  "3834": {
+    "tohoku": 3834,
+    "taisho_numbers": [
+      "1572"
+    ],
+    "sanskrit_title": "Akṣaraśataka",
+    "tibetan_title_romanized": "Yi-ge brgya-pa",
+    "chinese_title": "百字"
+  },
+  "3835": {
+    "tohoku": 3835,
+    "taisho_numbers": [
+      "1572"
+    ],
+    "sanskrit_title": "Akṣaraśataka-nāma-vṛtti",
+    "tibetan_title_romanized": "Yi-ge brgya-pa shes-bya-baḥi ḥgrel-pa",
+    "chinese_title": "百字註"
+  },
+  "3836": {
+    "tohoku": 3836,
+    "taisho_numbers": [
+      "1654"
+    ],
+    "sanskrit_title": "Pratītyasamutpādahṛdayakārikā",
+    "tibetan_title_romanized": "Rten-ciṅ-ḥbrel-bar-ḥbyuṅ-baḥi sñiṅ-poḥi tshig-leḥur-byas-pa",
+    "chinese_title": "緣起心頌"
+  },
+  "3837": {
+    "tohoku": 3837,
+    "taisho_numbers": [
+      "1654"
+    ],
+    "sanskrit_title": "Pratītyasamutpādahṛdayavyākhyāna",
+    "tibetan_title_romanized": "Rten-ciṅ-ḥbrel-bar-ḥbyuṅ-baḥi sñiṅ-poḥi rnam-par-bśad-pa",
+    "chinese_title": "緣起心解說"
+  },
+  "3840": {
+    "tohoku": 3840,
+    "taisho_numbers": [
+      "1574"
+    ],
+    "sanskrit_title": "Bhavasaṁkrānti",
+    "tibetan_title_romanized": "Srid-pa ḥpho-ba",
+    "chinese_title": "轉有"
+  },
+  "3844": {
+    "tohoku": 3844,
+    "taisho_numbers": [
+      "1620",
+      "1621"
+    ],
+    "sanskrit_title": "Hastavāla-nāma-prakaraṇa",
+    "tibetan_title_romanized": "Cha-śas-kyi yan-lag ces-bya-baḥi rab-tu-byed-pa",
+    "chinese_title": "肢分論"
+  },
+  "3845": {
+    "tohoku": 3845,
+    "taisho_numbers": [
+      "1620",
+      "1621"
+    ],
+    "sanskrit_title": "Hastavāla-nāma-prakaraṇavṛtti",
+    "tibetan_title_romanized": "Cha-śas-kyi yan-lag ces-bya-baḥi rab-tu-byed-paḥi ḥgrel-pa",
+    "chinese_title": "肢分論註"
+  },
+  "3846": {
+    "tohoku": 3846,
+    "taisho_numbers": [
+      "1570"
+    ],
+    "sanskrit_title": "Catuḥśatakaśāstrakārikā-nāma",
+    "tibetan_title_romanized": "Bstan-bcos bshi-brgya-pa shes-bya-baḥi tshig-leḥur-byas-pa",
+    "chinese_title": "四百論頌"
+  },
+  "3848": {
+    "tohoku": 3848,
+    "taisho_numbers": [
+      "1620",
+      "1621"
+    ],
+    "sanskrit_title": "Hastavālaprakaraṇakārikā",
+    "tibetan_title_romanized": "Rab-tu-byed-pa lag-paḥi tshad-kyi tshig-leḥur-byas-pa",
+    "chinese_title": "手量論頌"
+  },
+  "3849": {
+    "tohoku": 3849,
+    "taisho_numbers": [
+      "1620",
+      "1621"
+    ],
+    "sanskrit_title": "Hastavākavṛtti",
+    "tibetan_title_romanized": "Lag-paḥi tshad-kyi ḥgrel-pa",
+    "chinese_title": "手量註"
+  },
+  "3853": {
+    "tohoku": 3853,
+    "taisho_numbers": [
+      "1566"
+    ],
+    "sanskrit_title": "Prajñāpradīpamūlamadhyamakavṛtti",
+    "tibetan_title_romanized": "Dbu-maḥi rtsa-baḥi ḥgrel-pa śes-rab-sgron-ma",
+    "chinese_title": "根本中觀註智慧燈"
+  },
+  "3871": {
+    "tohoku": 3871,
+    "taisho_numbers": [
+      "1662"
+    ],
+    "sanskrit_title": "Bodhisattvacaryāvatāra",
+    "tibetan_title_romanized": "Byaṅ-chub-sems-dpaḥi spyod-pa-la ḥjug-pa",
+    "chinese_title": "入菩薩行"
+  },
+  "3905": {
+    "tohoku": 3905,
+    "taisho_numbers": [
+      "1637"
+    ],
+    "sanskrit_title": "Mahāyānalakṣaṇasamuccaya(-nāma)",
+    "tibetan_title_romanized": "Theg-pa chen-poḥi mtshan-ñid kun-las-bsdus-pa shes-bya-ba",
+    "chinese_title": "大乘相集"
+  },
+  "3913": {
+    "tohoku": 3913,
+    "taisho_numbers": [
+      "1663"
+    ],
+    "sanskrit_title": "Bodhicittabhāvanā",
+    "tibetan_title_romanized": "Byaṅ-chub-sems bsgom-pa",
+    "chinese_title": "菩提心修習"
+  },
+  "3915": {
+    "tohoku": 3915,
+    "taisho_numbers": [
+      "1664"
+    ],
+    "sanskrit_title": "Bhāvanākrama",
+    "tibetan_title_romanized": "Bsgom-paḥi rim-pa",
+    "chinese_title": "修習次第"
+  },
+  "3932": {
+    "tohoku": 3932,
+    "taisho_numbers": [
+      "410",
+      "411"
+    ],
+    "sanskrit_title": "[Samādhipratikūlapakṣavyavasthāna?]",
+    "tibetan_title_romanized": "Tiṅ-ṅe-ḥdsin-gyi mi-mthun-paḥi phyogs rnam-par-gshag-pa",
+    "chinese_title": "三摩地不順分安立"
+  },
+  "3934": {
+    "tohoku": 3934,
+    "taisho_numbers": [
+      "1635"
+    ],
+    "sanskrit_title": "Sūtrasamuccaya",
+    "tibetan_title_romanized": "Mdo kun-las bdus-pa",
+    "chinese_title": "經集"
+  },
+  "3939": {
+    "tohoku": 3939,
+    "taisho_numbers": [
+      "1636"
+    ],
+    "sanskrit_title": "Śikṣāsamuccayakārikā",
+    "tibetan_title_romanized": "Bslab-pa kun-las btus-paḥi tshig leḥur-byas-pa",
+    "chinese_title": "學集頌"
+  },
+  "3940": {
+    "tohoku": 3940,
+    "taisho_numbers": [
+      "1636"
+    ],
+    "sanskrit_title": "Śikṣāsamuccaya",
+    "tibetan_title_romanized": "Bslab-pa kun-las-btus-pa",
+    "chinese_title": "學集"
+  },
+  "3941": {
+    "tohoku": 3941,
+    "taisho_numbers": [
+      "1636"
+    ],
+    "sanskrit_title": "[Tathāgatahṛdayapādadeśanāvidhisahita-śatākṣararakṣā]",
+    "tibetan_title_romanized": "De-bshin-gśegs-paḥi sñiṅ-po yi-ge brgya-paḥi bsruṅ-ba daṅ sdig-pa bśags-paḥi cho-ga",
+    "chinese_title": "如來心百字守護助伴罪過懺悔儀軌"
+  },
+  "3958": {
+    "tohoku": 3958,
+    "taisho_numbers": [
+      "727"
+    ],
+    "sanskrit_title": "Daśākuśalakarmapatha(deśanā)",
+    "tibetan_title_romanized": "Mi dge-ba bcuḥi las-kyi lam bstan-pa",
+    "chinese_title": "十不善業道教說"
+  },
+  "3991": {
+    "tohoku": 3991,
+    "taisho_numbers": [
+      "1531"
+    ],
+    "sanskrit_title": "[Ārya-gayāśīrṣa-nāma-sūtravyākhyāna]",
+    "tibetan_title_romanized": "Ḥphags-pa ga-ya-mgoḥi ri shes-bya-baḥi mdoḥi rnam-par bśad-pa",
+    "chinese_title": "聖伽耶山頂經解說"
+  },
+  "4009": {
+    "tohoku": 4009,
+    "taisho_numbers": [
+      "1523"
+    ],
+    "sanskrit_title": "Ārya-mahāratnakūṭadharmaparyāyaśata-sāhasrikakāśyapaparivartaṭīkā",
+    "tibetan_title_romanized": "Ḥphags-pa dkon-mchog brtsegs-pa chen-po chos-kyi rnam-graṅs leḥu stoṅ-phrag-brgya-pa-las ḥod-sruṅs-kyi leḥu rgya-cher ḥgrel-pa",
+    "chinese_title": "聖大寶積法門十萬品中迦葉品廣註"
+  },
+  "4017": {
+    "tohoku": 4017,
+    "taisho_numbers": [
+      "1723"
+    ],
+    "sanskrit_title": "",
+    "tibetan_title_romanized": "Dam-paḥi chos puṇḍa-rī-kaḥi ḥgrel-pa",
+    "chinese_title": "妙法蓮華註"
+  },
+  "4020": {
+    "tohoku": 4020,
+    "taisho_numbers": [
+      "1604"
+    ],
+    "sanskrit_title": "Mahāyānasūtrālaṁkāra-nāma-kārikā",
+    "tibetan_title_romanized": "Theg-pa chen-po mdo-sdeḥi rgyan shes-bya-baḥi tshig-leḥur-byas-pa",
+    "chinese_title": "大乘經之莊嚴頌"
+  },
+  "4021": {
+    "tohoku": 4021,
+    "taisho_numbers": [
+      "1599",
+      "1601"
+    ],
+    "sanskrit_title": "Madhyāntavibhaṅgakārikā",
+    "tibetan_title_romanized": "Dbus daṅ mthaḥ rnam-par ḥbyed-paḥi tshig-leḥur-byas-pa",
+    "chinese_title": "中邊分別頌"
+  },
+  "4024": {
+    "tohoku": 4024,
+    "taisho_numbers": [
+      "1611"
+    ],
+    "sanskrit_title": "Mahāyānottaratantraśāstra",
+    "tibetan_title_romanized": "Theg-pa chen-po rgyud bla-maḥi bstan-bcos",
+    "chinese_title": "大乘上怛特羅論"
+  },
+  "4025": {
+    "tohoku": 4025,
+    "taisho_numbers": [
+      "1611"
+    ],
+    "sanskrit_title": "Mahāyānottaratantraśāstravyākhyā",
+    "tibetan_title_romanized": "Theg-pa chen-po rgyud bla-maḥi bstan-bcos rnam-par bśad-pa",
+    "chinese_title": "大乘上怛特羅論解說"
+  },
+  "4026": {
+    "tohoku": 4026,
+    "taisho_numbers": [
+      "1604"
+    ],
+    "sanskrit_title": "Sūtrālaṁkāravyākhyā",
+    "tibetan_title_romanized": "Mdo-sdeḥi rgyan-gyi bśad-pa",
+    "chinese_title": "經莊嚴疏"
+  },
+  "4027": {
+    "tohoku": 4027,
+    "taisho_numbers": [
+      "1599",
+      "1600"
+    ],
+    "sanskrit_title": "Madhyāntavibhaṅgaṭīkā",
+    "tibetan_title_romanized": "Dbus daṅ mthaḥ rnam-par ḥbyed-paḥi ḥgrel-pa",
+    "chinese_title": "中邊分別註"
+  },
+  "4035": {
+    "tohoku": 4035,
+    "taisho_numbers": [
+      "1579"
+    ],
+    "sanskrit_title": "Yogacaryābhūmi",
+    "tibetan_title_romanized": "Rnal-ḥbyor spyod-paḥi sa",
+    "chinese_title": "瑜伽行地"
+  },
+  "4036": {
+    "tohoku": 4036,
+    "taisho_numbers": [
+      "1579"
+    ],
+    "sanskrit_title": "[Yogacaryābhūmau śrāvakabhūmi]",
+    "tibetan_title_romanized": "Rnal-ḥbyor spyod-paḥi sa-las ñan-thos-kyi sa",
+    "chinese_title": "瑜伽行地中聲聞地"
+  },
+  "4037": {
+    "tohoku": 4037,
+    "taisho_numbers": [
+      "1579"
+    ],
+    "sanskrit_title": "[Yogacaryābhūmau bodhisattvabhūmi]",
+    "tibetan_title_romanized": "Rnal-ḥbyor spyod-paḥi sa-las byaṅ-chub-sems-dpaḥi sa",
+    "chinese_title": "瑜伽行地中菩薩地"
+  },
+  "4038": {
+    "tohoku": 4038,
+    "taisho_numbers": [
+      "1579"
+    ],
+    "sanskrit_title": "[Yogacaryābhūmiviniścayasaṁgraha]",
+    "tibetan_title_romanized": "Rnal-ḥbyor spyod-paḥi sa rnam-par gtan-la dbab-ba bsdu-ba",
+    "chinese_title": "瑜伽行地攝決擇"
+  },
+  "4039": {
+    "tohoku": 4039,
+    "taisho_numbers": [
+      "1579"
+    ],
+    "sanskrit_title": "[Yogacaryābhūmau vastusaṁgraha]",
+    "tibetan_title_romanized": "Rnal-ḥbyor spyod-paḥi sa-las gshi bsdu-ba",
+    "chinese_title": "瑜伽行地中攝本事"
+  },
+  "4040": {
+    "tohoku": 4040,
+    "taisho_numbers": [
+      "1579"
+    ],
+    "sanskrit_title": "[Yogacaryābhūmau vinayasaṁgraha]",
+    "tibetan_title_romanized": "Rnal-ḥbyor spyod-paḥi sa-las ḥdul-ba bsdu-ba",
+    "chinese_title": "瑜伽分中調伏事"
+  },
+  "4041": {
+    "tohoku": 4041,
+    "taisho_numbers": [
+      "1579"
+    ],
+    "sanskrit_title": "[Yogacaryābhūmau paryāyasaṁgraha]",
+    "tibetan_title_romanized": "Rnal-ḥbyor spyod-paḥi sa-las rnam-graṅs bsdu-ba",
+    "chinese_title": "瑜伽行地中攝異門"
+  },
+  "4042": {
+    "tohoku": 4042,
+    "taisho_numbers": [
+      "1579"
+    ],
+    "sanskrit_title": "[Yogacaryābhūmau vivaraṇasaṁgraha]",
+    "tibetan_title_romanized": "Rnal-ḥbyor spyod-paḥi sa-las rnam-par bśad-pa bsdu-ba",
+    "chinese_title": "瑜伽行地中攝解說"
+  },
+  "4048": {
+    "tohoku": 4048,
+    "taisho_numbers": [
+      "1592",
+      "1593",
+      "1594"
+    ],
+    "sanskrit_title": "Mahāyānasaṁgraha",
+    "tibetan_title_romanized": "Theg-pa chen-po bsdus-pa",
+    "chinese_title": "攝大乘"
+  },
+  "4049": {
+    "tohoku": 4049,
+    "taisho_numbers": [
+      "1605"
+    ],
+    "sanskrit_title": "Abhidharmasamuccaya",
+    "tibetan_title_romanized": "Chos mṅon-pa kun-las-btus-pa",
+    "chinese_title": "阿毗達磨集"
+  },
+  "4050": {
+    "tohoku": 4050,
+    "taisho_numbers": [
+      "1595",
+      "1596",
+      "1597"
+    ],
+    "sanskrit_title": "Mahāyānasaṁgrahabhāṣya",
+    "tibetan_title_romanized": "Theg-pa chen-po bsdus-paḥi ḥgrel-pa",
+    "chinese_title": "攝大乘註"
+  },
+  "4051": {
+    "tohoku": 4051,
+    "taisho_numbers": [
+      "1598"
+    ],
+    "sanskrit_title": "Mahāyāsaṁgrahopanibandhana",
+    "tibetan_title_romanized": "Theg-pa chen-po bsdus-paḥi bśad-sbyar",
+    "chinese_title": "攝大乘會釋"
+  },
+  "4054": {
+    "tohoku": 4054,
+    "taisho_numbers": [
+      "1606"
+    ],
+    "sanskrit_title": "Abhidharmasamuccayavyākhyā-nāma",
+    "tibetan_title_romanized": "Mṅon-pa chos kun-las-btus-paḥi rnam-par bśad-pa shes-bya-ba",
+    "chinese_title": "阿毗達磨集解說"
+  },
+  "4055": {
+    "tohoku": 4055,
+    "taisho_numbers": [
+      "1586",
+      "1587"
+    ],
+    "sanskrit_title": "Triṁśikākārika",
+    "tibetan_title_romanized": "Sum-cu-paḥi tshig-leḥur-byas-pa",
+    "chinese_title": "三十頌"
+  },
+  "4056": {
+    "tohoku": 4056,
+    "taisho_numbers": [
+      "1588",
+      "1589",
+      "1590"
+    ],
+    "sanskrit_title": "Viṁśakakārikā",
+    "tibetan_title_romanized": "Ñi-su-paḥi tshig-leḥur-byas-pa",
+    "chinese_title": "二十頌"
+  },
+  "4057": {
+    "tohoku": 4057,
+    "taisho_numbers": [
+      "1588",
+      "1589",
+      "1590"
+    ],
+    "sanskrit_title": "Viṁśakavṛtti",
+    "tibetan_title_romanized": "Ñi-śu-paḥi ḥgrel-pa",
+    "chinese_title": "二十註"
+  },
+  "4059": {
+    "tohoku": 4059,
+    "taisho_numbers": [
+      "1612"
+    ],
+    "sanskrit_title": "Pañcaskandhaprakaraṇa",
+    "tibetan_title_romanized": "Phuṅ-po lṅaḥi rab-tu-byed-pa",
+    "chinese_title": "五蘊論"
+  },
+  "4062": {
+    "tohoku": 4062,
+    "taisho_numbers": [
+      "1608",
+      "1609"
+    ],
+    "sanskrit_title": "Karmasiddhiprakaraṇa",
+    "tibetan_title_romanized": "Las grub-paḥi rab-tu-byed-pa",
+    "chinese_title": "業成就論"
+  },
+  "4063": {
+    "tohoku": 4063,
+    "taisho_numbers": [
+      "1614"
+    ],
+    "sanskrit_title": "Taḥi-chiṅ-paḥi hā-miṅ-mun-lun",
+    "tibetan_title_romanized": "Theg-pa chen-poḥi chos brgya gsal-paḥi sgoḥi bstan-bcos",
+    "chinese_title": "大乘百法明門論"
+  },
+  "4066": {
+    "tohoku": 4066,
+    "taisho_numbers": [
+      "1613"
+    ],
+    "sanskrit_title": "Pañcaskandhaprakaraṇavaibhāṣya",
+    "tibetan_title_romanized": "Phuṅ-po lṅaḥi rab-tu-byed-pa bye-brag-tu bśad-pa",
+    "chinese_title": "五蘊論分別疏"
+  },
+  "4087": {
+    "tohoku": 4087,
+    "taisho_numbers": [
+      "1538"
+    ],
+    "sanskrit_title": "Kāraṇaprajñāpti",
+    "tibetan_title_romanized": "Rgyu gdags-pa",
+    "chinese_title": "因施設"
+  },
+  "4089": {
+    "tohoku": 4089,
+    "taisho_numbers": [
+      "1560"
+    ],
+    "sanskrit_title": "Abhidharmakoṣakārikā",
+    "tibetan_title_romanized": "Chos-mṅon-paḥi mdsod-kyi tshig leḥur-byas-pa",
+    "chinese_title": "阿毗達磨藏頌"
+  },
+  "4090": {
+    "tohoku": 4090,
+    "taisho_numbers": [
+      "1558",
+      "1559"
+    ],
+    "sanskrit_title": "Abhidharmakoṣabhāṣyā",
+    "tibetan_title_romanized": "Chos mṅon-paḥi mdsod-kyi bśad-pa",
+    "chinese_title": "阿毗達磨藏疏"
+  },
+  "4091": {
+    "tohoku": 4091,
+    "taisho_numbers": [
+      "1563"
+    ],
+    "sanskrit_title": "Abhidharmakoṣaśāstrakārikābhāṣya",
+    "tibetan_title_romanized": "Chos mṅon-pa mdsod-kyi bstan-bcos-kyi tshig-leḥur-byas-paḥi rnam-par bśad-pa",
+    "chinese_title": "阿毗達磨藏論頌解說"
+  },
+  "4098": {
+    "tohoku": 4098,
+    "taisho_numbers": [
+      "1554"
+    ],
+    "sanskrit_title": "Abhidharmāvatāraprakaraṇa-nāma",
+    "tibetan_title_romanized": "Rab-tu-byed-pa chos mṅon-pa-la ḥjug-pa shes-bya-ba",
+    "chinese_title": "入阿毗達磨論"
+  },
+  "4099": {
+    "tohoku": 4099,
+    "taisho_numbers": [
+      "210",
+      "212",
+      "213"
+    ],
+    "sanskrit_title": "Udānavarga",
+    "tibetan_title_romanized": "Ched-du-brjod-paḥi tshoms",
+    "chinese_title": "優陀那品"
+  },
+  "4123": {
+    "tohoku": 4123,
+    "taisho_numbers": [
+      "1459"
+    ],
+    "sanskrit_title": "Vinayakārikā",
+    "tibetan_title_romanized": "Ḥdul-ba tshig-leḥur-byas-pa",
+    "chinese_title": "律頌"
+  },
+  "4138": {
+    "tohoku": 4138,
+    "taisho_numbers": [
+      "2031",
+      "2032",
+      "2033"
+    ],
+    "sanskrit_title": "Samayabhedavyūhacakra",
+    "tibetan_title_romanized": "Gshuṅ-lugs-kyi bye-brag bkod-paḥi ḥkhor-lo",
+    "chinese_title": "宗義差別布置論"
+  },
+  "4144": {
+    "tohoku": 4144,
+    "taisho_numbers": [
+      "550"
+    ],
+    "sanskrit_title": "Suvarṇavarṇāvadāna",
+    "tibetan_title_romanized": "Gser-mdog-gi rtogs-pa-brjod-pa",
+    "chinese_title": "黃金色阿波陀那"
+  },
+  "4145": {
+    "tohoku": 4145,
+    "taisho_numbers": [
+      "2043"
+    ],
+    "sanskrit_title": "Kuṇālāvadāna",
+    "tibetan_title_romanized": "Ku-ṇā-laḥi rtogs-pa-brjod-pa",
+    "chinese_title": "鴆那羅阿波陀那"
+  },
+  "4146": {
+    "tohoku": 4146,
+    "taisho_numbers": [
+      "2030"
+    ],
+    "sanskrit_title": "Ārya-nandimitrāvadāna-nāma",
+    "tibetan_title_romanized": "Ḥphags-pa dgaḥ-baḥi bśes-gñen-gyi rtogs-pa-brjod-pa shes-bya-ba",
+    "chinese_title": "聖歡喜友阿波陀那"
+  },
+  "4150": {
+    "tohoku": 4150,
+    "taisho_numbers": [
+      "160"
+    ],
+    "sanskrit_title": "Jātakamāla",
+    "tibetan_title_romanized": "Skyes-paḥi rabs-kyi rgyud",
+    "chinese_title": "本生論"
+  },
+  "4156": {
+    "tohoku": 4156,
+    "taisho_numbers": [
+      "192"
+    ],
+    "sanskrit_title": "Buddhacarita-nāma-mahākāvya",
+    "tibetan_title_romanized": "Saṅs-rgyas-kyi spyod-pa shes-bya-baḥi sñan-dṅags chen-po",
+    "chinese_title": "佛行大宮廷詩"
+  },
+  "4158": {
+    "tohoku": 4158,
+    "taisho_numbers": [
+      "1656"
+    ],
+    "sanskrit_title": "Rājaparikathāratnamālā",
+    "tibetan_title_romanized": "Rgyal-po-la gtam-bya-ba rin-po-cheḥi phreṅ-ba",
+    "chinese_title": "王譚寶鬘"
+  },
+  "4162": {
+    "tohoku": 4162,
+    "taisho_numbers": [
+      "1574"
+    ],
+    "sanskrit_title": "Bhavasaṁkrāniparikathā",
+    "tibetan_title_romanized": "Srid-pa-las ḥdas-paḥi gtam",
+    "chinese_title": "超有譚"
+  },
+  "4178": {
+    "tohoku": 4178,
+    "taisho_numbers": [
+      "727"
+    ],
+    "sanskrit_title": "Daśākuśalakarmapathanirdeśa",
+    "tibetan_title_romanized": "mi-dge-ba bcuḥi las-kyi lam bstan-pa",
+    "chinese_title": "十不善業道說示"
+  },
+  "4179": {
+    "tohoku": 4179,
+    "taisho_numbers": [
+      "723",
+      "725",
+      "726"
+    ],
+    "sanskrit_title": "Saddharmamṛtyupasthānakārikā",
+    "tibetan_title_romanized": "Dam-paḥi chos dran-pa-ñe-bar-gshag-paḥi tshig-leḥur-byas-pa",
+    "chinese_title": "正法念處頌"
+  },
+  "4182": {
+    "tohoku": 4182,
+    "taisho_numbers": [
+      "1672",
+      "1673",
+      "1674"
+    ],
+    "sanskrit_title": "Suhṛllekha",
+    "tibetan_title_romanized": "Bśes-paḥi spriṅ-yig",
+    "chinese_title": "親友書翰"
+  },
+  "4205": {
+    "tohoku": 4205,
+    "taisho_numbers": [
+      "1619",
+      "1624"
+    ],
+    "sanskrit_title": "Ālaṁbanaparīkṣā",
+    "tibetan_title_romanized": "Dmigs-pa brtag-pa",
+    "chinese_title": "所緣觀察"
+  },
+  "4206": {
+    "tohoku": 4206,
+    "taisho_numbers": [
+      "1619",
+      "1624"
+    ],
+    "sanskrit_title": "Ālaṁbanaparīkṣāvṛtti",
+    "tibetan_title_romanized": "Dmigs-pa brtag-paḥi ḥgrel-pa",
+    "chinese_title": "所緣觀察註"
+  },
+  "4208": {
+    "tohoku": 4208,
+    "taisho_numbers": [
+      "1630"
+    ],
+    "sanskrit_title": "Gyin-miṅ-gshauḥ-ciṅ-liḥi-lun",
+    "tibetan_title_romanized": "Tshad-maḥi bstan-bcos rigs-pa la ḥjug-pa shes-bya-ba",
+    "chinese_title": "量論入正理（漢文藏譯）"
+  },
+  "4377": {
+    "tohoku": 4377,
+    "taisho_numbers": [
+      "278",
+      "279",
+      "296",
+      "297"
+    ],
+    "sanskrit_title": "Ārya-bhadracaryāpraṇidhānarāja",
+    "tibetan_title_romanized": "Ḥphags-pa bzaṅ-po spyod-paḥi smon-lam-gyi rgyal-po",
+    "chinese_title": "聖賢行願王"
+  },
+  "4378": {
+    "tohoku": 4378,
+    "taisho_numbers": [
+      "1144"
+    ],
+    "sanskrit_title": "Ārya-maitreyapraṇidhānarāja",
+    "tibetan_title_romanized": "Ḥphags-pa byams-paḥi smon-lam-gyi rgyal-po",
+    "chinese_title": "聖彌勒誓願王"
+  },
+  "4379": {
+    "tohoku": 4379,
+    "taisho_numbers": [
+      "663",
+      "664",
+      "665"
+    ],
+    "sanskrit_title": "[Suvarṇaprabhāsottamasūtrendrapraṇidhāna]",
+    "tibetan_title_romanized": "Gser-ḥod dam-pa mdo-sdeḥi dbaṅ-poḥi smon-lam",
+    "chinese_title": "金光明勝經自在誓願"
+  },
+  "4383": {
+    "tohoku": 4383,
+    "taisho_numbers": [
+      "1662"
+    ],
+    "sanskrit_title": "[Bodhisattvacaryāvatārapraṇidhāna]",
+    "tibetan_title_romanized": "Byaṅ-chub-sems-dpaḥi spyod-pa-la ḥjug-paḥi smon-lam",
+    "chinese_title": "入菩薩行誓願"
+  },
+  "4388": {
+    "tohoku": 4388,
+    "taisho_numbers": [
+      "1656"
+    ],
+    "sanskrit_title": "[Rājaparikathāratnāvalyudbhavapraṇidhānagāthaviṁśaka]",
+    "tibetan_title_romanized": "Rgyal-po-la gtam-bya-ba rin-po-cheḥi phreṅ-ba-las byuṅ-baḥi smon-lam tshigs-su-bcad-pa ñi-śu-pa",
+    "chinese_title": "王譚寶鬘所出誓願二十頌"
+  },
+  "4394": {
+    "tohoku": 4394,
+    "taisho_numbers": [
+      "893"
+    ],
+    "sanskrit_title": "[Śrī-susiddhikaratantrabhāṣitapraṇidhāna]",
+    "tibetan_title_romanized": "Dpal legs-par grub-par-byed-paḥi rgyud-las gsuṅs-paḥi smon-lam",
+    "chinese_title": "吉祥善成就怛特羅所說誓願"
+  },
+  "4404": {
+    "tohoku": 4404,
+    "taisho_numbers": [
+      "278",
+      "279"
+    ],
+    "sanskrit_title": "[Devarājasaṁtuṣitabhagavanmaṅgalagāthā]",
+    "tibetan_title_romanized": "Bcom-ldan-ḥdas-la lhaḥi dbaṅ-po rab dgaḥ-ldan-gyis bkra-śis-kyi tshigs-su bcad-pa",
+    "chinese_title": "對薄伽梵兜率天王吉祥偈 （華嚴經內）"
+  },
+  "4405": {
+    "tohoku": 4405,
+    "taisho_numbers": [
+      "186"
+    ],
+    "sanskrit_title": "[Āśīrvādagāthā]",
+    "tibetan_title_romanized": "Śis-par brjod-paḥi tshigs-su",
+    "chinese_title": "誦吉祥偈 （普曜經內）"
+  },
+  "4407": {
+    "tohoku": 4407,
+    "taisho_numbers": [
+      "999"
+    ],
+    "sanskrit_title": "[Ārya-mahāsahasrapramardanībhāṣitasvastyayanagāthā]",
+    "tibetan_title_romanized": "Ḥphags-pa stoṅ-chen-po rab-tu-ḥjoms-ba-las gsuṅs-paḥi bde-legs-su ḥgyur-baḥi tshigs-su-bcad-pa",
+    "chinese_title": "聖大千摧破（經）所說成妙善樂偈"
+  },
+  "4408": {
+    "tohoku": 4408,
+    "taisho_numbers": [
+      "999"
+    ],
+    "sanskrit_title": "[Mahāsahasrapramardanībhāṣitapraṇidhāna]",
+    "tibetan_title_romanized": "Stoṅ-chen-po rab-tu ḥjoms-pa-las gsuṅs-paḥi smon-lam",
+    "chinese_title": "大千摧破（經）所說誓願文"
+  },
+  "4409": {
+    "tohoku": 4409,
+    "taisho_numbers": [
+      "985"
+    ],
+    "sanskrit_title": "[Mahāmāyūrībhāṣitapraṇidhānasatyavākhya]",
+    "tibetan_title_romanized": "Rma-bya chen-mo-las gsuṅs-paḥi smon-lam daṅ bden-tshig",
+    "chinese_title": "大孔雀經所說誓願文吉祥句"
+  },
+  "4483": {
+    "tohoku": 4483,
+    "taisho_numbers": [
+      "727"
+    ],
+    "sanskrit_title": "Daśākuśalakarmapathadeśanā",
+    "tibetan_title_romanized": "Mi dge-ba bcuḥi las-kyi lam bstan-pa",
+    "chinese_title": "十不善業道教說"
+  },
+  "4496": {
+    "tohoku": 4496,
+    "taisho_numbers": [
+      "1672",
+      "1673",
+      "1674"
+    ],
+    "sanskrit_title": "Suhṛllekha",
+    "tibetan_title_romanized": "Bśes-paḥi spriṅ-yig",
+    "chinese_title": "親友書翰"
+  },
+  "4502": {
+    "tohoku": 4502,
+    "taisho_numbers": [
+      "723",
+      "725",
+      "726"
+    ],
+    "sanskrit_title": "Saddharmasmṛtyupasthānakārikā",
+    "tibetan_title_romanized": "Dam-paḥi chos dran-pa ñe-bar-bshag-paḥi tshig-leḥur-byas-pa",
+    "chinese_title": "正法念處頌"
+  },
+  "4503": {
+    "tohoku": 4503,
+    "taisho_numbers": [
+      "727"
+    ],
+    "sanskrit_title": "Daśākuśalakarmapathanirdeśa",
+    "tibetan_title_romanized": "Mi-dge-ba bcuḥi las-kyi lam bstan-pa",
+    "chinese_title": "十不善業道說示"
+  },
+  "4525": {
+    "tohoku": 4525,
+    "taisho_numbers": [
+      "1636"
+    ],
+    "sanskrit_title": "[Tathāgatahṛdayapāpadeśanāvidhisahitaśātākṣararakṣā]",
+    "tibetan_title_romanized": "De-bshin-gśegs-paḥi sñiṅ-po yi-ge brgya-paḥi sruṅ-ba daṅ sdig-pa bśags-paḥi cho-ga",
+    "chinese_title": "如來心百字守護助伴罪過懺悔儀軌"
+  },
+  "4534": {
+    "tohoku": 4534,
+    "taisho_numbers": [
+      "410",
+      "411"
+    ],
+    "sanskrit_title": "[Samādhipratikūlapakṣavyavasthāna]",
+    "tibetan_title_romanized": "Tiṅ-ṅe-ḥdsin-gyi mi-mthun-paḥi phyogs-rnam-par-gshag-pa",
+    "chinese_title": "三摩地不順分安立"
+  }
+}
