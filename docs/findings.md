@@ -12,7 +12,7 @@ The pipeline analyzed all 8,982 XML files in the CBETA TEI P5b corpus and detect
 
 | Classification | Count | Description |
 |----------------|------:|-------------|
-| Full Digests | 181 | Shorter text draws >70% of its content from a longer source |
+| Full Digests / Excerpts | 181 | Shorter text draws >70% of its content from a longer source (at 100%, a verbatim excerpt) |
 | Partial Digests | 484 | Shorter text draws 30--70% of its content from a longer source |
 | Retranslations | 288 | Two texts of similar length sharing significant content (parallel translations from the same Indic source) |
 | Commentaries | 621 | Shorter text quotes portions of a longer text with added exegetical material |
@@ -34,17 +34,63 @@ The analysis proceeded through five sequential stages:
 
 **Stage 1: Text Extraction.** All XML files in the CBETA TEI P5b corpus were parsed, extracting CJK text content while respecting TEI conventions. Character declaration tables (charDecl) were used to normalize variant characters. Editorial apparatus was handled by preferring lemma readings over variant readings. Paratextual elements (notes, bylines, document numbers, fascicle markers) were excluded. Where present, the distinction between preface (xu) and sutra body (jing) sections was preserved. Texts shorter than 20 CJK characters were excluded as fragments.
 
-**Stage 2: Candidate Generation.** Rather than performing O(n^2) pairwise comparisons across all texts, we used a character n-gram fingerprinting approach (5-gram) to identify candidate pairs efficiently. Stop-grams appearing in more than 5% of all texts were excluded to eliminate formulaic Buddhist phrases (e.g., "Thus have I heard, at one time the Buddha was dwelling..."). A containment similarity metric was computed for each candidate pair, requiring a minimum containment of 0.10. A size ratio filter required the putative source to be at least 2x the length of the putative digest, and texts longer than 50,000 characters were excluded as unlikely digest candidates.
+**Stage 2: Candidate Generation.** Rather than performing O(n^2) pairwise comparisons across all texts, we used a character n-gram fingerprinting approach to identify candidate pairs efficiently.
 
-**Stage 3: Detailed Alignment.** For each candidate pair, a seed-and-extend alignment was performed. Exact matches of 5 or more characters seeded alignment regions, which were then extended using a fuzzy matching algorithm (match score +1, mismatch score -2, termination threshold -4). This produced a full segmentation of the shorter text into matched and novel regions.
+*N-gram size.* We used 5-character n-grams (5-grams). This choice balances sensitivity against specificity: shorter n-grams (3 or 4 characters) generate excessive false positives because many common Buddhist terms and phrases are only 3--4 characters long (e.g., 菩薩 *púsà*, "bodhisattva"; 波羅蜜 *bōluómì*, "pāramitā"), while longer n-grams (8 or 10 characters) require longer verbatim spans to seed a match, causing the pipeline to miss relationships where scribal variants, editorial changes, or character normalization differences break the chain. At n=5, a matching gram represents a sequence long enough to be textually distinctive but short enough to survive minor transmission variants. The choice of 5 is also standard in computational text-reuse detection for logographic scripts, where each character carries more semantic weight than in alphabetic writing systems.
 
-**Stage 4: Scoring and Classification.** Each aligned pair was scored on multiple dimensions: coverage (fraction of digest text matched in source), average segment length, longest segment, number of distinct source regions covered, length asymmetry, and cross-reference presence. A weighted confidence score combined these features. Classification rules then assigned each pair to a category based primarily on coverage thresholds (>=70% for full digest, 30--70% for partial digest, 10--30% for shared tradition) with adjustments for text size ratio (retranslation detection) and average segment length (commentary detection).
+*Stop-gram filtering.* To prevent false positives from formulaic Buddhist stock phrases, we excluded 5-grams appearing in more than 5% of all documents (i.e., in more than 122 of the 2,455 texts). This removed 381 stop-grams from the index. The most common stop-grams are the formulaic phrases that open and structure virtually all Buddhist sutras:
+
+| Stop-gram | Pinyin | Translation/Context | Texts |
+|-----------|--------|-------------------|------:|
+| 如是我聞一 | *rúshì wǒ wén yī* | "Thus have I heard: at one [time]..." (opening formula) | 693 (28%) |
+| 菩薩摩訶薩 | *púsà móhēsà* | "bodhisattva mahāsattva" (honorific address) | 726 (30%) |
+| 阿耨多羅三 | *ānòuduōluó sān* | "anuttara-sam-" (part of *anuttarā samyaksaṃbodhi*, "supreme perfect enlightenment") | 580 (24%) |
+| 三千大千世 | *sānqiān dàqiān shì* | "three-thousand great-thousand world[-system]" (cosmological formula) | 588 (24%) |
+| 般若波羅蜜 | *bōrě bōluómì* | "*prajñāpāramitā*" (perfection of wisdom) | 550 (22%) |
+| 善男子善女 | *shàn nánzǐ shàn nǚ* | "good men and good women" (standard audience address) | 525 (21%) |
+| 爾時世尊告 | *ěrshí shìzūn gào* | "at that time the World-Honored One told..." (narrative transition) | 466 (19%) |
+
+These are precisely the formulaic elements that make Buddhist texts *sound* similar without indicating a direct textual relationship. Filtering them allows the pipeline to focus on content-bearing passages.
+
+A containment similarity metric was computed for each candidate pair, requiring a minimum containment of 0.10. A size ratio filter required the putative source to be at least 2x the length of the putative digest, and texts longer than 50,000 characters were excluded as unlikely digest candidates.
+
+**Stage 3: Detailed Alignment.** For each candidate pair, a seed-and-extend alignment was performed in four steps:
+
+1. *Seed finding.* A hash table of all 5-character substrings in the source text was built. The digest text was scanned left to right; at each position where a 5-gram matched the source, the match was greedily extended character-by-character in both directions to find the longest exact match starting from that position. This produced a set of "seeds" -- maximal exact matching substrings, each defined by its start position in both the digest and the source and its length.
+
+2. *Fuzzy extension.* Each seed boundary was then extended with a fuzzy matching algorithm to capture near-matches caused by scribal variants, character substitutions, or minor editorial differences. The algorithm scored each character: +1 for a match, -2 for a mismatch, with single-character gaps (insertions or deletions) allowed at a cost of -2. Extension terminated when the cumulative score dropped below -4, ensuring that two consecutive mismatches with no intervening match would end the extension. The algorithm tracked the highest-scoring extension point and returned that boundary, preventing a lucky match after a long mismatch region from artificially inflating the aligned span.
+
+3. *Optimal chaining.* The extended seeds often overlapped in digest coordinates (multiple source positions matching the same digest region). A weighted interval scheduling algorithm selected the non-overlapping subset of seeds that maximized total digest coverage, using dynamic programming. This step was critical for producing clean, non-redundant alignments: it ensured each character in the digest was assigned to at most one source match.
+
+4. *Segmentation.* The chained seeds were used to partition the digest text into alternating "matched" and "novel" segments, producing a complete map of which portions of the digest correspond to which positions in the source, and which portions are original to the digest.
+
+**Stage 4: Scoring and Classification.** Each aligned pair was scored on six dimensions:
+
+- **Coverage** (weight 0.35): The fraction of the digest text that aligns to the source. This is the primary indicator -- a coverage of 0.73 means 73% of the shorter text's characters were found in the longer text.
+- **Longest matched segment** (weight 0.20): The length of the single longest contiguous aligned region, normalized by digest length. Long verbatim spans are strong evidence of direct copying rather than coincidental formulaic overlap.
+- **Document number cross-reference** (weight 0.15): A binary feature indicating whether the CBETA metadata links the two texts (e.g., variant editions catalogued under the same document number).
+- **Number of distinct source regions** (weight 0.10): How many separated positions in the source text contributed material. Multiple scattered regions suggest systematic extraction from different parts of the source, characteristic of a deliberate digest.
+- **Length asymmetry** (weight 0.10): The log-ratio of source length to digest length. Extreme size ratios (a 500-character text matched against a 500,000-character source) are more characteristic of digest relationships.
+- **Average segment length** (weight 0.10): The mean length of matched segments. Short average segments (many brief quotations) suggest commentary; long average segments suggest wholesale extraction.
+
+These six features were combined into a weighted confidence score (0--1 scale), then classification rules assigned each pair to a category. The classification follows a decision tree that considers coverage, text size ratio, and segment length:
+
+| Condition | Classification |
+|-----------|---------------|
+| Coverage < 10% | No relationship (excluded) |
+| Coverage 10--30% | Shared tradition |
+| Coverage >= 30% and source/digest size ratio < 3.0 | Retranslation |
+| Coverage >= 70% and avg segment >= 15 chars | Full digest / excerpt |
+| Coverage >= 30% and avg segment >= 10 chars | Partial digest |
+| Coverage >= 20% and avg segment < 10 chars | Commentary |
+
+The size ratio test fires first for texts of comparable length: when the source is less than 3x the digest length and coverage exceeds 30%, the pair is classified as a retranslation (parallel translations of similar scope) rather than a digest (extraction from a much longer source). The average segment length test distinguishes commentaries (many short quotations interspersed with original exegesis) from digests (fewer, longer verbatim extractions).
 
 **Stage 5: Reporting.** Results were output in both machine-readable (JSON) and human-readable (Markdown) formats, including alignment visualizations, cluster analysis of source texts with multiple digests, and multi-source digest detection.
 
 ### 2.2 Classification Definitions
 
-- **Full Digest** (coverage >= 70%, avg segment >= 15 chars): The shorter text is predominantly composed of material extracted verbatim or near-verbatim from the longer text. This corresponds to what Jan Nattier, in her influential 1992 study of the Heart Sutra, termed a "Chinese digest text."
+- **Full Digest / Excerpt** (coverage >= 70%, avg segment >= 15 chars): The shorter text is predominantly composed of material extracted verbatim or near-verbatim from the longer text. This category spans a spectrum. At the lower end (~70--90% coverage), the shorter text is a genuine *digest* in the sense of Jan Nattier's influential 1992 study of the Heart Sutra: material extracted and rearranged with original framing or editorial additions. At the upper end (approaching 100% coverage, novel fraction near zero), the shorter text is better understood as a verbatim *excerpt* or *extract* -- a passage lifted from the source with little or nothing added. The pipeline labels both as `full_digest`; in the discussion below, we use "digest" and "excerpt" to distinguish these cases where the distinction matters.
 
 - **Partial Digest** (coverage 30--70%, avg segment >= 10 chars): A substantial but not predominant portion of the shorter text derives from the source. This may indicate selective extraction, or a digest relationship complicated by significant editorial reworking.
 
@@ -79,7 +125,7 @@ Confidence scores (0--1 scale) were computed as a weighted combination of six fe
 | Commentary | 621 | 22.1% |
 | Partial Digest | 484 | 17.2% |
 | Retranslation | 288 | 10.2% |
-| Full Digest | 181 | 6.4% |
+| Full Digest / Excerpt | 181 | 6.4% |
 | **Total** | **2,812** | **100%** |
 
 ### 3.2 Scope
@@ -88,7 +134,7 @@ Confidence scores (0--1 scale) were computed as a weighted combination of six fe
 - **Texts with English title translations available:** 567 of 1,412 (40%)
 - **Multi-source digests detected:** 63
 - **Highest confidence score:** 0.806 (T20n1134B / T20n1134A, Vajra Longevity Dharani retranslation)
-- **Highest coverage (full digest):** 100% -- multiple short sutras found entirely within larger compilations
+- **Highest coverage:** 100% -- multiple short sutras found entirely within larger compilations, functioning as verbatim excerpts rather than condensed digests
 
 ### 3.3 Confidence Distribution
 
@@ -144,14 +190,16 @@ The novel segments in T250 total approximately 80 characters and consist of:
 
 | Novel Passage | Chars | Found elsewhere? |
 |---------------|------:|-----------------|
-| 觀世音菩 (opening name fragment) | 4 | **No** -- unique to T250 |
-| 照見五陰空度一切苦厄 | 10 | **No** -- unique; the 五陰 phrasing (vs. 五蘊) appears nowhere else |
-| 心無罣礙無罣礙故無有恐怖離一切顛倒夢想苦惱究竟涅槃三世諸佛 | 29 | **No** -- the specific phrasing with 離一切 and 苦惱 is unique |
-| 能除一切苦真實不虛 | 9 | Yes -- 13 other texts, all later Heart Sutra translations and commentaries |
-| 竭帝竭帝波羅竭帝波羅僧竭帝菩提僧莎呵 (dharani) | 19 | **No** -- this transliteration is unique to T250 |
-| Small connectives (以無, 依, 故, 知) | ~5 | -- |
+| 觀世音菩 *Guānshìyīn pú-* (opening fragment of Avalokitesvara's name) | 4 | **No** -- unique to T250 |
+| 照見五陰空度一切苦厄 *zhàojiàn wǔyīn kōng dù yīqiè kǔ è* ("perceived the five aggregates are empty, transcending all suffering") | 10 | **No** -- unique; the 五陰 *wǔyīn* phrasing (vs. 五蘊 *wǔyùn*) appears nowhere else |
+| 心無罣礙無罣礙故無有恐怖離一切顛倒夢想苦惱究竟涅槃三世諸佛 *xīn wú guà'ài... lí yīqiè diāndǎo mèngxiǎng kǔnǎo jiūjìng nièpán sānshì zhūfó* ("mind without obstruction... free from all inverted dreams and suffering, ultimately attaining nirvana, all Buddhas of the three times") | 29 | **No** -- the specific phrasing with 離一切 *lí yīqiè* ("free from all") and 苦惱 *kǔnǎo* ("suffering") is unique |
+| 能除一切苦真實不虛 *néng chú yīqiè kǔ zhēnshí bùxū* ("able to remove all suffering, true and not false") | 9 | Yes -- 13 other texts, all later Heart Sutra translations and commentaries |
+| 竭帝竭帝波羅竭帝波羅僧竭帝菩提僧莎呵 *jiédì jiédì bōluó jiédì bōluó sēng jiédì pútí sēng suōhē* (dharani: *gate gate pāragate pārasaṃgate bodhi svāhā*) | 19 | **No** at the character level -- this specific transliteration is unique to T250. However, T18n0901 (see note below) contains the same dharani in a different transliteration (揭帝 *jiēdì* for 竭帝 *jiédì*) |
+| Small connectives (以無 *yǐwú*, 依 *yī*, 故 *gù*, 知 *zhī*) | ~5 | -- |
 
-The only passage found elsewhere is the formulaic 能除一切苦真實不虛, which appears in later Heart Sutra translations (T252, T253, T254), commentaries (T33n1710--1714), and anthologies (T48n2009, T51n2075) -- all texts that derive this phrase *from* the Heart Sutra tradition, not vice versa. The opening scene, the framing passages, the dharani transliteration, and the distinctive 五陰 vocabulary are all without parallel in any other Taisho text.
+The only passage found elsewhere is the formulaic 能除一切苦真實不虛 (*néng chú yīqiè kǔ zhēnshí bùxū*, "able to remove all suffering, true and not false"), which appears in later Heart Sutra translations (T252, T253, T254), commentaries (T33n1710--1714), and anthologies (T48n2009, T51n2075) -- all texts that derive this phrase *from* the Heart Sutra tradition, not vice versa. The opening scene, the framing passages, and the distinctive 五陰 (*wǔyīn*, "five aggregates," using the older translation vs. the standard 五蘊 *wǔyùn*) vocabulary are without parallel in any other Taisho text.
+
+**Note on T18n0901 and the dharani.** The Tuoluoni jijing (*Dhāraṇīsaṃgraha*, Dharani Collection Sutra, T18n0901), attributed to Atikūṭa (阿地瞿多, ca. 654 CE), contains the Prajnaparamita dharani under the heading 般若大心陀羅尼第十六 (*bōrě dàxīn tuóluóní dì shíliù*, "Prajnaparamita Great Heart Dharani, number 16"). Its version reads: 揭帝揭帝波羅揭帝波囉僧揭帝菩提莎訶 -- the same Sanskrit *gate gate pāragate pārasaṃgate bodhi svāhā*, but transliterated with different Chinese characters (揭 *jiē* for T250's 竭 *jié*, 波羅 *bōluó* for T251's 般羅 *bānluó*). Our character-level pipeline correctly reports that T250's specific character sequence is unique, but this is an instance of the cross-translator limitation discussed in Section 8.1: variant transliterations of the same Sanskrit phonemes use different Chinese characters, making them invisible to character-level matching. The relationship between the Heart Sutra dharani and T901's version merits further study, as noted by Atwood and others.
 
 #### T251 (Xuanzang): Novel material matches only derivative texts
 
@@ -159,28 +207,28 @@ T251's novel segments are more extensive (144 characters, 55% of jing text) beca
 
 | Novel Passage | Chars | Found in |
 |---------------|------:|----------|
-| 觀自在菩薩行 (opening) | 6 | Commentaries on T251 only (T33n1702, T33n1714, T85n2747) |
-| 照見五蘊皆空度一切苦厄... | 20 | Same commentaries + T39n1791, T47n1970 |
-| 空即是色受想行識亦復如是...不增不減 | 33 | Later Heart Sutra translations (T252, T253), commentaries, T07n0220 (partial) |
-| 菩提薩埵依般若波羅蜜多 | 11 | Later translations (T252--T254), commentaries (T33n1710--14, T85n2746--47) |
-| 心無罣礙...遠離顛倒夢想究竟涅槃三世諸佛依 | 28 | Later translations (T252, T253), commentaries |
-| 是大神咒是大明咒是無上咒是無等等咒能除一切苦真實不虛 | 26 | **No** -- the 是大神咒 phrasing is unique to T251 |
-| 揭帝揭帝般羅揭帝般羅僧揭帝菩提莎婆訶 (dharani) | 19 | **No** -- this transliteration is unique to T251 |
+| 觀自在菩薩行 *Guānzìzai púsà xíng* ("Avalokitesvara Bodhisattva practicing...") | 6 | Commentaries on T251 only (T33n1702, T33n1714, T85n2747) |
+| 照見五蘊皆空度一切苦厄 *zhàojiàn wǔyùn jiēkōng dù yīqiè kǔ è* ("perceived that the five aggregates are all empty, transcending all suffering") | 20 | Same commentaries + T39n1791, T47n1970 |
+| 空即是色受想行識亦復如是...不增不減 *kōng jí shì sè... bùzēng bùjiǎn* ("emptiness is form... neither increasing nor decreasing") | 33 | Later Heart Sutra translations (T252, T253), commentaries, T07n0220 (partial) |
+| 菩提薩埵依般若波羅蜜多 *pútísàduǒ yī bōrě bōluómìduō* ("the bodhisattva relies on Prajnaparamita") | 11 | Later translations (T252--T254), commentaries (T33n1710--14, T85n2746--47) |
+| 心無罣礙...遠離顛倒夢想究竟涅槃三世諸佛依 *xīn wú guà'ài... yuǎnlí diāndǎo mèngxiǎng* ("mind without obstruction... far from inverted dreams, ultimately nirvana, relying on all Buddhas of the three times") | 28 | Later translations (T252, T253), commentaries |
+| 是大神咒是大明咒是無上咒是無等等咒能除一切苦真實不虛 (*shì dà shénzhòu shì dà míngzhòu shì wúshàng zhòu shì wúděngděng zhòu néng chú yīqiè kǔ zhēnshí bùxū*, "is the great divine mantra, the great illuminating mantra, the unsurpassed mantra, the unequalled mantra, able to remove all suffering, true and not false") | 26 | **No** -- this specific phrasing is unique to T251; T18n0901 echoes it as 是大心呪 (*shì dàxīn zhòu*, "this is the great heart mantra") but with different wording |
+| 揭帝揭帝般羅揭帝般羅僧揭帝菩提莎婆訶 *jiēdì jiēdì bānluó jiēdì bānluó sēng jiēdì pútí suōpóhē* (dharani: *gate gate pāragate pārasaṃgate bodhi svāhā*) | 19 | **No** at the character level -- T18n0901 contains the same dharani but with 波羅 *bōluó* for T251's 般羅 *bānluó* and different final syllables |
 
 All matches fall into three categories: (1) later Heart Sutra translations from the Tang dynasty (T252 by Dharmacandra, T253 by Prajna, T254 by Prajnacakra), (2) Heart Sutra commentaries (T33n1710 by Kuiji, T33n1711 by Yuance, T33n1712 by Fazang, T33n1714 by Zongxie and Rujing), and (3) Dunhuang Heart Sutra manuscripts (T85n2746, T85n2747). None of these is a plausible source for T251; all are derivative.
 
-We specifically investigated **T07n0220** (Xuanzang's own 600-fascicle Mahaprajnaparamita translation, 4.76 million characters) as a potential second source. While it contains some shared Prajnaparamita vocabulary (色不異空, 心無罣礙), it **lacks all the distinctive Heart Sutra passages**: no 照見五蘊皆空, no 遠離顛倒夢想, no 揭帝揭帝 dharani, no 是大神咒. T07n0220 is not a source for T251's novel material.
+We specifically investigated **T07n0220** (Xuanzang's own 600-fascicle Mahaprajnaparamita translation, 4.76 million characters) as a potential second source. While it contains some shared Prajnaparamita vocabulary (色不異空 *sè bù yì kōng*, "form is not different from emptiness"; 心無罣礙 *xīn wú guà'ài*, "mind without obstruction"), it **lacks all the distinctive Heart Sutra passages**: no 照見五蘊皆空 (*zhàojiàn wǔyùn jiēkōng*, "perceived the five aggregates are all empty"), no 遠離顛倒夢想 (*yuǎnlí diāndǎo mèngxiǎng*, "far from inverted dreams"), no 揭帝揭帝 (*jiēdì jiēdì*) dharani, no 是大神咒 (*shì dà shénzhòu*, "is the great divine mantra"). T07n0220 is not a source for T251's novel material.
 
-We also checked **T25n1509** (Kumarajiva's Dazhidu lun, 2.85 million characters) as a potential source for T250's novel passages. It contains only generic Buddhist vocabulary (觀世音菩薩, 心無罣礙) but none of the distinctive T250 phrasing.
+We also checked **T25n1509** (Kumarajiva's Dazhidu lun, *Dàzhìdù lùn*, "Treatise on the Great Perfection of Wisdom," 2.85 million characters) as a potential source for T250's novel passages. It contains only generic Buddhist vocabulary (觀世音菩薩 *Guānshìyīn púsà*, "Avalokitesvara Bodhisattva"; 心無罣礙 *xīn wú guà'ài*, "mind without obstruction") but none of the distinctive T250 phrasing.
 
 #### Implications for the Heart Sutra origins debate
 
 Neither T250 nor T251 is a multi-source digest. The novel material in both texts is **not traceable to any other extant text** in the Taisho. Structurally, the novel passages serve a consistent function: they provide the **narrative wrapper** that transforms an excerpt from Prajnaparamita philosophical discourse into a self-contained sutra:
 
-1. **Opening scene** -- Avalokitesvara practicing Prajnaparamita (no 如是我聞 formula, no Buddha as speaker -- a highly unusual feature)
-2. **Connective tissue** -- 心無罣礙, 遠離/離一切顛倒夢想, etc., linking the excerpted doctrinal passages
-3. **Dharani and mantra description** -- entirely novel, with unique transliterations in each version
-4. **Power attribution** -- 能除一切苦真實不虛, identifying the teaching's soteriological function
+1. **Opening scene** -- Avalokitesvara practicing Prajnaparamita (no 如是我聞 *rúshì wǒ wén* "Thus have I heard" formula, no Buddha as speaker -- a highly unusual feature)
+2. **Connective tissue** -- 心無罣礙 (*xīn wú guà'ài*, "mind without obstruction"), 遠離/離一切顛倒夢想 (*yuǎnlí/lí yīqiè diāndǎo mèngxiǎng*, "far from / free from all inverted dreams"), etc., linking the excerpted doctrinal passages
+3. **Dharani and mantra description** -- the specific transliterations are unique to each version, though the underlying Sanskrit mantra (*gate gate pāragate pārasaṃgate bodhi svāhā*) also appears in T18n0901 under a different transliteration (see note above)
+4. **Power attribution** -- 能除一切苦真實不虛 (*néng chú yīqiè kǔ zhēnshí bùxū*, "able to remove all suffering, true and not false"), identifying the teaching's soteriological function
 
 The matched material is the **doctrinal core** (negation of skandhas, sense-bases, dependent origination, the four noble truths, wisdom, and attainment) drawn from the Prajnaparamita literature. The novel material is precisely the apparatus that an editor/compiler would need to add when constructing a standalone sutra from extracted philosophical material.
 
@@ -214,7 +262,7 @@ While the relationship between verse root texts and their commentaries is well k
 
 The most striking pattern in our results concerns three Tang-dynasty encyclopedic compilations that appear as source texts for dozens of shorter works:
 
-- **T53n2122 Fayuan zhulin (Forest of Gems in the Garden of the Dharma):** 102 digest relationships detected, including 17 full digests and 85 partial digests. This 100-fascicle compilation by Daoshi (d. 683) quotes extensively from earlier sutras, and our pipeline detected these quotations in reverse -- finding that many shorter sutras have their full text present within the Fayuan zhulin.
+- **T53n2122 Fayuan zhulin (Forest of Gems in the Garden of the Dharma):** 102 digest relationships detected, including 17 at >70% coverage (many of them verbatim excerpts at or near 100%) and 85 partial digests. This 100-fascicle compilation by Daoshi (d. 683) quotes extensively from earlier sutras, and our pipeline detected these quotations in reverse -- finding that many shorter sutras have their full text present within the Fayuan zhulin.
 
 - **T53n2121 Jinglü yixiang (Distinctive Features of Sutras and Vinayas):** 49 digest relationships detected, compiled by Baochang in 516 CE.
 
@@ -224,9 +272,9 @@ These results are not unexpected -- these texts are known to be compilations tha
 
 #### Short Sutras Embedded in Agama Collections
 
-Several short independent sutras were found to be full digests of passages within the larger Agama collections:
+Several short independent sutras were found to be verbatim excerpts of passages within the larger Agama collections:
 
-- **T14n0503 Biqiu bi nü e ming yu zi sha jing -> T02n0099 Samyuktagama:** 100% coverage. This short sutra about a monk avoiding a woman's bad reputation is entirely contained within the Samyuktagama.
+- **T14n0503 Biqiu bi nü e ming yu zi sha jing -> T02n0099 Samyuktagama:** 100% coverage. This short sutra about a monk avoiding a woman's bad reputation is entirely contained within the Samyuktagama -- a verbatim excerpt, not a condensed digest.
 
 - **T14n0502 Fo wei nianshao biqiu shuo zheng shi jing -> T02n0099 Samyuktagama:** 100% coverage. The sutra where the Buddha instructs a young monk is a direct extract.
 
@@ -236,13 +284,13 @@ Several short independent sutras were found to be full digests of passages withi
 
 - **T01n0061 Shou xin sui jing -> T02n0125 Ekottaragama:** 99.7% coverage.
 
-These results confirm what text-critical scholars have long suspected: many of the small independent sutras in the Taisho volumes 1--17 are in fact individual discourse extracts that were at some point separated from their Agama context and transmitted independently. The pipeline provides systematic evidence for this on a scale not previously attempted.
+These results confirm what text-critical scholars have long suspected: many of the small independent sutras in the Taisho volumes 1--17 are in fact individual discourse excerpts that were at some point separated from their Agama context and transmitted independently. The pipeline provides systematic evidence for this on a scale not previously attempted.
 
 #### Chan/Zen Literature Embedded in Transmission Records
 
-- **T48n2010 Xinxin ming (Inscription on Faith in Mind) -> T51n2076 Jingde chuandeng lu:** 100% coverage, confidence 0.717. The famous poem attributed to the Third Patriarch Sengcan is found complete within the Jingde Transmission of the Lamp record.
+- **T48n2010 Xinxin ming (Inscription on Faith in Mind) -> T51n2076 Jingde chuandeng lu:** 100% coverage, confidence 0.717. The famous poem attributed to the Third Patriarch Sengcan is found as a complete excerpt within the Jingde Transmission of the Lamp record.
 
-- **T48n2014 Yongjia zhengdao ge (Song of Enlightenment) -> T51n2076 Jingde chuandeng lu:** 99.1% coverage, confidence 0.718. Yongjia Xuanjue's celebrated verse composition is likewise fully embedded.
+- **T48n2014 Yongjia zhengdao ge (Song of Enlightenment) -> T51n2076 Jingde chuandeng lu:** 99.1% coverage, confidence 0.718. Yongjia Xuanjue's celebrated verse composition is likewise fully embedded as an excerpt.
 
 - **T48n2010 -> T49n2036 Fozu lidai tongzai:** 100% coverage, confidence 0.716. The Xinxin ming also appears in full in this later historical chronicle.
 
@@ -277,7 +325,49 @@ The 63 detected multi-source digests include several noteworthy cases:
 
 ### 5.3 Dharani Collection Networks
 
-The Tuoluoni zaji (T21n1336, Miscellaneous Dharani Collection) functions as a reservoir text for dharani literature much as the Fayuan zhulin does for sutra literature. Sixteen shorter dharani texts were found to be full or partial digests of T21n1336, with coverage ranging from 100% down to 43%. Similarly, the Tuoluoni jijing (T18n0901, Dharani Collection Sutra) serves as a source for 13 shorter ritual and dharani texts.
+The Tuoluoni zaji (*Tuóluóní zájí*, T21n1336, Miscellaneous Dharani Collection) functions as a reservoir text for dharani literature much as the Fayuan zhulin does for sutra literature. Sixteen shorter dharani texts were found to be full or partial digests of T21n1336, with coverage ranging from 100% down to 43%. Similarly, the Tuoluoni jijing (*Tuóluóní jí jīng*, T18n0901, Dharani Collection Sutra) serves as a source for 13 shorter ritual and dharani texts.
+
+The two derivation networks are shown below. Arrows point from source to derivative; percentages indicate coverage (fraction of the shorter text found in the source).
+
+**T21n1336 (Miscellaneous Dharani Collection) derivation network:**
+
+```
+                   T21n1336  (Tuoluoni zaji)
+                   =========================
+                  /            |             \
+         Full digests     Full/retrans.    Partial digests
+          (100-87%)         (85-80%)         (69-43%)
+              |                |                |
+    T21n1368 (100%)    T21n1332 (85%)    T21n1393 (69%)
+    T20n1046 (100%)    T21n1391 (85%)    T21n1327 (62%)
+    T20n1138b (100%)   T21n1237 (82%)    T21n1329 (56%)
+    T21n1367 (100%)    T19n1029 (80%)    T21n1353 (44%)
+    T21n1352 (100%)                      T20n1178 (43%)
+    T12n0370 (100%)
+    T19n1028A (99%)
+    T21n1326 (87%)
+```
+
+**T18n0901 (Dharani Collection Sutra) derivation network:**
+
+```
+                   T18n0901  (Tuoluoni jijing)
+                   ============================
+                  /            |              \
+         Full digests    Partial digests    Commentaries
+           (84-71%)        (65-32%)         (49-30%)
+              |                |                |
+    T20n1073 (84%)    T20n1070 (65%)    T21n1256 (49%)
+    T20n1035 (81%)    T20n1074 (60%)    T21n1255b (30%)
+    T21n1254 (71%)    T20n1180 (58%)
+                      T20n1110 (55%)
+                      T21n1338 (54%)
+                      T21n1255a (52%)
+                      T21n1266 (51%)
+                      T19n0924B (49%)
+                      T20n1084 (38%)
+                      T21n1291 (32%)
+```
 
 This systematic mapping of dharani text derivation networks appears to be a novel contribution. While individual dharani texts have been studied in relation to their sources, the comprehensive identification of which dharani collections served as "parent" repositories for which shorter texts has not, to our knowledge, been previously published.
 
@@ -306,7 +396,7 @@ The digest relationships are not uniformly distributed across the Taisho. Prelim
 
 The Heart Sutra validation case provides a clear demonstration of how translator identity affects detection. The Kumarajiva Heart Sutra (T250) shows 73.2% coverage against Kumarajiva's own Prajnaparamita translation (T223), while the Xuanzang Heart Sutra (T251) shows only 44.6% against the same T223, despite both Heart Sutras deriving from the same underlying Prajnaparamita material.
 
-This approximately 30-percentage-point gap between same-translator and cross-translator coverage is a systematic feature of the pipeline. It means our coverage thresholds are effectively tuned for same-translator relationships, and **cross-translator digest relationships are likely underdetected.** Many pairs classified as "partial digest" or "shared tradition" may in fact represent full digest relationships obscured by translator-dependent phrasing differences.
+This approximately 30-percentage-point gap between same-translator and cross-translator coverage is a systematic feature of the pipeline. It means our coverage thresholds are effectively tuned for same-translator relationships, and **cross-translator digest relationships are likely underdetected.** Many pairs classified as "partial digest" or "shared tradition" may in fact represent full digest or excerpt relationships obscured by translator-dependent phrasing differences.
 
 The retranslation detection feature partially compensates for this by identifying pairs of comparable length with moderate overlap, but genuine cross-translator digest relationships (short text from translator A derived from a source translated by translator B) remain difficult to detect at the character level.
 
@@ -326,9 +416,9 @@ While many of the individual relationships detected are known to traditional Bud
 
 ### 7.1 Systematic Quantification of Encyclopedic Absorption
 
-The comprehensive mapping of how the Fayuan zhulin (T53n2122) absorbed 102 texts -- with precise coverage percentages ranging from 30% to 100% -- appears to be unprecedented. While scholars have known that this encyclopedia quotes extensively from earlier sources, the systematic identification of which texts are fully (17 texts at >70% coverage) vs. partially (85 texts at 30--70% coverage) incorporated provides a new level of granularity for studying Daoshi's compilation methods. Particularly noteworthy:
+The comprehensive mapping of how the Fayuan zhulin (T53n2122) absorbed 102 texts -- with precise coverage percentages ranging from 30% to 100% -- appears to be unprecedented. While scholars have known that this encyclopedia quotes extensively from earlier sources, the systematic identification of which texts are fully incorporated as excerpts (17 texts at >70% coverage) vs. partially absorbed (85 texts at 30--70% coverage) provides a new level of granularity for studying Daoshi's compilation methods. Particularly noteworthy:
 
-- **T15n0615 Pusa he seyu fa jing:** 100% coverage in the Fayuan zhulin. This entire short text on monastic attitudes toward desire is found verbatim within Daoshi's compilation, suggesting either direct copying or shared manuscript traditions.
+- **T15n0615 Pusa he seyu fa jing:** 100% coverage in the Fayuan zhulin. This entire short text on monastic attitudes toward desire is found verbatim as an excerpt within Daoshi's compilation, suggesting either direct copying or shared manuscript traditions.
 - **T32n1689 Qing Bintoulou fa (Inviting Pindola):** 99.4% coverage.
 - **T12n0332 Foshuo Youtian wang jing:** 99.4% coverage.
 
@@ -344,9 +434,9 @@ The mapping of how T21n1336 (Dharani Miscellany) and T18n0901 (Dharani Collectio
 
 Several detected relationships cross traditional genre boundaries:
 
-- **T48n2010 Xinxin ming -> T48n2023 (Yuanren lun):** 100% coverage. The famous Chan poem attributed to Sengcan appears complete within Zongmi's treatise on the origin of humanity. While Zongmi's use of earlier Chan texts is known, the complete embedding of the Xinxin ming in this context may not have been previously quantified.
+- **T48n2010 Xinxin ming -> T48n2023 (Yuanren lun):** 100% coverage. The famous Chan poem attributed to Sengcan appears as a complete excerpt within Zongmi's treatise on the origin of humanity. While Zongmi's use of earlier Chan texts is known, the complete embedding of the Xinxin ming in this context may not have been previously quantified.
 
-- **T85n2918 Shijia guanhua huan yu jing -> T04n0211 Faju piyu jing:** 100% coverage, confidence 0.704. This Dunhuang text is entirely derived from the Dhammapada with commentary (Faju piyu jing), suggesting it may be an extract rather than an independent composition.
+- **T85n2918 Shijia guanhua huan yu jing -> T04n0211 Faju piyu jing:** 100% coverage, confidence 0.704. This Dunhuang text is a verbatim excerpt from the Dhammapada with commentary (Faju piyu jing), suggesting it is an extract rather than an independent composition.
 
 - **T12n0369 Amituo fo shuo zhou -> T85n2827 Jingtu wuhui nianfo song jing guanxing yi:** 96.6% coverage. A short Amitabha dharani text is almost entirely present within a Pure Land liturgical manual, illuminating how ritual texts were compiled from earlier dharani sources.
 
@@ -505,12 +595,12 @@ At the relationship level, at least one text in the pair has a known parallel in
 | Commentary | 621 | 502 | 80.8% |
 | Retranslation | 288 | 191 | 66.3% |
 | Shared Tradition | 1,238 | 791 | 63.9% |
-| Full Digest | 181 | 105 | 58.0% |
+| Full Digest / Excerpt | 181 | 105 | 58.0% |
 | Partial Digest | 484 | 249 | 51.4% |
 
 The high parallel rate for commentaries (80.8%) reflects the fact that commentarial literature tends to focus on important translated texts that are well-attested across traditions. Retranslations also show high parallel rates (66.3%), as expected -- parallel translations from the same Indic source are likely to have that source attested in other canons as well.
 
-Conversely, the lower rates for full digests (58.0%) and partial digests (51.4%) may indicate that digest relationships are more common among texts without well-known Indic originals -- potentially including Chinese-origin compositions, compilations, and texts from traditions less well-represented in the Tibetan and Pali canons.
+Conversely, the lower rates for full digests/excerpts (58.0%) and partial digests (51.4%) may indicate that digest relationships are more common among texts without well-known Indic originals -- potentially including Chinese-origin compositions, compilations, and texts from traditions less well-represented in the Tibetan and Pali canons.
 
 ### 10.3 Retranslation Validation via Tibetan Parallels
 
@@ -562,7 +652,7 @@ The cross-reference analysis yields several methodological and substantive findi
 
 **Texts without parallels may be Chinese-origin.** The 974 relationships (34.6%) where neither text has a known cross-canon parallel are enriched for Chinese-origin literature: encyclopedic compilations, indigenous commentaries, and texts from traditions (dharani collections, Chan literature) that are less well-represented in the Tibetan and Pali canons. These relationships are the most likely to reveal previously unrecognized Chinese compositional practices.
 
-**Digest texts with Tibetan parallels deserve closer attention.** Among the 313 relationships where both texts share a Tibetan parallel, 9 are classified as full digests and 23 as partial digests. These cases are particularly interesting because they suggest that a shorter Chinese text, which our pipeline identifies as derived from a longer Chinese source, may also have an independent Indic pedigree. For example, if text A is detected as a full digest of text B, but both map to the same Tohoku number, the "digest" relationship may in fact reflect parallel translation from the same source rather than Chinese-level extraction.
+**Digest texts with Tibetan parallels deserve closer attention.** Among the 313 relationships where both texts share a Tibetan parallel, 9 are classified as full digests or excerpts and 23 as partial digests. These cases are particularly interesting because they suggest that a shorter Chinese text, which our pipeline identifies as derived from a longer Chinese source, may also have an independent Indic pedigree. For example, if text A is detected as an excerpt of text B, but both map to the same Tohoku number, the apparent "excerpt" relationship may in fact reflect parallel translation from the same source rather than Chinese-level extraction.
 
 **The concordance can prioritize further investigation.** Texts involved in digest relationships that have Tibetan parallels are natural candidates for comparative philological study, as the Tibetan version can help disambiguate whether the Chinese relationship reflects direct textual derivation or independent translation from a common source.
 
@@ -581,7 +671,7 @@ The cross-reference analysis yields several methodological and substantive findi
 | Fuzzy match score | +1 | Character match reward |
 | Fuzzy mismatch score | -2 | Character mismatch penalty |
 | Fuzzy extension threshold | -4 | Score drop to terminate extension |
-| Full digest threshold | 0.70 | Coverage for full digest classification |
+| Full digest threshold | 0.70 | Coverage for full digest / excerpt classification |
 | Partial digest threshold | 0.30 | Coverage for partial digest classification |
 | Shared tradition threshold | 0.10 | Minimum coverage for any relationship |
 | Retranslation size ratio | 3.0 | Maximum ratio for retranslation classification |
