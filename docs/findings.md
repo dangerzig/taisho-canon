@@ -175,7 +175,7 @@ The pipeline was validated against the most well-studied digest relationship in 
 The pipeline also correctly detected the broader Heart Sutra textual network:
 
 - T85n2747 (Interlinear Commentary on the Heart Sutra): detected as multi-source digest with 97.0% combined coverage from five Heart Sutra commentaries
-- T08n0250 (Kumarajiva Heart Sutra): detected as multi-source with 95.6% combined coverage from T223, the Dazhidu lun (T25n1509), and several commentaries
+- T08n0250 (Kumarajiva Heart Sutra): detected as multi-source with 95.6% combined coverage from T223, the Dazhidu lun (Treatise on the Great Perfection of Wisdom, T25n1509), and several commentaries
 - Multiple retranslation relationships among the various Heart Sutra translations (T250, T251, T252, T253, T254)
 
 ### Novel Segment Analysis: Searching for Additional Sources
@@ -248,11 +248,11 @@ Several of the highest-confidence results are verse summaries (song/ji) extracte
 
 - **T24n1501 Pusajie ben (Bodhisattva Precepts Text) -> T30n1579 Yuqie shidi lun (Yogacarabhumi):** 97.0% coverage, confidence 0.784. The Bodhisattva Precepts chapter is almost entirely drawn from the Yogacarabhumi's vinaya sections. The alignment shows nearly 7,000 consecutive matching characters, indicating massive verbatim extraction.
 
-- **T31n1603 Xianyangsheng jiaolun song (Verses of the Xianyangsheng jiaolun) -> T31n1602 Xianyangsheng jiaolun:** 99.0% coverage, confidence 0.749. The verse summary is almost character-for-character present in the parent treatise, with the alignment showing extensive exact matches spread across all 11 chapters.
+- **T31n1603 Xianyangsheng jiaolun song (Verses Elucidating the Holy Teaching) -> T31n1602 Xianyangsheng jiaolun (Treatise Elucidating the Holy Teaching):** 99.0% coverage, confidence 0.749. The verse summary is almost character-for-character present in the parent treatise, with the alignment showing extensive exact matches spread across all 11 chapters.
 
 - **T29n1560 Abhidharmakosha Verses -> T29n1558 Abhidharmakosha:** 99.5% coverage, confidence 0.740. Vasubandhu's famous verses are faithfully embedded in the prose commentary, as expected.
 
-- **T31n1601 Bianzhongbian lun song (Madhyantavibhaga Verses) -> T31n1600 Bianzhongbian lun:** 99.7% coverage, confidence 0.736.
+- **T31n1601 Bianzhongbian lun song (Verses Distinguishing the Middle from the Extremes) -> T31n1600 Bianzhongbian lun (Treatise Distinguishing the Middle from the Extremes):** 99.7% coverage, confidence 0.736.
 
 - **T30n1570 Guangbailun ben (Shataka Verses) -> T30n1571 Guangbailun shi (Shataka Commentary):** 99.7% coverage, confidence 0.723.
 
@@ -274,25 +274,25 @@ These results are not unexpected -- these texts are known to be compilations tha
 
 Several short independent sutras were found to be verbatim excerpts of passages within the larger Agama collections:
 
-- **T14n0503 Biqiu bi nü e ming yu zi sha jing -> T02n0099 Samyuktagama:** 100% coverage. This short sutra about a monk avoiding a woman's bad reputation is entirely contained within the Samyuktagama -- a verbatim excerpt, not a condensed digest.
+- **T14n0503 Biqiu bi nü e ming yu zi sha jing (Sutra on a Monk Avoiding a Woman's Slander) -> T02n0099 Samyuktagama:** 100% coverage. This short sutra about a monk avoiding a woman's bad reputation is entirely contained within the Samyuktagama -- a verbatim excerpt, not a condensed digest.
 
-- **T14n0502 Fo wei nianshao biqiu shuo zheng shi jing -> T02n0099 Samyuktagama:** 100% coverage. The sutra where the Buddha instructs a young monk is a direct extract.
+- **T14n0502 Fo wei nianshao biqiu shuo zheng shi jing (Sutra of the Buddha's Teaching to a Young Monk on Right Conduct) -> T02n0099 Samyuktagama:** 100% coverage. The sutra where the Buddha instructs a young monk is a direct extract.
 
-- **T14n0499 Fo wei Azhiluojia ye zihua zuo ku jing -> T02n0099 Samyuktagama:** 100% coverage. Another individual sutra that exists as a passage in the Samyuktagama.
+- **T14n0499 Fo wei Azhiluojia ye zihua zuo ku jing (Sutra of the Buddha's Words to Ajirakāśyapa on Self-Inflicted Suffering) -> T02n0099 Samyuktagama:** 100% coverage. Another individual sutra that exists as a passage in the Samyuktagama.
 
-- **T02n0128b Xumoti nü jing -> T02n0125 Ekottaragama:** 99.7% coverage.
+- **T02n0128b Xumoti nü jing (Sutra of the Girl Sumatī) -> T02n0125 Ekottaragama:** 99.7% coverage.
 
-- **T01n0061 Shou xin sui jing -> T02n0125 Ekottaragama:** 99.7% coverage.
+- **T01n0061 Shou xin sui jing (Sutra on Receiving the New Year) -> T02n0125 Ekottaragama:** 99.7% coverage.
 
 These results confirm what text-critical scholars have long suspected: many of the small independent sutras in the Taisho volumes 1--17 are in fact individual discourse excerpts that were at some point separated from their Agama context and transmitted independently. The pipeline provides systematic evidence for this on a scale not previously attempted.
 
 #### Chan/Zen Literature Embedded in Transmission Records
 
-- **T48n2010 Xinxin ming (Inscription on Faith in Mind) -> T51n2076 Jingde chuandeng lu:** 100% coverage, confidence 0.717. The famous poem attributed to the Third Patriarch Sengcan is found as a complete excerpt within the Jingde Transmission of the Lamp record.
+- **T48n2010 Xinxin ming (Inscription on Faith in Mind) -> T51n2076 Jingde chuandeng lu (Record of the Transmission of the Lamp):** 100% coverage, confidence 0.717. The famous poem attributed to the Third Patriarch Sengcan is found as a complete excerpt within the Jingde Transmission of the Lamp record.
 
-- **T48n2014 Yongjia zhengdao ge (Song of Enlightenment) -> T51n2076 Jingde chuandeng lu:** 99.1% coverage, confidence 0.718. Yongjia Xuanjue's celebrated verse composition is likewise fully embedded as an excerpt.
+- **T48n2014 Yongjia zhengdao ge (Song of Enlightenment) -> T51n2076 Jingde chuandeng lu (Record of the Transmission of the Lamp):** 99.1% coverage, confidence 0.718. Yongjia Xuanjue's celebrated verse composition is likewise fully embedded as an excerpt.
 
-- **T48n2010 -> T49n2036 Fozu lidai tongzai:** 100% coverage, confidence 0.716. The Xinxin ming also appears in full in this later historical chronicle.
+- **T48n2010 -> T49n2036 Fozu lidai tongzai (Comprehensive Chronicle of Buddhas and Patriarchs):** 100% coverage, confidence 0.716. The Xinxin ming also appears in full in this later historical chronicle.
 
 #### Vinaya (Monastic Rule) Derivatives
 
@@ -313,13 +313,13 @@ Similarly, the Mulasarvastivada Vinaya (T23n1442, T23n1443) and its derivative p
 
 The 63 detected multi-source digests include several noteworthy cases:
 
-**T21n1237 Azhapo ju guishen dajiang shang fo tuoluoni shenzhou jing:** 99.4% combined coverage from T21n1336 (81.6%) and T21n1238 (74.9%). Nearly the entire text is accounted for by material from two dharani collections.
+**T21n1237 Azhapo ju guishen dajiang shang fo tuoluoni shenzhou jing (Dhāraṇī Incantation Sutra of Āṭavaka, Great General of Ghost-Spirits):** 99.4% combined coverage from T21n1336 (81.6%) and T21n1238 (74.9%). Nearly the entire text is accounted for by material from two dharani collections.
 
 **T17n0724 Foshuo zuiye yingbao jiaohua diyu jing (Sutra on Karmic Retribution):** 96.0% combined coverage from T53n2122 (84.3%), T54n2123 (82.9%), T45n1909 (67.8%), and T14n0441 (41.1%). This short sutra on hell and karmic retribution is almost entirely present across four different larger compilations.
 
 **T22n1429 Sifenlü biqiu jieben (Four-Part Bhikkhu Precepts):** 93.2% combined coverage from T40n1806, T22n1428, and T85n2787. The precepts text draws from multiple vinaya-related sources.
 
-**T16n0686 Foshuo baoen fengpen jing (Sutra on Repaying Kindness with the Bon):** 95.6% combined coverage from commentary and encyclopedia sources.
+**T16n0686 Foshuo baoen fengpen jing (Sutra on Repaying Kindness with the Bowl):** 95.6% combined coverage from commentary and encyclopedia sources.
 
 **T85n2747 Interlinear Heart Sutra:** 97.0% combined coverage from five different Heart Sutra commentaries and translations, confirming its character as an annotated edition drawing from multiple sources.
 
@@ -383,7 +383,7 @@ The digest relationships are not uniformly distributed across the Taisho. Prelim
 **Volumes most heavily involved as source texts:**
 - T02 (Agama section): The Samyuktagama (T99) and Ekottaragama (T125) serve as sources for multiple independent short sutras
 - T22--T24 (Vinaya section): The major vinaya texts generate extensive derivative networks of precept texts, karmavacana procedures, and commentaries
-- T30--T31 (Yogacara treatises): The Yogacarabhumi (T1579) and Xianyangsheng jiaolun (T1602) are sources for verse summaries and derivative treatises
+- T30--T31 (Yogacara treatises): The Yogacarabhumi (T1579) and Xianyangsheng jiaolun (Treatise Elucidating the Holy Teaching, T1602) are sources for verse summaries and derivative treatises
 - T53--T54 (Encyclopedic compilations): The Fayuan zhulin and companion texts serve as the most prolific source texts in the entire corpus
 
 **Volumes most heavily involved as digest texts:**
@@ -419,9 +419,9 @@ While many of the individual relationships detected are known to traditional Bud
 
 The comprehensive mapping of how the Fayuan zhulin (T53n2122) absorbed 102 texts -- with precise coverage percentages ranging from 30% to 100% -- appears to be unprecedented. While scholars have known that this encyclopedia quotes extensively from earlier sources, the systematic identification of which texts are fully incorporated as excerpts (17 texts at >80% coverage) vs. partially absorbed (85 texts at 30--80% coverage) provides a new level of granularity for studying Daoshi's compilation methods. Particularly noteworthy:
 
-- **T15n0615 Pusa he seyu fa jing:** 100% coverage in the Fayuan zhulin. This entire short text on monastic attitudes toward desire is found verbatim as an excerpt within Daoshi's compilation, suggesting either direct copying or shared manuscript traditions.
+- **T15n0615 Pusa he seyu fa jing (Sutra on the Bodhisattva's Reproach of Sensual Desire):** 100% coverage in the Fayuan zhulin. This entire short text on monastic attitudes toward desire is found verbatim as an excerpt within Daoshi's compilation, suggesting either direct copying or shared manuscript traditions.
 - **T32n1689 Qing Bintoulou fa (Inviting Pindola):** 99.4% coverage.
-- **T12n0332 Foshuo Youtian wang jing:** 99.4% coverage.
+- **T12n0332 Foshuo Youtian wang jing (Sutra of King Udayana):** 99.4% coverage.
 
 ### 7.2 Agama Extract Identification
 
@@ -435,23 +435,23 @@ The mapping of how T21n1336 (Dharani Miscellany) and T18n0901 (Dharani Collectio
 
 Several detected relationships cross traditional genre boundaries:
 
-- **T48n2010 Xinxin ming -> T48n2023 (Yuanren lun):** 100% coverage. The famous Chan poem attributed to Sengcan appears as a complete excerpt within Zongmi's treatise on the origin of humanity. While Zongmi's use of earlier Chan texts is known, the complete embedding of the Xinxin ming in this context may not have been previously quantified.
+- **T48n2010 Xinxin ming -> T48n2023 Yuanren lun (Treatise on the Origin of Humanity):** 100% coverage. The famous Chan poem attributed to Sengcan appears as a complete excerpt within Zongmi's treatise on the origin of humanity. While Zongmi's use of earlier Chan texts is known, the complete embedding of the Xinxin ming in this context may not have been previously quantified.
 
-- **T85n2918 Shijia guanhua huan yu jing -> T04n0211 Faju piyu jing:** 100% coverage, confidence 0.704. This Dunhuang text is a verbatim excerpt from the Dhammapada with commentary (Faju piyu jing), suggesting it is an extract rather than an independent composition.
+- **T85n2918 Shijia guanhua huan yu jing (Sutra of Śākyamuni's Parables of Illusory Transformation) -> T04n0211 Faju piyu jing:** 100% coverage, confidence 0.704. This Dunhuang text is a verbatim excerpt from the Dhammapada with Parables (Faju piyu jing), suggesting it is an extract rather than an independent composition.
 
-- **T12n0369 Amituo fo shuo zhou -> T85n2827 Jingtu wuhui nianfo song jing guanxing yi:** 96.6% coverage. A short Amitabha dharani text is almost entirely present within a Pure Land liturgical manual, illuminating how ritual texts were compiled from earlier dharani sources.
+- **T12n0369 Amituo fo shuo zhou (Dhāraṇī Spoken by Amitābha Buddha) -> T85n2827 Jingtu wuhui nianfo song jing guanxing yi (Liturgical Manual for Five-Assembly Pure Land Buddha-Recitation):** 96.6% coverage. A short Amitabha dharani text is almost entirely present within a Pure Land liturgical manual, illuminating how ritual texts were compiled from earlier dharani sources.
 
 ### 7.5 Yogacara Treatise Derivation Chain
 
 The pipeline reveals a clear derivation chain within the Yogacara scholastic tradition:
 
 1. T30n1579 Yogacarabhumi (source)
-2. T31n1602 Xianyangsheng jiaolun (draws from Yogacarabhumi)
+2. T31n1602 Xianyangsheng jiaolun (Treatise Elucidating the Holy Teaching; draws from Yogacarabhumi)
 3. T31n1603 Xianyangsheng jiaolun song (verse summary of T1602)
 4. T24n1501 Bodhisattva Precepts (extracted from Yogacarabhumi vinaya section)
-5. T85n2783 Dacheng daoqie jing suitingshu jue (97.3% from Yogacarabhumi)
-6. T16n0676 Jieshenmi jing (86.5% from Yogacarabhumi)
-7. T31n1615 Wangfa zhengli lun (62.9% from Yogacarabhumi)
+5. T85n2783 Dacheng daoqie jing suitingshu jue (Lecture Notes on the Mahāyāna Yogācāra Sūtra; 97.3% from Yogacarabhumi)
+6. T16n0676 Jieshenmi jing (Sūtra Unraveling the Thought, Saṃdhinirmocana; 86.5% from Yogacarabhumi)
+7. T31n1615 Wangfa zhengli lun (Treatise on the Correct Principles of Governance; 62.9% from Yogacarabhumi)
 
 The Yogacarabhumi emerges as one of the most generative source texts in the entire Taisho, with 6 detected derivative texts at >50% coverage. The pipeline provides precise quantification of how much of each derivative text comes from this single massive source.
 
@@ -459,9 +459,9 @@ The Yogacarabhumi emerges as one of the most generative source texts in the enti
 
 The pipeline detected the expected cascade of medieval Chinese Buddhist bibliographic catalogs:
 
-- T55n2154 Kaiyuan shijiao lu -> T55n2155 Kaiyuan shijiao lu lüechu (73.9% coverage)
-- T55n2154 -> T55n2157 Zhenyuan xinding shijiao mulu (absorbed into the later catalog)
-- T55n2152 Xu gujin yijing tuji is a digest of both T55n2154 (75.1%) and T55n2157 (77.0%)
+- T55n2154 Kaiyuan shijiao lu (Catalogue of Buddhist Teachings of the Kaiyuan Era) -> T55n2155 Kaiyuan shijiao lu lüechu (Abridged Kaiyuan Catalogue) (73.9% coverage)
+- T55n2154 -> T55n2157 Zhenyuan xinding shijiao mulu (Catalogue of Buddhist Teachings of the Zhenyuan Era) (absorbed into the later catalog)
+- T55n2152 Xu gujin yijing tuji (Continuation of the Record of Translated Scriptures) is a digest of both T55n2154 (75.1%) and T55n2157 (77.0%)
 
 While the relationships among these catalogs are known, the precise coverage measurements may help scholars assess the degree of editorial independence in each successive catalog.
 
@@ -691,7 +691,7 @@ The complete pipeline source code is organized in the following modules:
 - `digest_detector/config.py` -- All tunable parameters
 - `digest_detector/models.py` -- Data models
 
-Test suite: 97 tests covering all stages plus integration tests on T250/T251 -> T223.
+Test suite: 98 tests covering all stages plus integration tests on T250/T251 -> T223.
 
 ---
 
