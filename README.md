@@ -96,8 +96,8 @@ The pipeline detected **2,812 relationships** involving **1,412 texts**:
 
 | Classification | Count |
 |----------------|------:|
-| Full Digest | 181 |
-| Partial Digest | 484 |
+| Excerpt | 132 |
+| Digest | 533 |
 | Retranslation | 288 |
 | Commentary | 621 |
 | Shared Tradition | 1,238 |
