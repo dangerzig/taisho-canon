@@ -199,7 +199,7 @@ def analyze_coverage_by_classification(relationships, lookup):
 
     # Convert to serializable dict with percentages
     result = {}
-    for cls in ["full_digest", "partial_digest", "retranslation",
+    for cls in ["excerpt", "digest", "retranslation",
                  "commentary", "shared_tradition"]:
         s = stats[cls]
         total = s["total"]
@@ -354,7 +354,7 @@ def main():
     # 3. Coverage by classification
     cls_coverage = analyze_coverage_by_classification(relationships, lookup)
     print("Coverage by classification (at least one text in pair has parallel):")
-    for cls in ["full_digest", "partial_digest", "retranslation",
+    for cls in ["excerpt", "digest", "retranslation",
                  "commentary", "shared_tradition"]:
         s = cls_coverage[cls]
         print(f"  {cls}: {s['has_any_parallel']}/{s['total']} ({s['pct_any']}%)")

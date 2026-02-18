@@ -726,8 +726,8 @@ def main():
     # Group relationships by classification
     classifications = [
         ("retranslation", "Retranslations"),
-        ("full_digest", "Full Digests"),
-        ("partial_digest", "Partial Digests"),
+        ("excerpt", "Excerpts"),
+        ("digest", "Digests"),
         ("commentary", "Commentaries"),
         ("shared_tradition", "Shared Tradition"),
     ]
@@ -767,8 +767,8 @@ def main():
     lines.append("| Classification | Count | Description |")
     lines.append("|----------------|------:|-------------|")
     descs = {
-        "full_digest": "Shorter text draws >70% of its content from the longer text",
-        "partial_digest": "Shorter text draws 30-70% of its content from the longer text",
+        "excerpt": "Shorter text draws >=80% of its content from the longer text (verbatim extraction)",
+        "digest": "Shorter text draws 30-80% of its content from the longer text (condensed derivation)",
         "retranslation": "Two texts of similar length sharing significant content (different translations of the same source)",
         "commentary": "Shorter text quotes portions of the longer text with added material",
         "shared_tradition": "Texts sharing content through common tradition rather than direct derivation",

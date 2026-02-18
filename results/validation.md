@@ -6,11 +6,11 @@
 
 _T250 (Kumārajīva Heart Sutra) is a digest of T223_
 
-- [PASS] classification: expected=full_digest, actual=full_digest
+- [PASS] classification: expected=digest, actual=digest
 - [PASS] coverage: expected=>= 0.7, actual=0.7315
 
 Detailed scores:
-  - classification: full_digest
+  - classification: digest
   - confidence: 0.6598
   - coverage: 0.7315
   - novel_fraction: 0.2685
@@ -22,11 +22,11 @@ Detailed scores:
 
 _T251 (Xuanzang Heart Sutra) jing section is a digest of T223_
 
-- [PASS] classification: expected=partial_digest, actual=partial_digest
+- [PASS] classification: expected=digest, actual=digest
 - [PASS] coverage: expected=>= 0.3, actual=0.4462
 
 Detailed scores:
-  - classification: partial_digest
+  - classification: digest
   - confidence: 0.4322
   - coverage: 0.4462
   - novel_fraction: 0.5538

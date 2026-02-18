@@ -83,7 +83,7 @@ class DigestScore:
     """Scored and classified digest relationship."""
     digest_id: str
     source_id: str
-    classification: str  # "full_digest", "partial_digest", "commentary", etc.
+    classification: str  # "excerpt", "digest", "commentary", etc.
     confidence: float  # 0-1 weighted score
     containment: float
     coverage: float

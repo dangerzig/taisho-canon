@@ -12,15 +12,15 @@ The pipeline analyzed all 8,982 XML files in the CBETA TEI P5b corpus and detect
 
 | Classification | Count | Description |
 |----------------|------:|-------------|
-| Full Digests / Excerpts | 181 | Shorter text draws >70% of its content from a longer source (at 100%, a verbatim excerpt) |
-| Partial Digests | 484 | Shorter text draws 30--70% of its content from a longer source |
+| Excerpts | 132 | Shorter text draws >=80% of its content verbatim from a longer source |
+| Digests | 533 | Shorter text draws 30--80% of its content from a longer source |
 | Retranslations | 288 | Two texts of similar length sharing significant content (parallel translations from the same Indic source) |
 | Commentaries | 621 | Shorter text quotes portions of a longer text with added exegetical material |
 | Shared Tradition | 1,238 | Texts sharing content through common tradition rather than direct derivation |
 
 Additionally, **63 multi-source digests** were identified -- texts that draw content from two or more distinct source texts, with combined coverage exceeding any single source.
 
-The pipeline was validated against the well-established scholarly consensus that the Heart Sutra (T250, T251) is a digest of the Large Prajnaparamita Sutra (T223). All six validation assertions passed, correctly classifying T250 as a full digest of T223 (73.2% coverage), T251's jing section as a partial digest (44.6% coverage), and correctly identifying T250 and T251 as retranslations of each other rather than digests of one another.
+The pipeline was validated against the well-established scholarly consensus that the Heart Sutra (T250, T251) is a digest of the Large Prajnaparamita Sutra (T223). All six validation assertions passed, correctly classifying T250 as a digest of T223 (73.2% coverage), T251's jing section as a digest (44.6% coverage), and correctly identifying T250 and T251 as retranslations of each other rather than digests of one another.
 
 This appears to be the first large-scale, corpus-wide computational analysis specifically targeting digest and text-reuse relationships across the full Taisho canon.
 
@@ -80,8 +80,8 @@ These six features were combined into a weighted confidence score (0--1 scale), 
 | Coverage < 10% | No relationship (excluded) |
 | Coverage 10--30% | Shared tradition |
 | Coverage >= 30% and source/digest size ratio < 3.0 | Retranslation |
-| Coverage >= 70% and avg segment >= 15 chars | Full digest / excerpt |
-| Coverage >= 30% and avg segment >= 10 chars | Partial digest |
+| Coverage >= 80% and avg segment >= 15 chars | Excerpt |
+| Coverage >= 30% and avg segment >= 10 chars | Digest |
 | Coverage >= 20% and avg segment < 10 chars | Commentary |
 
 The size ratio test fires first for texts of comparable length: when the source is less than 3x the digest length and coverage exceeds 30%, the pair is classified as a retranslation (parallel translations of similar scope) rather than a digest (extraction from a much longer source). The average segment length test distinguishes commentaries (many short quotations interspersed with original exegesis) from digests (fewer, longer verbatim extractions).
@@ -90,13 +90,13 @@ The size ratio test fires first for texts of comparable length: when the source 
 
 ### 2.2 Classification Definitions
 
-- **Full Digest / Excerpt** (coverage >= 70%, avg segment >= 15 chars): The shorter text is predominantly composed of material extracted verbatim or near-verbatim from the longer text. This category spans a spectrum. At the lower end (~70--90% coverage), the shorter text is a genuine *digest* in the sense of Jan Nattier's influential 1992 study of the Heart Sutra: material extracted and rearranged with original framing or editorial additions. At the upper end (approaching 100% coverage, novel fraction near zero), the shorter text is better understood as a verbatim *excerpt* or *extract* -- a passage lifted from the source with little or nothing added. The pipeline labels both as `full_digest`; in the discussion below, we use "digest" and "excerpt" to distinguish these cases where the distinction matters.
+- **Excerpt** (coverage >= 80%, avg segment >= 15 chars): The shorter text is almost entirely composed of material extracted verbatim or near-verbatim from the longer text. At the upper end (approaching 100% coverage, novel fraction near zero), the text is a passage lifted from the source with little or nothing added.
 
-- **Partial Digest** (coverage 30--70%, avg segment >= 10 chars): A substantial but not predominant portion of the shorter text derives from the source. This may indicate selective extraction, or a digest relationship complicated by significant editorial reworking.
+- **Digest** (coverage 30--80%, avg segment >= 10 chars): A substantial portion of the shorter text derives from the source, but significant material has been rearranged, condensed, or supplemented with original additions. This category encompasses both selective extraction with creative reframing (e.g., the Heart Sutra at 73.2% coverage) and more modest textual overlap indicating partial derivation.
 
 - **Retranslation** (coverage >= 30%, size ratio < 3.0): Two texts of comparable length sharing significant content, indicative of independent translations from a common Indic or Central Asian source.
 
-- **Commentary** (coverage 20--70%, avg segment < 10 chars): The shorter text contains many brief quotations from the longer text interspersed with original material, characteristic of exegetical or commentary literature.
+- **Commentary** (coverage >= 20%, avg segment < 10 chars): The shorter text contains many brief quotations from the longer text interspersed with original material, characteristic of exegetical or commentary literature. (In practice, the retranslation and digest rules fire first at higher coverages, so commentary is most common in the 20--50% range.)
 
 - **Shared Tradition** (coverage 10--30%): Low-level textual overlap suggestive of shared doctrinal formulae, common source traditions, or indirect transmission rather than direct derivation.
 
@@ -123,9 +123,9 @@ Confidence scores (0--1 scale) were computed as a weighted combination of six fe
 |----------------|------:|----------:|
 | Shared Tradition | 1,238 | 44.0% |
 | Commentary | 621 | 22.1% |
-| Partial Digest | 484 | 17.2% |
+| Digest | 533 | 19.0% |
 | Retranslation | 288 | 10.2% |
-| Full Digest / Excerpt | 181 | 6.4% |
+| Excerpt | 132 | 4.7% |
 | **Total** | **2,812** | **100%** |
 
 ### 3.2 Scope
@@ -139,7 +139,7 @@ Confidence scores (0--1 scale) were computed as a weighted combination of six fe
 ### 3.3 Confidence Distribution
 
 Among the top 50 results by confidence:
-- 37 classified as full_digest (74%)
+- 37 classified as excerpt or digest (74%)
 - 10 classified as retranslation (20%)
 - 3 classified as other categories (6%)
 
@@ -155,12 +155,12 @@ The pipeline was validated against the most well-studied digest relationship in 
 
 | Test | Expected | Actual | Status |
 |------|----------|--------|--------|
-| T250 -> T223 classification | full_digest | full_digest | PASS |
+| T250 -> T223 classification | digest | digest | PASS |
 | T250 -> T223 coverage | >= 0.70 | 0.732 | PASS |
-| T251 jing -> T223 classification | partial_digest | partial_digest | PASS |
+| T251 jing -> T223 classification | digest | digest | PASS |
 | T251 jing -> T223 coverage | >= 0.30 | 0.446 | PASS |
-| T250 not digest of T251 | not full/partial_digest | retranslation | PASS |
-| T251 not digest of T250 | not full/partial_digest | not_found | PASS |
+| T250 not digest of T251 | not excerpt/digest | retranslation | PASS |
+| T251 not digest of T250 | not excerpt/digest | not_found | PASS |
 
 ### Detailed Findings
 
@@ -262,7 +262,7 @@ While the relationship between verse root texts and their commentaries is well k
 
 The most striking pattern in our results concerns three Tang-dynasty encyclopedic compilations that appear as source texts for dozens of shorter works:
 
-- **T53n2122 Fayuan zhulin (Forest of Gems in the Garden of the Dharma):** 102 digest relationships detected, including 17 at >70% coverage (many of them verbatim excerpts at or near 100%) and 85 partial digests. This 100-fascicle compilation by Daoshi (d. 683) quotes extensively from earlier sutras, and our pipeline detected these quotations in reverse -- finding that many shorter sutras have their full text present within the Fayuan zhulin.
+- **T53n2122 Fayuan zhulin (Forest of Gems in the Garden of the Dharma):** 102 digest relationships detected, including 17 at >80% coverage (many of them verbatim excerpts at or near 100%) and 85 digests. This 100-fascicle compilation by Daoshi (d. 683) quotes extensively from earlier sutras, and our pipeline detected these quotations in reverse -- finding that many shorter sutras have their full text present within the Fayuan zhulin.
 
 - **T53n2121 Jinglü yixiang (Distinctive Features of Sutras and Vinayas):** 49 digest relationships detected, compiled by Baochang in 516 CE.
 
@@ -305,7 +305,7 @@ The Four-Part Vinaya (T22n1428, Dharmaguptaka Vinaya) serves as the source for a
 - T22n1430 (Sangha Precepts): 66.3% coverage
 - T22n1433 (Karmavacana): 68.3% coverage
 
-Plus 5 additional partial digest relationships with Daoxuan's later vinaya commentaries.
+Plus 5 additional digest relationships with Daoxuan's later vinaya commentaries.
 
 Similarly, the Mulasarvastivada Vinaya (T23n1442, T23n1443) and its derivative precept texts show the same pattern. The pipeline maps the full derivation network for these vinaya traditions in a way that, to our knowledge, has not been computationally quantified before.
 
@@ -325,7 +325,7 @@ The 63 detected multi-source digests include several noteworthy cases:
 
 ### 5.3 Dharani Collection Networks
 
-The Tuoluoni zaji (*Tuóluóní zájí*, T21n1336, Miscellaneous Dharani Collection) functions as a reservoir text for dharani literature much as the Fayuan zhulin does for sutra literature. Sixteen shorter dharani texts were found to be full or partial digests of T21n1336, with coverage ranging from 100% down to 43%. Similarly, the Tuoluoni jijing (*Tuóluóní jí jīng*, T18n0901, Dharani Collection Sutra) serves as a source for 13 shorter ritual and dharani texts.
+The Tuoluoni zaji (*Tuóluóní zájí*, T21n1336, Miscellaneous Dharani Collection) functions as a reservoir text for dharani literature much as the Fayuan zhulin does for sutra literature. Sixteen shorter dharani texts were found to be excerpts or digests of T21n1336, with coverage ranging from 100% down to 43%. Similarly, the Tuoluoni jijing (*Tuóluóní jí jīng*, T18n0901, Dharani Collection Sutra) serves as a source for 13 shorter ritual and dharani texts.
 
 The two derivation networks are shown below. Arrows point from source to derivative; percentages indicate coverage (fraction of the shorter text found in the source).
 
@@ -335,15 +335,15 @@ The two derivation networks are shown below. Arrows point from source to derivat
                    T21n1336  (Tuoluoni zaji)
                    =========================
                   /            |             \
-         Full digests     Full/retrans.    Partial digests
-          (100-87%)         (85-80%)         (69-43%)
+          Excerpts       Excerpt/retrans.     Digests
+          (100-87%)         (85-82%)         (80-43%)
               |                |                |
-    T21n1368 (100%)    T21n1332 (85%)    T21n1393 (69%)
-    T20n1046 (100%)    T21n1391 (85%)    T21n1327 (62%)
-    T20n1138b (100%)   T21n1237 (82%)    T21n1329 (56%)
-    T21n1367 (100%)    T19n1029 (80%)    T21n1353 (44%)
-    T21n1352 (100%)                      T20n1178 (43%)
-    T12n0370 (100%)
+    T21n1368 (100%)    T21n1332 (85%)    T19n1029 (80%)
+    T20n1046 (100%)    T21n1391 (85%)    T21n1393 (69%)
+    T20n1138b (100%)   T21n1237 (82%)    T21n1327 (62%)
+    T21n1367 (100%)                      T21n1329 (56%)
+    T21n1352 (100%)                      T21n1353 (44%)
+    T12n0370 (100%)                      T20n1178 (43%)
     T19n1028A (99%)
     T21n1326 (87%)
 ```
@@ -354,12 +354,13 @@ The two derivation networks are shown below. Arrows point from source to derivat
                    T18n0901  (Tuoluoni jijing)
                    ============================
                   /            |              \
-         Full digests    Partial digests    Commentaries
-           (84-71%)        (65-32%)         (49-30%)
+          Excerpts          Digests        Commentaries
+           (84-81%)        (71-32%)         (49-30%)
               |                |                |
-    T20n1073 (84%)    T20n1070 (65%)    T21n1256 (49%)
-    T20n1035 (81%)    T20n1074 (60%)    T21n1255b (30%)
-    T21n1254 (71%)    T20n1180 (58%)
+    T20n1073 (84%)    T21n1254 (71%)    T21n1256 (49%)
+    T20n1035 (81%)    T20n1070 (65%)    T21n1255b (30%)
+                      T20n1074 (60%)
+                      T20n1180 (58%)
                       T20n1110 (55%)
                       T21n1338 (54%)
                       T21n1255a (52%)
@@ -396,7 +397,7 @@ The digest relationships are not uniformly distributed across the Taisho. Prelim
 
 The Heart Sutra validation case provides a clear demonstration of how translator identity affects detection. The Kumarajiva Heart Sutra (T250) shows 73.2% coverage against Kumarajiva's own Prajnaparamita translation (T223), while the Xuanzang Heart Sutra (T251) shows only 44.6% against the same T223, despite both Heart Sutras deriving from the same underlying Prajnaparamita material.
 
-This approximately 30-percentage-point gap between same-translator and cross-translator coverage is a systematic feature of the pipeline. It means our coverage thresholds are effectively tuned for same-translator relationships, and **cross-translator digest relationships are likely underdetected.** Many pairs classified as "partial digest" or "shared tradition" may in fact represent full digest or excerpt relationships obscured by translator-dependent phrasing differences.
+This approximately 30-percentage-point gap between same-translator and cross-translator coverage is a systematic feature of the pipeline. It means our coverage thresholds are effectively tuned for same-translator relationships, and **cross-translator digest relationships are likely underdetected.** Many pairs classified as "digest" or "shared tradition" may in fact represent excerpt relationships obscured by translator-dependent phrasing differences.
 
 The retranslation detection feature partially compensates for this by identifying pairs of comparable length with moderate overlap, but genuine cross-translator digest relationships (short text from translator A derived from a source translated by translator B) remain difficult to detect at the character level.
 
@@ -416,7 +417,7 @@ While many of the individual relationships detected are known to traditional Bud
 
 ### 7.1 Systematic Quantification of Encyclopedic Absorption
 
-The comprehensive mapping of how the Fayuan zhulin (T53n2122) absorbed 102 texts -- with precise coverage percentages ranging from 30% to 100% -- appears to be unprecedented. While scholars have known that this encyclopedia quotes extensively from earlier sources, the systematic identification of which texts are fully incorporated as excerpts (17 texts at >70% coverage) vs. partially absorbed (85 texts at 30--70% coverage) provides a new level of granularity for studying Daoshi's compilation methods. Particularly noteworthy:
+The comprehensive mapping of how the Fayuan zhulin (T53n2122) absorbed 102 texts -- with precise coverage percentages ranging from 30% to 100% -- appears to be unprecedented. While scholars have known that this encyclopedia quotes extensively from earlier sources, the systematic identification of which texts are fully incorporated as excerpts (17 texts at >80% coverage) vs. partially absorbed (85 texts at 30--80% coverage) provides a new level of granularity for studying Daoshi's compilation methods. Particularly noteworthy:
 
 - **T15n0615 Pusa he seyu fa jing:** 100% coverage in the Fayuan zhulin. This entire short text on monastic attitudes toward desire is found verbatim as an excerpt within Daoshi's compilation, suggesting either direct copying or shared manuscript traditions.
 - **T32n1689 Qing Bintoulou fa (Inviting Pindola):** 99.4% coverage.
@@ -424,7 +425,7 @@ The comprehensive mapping of how the Fayuan zhulin (T53n2122) absorbed 102 texts
 
 ### 7.2 Agama Extract Identification
 
-The systematic identification of short independent sutras that are extracts from the Samyuktagama and Ekottaragama provides computational support for text-critical hypotheses that have often been argued on a case-by-case basis. The pipeline identified at least 7 texts with >70% coverage in the Agamas and many more in the 30--70% range. Scholars working on Agama studies can use these results to prioritize texts for closer philological examination.
+The systematic identification of short independent sutras that are extracts from the Samyuktagama and Ekottaragama provides computational support for text-critical hypotheses that have often been argued on a case-by-case basis. The pipeline identified at least 7 texts with >80% coverage in the Agamas and many more in the 30--80% range. Scholars working on Agama studies can use these results to prioritize texts for closer philological examination.
 
 ### 7.3 Dharani Derivation Networks
 
@@ -460,7 +461,7 @@ The pipeline detected the expected cascade of medieval Chinese Buddhist bibliogr
 
 - T55n2154 Kaiyuan shijiao lu -> T55n2155 Kaiyuan shijiao lu lüechu (73.9% coverage)
 - T55n2154 -> T55n2157 Zhenyuan xinding shijiao mulu (absorbed into the later catalog)
-- T55n2152 Xu gujin yijing tuji is a full digest of both T55n2154 (75.1%) and T55n2157 (77.0%)
+- T55n2152 Xu gujin yijing tuji is a digest of both T55n2154 (75.1%) and T55n2157 (77.0%)
 
 While the relationships among these catalogs are known, the precise coverage measurements may help scholars assess the degree of editorial independence in each successive catalog.
 
@@ -595,12 +596,12 @@ At the relationship level, at least one text in the pair has a known parallel in
 | Commentary | 621 | 502 | 80.8% |
 | Retranslation | 288 | 191 | 66.3% |
 | Shared Tradition | 1,238 | 791 | 63.9% |
-| Full Digest / Excerpt | 181 | 105 | 58.0% |
-| Partial Digest | 484 | 249 | 51.4% |
+| Excerpt | 132 | 81 | 61.4% |
+| Digest | 533 | 273 | 51.2% |
 
 The high parallel rate for commentaries (80.8%) reflects the fact that commentarial literature tends to focus on important translated texts that are well-attested across traditions. Retranslations also show high parallel rates (66.3%), as expected -- parallel translations from the same Indic source are likely to have that source attested in other canons as well.
 
-Conversely, the lower rates for full digests/excerpts (58.0%) and partial digests (51.4%) may indicate that digest relationships are more common among texts without well-known Indic originals -- potentially including Chinese-origin compositions, compilations, and texts from traditions less well-represented in the Tibetan and Pali canons.
+Conversely, the lower rates for excerpts (61.4%) and digests (51.2%) may indicate that digest relationships are more common among texts without well-known Indic originals -- potentially including Chinese-origin compositions, compilations, and texts from traditions less well-represented in the Tibetan and Pali canons.
 
 ### 10.3 Retranslation Validation via Tibetan Parallels
 
@@ -625,10 +626,9 @@ Among the 87 validated pairs, notable examples include:
 | T16n0663 (Samdhinirmocana, Bodhiruci) | T16n0664 (Samdhinirmocana, Xuanzang) | 89.8% | Toh 555--557, Otani 174--176 |
 | T12n0334 (Smaller Sukhavativyuha) | T12n0335 (Smaller Sukhavativyuha) | 89.2% | Toh 74 |
 | T19n1013 (Ushnishavijaya Dharani) | T19n1015 (Ushnishavijaya Dharani) | 85.3% | Toh 140, 525, 914 |
-| T08n0250 (Heart Sutra, Kumarajiva) | T08n0223 (Prajnaparamita) | 73.2% | Toh 21 |
-| T12n0362 (Amitayurdhyana Sutra) | T12n0361 (Amitabha Sutra) | 79.8% | Toh 49, Otani 760 |
+| T12n0362 (Amitayurdhyana Sutra) | T12n0361 (Amitabha Sutra) | 79.9% | Toh 49, Otani 760 |
 
-The Heart Sutra case (T250 -> T223) is particularly interesting: while classified as a full digest rather than a retranslation in our pipeline, both texts share Toh 21 (the Tibetan Prajnaparamita), confirming their common Indic ancestry through a completely independent data source.
+A notable related case is T250 (Heart Sutra) and T223 (Prajnaparamita), which share Toh 21 in the Tibetan canon. While classified as a digest rather than a retranslation in our pipeline (due to their extreme length asymmetry), the shared Tohoku number confirms their common Indic ancestry through a completely independent data source.
 
 **7 retranslation pairs (2.4%) have different Tibetan parallels.** These are not necessarily errors -- they may represent cases where the Tibetan canon catalogued the texts under different entries despite shared Indic ancestry, or where the Chinese and Tibetan cataloguing traditions diverge. All 7 cases involve Yogacara or Prajnaparamita literature where catalogue boundaries are known to be fluid:
 
@@ -652,7 +652,7 @@ The cross-reference analysis yields several methodological and substantive findi
 
 **Texts without parallels may be Chinese-origin.** The 974 relationships (34.6%) where neither text has a known cross-canon parallel are enriched for Chinese-origin literature: encyclopedic compilations, indigenous commentaries, and texts from traditions (dharani collections, Chan literature) that are less well-represented in the Tibetan and Pali canons. These relationships are the most likely to reveal previously unrecognized Chinese compositional practices.
 
-**Digest texts with Tibetan parallels deserve closer attention.** Among the 313 relationships where both texts share a Tibetan parallel, 9 are classified as full digests or excerpts and 23 as partial digests. These cases are particularly interesting because they suggest that a shorter Chinese text, which our pipeline identifies as derived from a longer Chinese source, may also have an independent Indic pedigree. For example, if text A is detected as an excerpt of text B, but both map to the same Tohoku number, the apparent "excerpt" relationship may in fact reflect parallel translation from the same source rather than Chinese-level extraction.
+**Digest texts with Tibetan parallels deserve closer attention.** Among the 313 relationships where both texts share a Tibetan parallel, 9 are classified as excerpts and 23 as digests. These cases are particularly interesting because they suggest that a shorter Chinese text, which our pipeline identifies as derived from a longer Chinese source, may also have an independent Indic pedigree. For example, if text A is detected as an excerpt of text B, but both map to the same Tohoku number, the apparent "excerpt" relationship may in fact reflect parallel translation from the same source rather than Chinese-level extraction.
 
 **The concordance can prioritize further investigation.** Texts involved in digest relationships that have Tibetan parallels are natural candidates for comparative philological study, as the Tibetan version can help disambiguate whether the Chinese relationship reflects direct textual derivation or independent translation from a common source.
 
@@ -671,8 +671,8 @@ The cross-reference analysis yields several methodological and substantive findi
 | Fuzzy match score | +1 | Character match reward |
 | Fuzzy mismatch score | -2 | Character mismatch penalty |
 | Fuzzy extension threshold | -4 | Score drop to terminate extension |
-| Full digest threshold | 0.70 | Coverage for full digest / excerpt classification |
-| Partial digest threshold | 0.30 | Coverage for partial digest classification |
+| Excerpt threshold | 0.80 | Coverage for excerpt classification |
+| Digest threshold | 0.30 | Coverage for digest classification |
 | Shared tradition threshold | 0.10 | Minimum coverage for any relationship |
 | Retranslation size ratio | 3.0 | Maximum ratio for retranslation classification |
 | Commentary avg seg length | 10 | Below this, classify as commentary |

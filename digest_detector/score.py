@@ -1,7 +1,7 @@
 """Stage 4: Scoring and classification of digest relationships.
 
-Classifies alignment results into categories (full digest, partial digest,
-commentary, shared tradition, retranslation) and computes confidence scores.
+Classifies alignment results into categories (excerpt, digest, commentary,
+shared tradition, retranslation) and computes confidence scores.
 Also detects multi-source digests.
 """
 
@@ -44,13 +44,13 @@ def classify_relationship(
 ) -> DigestScore:
     """Classify an alignment result into a relationship category.
 
-    Categories:
-    - full_digest: coverage >= 0.70, avg segment >= 15 chars
-    - partial_digest: coverage 0.30-0.70, avg segment >= 10 chars
-    - commentary: coverage 0.20-0.70, avg segment < 10 chars
-    - shared_tradition: coverage 0.10-0.30
-    - retranslation: coverage >= 0.30, similar length texts
+    Categories (checked in priority order):
     - no_relationship: coverage < 0.10
+    - shared_tradition: coverage 0.10-0.30
+    - retranslation: coverage >= 0.30, size ratio < 3.0 (similar length texts)
+    - excerpt: coverage >= 0.80, avg segment >= 15 chars (verbatim extraction)
+    - digest: coverage >= 0.30, avg segment >= 10 chars (condensed derivation)
+    - commentary: coverage >= 0.20, avg segment < 10 chars (scattered small matches)
     """
     coverage = alignment.coverage
     avg_seg_len = _avg_segment_length(alignment.segments)
@@ -63,19 +63,17 @@ def classify_relationship(
     # Classification logic
     if coverage < config.SHARED_TRADITION_THRESHOLD:
         classification = "no_relationship"
-    elif coverage < config.PARTIAL_DIGEST_THRESHOLD:
+    elif coverage < config.DIGEST_THRESHOLD:
         classification = "shared_tradition"
-    elif size_ratio < config.RETRANSLATION_SIZE_RATIO and coverage >= config.PARTIAL_DIGEST_THRESHOLD:
+    elif size_ratio < config.RETRANSLATION_SIZE_RATIO:
         # Texts of similar length with significant overlap → retranslation
         classification = "retranslation"
-    elif coverage >= config.FULL_DIGEST_THRESHOLD and avg_seg_len >= 15:
-        classification = "full_digest"
-    elif coverage >= config.PARTIAL_DIGEST_THRESHOLD and avg_seg_len >= config.COMMENTARY_AVG_SEG_LEN:
-        classification = "partial_digest"
-    elif coverage >= 0.20 and avg_seg_len < config.COMMENTARY_AVG_SEG_LEN:
-        classification = "commentary"
+    elif coverage >= config.EXCERPT_THRESHOLD and avg_seg_len >= config.EXCERPT_AVG_SEG_LEN:
+        classification = "excerpt"
+    elif avg_seg_len >= config.COMMENTARY_AVG_SEG_LEN:
+        classification = "digest"
     else:
-        classification = "partial_digest"
+        classification = "commentary"
 
     # Confidence score
     confidence = _compute_confidence(
@@ -208,7 +206,7 @@ def detect_multi_source_digests(
     # Group scores by digest
     by_digest = defaultdict(list)
     for score in scores:
-        if score.classification in ("full_digest", "partial_digest"):
+        if score.classification in ("excerpt", "digest"):
             by_digest[score.digest_id].append(score)
 
     # Group alignments by digest for coverage calculation

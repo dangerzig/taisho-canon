@@ -244,15 +244,15 @@ class TestAlignment:
             digest_jing_length=len(t250.jing_text),
             source_jing_length=len(t251.jing_text),
         )
-        # Should be retranslation or shared_tradition, NOT full_digest
-        assert score.classification != "full_digest", (
+        # Should be retranslation or shared_tradition, NOT excerpt
+        assert score.classification != "excerpt", (
             f"T250→T251 wrongly classified as {score.classification}"
         )
 
 
 class TestClassification:
     def test_t250_classified_as_digest(self, t250, t223):
-        """T250→T223 should be classified as full_digest."""
+        """T250→T223 should be classified as digest (73.2% coverage, below excerpt threshold)."""
         result = align_pair(
             t250.full_text, t223.full_text,
             "T08n0250", "T08n0223",
@@ -263,9 +263,9 @@ class TestClassification:
             source_length=t223.metadata.char_count,
             has_docnumber_xref=True,
         )
-        assert score.classification in ("full_digest", "partial_digest"), (
+        assert score.classification == "digest", (
             f"T250→T223 classified as {score.classification}, "
-            f"expected full_digest or partial_digest"
+            f"expected digest"
         )
         assert score.confidence > 0.3
 
@@ -276,7 +276,7 @@ class TestClassificationJingAware:
 
         Without jing lengths, T251 full text (~1090 chars) vs T250 (~331 chars)
         gives size ratio ~3.3, just above RETRANSLATION_SIZE_RATIO (3.0),
-        potentially classifying as partial_digest. With jing lengths, T251 jing
+        potentially classifying as digest. With jing lengths, T251 jing
         (~260 chars) vs T250 (~331 chars) gives ratio ~0.79 → retranslation.
         """
         result = align_pair(
@@ -295,11 +295,11 @@ class TestClassificationJingAware:
             f"expected retranslation"
         )
 
-    def test_t251_jing_classified_as_partial_digest(self, t251, t223):
-        """T251 jing→T223 should be classified as partial_digest.
+    def test_t251_jing_classified_as_digest(self, t251, t223):
+        """T251 jing→T223 should be classified as digest.
 
         Cross-translator overlap (Xuanzang vs Kumārajīva) gives ~44% coverage,
-        which falls in the partial_digest range.
+        which falls in the digest range.
         """
         result = align_pair(
             t251.jing_text, t223.full_text,
@@ -310,9 +310,9 @@ class TestClassificationJingAware:
             digest_length=len(t251.jing_text),
             source_length=t223.metadata.char_count,
         )
-        assert score.classification in ("partial_digest", "full_digest"), (
+        assert score.classification == "digest", (
             f"T251 jing→T223 classified as {score.classification}, "
-            f"expected partial_digest or full_digest"
+            f"expected digest (44% coverage is well below 80% excerpt threshold)"
         )
 
 
@@ -365,7 +365,7 @@ class TestScoreAll:
         T250 vs T251 are similar-length Heart Sutras.  When jing lengths are
         available via text_map, the size ratio drops below the retranslation
         threshold, so the pair should be classified as 'retranslation' (not
-        partial_digest).
+        digest).
         """
         result = align_pair(
             t250.full_text, t251.full_text,

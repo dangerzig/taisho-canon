@@ -117,13 +117,13 @@ class TestClassifyRelationship:
         )
         return classify_relationship(alignment, digest_len, source_len, **kwargs)
 
-    def test_full_digest(self):
-        score = self._make_classified(coverage=0.80, avg_seg_len=20)
-        assert score.classification == "full_digest"
+    def test_excerpt(self):
+        score = self._make_classified(coverage=0.85, avg_seg_len=20)
+        assert score.classification == "excerpt"
 
-    def test_partial_digest(self):
+    def test_digest(self):
         score = self._make_classified(coverage=0.50, avg_seg_len=15)
-        assert score.classification == "partial_digest"
+        assert score.classification == "digest"
 
     def test_commentary(self):
         """Low avg segment length with moderate coverage → commentary."""
@@ -156,6 +156,11 @@ class TestClassifyRelationship:
             digest_jing_length=300, source_jing_length=400,
         )
         assert score.classification == "retranslation"
+
+    def test_excerpt_blocked_by_low_avg_seg_len(self):
+        """High coverage but low avg segment length → digest, not excerpt."""
+        score = self._make_classified(coverage=0.85, avg_seg_len=12)
+        assert score.classification == "digest"
 
     def test_docnumber_xref_boosts_confidence(self):
         score_without = self._make_classified(coverage=0.50, avg_seg_len=15)
@@ -242,7 +247,7 @@ class TestScoreAll:
         }
         scores = score_all([alignment], meta_map)
         assert len(scores) == 1
-        assert scores[0].classification == "full_digest"
+        assert scores[0].classification == "excerpt"
 
     def test_skips_missing_metadata(self):
         alignment = _make_alignment(
@@ -279,7 +284,7 @@ class TestDetectMultiSourceDigests:
         scores = [
             DigestScore(
                 digest_id="d", source_id="s1",
-                classification="full_digest", confidence=0.9,
+                classification="excerpt", confidence=0.9,
                 containment=0.8, coverage=0.8, novel_fraction=0.2,
                 avg_segment_length=20, longest_segment=50,
                 num_source_regions=1, source_span=0.01,
@@ -297,14 +302,14 @@ class TestDetectMultiSourceDigests:
         scores = [
             DigestScore(
                 digest_id="d", source_id="s1",
-                classification="partial_digest", confidence=0.6,
+                classification="digest", confidence=0.6,
                 containment=0.5, coverage=0.5, novel_fraction=0.5,
                 avg_segment_length=25, longest_segment=50,
                 num_source_regions=1, source_span=0.01,
             ),
             DigestScore(
                 digest_id="d", source_id="s2",
-                classification="partial_digest", confidence=0.6,
+                classification="digest", confidence=0.6,
                 containment=0.5, coverage=0.5, novel_fraction=0.5,
                 avg_segment_length=25, longest_segment=50,
                 num_source_regions=1, source_span=0.01,
@@ -329,14 +334,14 @@ class TestDetectMultiSourceDigests:
         scores = [
             DigestScore(
                 digest_id="d", source_id="s1",
-                classification="partial_digest", confidence=0.6,
+                classification="digest", confidence=0.6,
                 containment=0.5, coverage=0.5, novel_fraction=0.5,
                 avg_segment_length=25, longest_segment=50,
                 num_source_regions=1, source_span=0.01,
             ),
             DigestScore(
                 digest_id="d", source_id="s2",
-                classification="partial_digest", confidence=0.6,
+                classification="digest", confidence=0.6,
                 containment=0.5, coverage=0.5, novel_fraction=0.5,
                 avg_segment_length=25, longest_segment=50,
                 num_source_regions=1, source_span=0.01,
@@ -355,7 +360,7 @@ class TestDetectMultiSourceDigests:
         assert len(result) == 0
 
     def test_ignores_non_digest_classifications(self):
-        """Only full_digest and partial_digest should be considered."""
+        """Only excerpt and digest should be considered."""
         scores = [
             DigestScore(
                 digest_id="d", source_id="s1",

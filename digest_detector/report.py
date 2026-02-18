@@ -20,12 +20,12 @@ logger = logging.getLogger(__name__)
 # Ground truth expectations
 GROUND_TRUTH = {
     ('T08n0250', 'T08n0223'): {
-        'expected_class': 'full_digest',
+        'expected_class': 'digest',
         'min_coverage': 0.70,
         'description': 'T250 (Kumārajīva Heart Sutra) is a digest of T223',
     },
     ('T08n0251', 'T08n0223'): {
-        'expected_class': 'partial_digest',
+        'expected_class': 'digest',
         'min_coverage': 0.30,
         'description': 'T251 (Xuanzang Heart Sutra) jing section is a digest of T223',
     },
@@ -267,7 +267,7 @@ def _generate_summary(
 
     lines.append("## Summary Statistics\n")
     lines.append(f"- Total relationships detected: {len(scores)}")
-    for cls in ['full_digest', 'partial_digest', 'commentary',
+    for cls in ['excerpt', 'digest', 'commentary',
                 'shared_tradition', 'retranslation']:
         count = len(by_class.get(cls, []))
         if count > 0:
@@ -293,7 +293,7 @@ def _generate_summary(
     lines.append("## Cluster Analysis: Source Texts with Multiple Digests\n")
     by_source = defaultdict(list)
     for s in scores:
-        if s.classification in ('full_digest', 'partial_digest'):
+        if s.classification in ('excerpt', 'digest'):
             by_source[s.source_id].append(s)
 
     for source_id in sorted(by_source, key=lambda x: len(by_source[x]), reverse=True):

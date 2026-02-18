@@ -182,8 +182,8 @@ Our pipeline detected **2,812 relationships** across the Taisho canon:
 
 | Classification   | Count | Description |
 |------------------|------:|-------------|
-| Full digests     |   181 | Shorter text draws >70% from the longer text |
-| Partial digests  |   484 | Shorter text draws 30-70% from the longer text |
+| Excerpts         |   132 | Shorter text draws >=80% from the longer text |
+| Digests          |   533 | Shorter text draws 30-80% from the longer text |
 | Commentaries     |   621 | Quotation with added material |
 | Shared tradition | 1,238 | Common content, not direct derivation |
 | Retranslations   |   288 | Similar-length texts, same source, different translations |
@@ -200,16 +200,16 @@ thesis. The key data points:
 
 | Digest | Source | Coverage | Confidence | Classification |
 |--------|--------|----------|------------|----------------|
-| T08n0250 (Heart Sutra, attr. Kumarajiva) | T08n0223 (Large Prajna, Kumarajiva) | 73.2% | 0.660 | full_digest |
-| T08n0250 (Heart Sutra, attr. Kumarajiva) | T25n1509 (Dazhidu lun, attr. Nagarjuna/Kumarajiva) | 72.8% | 0.617 | full_digest |
-| T08n0250 (Heart Sutra, attr. Kumarajiva) | T07n0220 (Large Prajna, fasc. 401-600, Xuanzang) | 51.0% | -- | partial_digest |
+| T08n0250 (Heart Sutra, attr. Kumarajiva) | T08n0223 (Large Prajna, Kumarajiva) | 73.2% | 0.660 | digest |
+| T08n0250 (Heart Sutra, attr. Kumarajiva) | T25n1509 (Dazhidu lun, attr. Nagarjuna/Kumarajiva) | 72.8% | 0.617 | digest |
+| T08n0250 (Heart Sutra, attr. Kumarajiva) | T07n0220 (Large Prajna, fasc. 401-600, Xuanzang) | 51.0% | -- | digest |
 
 **T251 (Xuanzang) vs. Prajnaparamita sources:**
 
 | Digest | Source | Coverage | Confidence | Classification |
 |--------|--------|----------|------------|----------------|
-| T08n0251 (Heart Sutra, Xuanzang) | T07n0220 (Large Prajna, fasc. 401-600, Xuanzang) | 55.4% | 0.454 | partial_digest |
-| T08n0251 (Heart Sutra, Xuanzang) | T08n0223 (Large Prajna, Kumarajiva) | 44.6% | 0.432 | partial_digest |
+| T08n0251 (Heart Sutra, Xuanzang) | T07n0220 (Large Prajna, fasc. 401-600, Xuanzang) | 55.4% | 0.454 | digest |
+| T08n0251 (Heart Sutra, Xuanzang) | T08n0223 (Large Prajna, Kumarajiva) | 44.6% | 0.432 | digest |
 
 **Cross-version Heart Sutra comparisons (retranslation pairs):**
 
@@ -405,7 +405,7 @@ with the classification status of texts in traditional Chinese catalogs
 
 **Implementation:**
 
-1. From our 181 full_digest relationships, identify the digest texts.
+1. From our 132 excerpt and 533 digest relationships, identify the digest texts.
 2. Cross-reference each with catalog data to determine whether it is classified
    as:
    - Authentic translation with named translator
@@ -502,7 +502,7 @@ and coverage profiles may provide clues.
 
 ### 5.3 Scale of the Question
 
-Of our 2,812 detected relationships, the 181 full digests and 484 partial digests
+Of our 2,812 detected relationships, the 132 excerpts and 533 digests
 are the primary candidates for this analysis. Among these, cases where the source
 text exists in multiple Chinese translations by different translators provide the
 most diagnostic power. Our 288 retranslation pairs identify these multi-translation
@@ -523,7 +523,7 @@ verbatim matching** that is the strongest evidence for Chinese-level composition
 The Heart Sutra case study, where our pipeline independently confirms Nattier's
 philological argument through computational means, demonstrates the potential of
 this approach. Extending it systematically across the 665 digest relationships
-(full + partial) in our dataset could identify previously unrecognized cases of
+(excerpts + digests) in our dataset could identify previously unrecognized cases of
 Chinese composition and contribute new quantitative evidence to longstanding
 debates about textual authenticity in the Chinese Buddhist canon.
 

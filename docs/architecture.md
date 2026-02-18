@@ -201,10 +201,10 @@ Each alignment is classified based on coverage, average segment length, and size
 coverage < 0.10                              → no_relationship (filtered out)
 0.10 ≤ coverage < 0.30                       → shared_tradition
 size_ratio < 3.0 and coverage ≥ 0.30         → retranslation
-coverage ≥ 0.70 and avg_seg_len ≥ 15         → full_digest
-coverage ≥ 0.30 and avg_seg_len ≥ 10         → partial_digest
+coverage ≥ 0.80 and avg_seg_len ≥ 15         → excerpt
+coverage ≥ 0.30 and avg_seg_len ≥ 10         → digest
 coverage ≥ 0.20 and avg_seg_len < 10         → commentary
-else                                          → partial_digest
+else                                          → digest
 ```
 
 ### Confidence Score
@@ -238,8 +238,8 @@ Hardcoded test expectations for the Heart Sutra:
 
 | Pair | Expected Class | Min Coverage |
 |------|---------------|-------------|
-| T08n0250 → T08n0223 | full_digest | 0.70 |
-| T08n0251 → T08n0223 | partial_digest | 0.30 |
+| T08n0250 → T08n0223 | digest | 0.70 |
+| T08n0251 → T08n0223 | digest | 0.30 |
 | T08n0250 ↔ T08n0251 | NOT digest of each other | — |
 
 6 checks total (2 classification + 2 coverage + 2 not-digest).
@@ -266,8 +266,8 @@ All tunable parameters are centralized in `config.py`. Key groups:
 | `FUZZY_MATCH_SCORE` | +1 | Character match reward |
 | `FUZZY_MISMATCH_SCORE` | -2 | Character mismatch penalty |
 | `FUZZY_EXTEND_THRESHOLD` | -4 | Stop extension when score drops below |
-| `FULL_DIGEST_THRESHOLD` | 0.70 | Coverage for full_digest |
-| `PARTIAL_DIGEST_THRESHOLD` | 0.30 | Coverage for partial_digest |
+| `EXCERPT_THRESHOLD` | 0.80 | Coverage for excerpt |
+| `DIGEST_THRESHOLD` | 0.30 | Coverage for digest |
 | `RETRANSLATION_SIZE_RATIO` | 3.0 | Max ratio for retranslation |
 | `COMMENTARY_AVG_SEG_LEN` | 10 | Below this → commentary |
 

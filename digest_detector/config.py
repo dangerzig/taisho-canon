@@ -28,10 +28,12 @@ FUZZY_MATCH_SCORE = 1  # Score for matching character during fuzzy extend
 FUZZY_MISMATCH_SCORE = -2  # Score for mismatching character during fuzzy extend
 
 # --- Stage 4: Scoring and Classification ---
-FULL_DIGEST_THRESHOLD = 0.70  # Containment >= this → full digest
-PARTIAL_DIGEST_THRESHOLD = 0.30  # Containment >= this → partial digest
+EXCERPT_THRESHOLD = 0.80  # Containment >= this → excerpt (verbatim extraction)
+DIGEST_THRESHOLD = 0.30  # Containment >= this → digest (condensed derivation)
 COMMENTARY_AVG_SEG_LEN = 10  # Below this avg segment length → commentary
-SHARED_TRADITION_THRESHOLD = 0.10  # Below partial, above this → shared tradition
+EXCERPT_AVG_SEG_LEN = 15  # Excerpt requires avg segment >= this
+COMMENTARY_COVERAGE_FLOOR = 0.20  # Minimum coverage for commentary classification
+SHARED_TRADITION_THRESHOLD = 0.10  # Below digest, above this → shared tradition
 RETRANSLATION_SIZE_RATIO = 3.0  # Texts within this ratio may be retranslations
 
 # Confidence score weights (must sum to 1.0)

@@ -12,8 +12,8 @@ near-verbatim overlap with its source.
 
 Our computational pipeline analyzed the entire Taisho canon -- approximately
 8,982 XML files across 58 volumes -- and detected 2,812 digest-type
-relationships, of which 181 were classified as full digests (coverage >= 70%),
-484 as partial digests (coverage 30-70%), 621 as commentaries, 1,238 as shared
+relationships, of which 132 were classified as excerpts (coverage >= 80%),
+533 as digests (coverage 30-80%), 621 as commentaries, 1,238 as shared
 tradition, and 288 as retranslations. Against this landscape, the Heart Sutra
 occupies a distinctive position.
 
@@ -58,7 +58,7 @@ and T223, producing results strikingly consistent with Nattier's philological
 analysis:
 
 **T250 (Kumarajiva version) -> T223:**
-- Classification: **full_digest**
+- Classification: **digest**
 - Coverage: **73.2%**
 - Confidence: 0.660
 - Novel fraction: 26.8%
@@ -67,7 +67,7 @@ analysis:
 - Source span: 0.000776 (the matched material comes from a tiny fraction of T223's ~286,000 characters)
 
 **T251 (Xuanzang version) -> T223:**
-- Classification: **partial_digest**
+- Classification: **digest**
 - Coverage: **44.6%**
 - Confidence: 0.432
 - Novel fraction: 55.4%
@@ -142,7 +142,7 @@ include:
 
 **Dharani/mantra collections:** The *Tuoluoni zaji* (T21n1336, Miscellaneous
 Dharani Collection) absorbs numerous shorter dharani texts, with 16 texts
-detected as full or partial digests.
+detected as excerpts or digests.
 
 **Chan/Zen record embeddings:** The *Jingde chuandeng lu* (T51n2076, Record of
 the Transmission of the Lamp) embeds earlier Chan texts like the *Xinxin ming*
@@ -160,9 +160,9 @@ The Heart Sutra sits within a broader Prajnaparamita digest cluster that our
 pipeline illuminates:
 
 **T08n0223 (Kumarajiva's Large Prajnaparamita) as source:**
-- T08n0250 (Kumarajiva Heart Sutra): full_digest, 73.2% coverage
-- T85n2747 (Interlinear commentary on Heart Sutra): partial_digest, 48.7%
-- T08n0251 (Xuanzang Heart Sutra): partial_digest, 44.6%
+- T08n0250 (Kumarajiva Heart Sutra): digest, 73.2% coverage
+- T85n2747 (Interlinear commentary on Heart Sutra): digest, 48.7%
+- T08n0251 (Xuanzang Heart Sutra): digest, 44.6%
 
 **T07n0220 (Xuanzang's Mahaprajnaparamita, fasc. 401-600) as source:**
 - T08n0251 (Xuanzang Heart Sutra): 55.4% coverage
@@ -170,7 +170,7 @@ pipeline illuminates:
 - T08n0241 (Vajrasekhara Prajnaparamita): 51.5% coverage
 
 **T25n1509 (Dazhidu lun / Mahaprajnaparamita-sastra) as source:**
-- T08n0250 (Kumarajiva Heart Sutra): full_digest, 72.8% coverage
+- T08n0250 (Kumarajiva Heart Sutra): digest, 72.8% coverage
 - T08n0251 (Xuanzang Heart Sutra): 47.7% coverage
 
 The Heart Sutra also shows cross-relationships with other short Prajnaparamita
@@ -357,7 +357,7 @@ it during walking meditation, or laypeople incorporating it into daily devotion
 face no barrier of length.
 
 Our pipeline data contextualizes this: the Heart Sutra is among the shortest
-texts in the entire canon to maintain a full_digest classification. Most full
+texts in the entire canon to maintain a digest classification. Most
 digests detected by the pipeline are considerably longer -- the Bodhisattva
 Precepts (T24n1501) runs to 7,715 characters, the Abhidharmakosa verses
 (T29n1560) to several thousand. The Heart Sutra achieves canonical authority in a
@@ -445,7 +445,7 @@ Heart Sutra uniquely adaptable.
 Based on our pipeline data, the Heart Sutra (T250) is distinctive along several
 measurable dimensions:
 
-| Metric | Heart Sutra (T250) | Typical full_digest (median) |
+| Metric | Heart Sutra (T250) | Typical excerpt (median) |
 |--------|-------------------|------------------------------|
 | Coverage | 73.2% | ~80-90% |
 | Novel fraction | 26.8% | ~10-20% |
@@ -454,7 +454,7 @@ measurable dimensions:
 | Source regions | 8 | ~2-5 |
 | Confidence | 0.660 | ~0.55-0.70 |
 
-The Heart Sutra's coverage is somewhat lower than typical full digests (because
+The Heart Sutra's coverage is somewhat lower than typical excerpts (because
 it adds more novel material), its compression ratio is vastly more extreme, and
 its source span is remarkably narrow (drawing from a tiny fraction of T223). The
 number of source regions (8) suggests material drawn from multiple locations
@@ -462,7 +462,7 @@ within T223, consistent with selective extraction rather than sequential copying
 
 ### 7.2 A Qualitative Assessment
 
-Among the 181 full digests and 484 partial digests detected by our pipeline, the
+Among the 132 excerpts and 533 digests detected by our pipeline, the
 Heart Sutra is qualitatively unique in several ways:
 
 1. **It is the only philosophical digest that includes a mantra.** No other
@@ -522,8 +522,8 @@ vs. 44.6% for Xuanzang's T251 against Kumarajiva's T223) provides quantitative
 support for the Chinese-composition hypothesis.
 
 But our analysis also reveals just how exceptional the Heart Sutra is within the
-broader landscape of digests. Among 2,812 detected relationships, including 181
-full digests, no other text combines:
+broader landscape of digests. Among 2,812 detected relationships, including 132
+excerpts and 533 digests, no other text combines:
 
 - Extreme compression (960:1)
 - Creative reframing (new speakers, added mantra)
@@ -547,4 +547,4 @@ That is an achievement no pipeline can fully measure.
 project, covering 8,982 XML texts across 58 volumes. Pipeline methodology:
 5-stage process (extract, fingerprint/candidates, align, score, report) with
 validation against ground truth including T250/T251 -> T223 relationships. All
-statistics drawn from pipeline output dated 2025.*
+statistics drawn from pipeline output dated 2026.*

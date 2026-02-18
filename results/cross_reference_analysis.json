@@ -1176,27 +1176,27 @@
     ]
   },
   "coverage_by_classification": {
-    "full_digest": {
-      "total": 181,
-      "has_any_parallel": 105,
-      "pct_any": 58.0,
-      "has_tibetan": 83,
-      "pct_tibetan": 45.9,
-      "has_pali": 9,
-      "pct_pali": 5.0,
-      "has_sanskrit": 89,
-      "pct_sanskrit": 49.2
+    "excerpt": {
+      "total": 132,
+      "has_any_parallel": 81,
+      "pct_any": 61.4,
+      "has_tibetan": 65,
+      "pct_tibetan": 49.2,
+      "has_pali": 7,
+      "pct_pali": 5.3,
+      "has_sanskrit": 72,
+      "pct_sanskrit": 54.5
     },
-    "partial_digest": {
-      "total": 484,
-      "has_any_parallel": 249,
-      "pct_any": 51.4,
-      "has_tibetan": 191,
-      "pct_tibetan": 39.5,
-      "has_pali": 25,
-      "pct_pali": 5.2,
-      "has_sanskrit": 218,
-      "pct_sanskrit": 45.0
+    "digest": {
+      "total": 533,
+      "has_any_parallel": 273,
+      "pct_any": 51.2,
+      "has_tibetan": 209,
+      "pct_tibetan": 39.2,
+      "has_pali": 27,
+      "pct_pali": 5.1,
+      "has_sanskrit": 235,
+      "pct_sanskrit": 44.1
     },
     "retranslation": {
       "total": 288,
@@ -1271,7 +1271,7 @@
       {
         "digest_id": "T10n0295",
         "source_id": "T10n0279",
-        "classification": "full_digest",
+        "classification": "excerpt",
         "coverage": 0.8162,
         "confidence": 0.7333,
         "shared_tibetan": [
@@ -1282,7 +1282,7 @@
       {
         "digest_id": "T10n0295",
         "source_id": "T09n0278",
-        "classification": "full_digest",
+        "classification": "excerpt",
         "coverage": 1.0,
         "confidence": 0.721,
         "shared_tibetan": [
@@ -1305,7 +1305,7 @@
       {
         "digest_id": "T08n0232",
         "source_id": "T11n0310",
-        "classification": "full_digest",
+        "classification": "excerpt",
         "coverage": 0.9709,
         "confidence": 0.6612,
         "shared_tibetan": [
@@ -1316,7 +1316,7 @@
       {
         "digest_id": "T08n0250",
         "source_id": "T08n0223",
-        "classification": "full_digest",
+        "classification": "digest",
         "coverage": 0.7315,
         "confidence": 0.6598,
         "shared_tibetan": [
@@ -1404,7 +1404,7 @@
       {
         "digest_id": "T02n0128b",
         "source_id": "T02n0125",
-        "classification": "full_digest",
+        "classification": "excerpt",
         "coverage": 0.9973,
         "confidence": 0.6365,
         "shared_tibetan": [
@@ -1414,7 +1414,7 @@
       {
         "digest_id": "T20n1098",
         "source_id": "T20n1092",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.5883,
         "confidence": 0.6253,
         "shared_tibetan": [
@@ -1448,7 +1448,7 @@
       {
         "digest_id": "T20n1057b",
         "source_id": "T20n1057a",
-        "classification": "full_digest",
+        "classification": "excerpt",
         "coverage": 0.9661,
         "confidence": 0.6199,
         "shared_tibetan": [
@@ -1470,7 +1470,7 @@
       {
         "digest_id": "T20n1035",
         "source_id": "T18n0901",
-        "classification": "full_digest",
+        "classification": "excerpt",
         "coverage": 0.8115,
         "confidence": 0.6156,
         "shared_tibetan": [
@@ -1555,7 +1555,7 @@
       {
         "digest_id": "T12n0347",
         "source_id": "T11n0310",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.619,
         "confidence": 0.5922,
         "shared_tibetan": [
@@ -1653,7 +1653,7 @@
       {
         "digest_id": "T14n0475",
         "source_id": "T38n1775",
-        "classification": "full_digest",
+        "classification": "excerpt",
         "coverage": 0.911,
         "confidence": 0.5338,
         "shared_tibetan": [
@@ -1697,7 +1697,7 @@
       {
         "digest_id": "T10n0286",
         "source_id": "T09n0278",
-        "classification": "full_digest",
+        "classification": "excerpt",
         "coverage": 0.805,
         "confidence": 0.5242,
         "shared_tibetan": [
@@ -1708,7 +1708,7 @@
       {
         "digest_id": "T13n0417",
         "source_id": "T13n0418",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.5332,
         "confidence": 0.5169,
         "shared_tibetan": [
@@ -1789,7 +1789,7 @@
       {
         "digest_id": "T12n0336",
         "source_id": "T11n0310",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.5201,
         "confidence": 0.4945,
         "shared_tibetan": [
@@ -1823,7 +1823,7 @@
       {
         "digest_id": "T10n0287",
         "source_id": "T10n0279",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.4045,
         "confidence": 0.4875,
         "shared_tibetan": [
@@ -1834,7 +1834,7 @@
       {
         "digest_id": "T19n0974F",
         "source_id": "T19n0974E",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.4404,
         "confidence": 0.4837,
         "shared_tibetan": [
@@ -1849,7 +1849,7 @@
       {
         "digest_id": "T19n1029",
         "source_id": "T21n1353",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.6104,
         "confidence": 0.4835,
         "shared_tibetan": [
@@ -1923,7 +1923,7 @@
       {
         "digest_id": "T20n1070",
         "source_id": "T18n0901",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.6482,
         "confidence": 0.4789,
         "shared_tibetan": [
@@ -1938,7 +1938,7 @@
       {
         "digest_id": "T19n0974D",
         "source_id": "T19n0974C",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.3886,
         "confidence": 0.4754,
         "shared_tibetan": [
@@ -2042,7 +2042,7 @@
       {
         "digest_id": "T10n0295",
         "source_id": "T10n0293",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.6353,
         "confidence": 0.4619,
         "shared_tibetan": [
@@ -2113,7 +2113,7 @@
       {
         "digest_id": "T21n1266",
         "source_id": "T18n0901",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.5095,
         "confidence": 0.4437,
         "shared_tibetan": [
@@ -2185,7 +2185,7 @@
       {
         "digest_id": "T08n0251",
         "source_id": "T08n0223",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.4462,
         "confidence": 0.4322,
         "shared_tibetan": [
@@ -2219,7 +2219,7 @@
       {
         "digest_id": "T08n0241",
         "source_id": "T07n0220",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.5152,
         "confidence": 0.4286,
         "shared_tibetan": [
@@ -2330,7 +2330,7 @@
       {
         "digest_id": "T15n0641",
         "source_id": "T15n0639",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.6048,
         "confidence": 0.4183,
         "shared_tibetan": [
@@ -2461,7 +2461,7 @@
       {
         "digest_id": "T21n1313",
         "source_id": "T21n1318",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.5251,
         "confidence": 0.4018,
         "shared_tibetan": [
@@ -2560,7 +2560,7 @@
       {
         "digest_id": "T12n0353",
         "source_id": "T11n0310",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.5011,
         "confidence": 0.3968,
         "shared_tibetan": [
@@ -2593,7 +2593,7 @@
       {
         "digest_id": "T12n0325",
         "source_id": "T11n0310",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.4596,
         "confidence": 0.3952,
         "shared_tibetan": [
@@ -2877,7 +2877,7 @@
       {
         "digest_id": "T04n0213",
         "source_id": "T04n0212",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.4628,
         "confidence": 0.3802,
         "shared_tibetan": [
@@ -2982,7 +2982,7 @@
       {
         "digest_id": "T14n0464",
         "source_id": "T26n1531",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.5535,
         "confidence": 0.3758,
         "shared_tibetan": [
@@ -4525,7 +4525,7 @@
       {
         "digest_id": "T14n0467",
         "source_id": "T26n1531",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.3669,
         "confidence": 0.3109,
         "shared_tibetan": [
@@ -4546,7 +4546,7 @@
       {
         "digest_id": "T19n0974D",
         "source_id": "T19n0972",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.3977,
         "confidence": 0.3083,
         "shared_tibetan": [
@@ -4560,7 +4560,7 @@
       {
         "digest_id": "T24n1449",
         "source_id": "T24n1453",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.3475,
         "confidence": 0.3062,
         "shared_tibetan": [
@@ -4755,7 +4755,7 @@
       {
         "digest_id": "T21n1314",
         "source_id": "T21n1318",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.304,
         "confidence": 0.267,
         "shared_tibetan": [
@@ -4835,7 +4835,7 @@
       {
         "digest_id": "T29n1560",
         "source_id": "T29n1558",
-        "classification": "full_digest",
+        "classification": "excerpt",
         "coverage": 0.9945,
         "confidence": 0.7401,
         "digest_tibetan": [
@@ -4848,7 +4848,7 @@
       {
         "digest_id": "T02n0110",
         "source_id": "T24n1451",
-        "classification": "full_digest",
+        "classification": "excerpt",
         "coverage": 1.0,
         "confidence": 0.7368,
         "digest_tibetan": [
@@ -4869,7 +4869,7 @@
       {
         "digest_id": "T31n1601",
         "source_id": "T31n1600",
-        "classification": "full_digest",
+        "classification": "excerpt",
         "coverage": 0.997,
         "confidence": 0.736,
         "digest_tibetan": [
@@ -4882,7 +4882,7 @@
       {
         "digest_id": "T31n1593",
         "source_id": "T31n1595",
-        "classification": "full_digest",
+        "classification": "excerpt",
         "coverage": 0.9634,
         "confidence": 0.7161,
         "digest_tibetan": [
@@ -4895,7 +4895,7 @@
       {
         "digest_id": "T31n1594",
         "source_id": "T31n1597",
-        "classification": "full_digest",
+        "classification": "excerpt",
         "coverage": 0.9817,
         "confidence": 0.7155,
         "digest_tibetan": [
@@ -4908,7 +4908,7 @@
       {
         "digest_id": "T31n1594",
         "source_id": "T31n1598",
-        "classification": "full_digest",
+        "classification": "excerpt",
         "coverage": 0.959,
         "confidence": 0.7107,
         "digest_tibetan": [
@@ -4921,7 +4921,7 @@
       {
         "digest_id": "T25n1518",
         "source_id": "T25n1517",
-        "classification": "full_digest",
+        "classification": "excerpt",
         "coverage": 0.9029,
         "confidence": 0.702,
         "digest_tibetan": [
@@ -4948,7 +4948,7 @@
       {
         "digest_id": "T08n0250",
         "source_id": "T25n1509",
-        "classification": "full_digest",
+        "classification": "digest",
         "coverage": 0.7282,
         "confidence": 0.6173,
         "digest_tibetan": [
@@ -4969,7 +4969,7 @@
       {
         "digest_id": "T14n0453",
         "source_id": "T02n0125",
-        "classification": "full_digest",
+        "classification": "digest",
         "coverage": 0.7304,
         "confidence": 0.5836,
         "digest_tibetan": [
@@ -4993,7 +4993,7 @@
       {
         "digest_id": "T29n1560",
         "source_id": "T29n1563",
-        "classification": "full_digest",
+        "classification": "excerpt",
         "coverage": 0.9637,
         "confidence": 0.5834,
         "digest_tibetan": [
@@ -5006,7 +5006,7 @@
       {
         "digest_id": "T08n0236a",
         "source_id": "T25n1510b",
-        "classification": "full_digest",
+        "classification": "excerpt",
         "coverage": 0.9689,
         "confidence": 0.5758,
         "digest_tibetan": [
@@ -5033,7 +5033,7 @@
       {
         "digest_id": "T16n0676",
         "source_id": "T30n1579",
-        "classification": "full_digest",
+        "classification": "excerpt",
         "coverage": 0.8654,
         "confidence": 0.5682,
         "digest_tibetan": [
@@ -5056,7 +5056,7 @@
       {
         "digest_id": "T24n1455",
         "source_id": "T23n1443",
-        "classification": "full_digest",
+        "classification": "excerpt",
         "coverage": 0.8807,
         "confidence": 0.5505,
         "digest_tibetan": [
@@ -5072,7 +5072,7 @@
       {
         "digest_id": "T24n1454",
         "source_id": "T24n1458",
-        "classification": "full_digest",
+        "classification": "excerpt",
         "coverage": 0.819,
         "confidence": 0.53,
         "digest_tibetan": [
@@ -5086,7 +5086,7 @@
       {
         "digest_id": "T21n1254",
         "source_id": "T18n0901",
-        "classification": "full_digest",
+        "classification": "digest",
         "coverage": 0.706,
         "confidence": 0.5105,
         "digest_tibetan": [
@@ -5148,7 +5148,7 @@
       {
         "digest_id": "T24n1454",
         "source_id": "T23n1443",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.6925,
         "confidence": 0.4921,
         "digest_tibetan": [
@@ -5164,7 +5164,7 @@
       {
         "digest_id": "T08n0235",
         "source_id": "T25n1510b",
-        "classification": "full_digest",
+        "classification": "digest",
         "coverage": 0.7898,
         "confidence": 0.4894,
         "digest_tibetan": [
@@ -5178,7 +5178,7 @@
       {
         "digest_id": "T24n1454",
         "source_id": "T23n1442",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.6356,
         "confidence": 0.4856,
         "digest_tibetan": [
@@ -5195,7 +5195,7 @@
       {
         "digest_id": "T19n1019",
         "source_id": "T05n0220",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.6031,
         "confidence": 0.4856,
         "digest_tibetan": [
@@ -5283,7 +5283,7 @@
       {
         "digest_id": "T21n1348",
         "source_id": "T14n0443",
-        "classification": "partial_digest",
+        "classification": "digest",
         "coverage": 0.5277,
         "confidence": 0.4663,
         "digest_tibetan": [
