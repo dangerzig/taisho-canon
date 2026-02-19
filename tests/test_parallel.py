@@ -14,21 +14,7 @@ from digest_detector.fingerprint import (
 from digest_detector.candidates import generate_phonetic_candidates
 from digest_detector.phonetic import build_equivalence_table
 from digest_detector.models import ExtractedText, TextMetadata
-
-
-def _make_text(text_id: str, content: str, dharani_ranges=None) -> ExtractedText:
-    """Helper to create a minimal ExtractedText."""
-    return ExtractedText(
-        text_id=text_id,
-        full_text=content,
-        segments=[],
-        metadata=TextMetadata(
-            text_id=text_id, title='', author='',
-            extent_juan=1, char_count=len(content),
-            file_count=1,
-        ),
-        dharani_ranges=dharani_ranges or [],
-    )
+from tests.helpers import make_text
 
 
 @pytest.fixture(scope="module")
@@ -51,7 +37,7 @@ def sample_texts():
         "妙法蓮華經方便品第二爾時世尊從三昧安詳而起告舍利弗諸佛智慧甚深無量其智慧門難解難入",
         "華嚴經入法界品善財童子參德雲比丘善財童子漸次南行至勝樂國妙峰山上見德雲比丘經行往來",
     ]
-    return [_make_text(f"T01n{i:04d}", text) for i, text in enumerate(base_texts)]
+    return [make_text(f"T01n{i:04d}", text) for i, text in enumerate(base_texts)]
 
 
 @pytest.fixture(scope="module")
@@ -104,7 +90,7 @@ class TestPhoneticCandidatesParallel:
             full_text = padding + dharani_block + padding
             dr_start = len(padding)
             dr_end = dr_start + len(dharani_block)
-            texts.append(_make_text(
+            texts.append(make_text(
                 f"T01n{i:04d}", full_text,
                 dharani_ranges=[(dr_start, dr_end)],
             ))

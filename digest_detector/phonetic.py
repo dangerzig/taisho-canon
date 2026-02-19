@@ -395,6 +395,11 @@ def phonetic_mapping_for_pair(
         List of (digest_char, sanskrit_syllable, source_char) triples.
         If a position has no shared syllable, sanskrit_syllable is "?".
     """
+    if len(digest_text) != len(source_text):
+        raise ValueError(
+            f"phonetic_mapping_for_pair requires equal-length strings, "
+            f"got {len(digest_text)} and {len(source_text)}"
+        )
     mapping = []
     for d_ch, s_ch in zip(digest_text, source_text):
         if d_ch == s_ch:

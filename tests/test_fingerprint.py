@@ -11,20 +11,7 @@ from digest_detector.fingerprint import (
     stable_hash,
 )
 from digest_detector.models import ExtractedText, TextMetadata
-
-
-def _make_text(text_id: str, content: str) -> ExtractedText:
-    """Helper to create a minimal ExtractedText."""
-    return ExtractedText(
-        text_id=text_id,
-        full_text=content,
-        segments=[],
-        metadata=TextMetadata(
-            text_id=text_id, title='', author='',
-            extent_juan=1, char_count=len(content),
-            file_count=1,
-        ),
-    )
+from tests.helpers import make_text
 
 
 class TestGenerateNgrams:
@@ -49,9 +36,9 @@ class TestGenerateNgrams:
 class TestDocumentFrequencies:
     def test_basic(self):
         texts = [
-            _make_text("t1", "般若波羅蜜多心經"),
-            _make_text("t2", "般若波羅蜜大明呪"),
-            _make_text("t3", "觀自在菩薩行深"),
+            make_text("t1", "般若波羅蜜多心經"),
+            make_text("t2", "般若波羅蜜大明呪"),
+            make_text("t3", "觀自在菩薩行深"),
         ]
         doc_freq = compute_document_frequencies(texts, n=5)
 
@@ -68,9 +55,9 @@ class TestStopgrams:
     def test_identifies_common_grams(self):
         # 3 texts, threshold 0.5, so any gram in >1.5 texts is a stopgram
         texts = [
-            _make_text("t1", "般若波羅蜜多心經色空"),
-            _make_text("t2", "般若波羅蜜大明呪色空"),
-            _make_text("t3", "般若波羅蜜多心經玄奘"),
+            make_text("t1", "般若波羅蜜多心經色空"),
+            make_text("t2", "般若波羅蜜大明呪色空"),
+            make_text("t3", "般若波羅蜜多心經玄奘"),
         ]
         doc_freq = compute_document_frequencies(texts, n=5)
         stopgrams = identify_stopgrams(doc_freq, len(texts), threshold=0.5)
@@ -82,8 +69,8 @@ class TestStopgrams:
 class TestNgramSets:
     def test_basic_structure(self):
         texts = [
-            _make_text("t1", "般若波羅蜜多心經大明"),
-            _make_text("t2", "觀自在菩薩行深般若波"),
+            make_text("t1", "般若波羅蜜多心經大明"),
+            make_text("t2", "觀自在菩薩行深般若波"),
         ]
         doc_freq = compute_document_frequencies(texts, n=5)
         stopgrams = identify_stopgrams(doc_freq, len(texts), threshold=1.0)
@@ -105,8 +92,8 @@ class TestNgramSets:
     def test_shared_ngrams(self):
         """Texts sharing an n-gram should have that hash in both sets."""
         texts = [
-            _make_text("t1", "般若波羅蜜多心經大明"),
-            _make_text("t2", "觀自在菩薩行深般若波羅蜜"),
+            make_text("t1", "般若波羅蜜多心經大明"),
+            make_text("t2", "觀自在菩薩行深般若波羅蜜"),
         ]
         doc_freq = compute_document_frequencies(texts, n=5)
         stopgrams = identify_stopgrams(doc_freq, len(texts), threshold=1.0)
@@ -120,7 +107,7 @@ class TestNgramSets:
     def test_excludes_stopgrams(self):
         """Stopgram hashes should not appear in n-gram sets."""
         texts = [
-            _make_text("t1", "般若波羅蜜多心經大明"),
+            make_text("t1", "般若波羅蜜多心經大明"),
         ]
         stopgrams = {stable_hash("般若波羅蜜")}
         ngram_sets = build_ngram_sets(texts, stopgrams, n=5)
@@ -144,8 +131,8 @@ class TestNumWorkersEdgeCases:
 
     def test_compute_doc_freq_zero_workers(self):
         texts = [
-            _make_text("t1", "般若波羅蜜多心經大明"),
-            _make_text("t2", "觀自在菩薩行深般若波"),
+            make_text("t1", "般若波羅蜜多心經大明"),
+            make_text("t2", "觀自在菩薩行深般若波"),
         ]
         result = compute_document_frequencies(texts, n=5, num_workers=0)
         assert isinstance(result, dict)
@@ -153,8 +140,8 @@ class TestNumWorkersEdgeCases:
 
     def test_build_ngram_sets_zero_workers(self):
         texts = [
-            _make_text("t1", "般若波羅蜜多心經大明"),
-            _make_text("t2", "觀自在菩薩行深般若波"),
+            make_text("t1", "般若波羅蜜多心經大明"),
+            make_text("t2", "觀自在菩薩行深般若波"),
         ]
         doc_freq = compute_document_frequencies(texts, n=5, num_workers=1)
         stopgrams = identify_stopgrams(doc_freq, len(texts), threshold=1.0)

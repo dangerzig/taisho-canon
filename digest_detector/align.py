@@ -7,12 +7,14 @@ phonetically equivalent transliterations (dharani detection).
 """
 
 import logging
+from bisect import bisect_right
 from collections import defaultdict
 from multiprocessing import Pool
 
 from tqdm import tqdm
 
 from . import config
+from .fast import fast_find_seeds, fast_fuzzy_extend
 from .models import (
     ExtractedText, CandidatePair, AlignmentSegment, AlignmentResult,
 )
@@ -34,55 +36,19 @@ def _build_kgram_table(text: str, k: int) -> dict[str, list[int]]:
     return table
 
 
-def _find_seeds(digest: str, source: str, k: int = None) -> list[tuple[int, int, int]]:
+def _find_seeds(
+    digest: str, source: str, k: int = None,
+    source_table: dict[str, list[int]] | None = None,
+) -> list[tuple[int, int, int]]:
     """Find all maximal exact matching substrings of length >= k.
 
     Returns list of (d_start, s_start, length) triples.
     Uses a k-gram hash table on the source for efficient seed finding.
+    Delegates to fast_find_seeds (Cython when available, else pure Python).
     """
     if k is None:
         k = config.MIN_SEED_LENGTH
-
-    if len(digest) < k or len(source) < k:
-        return []
-
-    source_table = _build_kgram_table(source, k)
-    seeds = []
-    d_len = len(digest)
-    s_len = len(source)
-
-    # Track which digest positions are already covered by extended seeds
-    # to avoid redundant work
-    d_pos = 0
-    while d_pos <= d_len - k:
-        kgram = digest[d_pos:d_pos + k]
-        if kgram not in source_table:
-            d_pos += 1
-            continue
-
-        # Keep only the longest match at this digest position. This greedy
-        # choice trades a small risk of suboptimal chaining for much fewer
-        # seeds passed to the DP, which matters for large texts.
-        best_match = None
-        for s_pos in source_table[kgram]:
-            # Extend the match greedily
-            length = k
-            while (d_pos + length < d_len and
-                   s_pos + length < s_len and
-                   digest[d_pos + length] == source[s_pos + length]):
-                length += 1
-            if best_match is None or length > best_match[2]:
-                best_match = (d_pos, s_pos, length)
-
-        if best_match:
-            seeds.append(best_match)
-            # Skip past this match in the digest to find non-overlapping seeds
-            # But we still need to find seeds at d_pos+1 for overlapping coverage
-            d_pos += 1
-        else:
-            d_pos += 1
-
-    return seeds
+    return fast_find_seeds(digest, source, k, source_table)
 
 
 def _fuzzy_extend(
@@ -93,66 +59,14 @@ def _fuzzy_extend(
     """Extend a match boundary with fuzzy matching.
 
     Returns (d_extension, s_extension) — number of chars extended.
-    Uses simple scoring: +1 match, -2 mismatch, stop when score < threshold.
+    Delegates to fast_fuzzy_extend (Cython when available, else pure Python).
     """
-    match_score = config.FUZZY_MATCH_SCORE
-    mismatch_score = config.FUZZY_MISMATCH_SCORE
-    threshold = config.FUZZY_EXTEND_THRESHOLD
-
-    d_len = len(digest)
-    s_len = len(source)
-    score = 0
-    best_score = 0
-    best_d_ext = 0
-    best_s_ext = 0
-    d_ext = 0
-    s_ext = 0
-
-    while True:
-        d_idx = d_pos + d_ext * direction
-        s_idx = s_pos + s_ext * direction
-
-        if d_idx < 0 or d_idx >= d_len or s_idx < 0 or s_idx >= s_len:
-            break
-
-        if digest[d_idx] == source[s_idx]:
-            score += match_score
-            d_ext += 1
-            s_ext += 1
-        else:
-            # Try skip in digest (gap in source)
-            d_next = d_pos + (d_ext + 1) * direction
-            # Try skip in source (gap in digest)
-            s_next = s_pos + (s_ext + 1) * direction
-
-            # Check single-char gap options
-            gap_d = (0 <= d_next < d_len and 0 <= s_idx < s_len and
-                     digest[d_next] == source[s_idx])
-            gap_s = (0 <= d_idx < d_len and 0 <= s_next < s_len and
-                     digest[d_idx] == source[s_next])
-
-            if gap_d:
-                score += mismatch_score
-                d_ext += 2  # skip one char in digest
-                s_ext += 1
-            elif gap_s:
-                score += mismatch_score
-                d_ext += 1
-                s_ext += 2  # skip one char in source
-            else:
-                score += mismatch_score
-                d_ext += 1
-                s_ext += 1
-
-        if score > best_score:
-            best_score = score
-            best_d_ext = d_ext
-            best_s_ext = s_ext
-
-        if score < threshold:
-            break
-
-    return best_d_ext, best_s_ext
+    return fast_fuzzy_extend(
+        digest, source, d_pos, s_pos, direction,
+        config.FUZZY_MATCH_SCORE,
+        config.FUZZY_MISMATCH_SCORE,
+        config.FUZZY_EXTEND_THRESHOLD,
+    )
 
 
 def _extend_seeds(
@@ -232,14 +146,16 @@ def _chain_seeds(
     weights = [s[1] - s[0] for s in sorted_seeds]
     dp = weights[:]
 
+    # Precompute end positions for binary search (sorted ascending since
+    # sorted_seeds is sorted by d_end)
+    end_positions = [s[1] for s in sorted_seeds]
+
     for i in range(n):
         d_start_i = sorted_seeds[i][0]
-        # Find the rightmost seed j < i that doesn't overlap with i
-        best_prev = -1
-        for j in range(i - 1, -1, -1):
-            if sorted_seeds[j][1] <= d_start_i:
-                best_prev = j
-                break
+        # Find the rightmost seed j < i where d_end <= d_start_i
+        # bisect_right gives the insertion point for d_start_i in end_positions,
+        # so index - 1 is the rightmost seed ending at or before d_start_i
+        best_prev = bisect_right(end_positions, d_start_i, 0, i) - 1
 
         if best_prev >= 0:
             dp[i] = max(dp[i], dp[best_prev] + weights[i])
@@ -265,9 +181,8 @@ def _chain_seeds(
             remaining_coverage -= weights[i]
             if remaining_coverage <= 0:
                 break
-            i -= 1
-            while i >= 0 and sorted_seeds[i][1] > d_start_i:
-                i -= 1
+            # Jump to rightmost non-overlapping predecessor via binary search
+            i = bisect_right(end_positions, d_start_i, 0, i) - 1
         else:
             i -= 1
 
@@ -468,6 +383,7 @@ def align_pair(
     digest_id: str = "",
     source_id: str = "",
     skip_phonetic_rescan: bool = False,
+    source_table: dict[str, list[int]] | None = None,
 ) -> AlignmentResult:
     """Perform full seed-and-extend alignment between digest and source.
 
@@ -475,6 +391,8 @@ def align_pair(
         skip_phonetic_rescan: If True, skip the expensive phonetic rescan
             of novel segments. Used for pairs already discovered via
             phonetic candidate generation (Stage 2b).
+        source_table: Optional prebuilt k-gram table for the source text.
+            If provided, _find_seeds reuses it instead of rebuilding.
 
     Returns an AlignmentResult with segment-by-segment mapping.
     """
@@ -484,12 +402,24 @@ def align_pair(
     if d_len == 0:
         return AlignmentResult(digest_id=digest_id, source_id=source_id)
 
-    # Step 1: Find seeds
-    raw_seeds = _find_seeds(digest_text, source_text)
+    # Step 1: Find seeds and deduplicate
+    raw_seeds = _find_seeds(digest_text, source_text, source_table=source_table)
+
+    # Deduplicate: keep only the longest seed for each (d_start, s_start).
+    # _find_seeds advances d_pos by 1 each step, so nearby positions often
+    # produce overlapping seeds pointing to the same source region.
+    if raw_seeds:
+        best_seeds: dict[tuple[int, int], int] = {}
+        for d_start, s_start, length in raw_seeds:
+            key = (d_start, s_start)
+            if key not in best_seeds or length > best_seeds[key]:
+                best_seeds[key] = length
+        raw_seeds = [(d, s, l) for (d, s), l in best_seeds.items()]
 
     # Early termination: if raw seed coverage is below SHARED_TRADITION_THRESHOLD
     # and phonetic rescan won't run, the pair cannot produce any useful
     # classification. Skip the expensive extend/chain steps.
+    # Note: computed after dedup to avoid overcounting overlapping seeds.
     if raw_seeds:
         raw_coverage = sum(length for _, _, length in raw_seeds) / d_len
     else:
@@ -583,7 +513,8 @@ def align_pair(
 
     # Source span: fraction of source text that contributes
     # Uses interval merging rather than per-position sets for efficiency
-    matched_segments = [s for s in segments if s.match_type != "novel"]
+    matched_segments = [s for s in segments
+                        if s.match_type != "novel" and s.source_start >= 0]
     if matched_segments and s_len > 0:
         intervals = sorted((seg.source_start, seg.source_end) for seg in matched_segments)
         merged_len = 0
@@ -637,11 +568,30 @@ def _count_source_regions(
     return regions
 
 
+# Process-local source table cache: (source_id, k) → kgram table.
+# Caching just the last source avoids unbounded memory growth while
+# exploiting consecutive same-source tasks (when sorted by source_id).
+_cached_source_table: tuple[str, int, dict] | None = None
+
+
 def _align_pair_wrapper(args):
-    """Wrapper for multiprocessing."""
+    """Wrapper for multiprocessing with source table caching."""
+    global _cached_source_table
     digest_id, source_id, digest_text, source_text, skip_phonetic = args
+
+    k = config.MIN_SEED_LENGTH
+    # Check if we can reuse the cached source table
+    if (_cached_source_table is not None
+            and _cached_source_table[0] == source_id
+            and _cached_source_table[1] == k):
+        source_table = _cached_source_table[2]
+    else:
+        source_table = _build_kgram_table(source_text, k)
+        _cached_source_table = (source_id, k, source_table)
+
     return align_pair(digest_text, source_text, digest_id, source_id,
-                      skip_phonetic_rescan=skip_phonetic)
+                      skip_phonetic_rescan=skip_phonetic,
+                      source_table=source_table)
 
 
 def align_candidates(
@@ -658,7 +608,7 @@ def align_candidates(
 
     Returns list of AlignmentResult objects.
     """
-    num_workers = config.resolve_worker_count(num_workers)
+    num_workers = config.resolve_worker_count(num_workers, memory_intensive=False)
 
     # Step 1: Build set of phonetic pair keys for cross-check
     phonetic_pairs = {(c.digest_id, c.source_id) for c in candidates
@@ -706,9 +656,10 @@ def align_candidates(
                     "(both texts >%d chars)",
                     skipped, config.DOCNUM_PREFILTER_MIN_LEN)
 
-    # Step 3: LPT scheduling — sort by estimated cost (d_len * s_len)
-    # descending so expensive pairs start first and cheap ones fill gaps
-    args_list.sort(key=lambda a: len(a[2]) * len(a[3]), reverse=True)
+    # Step 3: Sort by (-source_len, source_id, -digest_len).
+    # This clusters pairs by source for k-gram table cache reuse while
+    # keeping LPT scheduling (largest sources first → expensive pairs start early).
+    args_list.sort(key=lambda a: (-len(a[3]), a[1], -len(a[2])))
 
     logger.info("Aligning %d candidate pairs with %d workers...",
                 len(args_list), num_workers)

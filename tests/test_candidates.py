@@ -13,22 +13,7 @@ from digest_detector.fingerprint import (
     build_ngram_sets,
 )
 from digest_detector.models import ExtractedText, TextMetadata, DivSegment
-
-
-def _make_text(text_id: str, content: str, **meta_overrides) -> ExtractedText:
-    """Helper to create a minimal ExtractedText."""
-    meta_kwargs = dict(
-        text_id=text_id, title='', author='',
-        extent_juan=1, char_count=len(content),
-        file_count=1,
-    )
-    meta_kwargs.update(meta_overrides)
-    return ExtractedText(
-        text_id=text_id,
-        full_text=content,
-        segments=[],
-        metadata=TextMetadata(**meta_kwargs),
-    )
+from tests.helpers import make_text
 
 
 def _make_metadata(text_id: str, char_count: int, **overrides) -> TextMetadata:
@@ -130,7 +115,7 @@ class TestGenerateCandidatesDegenerate:
     def test_empty_ngram_sets(self):
         """Empty ngram_sets dict produces no candidates."""
         texts = [
-            _make_text("T01n0001", "般若波羅蜜多心經觀自在菩薩"),
+            make_text("T01n0001", "般若波羅蜜多心經觀自在菩薩"),
         ]
         candidates = generate_candidates(texts, ngram_sets={}, stopgrams=set())
         assert candidates == []
@@ -138,8 +123,8 @@ class TestGenerateCandidatesDegenerate:
     def test_text_with_empty_frozenset(self):
         """A text whose frozenset is empty doesn't cause errors."""
         texts = [
-            _make_text("T01n0001", "般若波羅蜜多心經觀自在菩薩"),
-            _make_text("T01n0002", "觀自在菩薩行深般若波羅蜜多" * 20),
+            make_text("T01n0001", "般若波羅蜜多心經觀自在菩薩"),
+            make_text("T01n0002", "觀自在菩薩行深般若波羅蜜多" * 20),
         ]
         ngram_sets = {
             "T01n0001": frozenset(),
@@ -158,8 +143,8 @@ class TestGenerateCandidates:
         source = "如是我聞" + shared + "更多更多的佛經文字" * 20
 
         texts = [
-            _make_text("T01n0001", digest),
-            _make_text("T01n0002", source),
+            make_text("T01n0001", digest),
+            make_text("T01n0002", source),
         ]
         doc_freq = compute_document_frequencies(texts, n=5)
         stopgrams = identify_stopgrams(doc_freq, len(texts), threshold=1.0)
@@ -173,8 +158,8 @@ class TestGenerateCandidates:
         """Source must be at least MIN_SIZE_RATIO times larger than digest."""
         content = "觀自在菩薩行深般若波羅蜜多時照見五蘊"
         texts = [
-            _make_text("T01n0001", content),
-            _make_text("T01n0002", content + "少"),  # barely longer, not 2x
+            make_text("T01n0001", content),
+            make_text("T01n0002", content + "少"),  # barely longer, not 2x
         ]
         doc_freq = compute_document_frequencies(texts, n=5)
         stopgrams = identify_stopgrams(doc_freq, len(texts), threshold=1.0)
@@ -190,9 +175,9 @@ class TestGenerateCandidates:
         source_content = "春夏秋冬東西南北上下左右前後" * 20
 
         texts = [
-            _make_text("T08n0250", digest_content,
+            make_text("T08n0250", digest_content,
                         docnumber_refs=['251']),
-            _make_text("T08n0251", source_content),
+            make_text("T08n0251", source_content),
         ]
         doc_freq = compute_document_frequencies(texts, n=5)
         stopgrams = identify_stopgrams(doc_freq, len(texts), threshold=1.0)
@@ -225,7 +210,7 @@ class TestGenerateCandidates:
                 file_count=1,
             ),
         )
-        source_text = _make_text("T01n0002", source)
+        source_text = make_text("T01n0002", source)
         texts = [digest, source_text]
 
         doc_freq = compute_document_frequencies(texts, n=5)
@@ -267,8 +252,8 @@ class TestGenerateCandidatesParallel:
         # First text is shared across a longer "source" to create real candidates
         shared = base_texts[0]
         source_content = shared + "更多更多更多更多的佛經文字填充" * 20
-        texts = [_make_text(f"T01n{i:04d}", t) for i, t in enumerate(base_texts)]
-        texts.append(_make_text("T01n0099", source_content))
+        texts = [make_text(f"T01n{i:04d}", t) for i, t in enumerate(base_texts)]
+        texts.append(make_text("T01n0099", source_content))
 
         doc_freq = compute_document_frequencies(texts, n=5, num_workers=1)
         stopgrams = identify_stopgrams(doc_freq, len(texts), threshold=1.0)

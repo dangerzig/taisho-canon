@@ -16,6 +16,7 @@ from digest_detector.phonetic import (
 )
 from digest_detector.candidates import generate_phonetic_candidates
 from digest_detector.models import ExtractedText, TextMetadata
+from tests.helpers import make_text
 
 
 XML_DIR = Path(__file__).resolve().parent.parent / "xml" / "T"
@@ -157,24 +158,6 @@ class TestTextToSyllableNgrams:
 # ---- Unit tests: generate_phonetic_candidates ----
 
 class TestGeneratePhoneticCandidates:
-    def _make_text(self, text_id, full_text, dharani_ranges=None, char_count=None):
-        """Helper to create an ExtractedText for testing."""
-        if char_count is None:
-            char_count = len(full_text)
-        return ExtractedText(
-            text_id=text_id,
-            full_text=full_text,
-            metadata=TextMetadata(
-                text_id=text_id,
-                title="",
-                author="",
-                extent_juan=1,
-                char_count=char_count,
-                file_count=1,
-            ),
-            dharani_ranges=dharani_ranges or [],
-        )
-
     def test_synthetic_phonetic_pair(self, table):
         """Two texts with different transliterations of the same dharani → candidate pair."""
         # T250 dharani chars (Kumārajīva): 竭帝竭帝波羅竭帝波羅僧竭帝菩提僧莎呵
@@ -187,9 +170,9 @@ class TestGeneratePhoneticCandidates:
         digest_text = dharani_a
         source_text = padding + dharani_b + padding
 
-        digest = self._make_text("digest", digest_text,
+        digest = make_text("digest", digest_text,
                                  dharani_ranges=[(0, len(dharani_a))])
-        source = self._make_text("source", source_text,
+        source = make_text("source", source_text,
                                  dharani_ranges=[(len(padding), len(padding) + len(dharani_b))])
 
         candidates = generate_phonetic_candidates([digest, source], table)
@@ -204,8 +187,8 @@ class TestGeneratePhoneticCandidates:
         prose_b = ("舍利子色不異空空不異色色即是空空即是色受想行識亦復如是"
                    "舍利子是諸法空相不生不滅不垢不淨不增不減是故空中無色無受想行識")
 
-        text_a = self._make_text("a", prose_a)
-        text_b = self._make_text("b", prose_b)
+        text_a = make_text("a", prose_a)
+        text_b = make_text("b", prose_b)
 
         candidates = generate_phonetic_candidates([text_a, text_b], table)
         assert len(candidates) == 0
@@ -216,9 +199,9 @@ class TestGeneratePhoneticCandidates:
         dharani2 = "揭帝揭帝般羅揭帝般羅僧揭帝菩提莎婆訶"
         padding = "我你他她它一二三四五六七八九十" * 10
 
-        digest = self._make_text("d", dharani,
+        digest = make_text("d", dharani,
                                  dharani_ranges=[(0, len(dharani))])
-        source = self._make_text("s", padding + dharani2 + padding,
+        source = make_text("s", padding + dharani2 + padding,
                                  dharani_ranges=[(len(padding), len(padding) + len(dharani2))])
 
         candidates = generate_phonetic_candidates([digest, source], table)
@@ -287,19 +270,6 @@ class TestPhoneticCandidateIntegration:
 class TestPhoneticCandidatesParallel:
     """Verify serial and parallel paths produce identical results."""
 
-    def _make_text(self, text_id, full_text, dharani_ranges=None, char_count=None):
-        if char_count is None:
-            char_count = len(full_text)
-        return ExtractedText(
-            text_id=text_id,
-            full_text=full_text,
-            metadata=TextMetadata(
-                text_id=text_id, title="", author="",
-                extent_juan=1, char_count=char_count, file_count=1,
-            ),
-            dharani_ranges=dharani_ranges or [],
-        )
-
     def test_parallel_equivalence(self, table):
         """generate_phonetic_candidates with num_workers=1 and 2 should match."""
         # Build enough texts with dharani regions to trigger parallel path
@@ -314,7 +284,7 @@ class TestPhoneticCandidatesParallel:
         texts = []
         for i, dharani in enumerate(dharani_variants):
             # Short "digest" texts
-            texts.append(self._make_text(
+            texts.append(make_text(
                 f"short{i}", dharani,
                 dharani_ranges=[(0, len(dharani))],
             ))
@@ -322,7 +292,7 @@ class TestPhoneticCandidatesParallel:
             padding = padding_base * (5 + i * 2)
             full = padding + dharani + padding
             dr_start = len(padding)
-            texts.append(self._make_text(
+            texts.append(make_text(
                 f"long{i}", full,
                 dharani_ranges=[(dr_start, dr_start + len(dharani))],
             ))

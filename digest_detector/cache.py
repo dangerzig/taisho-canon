@@ -100,11 +100,11 @@ class PipelineCache:
         logger.info("Saved cache: %d texts, %d candidates to %s",
                      len(texts), len(candidates), self.cache_dir)
 
-    def load(self):
+    def load(self) -> tuple[list, list]:
         """Load texts and candidates from disk cache.
 
         Returns:
-            Tuple of (texts, candidates).
+            Tuple of (list[ExtractedText], list[CandidatePair]).
         """
         with open(self.texts_path, "rb") as f:
             texts = pickle.load(f)

@@ -12,20 +12,7 @@ from digest_detector.models import (
     ExtractedText, TextMetadata, CandidatePair, AlignmentResult, DigestScore,
 )
 from digest_detector.pipeline import run_pipeline
-
-
-def _make_text(text_id: str, content: str) -> ExtractedText:
-    """Helper to create a minimal ExtractedText."""
-    return ExtractedText(
-        text_id=text_id,
-        full_text=content,
-        segments=[],
-        metadata=TextMetadata(
-            text_id=text_id, title='', author='',
-            extent_juan=1, char_count=len(content),
-            file_count=1,
-        ),
-    )
+from tests.helpers import make_text
 
 
 def _make_candidate(digest_id: str, source_id: str) -> CandidatePair:
@@ -100,7 +87,7 @@ class TestPipelineCacheBypass:
     def test_no_cache_bypasses_valid_cache(self, tmp_dirs):
         """With no_cache=True, extract_all is called even when cache is valid."""
         xml_dir, results_dir, cache_dir = tmp_dirs
-        texts = [_make_text("T01n0001", "般若波羅蜜多心經觀自在菩薩")]
+        texts = [make_text("T01n0001", "般若波羅蜜多心經觀自在菩薩")]
         candidates = [_make_candidate("T01n0001", "T01n0002")]
 
         _save_valid_cache(cache_dir, xml_dir, texts, candidates)
@@ -134,7 +121,7 @@ class TestPipelineCacheBypass:
     def test_cache_used_when_valid(self, tmp_dirs):
         """With no_cache=False, extract_all is NOT called when cache is valid."""
         xml_dir, results_dir, cache_dir = tmp_dirs
-        texts = [_make_text("T01n0001", "般若波羅蜜多心經觀自在菩薩")]
+        texts = [make_text("T01n0001", "般若波羅蜜多心經觀自在菩薩")]
         candidates = [_make_candidate("T01n0001", "T01n0002")]
 
         _save_valid_cache(cache_dir, xml_dir, texts, candidates)
@@ -166,7 +153,7 @@ class TestPipelineCacheBypass:
     def test_cache_saved_after_fresh_run(self, tmp_dirs):
         """After a fresh run (no existing cache), cache files are written."""
         xml_dir, results_dir, cache_dir = tmp_dirs
-        texts = [_make_text("T01n0001", "般若波羅蜜多心經觀自在菩薩")]
+        texts = [make_text("T01n0001", "般若波羅蜜多心經觀自在菩薩")]
         candidates = [_make_candidate("T01n0001", "T01n0002")]
 
         # No cache saved — verify cache dir starts empty

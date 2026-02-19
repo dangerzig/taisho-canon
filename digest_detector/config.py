@@ -33,7 +33,6 @@ EXCERPT_THRESHOLD = 0.80  # Containment >= this → excerpt (verbatim extraction
 DIGEST_THRESHOLD = 0.30  # Containment >= this → digest (condensed derivation)
 COMMENTARY_AVG_SEG_LEN = 10  # Below this avg segment length → commentary
 EXCERPT_AVG_SEG_LEN = 15  # Excerpt requires avg segment >= this
-COMMENTARY_COVERAGE_FLOOR = 0.20  # Minimum coverage for commentary classification
 SHARED_TRADITION_THRESHOLD = 0.10  # Below digest, above this → shared tradition
 RETRANSLATION_SIZE_RATIO = 3.0  # Texts within this ratio may be retranslations
 
@@ -68,19 +67,26 @@ DOCNUM_PREFILTER_MIN_LEN = 5000
 # --- Pipeline ---
 NUM_WORKERS = None  # None = use resolve_worker_count()
 DEFAULT_MAX_WORKERS = 4  # Cap default workers to limit memory on 16 GB machines
+ALIGN_NUM_WORKERS = None  # None = use cpu_count() (alignment is memory-light)
 CACHE_DIR = BASE_DIR / "data" / "cache"
 MAXTASKSPERCHILD = 100  # Periodically restart workers to reclaim leaked memory
 
 
-def resolve_worker_count(num_workers: int | None = None) -> int:
+def resolve_worker_count(num_workers: int | None = None,
+                         memory_intensive: bool = True) -> int:
     """Resolve the effective number of parallel workers.
 
     If num_workers is explicitly provided (e.g. via --workers), use it.
     Otherwise, use NUM_WORKERS from config, or default to
     min(cpu_count(), DEFAULT_MAX_WORKERS).
+
+    For memory-light stages (alignment), set memory_intensive=False to
+    default to cpu_count() instead of DEFAULT_MAX_WORKERS.
     """
     if num_workers is not None:
         return max(1, num_workers)
     if NUM_WORKERS is not None:
         return max(1, NUM_WORKERS)
+    if not memory_intensive:
+        return max(1, min(cpu_count(), 16))
     return max(1, min(cpu_count(), DEFAULT_MAX_WORKERS))

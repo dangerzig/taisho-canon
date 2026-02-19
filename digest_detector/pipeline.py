@@ -202,7 +202,8 @@ def run_pipeline(
     logger.info("=" * 60)
     t0 = time.time()
 
-    alignments = align_candidates(candidates, text_map, num_workers=num_workers)
+    alignments = align_candidates(candidates, text_map,
+                                   num_workers=config.ALIGN_NUM_WORKERS)
 
     elapsed = round(time.time() - t0, 1)
     stage_times["stage3_align"] = elapsed

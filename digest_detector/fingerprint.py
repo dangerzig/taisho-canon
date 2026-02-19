@@ -11,6 +11,7 @@ from collections import Counter, defaultdict
 from multiprocessing import Pool
 
 from . import config
+from .fast import fast_ngram_hashes
 from .models import ExtractedText
 
 logger = logging.getLogger(__name__)
@@ -48,13 +49,10 @@ def generate_ngrams(text: str, n: int = None) -> list[str]:
     return [text[i:i + n] for i in range(len(text) - n + 1)]
 
 
-def _doc_freq_worker(args: tuple) -> set[int]:
+def _doc_freq_worker(args: tuple) -> frozenset[int]:
     """Worker: return set of unique n-gram hashes for one text."""
     full_text, n = args
-    seen = set()
-    for i in range(len(full_text) - n + 1):
-        seen.add(stable_hash(full_text[i:i + n]))
-    return seen
+    return fast_ngram_hashes(full_text, n)
 
 
 def compute_document_frequencies(
@@ -116,14 +114,7 @@ def _ngram_set_worker(args: tuple) -> tuple[str, frozenset[int]]:
     to avoid pickling shared data per task.
     """
     text_id, full_text = args
-    stopgrams = _worker_stopgrams
-    n = _worker_n
-    hashes = set()
-    for i in range(len(full_text) - n + 1):
-        h = stable_hash(full_text[i:i + n])
-        if h not in stopgrams:
-            hashes.add(h)
-    return (text_id, frozenset(hashes))
+    return (text_id, fast_ngram_hashes(full_text, _worker_n, _worker_stopgrams))
 
 
 def build_ngram_sets(
@@ -188,9 +179,4 @@ def fingerprint_text(
     """Get the non-stop n-gram hashes for a single text."""
     if n is None:
         n = config.NGRAM_SIZE
-    result = []
-    for i in range(len(text) - n + 1):
-        h = stable_hash(text[i:i + n])
-        if h not in stopgrams:
-            result.append(h)
-    return result
+    return list(fast_ngram_hashes(text, n, stopgrams))

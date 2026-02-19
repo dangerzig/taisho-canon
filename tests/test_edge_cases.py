@@ -17,26 +17,7 @@ from digest_detector.fingerprint import (
 from digest_detector.candidates import generate_candidates, generate_phonetic_candidates
 from digest_detector.phonetic import build_equivalence_table
 from digest_detector.models import ExtractedText, TextMetadata
-
-
-def _make_text(text_id: str, content: str, char_count=None,
-               dharani_ranges=None, **meta_overrides) -> ExtractedText:
-    """Helper to create a minimal ExtractedText."""
-    if char_count is None:
-        char_count = len(content)
-    meta_kwargs = dict(
-        text_id=text_id, title='', author='',
-        extent_juan=1, char_count=char_count,
-        file_count=1,
-    )
-    meta_kwargs.update(meta_overrides)
-    return ExtractedText(
-        text_id=text_id,
-        full_text=content,
-        segments=[],
-        metadata=TextMetadata(**meta_kwargs),
-        dharani_ranges=dharani_ranges or [],
-    )
+from tests.helpers import make_text
 
 
 class TestBisectBoundary:
@@ -50,8 +31,8 @@ class TestBisectBoundary:
         # Source is exactly 20 chars (2x the digest)
         source_text = shared + "一二三四五六七八九十"  # 10 + 10 = 20
 
-        digest = _make_text("T01n0001", digest_text, char_count=10)
-        source = _make_text("T01n0002", source_text, char_count=20)
+        digest = make_text("T01n0001", digest_text, char_count=10)
+        source = make_text("T01n0002", source_text, char_count=20)
         texts = [digest, source]
 
         doc_freq = compute_document_frequencies(texts, n=5)
@@ -74,8 +55,8 @@ class TestBisectBoundary:
         # Source is 19 chars (just under 2x)
         source_text = shared + "一二三四五六七八九"  # 10 + 9 = 19
 
-        digest = _make_text("T01n0001", digest_text, char_count=10)
-        source = _make_text("T01n0002", source_text, char_count=19)
+        digest = make_text("T01n0001", digest_text, char_count=10)
+        source = make_text("T01n0002", source_text, char_count=19)
         texts = [digest, source]
 
         doc_freq = compute_document_frequencies(texts, n=5)
@@ -97,11 +78,11 @@ class TestBisectBoundary:
         digest_text = shared
 
         # Three sources: below, at, and above the boundary
-        below = _make_text("T01n0010", shared + "一二三四五六七八九", char_count=19)
-        at_boundary = _make_text("T01n0020", shared + "一二三四五六七八九十", char_count=20)
-        above = _make_text("T01n0030", shared + "一二三四五六七八九十更多" * 5, char_count=50)
+        below = make_text("T01n0010", shared + "一二三四五六七八九", char_count=19)
+        at_boundary = make_text("T01n0020", shared + "一二三四五六七八九十", char_count=20)
+        above = make_text("T01n0030", shared + "一二三四五六七八九十更多" * 5, char_count=50)
 
-        digest = _make_text("T01n0001", digest_text, char_count=10)
+        digest = make_text("T01n0001", digest_text, char_count=10)
         texts = [digest, below, at_boundary, above]
 
         doc_freq = compute_document_frequencies(texts, n=5)
@@ -137,7 +118,7 @@ class TestPhoneticStopgramFiltering:
             text = padding + common_dharani + padding
             dr_start = len(padding)
             dr_end = dr_start + len(common_dharani)
-            texts.append(_make_text(
+            texts.append(make_text(
                 f"T01n{i:04d}", text,
                 dharani_ranges=[(dr_start, dr_end)],
             ))
@@ -148,11 +129,11 @@ class TestPhoneticStopgramFiltering:
         short_text = short_padding + unique_dharani + short_padding
         long_text = long_padding + unique_dharani + long_padding
 
-        texts.append(_make_text(
+        texts.append(make_text(
             "T01n0100", short_text,
             dharani_ranges=[(len(short_padding), len(short_padding) + len(unique_dharani))],
         ))
-        texts.append(_make_text(
+        texts.append(make_text(
             "T01n0101", long_text,
             dharani_ranges=[(len(long_padding), len(long_padding) + len(unique_dharani))],
         ))
@@ -178,11 +159,11 @@ class TestPhoneticStopgramFiltering:
         dharani = ''.join(table_chars)
         padding = "觀自在菩薩行深般若" * 10
 
-        text_a = _make_text(
+        text_a = make_text(
             "a", dharani,
             dharani_ranges=[(0, len(dharani))],
         )
-        text_b = _make_text(
+        text_b = make_text(
             "b", padding + dharani + padding,
             dharani_ranges=[(len(padding), len(padding) + len(dharani))],
         )

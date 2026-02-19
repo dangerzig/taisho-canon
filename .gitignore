@@ -24,6 +24,14 @@ dist/
 build/
 .eggs/
 
+# Cython build artifacts (*.c is Cython-generated; _fast.pyx is source)
+*.so
+*.c
+digest_detector/_fast.html
+
+# Pipeline timing log (machine-specific, regenerated each run)
+data/timing_log.jsonl
+
 # Environment
 .env
 .venv/

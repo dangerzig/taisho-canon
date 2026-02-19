@@ -13,6 +13,7 @@ from digest_detector.align import (
 from digest_detector.models import (
     AlignmentSegment, ExtractedText, TextMetadata, CandidatePair,
 )
+from tests.helpers import make_text
 
 
 class TestFindSeeds:
@@ -179,22 +180,6 @@ class TestEarlyTermination:
         assert len(result.segments) >= 1
 
 
-def _make_text(text_id: str, content: str, **meta_overrides) -> ExtractedText:
-    """Helper to create a minimal ExtractedText."""
-    meta_kwargs = dict(
-        text_id=text_id, title='', author='',
-        extent_juan=1, char_count=len(content),
-        file_count=1,
-    )
-    meta_kwargs.update(meta_overrides)
-    return ExtractedText(
-        text_id=text_id,
-        full_text=content,
-        segments=[],
-        metadata=TextMetadata(**meta_kwargs),
-    )
-
-
 class TestAlignCandidatesPrefilter:
     """Test the zero-containment docNumber pair pre-filter in align_candidates."""
 
@@ -205,8 +190,8 @@ class TestAlignCandidatesPrefilter:
         large_s = "乙" * 12000
 
         text_map = {
-            "T01n0001": _make_text("T01n0001", large_d),
-            "T01n0002": _make_text("T01n0002", large_s),
+            "T01n0001": make_text("T01n0001", large_d),
+            "T01n0002": make_text("T01n0002", large_s),
         }
         candidates = [
             CandidatePair(
@@ -226,8 +211,8 @@ class TestAlignCandidatesPrefilter:
         small_s = "子丑寅卯辰巳午未申酉" * 50  # 500 chars
 
         text_map = {
-            "T01n0001": _make_text("T01n0001", small_d),
-            "T01n0002": _make_text("T01n0002", small_s),
+            "T01n0001": make_text("T01n0001", small_d),
+            "T01n0002": make_text("T01n0002", small_s),
         }
         candidates = [
             CandidatePair(
@@ -247,8 +232,8 @@ class TestAlignCandidatesPrefilter:
         large_s = "乙" * 12000
 
         text_map = {
-            "T01n0001": _make_text("T01n0001", large_d),
-            "T01n0002": _make_text("T01n0002", large_s),
+            "T01n0001": make_text("T01n0001", large_d),
+            "T01n0002": make_text("T01n0002", large_s),
         }
         candidates = [
             CandidatePair(
@@ -272,8 +257,8 @@ class TestNumWorkersEdgeCases:
         source = text + "更多文字" * 20
 
         text_map = {
-            "d": _make_text("d", text),
-            "s": _make_text("s", source),
+            "d": make_text("d", text),
+            "s": make_text("s", source),
         }
         candidates = [
             CandidatePair(
@@ -295,8 +280,8 @@ class TestNumWorkersEdgeCases:
 
         shared = "觀自在菩薩行深般若波羅蜜多時照見五蘊皆空度一切苦厄"
         texts = [
-            _make_text("T01n0001", shared + "新增少量"),
-            _make_text("T01n0002", "如是我聞" + shared + "更多更多文字" * 20),
+            make_text("T01n0001", shared + "新增少量"),
+            make_text("T01n0002", "如是我聞" + shared + "更多更多文字" * 20),
         ]
         doc_freq = compute_document_frequencies(texts, n=5, num_workers=1)
         stopgrams = identify_stopgrams(doc_freq, len(texts), threshold=1.0)

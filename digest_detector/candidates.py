@@ -12,6 +12,7 @@ from collections import defaultdict
 from multiprocessing import Pool
 
 from . import config
+from .fast import fast_ngram_hashes
 from .fingerprint import stable_hash
 from .models import ExtractedText, CandidatePair, TextMetadata
 from .phonetic import find_transliteration_regions, text_to_syllable_ngrams
@@ -68,16 +69,10 @@ def _candidate_worker(args: tuple) -> list[CandidatePair]:
         return []
 
     # Build digest's n-gram set from jing_text
-    digest_hashes = set()
-    for i in range(len(jing_text) - n + 1):
-        h = stable_hash(jing_text[i:i + n])
-        if h not in stopgrams:
-            digest_hashes.add(h)
+    digest_set = fast_ngram_hashes(jing_text, n, stopgrams)
 
-    if not digest_hashes:
+    if not digest_set:
         return []
-
-    digest_set = frozenset(digest_hashes)
     min_source_len = d_len * min_size_ratio
 
     # Binary search for the first source meeting the size threshold.
@@ -312,7 +307,7 @@ def generate_candidates(
 
     logger.info("Generated %d candidate pairs (%d from fingerprinting, %d from docNumber)",
                 len(candidates),
-                sum(1 for c in candidates if not c.from_docnumber or c.containment_score > 0),
+                sum(1 for c in candidates if c.containment_score > 0),
                 sum(1 for c in candidates if c.from_docnumber))
 
     return candidates
