@@ -267,3 +267,81 @@ class TestPhoneticCandidateIntegration:
             f"Expected ({t250.text_id}, {t901.text_id}) in phonetic candidates. "
             f"Got {len(candidates)} candidates: {pair_ids}"
         )
+
+    def test_t250_t901_containment_score(self, t250, t901, table):
+        """Check the actual phonetic containment for T250↔T901.
+
+        Measured score is ~0.286 — just above the MIN_PHONETIC_CONTAINMENT
+        threshold of 0.25.  Assert it stays above 0.25 so we know our
+        threshold is safe.
+        """
+        candidates = generate_phonetic_candidates([t250, t901], table)
+        pair = [c for c in candidates
+                if c.digest_id == t250.text_id and c.source_id == t901.text_id]
+        assert pair, "T250↔T901 pair not found"
+        score = pair[0].containment_score
+        print(f"\nT250↔T901 phonetic containment: {score:.4f}")
+        assert score >= 0.25, f"Score {score:.4f} too low for 0.25 threshold"
+
+
+class TestPhoneticCandidatesParallel:
+    """Verify serial and parallel paths produce identical results."""
+
+    def _make_text(self, text_id, full_text, dharani_ranges=None, char_count=None):
+        if char_count is None:
+            char_count = len(full_text)
+        return ExtractedText(
+            text_id=text_id,
+            full_text=full_text,
+            metadata=TextMetadata(
+                text_id=text_id, title="", author="",
+                extent_juan=1, char_count=char_count, file_count=1,
+            ),
+            dharani_ranges=dharani_ranges or [],
+        )
+
+    def test_parallel_equivalence(self, table):
+        """generate_phonetic_candidates with num_workers=1 and 2 should match."""
+        # Build enough texts with dharani regions to trigger parallel path
+        dharani_variants = [
+            "竭帝竭帝波羅竭帝波羅僧竭帝菩提僧莎呵",
+            "揭帝揭帝般羅揭帝般羅僧揭帝菩提莎婆訶",
+            "竭諦竭諦波羅竭諦波羅僧竭諦菩提薩婆訶",
+            "揭諦揭諦波羅揭諦波羅僧揭諦菩提薩婆訶",
+        ]
+        padding_base = "觀自在菩薩行深般若波羅蜜多時照見五蘊皆空度一切苦厄"
+
+        texts = []
+        for i, dharani in enumerate(dharani_variants):
+            # Short "digest" texts
+            texts.append(self._make_text(
+                f"short{i}", dharani,
+                dharani_ranges=[(0, len(dharani))],
+            ))
+            # Longer "source" texts with dharani embedded
+            padding = padding_base * (5 + i * 2)
+            full = padding + dharani + padding
+            dr_start = len(padding)
+            texts.append(self._make_text(
+                f"long{i}", full,
+                dharani_ranges=[(dr_start, dr_start + len(dharani))],
+            ))
+
+        serial = generate_phonetic_candidates(texts, table, num_workers=1)
+        parallel = generate_phonetic_candidates(texts, table, num_workers=2)
+
+        serial_pairs = {(c.digest_id, c.source_id) for c in serial}
+        parallel_pairs = {(c.digest_id, c.source_id) for c in parallel}
+        assert serial_pairs == parallel_pairs, (
+            f"Serial found {len(serial_pairs)} pairs, parallel found {len(parallel_pairs)}. "
+            f"Serial-only: {serial_pairs - parallel_pairs}, "
+            f"Parallel-only: {parallel_pairs - serial_pairs}"
+        )
+
+        serial_scores = {(c.digest_id, c.source_id): c.containment_score for c in serial}
+        parallel_scores = {(c.digest_id, c.source_id): c.containment_score for c in parallel}
+        for key in serial_scores:
+            assert abs(serial_scores[key] - parallel_scores[key]) < 1e-9, (
+                f"Score mismatch for {key}: serial={serial_scores[key]}, "
+                f"parallel={parallel_scores[key]}"
+            )

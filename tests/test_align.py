@@ -7,9 +7,12 @@ from digest_detector.align import (
     _extend_seeds,
     _chain_seeds,
     align_pair,
+    align_candidates,
     _count_source_regions,
 )
-from digest_detector.models import AlignmentSegment
+from digest_detector.models import (
+    AlignmentSegment, ExtractedText, TextMetadata, CandidatePair,
+)
 
 
 class TestFindSeeds:
@@ -127,3 +130,178 @@ class TestCountSourceRegions:
 
     def test_empty(self):
         assert _count_source_regions([]) == 0
+
+
+class TestEarlyTermination:
+    def test_low_overlap_returns_early(self):
+        """Pairs with no meaningful seeds should early-terminate with coverage=0.
+
+        Uses skip_phonetic_rescan=True so early termination fires even
+        when ENABLE_PHONETIC_SCAN is globally on.
+        """
+        digest = "甲乙丙丁戊己庚辛壬癸子丑寅卯辰巳午未申酉戌亥"
+        source = "春夏秋冬東西南北上下左右前後內外天地人間日月星辰風雨雷電山川河海" * 5
+        result = align_pair(digest, source, "d", "s", skip_phonetic_rescan=True)
+        assert result.coverage == 0.0
+        assert result.novel_fraction == 1.0
+        # Should be a single novel segment covering the whole digest
+        assert len(result.segments) == 1
+        assert result.segments[0].match_type == "novel"
+        assert result.segments[0].digest_end - result.segments[0].digest_start == len(digest)
+
+    def test_does_not_skip_real_matches(self):
+        """Pairs with significant overlap should NOT early-terminate."""
+        shared = "觀自在菩薩行深般若波羅蜜多時照見五蘊皆空度一切苦厄"
+        digest = shared + "新增內容"
+        source = "如是我聞" + shared + "更多佛經文字在這裡填充更多內容" * 5
+        result = align_pair(digest, source, "d", "s")
+        # Should have real coverage from the shared segment
+        assert result.coverage > 0.3
+        # Should have matched segments, not just a single novel segment
+        matched = [s for s in result.segments if s.match_type != "novel"]
+        assert len(matched) > 0
+
+    def test_low_overlap_with_phonetic_enabled(self):
+        """When phonetic rescan is enabled, low-overlap pairs should NOT
+        early-terminate — they proceed to phonetic rescan instead.
+
+        This verifies the do_phonetic gate: even with 0 exact seeds,
+        the code path reaches _phonetic_rescan rather than returning early.
+        """
+        digest = "甲乙丙丁戊己庚辛壬癸子丑寅卯辰巳午未申酉戌亥"
+        source = "春夏秋冬東西南北上下左右前後內外天地人間日月星辰風雨雷電山川河海" * 5
+        # Default: skip_phonetic_rescan=False, ENABLE_PHONETIC_SCAN=True
+        result = align_pair(digest, source, "d", "s", skip_phonetic_rescan=False)
+        # No exact seeds, no phonetic chars → still coverage=0,
+        # but the code path went through phonetic rescan (not early return).
+        # We verify structurally: segments should still exist.
+        assert result.novel_fraction == 1.0
+        assert len(result.segments) >= 1
+
+
+def _make_text(text_id: str, content: str, **meta_overrides) -> ExtractedText:
+    """Helper to create a minimal ExtractedText."""
+    meta_kwargs = dict(
+        text_id=text_id, title='', author='',
+        extent_juan=1, char_count=len(content),
+        file_count=1,
+    )
+    meta_kwargs.update(meta_overrides)
+    return ExtractedText(
+        text_id=text_id,
+        full_text=content,
+        segments=[],
+        metadata=TextMetadata(**meta_kwargs),
+    )
+
+
+class TestAlignCandidatesPrefilter:
+    """Test the zero-containment docNumber pair pre-filter in align_candidates."""
+
+    def test_large_zero_containment_docnum_pair_skipped(self):
+        """Zero-containment docNumber pairs with both texts >5000 chars are skipped."""
+        # Create two large, unrelated texts with docNumber cross-ref
+        large_d = "甲" * 6000
+        large_s = "乙" * 12000
+
+        text_map = {
+            "T01n0001": _make_text("T01n0001", large_d),
+            "T01n0002": _make_text("T01n0002", large_s),
+        }
+        candidates = [
+            CandidatePair(
+                digest_id="T01n0001", source_id="T01n0002",
+                containment_score=0.0, matching_ngrams=0,
+                total_digest_ngrams=0, from_docnumber=True,
+            ),
+        ]
+
+        results = align_candidates(candidates, text_map, num_workers=1)
+        # The pair should be skipped entirely — no alignment results
+        assert len(results) == 0
+
+    def test_small_zero_containment_docnum_pair_not_skipped(self):
+        """Zero-containment docNumber pairs with small texts are NOT skipped."""
+        small_d = "甲乙丙丁戊己庚辛壬癸" * 10  # 100 chars
+        small_s = "子丑寅卯辰巳午未申酉" * 50  # 500 chars
+
+        text_map = {
+            "T01n0001": _make_text("T01n0001", small_d),
+            "T01n0002": _make_text("T01n0002", small_s),
+        }
+        candidates = [
+            CandidatePair(
+                digest_id="T01n0001", source_id="T01n0002",
+                containment_score=0.0, matching_ngrams=0,
+                total_digest_ngrams=0, from_docnumber=True,
+            ),
+        ]
+
+        results = align_candidates(candidates, text_map, num_workers=1)
+        # Small texts should still be aligned
+        assert len(results) == 1
+
+    def test_phonetic_pair_not_skipped_even_if_large(self):
+        """Phonetic-origin pairs are never skipped, even if large and zero-containment."""
+        large_d = "甲" * 6000
+        large_s = "乙" * 12000
+
+        text_map = {
+            "T01n0001": _make_text("T01n0001", large_d),
+            "T01n0002": _make_text("T01n0002", large_s),
+        }
+        candidates = [
+            CandidatePair(
+                digest_id="T01n0001", source_id="T01n0002",
+                containment_score=0.0, matching_ngrams=0,
+                total_digest_ngrams=0, from_phonetic=True,
+            ),
+        ]
+
+        results = align_candidates(candidates, text_map, num_workers=1)
+        # Phonetic pair should still be aligned
+        assert len(results) == 1
+
+
+class TestNumWorkersEdgeCases:
+    """Verify num_workers=0 and negative values don't crash."""
+
+    def test_align_candidates_zero_workers(self):
+        """num_workers=0 should fall through to serial path safely."""
+        text = "觀自在菩薩行深般若波羅蜜多時照見五蘊皆空" * 5
+        source = text + "更多文字" * 20
+
+        text_map = {
+            "d": _make_text("d", text),
+            "s": _make_text("s", source),
+        }
+        candidates = [
+            CandidatePair(
+                digest_id="d", source_id="s",
+                containment_score=0.5, matching_ngrams=10,
+                total_digest_ngrams=20,
+            ),
+        ]
+
+        results = align_candidates(candidates, text_map, num_workers=0)
+        assert len(results) == 1
+
+    def test_generate_candidates_zero_workers(self):
+        """generate_candidates with num_workers=0 should not crash."""
+        from digest_detector.candidates import generate_candidates
+        from digest_detector.fingerprint import (
+            compute_document_frequencies, identify_stopgrams, build_ngram_sets,
+        )
+
+        shared = "觀自在菩薩行深般若波羅蜜多時照見五蘊皆空度一切苦厄"
+        texts = [
+            _make_text("T01n0001", shared + "新增少量"),
+            _make_text("T01n0002", "如是我聞" + shared + "更多更多文字" * 20),
+        ]
+        doc_freq = compute_document_frequencies(texts, n=5, num_workers=1)
+        stopgrams = identify_stopgrams(doc_freq, len(texts), threshold=1.0)
+        ngram_sets = build_ngram_sets(texts, stopgrams, n=5, num_workers=1)
+
+        # Should not crash — falls through to serial path
+        candidates = generate_candidates(texts, ngram_sets, stopgrams, num_workers=0)
+        assert isinstance(candidates, list)

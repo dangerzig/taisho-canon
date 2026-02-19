@@ -222,8 +222,8 @@ def find_transliteration_regions(
     text: str,
     table: dict[str, set[str]],
     dharani_ranges: list[tuple[int, int]] | None = None,
-    window: int = None,
-    density_threshold: float = None,
+    window: int | None = None,
+    density_threshold: float | None = None,
 ) -> list[tuple[int, int]]:
     """Find transliteration-dense regions in text.
 
@@ -290,7 +290,7 @@ def text_to_syllable_ngrams(
     text: str,
     regions: list[tuple[int, int]],
     table: dict[str, set[str]],
-    n: int = None,
+    n: int | None = None,
 ) -> list[tuple[str, int]]:
     """Convert transliteration regions to syllable n-gram hashes.
 

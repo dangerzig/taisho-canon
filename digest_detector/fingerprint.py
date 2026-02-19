@@ -8,7 +8,7 @@ set-intersection containment scoring.
 import logging
 import zlib
 from collections import Counter, defaultdict
-from multiprocessing import Pool, cpu_count
+from multiprocessing import Pool
 
 from . import config
 from .models import ExtractedText
@@ -69,8 +69,7 @@ def compute_document_frequencies(
     """
     if n is None:
         n = config.NGRAM_SIZE
-    if num_workers is None:
-        num_workers = config.NUM_WORKERS or cpu_count()
+    num_workers = config.resolve_worker_count(num_workers)
 
     # full_text is used intentionally: document frequencies should reflect
     # all content (including prefaces) since stop-gram identification must
@@ -83,7 +82,7 @@ def compute_document_frequencies(
             doc_freq.update(_doc_freq_worker(args))
     else:
         chunksize = max(1, len(args_list) // (num_workers * 4))
-        with Pool(num_workers) as pool:
+        with Pool(num_workers, maxtasksperchild=config.MAXTASKSPERCHILD) as pool:
             for hash_set in pool.imap_unordered(_doc_freq_worker, args_list,
                                                 chunksize=chunksize):
                 doc_freq.update(hash_set)
@@ -141,8 +140,7 @@ def build_ngram_sets(
     """
     if n is None:
         n = config.NGRAM_SIZE
-    if num_workers is None:
-        num_workers = config.NUM_WORKERS or cpu_count()
+    num_workers = config.resolve_worker_count(num_workers)
 
     args_list = [(text.text_id, text.full_text) for text in texts]
 
@@ -158,7 +156,8 @@ def build_ngram_sets(
     else:
         chunksize = max(1, len(args_list) // (num_workers * 4))
         with Pool(num_workers, initializer=_ngram_set_init,
-                  initargs=(stopgrams, n)) as pool:
+                  initargs=(stopgrams, n),
+                  maxtasksperchild=config.MAXTASKSPERCHILD) as pool:
             for text_id, hash_set in pool.imap_unordered(
                 _ngram_set_worker, args_list, chunksize=chunksize,
             ):

@@ -8,7 +8,7 @@ phonetically equivalent transliterations (dharani detection).
 
 import logging
 from collections import defaultdict
-from multiprocessing import Pool, cpu_count
+from multiprocessing import Pool
 
 from tqdm import tqdm
 
@@ -467,8 +467,14 @@ def align_pair(
     source_text: str,
     digest_id: str = "",
     source_id: str = "",
+    skip_phonetic_rescan: bool = False,
 ) -> AlignmentResult:
     """Perform full seed-and-extend alignment between digest and source.
+
+    Args:
+        skip_phonetic_rescan: If True, skip the expensive phonetic rescan
+            of novel segments. Used for pairs already discovered via
+            phonetic candidate generation (Stage 2b).
 
     Returns an AlignmentResult with segment-by-segment mapping.
     """
@@ -481,13 +487,44 @@ def align_pair(
     # Step 1: Find seeds
     raw_seeds = _find_seeds(digest_text, source_text)
 
+    # Early termination: if raw seed coverage is below SHARED_TRADITION_THRESHOLD
+    # and phonetic rescan won't run, the pair cannot produce any useful
+    # classification. Skip the expensive extend/chain steps.
+    if raw_seeds:
+        raw_coverage = sum(length for _, _, length in raw_seeds) / d_len
+    else:
+        raw_coverage = 0.0
+
+    do_phonetic = config.ENABLE_PHONETIC_SCAN and not skip_phonetic_rescan
+    if raw_coverage < config.SHARED_TRADITION_THRESHOLD and not do_phonetic:
+        # Return a single novel segment covering the whole digest
+        segments = [AlignmentSegment(
+            digest_start=0,
+            digest_end=d_len,
+            source_start=-1,
+            source_end=-1,
+            match_type="novel",
+            digest_text=digest_text,
+            source_text="",
+        )]
+        return AlignmentResult(
+            digest_id=digest_id,
+            source_id=source_id,
+            segments=segments,
+            coverage=0.0,
+            novel_fraction=1.0,
+        )
+
     # Step 2: Extend seeds with fuzzy matching
-    extended = _extend_seeds(digest_text, source_text, raw_seeds)
+    if raw_coverage >= config.SHARED_TRADITION_THRESHOLD:
+        extended = _extend_seeds(digest_text, source_text, raw_seeds)
+        chained = _chain_seeds(extended, d_len)
+    else:
+        # Seeds too sparse for useful extend/chain, but phonetic rescan
+        # may still find matches — build a single novel segment.
+        chained = []
 
-    # Step 3: Chain non-overlapping seeds
-    chained = _chain_seeds(extended, d_len)
-
-    # Step 4: Build alignment segments
+    # Step 3-4: Build alignment segments from chained seeds
     segments = []
     covered = 0
     prev_end = 0
@@ -530,8 +567,8 @@ def align_pair(
             source_text="",
         ))
 
-    # Step 5: Phonetic rescan of novel segments (if enabled)
-    if config.ENABLE_PHONETIC_SCAN:
+    # Step 5: Phonetic rescan of novel segments (if enabled and not skipped)
+    if do_phonetic:
         table = _get_phonetic_table()
         segments = _phonetic_rescan(digest_text, source_text, segments, table)
         # Recompute covered chars including phonetic matches
@@ -602,8 +639,9 @@ def _count_source_regions(
 
 def _align_pair_wrapper(args):
     """Wrapper for multiprocessing."""
-    digest_id, source_id, digest_text, source_text = args
-    return align_pair(digest_text, source_text, digest_id, source_id)
+    digest_id, source_id, digest_text, source_text, skip_phonetic = args
+    return align_pair(digest_text, source_text, digest_id, source_id,
+                      skip_phonetic_rescan=skip_phonetic)
 
 
 def align_candidates(
@@ -620,20 +658,57 @@ def align_candidates(
 
     Returns list of AlignmentResult objects.
     """
-    if num_workers is None:
-        num_workers = config.NUM_WORKERS or cpu_count()
+    num_workers = config.resolve_worker_count(num_workers)
 
+    # Step 1: Build set of phonetic pair keys for cross-check
+    phonetic_pairs = {(c.digest_id, c.source_id) for c in candidates
+                      if c.from_phonetic}
+
+    # Step 2: Build args list, pre-filtering and setting flags per pair
     args_list = []
+    skipped = 0
     for cand in candidates:
         d_text = text_map.get(cand.digest_id)
         s_text = text_map.get(cand.source_id)
-        if d_text and s_text:
-            args_list.append((
-                cand.digest_id,
-                cand.source_id,
-                d_text.jing_text,
-                s_text.full_text,
-            ))
+        if not d_text or not s_text:
+            continue
+
+        d_len = len(d_text.jing_text)
+        s_len = len(s_text.full_text)
+
+        # Pre-filter zero-containment docNumber pairs: if no fingerprint
+        # overlap, not a phonetic discovery, only included because of
+        # docNumber, and both texts are large → alignment is expensive
+        # and fruitless.
+        if (cand.containment_score == 0.0
+                and cand.from_docnumber
+                and not cand.from_phonetic
+                and (cand.digest_id, cand.source_id) not in phonetic_pairs
+                and d_len > config.DOCNUM_PREFILTER_MIN_LEN
+                and s_len > config.DOCNUM_PREFILTER_MIN_LEN):
+            skipped += 1
+            continue
+
+        # Skip phonetic rescan for phonetic-origin pairs (already
+        # discovered via phonetic candidate generation in Stage 2b)
+        skip_phonetic = cand.from_phonetic
+
+        args_list.append((
+            cand.digest_id,
+            cand.source_id,
+            d_text.jing_text,
+            s_text.full_text,
+            skip_phonetic,
+        ))
+
+    if skipped:
+        logger.info("Skipped %d zero-containment docNumber pairs "
+                    "(both texts >%d chars)",
+                    skipped, config.DOCNUM_PREFILTER_MIN_LEN)
+
+    # Step 3: LPT scheduling — sort by estimated cost (d_len * s_len)
+    # descending so expensive pairs start first and cheap ones fill gaps
+    args_list.sort(key=lambda a: len(a[2]) * len(a[3]), reverse=True)
 
     logger.info("Aligning %d candidate pairs with %d workers...",
                 len(args_list), num_workers)
@@ -643,13 +718,17 @@ def align_candidates(
         for args in tqdm(args_list, desc="Aligning"):
             results.append(_align_pair_wrapper(args))
     else:
-        with Pool(num_workers) as pool:
+        with Pool(num_workers, maxtasksperchild=config.MAXTASKSPERCHILD) as pool:
             for result in tqdm(
                 pool.imap_unordered(_align_pair_wrapper, args_list),
                 total=len(args_list),
                 desc="Aligning",
             ):
                 results.append(result)
+
+    # Free the cached phonetic table — it's no longer needed after alignment
+    global _phonetic_table
+    _phonetic_table = None
 
     logger.info("Completed alignment for %d pairs", len(results))
     return results

@@ -9,7 +9,7 @@ import json
 import re
 import logging
 from collections import defaultdict
-from multiprocessing import Pool, cpu_count
+from multiprocessing import Pool
 from pathlib import Path
 
 from lxml import etree
@@ -433,8 +433,7 @@ def extract_all(xml_dir: Path = None, num_workers: int = None) -> list[Extracted
     """
     if xml_dir is None:
         xml_dir = config.XML_DIR
-    if num_workers is None:
-        num_workers = config.NUM_WORKERS or cpu_count()
+    num_workers = config.resolve_worker_count(num_workers)
 
     logger.info("Scanning XML files in %s", xml_dir)
     file_groups = _group_files_by_text(xml_dir)
@@ -463,7 +462,7 @@ def extract_all(xml_dir: Path = None, num_workers: int = None) -> list[Extracted
             if result is not None:
                 results.append(result)
     else:
-        with Pool(num_workers) as pool:
+        with Pool(num_workers, maxtasksperchild=config.MAXTASKSPERCHILD) as pool:
             for result in tqdm(
                 pool.imap_unordered(_process_text_group, args_list),
                 total=len(args_list),

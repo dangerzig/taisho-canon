@@ -1,7 +1,13 @@
 """Pipeline orchestrator: runs all 5 stages end-to-end."""
 
+import gc
+import json
 import logging
+import resource
+import subprocess
+import sys
 import time
+from datetime import datetime, timezone
 from pathlib import Path
 
 from . import config
@@ -19,6 +25,51 @@ from .report import validate_ground_truth, generate_reports
 
 logger = logging.getLogger(__name__)
 
+TIMING_LOG = config.DATA_DIR / "timing_log.jsonl"
+
+
+def _log_peak_rss(stage_name: str) -> int:
+    """Log and return peak RSS in MB.
+
+    On macOS, ru_maxrss is in bytes; on Linux it's in KB.
+    """
+    rss = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+    if sys.platform == 'darwin':
+        rss_mb = rss / (1024 * 1024)
+    else:
+        rss_mb = rss / 1024
+    logger.info("Peak RSS after %s: %.0f MB", stage_name, rss_mb)
+    return int(rss_mb)
+
+
+def _git_short_hash() -> str:
+    """Return the current git short commit hash, or '' if unavailable."""
+    try:
+        return subprocess.check_output(
+            ["git", "rev-parse", "--short", "HEAD"],
+            cwd=config.BASE_DIR, stderr=subprocess.DEVNULL, text=True,
+        ).strip()
+    except Exception:
+        return ""
+
+
+def _save_timing(stage_times: dict, counts: dict, total_time: float,
+                 used_cache: bool, num_workers: int = 0) -> None:
+    """Append one JSON record to the timing log."""
+    record = {
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "git_commit": _git_short_hash(),
+        "used_cache": used_cache,
+        "num_workers": num_workers,
+        "stages": stage_times,
+        "counts": counts,
+        "total_seconds": round(total_time, 1),
+    }
+    TIMING_LOG.parent.mkdir(parents=True, exist_ok=True)
+    with open(TIMING_LOG, "a") as f:
+        f.write(json.dumps(record) + "\n")
+    logger.info("Timing record appended to %s", TIMING_LOG)
+
 
 def run_pipeline(
     xml_dir: Path = None,
@@ -32,7 +83,7 @@ def run_pipeline(
     Args:
         xml_dir: Path to XML corpus directory.
         results_dir: Path to output directory.
-        num_workers: Number of parallel workers (None = cpu_count).
+        num_workers: Number of parallel workers (None = min(cpu_count, 4)).
         save_extracted: Whether to save extracted texts to disk.
         no_cache: Force recomputation, ignoring any cached results.
 
@@ -42,12 +93,16 @@ def run_pipeline(
         xml_dir = config.XML_DIR
     if results_dir is None:
         results_dir = config.RESULTS_DIR
+    num_workers = config.resolve_worker_count(num_workers)
 
     total_start = time.time()
+    stage_times = {}
+    counts = {}
 
     # Check cache for Stages 1-2b
     cache = PipelineCache(config.CACHE_DIR)
-    if not no_cache and cache.is_valid(xml_dir):
+    used_cache = not no_cache and cache.is_valid(xml_dir)
+    if used_cache:
         logger.info("=" * 60)
         logger.info("LOADING FROM CACHE")
         logger.info("=" * 60)
@@ -55,8 +110,12 @@ def run_pipeline(
         texts, candidates = cache.load()
         text_map = {t.text_id: t for t in texts}
         metadata_map = {t.text_id: t.metadata for t in texts}
+        elapsed = round(time.time() - t0, 1)
+        stage_times["cache_load"] = elapsed
+        counts["texts"] = len(texts)
+        counts["candidates"] = len(candidates)
         logger.info("Loaded %d texts, %d candidates from cache in %.1f seconds",
-                     len(texts), len(candidates), time.time() - t0)
+                     len(texts), len(candidates), elapsed)
     else:
         # ---- Stage 1: Extract ----
         logger.info("=" * 60)
@@ -71,8 +130,12 @@ def run_pipeline(
         if save_extracted:
             save_results(texts)
 
+        elapsed = round(time.time() - t0, 1)
+        stage_times["stage1_extract"] = elapsed
+        counts["texts"] = len(texts)
         logger.info("Stage 1 complete: %d texts in %.1f seconds",
-                     len(texts), time.time() - t0)
+                     len(texts), elapsed)
+        _log_peak_rss("Stage 1")
 
         # ---- Stage 2: Candidate Generation ----
         logger.info("=" * 60)
@@ -82,11 +145,19 @@ def run_pipeline(
 
         doc_freq = compute_document_frequencies(texts, num_workers=num_workers)
         stopgrams = identify_stopgrams(doc_freq, len(texts))
+        del doc_freq  # millions of n-gram→count entries, only needed for stopgrams
         ngram_sets = build_ngram_sets(texts, stopgrams, num_workers=num_workers)
-        candidates = generate_candidates(texts, ngram_sets, stopgrams)
+        candidates = generate_candidates(texts, ngram_sets, stopgrams,
+                                         num_workers=num_workers)
+        del ngram_sets, stopgrams  # ~8,982 frozensets, only needed for candidates
+        gc.collect()
 
+        elapsed = round(time.time() - t0, 1)
+        stage_times["stage2_candidates"] = elapsed
+        counts["stage2_candidates"] = len(candidates)
         logger.info("Stage 2 complete: %d candidates in %.1f seconds",
-                     len(candidates), time.time() - t0)
+                     len(candidates), elapsed)
+        _log_peak_rss("Stage 2")
 
         # ---- Stage 2b: Phonetic Candidate Generation ----
         if config.ENABLE_PHONETIC_SCAN:
@@ -110,9 +181,17 @@ def run_pipeline(
             candidates.extend(new_phonetic)
             candidates.sort(key=lambda c: c.containment_score, reverse=True)
 
+            elapsed = round(time.time() - t0, 1)
+            stage_times["stage2b_phonetic"] = elapsed
+            counts["phonetic_new"] = len(new_phonetic)
+            counts["candidates"] = len(candidates)
             logger.info("Stage 2b complete: %d new phonetic candidates "
                          "(total now %d) in %.1f seconds",
-                         len(new_phonetic), len(candidates), time.time() - t0)
+                         len(new_phonetic), len(candidates), elapsed)
+            del phonetic_table  # only needed for Stage 2b
+            _log_peak_rss("Stage 2b")
+        else:
+            counts["candidates"] = len(candidates)
 
         # Save to cache
         cache.save(texts, candidates, xml_dir)
@@ -125,8 +204,12 @@ def run_pipeline(
 
     alignments = align_candidates(candidates, text_map, num_workers=num_workers)
 
+    elapsed = round(time.time() - t0, 1)
+    stage_times["stage3_align"] = elapsed
+    counts["alignments"] = len(alignments)
     logger.info("Stage 3 complete: %d alignments in %.1f seconds",
-                len(alignments), time.time() - t0)
+                len(alignments), elapsed)
+    _log_peak_rss("Stage 3")
 
     # ---- Stage 4: Score & Classify ----
     logger.info("=" * 60)
@@ -140,8 +223,12 @@ def run_pipeline(
     scores = score_all(alignments, metadata_map, docnum_pair_set, text_map=text_map)
     multi_source = detect_multi_source_digests(scores, alignments, metadata_map)
 
+    elapsed = round(time.time() - t0, 1)
+    stage_times["stage4_score"] = elapsed
+    counts["scores"] = len(scores)
     logger.info("Stage 4 complete: %d scored relationships in %.1f seconds",
-                len(scores), time.time() - t0)
+                len(scores), elapsed)
+    _log_peak_rss("Stage 4")
 
     # ---- Stage 5: Validate & Report ----
     logger.info("=" * 60)
@@ -155,9 +242,17 @@ def run_pipeline(
         results_dir=results_dir,
     )
 
-    logger.info("Stage 5 complete in %.1f seconds", time.time() - t0)
+    elapsed = round(time.time() - t0, 1)
+    stage_times["stage5_report"] = elapsed
+    logger.info("Stage 5 complete in %.1f seconds", elapsed)
+    _log_peak_rss("Stage 5")
 
     total_time = time.time() - total_start
+    counts["validation_passed"] = validation['passed']
+    counts["validation_failed"] = validation['failed']
+
+    _save_timing(stage_times, counts, total_time, used_cache, num_workers)
+
     logger.info("=" * 60)
     logger.info("PIPELINE COMPLETE in %.1f seconds (%.1f min)",
                 total_time, total_time / 60)
@@ -177,6 +272,61 @@ def run_pipeline(
     }
 
 
+def _print_timing_history() -> None:
+    """Print a table of past pipeline runs from the timing log."""
+    if not TIMING_LOG.exists():
+        print("No timing records found.")
+        return
+
+    records = []
+    with open(TIMING_LOG) as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                records.append(json.loads(line))
+
+    if not records:
+        print("No timing records found.")
+        return
+
+    # Column definitions: (header, key function)
+    stage_keys = [
+        ("Stage 1", "stage1_extract"),
+        ("Stage 2", "stage2_candidates"),
+        ("Stage 2b", "stage2b_phonetic"),
+        ("Stage 3", "stage3_align"),
+        ("Stage 4", "stage4_score"),
+        ("Stage 5", "stage5_report"),
+    ]
+
+    # Header
+    print(f"{'Date':>19s}  {'Commit':>7s}  {'Cache':>5s}  ", end="")
+    for header, _ in stage_keys:
+        print(f"{header:>9s}  ", end="")
+    print(f"{'Total':>8s}  {'Pairs':>7s}  {'Texts':>5s}")
+    print("-" * 110)
+
+    for r in records:
+        ts = r["timestamp"][:19].replace("T", " ")
+        commit = r.get("git_commit", "")[:7]
+        cached = "yes" if r.get("used_cache") else "no"
+        stages = r.get("stages", {})
+        counts = r.get("counts", {})
+
+        print(f"{ts:>19s}  {commit:>7s}  {cached:>5s}  ", end="")
+        for _, key in stage_keys:
+            val = stages.get(key)
+            if val is not None:
+                print(f"{val:>8.1f}s  ", end="")
+            else:
+                print(f"{'---':>9s}  ", end="")
+        total = r.get("total_seconds", 0)
+        mins = total / 60
+        print(f"{mins:>7.1f}m  ", end="")
+        print(f"{counts.get('candidates', ''):>7}  ", end="")
+        print(f"{counts.get('texts', ''):>5}")
+
+
 def main():
     """Entry point for running the pipeline from command line."""
     import argparse  # lazy: only needed when invoked as CLI
@@ -194,7 +344,7 @@ def main():
     )
     parser.add_argument(
         '--workers', type=int, default=None,
-        help='Number of parallel workers (default: cpu_count)'
+        help='Number of parallel workers (default: min(cpu_count, 4))'
     )
     parser.add_argument(
         '--no-save', action='store_true',
@@ -208,7 +358,15 @@ def main():
         '--log-level', default='INFO',
         choices=['DEBUG', 'INFO', 'WARNING', 'ERROR'],
     )
+    parser.add_argument(
+        '--show-timing', action='store_true',
+        help='Print past timing records and exit'
+    )
     args = parser.parse_args()
+
+    if args.show_timing:
+        _print_timing_history()
+        return
 
     logging.basicConfig(
         level=getattr(logging, args.log_level),

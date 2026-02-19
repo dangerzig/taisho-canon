@@ -139,6 +139,30 @@ class TestStableHash:
         assert stable_hash("abc") != stable_hash("def")
 
 
+class TestNumWorkersEdgeCases:
+    """Verify num_workers=0 doesn't crash fingerprint functions."""
+
+    def test_compute_doc_freq_zero_workers(self):
+        texts = [
+            _make_text("t1", "般若波羅蜜多心經大明"),
+            _make_text("t2", "觀自在菩薩行深般若波"),
+        ]
+        result = compute_document_frequencies(texts, n=5, num_workers=0)
+        assert isinstance(result, dict)
+        assert len(result) > 0
+
+    def test_build_ngram_sets_zero_workers(self):
+        texts = [
+            _make_text("t1", "般若波羅蜜多心經大明"),
+            _make_text("t2", "觀自在菩薩行深般若波"),
+        ]
+        doc_freq = compute_document_frequencies(texts, n=5, num_workers=1)
+        stopgrams = identify_stopgrams(doc_freq, len(texts), threshold=1.0)
+        result = build_ngram_sets(texts, stopgrams, n=5, num_workers=0)
+        assert len(result) == 2
+        assert all(isinstance(v, frozenset) for v in result.values())
+
+
 class TestFingerprintText:
     def test_excludes_stopgrams(self):
         stopgrams = {stable_hash("般若波羅蜜")}

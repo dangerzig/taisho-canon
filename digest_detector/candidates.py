@@ -7,8 +7,9 @@ and also incorporates docNumber cross-references and phonetic candidates.
 
 import logging
 import re
+from bisect import bisect_left
 from collections import defaultdict
-from multiprocessing import Pool, cpu_count
+from multiprocessing import Pool
 
 from . import config
 from .fingerprint import stable_hash
@@ -20,6 +21,91 @@ logger = logging.getLogger(__name__)
 # --- Pool worker state (set via initializer, avoids per-task pickling) ---
 _worker_table: dict[str, set[str]] = {}
 _worker_min_region_len: int = 10
+
+# --- Pool worker state for candidate generation (Stage 2) ---
+_cand_stopgrams: set[int] = set()
+_cand_source_ids: list[str] = []
+_cand_source_lens: list[int] = []
+_cand_source_sets: list[frozenset[int]] = []
+_cand_n: int = 5
+_cand_min_containment: float = 0.10
+_cand_docnum_pair_set: set[tuple[str, str]] = set()
+
+
+def _candidate_init(
+    stopgrams: set[int],
+    source_ids: list[str],
+    source_lens: list[int],
+    source_sets: list[frozenset[int]],
+    n: int,
+    min_containment: float,
+    docnum_pair_set: set[tuple[str, str]],
+):
+    """Pool initializer: set shared data for candidate workers."""
+    global _cand_stopgrams, _cand_source_ids, _cand_source_lens
+    global _cand_source_sets, _cand_n, _cand_min_containment, _cand_docnum_pair_set
+    _cand_stopgrams = stopgrams
+    _cand_source_ids = source_ids
+    _cand_source_lens = source_lens
+    _cand_source_sets = source_sets
+    _cand_n = n
+    _cand_min_containment = min_containment
+    _cand_docnum_pair_set = docnum_pair_set
+
+
+def _candidate_worker(args: tuple) -> list[CandidatePair]:
+    """Worker: score one digest against all qualifying sources."""
+    d_id, jing_text, d_len, min_size_ratio = args
+    n = _cand_n
+    stopgrams = _cand_stopgrams
+    min_containment = _cand_min_containment
+    source_ids_arr = _cand_source_ids
+    source_lens_arr = _cand_source_lens
+    source_sets_arr = _cand_source_sets
+    docnum_pair_set = _cand_docnum_pair_set
+
+    if len(jing_text) < n:
+        return []
+
+    # Build digest's n-gram set from jing_text
+    digest_hashes = set()
+    for i in range(len(jing_text) - n + 1):
+        h = stable_hash(jing_text[i:i + n])
+        if h not in stopgrams:
+            digest_hashes.add(h)
+
+    if not digest_hashes:
+        return []
+
+    digest_set = frozenset(digest_hashes)
+    min_source_len = d_len * min_size_ratio
+
+    # Binary search for the first source meeting the size threshold.
+    # source_lens_arr is sorted ascending, so all entries from lo onward qualify.
+    lo = bisect_left(source_lens_arr, min_source_len)
+
+    results = []
+    for idx in range(lo, len(source_ids_arr)):
+        source_id = source_ids_arr[idx]
+        if source_id == d_id:
+            continue
+
+        matching = len(digest_set & source_sets_arr[idx])
+        containment = matching / len(digest_set)
+        # Used only for from_docnumber check, not deduplication
+        pair_key = (d_id, source_id)
+
+        if containment >= min_containment:
+            results.append(CandidatePair(
+                digest_id=d_id,
+                source_id=source_id,
+                containment_score=containment,
+                matching_ngrams=matching,
+                total_digest_ngrams=len(digest_set),
+                from_docnumber=pair_key in docnum_pair_set,
+            ))
+
+    return results
 
 
 def _phonetic_init(table: dict[str, set[str]], min_region_len: int):
@@ -87,10 +173,29 @@ def _find_docnumber_pairs(
     return list(pairs)
 
 
+def _cleanup_candidate_globals():
+    """Release references to large shared arrays after candidate generation.
+
+    The module-level _cand_* globals are set by _candidate_init (parallel path)
+    or directly (serial path). Clearing them after use prevents large arrays
+    from persisting in memory for the rest of the pipeline.
+    """
+    global _cand_stopgrams, _cand_source_ids, _cand_source_lens
+    global _cand_source_sets, _cand_n, _cand_min_containment, _cand_docnum_pair_set
+    _cand_stopgrams = set()
+    _cand_source_ids = []
+    _cand_source_lens = []
+    _cand_source_sets = []
+    _cand_n = 5
+    _cand_min_containment = 0.10
+    _cand_docnum_pair_set = set()
+
+
 def generate_candidates(
     texts: list[ExtractedText],
     ngram_sets: dict[str, frozenset[int]],
     stopgrams: set[int],
+    num_workers: int = None,
 ) -> list[CandidatePair]:
     """Generate candidate digest-source pairs using set containment.
 
@@ -98,7 +203,11 @@ def generate_candidates(
     jing_text and measures containment via set intersection against each
     source's pre-built n-gram set.
     Also includes pairs from docNumber cross-references.
+
+    Note: Not thread-safe. Uses module-level globals for multiprocessing
+    worker state. Do not call concurrently from multiple threads.
     """
+    num_workers = config.resolve_worker_count(num_workers)
     n = config.NGRAM_SIZE
     max_digest_len = config.MAX_DIGEST_LENGTH
     min_containment = config.MIN_CONTAINMENT
@@ -134,62 +243,50 @@ def generate_candidates(
     source_lens_arr = [e[1] for e in source_entries]
     source_sets_arr = [e[2] for e in source_entries]
 
+    # Build worker args: (d_id, jing_text, d_len, min_size_ratio)
+    worker_args = [
+        (digest.text_id, digest.jing_text,
+         digest.metadata.char_count, min_size_ratio)
+        for digest in digest_candidates
+    ]
+
     candidates = []
     seen_pairs = set()
 
-    for digest in digest_candidates:
-        d_id = digest.text_id
-        d_len = digest.metadata.char_count
-        # Use jing_text on the digest side to exclude preface material
-        # that would dilute containment scores.
-        content = digest.jing_text
+    if num_workers > 1 and len(digest_candidates) >= 10:
+        # Parallel path
+        chunksize = max(1, len(worker_args) // (num_workers * 4))
+        with Pool(
+            num_workers,
+            initializer=_candidate_init,
+            initargs=(stopgrams, source_ids_arr, source_lens_arr,
+                      source_sets_arr, n, min_containment, docnum_pair_set),
+            maxtasksperchild=config.MAXTASKSPERCHILD,
+        ) as pool:
+            for result_batch in pool.imap_unordered(
+                _candidate_worker, worker_args, chunksize=chunksize,
+            ):
+                for cand in result_batch:
+                    pair_key = (cand.digest_id, cand.source_id)
+                    seen_pairs.add(pair_key)
+                    candidates.append(cand)
+    else:
+        # Serial path — set module globals directly for _candidate_worker
+        global _cand_stopgrams, _cand_source_ids, _cand_source_lens
+        global _cand_source_sets, _cand_n, _cand_min_containment, _cand_docnum_pair_set
+        _cand_stopgrams = stopgrams
+        _cand_source_ids = source_ids_arr
+        _cand_source_lens = source_lens_arr
+        _cand_source_sets = source_sets_arr
+        _cand_n = n
+        _cand_min_containment = min_containment
+        _cand_docnum_pair_set = docnum_pair_set
 
-        if len(content) < n:
-            continue
-
-        # Build digest's n-gram set from jing_text
-        digest_hashes = set()
-        for i in range(len(content) - n + 1):
-            h = stable_hash(content[i:i + n])
-            if h not in stopgrams:
-                digest_hashes.add(h)
-
-        if not digest_hashes:
-            continue
-
-        digest_set = frozenset(digest_hashes)
-        min_source_len = d_len * min_size_ratio
-
-        # Binary search for the first source meeting the size threshold.
-        # source_lens_arr is sorted ascending, so all entries from lo onward qualify.
-        lo, hi = 0, len(source_lens_arr)
-        while lo < hi:
-            mid = (lo + hi) // 2
-            if source_lens_arr[mid] < min_source_len:
-                lo = mid + 1
-            else:
-                hi = mid
-
-        # Score only sources large enough (from lo to end)
-        for idx in range(lo, len(source_ids_arr)):
-            source_id = source_ids_arr[idx]
-            if source_id == d_id:
-                continue
-
-            matching = len(digest_set & source_sets_arr[idx])
-            containment = matching / len(digest_set)
-            pair_key = (d_id, source_id)
-
-            if containment >= min_containment:
+        for args in worker_args:
+            for cand in _candidate_worker(args):
+                pair_key = (cand.digest_id, cand.source_id)
                 seen_pairs.add(pair_key)
-                candidates.append(CandidatePair(
-                    digest_id=d_id,
-                    source_id=source_id,
-                    containment_score=containment,
-                    matching_ngrams=matching,
-                    total_digest_ngrams=len(digest_set),
-                    from_docnumber=pair_key in docnum_pair_set,
-                ))
+                candidates.append(cand)
 
     # Add docNumber pairs not already found by fingerprinting
     for d_id, s_id in docnum_pairs:
@@ -211,6 +308,8 @@ def generate_candidates(
     # Sort by containment score descending
     candidates.sort(key=lambda c: c.containment_score, reverse=True)
 
+    _cleanup_candidate_globals()
+
     logger.info("Generated %d candidate pairs (%d from fingerprinting, %d from docNumber)",
                 len(candidates),
                 sum(1 for c in candidates if not c.from_docnumber or c.containment_score > 0),
@@ -219,7 +318,7 @@ def generate_candidates(
     return candidates
 
 
-def _phonetic_region_worker(
+def _phonetic_worker(
     args: tuple,
 ) -> tuple[str, list[tuple[str, int]]] | None:
     """Worker: find transliteration regions and syllable n-grams for one text.
@@ -258,13 +357,15 @@ def generate_phonetic_candidates(
     Args:
         texts: All extracted texts.
         table: Phonetic equivalence table (char → set of syllables).
-        num_workers: Number of parallel workers (None = cpu_count).
+        num_workers: Number of parallel workers (None = min(cpu_count, 4)).
 
     Returns:
         List of CandidatePair with from_phonetic=True.
+
+    Note: Not thread-safe. Uses module-level globals for multiprocessing
+    worker state. Do not call concurrently from multiple threads.
     """
-    if num_workers is None:
-        num_workers = config.NUM_WORKERS or cpu_count()
+    num_workers = config.resolve_worker_count(num_workers)
     min_region_len = config.MIN_TRANSLITERATION_LENGTH
     min_containment = config.MIN_PHONETIC_CONTAINMENT
     min_size_ratio = config.MIN_SIZE_RATIO
@@ -285,15 +386,16 @@ def generate_phonetic_candidates(
         _worker_table = table
         _worker_min_region_len = min_region_len
         for args in args_list:
-            result = _phonetic_region_worker(args)
+            result = _phonetic_worker(args)
             if result is not None:
                 text_ngrams[result[0]] = result[1]
     else:
         chunksize = max(1, len(args_list) // (num_workers * 4))
         with Pool(num_workers, initializer=_phonetic_init,
-                  initargs=(table, min_region_len)) as pool:
+                  initargs=(table, min_region_len),
+                  maxtasksperchild=config.MAXTASKSPERCHILD) as pool:
             for result in pool.imap_unordered(
-                _phonetic_region_worker, args_list, chunksize=chunksize,
+                _phonetic_worker, args_list, chunksize=chunksize,
             ):
                 if result is not None:
                     text_ngrams[result[0]] = result[1]

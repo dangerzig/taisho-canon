@@ -74,6 +74,7 @@ _STAGE_PATCHES = {
     "digest_detector.pipeline.detect_multi_source_digests": None,
     "digest_detector.pipeline.validate_ground_truth": None,
     "digest_detector.pipeline.generate_reports": None,
+    "digest_detector.pipeline._save_timing": None,
 }
 
 
@@ -91,6 +92,7 @@ def _patch_all_stages(texts, candidates):
         "digest_detector.pipeline.detect_multi_source_digests": [],
         "digest_detector.pipeline.validate_ground_truth": {"passed": 0, "failed": 0},
         "digest_detector.pipeline.generate_reports": None,
+        "digest_detector.pipeline._save_timing": None,
     }
 
 

@@ -239,3 +239,57 @@ class TestGenerateCandidates:
         # Containment should be based on jing_text, not full_text
         # jing shares ~25 of ~33 chars → high containment
         assert pair[0].containment_score > 0.3
+
+
+class TestGenerateCandidatesParallel:
+    """Verify serial and parallel paths produce identical results."""
+
+    def test_parallel_equivalence(self):
+        """generate_candidates with num_workers=1 and 2 should match."""
+        # Create 15 texts (above the threshold for parallel execution)
+        base_texts = [
+            "觀自在菩薩行深般若波羅蜜多時照見五蘊皆空度一切苦厄舍利子色不異空空不異色",
+            "如是我聞一時佛在舍衛國祇樹給孤獨園與大比丘衆千二百五十人俱爾時世尊告諸比丘",
+            "舍利弗白佛言世尊云何菩薩摩訶薩行般若波羅蜜多時應觀色受想行識無常苦空非我",
+            "爾時世尊告阿難言汝今諦聽善思念之吾當為汝分別解說阿難白佛唯然世尊願樂欲聞",
+            "佛告須菩提諸菩薩摩訶薩應如是降伏其心所有一切衆生之類若卵生若胎生若濕生若化生",
+            "文殊師利言世尊一切法無生無滅無相無為無得無失是為法界無二無別如虛空故",
+            "爾時長老須菩提即從座起偏袒右肩右膝著地合掌恭敬而白佛言希有世尊如來善護念諸菩薩",
+            "觀世音菩薩即時觀察音聲即得解脫若三千大千國土衆生受諸苦惱聞是觀世音菩薩威神力故",
+            "地藏菩薩本願經如來讚歎品第六爾時世尊舉身放大光明遍照百千萬億恒河沙等諸佛世界",
+            "普賢菩薩行願品入不思議解脫境界善財童子五十三參第四十回參普賢菩薩處得一切佛功德海",
+            "藥師琉璃光如來本願功德經如是我聞一時薄伽梵遊化諸國至廣嚴城住樂音樹下與大苾芻衆八千人俱",
+            "維摩詰所說經佛國品第一如是我聞一時佛在毘耶離菴羅樹園與大比丘衆八千人俱菩薩三萬二千",
+            "大般涅槃經序品第一如是我聞一時佛在拘尸那國力士生地阿利羅跋提河邊娑羅雙樹間爾時世尊",
+            "妙法蓮華經方便品第二爾時世尊從三昧安詳而起告舍利弗諸佛智慧甚深無量其智慧門難解難入",
+            "華嚴經入法界品善財童子參德雲比丘善財童子漸次南行至勝樂國妙峰山上見德雲比丘經行往來",
+        ]
+        # First text is shared across a longer "source" to create real candidates
+        shared = base_texts[0]
+        source_content = shared + "更多更多更多更多的佛經文字填充" * 20
+        texts = [_make_text(f"T01n{i:04d}", t) for i, t in enumerate(base_texts)]
+        texts.append(_make_text("T01n0099", source_content))
+
+        doc_freq = compute_document_frequencies(texts, n=5, num_workers=1)
+        stopgrams = identify_stopgrams(doc_freq, len(texts), threshold=1.0)
+        ngram_sets = build_ngram_sets(texts, stopgrams, n=5, num_workers=1)
+
+        serial = generate_candidates(texts, ngram_sets, stopgrams, num_workers=1)
+        parallel = generate_candidates(texts, ngram_sets, stopgrams, num_workers=2)
+
+        serial_pairs = {(c.digest_id, c.source_id) for c in serial}
+        parallel_pairs = {(c.digest_id, c.source_id) for c in parallel}
+        assert serial_pairs == parallel_pairs, (
+            f"Serial found {len(serial_pairs)} pairs, parallel found {len(parallel_pairs)}. "
+            f"Serial-only: {serial_pairs - parallel_pairs}, "
+            f"Parallel-only: {parallel_pairs - serial_pairs}"
+        )
+
+        # Also verify containment scores match
+        serial_scores = {(c.digest_id, c.source_id): c.containment_score for c in serial}
+        parallel_scores = {(c.digest_id, c.source_id): c.containment_score for c in parallel}
+        for key in serial_scores:
+            assert abs(serial_scores[key] - parallel_scores[key]) < 1e-9, (
+                f"Score mismatch for {key}: serial={serial_scores[key]}, "
+                f"parallel={parallel_scores[key]}"
+            )

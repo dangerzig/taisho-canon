@@ -1,5 +1,6 @@
 """All tunable parameters for the digest detection pipeline."""
 
+from multiprocessing import cpu_count
 from pathlib import Path
 
 # --- Paths ---
@@ -58,6 +59,28 @@ TRANSLITERATION_DENSITY = 0.6  # Min fraction of table chars in a window
 TRANSLITERATION_WINDOW = 20  # Sliding window size for density-based detection
 MIN_TRANSLITERATION_LENGTH = 10  # Minimum region length (chars) to index
 
+# --- Stage 3: Alignment Pre-filtering ---
+# Skip zero-containment docNumber pairs where both texts exceed this length.
+# Such pairs have no n-gram overlap and are expensive to align for no benefit.
+# Small texts (<5000 chars) are cheap to align so we keep them just in case.
+DOCNUM_PREFILTER_MIN_LEN = 5000
+
 # --- Pipeline ---
-NUM_WORKERS = None  # None = use cpu_count()
+NUM_WORKERS = None  # None = use resolve_worker_count()
+DEFAULT_MAX_WORKERS = 4  # Cap default workers to limit memory on 16 GB machines
 CACHE_DIR = BASE_DIR / "data" / "cache"
+MAXTASKSPERCHILD = 100  # Periodically restart workers to reclaim leaked memory
+
+
+def resolve_worker_count(num_workers: int | None = None) -> int:
+    """Resolve the effective number of parallel workers.
+
+    If num_workers is explicitly provided (e.g. via --workers), use it.
+    Otherwise, use NUM_WORKERS from config, or default to
+    min(cpu_count(), DEFAULT_MAX_WORKERS).
+    """
+    if num_workers is not None:
+        return max(1, num_workers)
+    if NUM_WORKERS is not None:
+        return max(1, NUM_WORKERS)
+    return max(1, min(cpu_count(), DEFAULT_MAX_WORKERS))
