@@ -61,9 +61,11 @@ class AlignmentSegment:
     digest_end: int
     source_start: int  # char position in source (-1 if novel)
     source_end: int
-    match_type: str  # "exact", "fuzzy", "novel"
+    match_type: str  # "exact", "fuzzy", "novel", "phonetic"
     digest_text: str
     source_text: str  # empty if novel
+    phonetic_mapping: list[tuple[str, str, str]] = field(default_factory=list)
+    # For phonetic matches: list of (digest_char, sanskrit_syllable, source_char)
 
 
 @dataclass
@@ -93,6 +95,7 @@ class DigestScore:
     num_source_regions: int
     source_span: float
     has_docnumber_xref: bool = False
+    phonetic_coverage: float = 0.0  # fraction of digest matched phonetically
 
 
 @dataclass

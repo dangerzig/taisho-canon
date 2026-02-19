@@ -52,7 +52,27 @@ def classify_relationship(
     - digest: coverage >= 0.30, avg segment >= 10 chars (condensed derivation)
     - commentary: coverage >= 0.20, avg segment < 10 chars (scattered small matches)
     """
-    coverage = alignment.coverage
+    # Compute phonetic coverage fraction from segments
+    matched_chars = sum(
+        s.digest_end - s.digest_start for s in alignment.segments
+        if s.match_type != "novel")
+    phonetic_chars = sum(
+        s.digest_end - s.digest_start for s in alignment.segments
+        if s.match_type == "phonetic")
+
+    if matched_chars > 0:
+        phonetic_fraction = phonetic_chars / matched_chars
+    else:
+        phonetic_fraction = 0.0
+
+    # Phonetic coverage as fraction of digest
+    phonetic_cov = alignment.coverage * phonetic_fraction
+
+    # Effective coverage: discount phonetic matches slightly
+    # coverage = (exact+fuzzy portion) + phonetic portion × weight
+    coverage = (alignment.coverage * (1 - phonetic_fraction) +
+                phonetic_cov * config.PHONETIC_COVERAGE_WEIGHT)
+
     avg_seg_len = _avg_segment_length(alignment.segments)
     longest_seg = _longest_segment(alignment.segments)
     # Use jing lengths for size ratio when available (avoids preface inflation)
@@ -99,6 +119,7 @@ def classify_relationship(
         num_source_regions=alignment.num_source_regions,
         source_span=alignment.source_span,
         has_docnumber_xref=has_docnumber_xref,
+        phonetic_coverage=phonetic_cov,
     )
 
 

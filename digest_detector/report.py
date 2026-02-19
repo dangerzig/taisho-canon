@@ -140,10 +140,13 @@ def _format_alignment_visualization(
 
     lines = []
     lines.append(f"{alignment.digest_id} ({d_title}) → {alignment.source_id} ({s_title})")
-    lines.append(f"Coverage: {score.coverage:.0%} | "
-                 f"Novel: {score.novel_fraction:.0%} | "
-                 f"Confidence: {score.confidence:.2f} | "
-                 f"Class: {score.classification}")
+    cov_line = (f"Coverage: {score.coverage:.0%} | "
+                f"Novel: {score.novel_fraction:.0%} | "
+                f"Confidence: {score.confidence:.2f} | "
+                f"Class: {score.classification}")
+    if score.phonetic_coverage > 0:
+        cov_line += f" | Phonetic: {score.phonetic_coverage:.0%}"
+    lines.append(cov_line)
     lines.append("")
     lines.append(f"{'DIGEST':<45} SOURCE")
     lines.append("-" * 90)
@@ -166,8 +169,35 @@ def _format_alignment_visualization(
                 f"{d_range:<10} {d_preview:<34} "
                 f"{alignment.source_id} {s_range} ({match_label})"
             )
+            if seg.match_type == "phonetic" and seg.phonetic_mapping:
+                # Show char-by-char transliteration mapping
+                mapping_strs = [f"{d_ch}→{syl}←{s_ch}"
+                                for d_ch, syl, s_ch in seg.phonetic_mapping
+                                if d_ch != s_ch]
+                if mapping_strs:
+                    lines.append(f"{'':10} Transliteration: "
+                                 + " ".join(mapping_strs[:15]))
 
     return '\n'.join(lines)
+
+
+def _segment_to_dict(seg: AlignmentSegment) -> dict:
+    """Convert an AlignmentSegment to a JSON-serializable dict."""
+    d = {
+        'digest_start': seg.digest_start,
+        'digest_end': seg.digest_end,
+        'source_start': seg.source_start,
+        'source_end': seg.source_end,
+        'match_type': seg.match_type,
+        'digest_text': seg.digest_text,
+        'source_text': seg.source_text,
+    }
+    if seg.match_type == "phonetic" and seg.phonetic_mapping:
+        d['phonetic_mapping'] = [
+            {'digest_char': d_ch, 'syllable': syl, 'source_char': s_ch}
+            for d_ch, syl, s_ch in seg.phonetic_mapping
+        ]
+    return d
 
 
 def generate_reports(
@@ -191,7 +221,7 @@ def generate_reports(
     # 1. digest_relationships.json
     relationships = []
     for s in scores:
-        relationships.append({
+        rel = {
             'digest_id': s.digest_id,
             'source_id': s.source_id,
             'classification': s.classification,
@@ -203,7 +233,10 @@ def generate_reports(
             'num_source_regions': s.num_source_regions,
             'source_span': round(s.source_span, 6),
             'has_docnumber_xref': s.has_docnumber_xref,
-        })
+        }
+        if s.phonetic_coverage > 0:
+            rel['phonetic_coverage'] = round(s.phonetic_coverage, 4)
+        relationships.append(rel)
 
     with open(results_dir / "digest_relationships.json", 'w', encoding='utf-8') as f:
         json.dump(relationships, f, ensure_ascii=False, indent=2)
@@ -222,15 +255,7 @@ def generate_reports(
                 'source_span': round(alignment.source_span, 6),
                 'num_source_regions': alignment.num_source_regions,
                 'segments': [
-                    {
-                        'digest_start': seg.digest_start,
-                        'digest_end': seg.digest_end,
-                        'source_start': seg.source_start,
-                        'source_end': seg.source_end,
-                        'match_type': seg.match_type,
-                        'digest_text': seg.digest_text,
-                        'source_text': seg.source_text,
-                    }
+                    _segment_to_dict(seg)
                     for seg in alignment.segments
                 ],
             }

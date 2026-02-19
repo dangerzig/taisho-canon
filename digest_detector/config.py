@@ -44,5 +44,11 @@ WEIGHT_LENGTH_ASYMMETRY = 0.10
 WEIGHT_DOCNUMBER_XREF = 0.15
 WEIGHT_AVG_SEGMENT_LEN = 0.10
 
+# --- Stage 3b: Phonetic Transliteration Detection ---
+ENABLE_PHONETIC_SCAN = True  # Enable post-hoc phonetic rescan of novel segments
+PHONETIC_SEED_LENGTH = 5  # Min consecutive phonetically equivalent chars to seed
+PHONETIC_COVERAGE_WEIGHT = 0.8  # Weight for phonetic matches in coverage (vs 1.0 for exact/fuzzy)
+PHONETIC_MAX_SYLLABLES = 5  # Max syllable values per char (more → too ambiguous)
+
 # --- Pipeline ---
 NUM_WORKERS = None  # None = use cpu_count()

@@ -2,7 +2,8 @@
 
 Finds exact matching seeds, extends them with fuzzy matching, chains
 non-overlapping seeds to maximize coverage, and classifies remaining
-segments as novel material.
+segments as novel material. Optionally rescans novel segments for
+phonetically equivalent transliterations (dharani detection).
 """
 
 import logging
@@ -14,6 +15,11 @@ from tqdm import tqdm
 from . import config
 from .models import (
     ExtractedText, CandidatePair, AlignmentSegment, AlignmentResult,
+)
+from .phonetic import (
+    build_equivalence_table,
+    are_phonetically_equivalent,
+    phonetic_mapping_for_pair,
 )
 
 logger = logging.getLogger(__name__)
@@ -269,6 +275,193 @@ def _chain_seeds(
     return selected
 
 
+# Module-level cache for phonetic equivalence table (loaded once)
+_phonetic_table: dict[str, set[str]] | None = None
+
+
+def _get_phonetic_table() -> dict[str, set[str]]:
+    """Lazily load and cache the phonetic equivalence table."""
+    global _phonetic_table
+    if _phonetic_table is None:
+        _phonetic_table = build_equivalence_table()
+    return _phonetic_table
+
+
+def _has_transliteration_chars(text: str, table: dict[str, set[str]]) -> bool:
+    """Check if text contains any characters from the transliteration table."""
+    return any(ch in table for ch in text)
+
+
+def _find_phonetic_seeds(
+    digest: str,
+    source: str,
+    table: dict[str, set[str]],
+    k: int = None,
+) -> list[tuple[int, int, int]]:
+    """Find phonetically equivalent seed matches between digest and source.
+
+    Like _find_seeds but uses phonetic equivalence instead of exact equality.
+    Returns list of (d_start, s_start, length) triples.
+    """
+    if k is None:
+        k = config.PHONETIC_SEED_LENGTH
+
+    d_len = len(digest)
+    s_len = len(source)
+    if d_len < k or s_len < k:
+        return []
+
+    # Build index: for each source char, map its syllable values to positions
+    # syllable → list of source positions where a char with that syllable appears
+    syl_to_positions: dict[str, list[int]] = defaultdict(list)
+    for i, ch in enumerate(source):
+        for syl in table.get(ch, ()):
+            syl_to_positions[syl].append(i)
+
+    seeds = []
+    d_pos = 0
+    while d_pos <= d_len - k:
+        d_ch = digest[d_pos]
+        d_syls = table.get(d_ch, set())
+        if not d_syls:
+            d_pos += 1
+            continue
+
+        # Find source positions where the first digest char has a phonetic match
+        candidate_positions: set[int] = set()
+        for syl in d_syls:
+            for s_pos in syl_to_positions.get(syl, ()):
+                candidate_positions.add(s_pos)
+
+        best_match = None
+        for s_pos in candidate_positions:
+            if s_pos + k > s_len:
+                continue
+
+            # Check if k consecutive chars are phonetically equivalent
+            length = 0
+            while (d_pos + length < d_len and
+                   s_pos + length < s_len and
+                   are_phonetically_equivalent(
+                       digest[d_pos + length],
+                       source[s_pos + length],
+                       table)):
+                length += 1
+
+            if length >= k:
+                # Require at least 2 differing characters — if all
+                # or almost all chars match exactly, exact/fuzzy
+                # matching already handles it. Requiring 2+ diffs
+                # prevents false positives from single-substitution
+                # coincidences.
+                diff_count = sum(
+                    1 for j in range(length)
+                    if digest[d_pos + j] != source[s_pos + j]
+                )
+                if diff_count >= 2:
+                    if best_match is None or length > best_match[2]:
+                        best_match = (d_pos, s_pos, length)
+
+        if best_match:
+            seeds.append(best_match)
+
+        d_pos += 1
+
+    return seeds
+
+
+def _phonetic_rescan(
+    digest_text: str,
+    source_text: str,
+    segments: list[AlignmentSegment],
+    table: dict[str, set[str]],
+) -> list[AlignmentSegment]:
+    """Rescan novel segments for phonetically equivalent transliterations.
+
+    For each novel segment containing transliteration characters, searches
+    the source for phonetically equivalent sequences using seed-and-extend
+    with are_phonetically_equivalent() instead of ==.
+
+    Returns a new list of segments with phonetic matches split out of
+    novel segments.
+    """
+    k = config.PHONETIC_SEED_LENGTH
+    new_segments = []
+
+    for seg in segments:
+        if seg.match_type != "novel":
+            new_segments.append(seg)
+            continue
+
+        novel_text = seg.digest_text
+        # Skip if too short or no transliteration chars
+        if len(novel_text) < k or not _has_transliteration_chars(novel_text, table):
+            new_segments.append(seg)
+            continue
+
+        # Find phonetic seeds within this novel segment against full source
+        phonetic_seeds = _find_phonetic_seeds(novel_text, source_text, table, k)
+
+        if not phonetic_seeds:
+            new_segments.append(seg)
+            continue
+
+        # Chain non-overlapping phonetic seeds (reuse existing chainer)
+        extended = [(d_s, d_s + length, s_s, s_s + length, "phonetic")
+                    for d_s, s_s, length in phonetic_seeds]
+        chained = _chain_seeds(extended, len(novel_text))
+
+        if not chained:
+            new_segments.append(seg)
+            continue
+
+        # Split the novel segment into phonetic + remaining novel parts
+        prev_end = 0
+        for d_start, d_end, s_start, s_end, _ in chained:
+            # Novel portion before this phonetic match
+            if d_start > prev_end:
+                new_segments.append(AlignmentSegment(
+                    digest_start=seg.digest_start + prev_end,
+                    digest_end=seg.digest_start + d_start,
+                    source_start=-1,
+                    source_end=-1,
+                    match_type="novel",
+                    digest_text=novel_text[prev_end:d_start],
+                    source_text="",
+                ))
+
+            # Phonetic match
+            d_text = novel_text[d_start:d_end]
+            s_text = source_text[s_start:s_end]
+            mapping = phonetic_mapping_for_pair(d_text, s_text, table)
+
+            new_segments.append(AlignmentSegment(
+                digest_start=seg.digest_start + d_start,
+                digest_end=seg.digest_start + d_end,
+                source_start=s_start,
+                source_end=s_end,
+                match_type="phonetic",
+                digest_text=d_text,
+                source_text=s_text,
+                phonetic_mapping=mapping,
+            ))
+            prev_end = d_end
+
+        # Trailing novel portion
+        if prev_end < len(novel_text):
+            new_segments.append(AlignmentSegment(
+                digest_start=seg.digest_start + prev_end,
+                digest_end=seg.digest_end,
+                source_start=-1,
+                source_end=-1,
+                match_type="novel",
+                digest_text=novel_text[prev_end:],
+                source_text="",
+            ))
+
+    return new_segments
+
+
 def align_pair(
     digest_text: str,
     source_text: str,
@@ -336,6 +529,16 @@ def align_pair(
             digest_text=digest_text[prev_end:d_len],
             source_text="",
         ))
+
+    # Step 5: Phonetic rescan of novel segments (if enabled)
+    if config.ENABLE_PHONETIC_SCAN:
+        table = _get_phonetic_table()
+        segments = _phonetic_rescan(digest_text, source_text, segments, table)
+        # Recompute covered chars including phonetic matches
+        covered = sum(
+            s.digest_end - s.digest_start
+            for s in segments if s.match_type != "novel"
+        )
 
     # Compute stats
     coverage = covered / d_len if d_len > 0 else 0.0

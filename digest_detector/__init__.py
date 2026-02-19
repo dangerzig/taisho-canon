@@ -15,4 +15,5 @@ __all__ = [
     "report",
     "pipeline",
     "models",
+    "phonetic",
 ]
