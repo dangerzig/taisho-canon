@@ -9,6 +9,9 @@ sc-data/
 # Extracted text cache (211 MB, regenerable via pipeline)
 data/texts/
 
+# Pipeline stage cache (pickle, regenerable)
+data/cache/
+
 # Per-pair alignment JSON files (382 MB, regenerable via pipeline)
 results/alignments/
 

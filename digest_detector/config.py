@@ -52,6 +52,7 @@ PHONETIC_MAX_SYLLABLES = 5  # Max syllable values per char (more → too ambiguo
 
 # --- Stage 2b: Phonetic Candidate Generation ---
 PHONETIC_NGRAM_SIZE = 3  # Syllable n-gram size for phonetic inverted index
+PHONETIC_STOPGRAM_DOC_FREQ = 0.05  # Exclude syllable n-grams in >5% of indexed texts
 MIN_PHONETIC_CONTAINMENT = 0.25  # Minimum phonetic containment to keep pair
 TRANSLITERATION_DENSITY = 0.6  # Min fraction of table chars in a window
 TRANSLITERATION_WINDOW = 20  # Sliding window size for density-based detection
@@ -59,3 +60,4 @@ MIN_TRANSLITERATION_LENGTH = 10  # Minimum region length (chars) to index
 
 # --- Pipeline ---
 NUM_WORKERS = None  # None = use cpu_count()
+CACHE_DIR = BASE_DIR / "data" / "cache"

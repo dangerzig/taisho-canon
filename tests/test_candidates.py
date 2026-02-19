@@ -10,7 +10,7 @@ from digest_detector.candidates import (
 from digest_detector.fingerprint import (
     compute_document_frequencies,
     identify_stopgrams,
-    build_inverted_index,
+    build_ngram_sets,
 )
 from digest_detector.models import ExtractedText, TextMetadata, DivSegment
 
@@ -126,6 +126,30 @@ class TestFindDocnumberPairs:
         assert len(pairs) == 0
 
 
+class TestGenerateCandidatesDegenerate:
+    def test_empty_ngram_sets(self):
+        """Empty ngram_sets dict produces no candidates."""
+        texts = [
+            _make_text("T01n0001", "般若波羅蜜多心經觀自在菩薩"),
+        ]
+        candidates = generate_candidates(texts, ngram_sets={}, stopgrams=set())
+        assert candidates == []
+
+    def test_text_with_empty_frozenset(self):
+        """A text whose frozenset is empty doesn't cause errors."""
+        texts = [
+            _make_text("T01n0001", "般若波羅蜜多心經觀自在菩薩"),
+            _make_text("T01n0002", "觀自在菩薩行深般若波羅蜜多" * 20),
+        ]
+        ngram_sets = {
+            "T01n0001": frozenset(),
+            "T01n0002": frozenset(),
+        }
+        candidates = generate_candidates(texts, ngram_sets, stopgrams=set())
+        # No matches possible with empty sets
+        assert candidates == []
+
+
 class TestGenerateCandidates:
     def test_finds_similar_texts(self):
         """Texts sharing significant content should become candidates."""
@@ -139,9 +163,9 @@ class TestGenerateCandidates:
         ]
         doc_freq = compute_document_frequencies(texts, n=5)
         stopgrams = identify_stopgrams(doc_freq, len(texts), threshold=1.0)
-        index = build_inverted_index(texts, stopgrams, n=5)
+        ngram_sets = build_ngram_sets(texts, stopgrams, n=5)
 
-        candidates = generate_candidates(texts, index, stopgrams)
+        candidates = generate_candidates(texts, ngram_sets, stopgrams)
         pair_ids = [(c.digest_id, c.source_id) for c in candidates]
         assert ('T01n0001', 'T01n0002') in pair_ids
 
@@ -154,9 +178,9 @@ class TestGenerateCandidates:
         ]
         doc_freq = compute_document_frequencies(texts, n=5)
         stopgrams = identify_stopgrams(doc_freq, len(texts), threshold=1.0)
-        index = build_inverted_index(texts, stopgrams, n=5)
+        ngram_sets = build_ngram_sets(texts, stopgrams, n=5)
 
-        candidates = generate_candidates(texts, index, stopgrams)
+        candidates = generate_candidates(texts, ngram_sets, stopgrams)
         # Should not produce a pair since source is not 2x longer
         assert len(candidates) == 0
 
@@ -172,9 +196,9 @@ class TestGenerateCandidates:
         ]
         doc_freq = compute_document_frequencies(texts, n=5)
         stopgrams = identify_stopgrams(doc_freq, len(texts), threshold=1.0)
-        index = build_inverted_index(texts, stopgrams, n=5)
+        ngram_sets = build_ngram_sets(texts, stopgrams, n=5)
 
-        candidates = generate_candidates(texts, index, stopgrams)
+        candidates = generate_candidates(texts, ngram_sets, stopgrams)
         docnum_cands = [c for c in candidates if c.from_docnumber]
         assert len(docnum_cands) >= 1
         assert docnum_cands[0].digest_id == 'T08n0250'
@@ -206,9 +230,9 @@ class TestGenerateCandidates:
 
         doc_freq = compute_document_frequencies(texts, n=5)
         stopgrams = identify_stopgrams(doc_freq, len(texts), threshold=1.0)
-        index = build_inverted_index(texts, stopgrams, n=5)
+        ngram_sets = build_ngram_sets(texts, stopgrams, n=5)
 
-        candidates = generate_candidates(texts, index, stopgrams)
+        candidates = generate_candidates(texts, ngram_sets, stopgrams)
         pair = [c for c in candidates
                 if c.digest_id == "T01n0001" and c.source_id == "T01n0002"]
         assert len(pair) == 1

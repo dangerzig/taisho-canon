@@ -13,7 +13,7 @@ from digest_detector.score import classify_relationship, score_all
 from digest_detector.fingerprint import (
     compute_document_frequencies,
     identify_stopgrams,
-    build_inverted_index,
+    build_ngram_sets,
 )
 from digest_detector.candidates import generate_candidates
 from digest_detector.models import ExtractedText, TextMetadata, DivSegment
@@ -356,8 +356,8 @@ class TestCandidateGeneration:
         # Use threshold=1.0 since with 2 texts, any lower threshold
         # would filter out all shared grams
         stopgrams = identify_stopgrams(doc_freq, len(texts), threshold=1.0)
-        index = build_inverted_index(texts, stopgrams, n=5)
-        candidates = generate_candidates(texts, index, stopgrams)
+        ngram_sets = build_ngram_sets(texts, stopgrams, n=5)
+        candidates = generate_candidates(texts, ngram_sets, stopgrams)
 
         pair_found = any(
             c.digest_id == "T08n0250" and c.source_id == "T08n0223"
@@ -374,8 +374,8 @@ class TestCandidateGeneration:
         texts = [t251, t223]
         doc_freq = compute_document_frequencies(texts, n=5)
         stopgrams = identify_stopgrams(doc_freq, len(texts), threshold=1.0)
-        index = build_inverted_index(texts, stopgrams, n=5)
-        candidates = generate_candidates(texts, index, stopgrams)
+        ngram_sets = build_ngram_sets(texts, stopgrams, n=5)
+        candidates = generate_candidates(texts, ngram_sets, stopgrams)
 
         pair_found = any(
             c.digest_id == "T08n0251" and c.source_id == "T08n0223"

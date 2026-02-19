@@ -9,8 +9,9 @@ from .extract import extract_all, save_results
 from .fingerprint import (
     compute_document_frequencies,
     identify_stopgrams,
-    build_inverted_index,
+    build_ngram_sets,
 )
+from .cache import PipelineCache
 from .candidates import generate_candidates
 from .align import align_candidates
 from .score import score_all, detect_multi_source_digests
@@ -24,6 +25,7 @@ def run_pipeline(
     results_dir: Path = None,
     num_workers: int = None,
     save_extracted: bool = True,
+    no_cache: bool = False,
 ) -> dict:
     """Run the full 5-stage digest detection pipeline.
 
@@ -32,6 +34,7 @@ def run_pipeline(
         results_dir: Path to output directory.
         num_workers: Number of parallel workers (None = cpu_count).
         save_extracted: Whether to save extracted texts to disk.
+        no_cache: Force recomputation, ignoring any cached results.
 
     Returns dict with all pipeline results.
     """
@@ -42,59 +45,77 @@ def run_pipeline(
 
     total_start = time.time()
 
-    # ---- Stage 1: Extract ----
-    logger.info("=" * 60)
-    logger.info("STAGE 1: Text Extraction")
-    logger.info("=" * 60)
-    t0 = time.time()
-
-    texts = extract_all(xml_dir=xml_dir, num_workers=num_workers)
-    text_map = {t.text_id: t for t in texts}
-    metadata_map = {t.text_id: t.metadata for t in texts}
-
-    if save_extracted:
-        save_results(texts)
-
-    logger.info("Stage 1 complete: %d texts in %.1f seconds",
-                len(texts), time.time() - t0)
-
-    # ---- Stage 2: Candidate Generation ----
-    logger.info("=" * 60)
-    logger.info("STAGE 2: Candidate Generation")
-    logger.info("=" * 60)
-    t0 = time.time()
-
-    doc_freq = compute_document_frequencies(texts)
-    stopgrams = identify_stopgrams(doc_freq, len(texts))
-    inverted_index = build_inverted_index(texts, stopgrams)
-    candidates = generate_candidates(texts, inverted_index, stopgrams)
-
-    logger.info("Stage 2 complete: %d candidates in %.1f seconds",
-                len(candidates), time.time() - t0)
-
-    # ---- Stage 2b: Phonetic Candidate Generation ----
-    if config.ENABLE_PHONETIC_SCAN:
+    # Check cache for Stages 1-2b
+    cache = PipelineCache(config.CACHE_DIR)
+    if not no_cache and cache.is_valid(xml_dir):
         logger.info("=" * 60)
-        logger.info("STAGE 2b: Phonetic Candidate Generation")
+        logger.info("LOADING FROM CACHE")
+        logger.info("=" * 60)
+        t0 = time.time()
+        texts, candidates = cache.load()
+        text_map = {t.text_id: t for t in texts}
+        metadata_map = {t.text_id: t.metadata for t in texts}
+        logger.info("Loaded %d texts, %d candidates from cache in %.1f seconds",
+                     len(texts), len(candidates), time.time() - t0)
+    else:
+        # ---- Stage 1: Extract ----
+        logger.info("=" * 60)
+        logger.info("STAGE 1: Text Extraction")
         logger.info("=" * 60)
         t0 = time.time()
 
-        from .phonetic import build_equivalence_table
-        from .candidates import generate_phonetic_candidates
+        texts = extract_all(xml_dir=xml_dir, num_workers=num_workers)
+        text_map = {t.text_id: t for t in texts}
+        metadata_map = {t.text_id: t.metadata for t in texts}
 
-        phonetic_table = build_equivalence_table()
-        phonetic_candidates = generate_phonetic_candidates(texts, phonetic_table)
+        if save_extracted:
+            save_results(texts)
 
-        # Merge, deduplicating against existing candidates
-        existing_pairs = {(c.digest_id, c.source_id) for c in candidates}
-        new_phonetic = [c for c in phonetic_candidates
-                        if (c.digest_id, c.source_id) not in existing_pairs]
-        candidates.extend(new_phonetic)
-        candidates.sort(key=lambda c: c.containment_score, reverse=True)
+        logger.info("Stage 1 complete: %d texts in %.1f seconds",
+                     len(texts), time.time() - t0)
 
-        logger.info("Stage 2b complete: %d new phonetic candidates "
-                     "(total now %d) in %.1f seconds",
-                     len(new_phonetic), len(candidates), time.time() - t0)
+        # ---- Stage 2: Candidate Generation ----
+        logger.info("=" * 60)
+        logger.info("STAGE 2: Candidate Generation")
+        logger.info("=" * 60)
+        t0 = time.time()
+
+        doc_freq = compute_document_frequencies(texts, num_workers=num_workers)
+        stopgrams = identify_stopgrams(doc_freq, len(texts))
+        ngram_sets = build_ngram_sets(texts, stopgrams, num_workers=num_workers)
+        candidates = generate_candidates(texts, ngram_sets, stopgrams)
+
+        logger.info("Stage 2 complete: %d candidates in %.1f seconds",
+                     len(candidates), time.time() - t0)
+
+        # ---- Stage 2b: Phonetic Candidate Generation ----
+        if config.ENABLE_PHONETIC_SCAN:
+            logger.info("=" * 60)
+            logger.info("STAGE 2b: Phonetic Candidate Generation")
+            logger.info("=" * 60)
+            t0 = time.time()
+
+            from .phonetic import build_equivalence_table
+            from .candidates import generate_phonetic_candidates
+
+            phonetic_table = build_equivalence_table()
+            phonetic_candidates = generate_phonetic_candidates(
+                texts, phonetic_table, num_workers=num_workers,
+            )
+
+            # Merge, deduplicating against existing candidates
+            existing_pairs = {(c.digest_id, c.source_id) for c in candidates}
+            new_phonetic = [c for c in phonetic_candidates
+                            if (c.digest_id, c.source_id) not in existing_pairs]
+            candidates.extend(new_phonetic)
+            candidates.sort(key=lambda c: c.containment_score, reverse=True)
+
+            logger.info("Stage 2b complete: %d new phonetic candidates "
+                         "(total now %d) in %.1f seconds",
+                         len(new_phonetic), len(candidates), time.time() - t0)
+
+        # Save to cache
+        cache.save(texts, candidates, xml_dir)
 
     # ---- Stage 3: Detailed Alignment ----
     logger.info("=" * 60)
@@ -180,6 +201,10 @@ def main():
         help='Skip saving extracted texts to disk'
     )
     parser.add_argument(
+        '--no-cache', action='store_true',
+        help='Force recomputation, ignoring any cached results'
+    )
+    parser.add_argument(
         '--log-level', default='INFO',
         choices=['DEBUG', 'INFO', 'WARNING', 'ERROR'],
     )
@@ -196,6 +221,7 @@ def main():
         results_dir=args.results_dir,
         num_workers=args.workers,
         save_extracted=not args.no_save,
+        no_cache=args.no_cache,
     )
 
 

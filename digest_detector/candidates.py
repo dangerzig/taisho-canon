@@ -1,19 +1,32 @@
 """Stage 2b: Candidate pair selection via containment scoring.
 
 For each potential digest text (shorter texts), computes asymmetric
-containment against all longer texts using the inverted index, and
-also incorporates docNumber cross-references and phonetic candidates.
+containment against all longer texts using n-gram set intersection,
+and also incorporates docNumber cross-references and phonetic candidates.
 """
 
 import logging
 import re
 from collections import defaultdict
+from multiprocessing import Pool, cpu_count
 
 from . import config
+from .fingerprint import stable_hash
 from .models import ExtractedText, CandidatePair, TextMetadata
 from .phonetic import find_transliteration_regions, text_to_syllable_ngrams
 
 logger = logging.getLogger(__name__)
+
+# --- Pool worker state (set via initializer, avoids per-task pickling) ---
+_worker_table: dict[str, set[str]] = {}
+_worker_min_region_len: int = 10
+
+
+def _phonetic_init(table: dict[str, set[str]], min_region_len: int):
+    """Pool initializer: set shared phonetic table for all workers."""
+    global _worker_table, _worker_min_region_len
+    _worker_table = table
+    _worker_min_region_len = min_region_len
 
 
 def _parse_docnumber_to_text_ids(
@@ -76,13 +89,14 @@ def _find_docnumber_pairs(
 
 def generate_candidates(
     texts: list[ExtractedText],
-    inverted_index: dict[int, list[tuple[str, int]]],
+    ngram_sets: dict[str, frozenset[int]],
     stopgrams: set[int],
 ) -> list[CandidatePair]:
-    """Generate candidate digest-source pairs using containment scoring.
+    """Generate candidate digest-source pairs using set containment.
 
-    For each potential digest (shorter text), looks up its n-grams in the
-    inverted index and counts matches against each candidate source (longer text).
+    For each potential digest (shorter text), computes its n-gram set from
+    jing_text and measures containment via set intersection against each
+    source's pre-built n-gram set.
     Also includes pairs from docNumber cross-references.
     """
     n = config.NGRAM_SIZE
@@ -108,55 +122,62 @@ def generate_candidates(
     logger.info("Evaluating %d potential digest texts (char_count <= %d)",
                 len(digest_candidates), max_digest_len)
 
+    # Precompute sources sorted by size for efficient filtering.
+    # For each digest, we only need sources with char_count >= d_len * min_size_ratio.
+    # Sort ascending so we can binary-search for the first qualifying source.
+    source_entries = sorted(
+        [(tid, length_map.get(tid, 0), ngram_sets[tid])
+         for tid in ngram_sets if ngram_sets[tid]],  # skip empty sets
+        key=lambda x: x[1],
+    )
+    source_ids_arr = [e[0] for e in source_entries]
+    source_lens_arr = [e[1] for e in source_entries]
+    source_sets_arr = [e[2] for e in source_entries]
+
     candidates = []
     seen_pairs = set()
 
     for digest in digest_candidates:
         d_id = digest.text_id
         d_len = digest.metadata.char_count
-        # The inverted index is built from full_text (so texts can serve as
-        # sources using all their content), but we query using jing_text on the
-        # digest side to exclude preface material that would dilute containment
-        # scores.  This works because jing n-grams are a subset of full-text
-        # n-grams.
+        # Use jing_text on the digest side to exclude preface material
+        # that would dilute containment scores.
         content = digest.jing_text
 
         if len(content) < n:
             continue
 
-        # Count matching n-grams per candidate source
-        match_counts = defaultdict(int)
-        total_ngrams = 0
-
+        # Build digest's n-gram set from jing_text
+        digest_hashes = set()
         for i in range(len(content) - n + 1):
-            h = hash(content[i:i + n])
-            if h in stopgrams:
-                continue
-            total_ngrams += 1
-            if h in inverted_index:
-                # Count each source text only once per n-gram position
-                seen_sources = set()
-                for source_id, _ in inverted_index[h]:
-                    if source_id != d_id and source_id not in seen_sources:
-                        seen_sources.add(source_id)
-                        match_counts[source_id] += 1
+            h = stable_hash(content[i:i + n])
+            if h not in stopgrams:
+                digest_hashes.add(h)
 
-        if total_ngrams == 0:
+        if not digest_hashes:
             continue
 
-        # Score candidates
-        for source_id, matching in match_counts.items():
-            s_len = length_map.get(source_id, 0)
+        digest_set = frozenset(digest_hashes)
+        min_source_len = d_len * min_size_ratio
 
-            # Source must be sufficiently longer than digest.
-            # Note: d_len uses full-text char_count while fingerprinting uses
-            # jing_text.  This is intentional: the filter is a coarse pre-filter
-            # (2x ratio) and using full-text length is conservative (never
-            # accidentally excludes valid sources).
-            if s_len < d_len * min_size_ratio:
+        # Binary search for the first source meeting the size threshold.
+        # source_lens_arr is sorted ascending, so all entries from lo onward qualify.
+        lo, hi = 0, len(source_lens_arr)
+        while lo < hi:
+            mid = (lo + hi) // 2
+            if source_lens_arr[mid] < min_source_len:
+                lo = mid + 1
+            else:
+                hi = mid
+
+        # Score only sources large enough (from lo to end)
+        for idx in range(lo, len(source_ids_arr)):
+            source_id = source_ids_arr[idx]
+            if source_id == d_id:
                 continue
 
-            containment = matching / total_ngrams
+            matching = len(digest_set & source_sets_arr[idx])
+            containment = matching / len(digest_set)
             pair_key = (d_id, source_id)
 
             if containment >= min_containment:
@@ -166,7 +187,7 @@ def generate_candidates(
                     source_id=source_id,
                     containment_score=containment,
                     matching_ngrams=matching,
-                    total_digest_ngrams=total_ngrams,
+                    total_digest_ngrams=len(digest_set),
                     from_docnumber=pair_key in docnum_pair_set,
                 ))
 
@@ -198,45 +219,84 @@ def generate_candidates(
     return candidates
 
 
+def _phonetic_region_worker(
+    args: tuple,
+) -> tuple[str, list[tuple[str, int]]] | None:
+    """Worker: find transliteration regions and syllable n-grams for one text.
+
+    Uses module-level _worker_table and _worker_min_region_len set by
+    _phonetic_init to avoid pickling the table per task.
+    """
+    text_id, full_text, dharani_ranges = args
+    table = _worker_table
+    min_region_len = _worker_min_region_len
+    regions = find_transliteration_regions(
+        full_text, table, dharani_ranges=dharani_ranges,
+    )
+    regions = [(s, e) for s, e in regions if e - s >= min_region_len]
+    if not regions:
+        return None
+    ngrams = text_to_syllable_ngrams(full_text, regions, table)
+    if not ngrams:
+        return None
+    return (text_id, ngrams)
+
+
 def generate_phonetic_candidates(
     texts: list[ExtractedText],
     table: dict[str, set[str]],
+    num_workers: int = None,
 ) -> list[CandidatePair]:
     """Generate candidate pairs from phonetic transliteration overlap.
 
     For texts with transliteration regions:
     1. Find transliteration regions (XML dharani markup + density-based)
     2. Convert to canonical syllable sequences
-    3. Build phonetic inverted index over syllable n-grams
-    4. Compute phonetic containment between pairs
+    3. Build per-text phonetic n-gram sets
+    4. Compute phonetic containment via set intersection
 
     Args:
         texts: All extracted texts.
         table: Phonetic equivalence table (char → set of syllables).
+        num_workers: Number of parallel workers (None = cpu_count).
 
     Returns:
         List of CandidatePair with from_phonetic=True.
     """
+    if num_workers is None:
+        num_workers = config.NUM_WORKERS or cpu_count()
     min_region_len = config.MIN_TRANSLITERATION_LENGTH
     min_containment = config.MIN_PHONETIC_CONTAINMENT
     min_size_ratio = config.MIN_SIZE_RATIO
 
     # Step 1-2: Find transliteration regions and build syllable n-grams per text
+    # (parallelized: each text is independent)
     text_ngrams: dict[str, list[tuple[str, int]]] = {}
     length_map = {t.text_id: t.metadata.char_count for t in texts}
 
-    for text in texts:
-        regions = find_transliteration_regions(
-            text.full_text, table, dharani_ranges=text.dharani_ranges,
-        )
-        # Filter out tiny regions
-        regions = [(s, e) for s, e in regions if e - s >= min_region_len]
-        if not regions:
-            continue
+    args_list = [
+        (text.text_id, text.full_text, text.dharani_ranges)
+        for text in texts
+    ]
 
-        ngrams = text_to_syllable_ngrams(text.full_text, regions, table)
-        if ngrams:
-            text_ngrams[text.text_id] = ngrams
+    if num_workers <= 1 or len(texts) < 10:
+        # Serial path: set module globals directly for the worker
+        global _worker_table, _worker_min_region_len
+        _worker_table = table
+        _worker_min_region_len = min_region_len
+        for args in args_list:
+            result = _phonetic_region_worker(args)
+            if result is not None:
+                text_ngrams[result[0]] = result[1]
+    else:
+        chunksize = max(1, len(args_list) // (num_workers * 4))
+        with Pool(num_workers, initializer=_phonetic_init,
+                  initargs=(table, min_region_len)) as pool:
+            for result in pool.imap_unordered(
+                _phonetic_region_worker, args_list, chunksize=chunksize,
+            ):
+                if result is not None:
+                    text_ngrams[result[0]] = result[1]
 
     if not text_ngrams:
         logger.info("No texts with transliteration regions found")
@@ -245,44 +305,59 @@ def generate_phonetic_candidates(
     logger.info("Found %d texts with indexable transliteration regions",
                 len(text_ngrams))
 
-    # Step 3: Build phonetic inverted index: ngram_string → [(text_id, position)]
-    phonetic_index: dict[str, list[tuple[str, int]]] = defaultdict(list)
+    # Step 3: Build per-text phonetic n-gram sets and identify stopgrams.
+    # First pass: collect all n-gram strings per text to compute doc frequencies.
+    text_ngram_str_sets: dict[str, frozenset[str]] = {}
     for text_id, ngrams in text_ngrams.items():
-        for ngram_str, pos in ngrams:
-            phonetic_index[ngram_str].append((text_id, pos))
+        text_ngram_str_sets[text_id] = frozenset(ng for ng, _ in ngrams)
 
-    # Step 4: Compute phonetic containment for each pair
+    # Compute document frequency for each phonetic n-gram
+    phonetic_doc_freq: dict[str, int] = defaultdict(int)
+    for ngram_set in text_ngram_str_sets.values():
+        for ng in ngram_set:
+            phonetic_doc_freq[ng] += 1
+
+    # Identify phonetic stopgrams (syllable n-grams in too many texts).
+    # min 2 so that with tiny corpora (e.g. 2 texts) nothing gets filtered.
+    num_indexed = len(text_ngrams)
+    max_freq = max(int(num_indexed * config.PHONETIC_STOPGRAM_DOC_FREQ), 2)
+    phonetic_stopgrams = {
+        ng for ng, freq in phonetic_doc_freq.items() if freq > max_freq
+    }
+    logger.info("Identified %d phonetic stopgrams (appearing in >%d texts)",
+                len(phonetic_stopgrams), max_freq)
+
+    # Build filtered per-text n-gram sets (excluding stopgrams)
+    phonetic_sets: dict[str, frozenset[str]] = {}
+    for text_id, ngram_set in text_ngram_str_sets.items():
+        filtered = ngram_set - phonetic_stopgrams
+        if filtered:
+            phonetic_sets[text_id] = filtered
+
+    # Step 4: Compute phonetic containment via set intersection
     candidates = []
     seen_pairs = set()
 
     for text in texts:
         d_id = text.text_id
-        if d_id not in text_ngrams:
+        if d_id not in phonetic_sets:
             continue
 
         d_len = length_map[d_id]
-        d_ngrams = text_ngrams[d_id]
-        total_ngrams = len(d_ngrams)
-        if total_ngrams == 0:
-            continue
+        digest_set = phonetic_sets[d_id]
 
-        # Count matching n-grams per candidate source
-        match_counts: dict[str, int] = defaultdict(int)
-        for ngram_str, _ in d_ngrams:
-            seen_sources: set[str] = set()
-            for source_id, _ in phonetic_index[ngram_str]:
-                if source_id != d_id and source_id not in seen_sources:
-                    seen_sources.add(source_id)
-                    match_counts[source_id] += 1
-
-        for source_id, matching in match_counts.items():
+        # Score against all other texts with phonetic regions
+        for source_id, source_set in phonetic_sets.items():
+            if source_id == d_id:
+                continue
             s_len = length_map.get(source_id, 0)
 
             # Source must be sufficiently longer than digest
             if s_len < d_len * min_size_ratio:
                 continue
 
-            containment = matching / total_ngrams
+            matching = len(digest_set & source_set)
+            containment = matching / len(digest_set)
             if containment < min_containment:
                 continue
 
@@ -301,7 +376,7 @@ def generate_phonetic_candidates(
                 source_id=pair_key[1],
                 containment_score=containment,
                 matching_ngrams=matching,
-                total_digest_ngrams=total_ngrams,
+                total_digest_ngrams=len(digest_set),
                 from_phonetic=True,
             ))
 

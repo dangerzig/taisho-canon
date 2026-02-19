@@ -1,16 +1,42 @@
-"""Stage 2a: N-gram fingerprinting and inverted index construction.
+"""Stage 2a: N-gram fingerprinting and n-gram set construction.
 
 Generates character n-gram fingerprints for each text, filters stop-grams
-(common Buddhist formulae), and builds an inverted index for fast lookup.
+(common Buddhist formulae), and builds per-text n-gram sets for fast
+set-intersection containment scoring.
 """
 
 import logging
-from collections import defaultdict
+import zlib
+from collections import Counter, defaultdict
+from multiprocessing import Pool, cpu_count
 
 from . import config
 from .models import ExtractedText
 
 logger = logging.getLogger(__name__)
+
+
+def stable_hash(s: str) -> int:
+    """Deterministic hash for n-gram strings, stable across processes.
+
+    Python's built-in hash() is randomized per-process (PEP 456). On macOS,
+    multiprocessing uses 'spawn' which creates fresh processes with different
+    hash seeds, making hash() inconsistent across workers. This function
+    uses zlib.crc32 which is deterministic, C-level fast, and sufficient
+    for n-gram fingerprinting (32-bit output).
+    """
+    return zlib.crc32(s.encode('utf-8'))
+
+# --- Pool worker state (set via initializer, avoids per-task pickling) ---
+_worker_stopgrams: set[int] = set()
+_worker_n: int = 5
+
+
+def _ngram_set_init(stopgrams: set[int], n: int):
+    """Pool initializer: set shared stopgrams and n for all workers."""
+    global _worker_stopgrams, _worker_n
+    _worker_stopgrams = stopgrams
+    _worker_n = n
 
 
 def generate_ngrams(text: str, n: int = None) -> list[str]:
@@ -22,31 +48,45 @@ def generate_ngrams(text: str, n: int = None) -> list[str]:
     return [text[i:i + n] for i in range(len(text) - n + 1)]
 
 
+def _doc_freq_worker(args: tuple) -> set[int]:
+    """Worker: return set of unique n-gram hashes for one text."""
+    full_text, n = args
+    seen = set()
+    for i in range(len(full_text) - n + 1):
+        seen.add(stable_hash(full_text[i:i + n]))
+    return seen
+
 
 def compute_document_frequencies(
     texts: list[ExtractedText],
     n: int = None,
+    num_workers: int = None,
 ) -> dict[int, int]:
     """Compute document frequency for each n-gram hash.
 
     Returns dict mapping ngram_hash → number of texts containing it.
+    Uses multiprocessing to compute per-text hash sets in parallel.
     """
     if n is None:
         n = config.NGRAM_SIZE
-    doc_freq = defaultdict(int)
+    if num_workers is None:
+        num_workers = config.NUM_WORKERS or cpu_count()
 
-    for text in texts:
-        # Use a set to count each n-gram only once per document
-        seen = set()
-        # full_text is used intentionally: document frequencies should reflect
-        # all content (including prefaces) since stop-gram identification must
-        # be based on actual corpus-wide frequencies.
-        content = text.full_text
-        for i in range(len(content) - n + 1):
-            h = hash(content[i:i + n])
-            if h not in seen:
-                seen.add(h)
-                doc_freq[h] += 1
+    # full_text is used intentionally: document frequencies should reflect
+    # all content (including prefaces) since stop-gram identification must
+    # be based on actual corpus-wide frequencies.
+    args_list = [(text.full_text, n) for text in texts]
+
+    doc_freq: Counter[int] = Counter()
+    if num_workers <= 1 or len(texts) < 10:
+        for args in args_list:
+            doc_freq.update(_doc_freq_worker(args))
+    else:
+        chunksize = max(1, len(args_list) // (num_workers * 4))
+        with Pool(num_workers) as pool:
+            for hash_set in pool.imap_unordered(_doc_freq_worker, args_list,
+                                                chunksize=chunksize):
+                doc_freq.update(hash_set)
 
     return dict(doc_freq)
 
@@ -70,31 +110,75 @@ def identify_stopgrams(
     return stopgrams
 
 
-def build_inverted_index(
+def _ngram_set_worker(args: tuple) -> tuple[str, frozenset[int]]:
+    """Worker: return (text_id, frozenset of non-stop n-gram hashes).
+
+    Uses module-level _worker_stopgrams and _worker_n set by _ngram_set_init
+    to avoid pickling shared data per task.
+    """
+    text_id, full_text = args
+    stopgrams = _worker_stopgrams
+    n = _worker_n
+    hashes = set()
+    for i in range(len(full_text) - n + 1):
+        h = stable_hash(full_text[i:i + n])
+        if h not in stopgrams:
+            hashes.add(h)
+    return (text_id, frozenset(hashes))
+
+
+def build_ngram_sets(
     texts: list[ExtractedText],
     stopgrams: set[int],
     n: int = None,
-) -> dict[int, list[tuple[str, int]]]:
-    """Build inverted index: ngram_hash → [(text_id, position), ...].
+    num_workers: int = None,
+) -> dict[str, frozenset[int]]:
+    """Build per-text n-gram hash sets (no positions stored).
 
-    Excludes stop-grams. Only indexes non-stop n-grams.
+    Returns dict mapping text_id → frozenset of non-stop n-gram hashes.
+    Uses full_text for source texts (so they can match against any digest content).
+    Uses multiprocessing to build sets in parallel.
     """
     if n is None:
         n = config.NGRAM_SIZE
-    index = defaultdict(list)
+    if num_workers is None:
+        num_workers = config.NUM_WORKERS or cpu_count()
 
-    for text in texts:
-        # full_text is used intentionally: the inverted index should reflect
-        # all content (including prefaces) since texts can serve as sources
-        # using their full text.
-        content = text.full_text
-        for i in range(len(content) - n + 1):
-            h = hash(content[i:i + n])
-            if h not in stopgrams:
-                index[h].append((text.text_id, i))
+    args_list = [(text.text_id, text.full_text) for text in texts]
 
-    logger.info("Built inverted index with %d distinct n-gram hashes", len(index))
-    return dict(index)
+    result = {}
+    if num_workers <= 1 or len(texts) < 10:
+        # Serial path: set module globals directly for the worker
+        global _worker_stopgrams, _worker_n
+        _worker_stopgrams = stopgrams
+        _worker_n = n
+        for args in args_list:
+            text_id, hash_set = _ngram_set_worker(args)
+            result[text_id] = hash_set
+    else:
+        chunksize = max(1, len(args_list) // (num_workers * 4))
+        with Pool(num_workers, initializer=_ngram_set_init,
+                  initargs=(stopgrams, n)) as pool:
+            for text_id, hash_set in pool.imap_unordered(
+                _ngram_set_worker, args_list, chunksize=chunksize,
+            ):
+                result[text_id] = hash_set
+
+    total_hashes = sum(len(s) for s in result.values())
+    logger.info("Built n-gram sets for %d texts (%d total hashes)",
+                len(result), total_hashes)
+
+    if logger.isEnabledFor(logging.DEBUG):
+        all_hashes: set[int] = set()
+        for s in result.values():
+            all_hashes.update(s)
+        unique = len(all_hashes)
+        logger.debug("Hash space: %d unique hashes out of %d total "
+                     "(%.2f%% overlap from shared n-grams + collisions)",
+                     unique, total_hashes,
+                     (1 - unique / total_hashes) * 100 if total_hashes else 0)
+
+    return result
 
 
 def fingerprint_text(
@@ -107,7 +191,7 @@ def fingerprint_text(
         n = config.NGRAM_SIZE
     result = []
     for i in range(len(text) - n + 1):
-        h = hash(text[i:i + n])
+        h = stable_hash(text[i:i + n])
         if h not in stopgrams:
             result.append(h)
     return result

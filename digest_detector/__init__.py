@@ -16,4 +16,5 @@ __all__ = [
     "pipeline",
     "models",
     "phonetic",
+    "cache",
 ]

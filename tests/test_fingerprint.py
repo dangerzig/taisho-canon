@@ -6,8 +6,9 @@ from digest_detector.fingerprint import (
     generate_ngrams,
     compute_document_frequencies,
     identify_stopgrams,
-    build_inverted_index,
+    build_ngram_sets,
     fingerprint_text,
+    stable_hash,
 )
 from digest_detector.models import ExtractedText, TextMetadata
 
@@ -55,11 +56,11 @@ class TestDocumentFrequencies:
         doc_freq = compute_document_frequencies(texts, n=5)
 
         # "般若波羅蜜" appears in t1 and t2
-        h = hash("般若波羅蜜")
+        h = stable_hash("般若波羅蜜")
         assert doc_freq.get(h, 0) == 2
 
         # "觀自在菩薩" appears only in t3
-        h = hash("觀自在菩薩")
+        h = stable_hash("觀自在菩薩")
         assert doc_freq.get(h, 0) == 1
 
 
@@ -75,10 +76,10 @@ class TestStopgrams:
         stopgrams = identify_stopgrams(doc_freq, len(texts), threshold=0.5)
 
         # "般若波羅蜜" appears in all 3 → stopgram
-        assert hash("般若波羅蜜") in stopgrams
+        assert stable_hash("般若波羅蜜") in stopgrams
 
 
-class TestInvertedIndex:
+class TestNgramSets:
     def test_basic_structure(self):
         texts = [
             _make_text("t1", "般若波羅蜜多心經大明"),
@@ -89,22 +90,60 @@ class TestInvertedIndex:
         # With threshold=1.0, nothing is a stopgram
         assert len(stopgrams) == 0
 
-        index = build_inverted_index(texts, stopgrams, n=5)
-        # Should contain entries
-        assert len(index) > 0
+        ngram_sets = build_ngram_sets(texts, stopgrams, n=5)
+        # Should have one entry per text
+        assert len(ngram_sets) == 2
+        assert "t1" in ngram_sets
+        assert "t2" in ngram_sets
 
-        # Each entry should be a list of (text_id, position) tuples
-        for h, postings in index.items():
-            for text_id, pos in postings:
-                assert isinstance(text_id, str)
-                assert isinstance(pos, int)
+        # Each entry should be a frozenset of ints
+        for text_id, hashes in ngram_sets.items():
+            assert isinstance(hashes, frozenset)
+            for h in hashes:
+                assert isinstance(h, int)
+
+    def test_shared_ngrams(self):
+        """Texts sharing an n-gram should have that hash in both sets."""
+        texts = [
+            _make_text("t1", "般若波羅蜜多心經大明"),
+            _make_text("t2", "觀自在菩薩行深般若波羅蜜"),
+        ]
+        doc_freq = compute_document_frequencies(texts, n=5)
+        stopgrams = identify_stopgrams(doc_freq, len(texts), threshold=1.0)
+        ngram_sets = build_ngram_sets(texts, stopgrams, n=5)
+
+        # "般若波羅蜜" appears in both texts
+        shared_hash = stable_hash("般若波羅蜜")
+        assert shared_hash in ngram_sets["t1"]
+        assert shared_hash in ngram_sets["t2"]
+
+    def test_excludes_stopgrams(self):
+        """Stopgram hashes should not appear in n-gram sets."""
+        texts = [
+            _make_text("t1", "般若波羅蜜多心經大明"),
+        ]
+        stopgrams = {stable_hash("般若波羅蜜")}
+        ngram_sets = build_ngram_sets(texts, stopgrams, n=5)
+        assert stable_hash("般若波羅蜜") not in ngram_sets["t1"]
+
+
+class TestStableHash:
+    def test_deterministic(self):
+        """Same input always produces the same hash."""
+        assert stable_hash("般若波羅蜜") == stable_hash("般若波羅蜜")
+        assert stable_hash("abc") == stable_hash("abc")
+
+    def test_different_inputs(self):
+        """Different strings produce different hashes."""
+        assert stable_hash("般若波羅蜜") != stable_hash("觀自在菩薩")
+        assert stable_hash("abc") != stable_hash("def")
 
 
 class TestFingerprintText:
     def test_excludes_stopgrams(self):
-        stopgrams = {hash("般若波羅蜜")}
+        stopgrams = {stable_hash("般若波羅蜜")}
         hashes = fingerprint_text("般若波羅蜜多心經", stopgrams, n=5)
         # "般若波羅蜜" should be excluded
-        assert hash("般若波羅蜜") not in hashes
+        assert stable_hash("般若波羅蜜") not in hashes
         # But other n-grams should be present
         assert len(hashes) == 3  # 4 total - 1 stopgram
