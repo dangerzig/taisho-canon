@@ -114,7 +114,7 @@ class TestExtractFile:
         assert 'jing' in meta['div_types']
 
         # Reconstruct text
-        raw_text = ''.join(t for t, _ in parts)
+        raw_text = ''.join(t for t, *_ in parts)
         normalized = normalize_text(raw_text)
         # T250 should be ~331 CJK chars
         assert 250 < len(normalized) < 500
@@ -153,7 +153,7 @@ class TestExtractFile:
 
         char_map = build_char_map([t250_file])
         _, parts, _ = extract_file(t250_file, char_map)
-        raw_text = ''.join(t for t, _ in parts)
+        raw_text = ''.join(t for t, *_ in parts)
 
         # T250's byline has <lem>姚秦</lem> vs <rdg>後秦</rdg>
         # But byline is skipped, so this doesn't appear.

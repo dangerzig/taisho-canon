@@ -50,5 +50,12 @@ PHONETIC_SEED_LENGTH = 5  # Min consecutive phonetically equivalent chars to see
 PHONETIC_COVERAGE_WEIGHT = 0.8  # Weight for phonetic matches in coverage (vs 1.0 for exact/fuzzy)
 PHONETIC_MAX_SYLLABLES = 5  # Max syllable values per char (more → too ambiguous)
 
+# --- Stage 2b: Phonetic Candidate Generation ---
+PHONETIC_NGRAM_SIZE = 3  # Syllable n-gram size for phonetic inverted index
+MIN_PHONETIC_CONTAINMENT = 0.25  # Minimum phonetic containment to keep pair
+TRANSLITERATION_DENSITY = 0.6  # Min fraction of table chars in a window
+TRANSLITERATION_WINDOW = 20  # Sliding window size for density-based detection
+MIN_TRANSLITERATION_LENGTH = 10  # Minimum region length (chars) to index
+
 # --- Pipeline ---
 NUM_WORKERS = None  # None = use cpu_count()

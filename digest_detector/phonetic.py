@@ -201,6 +201,138 @@ def build_equivalence_table(ddb_path: Path = None) -> dict[str, set[str]]:
     return char_to_syllables
 
 
+def canonical_syllable(ch: str, table: dict[str, set[str]]) -> str | None:
+    """Return the canonical (alphabetically first) syllable for a character.
+
+    Args:
+        ch: A single Chinese character.
+        table: Equivalence table from build_equivalence_table().
+
+    Returns:
+        The alphabetically first syllable string, or None if the character
+        is not in the table.
+    """
+    syls = table.get(ch)
+    if not syls:
+        return None
+    return sorted(syls)[0]
+
+
+def find_transliteration_regions(
+    text: str,
+    table: dict[str, set[str]],
+    dharani_ranges: list[tuple[int, int]] | None = None,
+    window: int = None,
+    density_threshold: float = None,
+) -> list[tuple[int, int]]:
+    """Find transliteration-dense regions in text.
+
+    Combines XML-annotated dharani ranges with density-based detection.
+    Returns sorted, merged (start, end) ranges.
+
+    Args:
+        text: The full text to scan.
+        table: Equivalence table from build_equivalence_table().
+        dharani_ranges: Pre-annotated dharani ranges from XML extraction.
+        window: Sliding window size for density detection (default from config).
+        density_threshold: Min fraction of table chars in a window (default from config).
+    """
+    if window is None:
+        window = config.TRANSLITERATION_WINDOW
+    if density_threshold is None:
+        density_threshold = config.TRANSLITERATION_DENSITY
+
+    regions = []
+
+    # Source 1: XML-annotated dharani ranges
+    if dharani_ranges:
+        regions.extend(dharani_ranges)
+
+    # Source 2: Density-based detection
+    if len(text) >= window:
+        # Count table chars in sliding window
+        in_region = False
+        region_start = 0
+
+        for i in range(len(text) - window + 1):
+            win_text = text[i:i + window]
+            table_count = sum(1 for ch in win_text if ch in table)
+            density = table_count / window
+
+            if density >= density_threshold:
+                if not in_region:
+                    region_start = i
+                    in_region = True
+            else:
+                if in_region:
+                    regions.append((region_start, i + window - 1))
+                    in_region = False
+
+        if in_region:
+            regions.append((region_start, len(text)))
+
+    # Sort and merge overlapping regions
+    if not regions:
+        return []
+
+    regions.sort()
+    merged = [regions[0]]
+    for start, end in regions[1:]:
+        if start <= merged[-1][1]:
+            merged[-1] = (merged[-1][0], max(merged[-1][1], end))
+        else:
+            merged.append((start, end))
+
+    return merged
+
+
+def text_to_syllable_ngrams(
+    text: str,
+    regions: list[tuple[int, int]],
+    table: dict[str, set[str]],
+    n: int = None,
+) -> list[tuple[str, int]]:
+    """Convert transliteration regions to syllable n-gram hashes.
+
+    For each region, maps characters to their canonical syllable (or "_"
+    for non-table characters), then generates sliding n-gram windows of
+    syllable sequences.
+
+    Args:
+        text: The full text.
+        regions: Transliteration regions as (start, end) offsets.
+        table: Equivalence table from build_equivalence_table().
+        n: Syllable n-gram size (default from config).
+
+    Returns:
+        List of (ngram_string, char_position) tuples, where ngram_string
+        is a dash-joined canonical syllable sequence and char_position is
+        the offset in text where the n-gram starts.
+    """
+    if n is None:
+        n = config.PHONETIC_NGRAM_SIZE
+
+    results = []
+
+    for reg_start, reg_end in regions:
+        # Build syllable sequence for this region
+        syllables = []  # (canonical_syllable, char_position)
+        for i in range(reg_start, min(reg_end, len(text))):
+            ch = text[i]
+            syl = canonical_syllable(ch, table)
+            if syl is not None:
+                syllables.append((syl, i))
+
+        # Generate n-grams from consecutive syllable positions
+        for i in range(len(syllables) - n + 1):
+            window = syllables[i:i + n]
+            ngram = "-".join(s for s, _ in window)
+            pos = window[0][1]
+            results.append((ngram, pos))
+
+    return results
+
+
 def are_phonetically_equivalent(a: str, b: str,
                                  table: dict[str, set[str]]) -> bool:
     """Check if two Chinese characters are phonetically equivalent.

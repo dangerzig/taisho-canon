@@ -147,10 +147,13 @@ def normalize_text(text: str) -> str:
     return ''.join(CJK_RE.findall(text))
 
 
-def _extract_text_recursive(elem, char_map: dict[str, str], div_stack: list[str]) -> list[tuple[str, str]]:
+def _extract_text_recursive(
+    elem, char_map: dict[str, str], div_stack: list[str],
+    in_dharani: bool = False,
+) -> list[tuple[str, str, bool]]:
     """Recursively extract text from an element tree.
 
-    Returns list of (raw_text, div_type) tuples.
+    Returns list of (raw_text, div_type, is_dharani) tuples.
     """
     results = []
     tag = elem.tag
@@ -163,7 +166,8 @@ def _extract_text_recursive(elem, char_map: dict[str, str], div_stack: list[str]
     if tag == f'{TEI}app':
         for child in elem:
             if child.tag == f'{TEI}lem':
-                results.extend(_extract_text_recursive(child, char_map, div_stack))
+                results.extend(_extract_text_recursive(
+                    child, char_map, div_stack, in_dharani))
         return results
 
     # Track div type
@@ -174,6 +178,10 @@ def _extract_text_recursive(elem, char_map: dict[str, str], div_stack: list[str]
         div_stack.append(div_type)
         current_div = div_type
 
+    # Track dharani <p> elements
+    is_dharani_p = (tag == f'{TEI}p' and elem.get(f'{CB}type') == 'dharani')
+    current_dharani = in_dharani or is_dharani_p
+
     try:
         # Handle <g ref="#CBnnnnn"/> (special character reference)
         if tag == f'{TEI}g':
@@ -182,18 +190,19 @@ def _extract_text_recursive(elem, char_map: dict[str, str], div_stack: list[str]
                 char_id = ref[1:]
                 resolved = char_map.get(char_id, '')
                 if resolved:
-                    results.append((resolved, current_div))
+                    results.append((resolved, current_div, current_dharani))
 
         # Include text content from this element
         if elem.text:
-            results.append((elem.text, current_div))
+            results.append((elem.text, current_div, current_dharani))
 
         # Recurse into children
         for child in elem:
-            results.extend(_extract_text_recursive(child, char_map, div_stack))
+            results.extend(_extract_text_recursive(
+                child, char_map, div_stack, current_dharani))
             # Tail text always belongs to the parent, even for skipped elements
             if child.tail:
-                results.append((child.tail, current_div))
+                results.append((child.tail, current_div, current_dharani))
     finally:
         if is_div:
             div_stack.pop()
@@ -201,10 +210,10 @@ def _extract_text_recursive(elem, char_map: dict[str, str], div_stack: list[str]
     return results
 
 
-def extract_file(xml_path: Path, char_map: dict[str, str]) -> tuple[str, list[tuple[str, str]], dict]:
+def extract_file(xml_path: Path, char_map: dict[str, str]) -> tuple[str, list[tuple[str, str, bool]], dict]:
     """Extract text and metadata from a single XML file.
 
-    Returns (text_id, [(raw_text, div_type), ...], metadata_dict).
+    Returns (text_id, [(raw_text, div_type, is_dharani), ...], metadata_dict).
     """
     try:
         tree = etree.parse(str(xml_path))
@@ -323,44 +332,78 @@ def _process_text_group(args: tuple) -> ExtractedText | None:
         if not meta:
             meta = file_meta
 
-    # Build segments by div type and normalize
+    # Build segments by div type and normalize, tracking dharani ranges
     segments = []
     current_div = None
     current_raw = []
+    current_dharani_flags = []  # parallel list: is_dharani per raw_text chunk
     offset = 0
+    dharani_ranges = []
 
-    for raw_text, div_type in all_parts:
+    def _flush_segment(raw_chunks, dharani_flags, div_type, seg_offset):
+        """Normalize a segment and record dharani char ranges."""
+        # Normalize each chunk individually to track dharani boundaries
+        chunk_texts = []
+        for raw, is_dh in zip(raw_chunks, dharani_flags):
+            normalized = normalize_text(raw)
+            if normalized:
+                chunk_texts.append((normalized, is_dh))
+
+        if not chunk_texts:
+            return None, seg_offset
+
+        joined = ''.join(ct for ct, _ in chunk_texts)
+        if not joined:
+            return None, seg_offset
+
+        # Build dharani ranges within this segment
+        pos = seg_offset
+        for chunk_text, is_dh in chunk_texts:
+            if is_dh and chunk_text:
+                dharani_ranges.append((pos, pos + len(chunk_text)))
+            pos += len(chunk_text)
+
+        seg = DivSegment(
+            div_type=div_type,
+            text=joined,
+            start=seg_offset,
+            end=seg_offset + len(joined),
+        )
+        return seg, seg_offset + len(joined)
+
+    for raw_text, div_type, is_dharani in all_parts:
         if div_type != current_div:
             if current_raw and current_div is not None:
-                joined = normalize_text(''.join(current_raw))
-                if joined:
-                    segments.append(DivSegment(
-                        div_type=current_div,
-                        text=joined,
-                        start=offset,
-                        end=offset + len(joined),
-                    ))
-                    offset += len(joined)
+                seg, offset = _flush_segment(
+                    current_raw, current_dharani_flags, current_div, offset)
+                if seg:
+                    segments.append(seg)
             current_div = div_type
             current_raw = [raw_text]
+            current_dharani_flags = [is_dharani]
         else:
             current_raw.append(raw_text)
+            current_dharani_flags.append(is_dharani)
 
     # Flush last segment
     if current_raw and current_div is not None:
-        joined = normalize_text(''.join(current_raw))
-        if joined:
-            segments.append(DivSegment(
-                div_type=current_div,
-                text=joined,
-                start=offset,
-                end=offset + len(joined),
-            ))
+        seg, offset = _flush_segment(
+            current_raw, current_dharani_flags, current_div, offset)
+        if seg:
+            segments.append(seg)
 
     full_text = ''.join(seg.text for seg in segments)
 
     if len(full_text) < config.MIN_TEXT_LENGTH:
         return None
+
+    # Merge adjacent dharani ranges
+    merged_dharani = []
+    for start, end in dharani_ranges:
+        if merged_dharani and start <= merged_dharani[-1][1]:
+            merged_dharani[-1] = (merged_dharani[-1][0], max(merged_dharani[-1][1], end))
+        else:
+            merged_dharani.append((start, end))
 
     metadata = TextMetadata(
         text_id=text_id,
@@ -379,6 +422,7 @@ def _process_text_group(args: tuple) -> ExtractedText | None:
         full_text=full_text,
         segments=segments,
         metadata=metadata,
+        dharani_ranges=merged_dharani,
     )
 
 

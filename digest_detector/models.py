@@ -33,6 +33,7 @@ class ExtractedText:
     full_text: str  # all CJK chars concatenated
     segments: list[DivSegment] = field(default_factory=list)
     metadata: TextMetadata | None = None
+    dharani_ranges: list[tuple[int, int]] = field(default_factory=list)
 
     @property
     def jing_text(self) -> str:
@@ -52,6 +53,7 @@ class CandidatePair:
     matching_ngrams: int
     total_digest_ngrams: int
     from_docnumber: bool = False  # True if pair came from docNumber cross-ref
+    from_phonetic: bool = False  # True if pair came from phonetic candidate generation
 
 
 @dataclass

@@ -72,6 +72,30 @@ def run_pipeline(
     logger.info("Stage 2 complete: %d candidates in %.1f seconds",
                 len(candidates), time.time() - t0)
 
+    # ---- Stage 2b: Phonetic Candidate Generation ----
+    if config.ENABLE_PHONETIC_SCAN:
+        logger.info("=" * 60)
+        logger.info("STAGE 2b: Phonetic Candidate Generation")
+        logger.info("=" * 60)
+        t0 = time.time()
+
+        from .phonetic import build_equivalence_table
+        from .candidates import generate_phonetic_candidates
+
+        phonetic_table = build_equivalence_table()
+        phonetic_candidates = generate_phonetic_candidates(texts, phonetic_table)
+
+        # Merge, deduplicating against existing candidates
+        existing_pairs = {(c.digest_id, c.source_id) for c in candidates}
+        new_phonetic = [c for c in phonetic_candidates
+                        if (c.digest_id, c.source_id) not in existing_pairs]
+        candidates.extend(new_phonetic)
+        candidates.sort(key=lambda c: c.containment_score, reverse=True)
+
+        logger.info("Stage 2b complete: %d new phonetic candidates "
+                     "(total now %d) in %.1f seconds",
+                     len(new_phonetic), len(candidates), time.time() - t0)
+
     # ---- Stage 3: Detailed Alignment ----
     logger.info("=" * 60)
     logger.info("STAGE 3: Detailed Alignment")

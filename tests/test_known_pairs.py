@@ -54,40 +54,65 @@ def _extract_full_text(text_id: str, xml_dir: Path = XML_DIR) -> ExtractedText |
         if not meta:
             meta = file_meta
 
-    # Build segments
+    # Build segments, tracking dharani ranges
     segments = []
     current_div = None
     current_raw = []
+    current_dharani_flags = []
     offset = 0
+    dharani_ranges = []
 
-    for raw_text, div_type in all_parts:
+    def _flush(raw_chunks, dharani_flags, div_type, seg_offset):
+        chunk_texts = []
+        for raw, is_dh in zip(raw_chunks, dharani_flags):
+            normalized = normalize_text(raw)
+            if normalized:
+                chunk_texts.append((normalized, is_dh))
+        if not chunk_texts:
+            return None, seg_offset
+        joined = ''.join(ct for ct, _ in chunk_texts)
+        if not joined:
+            return None, seg_offset
+        pos = seg_offset
+        for chunk_text, is_dh in chunk_texts:
+            if is_dh and chunk_text:
+                dharani_ranges.append((pos, pos + len(chunk_text)))
+            pos += len(chunk_text)
+        seg = DivSegment(
+            div_type=div_type, text=joined,
+            start=seg_offset, end=seg_offset + len(joined),
+        )
+        return seg, seg_offset + len(joined)
+
+    for raw_text, div_type, is_dharani in all_parts:
         if div_type != current_div:
             if current_raw and current_div is not None:
-                joined = normalize_text(''.join(current_raw))
-                if joined:
-                    segments.append(DivSegment(
-                        div_type=current_div,
-                        text=joined,
-                        start=offset,
-                        end=offset + len(joined),
-                    ))
-                    offset += len(joined)
+                seg, offset = _flush(
+                    current_raw, current_dharani_flags, current_div, offset)
+                if seg:
+                    segments.append(seg)
             current_div = div_type
             current_raw = [raw_text]
+            current_dharani_flags = [is_dharani]
         else:
             current_raw.append(raw_text)
+            current_dharani_flags.append(is_dharani)
 
     if current_raw and current_div is not None:
-        joined = normalize_text(''.join(current_raw))
-        if joined:
-            segments.append(DivSegment(
-                div_type=current_div,
-                text=joined,
-                start=offset,
-                end=offset + len(joined),
-            ))
+        seg, offset = _flush(
+            current_raw, current_dharani_flags, current_div, offset)
+        if seg:
+            segments.append(seg)
 
     full_text = ''.join(seg.text for seg in segments)
+
+    # Merge adjacent dharani ranges
+    merged_dharani = []
+    for start, end in dharani_ranges:
+        if merged_dharani and start <= merged_dharani[-1][1]:
+            merged_dharani[-1] = (merged_dharani[-1][0], max(merged_dharani[-1][1], end))
+        else:
+            merged_dharani.append((start, end))
 
     return ExtractedText(
         text_id=text_id,
@@ -104,6 +129,7 @@ def _extract_full_text(text_id: str, xml_dir: Path = XML_DIR) -> ExtractedText |
             div_types=meta.get('div_types', []),
             has_dharani=meta.get('has_dharani', False),
         ),
+        dharani_ranges=merged_dharani,
     )
 
 
