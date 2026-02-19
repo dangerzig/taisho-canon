@@ -1,0 +1,295 @@
+{
+  "summary": {
+    "total_entries": 26,
+    "unique_taisho": 23,
+    "with_tohoku": 24
+  },
+  "entries": {
+    "51": {
+      "rkts_id": "51",
+      "tohoku": 51,
+      "taisho": [
+        "T310"
+      ],
+      "section": "Ratnakūṭa",
+      "tibetan_title": "'phags pa go cha'i bkod pa bstan pa zhes bya ba theg pa chen po'i mdo",
+      "sanskrit_title": "ārya-varmavyūhanirdeśa-nāma-mahāyānasūtra",
+      "english_title": "The Teaching on the Armor Array"
+    },
+    "57": {
+      "rkts_id": "57",
+      "tohoku": 57,
+      "taisho": [
+        "T310"
+      ],
+      "section": "Ratnakūṭa",
+      "tibetan_title": "'phags pa dga' bo la mngal na gnas pa bstan pa zhes bya ba theg pa chen po'i mdo",
+      "sanskrit_title": "ārya-ānandagarbhāvakrāntinirdeśa",
+      "english_title": "The Teaching to Nanda on Entering the Womb"
+    },
+    "64": {
+      "rkts_id": "64",
+      "tohoku": 64,
+      "taisho": [
+        "T310"
+      ],
+      "section": "Ratnakūṭa",
+      "tibetan_title": "'phags pa glog thob kyis zhus pa zhes bya ba theg pa chen po'i mdo",
+      "sanskrit_title": "ārya-vidyutprāptaparipṛcchā-nāma-mahāyānasūtra",
+      "english_title": "The Sūtra of Vidyutprāpta's Questions"
+    },
+    "84": {
+      "rkts_id": "84",
+      "tohoku": 84,
+      "taisho": [
+        "T310"
+      ],
+      "section": "Ratnakūṭa",
+      "tibetan_title": "'phags pa bu mo rnam dag dad pas zhus pa zhes bya ba theg pa chen po'i mdo",
+      "sanskrit_title": "ārya dārikā vimalaśraddhāparipṛcchā nāma mahāyāna sūtra",
+      "english_title": "The Sūtra of the Girl Vimalaśraddhā's Questions"
+    },
+    "108": {
+      "rkts_id": "108",
+      "tohoku": 108,
+      "taisho": [
+        "T670"
+      ],
+      "section": "Sūtra",
+      "tibetan_title": "'phags pa lang kar gshegs pa rin po che'i mdo las sangs rgyas thams cad kyi gsung gi snying po zhes bya ba'i le'u",
+      "sanskrit_title": null,
+      "english_title": "The Quintessence of the Speech of All the Buddhas, a Chapter from the Descent into Laṅka Sutra"
+    },
+    "119": {
+      "rkts_id": "119",
+      "tohoku": 119,
+      "taisho": [
+        "T374"
+      ],
+      "section": "Sūtra",
+      "tibetan_title": "'phags pa yongs su mya ngan las 'das pa chen po'i mdo",
+      "sanskrit_title": "ārya-mahāparinirvāṇa-nāmasūtra",
+      "english_title": "The Sūtra of the Great Parinirvāṇa"
+    },
+    "135": {
+      "rkts_id": "135",
+      "tohoku": 135,
+      "taisho": [
+        "T273"
+      ],
+      "section": "Sūtra",
+      "tibetan_title": "rdo rje'i ting nge 'dzin gyi chos kyi rnam grangs yi ge",
+      "sanskrit_title": null,
+      "english_title": "The Words of the Dharma on the Vajra Samādhi"
+    },
+    "174": {
+      "rkts_id": "174",
+      "tohoku": 174,
+      "taisho": [
+        "T482"
+      ],
+      "section": "Sūtra",
+      "tibetan_title": "'phags pa 'jig rten 'dzin gyis yongs su dris pa zhes bya ba'i mdo",
+      "sanskrit_title": "ārya-lokadharaparipṛcchā-nāma-sūtra",
+      "english_title": "The Inquiry of Lokadhara"
+    },
+    "199": {
+      "rkts_id": "199",
+      "tohoku": 199,
+      "taisho": [
+        "T452"
+      ],
+      "section": "Sūtra",
+      "tibetan_title": "'phags pa byang chub sems dpa' byams pa dga' ldan gnas su skye ba blangs pa'i mdo",
+      "sanskrit_title": null,
+      "english_title": "The Sūtra on the Bodhisattva Maitreya Taking Birth in Tuṣita"
+    },
+    "237": {
+      "rkts_id": "237",
+      "tohoku": 237,
+      "taisho": [
+        "T945"
+      ],
+      "section": "Sūtra",
+      "tibetan_title": "gtsug tor chen po bam po dgu pa las bdud kyi le'u nyi tshe phyung ba",
+      "sanskrit_title": null,
+      "english_title": "A Minor Chapter on Demons"
+    },
+    "239": {
+      "rkts_id": "239",
+      "tohoku": 239,
+      "taisho": [
+        "T411"
+      ],
+      "section": "Sūtra",
+      "tibetan_title": "'dus pa chen po las sa'i snying po'i 'khor lo bcu pa zhes bya ba theg pa chen po'i mdo",
+      "sanskrit_title": "daśacakrakṣitigarbha-nāma-mahāyānasūtra",
+      "english_title": "The Sūtra of the Ten Wheels of Kṣitigarbha"
+    },
+    "242": {
+      "rkts_id": "242",
+      "tohoku": 242,
+      "taisho": [
+        "T998"
+      ],
+      "section": "Sūtra",
+      "tibetan_title": "'phags pa yongs su bsngo ba'i 'khor lo zhes bya ba theg pa chen po'i mdo",
+      "sanskrit_title": "ārya-pariṇatacakra-nāma-mahāyānasūtra",
+      "english_title": "The Sūtra of the Wheel of Dedication"
+    },
+    "243": {
+      "rkts_id": "243",
+      "tohoku": 243,
+      "taisho": [
+        "T2883"
+      ],
+      "section": "Sūtra",
+      "tibetan_title": "dam pa'i chos kyi rgyal po theg pa chen po'i mdo",
+      "sanskrit_title": "saddharmarāja-mahāyānasūtra",
+      "english_title": "The Sūtra of the King of the True Dharma"
+    },
+    "256": {
+      "rkts_id": "256",
+      "tohoku": 256,
+      "taisho": [
+        "T1484"
+      ],
+      "section": "Sūtra",
+      "tibetan_title": "chos kyi rgya mo sangs rgyas rnam par snang mdzad kyis byang chub sems dpa'i sems kyi gnas bshad pa le'u bcu",
+      "sanskrit_title": null,
+      "english_title": "The Seal of the Dharma"
+    },
+    "264": {
+      "rkts_id": "264",
+      "tohoku": 264,
+      "taisho": [
+        "T2871"
+      ],
+      "section": "Sūtra",
+      "tibetan_title": "'phags pa thar pa chen po phyogs su rgyas pa 'gyod tshangs kyis sdig sbyangs te sangs rgyas su grub par rnam par bkod pa zhes bya ba theg pa chen po'i mdo",
+      "sanskrit_title": "ārya-mahāmokṣadiśunpuṣyakrokramtyapāpaṃśodhana-nāma-viharatisma?",
+      "english_title": "The Sūtra on Liberation"
+    },
+    "335": {
+      "rkts_id": "335",
+      "tohoku": 335,
+      "taisho": [
+        "T785"
+      ],
+      "section": "Sūtra",
+      "tibetan_title": "'phags pa 'khar gsil gyi mdo",
+      "sanskrit_title": null,
+      "english_title": "The Khakkhara Sūtra"
+    },
+    "341": {
+      "rkts_id": "341",
+      "tohoku": 341,
+      "taisho": [
+        "T202"
+      ],
+      "section": "Sūtra",
+      "tibetan_title": "mdzangs blun zhes bya ba'i mdo",
+      "sanskrit_title": "damamūka-nāmasūtra",
+      "english_title": "The Sūtra of the Wise and Foolish"
+    },
+    "351": {
+      "rkts_id": "351",
+      "tohoku": 351,
+      "taisho": [
+        "T171"
+      ],
+      "section": "Sūtra",
+      "tibetan_title": "'phags pa rgyal bu don grub kyi mdo",
+      "sanskrit_title": "jinaputrārthasiddhisūtra",
+      "english_title": "The Sūtra of Prince Arthasiddhi"
+    },
+    "353": {
+      "rkts_id": "353",
+      "tohoku": 353,
+      "taisho": [
+        "T156"
+      ],
+      "section": "Sūtra",
+      "tibetan_title": "thabs mkhas pa chen po sangs rgyas drin lan bsab pa'i mdo",
+      "sanskrit_title": null,
+      "english_title": "The Sūtra of Repaying the Kindness of the Buddha Who Has Great Skill in Means"
+    },
+    "354": {
+      "rkts_id": "354",
+      "tohoku": 354,
+      "taisho": [
+        "T2881"
+      ],
+      "section": "Sūtra",
+      "tibetan_title": "'phags pa legs nyes kyi rgyu dang 'bras bu bstan pa zhes bya ba theg pa chen po'i mdo",
+      "sanskrit_title": null,
+      "english_title": "The Sūtra Teaching the Causes and Effects of Good and Ill"
+    },
+    "550": {
+      "rkts_id": "550",
+      "tohoku": 555,
+      "taisho": [
+        "T665"
+      ],
+      "section": "Sūtra",
+      "tibetan_title": "'phags pa gser 'od dam pa mchog tu rnam par rgyal ba'i mdo sde'i rgyal po theg pa chen po'i mdo",
+      "sanskrit_title": null,
+      "english_title": "The Sūtra, The Supremely Victorious Golden Light"
+    },
+    "685": {
+      "rkts_id": "685",
+      "tohoku": 897,
+      "taisho": [
+        "T1060"
+      ],
+      "section": "Tantra",
+      "tibetan_title": "phags pa byang chub sems dpa' spyan ras gzigs dbang phyug phyag stong spyan stong dang ldan pa thogs pa mi mnga' ba'i thugs rje chen po'i sems rgya cher yongs su rdzogs pa zhes bya ba'i gzungs",
+      "sanskrit_title": "ārya-avalokiteśvarasahasrabhujanetrāsaṇgamahākāruṇikacittaparipūrṇa-nāmadhāraṇī",
+      "english_title": "The Incantation of the Thousand-Armed, Thousand-Eyed Avalokiteśvara"
+    },
+    "688": {
+      "rkts_id": "688",
+      "tohoku": 694,
+      "taisho": [
+        "T1071"
+      ],
+      "section": "Tantra",
+      "tibetan_title": "'phags pa zhal bcu gcig pa'i rig sngags kyi snying po zhes bya ba'i gzungs",
+      "sanskrit_title": "ārya-mukhaikādaśavidyāmantrahṛdaya-nāma-dhāraṇī",
+      "english_title": "The Incantation, The Essence of the Spell of Eleven-Faced Avalokiteśvara"
+    },
+    "920": {
+      "rkts_id": "920",
+      "tohoku": null,
+      "taisho": [
+        "T685"
+      ],
+      "section": "Sūtra",
+      "tibetan_title": "'phags pa yongs su skyob pa'i snod ces bya ba'i mdo",
+      "sanskrit_title": "ārya-pariśaraṇabhājana-nāmasūtra",
+      "english_title": null
+    },
+    "945": {
+      "rkts_id": "945",
+      "tohoku": null,
+      "taisho": [
+        "T784"
+      ],
+      "section": null,
+      "tibetan_title": "'phags pa dum bu zhe gnyis pa zhes bya ba'i mdo",
+      "sanskrit_title": null,
+      "english_title": "The Sūtra of the Forty-Two Sections"
+    },
+    "1067": {
+      "rkts_id": "1067",
+      "tohoku": 1067,
+      "taisho": [
+        "T2897"
+      ],
+      "section": null,
+      "tibetan_title": "sangs rgyas kyi chos gsal zhing yangs pa snang brgyad ces bya ba'i mdo",
+      "sanskrit_title": null,
+      "english_title": "The Sūtra of the Eight Iluminations"
+    }
+  }
+}

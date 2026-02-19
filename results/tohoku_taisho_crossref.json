@@ -1,0 +1,7584 @@
+{
+  "summary": {
+    "total_tohoku_entries": 382,
+    "with_taisho": 360,
+    "without_taisho": 22,
+    "new_mappings": 2,
+    "k_pages_fetched": 627
+  },
+  "entries": {
+    "Toh 1": {
+      "tohoku": 1,
+      "k_numbers": [
+        "K 1389",
+        "K 1390",
+        "K 1391",
+        "K 1392",
+        "K 1393",
+        "K 1394",
+        "K 1395"
+      ],
+      "taisho": [
+        "T1448",
+        "T1444",
+        "T1445",
+        "T1449",
+        "T1450",
+        "T1446",
+        "T1447"
+      ],
+      "nanjio": [
+        "Nj 1123"
+      ],
+      "otani": [
+        "Otani 1030"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 2": {
+      "tohoku": 2,
+      "k_numbers": [
+        "K 898"
+      ],
+      "taisho": [
+        "T1454"
+      ],
+      "nanjio": [
+        "Nj 1110"
+      ],
+      "otani": [
+        "Otani 1031"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3": {
+      "tohoku": 3,
+      "k_numbers": [
+        "K 891"
+      ],
+      "taisho": [
+        "T1442"
+      ],
+      "nanjio": [
+        "Nj 1118"
+      ],
+      "otani": [
+        "Otani 1032"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4": {
+      "tohoku": 4,
+      "k_numbers": [
+        "K 897"
+      ],
+      "taisho": [
+        "T1455"
+      ],
+      "nanjio": [
+        "Nj 1149"
+      ],
+      "otani": [
+        "Otani 1033"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 5": {
+      "tohoku": 5,
+      "k_numbers": [
+        "K 892"
+      ],
+      "taisho": [
+        "T1443"
+      ],
+      "nanjio": [
+        "Nj 1124"
+      ],
+      "otani": [
+        "Otani 1034"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 6": {
+      "tohoku": 6,
+      "k_numbers": [
+        "K 893"
+      ],
+      "taisho": [
+        "T1451"
+      ],
+      "nanjio": [
+        "Nj 1121"
+      ],
+      "otani": [
+        "Otani 1035"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 8": {
+      "tohoku": 8,
+      "k_numbers": [
+        "K 1(1)"
+      ],
+      "taisho": [],
+      "nanjio": [],
+      "otani": [
+        "Otani 730"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 9": {
+      "tohoku": 9,
+      "k_numbers": [
+        "K 1(2)",
+        "K 2",
+        "K 3",
+        "K 4"
+      ],
+      "taisho": [
+        "T223",
+        "T221",
+        "T222"
+      ],
+      "nanjio": [
+        "Nj 3",
+        "Nj 2",
+        "Nj 4"
+      ],
+      "otani": [
+        "Otani 731"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 10": {
+      "tohoku": 10,
+      "k_numbers": [
+        "K 1(3)"
+      ],
+      "taisho": [],
+      "nanjio": [],
+      "otani": [
+        "Otani 732"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 12": {
+      "tohoku": 12,
+      "k_numbers": [
+        "K 1(4)",
+        "K 5",
+        "K 6",
+        "K 7",
+        "K 9",
+        "K 1423"
+      ],
+      "taisho": [
+        "T227",
+        "T226",
+        "T224",
+        "T228",
+        "T225"
+      ],
+      "nanjio": [
+        "Nj 6",
+        "Nj 7",
+        "Nj 5",
+        "Nj 927",
+        "Nj 8"
+      ],
+      "otani": [
+        "Otani 734"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 13": {
+      "tohoku": 13,
+      "k_numbers": [
+        "K 1200"
+      ],
+      "taisho": [
+        "T229"
+      ],
+      "nanjio": [
+        "Nj 864"
+      ],
+      "otani": [
+        "Otani 735"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 14": {
+      "tohoku": 14,
+      "k_numbers": [
+        "K 1(16)",
+        "K 8"
+      ],
+      "taisho": [
+        "T231"
+      ],
+      "nanjio": [
+        "Nj 9"
+      ],
+      "otani": [
+        "Otani 736"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 15": {
+      "tohoku": 15,
+      "k_numbers": [
+        "K 1485"
+      ],
+      "taisho": [
+        "T260"
+      ],
+      "nanjio": [],
+      "otani": [
+        "Otani 738"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 16": {
+      "tohoku": 16,
+      "k_numbers": [
+        "K 1(9)",
+        "K 13",
+        "K 14",
+        "K 15",
+        "K 16",
+        "K 17",
+        "K 143"
+      ],
+      "taisho": [
+        "T236",
+        "T239",
+        "T586",
+        "T235",
+        "T237"
+      ],
+      "nanjio": [
+        "Nj 13",
+        "Nj 11",
+        "Nj 14",
+        "Nj 190",
+        "Nj 10",
+        "Nj 12"
+      ],
+      "otani": [
+        "Otani 739",
+        "Otani 827"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 17": {
+      "tohoku": 17,
+      "k_numbers": [
+        "K 1(10)",
+        "K 18",
+        "K 18",
+        "K 1189",
+        "K 1256",
+        "K 1275"
+      ],
+      "taisho": [
+        "T244",
+        "T240",
+        "T243",
+        "T242"
+      ],
+      "nanjio": [
+        "Nj 1037",
+        "Nj 18",
+        "Nj 1034",
+        "Nj 862"
+      ],
+      "otani": [
+        "Otani 119",
+        "Otani 121"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 18": {
+      "tohoku": 18,
+      "k_numbers": [
+        "K 168",
+        "K 1192"
+      ],
+      "taisho": [
+        "T248",
+        "T650"
+      ],
+      "nanjio": [
+        "Nj 879",
+        "Nj 164"
+      ],
+      "otani": [
+        "Otani 740",
+        "Otani 847"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 19": {
+      "tohoku": 19,
+      "k_numbers": [
+        "K 1190"
+      ],
+      "taisho": [
+        "T249"
+      ],
+      "nanjio": [
+        "Nj 865"
+      ],
+      "otani": [
+        "Otani 173"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 21": {
+      "tohoku": 21,
+      "k_numbers": [
+        "K 20",
+        "K 21",
+        "K 1267",
+        "K 1383",
+        "K 1427"
+      ],
+      "taisho": [
+        "T252",
+        "T253",
+        "T250",
+        "T251",
+        "T257"
+      ],
+      "nanjio": [
+        "Nj 19",
+        "Nj 20",
+        "Nj 935"
+      ],
+      "otani": [
+        "Otani 160",
+        "Otani 16"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 22": {
+      "tohoku": 22,
+      "k_numbers": [
+        "K 1090"
+      ],
+      "taisho": [
+        "T258"
+      ],
+      "nanjio": [
+        "Nj 797"
+      ],
+      "otani": [
+        "Otani 159"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 24": {
+      "tohoku": 24,
+      "k_numbers": [
+        "K 1(7)",
+        "K 10",
+        "K 11"
+      ],
+      "taisho": [
+        "T232",
+        "T233"
+      ],
+      "nanjio": [
+        "Nj 21",
+        "Nj 22"
+      ],
+      "otani": [
+        "Otani 737"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 25": {
+      "tohoku": 25,
+      "k_numbers": [
+        "K 1455"
+      ],
+      "taisho": [
+        "T230"
+      ],
+      "nanjio": [
+        "Nj 999"
+      ],
+      "otani": [
+        "Otani 172"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 31": {
+      "tohoku": 31,
+      "k_numbers": [
+        "K 650",
+        "K 730",
+        "K 741"
+      ],
+      "taisho": [
+        "T109",
+        "T110",
+        "T99"
+      ],
+      "nanjio": [
+        "Nj 657",
+        "Nj 658",
+        "Nj 544"
+      ],
+      "otani": [
+        "Otani 747",
+        "Otani 982",
+        "Otani 757",
+        "Otani 758",
+        "Otani 966",
+        "Otani 958",
+        "Otani 959",
+        "Otani 879",
+        "Otani 750",
+        "Otani 962",
+        "Otani 877",
+        "Otani 996"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 33": {
+      "tohoku": 33,
+      "k_numbers": [
+        "K 1185",
+        "K 1307"
+      ],
+      "taisho": [
+        "T1245",
+        "T1244"
+      ],
+      "nanjio": [
+        "Nj 849",
+        "Nj 974"
+      ],
+      "otani": [
+        "Otani 333"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 34": {
+      "tohoku": 34,
+      "k_numbers": [
+        "K 647",
+        "K 647",
+        "K 651",
+        "K 1179"
+      ],
+      "taisho": [
+        "T19",
+        "T100",
+        "T1"
+      ],
+      "nanjio": [
+        "Nj 851",
+        "Nj 546",
+        "Nj 545"
+      ],
+      "otani": [
+        "Otani 750",
+        "Otani 879",
+        "Otani 962",
+        "Otani 997",
+        "Otani 1021"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 36": {
+      "tohoku": 36,
+      "k_numbers": [
+        "K 649",
+        "K 649",
+        "K 756"
+      ],
+      "taisho": [
+        "T125",
+        "T138"
+      ],
+      "nanjio": [
+        "Nj 543",
+        "Nj 629"
+      ],
+      "otani": [
+        "Otani 752",
+        "Otani 982",
+        "Otani 879",
+        "Otani 877"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 39": {
+      "tohoku": 39,
+      "k_numbers": [
+        "K 780"
+      ],
+      "taisho": [
+        "T597"
+      ],
+      "nanjio": [
+        "Nj 707"
+      ],
+      "otani": [
+        "Otani 755"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 41": {
+      "tohoku": 41,
+      "k_numbers": [
+        "K 650"
+      ],
+      "taisho": [
+        "T99"
+      ],
+      "nanjio": [
+        "Nj 544"
+      ],
+      "otani": [
+        "Otani 747",
+        "Otani 982",
+        "Otani 757",
+        "Otani 758",
+        "Otani 966",
+        "Otani 958",
+        "Otani 959",
+        "Otani 879",
+        "Otani 750",
+        "Otani 962",
+        "Otani 877",
+        "Otani 996"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 42": {
+      "tohoku": 42,
+      "k_numbers": [
+        "K 650"
+      ],
+      "taisho": [
+        "T99"
+      ],
+      "nanjio": [
+        "Nj 544"
+      ],
+      "otani": [
+        "Otani 747",
+        "Otani 982",
+        "Otani 757",
+        "Otani 758",
+        "Otani 966",
+        "Otani 958",
+        "Otani 959",
+        "Otani 879",
+        "Otani 750",
+        "Otani 962",
+        "Otani 877",
+        "Otani 996"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 44": {
+      "tohoku": 44,
+      "k_numbers": [
+        "K 79",
+        "K 79",
+        "K 80",
+        "K 89",
+        "K 90",
+        "K 92",
+        "K 94",
+        "K 97",
+        "K 98",
+        "K 99",
+        "K 100",
+        "K 102",
+        "K 103",
+        "K 104",
+        "K 1029",
+        "K 1029",
+        "K 1262",
+        "K 1282",
+        "K 1388"
+      ],
+      "taisho": [
+        "T288",
+        "T294",
+        "T281",
+        "T286",
+        "T279",
+        "T278",
+        "T291",
+        "T285",
+        "T283",
+        "T295",
+        "T280",
+        "T284",
+        "T292",
+        "T297",
+        "T293",
+        "T287",
+        "T296"
+      ],
+      "nanjio": [
+        "Nj 111",
+        "Nj 106",
+        "Nj 100",
+        "Nj 105",
+        "Nj 88",
+        "Nj 87",
+        "Nj 92",
+        "Nj 110",
+        "Nj 108",
+        "Nj 101",
+        "Nj 102",
+        "Nj 109",
+        "Nj 104",
+        "Nj 1142",
+        "Nj 89",
+        "Nj 1336"
+      ],
+      "otani": [
+        "Otani 761",
+        "Otani 716"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 45": {
+      "tohoku": 45,
+      "k_numbers": [
+        "K 22",
+        "K 22(1)",
+        "K 23"
+      ],
+      "taisho": [
+        "T311",
+        "T310"
+      ],
+      "nanjio": [
+        "Nj 24",
+        "Nj 23"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 46": {
+      "tohoku": 46,
+      "k_numbers": [
+        "K 22(2)"
+      ],
+      "taisho": [],
+      "nanjio": [],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 47": {
+      "tohoku": 47,
+      "k_numbers": [
+        "K 22(3)",
+        "K 1486"
+      ],
+      "taisho": [
+        "T312"
+      ],
+      "nanjio": [
+        "Nj 1043"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 48": {
+      "tohoku": 48,
+      "k_numbers": [
+        "K 22(4)"
+      ],
+      "taisho": [],
+      "nanjio": [],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 49": {
+      "tohoku": 49,
+      "k_numbers": [
+        "K 24",
+        "K 25",
+        "K 26",
+        "K 1199"
+      ],
+      "taisho": [
+        "T362",
+        "T363",
+        "T360",
+        "T361"
+      ],
+      "nanjio": [
+        "Nj 26",
+        "Nj 863",
+        "Nj 27",
+        "Nj 25"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 50": {
+      "tohoku": 50,
+      "k_numbers": [
+        "K 22(6)",
+        "K 27"
+      ],
+      "taisho": [
+        "T313"
+      ],
+      "nanjio": [
+        "Nj 28"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 51": {
+      "tohoku": 51,
+      "k_numbers": [
+        "K 22(7)"
+      ],
+      "taisho": [],
+      "nanjio": [],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 52": {
+      "tohoku": 52,
+      "k_numbers": [
+        "K 22(8)"
+      ],
+      "taisho": [],
+      "nanjio": [],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 53": {
+      "tohoku": 53,
+      "k_numbers": [
+        "K 22(9)",
+        "K 28"
+      ],
+      "taisho": [
+        "T314"
+      ],
+      "nanjio": [
+        "Nj 29"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 54": {
+      "tohoku": 54,
+      "k_numbers": [
+        "K 22(10)",
+        "K 29"
+      ],
+      "taisho": [
+        "T315"
+      ],
+      "nanjio": [
+        "Nj 30"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 55": {
+      "tohoku": 55,
+      "k_numbers": [
+        "K 22(11)"
+      ],
+      "taisho": [],
+      "nanjio": [],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 56": {
+      "tohoku": 56,
+      "k_numbers": [
+        "K 22(12)",
+        "K 1487"
+      ],
+      "taisho": [
+        "T316"
+      ],
+      "nanjio": [
+        "Nj 1005"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 57": {
+      "tohoku": 57,
+      "k_numbers": [
+        "K 22(14)"
+      ],
+      "taisho": [],
+      "nanjio": [],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 58": {
+      "tohoku": 58,
+      "k_numbers": [
+        "K 22(13)",
+        "K 30"
+      ],
+      "taisho": [
+        "T317"
+      ],
+      "nanjio": [
+        "Nj 32"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 59": {
+      "tohoku": 59,
+      "k_numbers": [
+        "K 22(15)",
+        "K 31",
+        "K 1341"
+      ],
+      "taisho": [
+        "T318",
+        "T319"
+      ],
+      "nanjio": [
+        "Nj 31"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 60": {
+      "tohoku": 60,
+      "k_numbers": [
+        "K 22(16)",
+        "K 1496"
+      ],
+      "taisho": [
+        "T320"
+      ],
+      "nanjio": [],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 61": {
+      "tohoku": 61,
+      "k_numbers": [
+        "K 22(17)"
+      ],
+      "taisho": [],
+      "nanjio": [],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 62": {
+      "tohoku": 62,
+      "k_numbers": [
+        "K 22(18)",
+        "K 1206"
+      ],
+      "taisho": [
+        "T321"
+      ],
+      "nanjio": [
+        "Nj 873"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 63": {
+      "tohoku": 63,
+      "k_numbers": [
+        "K 22(19)",
+        "K 32"
+      ],
+      "taisho": [
+        "T322"
+      ],
+      "nanjio": [
+        "Nj 33"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 64": {
+      "tohoku": 64,
+      "k_numbers": [
+        "K 22(20)"
+      ],
+      "taisho": [],
+      "nanjio": [],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 65": {
+      "tohoku": 65,
+      "k_numbers": [
+        "K 22(21)",
+        "K 34"
+      ],
+      "taisho": [
+        "T324"
+      ],
+      "nanjio": [
+        "Nj 35"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 66": {
+      "tohoku": 66,
+      "k_numbers": [
+        "K 22(22)"
+      ],
+      "taisho": [],
+      "nanjio": [],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 67": {
+      "tohoku": 67,
+      "k_numbers": [
+        "K 22(23)"
+      ],
+      "taisho": [],
+      "nanjio": [],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 68": {
+      "tohoku": 68,
+      "k_numbers": [
+        "K 22(24)",
+        "K 1303"
+      ],
+      "taisho": [
+        "T326"
+      ],
+      "nanjio": [
+        "Nj 979"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 69": {
+      "tohoku": 69,
+      "k_numbers": [
+        "K 22(25)",
+        "K 37"
+      ],
+      "taisho": [
+        "T327"
+      ],
+      "nanjio": [
+        "Nj 37"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 70": {
+      "tohoku": 70,
+      "k_numbers": [
+        "K 22(26)"
+      ],
+      "taisho": [],
+      "nanjio": [],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 71": {
+      "tohoku": 71,
+      "k_numbers": [
+        "K 22(27)",
+        "K 362"
+      ],
+      "taisho": [
+        "T329"
+      ],
+      "nanjio": [
+        "Nj 44"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 72": {
+      "tohoku": 72,
+      "k_numbers": [
+        "K 22(28)",
+        "K 369",
+        "K 1468"
+      ],
+      "taisho": [
+        "T330",
+        "T331"
+      ],
+      "nanjio": [
+        "Nj 389",
+        "Nj 947"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 73": {
+      "tohoku": 73,
+      "k_numbers": [
+        "K 22(29)",
+        "K 38",
+        "K 1100"
+      ],
+      "taisho": [
+        "T332",
+        "T333"
+      ],
+      "nanjio": [
+        "Nj 38",
+        "Nj 788"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 74": {
+      "tohoku": 74,
+      "k_numbers": [
+        "K 22(30)",
+        "K 36",
+        "K 39"
+      ],
+      "taisho": [
+        "T336",
+        "T334"
+      ],
+      "nanjio": [
+        "Nj 39"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 75": {
+      "tohoku": 75,
+      "k_numbers": [
+        "K 22(31)"
+      ],
+      "taisho": [],
+      "nanjio": [],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 76": {
+      "tohoku": 76,
+      "k_numbers": [
+        "K 22(32)",
+        "K 40"
+      ],
+      "taisho": [
+        "T337"
+      ],
+      "nanjio": [
+        "Nj 42"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 77": {
+      "tohoku": 77,
+      "k_numbers": [
+        "K 22(33)",
+        "K 41",
+        "K 42"
+      ],
+      "taisho": [
+        "T338",
+        "T339"
+      ],
+      "nanjio": [
+        "Nj 41",
+        "Nj 45"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 78": {
+      "tohoku": 78,
+      "k_numbers": [
+        "K 22(34)"
+      ],
+      "taisho": [],
+      "nanjio": [],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 80": {
+      "tohoku": 80,
+      "k_numbers": [
+        "K 22(36)",
+        "K 44"
+      ],
+      "taisho": [
+        "T342"
+      ],
+      "nanjio": [
+        "Nj 47"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 81": {
+      "tohoku": 81,
+      "k_numbers": [
+        "K 22(37)",
+        "K 46",
+        "K 47"
+      ],
+      "taisho": [
+        "T344",
+        "T343"
+      ],
+      "nanjio": [
+        "Nj 50",
+        "Nj 49"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 82": {
+      "tohoku": 82,
+      "k_numbers": [
+        "K 22(38)",
+        "K 48",
+        "K 1424"
+      ],
+      "taisho": [
+        "T346",
+        "T345"
+      ],
+      "nanjio": [
+        "Nj 926",
+        "Nj 52"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 83": {
+      "tohoku": 83,
+      "k_numbers": [
+        "K 22(39)",
+        "K 49"
+      ],
+      "taisho": [
+        "T341"
+      ],
+      "nanjio": [
+        "Nj 53"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 84": {
+      "tohoku": 84,
+      "k_numbers": [
+        "K 22(40)"
+      ],
+      "taisho": [],
+      "nanjio": [],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 85": {
+      "tohoku": 85,
+      "k_numbers": [
+        "K 22(41)",
+        "K 50"
+      ],
+      "taisho": [
+        "T348"
+      ],
+      "nanjio": [
+        "Nj 54"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 86": {
+      "tohoku": 86,
+      "k_numbers": [
+        "K 22(42)",
+        "K 51"
+      ],
+      "taisho": [
+        "T349"
+      ],
+      "nanjio": [
+        "Nj 55"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 87": {
+      "tohoku": 87,
+      "k_numbers": [
+        "K 22(43)",
+        "K 52",
+        "K 53",
+        "K 1123"
+      ],
+      "taisho": [
+        "T350",
+        "T352",
+        "T351"
+      ],
+      "nanjio": [
+        "Nj 57",
+        "Nj 805",
+        "Nj 58"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 88": {
+      "tohoku": 88,
+      "k_numbers": [
+        "K 22(44)"
+      ],
+      "taisho": [],
+      "nanjio": [],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 89": {
+      "tohoku": 89,
+      "k_numbers": [
+        "K 22(45)"
+      ],
+      "taisho": [],
+      "nanjio": [],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 90": {
+      "tohoku": 90,
+      "k_numbers": [
+        "K 22(46)"
+      ],
+      "taisho": [],
+      "nanjio": [],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 91": {
+      "tohoku": 91,
+      "k_numbers": [
+        "K 22(47)"
+      ],
+      "taisho": [],
+      "nanjio": [],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 92": {
+      "tohoku": 92,
+      "k_numbers": [
+        "K 22(48)",
+        "K 54"
+      ],
+      "taisho": [
+        "T353"
+      ],
+      "nanjio": [
+        "Nj 69"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 93": {
+      "tohoku": 93,
+      "k_numbers": [
+        "K 22(49)",
+        "K 55"
+      ],
+      "taisho": [
+        "T354"
+      ],
+      "nanjio": [
+        "Nj 60"
+      ],
+      "otani": [
+        "Otani 760"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 94": {
+      "tohoku": 94,
+      "k_numbers": [
+        "K 387"
+      ],
+      "taisho": [
+        "T425"
+      ],
+      "nanjio": [
+        "Nj 403"
+      ],
+      "otani": [
+        "Otani 762"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 95": {
+      "tohoku": 95,
+      "k_numbers": [
+        "K 111",
+        "K 111",
+        "K 112"
+      ],
+      "taisho": [
+        "T187",
+        "T186"
+      ],
+      "nanjio": [
+        "Nj 159",
+        "Nj 160"
+      ],
+      "otani": [
+        "Otani 763"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 96": {
+      "tohoku": 96,
+      "k_numbers": [
+        "K 186",
+        "K 187"
+      ],
+      "taisho": [
+        "T818",
+        "T817"
+      ],
+      "nanjio": [
+        "Nj 185",
+        "Nj 184"
+      ],
+      "otani": [
+        "Otani 764"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 98": {
+      "tohoku": 98,
+      "k_numbers": [
+        "K 458"
+      ],
+      "taisho": [
+        "T1375"
+      ],
+      "nanjio": [
+        "Nj 504"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 100": {
+      "tohoku": 100,
+      "k_numbers": [
+        "K 188",
+        "K 189",
+        "K 1489"
+      ],
+      "taisho": [
+        "T357",
+        "T358",
+        "T359"
+      ],
+      "nanjio": [
+        "Nj 56",
+        "Nj 1013"
+      ],
+      "otani": [
+        "Otani 768"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 101": {
+      "tohoku": 101,
+      "k_numbers": [
+        "K 396"
+      ],
+      "taisho": [
+        "T657"
+      ],
+      "nanjio": [
+        "Nj 425"
+      ],
+      "otani": [
+        "Otani 769"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 102": {
+      "tohoku": 102,
+      "k_numbers": [
+        "K 398",
+        "K 1412"
+      ],
+      "taisho": [
+        "T424",
+        "T423"
+      ],
+      "nanjio": [
+        "Nj 972",
+        "Nj 449"
+      ],
+      "otani": [
+        "Otani 770"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 103": {
+      "tohoku": 103,
+      "k_numbers": [
+        "K 381"
+      ],
+      "taisho": [
+        "T484"
+      ],
+      "nanjio": [
+        "Nj 396"
+      ],
+      "otani": [
+        "Otani 771"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 104": {
+      "tohoku": 104,
+      "k_numbers": [
+        "K 79",
+        "K 101",
+        "K 1217"
+      ],
+      "taisho": [
+        "T289",
+        "T290",
+        "T278"
+      ],
+      "nanjio": [
+        "Nj 95",
+        "Nj 881",
+        "Nj 87"
+      ],
+      "otani": [
+        "Otani 772",
+        "Otani 716"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 105": {
+      "tohoku": 105,
+      "k_numbers": [
+        "K 497"
+      ],
+      "taisho": [
+        "T486"
+      ],
+      "nanjio": [
+        "Nj 462"
+      ],
+      "otani": [
+        "Otani 773"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 106": {
+      "tohoku": 106,
+      "k_numbers": [
+        "K 153",
+        "K 154",
+        "K 155",
+        "K 156"
+      ],
+      "taisho": [
+        "T678",
+        "T675",
+        "T676",
+        "T677"
+      ],
+      "nanjio": [
+        "Nj 154",
+        "Nj 246",
+        "Nj 247",
+        "Nj 156"
+      ],
+      "otani": [
+        "Otani 774"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 107": {
+      "tohoku": 107,
+      "k_numbers": [
+        "K 159",
+        "K 160",
+        "K 161"
+      ],
+      "taisho": [
+        "T671",
+        "T672",
+        "T670"
+      ],
+      "nanjio": [
+        "Nj 176",
+        "Nj 177",
+        "Nj 175"
+      ],
+      "otani": [
+        "Otani 775"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 109": {
+      "tohoku": 109,
+      "k_numbers": [
+        "K 222",
+        "K 223",
+        "K 224",
+        "K 225"
+      ],
+      "taisho": [
+        "T464",
+        "T467",
+        "T466",
+        "T465"
+      ],
+      "nanjio": [
+        "Nj 238",
+        "Nj 241",
+        "Nj 240",
+        "Nj 239"
+      ],
+      "otani": [
+        "Otani 777"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 110": {
+      "tohoku": 110,
+      "k_numbers": [
+        "K 417",
+        "K 1344"
+      ],
+      "taisho": [
+        "T681",
+        "T682"
+      ],
+      "nanjio": [
+        "Nj 444"
+      ],
+      "otani": [
+        "Otani 778"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 111": {
+      "tohoku": 111,
+      "k_numbers": [
+        "K 110"
+      ],
+      "taisho": [
+        "T380"
+      ],
+      "nanjio": [
+        "Nj 117"
+      ],
+      "otani": [
+        "Otani 779"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 112": {
+      "tohoku": 112,
+      "k_numbers": [
+        "K 125",
+        "K 126"
+      ],
+      "taisho": [
+        "T157",
+        "T158"
+      ],
+      "nanjio": [
+        "Nj 142",
+        "Nj 180"
+      ],
+      "otani": [
+        "Otani 780"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 113": {
+      "tohoku": 113,
+      "k_numbers": [
+        "K 116",
+        "K 117",
+        "K 118"
+      ],
+      "taisho": [
+        "T264",
+        "T263",
+        "T262"
+      ],
+      "nanjio": [
+        "Nj 139",
+        "Nj 138",
+        "Nj 134"
+      ],
+      "otani": [
+        "Otani 781"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 114": {
+      "tohoku": 114,
+      "k_numbers": [
+        "K 455"
+      ],
+      "taisho": [
+        "T1374"
+      ],
+      "nanjio": [
+        "Nj 498"
+      ],
+      "otani": [
+        "Otani 782"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 115": {
+      "tohoku": 115,
+      "k_numbers": [
+        "K 193"
+      ],
+      "taisho": [
+        "T367"
+      ],
+      "nanjio": [
+        "Nj 199"
+      ],
+      "otani": [
+        "Otani 783"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 116": {
+      "tohoku": 116,
+      "k_numbers": [
+        "K 1088"
+      ],
+      "taisho": [
+        "T1050"
+      ],
+      "nanjio": [
+        "Nj 782"
+      ],
+      "otani": [
+        "Otani 784"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 117": {
+      "tohoku": 117,
+      "k_numbers": [
+        "K 149",
+        "K 150"
+      ],
+      "taisho": [
+        "T461",
+        "T462"
+      ],
+      "nanjio": [
+        "Nj 168",
+        "Nj 169"
+      ],
+      "otani": [
+        "Otani 785"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 118": {
+      "tohoku": 118,
+      "k_numbers": [
+        "K 240",
+        "K 241"
+      ],
+      "taisho": [
+        "T355",
+        "T356"
+      ],
+      "nanjio": [
+        "Nj 51",
+        "Nj 251"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 119": {
+      "tohoku": 119,
+      "k_numbers": [
+        "K 105",
+        "K 105",
+        "K 107"
+      ],
+      "taisho": [
+        "T374",
+        "T377"
+      ],
+      "nanjio": [
+        "Nj 113",
+        "Nj 115"
+      ],
+      "otani": [
+        "Otani 787",
+        "Otani 788"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 120": {
+      "tohoku": 120,
+      "k_numbers": [
+        "K 105",
+        "K 106",
+        "K 1403"
+      ],
+      "taisho": [
+        "T375",
+        "T374",
+        "T376"
+      ],
+      "nanjio": [
+        "Nj 114",
+        "Nj 113",
+        "Nj 120"
+      ],
+      "otani": [
+        "Otani 788",
+        "Otani 787"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 121": {
+      "tohoku": 121,
+      "k_numbers": [
+        "K 483"
+      ],
+      "taisho": [
+        "T390"
+      ],
+      "nanjio": [
+        "Nj 123"
+      ],
+      "otani": [
+        "Otani 789"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 123": {
+      "tohoku": 123,
+      "k_numbers": [
+        "K 529"
+      ],
+      "taisho": [
+        "T653"
+      ],
+      "nanjio": [
+        "Nj 1095"
+      ],
+      "otani": [
+        "Otani 791"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 127": {
+      "tohoku": 127,
+      "k_numbers": [
+        "K 181",
+        "K 182",
+        "K 183"
+      ],
+      "taisho": [
+        "T639",
+        "T641",
+        "T640"
+      ],
+      "nanjio": [
+        "Nj 191",
+        "Nj 192"
+      ],
+      "otani": [
+        "Otani 795"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 129": {
+      "tohoku": 129,
+      "k_numbers": [
+        "K 482"
+      ],
+      "taisho": [
+        "T648"
+      ],
+      "nanjio": [
+        "Nj 522"
+      ],
+      "otani": [
+        "Otani 797"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 130": {
+      "tohoku": 130,
+      "k_numbers": [
+        "K 376",
+        "K 1450"
+      ],
+      "taisho": [
+        "T371",
+        "T372"
+      ],
+      "nanjio": [
+        "Nj 395",
+        "Nj 977"
+      ],
+      "otani": [
+        "Otani 798"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 131": {
+      "tohoku": 131,
+      "k_numbers": [
+        "K 172",
+        "K 173"
+      ],
+      "taisho": [
+        "T632",
+        "T633"
+      ],
+      "nanjio": [
+        "Nj 256",
+        "Nj 255"
+      ],
+      "otani": [
+        "Otani 799"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 132": {
+      "tohoku": 132,
+      "k_numbers": [
+        "K 378"
+      ],
+      "taisho": [
+        "T642"
+      ],
+      "nanjio": [
+        "Nj 399"
+      ],
+      "otani": [
+        "Otani 800"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 133": {
+      "tohoku": 133,
+      "k_numbers": [
+        "K 66",
+        "K 67",
+        "K 68",
+        "K 69"
+      ],
+      "taisho": [
+        "T416",
+        "T418",
+        "T419",
+        "T417"
+      ],
+      "nanjio": [
+        "Nj 75",
+        "Nj 73",
+        "Nj 76"
+      ],
+      "otani": [
+        "Otani 801"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 134": {
+      "tohoku": 134,
+      "k_numbers": [
+        "K 140",
+        "K 141"
+      ],
+      "taisho": [
+        "T381",
+        "T382"
+      ],
+      "nanjio": [
+        "Nj 128",
+        "Nj 129"
+      ],
+      "otani": [
+        "Otani 802"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 135": {
+      "tohoku": 135,
+      "k_numbers": [
+        "K 521"
+      ],
+      "taisho": [
+        "T273"
+      ],
+      "nanjio": [
+        "Nj 429"
+      ],
+      "otani": [
+        "Otani 803"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 136": {
+      "tohoku": 136,
+      "k_numbers": [
+        "K 108",
+        "K 109"
+      ],
+      "taisho": [
+        "T378",
+        "T379"
+      ],
+      "nanjio": [
+        "Nj 116",
+        "Nj 121"
+      ],
+      "otani": [
+        "Otani 804"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 138": {
+      "tohoku": 138,
+      "k_numbers": [
+        "K 56",
+        "K 56",
+        "K 78"
+      ],
+      "taisho": [
+        "T402",
+        "T397"
+      ],
+      "nanjio": [
+        "Nj 84",
+        "Nj 61"
+      ],
+      "otani": [
+        "Otani 806",
+        "Otani 814",
+        "Otani 815",
+        "Otani 819",
+        "Otani 836",
+        "Otani 842",
+        "Otani 896",
+        "Otani 923"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 139": {
+      "tohoku": 139,
+      "k_numbers": [
+        "K 336",
+        "K 337"
+      ],
+      "taisho": [
+        "T1345",
+        "T1344"
+      ],
+      "nanjio": [
+        "Nj 372",
+        "Nj 373"
+      ],
+      "otani": [
+        "Otani 807"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 140": {
+      "tohoku": 140,
+      "k_numbers": [
+        "K 324",
+        "K 325",
+        "K 326",
+        "K 327",
+        "K 328",
+        "K 329",
+        "K 330",
+        "K 331",
+        "K 1279"
+      ],
+      "taisho": [
+        "T1015",
+        "T1014",
+        "T1011",
+        "T1012",
+        "T1009",
+        "T1013",
+        "T1017",
+        "T1016",
+        "T1018"
+      ],
+      "nanjio": [
+        "Nj 357",
+        "Nj 354",
+        "Nj 355",
+        "Nj 356",
+        "Nj 956",
+        "Nj 358",
+        "Nj 359",
+        "Nj 353",
+        "Nj 360"
+      ],
+      "otani": [
+        "Otani 539"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 141": {
+      "tohoku": 141,
+      "k_numbers": [
+        "K 447"
+      ],
+      "taisho": [
+        "T1360"
+      ],
+      "nanjio": [
+        "Nj 493"
+      ],
+      "otani": [
+        "Otani 312"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 142": {
+      "tohoku": 142,
+      "k_numbers": [
+        "K 1438"
+      ],
+      "taisho": [
+        "T654"
+      ],
+      "nanjio": [
+        "Nj 942"
+      ],
+      "otani": [
+        "Otani 810"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 145": {
+      "tohoku": 145,
+      "k_numbers": [
+        "K 1095"
+      ],
+      "taisho": [
+        "T299"
+      ],
+      "nanjio": [
+        "Nj 785"
+      ],
+      "otani": [
+        "Otani 472"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 146": {
+      "tohoku": 146,
+      "k_numbers": [
+        "K 162",
+        "K 163"
+      ],
+      "taisho": [
+        "T272",
+        "T271"
+      ],
+      "nanjio": [
+        "Nj 179",
+        "Nj 178"
+      ],
+      "otani": [
+        "Otani 813"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 147": {
+      "tohoku": 147,
+      "k_numbers": [
+        "K 56",
+        "K 72"
+      ],
+      "taisho": [
+        "T398",
+        "T397"
+      ],
+      "nanjio": [
+        "Nj 79",
+        "Nj 61"
+      ],
+      "otani": [
+        "Otani 814",
+        "Otani 806",
+        "Otani 815",
+        "Otani 819",
+        "Otani 836",
+        "Otani 842",
+        "Otani 896",
+        "Otani 923"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 148": {
+      "tohoku": 148,
+      "k_numbers": [
+        "K 56",
+        "K 1339"
+      ],
+      "taisho": [
+        "T397",
+        "T404"
+      ],
+      "nanjio": [
+        "Nj 61"
+      ],
+      "otani": [
+        "Otani 806",
+        "Otani 814",
+        "Otani 815",
+        "Otani 819",
+        "Otani 836",
+        "Otani 842",
+        "Otani 896",
+        "Otani 923"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 151": {
+      "tohoku": 151,
+      "k_numbers": [
+        "K 854"
+      ],
+      "taisho": [
+        "T544"
+      ],
+      "nanjio": [
+        "Nj 769"
+      ],
+      "otani": [
+        "Otani 818"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 152": {
+      "tohoku": 152,
+      "k_numbers": [
+        "K 56",
+        "K 1481"
+      ],
+      "taisho": [
+        "T400",
+        "T397"
+      ],
+      "nanjio": [
+        "Nj 976",
+        "Nj 61"
+      ],
+      "otani": [
+        "Otani 819",
+        "Otani 806",
+        "Otani 814",
+        "Otani 815",
+        "Otani 836",
+        "Otani 842",
+        "Otani 896",
+        "Otani 923"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 153": {
+      "tohoku": 153,
+      "k_numbers": [
+        "K 377"
+      ],
+      "taisho": [
+        "T598"
+      ],
+      "nanjio": [
+        "Nj 456"
+      ],
+      "otani": [
+        "Otani 820"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 154": {
+      "tohoku": 154,
+      "k_numbers": [
+        "K 1140"
+      ],
+      "taisho": [
+        "T601"
+      ],
+      "nanjio": [
+        "Nj 840"
+      ],
+      "otani": [
+        "Otani 821"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 155": {
+      "tohoku": 155,
+      "k_numbers": [
+        "K 495"
+      ],
+      "taisho": [
+        "T599"
+      ],
+      "nanjio": [
+        "Nj 457"
+      ],
+      "otani": [
+        "Otani 822"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 156": {
+      "tohoku": 156,
+      "k_numbers": [
+        "K 407"
+      ],
+      "taisho": [
+        "T635"
+      ],
+      "nanjio": [
+        "Nj 437"
+      ],
+      "otani": [
+        "Otani 823"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 157": {
+      "tohoku": 157,
+      "k_numbers": [
+        "K 129",
+        "K 130"
+      ],
+      "taisho": [
+        "T624",
+        "T625"
+      ],
+      "nanjio": [
+        "Nj 161",
+        "Nj 162"
+      ],
+      "otani": [
+        "Otani 824"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 160": {
+      "tohoku": 160,
+      "k_numbers": [
+        "K 142",
+        "K 144"
+      ],
+      "taisho": [
+        "T587",
+        "T585"
+      ],
+      "nanjio": [
+        "Nj 189",
+        "Nj 197"
+      ],
+      "otani": [
+        "Otani 827"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 161": {
+      "tohoku": 161,
+      "k_numbers": [
+        "K 372"
+      ],
+      "taisho": [
+        "T588"
+      ],
+      "nanjio": [
+        "Nj 393"
+      ],
+      "otani": [
+        "Otani 828"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 163": {
+      "tohoku": 163,
+      "k_numbers": [
+        "K 354"
+      ],
+      "taisho": [
+        "T433"
+      ],
+      "nanjio": [
+        "Nj 385"
+      ],
+      "otani": [
+        "Otani 830"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 164": {
+      "tohoku": 164,
+      "k_numbers": [
+        "K 1145"
+      ],
+      "taisho": [
+        "T437"
+      ],
+      "nanjio": [
+        "Nj 826"
+      ],
+      "otani": [
+        "Otani 831"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 165": {
+      "tohoku": 165,
+      "k_numbers": [
+        "K 359"
+      ],
+      "taisho": [
+        "T533"
+      ],
+      "nanjio": [
+        "Nj 378"
+      ],
+      "otani": [
+        "Otani 832"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 167": {
+      "tohoku": 167,
+      "k_numbers": [
+        "K 75",
+        "K 76"
+      ],
+      "taisho": [
+        "T421",
+        "T420"
+      ],
+      "nanjio": [
+        "Nj 83",
+        "Nj 82"
+      ],
+      "otani": [
+        "Otani 834"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 169": {
+      "tohoku": 169,
+      "k_numbers": [
+        "K 56",
+        "K 74"
+      ],
+      "taisho": [
+        "T397",
+        "T399"
+      ],
+      "nanjio": [
+        "Nj 61",
+        "Nj 80"
+      ],
+      "otani": [
+        "Otani 806",
+        "Otani 814",
+        "Otani 815",
+        "Otani 819",
+        "Otani 836",
+        "Otani 842",
+        "Otani 896",
+        "Otani 923"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 170": {
+      "tohoku": 170,
+      "k_numbers": [
+        "K 356",
+        "K 489"
+      ],
+      "taisho": [
+        "T568",
+        "T567"
+      ],
+      "nanjio": [
+        "Nj 343",
+        "Nj 342"
+      ],
+      "otani": [
+        "Otani 837"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 171": {
+      "tohoku": 171,
+      "k_numbers": [
+        "K 216",
+        "K 217",
+        "K 218"
+      ],
+      "taisho": [
+        "T561",
+        "T560",
+        "T559"
+      ],
+      "nanjio": [
+        "Nj 225",
+        "Nj 226",
+        "Nj 224"
+      ],
+      "otani": [
+        "Otani 838"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 172": {
+      "tohoku": 172,
+      "k_numbers": [
+        "K 244",
+        "K 245",
+        "K 1211"
+      ],
+      "taisho": [
+        "T473",
+        "T662",
+        "T661"
+      ],
+      "nanjio": [
+        "Nj 995",
+        "Nj 265",
+        "Nj 264"
+      ],
+      "otani": [
+        "Otani 839"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 173": {
+      "tohoku": 173,
+      "k_numbers": [
+        "K 1128",
+        "K 1492"
+      ],
+      "taisho": [
+        "T1643",
+        "T846"
+      ],
+      "nanjio": [
+        "Nj 818"
+      ],
+      "otani": [
+        "Otani 840"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 174": {
+      "tohoku": 174,
+      "k_numbers": [
+        "K 145",
+        "K 146"
+      ],
+      "taisho": [
+        "T481",
+        "T482"
+      ],
+      "nanjio": [
+        "Nj 165",
+        "Nj 166"
+      ],
+      "otani": [
+        "Otani 841"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 175": {
+      "tohoku": 175,
+      "k_numbers": [
+        "K 56",
+        "K 70",
+        "K 71"
+      ],
+      "taisho": [
+        "T403",
+        "T397"
+      ],
+      "nanjio": [
+        "Nj 74",
+        "Nj 77",
+        "Nj 61"
+      ],
+      "otani": [
+        "Otani 842",
+        "Otani 806",
+        "Otani 814",
+        "Otani 815",
+        "Otani 819",
+        "Otani 836",
+        "Otani 896",
+        "Otani 923"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 176": {
+      "tohoku": 176,
+      "k_numbers": [
+        "K 119",
+        "K 120",
+        "K 121",
+        "K 122"
+      ],
+      "taisho": [
+        "T476",
+        "T477",
+        "T474",
+        "T475"
+      ],
+      "nanjio": [
+        "Nj 149",
+        "Nj 145",
+        "Nj 147",
+        "Nj 146"
+      ],
+      "otani": [
+        "Otani 843"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 177": {
+      "tohoku": 177,
+      "k_numbers": [
+        "K 485"
+      ],
+      "taisho": [
+        "T774"
+      ],
+      "nanjio": [
+        "Nj 520"
+      ],
+      "otani": [
+        "Otani 844",
+        "Otani 918"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 178": {
+      "tohoku": 178,
+      "k_numbers": [
+        "K 1099"
+      ],
+      "taisho": [
+        "T472"
+      ],
+      "nanjio": [
+        "Nj 792"
+      ],
+      "otani": [
+        "Otani 845"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 179": {
+      "tohoku": 179,
+      "k_numbers": [
+        "K 537",
+        "K 539",
+        "K 540"
+      ],
+      "taisho": [
+        "T1490",
+        "T460",
+        "T1489"
+      ],
+      "nanjio": [
+        "Nj 1089",
+        "Nj 1084",
+        "Nj 1101"
+      ],
+      "otani": [
+        "Otani 846"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 180": {
+      "tohoku": 180,
+      "k_numbers": [
+        "K 169"
+      ],
+      "taisho": [
+        "T651"
+      ],
+      "nanjio": [
+        "Nj 163"
+      ],
+      "otani": [
+        "Otani 847"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 181": {
+      "tohoku": 181,
+      "k_numbers": [
+        "K 1(11)"
+      ],
+      "taisho": [],
+      "nanjio": [],
+      "otani": [
+        "Otani 848"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 183": {
+      "tohoku": 183,
+      "k_numbers": [
+        "K 1176"
+      ],
+      "taisho": [
+        "T705"
+      ],
+      "nanjio": [
+        "Nj 810"
+      ],
+      "otani": [
+        "Otani 850"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 184": {
+      "tohoku": 184,
+      "k_numbers": [
+        "K 1227"
+      ],
+      "taisho": [
+        "T488"
+      ],
+      "nanjio": [
+        "Nj 917"
+      ],
+      "otani": [
+        "Otani 851"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 185": {
+      "tohoku": 185,
+      "k_numbers": [
+        "K 82",
+        "K 85",
+        "K 86"
+      ],
+      "taisho": [
+        "T302",
+        "T303",
+        "T304"
+      ],
+      "nanjio": [
+        "Nj 85",
+        "Nj 91",
+        "Nj 93"
+      ],
+      "otani": [
+        "Otani 852"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 187": {
+      "tohoku": 187,
+      "k_numbers": [
+        "K 79"
+      ],
+      "taisho": [
+        "T278"
+      ],
+      "nanjio": [
+        "Nj 87"
+      ],
+      "otani": [
+        "Otani 716"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 190": {
+      "tohoku": 190,
+      "k_numbers": [
+        "K 204",
+        "K 205"
+      ],
+      "taisho": [
+        "T565",
+        "T566"
+      ],
+      "nanjio": [
+        "Nj 214",
+        "Nj 215"
+      ],
+      "otani": [
+        "Otani 857"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 191": {
+      "tohoku": 191,
+      "k_numbers": [
+        "K 415"
+      ],
+      "taisho": [
+        "T480"
+      ],
+      "nanjio": [
+        "Nj 441"
+      ],
+      "otani": [
+        "Otani 858"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 192": {
+      "tohoku": 192,
+      "k_numbers": [
+        "K 492"
+      ],
+      "taisho": [
+        "T573"
+      ],
+      "nanjio": [
+        "Nj 461"
+      ],
+      "otani": [
+        "Otani 859"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 196": {
+      "tohoku": 196,
+      "k_numbers": [
+        "K 265",
+        "K 267"
+      ],
+      "taisho": [
+        "T471",
+        "T470"
+      ],
+      "nanjio": [
+        "Nj 287",
+        "Nj 286"
+      ],
+      "otani": [
+        "Otani 863"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 199": {
+      "tohoku": 199,
+      "k_numbers": [
+        "K 194"
+      ],
+      "taisho": [
+        "T452"
+      ],
+      "nanjio": [
+        "Nj 204"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 201": {
+      "tohoku": 201,
+      "k_numbers": [
+        "K 81"
+      ],
+      "taisho": [
+        "T305"
+      ],
+      "nanjio": [
+        "Nj 90"
+      ],
+      "otani": [
+        "Otani 867"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 202": {
+      "tohoku": 202,
+      "k_numbers": [
+        "K 138",
+        "K 139"
+      ],
+      "taisho": [
+        "T645",
+        "T646"
+      ],
+      "nanjio": [
+        "Nj 132",
+        "Nj 131"
+      ],
+      "otani": [
+        "Otani 868"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 204": {
+      "tohoku": 204,
+      "k_numbers": [
+        "K 408"
+      ],
+      "taisho": [
+        "T702"
+      ],
+      "nanjio": [
+        "Nj 428"
+      ],
+      "otani": [
+        "Otani 870"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 207": {
+      "tohoku": 207,
+      "k_numbers": [
+        "K 184",
+        "K 185"
+      ],
+      "taisho": [
+        "T814",
+        "T813"
+      ],
+      "nanjio": [
+        "Nj 193",
+        "Nj 194"
+      ],
+      "otani": [
+        "Otani 873"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 209": {
+      "tohoku": 209,
+      "k_numbers": [
+        "K 242",
+        "K 243"
+      ],
+      "taisho": [
+        "T835",
+        "T836"
+      ],
+      "nanjio": [
+        "Nj 262",
+        "Nj 263"
+      ],
+      "otani": [
+        "Otani 875"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 210": {
+      "tohoku": 210,
+      "k_numbers": [
+        "K 268",
+        "K 272",
+        "K 1191",
+        "K 1297"
+      ],
+      "taisho": [
+        "T710",
+        "T709",
+        "T708",
+        "T711"
+      ],
+      "nanjio": [
+        "Nj 963",
+        "Nj 280",
+        "Nj 281",
+        "Nj 867"
+      ],
+      "otani": [
+        "Otani 876"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 211": {
+      "tohoku": 211,
+      "k_numbers": [
+        "K 736"
+      ],
+      "taisho": [
+        "T124"
+      ],
+      "nanjio": [
+        "Nj 628"
+      ],
+      "otani": [
+        "Otani 877"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 213": {
+      "tohoku": 213,
+      "k_numbers": [
+        "K 410",
+        "K 649",
+        "K 708"
+      ],
+      "taisho": [
+        "T120",
+        "T125",
+        "T118"
+      ],
+      "nanjio": [
+        "Nj 434",
+        "Nj 543",
+        "Nj 621"
+      ],
+      "otani": [
+        "Otani 879",
+        "Otani 752",
+        "Otani 982",
+        "Otani 877"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 216": {
+      "tohoku": 216,
+      "k_numbers": [
+        "K 175",
+        "K 179",
+        "K 180",
+        "K 1408"
+      ],
+      "taisho": [
+        "T628",
+        "T629",
+        "T627",
+        "T626"
+      ],
+      "nanjio": [
+        "Nj 925",
+        "Nj 183",
+        "Nj 182",
+        "Nj 174"
+      ],
+      "otani": [
+        "Otani 882"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 217": {
+      "tohoku": 217,
+      "k_numbers": [
+        "K 221"
+      ],
+      "taisho": [
+        "T545"
+      ],
+      "nanjio": [
+        "Nj 232"
+      ],
+      "otani": [
+        "Otani 883"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 218": {
+      "tohoku": 218,
+      "k_numbers": [
+        "K 525"
+      ],
+      "taisho": [
+        "T1494"
+      ],
+      "nanjio": [
+        "Nj 1094"
+      ],
+      "otani": [
+        "Otani 884"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 219": {
+      "tohoku": 219,
+      "k_numbers": [
+        "K 541",
+        "K 543"
+      ],
+      "taisho": [
+        "T1491",
+        "T1493"
+      ],
+      "nanjio": [
+        "Nj 1103",
+        "Nj 1090"
+      ],
+      "otani": [
+        "Otani 885"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 221": {
+      "tohoku": 221,
+      "k_numbers": [
+        "K 258",
+        "K 261",
+        "K 1417"
+      ],
+      "taisho": [
+        "T593",
+        "T515",
+        "T516"
+      ],
+      "nanjio": [
+        "Nj 250",
+        "Nj 249",
+        "Nj 988"
+      ],
+      "otani": [
+        "Otani 887"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 222": {
+      "tohoku": 222,
+      "k_numbers": [
+        "K 416"
+      ],
+      "taisho": [
+        "T270"
+      ],
+      "nanjio": [
+        "Nj 440"
+      ],
+      "otani": [
+        "Otani 888"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 226": {
+      "tohoku": 226,
+      "k_numbers": [
+        "K 264",
+        "K 266",
+        "K 494"
+      ],
+      "taisho": [
+        "T576",
+        "T575",
+        "T577"
+      ],
+      "nanjio": [
+        "Nj 284",
+        "Nj 285",
+        "Nj 526"
+      ],
+      "otani": [
+        "Otani 892"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 227": {
+      "tohoku": 227,
+      "k_numbers": [
+        "K 147",
+        "K 148"
+      ],
+      "taisho": [
+        "T275",
+        "T274"
+      ],
+      "nanjio": [
+        "Nj 253",
+        "Nj 252"
+      ],
+      "otani": [
+        "Otani 893"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 228": {
+      "tohoku": 228,
+      "k_numbers": [
+        "K 384"
+      ],
+      "taisho": [
+        "T810"
+      ],
+      "nanjio": [
+        "Nj 401"
+      ],
+      "otani": [
+        "Otani 894"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 230": {
+      "tohoku": 230,
+      "k_numbers": [
+        "K 56",
+        "K 59"
+      ],
+      "taisho": [
+        "T397"
+      ],
+      "nanjio": [
+        "Nj 61",
+        "Nj 66"
+      ],
+      "otani": [
+        "Otani 806",
+        "Otani 814",
+        "Otani 815",
+        "Otani 819",
+        "Otani 836",
+        "Otani 842",
+        "Otani 896",
+        "Otani 923"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 231": {
+      "tohoku": 231,
+      "k_numbers": [
+        "K 133",
+        "K 134",
+        "K 1476"
+      ],
+      "taisho": [
+        "T660",
+        "T489",
+        "T658"
+      ],
+      "nanjio": [
+        "Nj 151",
+        "Nj 964",
+        "Nj 152"
+      ],
+      "otani": [
+        "Otani 897"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 235": {
+      "tohoku": 235,
+      "k_numbers": [
+        "K 165",
+        "K 166",
+        "K 167",
+        "K 1294"
+      ],
+      "taisho": [
+        "T989",
+        "T993",
+        "T992",
+        "T991"
+      ],
+      "nanjio": [
+        "Nj 970",
+        "Nj 187",
+        "Nj 186",
+        "Nj 188"
+      ],
+      "otani": [
+        "Otani 334"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 236": {
+      "tohoku": 236,
+      "k_numbers": [
+        "K 426"
+      ],
+      "taisho": [
+        "T945"
+      ],
+      "nanjio": [
+        "Nj 446"
+      ],
+      "otani": [
+        "Otani 902"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 238": {
+      "tohoku": 238,
+      "k_numbers": [
+        "K 404"
+      ],
+      "taisho": [
+        "T761"
+      ],
+      "nanjio": [
+        "Nj 426"
+      ],
+      "otani": [
+        "Otani 904"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 239": {
+      "tohoku": 239,
+      "k_numbers": [
+        "K 57",
+        "K 58"
+      ],
+      "taisho": [
+        "T410",
+        "T411"
+      ],
+      "nanjio": [
+        "Nj 64"
+      ],
+      "otani": [
+        "Otani 905"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 240": {
+      "tohoku": 240,
+      "k_numbers": [
+        "K 135",
+        "K 136",
+        "K 137"
+      ],
+      "taisho": [
+        "T266",
+        "T268",
+        "T267"
+      ],
+      "nanjio": [
+        "Nj 150",
+        "Nj 158",
+        "Nj 157"
+      ],
+      "otani": [
+        "Otani 906"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 242": {
+      "tohoku": 242,
+      "k_numbers": [
+        "K 1387"
+      ],
+      "taisho": [
+        "T998"
+      ],
+      "nanjio": [],
+      "otani": [
+        "Otani 908"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 246": {
+      "tohoku": 246,
+      "k_numbers": [
+        "K 203"
+      ],
+      "taisho": [
+        "T834"
+      ],
+      "nanjio": [
+        "Nj 211"
+      ],
+      "otani": [
+        "Otani 912"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 252": {
+      "tohoku": 252,
+      "k_numbers": [
+        "K 485"
+      ],
+      "taisho": [
+        "T774"
+      ],
+      "nanjio": [
+        "Nj 520"
+      ],
+      "otani": [
+        "Otani 844",
+        "Otani 918"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 256": {
+      "tohoku": 256,
+      "k_numbers": [
+        "K 527"
+      ],
+      "taisho": [
+        "T1484"
+      ],
+      "nanjio": [
+        "Nj 1087"
+      ],
+      "otani": [
+        "Otani 922"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 257": {
+      "tohoku": 257,
+      "k_numbers": [
+        "K 56"
+      ],
+      "taisho": [
+        "T397"
+      ],
+      "nanjio": [
+        "Nj 61"
+      ],
+      "otani": [
+        "Otani 806",
+        "Otani 814",
+        "Otani 815",
+        "Otani 819",
+        "Otani 836",
+        "Otani 842",
+        "Otani 896",
+        "Otani 923"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 258": {
+      "tohoku": 258,
+      "k_numbers": [
+        "K 360",
+        "K 1359"
+      ],
+      "taisho": [
+        "T667"
+      ],
+      "nanjio": [
+        "Nj 384"
+      ],
+      "otani": [
+        "Otani 924"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 259": {
+      "tohoku": 259,
+      "k_numbers": [
+        "K 213",
+        "K 214",
+        "K 215"
+      ],
+      "taisho": [
+        "T830",
+        "T828",
+        "T829"
+      ],
+      "nanjio": [
+        "Nj 223",
+        "Nj 221",
+        "Nj 222"
+      ],
+      "otani": [
+        "Otani 925"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 260": {
+      "tohoku": 260,
+      "k_numbers": [
+        "K 61",
+        "K 62",
+        "K 63"
+      ],
+      "taisho": [
+        "T408",
+        "T405",
+        "T407"
+      ],
+      "nanjio": [
+        "Nj 67",
+        "Nj 68",
+        "Nj 69"
+      ],
+      "otani": [
+        "Otani 926"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 262": {
+      "tohoku": 262,
+      "k_numbers": [
+        "K 394"
+      ],
+      "taisho": [
+        "T443"
+      ],
+      "nanjio": [
+        "Nj 408"
+      ],
+      "otani": [
+        "Otani 928"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 269": {
+      "tohoku": 269,
+      "k_numbers": [
+        "K 464"
+      ],
+      "taisho": [
+        "T435"
+      ],
+      "nanjio": [
+        "Nj 515"
+      ],
+      "otani": [
+        "Otani 935"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 270": {
+      "tohoku": 270,
+      "k_numbers": [
+        "K 338",
+        "K 346",
+        "K 1106"
+      ],
+      "taisho": [
+        "T1147",
+        "T1334",
+        "T1333"
+      ],
+      "nanjio": [
+        "Nj 793",
+        "Nj 367",
+        "Nj 368"
+      ],
+      "otani": [
+        "Otani 152"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 271": {
+      "tohoku": 271,
+      "k_numbers": [
+        "K 271",
+        "K 276",
+        "K 282",
+        "K 286"
+      ],
+      "taisho": [
+        "T428",
+        "T427",
+        "T430",
+        "T431"
+      ],
+      "nanjio": [
+        "Nj 300",
+        "Nj 299",
+        "Nj 301",
+        "Nj 302"
+      ],
+      "otani": [
+        "Otani 937"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 273": {
+      "tohoku": 273,
+      "k_numbers": [
+        "K 301",
+        "K 302"
+      ],
+      "taisho": [
+        "T1349",
+        "T1348"
+      ],
+      "nanjio": [
+        "Nj 336",
+        "Nj 335"
+      ],
+      "otani": [
+        "Otani 151"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 274": {
+      "tohoku": 274,
+      "k_numbers": [
+        "K 1479"
+      ],
+      "taisho": [
+        "T438"
+      ],
+      "nanjio": [
+        "Nj 968"
+      ],
+      "otani": [
+        "Otani 940"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 275": {
+      "tohoku": 275,
+      "k_numbers": [
+        "K 460"
+      ],
+      "taisho": [
+        "T680"
+      ],
+      "nanjio": [
+        "Nj 502"
+      ],
+      "otani": [
+        "Otani 941"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 276": {
+      "tohoku": 276,
+      "k_numbers": [
+        "K 238",
+        "K 239"
+      ],
+      "taisho": [
+        "T811",
+        "T831"
+      ],
+      "nanjio": [
+        "Nj 242",
+        "Nj 243"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 278": {
+      "tohoku": 278,
+      "k_numbers": [
+        "K 493"
+      ],
+      "taisho": [
+        "T429"
+      ],
+      "nanjio": [
+        "Nj 410"
+      ],
+      "otani": [
+        "Otani 944"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 287": {
+      "tohoku": 287,
+      "k_numbers": [
+        "K 801"
+      ],
+      "taisho": [
+        "T721"
+      ],
+      "nanjio": [
+        "Nj 679"
+      ],
+      "otani": [
+        "Otani 953"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 289": {
+      "tohoku": 289,
+      "k_numbers": [
+        "K 648",
+        "K 648",
+        "K 1243"
+      ],
+      "taisho": [
+        "T26",
+        "T41"
+      ],
+      "nanjio": [
+        "Nj 542",
+        "Nj 900"
+      ],
+      "otani": [
+        "Otani 955",
+        "Otani 1006",
+        "Otani 963",
+        "Otani 956",
+        "Otani 957"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 293": {
+      "tohoku": 293,
+      "k_numbers": [
+        "K 650"
+      ],
+      "taisho": [
+        "T99"
+      ],
+      "nanjio": [
+        "Nj 544"
+      ],
+      "otani": [
+        "Otani 747",
+        "Otani 982",
+        "Otani 757",
+        "Otani 758",
+        "Otani 966",
+        "Otani 958",
+        "Otani 959",
+        "Otani 879",
+        "Otani 750",
+        "Otani 962",
+        "Otani 877",
+        "Otani 996"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 297": {
+      "tohoku": 297,
+      "k_numbers": [
+        "K 648",
+        "K 1254"
+      ],
+      "taisho": [
+        "T26",
+        "T776"
+      ],
+      "nanjio": [
+        "Nj 542",
+        "Nj 996"
+      ],
+      "otani": [
+        "Otani 955",
+        "Otani 1006",
+        "Otani 963",
+        "Otani 956",
+        "Otani 957"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 300": {
+      "tohoku": 300,
+      "k_numbers": [
+        "K 650"
+      ],
+      "taisho": [
+        "T99"
+      ],
+      "nanjio": [
+        "Nj 544"
+      ],
+      "otani": [
+        "Otani 747",
+        "Otani 982",
+        "Otani 757",
+        "Otani 758",
+        "Otani 966",
+        "Otani 958",
+        "Otani 959",
+        "Otani 879",
+        "Otani 750",
+        "Otani 962",
+        "Otani 877",
+        "Otani 996"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 307": {
+      "tohoku": 307,
+      "k_numbers": [
+        "K 1105"
+      ],
+      "taisho": [
+        "T759"
+      ],
+      "nanjio": [
+        "Nj 807"
+      ],
+      "otani": [
+        "Otani 973"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 309": {
+      "tohoku": 309,
+      "k_numbers": [
+        "K 870"
+      ],
+      "taisho": [
+        "T801"
+      ],
+      "nanjio": [
+        "Nj 727"
+      ],
+      "otani": [
+        "Otani 975"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 310": {
+      "tohoku": 310,
+      "k_numbers": [
+        "K 1112"
+      ],
+      "taisho": [
+        "T758"
+      ],
+      "nanjio": [
+        "Nj 801"
+      ],
+      "otani": [
+        "Otani 976"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 313": {
+      "tohoku": 313,
+      "k_numbers": [
+        "K 459"
+      ],
+      "taisho": [
+        "T1362"
+      ],
+      "nanjio": [
+        "Nj 500"
+      ],
+      "otani": [
+        "Otani 599"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 317": {
+      "tohoku": 317,
+      "k_numbers": [
+        "K 1250"
+      ],
+      "taisho": [
+        "T762"
+      ],
+      "nanjio": [
+        "Nj 928"
+      ],
+      "otani": [
+        "Otani 983"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 318": {
+      "tohoku": 318,
+      "k_numbers": [
+        "K 717",
+        "K 725"
+      ],
+      "taisho": [
+        "T98",
+        "T97"
+      ],
+      "nanjio": [
+        "Nj 586",
+        "Nj 587"
+      ],
+      "otani": [
+        "Otani 984"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 319": {
+      "tohoku": 319,
+      "k_numbers": [
+        "K 236",
+        "K 237"
+      ],
+      "taisho": [
+        "T688",
+        "T689"
+      ],
+      "nanjio": [
+        "Nj 260",
+        "Nj 261"
+      ],
+      "otani": [
+        "Otani 985"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 321": {
+      "tohoku": 321,
+      "k_numbers": [
+        "K 486"
+      ],
+      "taisho": [
+        "T700"
+      ],
+      "nanjio": [
+        "Nj 458"
+      ],
+      "otani": [
+        "Otani 987"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 326": {
+      "tohoku": 326,
+      "k_numbers": [
+        "K 982",
+        "K 1020",
+        "K 1021",
+        "K 1119"
+      ],
+      "taisho": [
+        "T210",
+        "T211",
+        "T213",
+        "T212"
+      ],
+      "nanjio": [
+        "Nj 1365",
+        "Nj 1353",
+        "Nj 1439",
+        "Nj 1321"
+      ],
+      "otani": [
+        "Otani 992"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 329": {
+      "tohoku": 329,
+      "k_numbers": [
+        "K 881"
+      ],
+      "taisho": [
+        "T592"
+      ],
+      "nanjio": [
+        "Nj 753"
+      ],
+      "otani": [
+        "Otani 995"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 332": {
+      "tohoku": 332,
+      "k_numbers": [
+        "K 1101"
+      ],
+      "taisho": [
+        "T704"
+      ],
+      "nanjio": [
+        "Nj 791"
+      ],
+      "otani": [
+        "Otani 998"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 335": {
+      "tohoku": 335,
+      "k_numbers": [
+        "K 793"
+      ],
+      "taisho": [
+        "T785"
+      ],
+      "nanjio": [
+        "Nj 691"
+      ],
+      "otani": [
+        "Otani 1001"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 338": {
+      "tohoku": 338,
+      "k_numbers": [
+        "K 805",
+        "K 1098"
+      ],
+      "taisho": [
+        "T80",
+        "T81"
+      ],
+      "nanjio": [
+        "Nj 739",
+        "Nj 783"
+      ],
+      "otani": [
+        "Otani 1005"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 339": {
+      "tohoku": 339,
+      "k_numbers": [
+        "K 648",
+        "K 695",
+        "K 701"
+      ],
+      "taisho": [
+        "T26",
+        "T79",
+        "T78"
+      ],
+      "nanjio": [
+        "Nj 542",
+        "Nj 610",
+        "Nj 611"
+      ],
+      "otani": [
+        "Otani 955",
+        "Otani 1006",
+        "Otani 963",
+        "Otani 956",
+        "Otani 957"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 341": {
+      "tohoku": 341,
+      "k_numbers": [
+        "K 983"
+      ],
+      "taisho": [
+        "T202"
+      ],
+      "nanjio": [
+        "Nj 1322"
+      ],
+      "otani": [
+        "Otani 1008"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 342": {
+      "tohoku": 342,
+      "k_numbers": [
+        "K 869"
+      ],
+      "taisho": [
+        "T584"
+      ],
+      "nanjio": [
+        "Nj 734"
+      ],
+      "otani": [
+        "Otani 1009"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 343": {
+      "tohoku": 343,
+      "k_numbers": [
+        "K 981"
+      ],
+      "taisho": [
+        "T200"
+      ],
+      "nanjio": [
+        "Nj 1324"
+      ],
+      "otani": [
+        "Otani 1012"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 345": {
+      "tohoku": 345,
+      "k_numbers": [
+        "K 1111"
+      ],
+      "taisho": [
+        "T595"
+      ],
+      "nanjio": [
+        "Nj 806"
+      ],
+      "otani": [
+        "Otani 1014"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 347": {
+      "tohoku": 347,
+      "k_numbers": [
+        "K 1467"
+      ],
+      "taisho": [
+        "T173"
+      ],
+      "nanjio": [
+        "Nj 953"
+      ],
+      "otani": [
+        "Otani 1016"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 348": {
+      "tohoku": 348,
+      "k_numbers": [
+        "K 988",
+        "K 1173"
+      ],
+      "taisho": [
+        "T153",
+        "T166"
+      ],
+      "nanjio": [
+        "Nj 1357",
+        "Nj 852"
+      ],
+      "otani": [
+        "Otani 1017"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 351": {
+      "tohoku": 351,
+      "k_numbers": [
+        "K 206",
+        "K 207"
+      ],
+      "taisho": [
+        "T171",
+        "T152"
+      ],
+      "nanjio": [
+        "Nj 254",
+        "Nj 143"
+      ],
+      "otani": [
+        "Otani 1020"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 352": {
+      "tohoku": 352,
+      "k_numbers": [
+        "K 659"
+      ],
+      "taisho": [
+        "T21"
+      ],
+      "nanjio": [
+        "Nj 554"
+      ],
+      "otani": [
+        "Otani 1021"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 353": {
+      "tohoku": 353,
+      "k_numbers": [
+        "K 402"
+      ],
+      "taisho": [
+        "T156"
+      ],
+      "nanjio": [
+        "Nj 431"
+      ],
+      "otani": [
+        "Otani 1022"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 358": {
+      "tohoku": 358,
+      "k_numbers": [
+        "K 764",
+        "K 766"
+      ],
+      "taisho": [
+        "T1301",
+        "T1300"
+      ],
+      "nanjio": [
+        "Nj 646",
+        "Nj 645"
+      ],
+      "otani": [
+        "Otani 1027"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 360": {
+      "tohoku": 360,
+      "k_numbers": [
+        "K 1419"
+      ],
+      "taisho": [
+        "T1187"
+      ],
+      "nanjio": [
+        "Nj 1408"
+      ],
+      "otani": [
+        "Otani 2"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 442": {
+      "tohoku": 442,
+      "k_numbers": [
+        "K 1418"
+      ],
+      "taisho": [
+        "T885"
+      ],
+      "nanjio": [
+        "Nj 1027"
+      ],
+      "otani": [
+        "Otani 81"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 452": {
+      "tohoku": 452,
+      "k_numbers": [
+        "K 1434"
+      ],
+      "taisho": [
+        "T887"
+      ],
+      "nanjio": [
+        "Nj 1030"
+      ],
+      "otani": [
+        "Otani 87"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 466": {
+      "tohoku": 466,
+      "k_numbers": [
+        "K 1220"
+      ],
+      "taisho": [
+        "T890"
+      ],
+      "nanjio": [
+        "Nj 1022"
+      ],
+      "otani": [
+        "Otani 102"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 479": {
+      "tohoku": 479,
+      "k_numbers": [
+        "K 429",
+        "K 1274",
+        "K 1466"
+      ],
+      "taisho": [
+        "T866",
+        "T865",
+        "T882"
+      ],
+      "nanjio": [
+        "Nj 534",
+        "Nj 1020",
+        "Nj 1017"
+      ],
+      "otani": [
+        "Otani 112"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 481": {
+      "tohoku": 481,
+      "k_numbers": [
+        "K 1452"
+      ],
+      "taisho": [
+        "T888"
+      ],
+      "nanjio": [
+        "Nj 1385"
+      ],
+      "otani": [
+        "Otani 114"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 482": {
+      "tohoku": 482,
+      "k_numbers": [
+        "K 1280",
+        "K 1350"
+      ],
+      "taisho": [
+        "T1172",
+        "T1171"
+      ],
+      "nanjio": [
+        "Nj 1446",
+        "Nj 1447"
+      ],
+      "otani": [
+        "Otani 115"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 487": {
+      "tohoku": 487,
+      "k_numbers": [
+        "K 18"
+      ],
+      "taisho": [
+        "T240"
+      ],
+      "nanjio": [
+        "Nj 18"
+      ],
+      "otani": [
+        "Otani 119",
+        "Otani 121"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 490": {
+      "tohoku": 490,
+      "k_numbers": [
+        "K 1442"
+      ],
+      "taisho": [
+        "T886"
+      ],
+      "nanjio": [
+        "Nj 944"
+      ],
+      "otani": [
+        "Otani 123"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 494": {
+      "tohoku": 494,
+      "k_numbers": [
+        "K 427"
+      ],
+      "taisho": [
+        "T848"
+      ],
+      "nanjio": [
+        "Nj 530"
+      ],
+      "otani": [
+        "Otani 126"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 503": {
+      "tohoku": 503,
+      "k_numbers": [
+        "K 174",
+        "K 174",
+        "K 176",
+        "K 178",
+        "K 178"
+      ],
+      "taisho": [
+        "T451",
+        "T449",
+        "T1331"
+      ],
+      "nanjio": [
+        "Nj 172",
+        "Nj 170",
+        "Nj 167"
+      ],
+      "otani": [
+        "Otani 135",
+        "Otani 136"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 504": {
+      "tohoku": 504,
+      "k_numbers": [
+        "K 174",
+        "K 176",
+        "K 178"
+      ],
+      "taisho": [
+        "T451",
+        "T449",
+        "T1331"
+      ],
+      "nanjio": [
+        "Nj 172",
+        "Nj 170",
+        "Nj 167"
+      ],
+      "otani": [
+        "Otani 135",
+        "Otani 136"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 506": {
+      "tohoku": 506,
+      "k_numbers": [
+        "K 422",
+        "K 430",
+        "K 1298"
+      ],
+      "taisho": [
+        "T1006",
+        "T1007"
+      ],
+      "nanjio": [
+        "Nj 1028",
+        "Nj 536"
+      ],
+      "otani": [
+        "Otani 138"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 507": {
+      "tohoku": 507,
+      "k_numbers": [
+        "K 1113",
+        "K 1287"
+      ],
+      "taisho": [
+        "T1023"
+      ],
+      "nanjio": [
+        "Nj 803",
+        "Nj 957"
+      ],
+      "otani": [
+        "Otani 141"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 508": {
+      "tohoku": 508,
+      "k_numbers": [
+        "K 1299"
+      ],
+      "taisho": [
+        "T1008"
+      ],
+      "nanjio": [
+        "Nj 1025"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 510": {
+      "tohoku": 510,
+      "k_numbers": [
+        "K 352"
+      ],
+      "taisho": [
+        "T1024"
+      ],
+      "nanjio": [
+        "Nj 380"
+      ],
+      "otani": [
+        "Otani 218"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 513": {
+      "tohoku": 513,
+      "k_numbers": [
+        "K 475",
+        "K 1114"
+      ],
+      "taisho": [
+        "T1346",
+        "T1347"
+      ],
+      "nanjio": [
+        "Nj 495",
+        "Nj 802"
+      ],
+      "otani": [
+        "Otani 150"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 514": {
+      "tohoku": 514,
+      "k_numbers": [
+        "K 444",
+        "K 1134"
+      ],
+      "taisho": [
+        "T918",
+        "T919"
+      ],
+      "nanjio": [
+        "Nj 489",
+        "Nj 825"
+      ],
+      "otani": [
+        "Otani 149"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 516": {
+      "tohoku": 516,
+      "k_numbers": [
+        "K 339",
+        "K 340",
+        "K 344",
+        "K 1159"
+      ],
+      "taisho": [
+        "T1359",
+        "T1357",
+        "T1356",
+        "T1358"
+      ],
+      "nanjio": [
+        "Nj 857",
+        "Nj 338",
+        "Nj 337",
+        "Nj 339"
+      ],
+      "otani": [
+        "Otani 316"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 522": {
+      "tohoku": 522,
+      "k_numbers": [
+        "K 1161"
+      ],
+      "taisho": [
+        "T1398"
+      ],
+      "nanjio": [
+        "Nj 835"
+      ],
+      "otani": [
+        "Otani 217"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 528": {
+      "tohoku": 528,
+      "k_numbers": [
+        "K 347",
+        "K 348",
+        "K 349",
+        "K 350",
+        "K 1108"
+      ],
+      "taisho": [
+        "T1352",
+        "T1353",
+        "T1355",
+        "T1354",
+        "T1351"
+      ],
+      "nanjio": [
+        "Nj 365",
+        "Nj 799",
+        "Nj 366",
+        "Nj 364"
+      ],
+      "otani": [
+        "Otani 195"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 539": {
+      "tohoku": 539,
+      "k_numbers": [
+        "K 1143"
+      ],
+      "taisho": [
+        "T1411"
+      ],
+      "nanjio": [
+        "Nj 827"
+      ],
+      "otani": [
+        "Otani 245"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 542": {
+      "tohoku": 542,
+      "k_numbers": [
+        "K 1169",
+        "K 1188"
+      ],
+      "taisho": [
+        "T1408",
+        "T1409"
+      ],
+      "nanjio": [
+        "Nj 831",
+        "Nj 878"
+      ],
+      "otani": [
+        "Otani 157"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 543": {
+      "tohoku": 543,
+      "k_numbers": [
+        "K 1138"
+      ],
+      "taisho": [
+        "T1191"
+      ],
+      "nanjio": [
+        "Nj 1056"
+      ],
+      "otani": [
+        "Otani 162"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 555": {
+      "tohoku": 555,
+      "k_numbers": [
+        "K 127",
+        "K 127",
+        "K 128",
+        "K 1465"
+      ],
+      "taisho": [
+        "T663",
+        "T665",
+        "T664"
+      ],
+      "nanjio": [
+        "Nj 127",
+        "Nj 126",
+        "Nj 130"
+      ],
+      "otani": [
+        "Otani 174"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 558": {
+      "tohoku": 558,
+      "k_numbers": [
+        "K 1096"
+      ],
+      "taisho": [
+        "T999"
+      ],
+      "nanjio": [
+        "Nj 784"
+      ],
+      "otani": [
+        "Otani 177"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 559": {
+      "tohoku": 559,
+      "k_numbers": [
+        "K 303",
+        "K 303",
+        "K 304",
+        "K 305",
+        "K 306",
+        "K 307",
+        "K 1293",
+        "K 1375"
+      ],
+      "taisho": [
+        "T988",
+        "T986",
+        "T987",
+        "T985",
+        "T982",
+        "T984"
+      ],
+      "nanjio": [
+        "Nj 311",
+        "Nj 309",
+        "Nj 310",
+        "Nj 1499",
+        "Nj 306",
+        "Nj 307",
+        "Nj 308"
+      ],
+      "otani": [
+        "Otani 178"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 561": {
+      "tohoku": 561,
+      "k_numbers": [
+        "K 454",
+        "K 1349"
+      ],
+      "taisho": [
+        "T1153",
+        "T1154"
+      ],
+      "nanjio": [
+        "Nj 1042",
+        "Nj 497"
+      ],
+      "otani": [
+        "Otani 179"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 564": {
+      "tohoku": 564,
+      "k_numbers": [
+        "K 311",
+        "K 1156",
+        "K 1354",
+        "K 1377"
+      ],
+      "taisho": [
+        "T1254",
+        "T1255",
+        "T1257",
+        "T1256"
+      ],
+      "nanjio": [
+        "Nj 845",
+        "Nj 846",
+        "Nj 844",
+        "Nj 847"
+      ],
+      "otani": [
+        "Otani 182"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 570": {
+      "tohoku": 570,
+      "k_numbers": [
+        "K 1166"
+      ],
+      "taisho": [
+        "T1404"
+      ],
+      "nanjio": [
+        "Nj 836"
+      ],
+      "otani": [
+        "Otani 190"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 571": {
+      "tohoku": 571,
+      "k_numbers": [
+        "K 1296"
+      ],
+      "taisho": [
+        "T1264"
+      ],
+      "nanjio": [
+        "Nj 961"
+      ],
+      "otani": [
+        "Otani 189"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 575": {
+      "tohoku": 575,
+      "k_numbers": [
+        "K 1170"
+      ],
+      "taisho": [
+        "T1047"
+      ],
+      "nanjio": [
+        "Nj 855"
+      ],
+      "otani": [
+        "Otani 313"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 588": {
+      "tohoku": 588,
+      "k_numbers": [
+        "K 1096"
+      ],
+      "taisho": [
+        "T999"
+      ],
+      "nanjio": [
+        "Nj 784"
+      ],
+      "otani": [
+        "Otani 177"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 594": {
+      "tohoku": 594,
+      "k_numbers": [
+        "K 323",
+        "K 1204"
+      ],
+      "taisho": [
+        "T971",
+        "T978"
+      ],
+      "nanjio": [
+        "Nj 350",
+        "Nj 871"
+      ],
+      "otani": [
+        "Otani 197"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 597": {
+      "tohoku": 597,
+      "k_numbers": [
+        "K 1091"
+      ],
+      "taisho": [],
+      "nanjio": [
+        "Nj 796"
+      ],
+      "otani": [
+        "Otani 198"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 599": {
+      "tohoku": 599,
+      "k_numbers": [
+        "K 1107"
+      ],
+      "taisho": [
+        "T1025"
+      ],
+      "nanjio": [
+        "Nj 790"
+      ],
+      "otani": [
+        "Otani 206"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 604": {
+      "tohoku": 604,
+      "k_numbers": [
+        "K 1208"
+      ],
+      "taisho": [
+        "T1217"
+      ],
+      "nanjio": [
+        "Nj 1040"
+      ],
+      "otani": [
+        "Otani 291"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 606": {
+      "tohoku": 606,
+      "k_numbers": [
+        "K 1104"
+      ],
+      "taisho": [
+        "T1392"
+      ],
+      "nanjio": [
+        "Nj 800"
+      ],
+      "otani": [
+        "Otani 308"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 609": {
+      "tohoku": 609,
+      "k_numbers": [
+        "K 1457"
+      ],
+      "taisho": [
+        "T1373"
+      ],
+      "nanjio": [
+        "Nj 998"
+      ],
+      "otani": [
+        "Otani 300"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 612": {
+      "tohoku": 612,
+      "k_numbers": [
+        "K 1093"
+      ],
+      "taisho": [
+        "T943"
+      ],
+      "nanjio": [
+        "Nj 795"
+      ],
+      "otani": [
+        "Otani 306"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 613": {
+      "tohoku": 613,
+      "k_numbers": [
+        "K 314",
+        "K 315",
+        "K 1338"
+      ],
+      "taisho": [
+        "T1076",
+        "T1077",
+        "T1075"
+      ],
+      "nanjio": [
+        "Nj 346",
+        "Nj 344",
+        "Nj 345"
+      ],
+      "otani": [
+        "Otani 188"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 614": {
+      "tohoku": 614,
+      "k_numbers": [
+        "K 342",
+        "K 343",
+        "K 351",
+        "K 1236"
+      ],
+      "taisho": [
+        "T1140",
+        "T1137",
+        "T1139"
+      ],
+      "nanjio": [
+        "Nj 370",
+        "Nj 918",
+        "Nj 369",
+        "Nj 371"
+      ],
+      "otani": [
+        "Otani 309"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 619": {
+      "tohoku": 619,
+      "k_numbers": [
+        "K 1301"
+      ],
+      "taisho": [
+        "T1324"
+      ],
+      "nanjio": [
+        "Nj 982"
+      ],
+      "otani": [
+        "Otani 302"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 621": {
+      "tohoku": 621,
+      "k_numbers": [
+        "K 866"
+      ],
+      "taisho": [
+        "T1325"
+      ],
+      "nanjio": [
+        "Nj 738"
+      ],
+      "otani": [
+        "Otani 213"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 622": {
+      "tohoku": 622,
+      "k_numbers": [
+        "K 1300"
+      ],
+      "taisho": [
+        "T1323"
+      ],
+      "nanjio": [
+        "Nj 983"
+      ],
+      "otani": [
+        "Otani 207"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 637": {
+      "tohoku": 637,
+      "k_numbers": [
+        "K 1151"
+      ],
+      "taisho": [
+        "T1127"
+      ],
+      "nanjio": [
+        "Nj 841"
+      ],
+      "otani": [
+        "Otani 323"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 642": {
+      "tohoku": 642,
+      "k_numbers": [
+        "K 1178"
+      ],
+      "taisho": [
+        "T1197"
+      ],
+      "nanjio": [
+        "Nj 1073"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 644": {
+      "tohoku": 644,
+      "k_numbers": [
+        "K 1215",
+        "K 1304"
+      ],
+      "taisho": [
+        "T1167"
+      ],
+      "nanjio": [
+        "Nj 981",
+        "Nj 880"
+      ],
+      "otani": [
+        "Otani 158"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 646": {
+      "tohoku": 646,
+      "k_numbers": [
+        "K 1302",
+        "K 1302"
+      ],
+      "taisho": [
+        "T1313"
+      ],
+      "nanjio": [
+        "Nj 984"
+      ],
+      "otani": [
+        "Otani 355",
+        "Otani 356"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 647": {
+      "tohoku": 647,
+      "k_numbers": [
+        "K 1302"
+      ],
+      "taisho": [
+        "T1313"
+      ],
+      "nanjio": [
+        "Nj 984"
+      ],
+      "otani": [
+        "Otani 355",
+        "Otani 356"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 660": {
+      "tohoku": 660,
+      "k_numbers": [
+        "K 1180"
+      ],
+      "taisho": [
+        "T1303"
+      ],
+      "nanjio": [
+        "Nj 811"
+      ],
+      "otani": [
+        "Otani 339"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 662": {
+      "tohoku": 662,
+      "k_numbers": [
+        "K 448",
+        "K 1094",
+        "K 1295"
+      ],
+      "taisho": [
+        "T1164",
+        "T1162",
+        "T1163"
+      ],
+      "nanjio": [
+        "Nj 787",
+        "Nj 492",
+        "Nj 962"
+      ],
+      "otani": [
+        "Otani 341"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 663": {
+      "tohoku": 663,
+      "k_numbers": [
+        "K 1125"
+      ],
+      "taisho": [
+        "T1165"
+      ],
+      "nanjio": [
+        "Nj 809"
+      ],
+      "otani": [
+        "Otani 342"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 674": {
+      "tohoku": 674,
+      "k_numbers": [
+        "K 1089"
+      ],
+      "taisho": [
+        "T937"
+      ],
+      "nanjio": [
+        "Nj 786"
+      ],
+      "otani": [
+        "Otani 351"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 676": {
+      "tohoku": 676,
+      "k_numbers": [
+        "K 443"
+      ],
+      "taisho": [
+        "T370"
+      ],
+      "nanjio": [
+        "Nj 485"
+      ],
+      "otani": [
+        "Otani 363"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 682": {
+      "tohoku": 682,
+      "k_numbers": [
+        "K 287",
+        "K 288",
+        "K 289",
+        "K 1456"
+      ],
+      "taisho": [
+        "T1099",
+        "T1093",
+        "T1092",
+        "T1094"
+      ],
+      "nanjio": [
+        "Nj 987",
+        "Nj 312",
+        "Nj 317",
+        "Nj 316"
+      ],
+      "otani": [
+        "Otani 366",
+        "Otani 365",
+        "Otani 367",
+        "Otani 527"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 686": {
+      "tohoku": 686,
+      "k_numbers": [
+        "K 287"
+      ],
+      "taisho": [
+        "T1092"
+      ],
+      "nanjio": [
+        "Nj 317"
+      ],
+      "otani": [
+        "Otani 365",
+        "Otani 367",
+        "Otani 527",
+        "Otani 366"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 687": {
+      "tohoku": 687,
+      "k_numbers": [
+        "K 287"
+      ],
+      "taisho": [
+        "T1092"
+      ],
+      "nanjio": [
+        "Nj 317"
+      ],
+      "otani": [
+        "Otani 365",
+        "Otani 367",
+        "Otani 527",
+        "Otani 366"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 690": {
+      "tohoku": 690,
+      "k_numbers": [
+        "K 294"
+      ],
+      "taisho": [
+        "T1060"
+      ],
+      "nanjio": [
+        "Nj 320"
+      ],
+      "otani": [
+        "Otani 368"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 691": {
+      "tohoku": 691,
+      "k_numbers": [
+        "K 292",
+        "K 293"
+      ],
+      "taisho": [
+        "T1058"
+      ],
+      "nanjio": [
+        "Nj 319",
+        "Nj 318"
+      ],
+      "otani": [
+        "Otani 369"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 692": {
+      "tohoku": 692,
+      "k_numbers": [
+        "K 295",
+        "K 296",
+        "K 297",
+        "K 298"
+      ],
+      "taisho": [
+        "T1080",
+        "T1083",
+        "T1081",
+        "T1082"
+      ],
+      "nanjio": [
+        "Nj 324",
+        "Nj 322",
+        "Nj 323",
+        "Nj 321"
+      ],
+      "otani": [
+        "Otani 370"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 693": {
+      "tohoku": 693,
+      "k_numbers": [
+        "K 308",
+        "K 309",
+        "K 310"
+      ],
+      "taisho": [
+        "T1071",
+        "T1070",
+        "T901"
+      ],
+      "nanjio": [
+        "Nj 328",
+        "Nj 327",
+        "Nj 363"
+      ],
+      "otani": [
+        "Otani 373",
+        "Otani 216",
+        "Otani 379"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 697": {
+      "tohoku": 697,
+      "k_numbers": [
+        "K 1270"
+      ],
+      "taisho": [
+        "T1061"
+      ],
+      "nanjio": [],
+      "otani": [
+        "Otani 378"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 699": {
+      "tohoku": 699,
+      "k_numbers": [
+        "K 449",
+        "K 1308"
+      ],
+      "taisho": [
+        "T1038",
+        "T1037"
+      ],
+      "nanjio": [
+        "Nj 494",
+        "Nj 980"
+      ],
+      "otani": [
+        "Otani 377"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 705": {
+      "tohoku": 705,
+      "k_numbers": [
+        "K 1122"
+      ],
+      "taisho": [
+        "T1054"
+      ],
+      "nanjio": [
+        "Nj 816"
+      ],
+      "otani": [
+        "Otani 381"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 710": {
+      "tohoku": 710,
+      "k_numbers": [
+        "K 312",
+        "K 313",
+        "K 1160"
+      ],
+      "taisho": [
+        "T1035",
+        "T1306",
+        "T1034"
+      ],
+      "nanjio": [
+        "Nj 329",
+        "Nj 856",
+        "Nj 330"
+      ],
+      "otani": [
+        "Otani 216"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 725": {
+      "tohoku": 725,
+      "k_numbers": [
+        "K 1239"
+      ],
+      "taisho": [
+        "T1117"
+      ],
+      "nanjio": [
+        "Nj 910"
+      ],
+      "otani": [
+        "Otani 389"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 727": {
+      "tohoku": 727,
+      "k_numbers": [
+        "K 1120",
+        "K 1187"
+      ],
+      "taisho": [
+        "T1106",
+        "T1107"
+      ],
+      "nanjio": [
+        "Nj 815",
+        "Nj 1079"
+      ],
+      "otani": [
+        "Otani 391"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 728": {
+      "tohoku": 728,
+      "k_numbers": [
+        "K 1131"
+      ],
+      "taisho": [
+        "T1105"
+      ],
+      "nanjio": [
+        "Nj 813"
+      ],
+      "otani": [
+        "Otani 392"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 733": {
+      "tohoku": 733,
+      "k_numbers": [
+        "K 308"
+      ],
+      "taisho": [
+        "T901"
+      ],
+      "nanjio": [
+        "Nj 363"
+      ],
+      "otani": [
+        "Otani 216",
+        "Otani 379",
+        "Otani 373"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 735": {
+      "tohoku": 735,
+      "k_numbers": [
+        "K 1305"
+      ],
+      "taisho": [
+        "T1100"
+      ],
+      "nanjio": [
+        "Nj 973"
+      ],
+      "otani": [
+        "Otani 185"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 739": {
+      "tohoku": 739,
+      "k_numbers": [
+        "K 1284"
+      ],
+      "taisho": [
+        "T1253"
+      ],
+      "nanjio": [
+        "Nj 959"
+      ],
+      "otani": [
+        "Otani 398"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 740": {
+      "tohoku": 740,
+      "k_numbers": [
+        "K 1288"
+      ],
+      "taisho": [
+        "T1252"
+      ],
+      "nanjio": [
+        "Nj 958"
+      ],
+      "otani": [
+        "Otani 399"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 747": {
+      "tohoku": 747,
+      "k_numbers": [
+        "K 1202"
+      ],
+      "taisho": [
+        "T1129"
+      ],
+      "nanjio": [
+        "Nj 1031"
+      ],
+      "otani": [
+        "Otani 404"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 751": {
+      "tohoku": 751,
+      "k_numbers": [
+        "K 1150"
+      ],
+      "taisho": [
+        "T1415"
+      ],
+      "nanjio": [
+        "Nj 842"
+      ],
+      "otani": [
+        "Otani 407"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 757": {
+      "tohoku": 757,
+      "k_numbers": [
+        "K 1097"
+      ],
+      "taisho": [
+        "T1243"
+      ],
+      "nanjio": [
+        "Nj 1019"
+      ],
+      "otani": [
+        "Otani 416"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 770": {
+      "tohoku": 770,
+      "k_numbers": [
+        "K 1153"
+      ],
+      "taisho": [
+        "T1283"
+      ],
+      "nanjio": [
+        "Nj 1046"
+      ],
+      "otani": [
+        "Otani 426"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 772": {
+      "tohoku": 772,
+      "k_numbers": [
+        "K 1439"
+      ],
+      "taisho": [
+        "T1377"
+      ],
+      "nanjio": [
+        "Nj 940"
+      ],
+      "otani": [
+        "Otani 427"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 805": {
+      "tohoku": 805,
+      "k_numbers": [
+        "K 428",
+        "K 1152"
+      ],
+      "taisho": [
+        "T896",
+        "T895"
+      ],
+      "nanjio": [
+        "Nj 822",
+        "Nj 531"
+      ],
+      "otani": [
+        "Otani 428"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 807": {
+      "tohoku": 807,
+      "k_numbers": [
+        "K 432",
+        "K 432"
+      ],
+      "taisho": [
+        "T893"
+      ],
+      "nanjio": [
+        "Nj 533"
+      ],
+      "otani": [
+        "Otani 431"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 1095": {
+      "tohoku": 1095,
+      "k_numbers": [
+        "K 79",
+        "K 1029"
+      ],
+      "taisho": [
+        "T278",
+        "T296"
+      ],
+      "nanjio": [
+        "Nj 87",
+        "Nj 1336"
+      ],
+      "otani": [
+        "Otani 716"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 1118": {
+      "tohoku": 1118,
+      "k_numbers": [
+        "K 1115"
+      ],
+      "taisho": [
+        "T1675"
+      ],
+      "nanjio": [
+        "Nj 1070"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 1123": {
+      "tohoku": 1123,
+      "k_numbers": [
+        "K 1225"
+      ],
+      "taisho": [
+        "T1678"
+      ],
+      "nanjio": [
+        "Nj 1066"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 1147": {
+      "tohoku": 1147,
+      "k_numbers": [
+        "K 1024"
+      ],
+      "taisho": [
+        "T1680"
+      ],
+      "nanjio": [
+        "Nj 1456"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 1149": {
+      "tohoku": 1149,
+      "k_numbers": [
+        "K 1175"
+      ],
+      "taisho": [
+        "T1683"
+      ],
+      "nanjio": [
+        "Nj 1081"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3721": {
+      "tohoku": 3721,
+      "k_numbers": [
+        "K 1493"
+      ],
+      "taisho": [
+        "T1687"
+      ],
+      "nanjio": [
+        "Nj 1080"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3810": {
+      "tohoku": 3810,
+      "k_numbers": [
+        "K 1459"
+      ],
+      "taisho": [
+        "T1517"
+      ],
+      "nanjio": [
+        "Nj 1310"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3812": {
+      "tohoku": 3812,
+      "k_numbers": [
+        "K 1478"
+      ],
+      "taisho": [
+        "T1516"
+      ],
+      "nanjio": [
+        "Nj 1313"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3816": {
+      "tohoku": 3816,
+      "k_numbers": [
+        "K 555"
+      ],
+      "taisho": [
+        "T1510"
+      ],
+      "nanjio": [
+        "Nj 1167"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3824": {
+      "tohoku": 3824,
+      "k_numbers": [
+        "K 577"
+      ],
+      "taisho": [
+        "T1564"
+      ],
+      "nanjio": [
+        "Nj 1179"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3825": {
+      "tohoku": 3825,
+      "k_numbers": [
+        "K 1441"
+      ],
+      "taisho": [
+        "T1575"
+      ],
+      "nanjio": [
+        "Nj 1307"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3828": {
+      "tohoku": 3828,
+      "k_numbers": [
+        "K 630"
+      ],
+      "taisho": [
+        "T1631"
+      ],
+      "nanjio": [
+        "Nj 1251"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3833": {
+      "tohoku": 3833,
+      "k_numbers": [
+        "K 1445"
+      ],
+      "taisho": [
+        "T1576"
+      ],
+      "nanjio": [
+        "Nj 1308"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3834": {
+      "tohoku": 3834,
+      "k_numbers": [
+        "K 631"
+      ],
+      "taisho": [
+        "T1572"
+      ],
+      "nanjio": [
+        "Nj 1254"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3840": {
+      "tohoku": 3840,
+      "k_numbers": [
+        "K 1433"
+      ],
+      "taisho": [
+        "T1574"
+      ],
+      "nanjio": [],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3844": {
+      "tohoku": 3844,
+      "k_numbers": [
+        "K 637",
+        "K 643"
+      ],
+      "taisho": [
+        "T1621",
+        "T1620"
+      ],
+      "nanjio": [
+        "Nj 1256",
+        "Nj 1255"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3846": {
+      "tohoku": 3846,
+      "k_numbers": [
+        "K 582"
+      ],
+      "taisho": [
+        "T1570"
+      ],
+      "nanjio": [
+        "Nj 1189"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3853": {
+      "tohoku": 3853,
+      "k_numbers": [
+        "K 578"
+      ],
+      "taisho": [
+        "T1566"
+      ],
+      "nanjio": [
+        "Nj 1185"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3871": {
+      "tohoku": 3871,
+      "k_numbers": [
+        "K 1121"
+      ],
+      "taisho": [
+        "T1662"
+      ],
+      "nanjio": [
+        "Nj 1354"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3905": {
+      "tohoku": 3905,
+      "k_numbers": [
+        "K 1435"
+      ],
+      "taisho": [
+        "T1637"
+      ],
+      "nanjio": [
+        "Nj 1306"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3908": {
+      "tohoku": 3908,
+      "k_numbers": [
+        "K 1458"
+      ],
+      "taisho": [
+        "T1518"
+      ],
+      "nanjio": [
+        "Nj 1309"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3913": {
+      "tohoku": 3913,
+      "k_numbers": [
+        "K 1205"
+      ],
+      "taisho": [
+        "T1663"
+      ],
+      "nanjio": [
+        "Nj 872"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3915": {
+      "tohoku": 3915,
+      "k_numbers": [
+        "K 1449"
+      ],
+      "taisho": [
+        "T1664"
+      ],
+      "nanjio": [
+        "Nj 1301"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3934": {
+      "tohoku": 3934,
+      "k_numbers": [
+        "K 1475"
+      ],
+      "taisho": [
+        "T1635"
+      ],
+      "nanjio": [
+        "Nj 1311"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3939": {
+      "tohoku": 3939,
+      "k_numbers": [
+        "K 1488"
+      ],
+      "taisho": [
+        "T1636"
+      ],
+      "nanjio": [
+        "Nj 1298"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3941": {
+      "tohoku": 3941,
+      "k_numbers": [
+        "K 1488"
+      ],
+      "taisho": [
+        "T1636"
+      ],
+      "nanjio": [
+        "Nj 1298"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3958": {
+      "tohoku": 3958,
+      "k_numbers": [
+        "K 1491"
+      ],
+      "taisho": [
+        "T727"
+      ],
+      "nanjio": [
+        "Nj 1379"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3991": {
+      "tohoku": 3991,
+      "k_numbers": [
+        "K 560"
+      ],
+      "taisho": [
+        "T1531"
+      ],
+      "nanjio": [
+        "Nj 1191"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 3993": {
+      "tohoku": 3993,
+      "k_numbers": [
+        "K 550"
+      ],
+      "taisho": [
+        "T1522"
+      ],
+      "nanjio": [
+        "Nj 1194"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4009": {
+      "tohoku": 4009,
+      "k_numbers": [
+        "K 552"
+      ],
+      "taisho": [
+        "T1523"
+      ],
+      "nanjio": [
+        "Nj 1234"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4021": {
+      "tohoku": 4021,
+      "k_numbers": [
+        "K 599"
+      ],
+      "taisho": [
+        "T1601"
+      ],
+      "nanjio": [
+        "Nj 1245"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4024": {
+      "tohoku": 4024,
+      "k_numbers": [
+        "K 600"
+      ],
+      "taisho": [
+        "T1611"
+      ],
+      "nanjio": [
+        "Nj 1236"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4027": {
+      "tohoku": 4027,
+      "k_numbers": [
+        "K 597",
+        "K 601"
+      ],
+      "taisho": [
+        "T1599",
+        "T1600"
+      ],
+      "nanjio": [
+        "Nj 1248",
+        "Nj 1244"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4035": {
+      "tohoku": 4035,
+      "k_numbers": [
+        "K 570"
+      ],
+      "taisho": [
+        "T1579"
+      ],
+      "nanjio": [
+        "Nj 1170"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4036": {
+      "tohoku": 4036,
+      "k_numbers": [
+        "K 570"
+      ],
+      "taisho": [
+        "T1579"
+      ],
+      "nanjio": [
+        "Nj 1170"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4037": {
+      "tohoku": 4037,
+      "k_numbers": [
+        "K 523",
+        "K 524",
+        "K 570"
+      ],
+      "taisho": [
+        "T1581",
+        "T1582",
+        "T1579"
+      ],
+      "nanjio": [
+        "Nj 1086",
+        "Nj 1085",
+        "Nj 1170"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4039": {
+      "tohoku": 4039,
+      "k_numbers": [
+        "K 570"
+      ],
+      "taisho": [
+        "T1579"
+      ],
+      "nanjio": [
+        "Nj 1170"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4040": {
+      "tohoku": 4040,
+      "k_numbers": [
+        "K 570"
+      ],
+      "taisho": [
+        "T1579"
+      ],
+      "nanjio": [
+        "Nj 1170"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4041": {
+      "tohoku": 4041,
+      "k_numbers": [
+        "K 570"
+      ],
+      "taisho": [
+        "T1579"
+      ],
+      "nanjio": [
+        "Nj 1170"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4042": {
+      "tohoku": 4042,
+      "k_numbers": [
+        "K 570"
+      ],
+      "taisho": [
+        "T1579"
+      ],
+      "nanjio": [
+        "Nj 1170"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4048": {
+      "tohoku": 4048,
+      "k_numbers": [
+        "K 588",
+        "K 591",
+        "K 592"
+      ],
+      "taisho": [
+        "T1594",
+        "T1592",
+        "T1593"
+      ],
+      "nanjio": [
+        "Nj 1247",
+        "Nj 1184",
+        "Nj 1183"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4049": {
+      "tohoku": 4049,
+      "k_numbers": [
+        "K 572"
+      ],
+      "taisho": [
+        "T1605"
+      ],
+      "nanjio": [
+        "Nj 1199"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4050": {
+      "tohoku": 4050,
+      "k_numbers": [
+        "K 590",
+        "K 593",
+        "K 594"
+      ],
+      "taisho": [
+        "T1596",
+        "T1595",
+        "T1597"
+      ],
+      "nanjio": [
+        "Nj 1171"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4051": {
+      "tohoku": 4051,
+      "k_numbers": [
+        "K 595"
+      ],
+      "taisho": [
+        "T1598"
+      ],
+      "nanjio": [
+        "Nj 1171"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4054": {
+      "tohoku": 4054,
+      "k_numbers": [
+        "K 576"
+      ],
+      "taisho": [
+        "T1606"
+      ],
+      "nanjio": [
+        "Nj 1178"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4055": {
+      "tohoku": 4055,
+      "k_numbers": [
+        "K 609",
+        "K 612"
+      ],
+      "taisho": [
+        "T1586",
+        "T1587"
+      ],
+      "nanjio": [
+        "Nj 1215",
+        "Nj 1217"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4056": {
+      "tohoku": 4056,
+      "k_numbers": [
+        "K 608",
+        "K 610",
+        "K 613"
+      ],
+      "taisho": [
+        "T1588",
+        "T1589",
+        "T1590"
+      ],
+      "nanjio": [
+        "Nj 1238",
+        "Nj 1239",
+        "Nj 1240"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4059": {
+      "tohoku": 4059,
+      "k_numbers": [
+        "K 619"
+      ],
+      "taisho": [
+        "T1612"
+      ],
+      "nanjio": [
+        "Nj 1176"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4062": {
+      "tohoku": 4062,
+      "k_numbers": [
+        "K 602",
+        "K 603"
+      ],
+      "taisho": [
+        "T1608",
+        "T1609"
+      ],
+      "nanjio": [
+        "Nj 1222",
+        "Nj 1221"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4063": {
+      "tohoku": 4063,
+      "k_numbers": [
+        "K 644"
+      ],
+      "taisho": [
+        "T1614"
+      ],
+      "nanjio": [
+        "Nj 1213"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4066": {
+      "tohoku": 4066,
+      "k_numbers": [
+        "K 618"
+      ],
+      "taisho": [
+        "T1613"
+      ],
+      "nanjio": [
+        "Nj 1175"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4085": {
+      "tohoku": 4085,
+      "k_numbers": [
+        "K 570"
+      ],
+      "taisho": [
+        "T1579"
+      ],
+      "nanjio": [
+        "Nj 1170"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4087": {
+      "tohoku": 4087,
+      "k_numbers": [
+        "K 1484"
+      ],
+      "taisho": [
+        "T1538"
+      ],
+      "nanjio": [
+        "Nj 1317"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4089": {
+      "tohoku": 4089,
+      "k_numbers": [
+        "K 954"
+      ],
+      "taisho": [
+        "T1560"
+      ],
+      "nanjio": [
+        "Nj 1270"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4090": {
+      "tohoku": 4090,
+      "k_numbers": [
+        "K 953",
+        "K 955"
+      ],
+      "taisho": [
+        "T1559",
+        "T1558"
+      ],
+      "nanjio": [
+        "Nj 1269",
+        "Nj 1267"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4091": {
+      "tohoku": 4091,
+      "k_numbers": [
+        "K 957"
+      ],
+      "taisho": [
+        "T1563"
+      ],
+      "nanjio": [
+        "Nj 1266"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4098": {
+      "tohoku": 4098,
+      "k_numbers": [
+        "K 964"
+      ],
+      "taisho": [
+        "T1554"
+      ],
+      "nanjio": [
+        "Nj 1291"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4105": {
+      "tohoku": 4105,
+      "k_numbers": [
+        "K 934"
+      ],
+      "taisho": [
+        "T1458"
+      ],
+      "nanjio": [
+        "Nj 1127"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4123": {
+      "tohoku": 4123,
+      "k_numbers": [
+        "K 925"
+      ],
+      "taisho": [
+        "T1459"
+      ],
+      "nanjio": [
+        "Nj 1143"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4138": {
+      "tohoku": 4138,
+      "k_numbers": [
+        "K 975",
+        "K 976",
+        "K 977"
+      ],
+      "taisho": [
+        "T2031",
+        "T2033",
+        "T2032"
+      ],
+      "nanjio": [
+        "Nj 1286",
+        "Nj 1285",
+        "Nj 1284"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4144": {
+      "tohoku": 4144,
+      "k_numbers": [
+        "K 1483"
+      ],
+      "taisho": [
+        "T550"
+      ],
+      "nanjio": [],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4145": {
+      "tohoku": 4145,
+      "k_numbers": [
+        "K 1013"
+      ],
+      "taisho": [
+        "T2043"
+      ],
+      "nanjio": [
+        "Nj 1343"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4146": {
+      "tohoku": 4146,
+      "k_numbers": [
+        "K 1046"
+      ],
+      "taisho": [
+        "T2030"
+      ],
+      "nanjio": [
+        "Nj 1466"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4156": {
+      "tohoku": 4156,
+      "k_numbers": [
+        "K 980"
+      ],
+      "taisho": [
+        "T192"
+      ],
+      "nanjio": [
+        "Nj 1351"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4158": {
+      "tohoku": 4158,
+      "k_numbers": [
+        "K 617"
+      ],
+      "taisho": [
+        "T1656"
+      ],
+      "nanjio": [
+        "Nj 1253"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4182": {
+      "tohoku": 4182,
+      "k_numbers": [
+        "K 1036",
+        "K 1037",
+        "K 1043"
+      ],
+      "taisho": [
+        "T1672",
+        "T1674",
+        "T1673"
+      ],
+      "nanjio": [
+        "Nj 1464",
+        "Nj 1441",
+        "Nj 1440"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4205": {
+      "tohoku": 4205,
+      "k_numbers": [
+        "K 628",
+        "K 629"
+      ],
+      "taisho": [
+        "T1619",
+        "T1624"
+      ],
+      "nanjio": [
+        "Nj 1172",
+        "Nj 1173"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4208": {
+      "tohoku": 4208,
+      "k_numbers": [
+        "K 607"
+      ],
+      "taisho": [
+        "T1630"
+      ],
+      "nanjio": [
+        "Nj 1216"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4379": {
+      "tohoku": 4379,
+      "k_numbers": [
+        "K 127"
+      ],
+      "taisho": [
+        "T665"
+      ],
+      "nanjio": [
+        "Nj 126"
+      ],
+      "otani": [
+        "Otani 174"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4388": {
+      "tohoku": 4388,
+      "k_numbers": [
+        "K 617"
+      ],
+      "taisho": [
+        "T1656"
+      ],
+      "nanjio": [
+        "Nj 1253"
+      ],
+      "otani": [],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4394": {
+      "tohoku": 4394,
+      "k_numbers": [
+        "K 432"
+      ],
+      "taisho": [
+        "T893"
+      ],
+      "nanjio": [
+        "Nj 533"
+      ],
+      "otani": [
+        "Otani 431"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4404": {
+      "tohoku": 4404,
+      "k_numbers": [
+        "K 79"
+      ],
+      "taisho": [
+        "T278"
+      ],
+      "nanjio": [
+        "Nj 87"
+      ],
+      "otani": [
+        "Otani 716"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4405": {
+      "tohoku": 4405,
+      "k_numbers": [
+        "K 111"
+      ],
+      "taisho": [
+        "T187"
+      ],
+      "nanjio": [
+        "Nj 159"
+      ],
+      "otani": [
+        "Otani 763"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4407": {
+      "tohoku": 4407,
+      "k_numbers": [
+        "K 1096"
+      ],
+      "taisho": [
+        "T999"
+      ],
+      "nanjio": [
+        "Nj 784"
+      ],
+      "otani": [
+        "Otani 177"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4408": {
+      "tohoku": 4408,
+      "k_numbers": [
+        "K 1096"
+      ],
+      "taisho": [
+        "T999"
+      ],
+      "nanjio": [
+        "Nj 784"
+      ],
+      "otani": [
+        "Otani 177"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    },
+    "Toh 4409": {
+      "tohoku": 4409,
+      "k_numbers": [
+        "K 303"
+      ],
+      "taisho": [
+        "T985"
+      ],
+      "nanjio": [
+        "Nj 306"
+      ],
+      "otani": [
+        "Otani 178"
+      ],
+      "sanskrit_title": null,
+      "tibetan_title": null,
+      "chinese_title": null
+    }
+  }
+}
