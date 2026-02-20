@@ -178,23 +178,21 @@ phrasing** from T223.
 
 ### 3.1 Pipeline Results: Summary
 
-Our pipeline detected **7,169 relationships** across the Taisho canon:
+Our pipeline detected **3,610 relationships** across the Taisho canon:
 
 | Classification   | Count | Description |
 |------------------|------:|-------------|
-| Excerpts         |   138 | Shorter text draws >=80% from the longer text |
-| Digests          |   549 | Shorter text draws 30-80% from the longer text |
-| Commentaries     |   669 | Quotation with added material |
-| Shared tradition | 5,589 | Common content, not direct derivation |
+| Excerpts         |   135 | Shorter text draws >=80% from the longer text |
+| Digests          |   539 | Shorter text draws 30-80% from the longer text |
+| Commentaries     |   538 | Quotation with added material |
+| Shared tradition | 2,174 | Common content, not direct derivation |
 | Retranslations   |   224 | Similar-length texts, same source, different translations |
 
-Additionally, **58 multi-source digests** were detected -- texts that draw
-material from multiple longer sources. The large increase in shared tradition
-pairs (from earlier runs) reflects the addition of phonetic transliteration
-detection, which identifies texts sharing transliterated Sanskrit passages
-(dharani, mantras) even when different Chinese characters are used for the same
-Sanskrit syllables. Most of these phonetic candidates resolve to shared tradition
-rather than higher-confidence digest relationships.
+Additionally, **55 multi-source digests** were detected -- texts that draw
+material from multiple longer sources. The pipeline includes phonetic
+transliteration detection, which identifies texts sharing transliterated
+Sanskrit passages (dharani, mantras) even when different Chinese characters
+are used for the same Sanskrit syllables.
 
 ### 3.2 The Heart Sutra Case Study
 
@@ -267,7 +265,7 @@ These numbers are strikingly consistent with Nattier's hypothesis:
    12.89 characters -- much shorter segments, consistent with content overlap
    rather than verbatim extraction.
 
-### 3.4 Broader Patterns in Our 7,169 Relationships
+### 3.4 Broader Patterns in Our 3,610 Relationships
 
 Beyond the Heart Sutra, our dataset reveals several patterns relevant to the
 Chinese-composition question:
@@ -329,7 +327,7 @@ next-best-matching translation by a different translator.
 
 **Implementation with existing pipeline:**
 
-1. From our 288 retranslation pairs, identify groups of texts that are different
+1. From our 224 retranslation pairs, identify groups of texts that are different
    Chinese translations of the same underlying work.
 
 2. For each digest that matches one member of a retranslation group, compute its
@@ -410,7 +408,7 @@ with the classification status of texts in traditional Chinese catalogs
 
 **Implementation:**
 
-1. From our 132 excerpt and 533 digest relationships, identify the digest texts.
+1. From our 135 excerpt and 539 digest relationships, identify the digest texts.
 2. Cross-reference each with catalog data to determine whether it is classified
    as:
    - Authentic translation with named translator
@@ -507,7 +505,7 @@ and coverage profiles may provide clues.
 
 ### 5.3 Scale of the Question
 
-Of our 7,169 detected relationships, the 138 excerpts and 549 digests
+Of our 3,610 detected relationships, the 135 excerpts and 539 digests
 are the primary candidates for this analysis. Among these, cases where the source
 text exists in multiple Chinese translations by different translators provide the
 most diagnostic power. Our 224 retranslation pairs identify these multi-translation
@@ -515,8 +513,8 @@ text families. The intersection of these two sets -- digest texts whose sources
 also exist as retranslation groups -- is where our methodology will be most
 powerful.
 
-The addition of phonetic transliteration detection to our pipeline partially
-addresses the cross-translator gap described in Section 5.3. By mapping Chinese
+The addition of phonetic transliteration detection partially
+addresses the cross-translator gap. By mapping Chinese
 characters to their Sanskrit syllable values, the pipeline can now detect
 relationships between texts that use different transliteration conventions for
 the same Sanskrit sounds (e.g., 竭帝 vs. 揭帝 for Sanskrit *gate*). This is
@@ -537,7 +535,7 @@ verbatim matching** that is the strongest evidence for Chinese-level composition
 
 The Heart Sutra case study, where our pipeline independently confirms Nattier's
 philological argument through computational means, demonstrates the potential of
-this approach. Extending it systematically across the 687 digest relationships
+this approach. Extending it systematically across the 674 digest relationships
 (excerpts + digests) in our dataset could identify previously unrecognized cases of
 Chinese composition and contribute new quantitative evidence to longstanding
 debates about textual authenticity in the Chinese Buddhist canon.

@@ -239,7 +239,7 @@ coverage < 0.10                              → no_relationship (filtered out)
 size_ratio < 3.0 and coverage ≥ 0.30         → retranslation
 coverage ≥ 0.80 and avg_seg_len ≥ 15         → excerpt
 coverage ≥ 0.30 and avg_seg_len ≥ 10         → digest
-coverage ≥ 0.20 and avg_seg_len < 10         → commentary
+coverage ≥ 0.30 and avg_seg_len < 10         → commentary
 else                                          → digest
 ```
 

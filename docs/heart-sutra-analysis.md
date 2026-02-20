@@ -11,9 +11,9 @@ relationship is textual and verifiable: a digest shares significant verbatim or
 near-verbatim overlap with its source.
 
 Our computational pipeline analyzed the entire Taisho canon -- approximately
-8,982 XML files across 58 volumes -- and detected 7,169 digest-type
-relationships, of which 138 were classified as excerpts (coverage >= 80%),
-549 as digests (coverage 30-80%), 669 as commentaries, 5,589 as shared
+8,982 XML files across 58 volumes -- and detected 3,610 digest-type
+relationships, of which 135 were classified as excerpts (coverage >= 80%),
+539 as digests (coverage 30-80%), 538 as commentaries, 2,174 as shared
 tradition, and 224 as retranslations. Against this landscape, the Heart Sutra
 occupies a distinctive position.
 
@@ -91,8 +91,8 @@ parallel versions of the same text rather than one being derived from the other.
 
 ### 2.3 The Heart Sutra Among All Detected Relationships
 
-Among all 7,169 relationships our pipeline detected, T250 -> T223 ranks **51st
-overall** by confidence score (0.660). This places it firmly in the upper tier of
+Among all 3,610 relationships our pipeline detected, T250 -> T223 ranks among the
+top results by confidence score (0.660). This places it firmly in the upper tier of
 detected digest relationships, though not at the very top. The relationships that
 rank higher tend to involve either:
 
@@ -185,7 +185,7 @@ T255 (41.2%). These form a tight cluster of parallel translations.
 
 ### 3.3 Multi-Source Digests
 
-Our pipeline detected 58 multi-source digests -- texts that draw material from
+Our pipeline detected 55 multi-source digests -- texts that draw material from
 multiple sources. Two Heart Sutra-related texts appear among these:
 
 **T08n0250 (Kumarajiva Heart Sutra):**
@@ -474,7 +474,7 @@ within T223, consistent with selective extraction rather than sequential copying
 
 ### 7.2 A Qualitative Assessment
 
-Among the 138 excerpts and 549 digests detected by our pipeline, the
+Among the 135 excerpts and 539 digests detected by our pipeline, the
 Heart Sutra is qualitatively unique in several ways:
 
 1. **It is the only philosophical digest that includes a mantra.** No other
@@ -534,8 +534,8 @@ vs. 44.6% for Xuanzang's T251 against Kumarajiva's T223) provides quantitative
 support for the Chinese-composition hypothesis.
 
 But our analysis also reveals just how exceptional the Heart Sutra is within the
-broader landscape of digests. Among 7,169 detected relationships, including 138
-excerpts and 549 digests, no other text combines:
+broader landscape of digests. Among 3,610 detected relationships, including 135
+excerpts and 539 digests, no other text combines:
 
 - Extreme compression (960:1)
 - Creative reframing (new speakers, added mantra)
