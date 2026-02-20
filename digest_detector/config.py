@@ -44,6 +44,10 @@ WEIGHT_LENGTH_ASYMMETRY = 0.10
 WEIGHT_DOCNUMBER_XREF = 0.15
 WEIGHT_AVG_SEGMENT_LEN = 0.10
 
+assert abs(WEIGHT_CONTAINMENT + WEIGHT_LONGEST_SEGMENT + WEIGHT_NUM_REGIONS +
+           WEIGHT_LENGTH_ASYMMETRY + WEIGHT_DOCNUMBER_XREF +
+           WEIGHT_AVG_SEGMENT_LEN - 1.0) < 1e-9, "Confidence weights must sum to 1.0"
+
 # --- Stage 3b: Phonetic Transliteration Detection ---
 ENABLE_PHONETIC_SCAN = True  # Enable post-hoc phonetic rescan of novel segments
 PHONETIC_SEED_LENGTH = 5  # Min consecutive phonetically equivalent chars to seed

@@ -37,7 +37,7 @@ def fast_ngram_hashes(str text, int n, stopgrams=None):
         return frozenset()
 
     cdef Py_ssize_t i
-    cdef long h
+    cdef uint32_t h
 
     # Encode entire string to UTF-8 once (single C-level operation),
     # then build byte offsets by walking the UTF-8 byte sequence.
@@ -72,13 +72,13 @@ def fast_ngram_hashes(str text, int n, stopgrams=None):
         if stopgrams is not None and len(stopgrams) > 0:
             for i in range(text_len - n + 1):
                 ngram_byte_len = <unsigned int>(byte_offsets[i + n] - byte_offsets[i])
-                h = <long>c_crc32(0, buf + byte_offsets[i], ngram_byte_len)
+                h = <uint32_t>c_crc32(0, buf + byte_offsets[i], ngram_byte_len)
                 if h not in stopgrams:
                     hashes.add(h)
         else:
             for i in range(text_len - n + 1):
                 ngram_byte_len = <unsigned int>(byte_offsets[i + n] - byte_offsets[i])
-                h = <long>c_crc32(0, buf + byte_offsets[i], ngram_byte_len)
+                h = <uint32_t>c_crc32(0, buf + byte_offsets[i], ngram_byte_len)
                 hashes.add(h)
     finally:
         free(byte_offsets)

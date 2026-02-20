@@ -23,7 +23,7 @@ def fast_ngram_hashes(text: str, n: int, stopgrams: set[int] | None = None) -> f
         return frozenset()
 
     hashes = set()
-    if stopgrams:
+    if stopgrams is not None and len(stopgrams) > 0:
         for i in range(text_len - n + 1):
             h = zlib.crc32(text[i:i + n].encode('utf-8'))
             if h not in stopgrams:

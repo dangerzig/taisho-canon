@@ -50,7 +50,7 @@ def classify_relationship(
     - retranslation: coverage >= 0.30, size ratio < 3.0 (similar length texts)
     - excerpt: coverage >= 0.80, avg segment >= 15 chars (verbatim extraction)
     - digest: coverage >= 0.30, avg segment >= 10 chars (condensed derivation)
-    - commentary: coverage >= 0.20, avg segment < 10 chars (scattered small matches)
+    - commentary: coverage >= 0.30, avg segment < 10 chars (scattered small matches)
     """
     # Compute phonetic coverage fraction from segments
     matched_chars = sum(
@@ -111,7 +111,7 @@ def classify_relationship(
         source_id=alignment.source_id,
         classification=classification,
         confidence=confidence,
-        containment=coverage,
+        containment=alignment.coverage,
         coverage=coverage,
         novel_fraction=alignment.novel_fraction,
         avg_segment_length=avg_seg_len,

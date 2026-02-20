@@ -202,8 +202,11 @@ def run_pipeline(
     logger.info("=" * 60)
     t0 = time.time()
 
+    # Alignment is memory-light, so allow more workers than fingerprinting
+    align_workers = config.resolve_worker_count(
+        config.ALIGN_NUM_WORKERS, memory_intensive=False)
     alignments = align_candidates(candidates, text_map,
-                                   num_workers=config.ALIGN_NUM_WORKERS)
+                                   num_workers=align_workers)
 
     elapsed = round(time.time() - t0, 1)
     stage_times["stage3_align"] = elapsed

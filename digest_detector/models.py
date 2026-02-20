@@ -3,7 +3,7 @@
 from dataclasses import dataclass, field
 
 
-@dataclass
+@dataclass(slots=True)
 class TextMetadata:
     """Metadata for a single extracted text."""
     text_id: str  # e.g. "T08n0223"
@@ -17,7 +17,7 @@ class TextMetadata:
     has_dharani: bool = False
 
 
-@dataclass
+@dataclass(slots=True)
 class DivSegment:
     """A segment of text with its div type annotation."""
     div_type: str  # "jing", "xu", "pin", etc.
@@ -26,7 +26,7 @@ class DivSegment:
     end: int
 
 
-@dataclass
+@dataclass(slots=True)
 class ExtractedText:
     """Full extracted text with div-level segmentation."""
     text_id: str
@@ -44,7 +44,7 @@ class ExtractedText:
         return self.full_text
 
 
-@dataclass
+@dataclass(slots=True)
 class CandidatePair:
     """A candidate digest-source pair from Stage 2."""
     digest_id: str
@@ -56,7 +56,7 @@ class CandidatePair:
     from_phonetic: bool = False  # True if pair came from phonetic candidate generation
 
 
-@dataclass
+@dataclass(slots=True)
 class AlignmentSegment:
     """A single aligned segment between digest and source."""
     digest_start: int  # char position in digest
@@ -70,7 +70,7 @@ class AlignmentSegment:
     # For phonetic matches: list of (digest_char, sanskrit_syllable, source_char)
 
 
-@dataclass
+@dataclass(slots=True)
 class AlignmentResult:
     """Full alignment result for a digest-source pair."""
     digest_id: str
@@ -82,15 +82,15 @@ class AlignmentResult:
     num_source_regions: int = 0  # number of disjoint source regions used
 
 
-@dataclass
+@dataclass(slots=True)
 class DigestScore:
     """Scored and classified digest relationship."""
     digest_id: str
     source_id: str
     classification: str  # "excerpt", "digest", "commentary", etc.
     confidence: float  # 0-1 weighted score
-    containment: float
-    coverage: float
+    containment: float  # raw alignment coverage (before phonetic adjustment)
+    coverage: float  # effective coverage (phonetic matches discounted)
     novel_fraction: float
     avg_segment_length: float
     longest_segment: int
@@ -100,7 +100,7 @@ class DigestScore:
     phonetic_coverage: float = 0.0  # fraction of digest matched phonetically
 
 
-@dataclass
+@dataclass(slots=True)
 class MultiSourceDigest:
     """A text identified as a digest of multiple sources."""
     digest_id: str

@@ -49,10 +49,15 @@ def generate_ngrams(text: str, n: int = None) -> list[str]:
     return [text[i:i + n] for i in range(len(text) - n + 1)]
 
 
-def _doc_freq_worker(args: tuple) -> frozenset[int]:
+def _doc_freq_init(n: int):
+    """Pool initializer: set n for document frequency workers."""
+    global _worker_n
+    _worker_n = n
+
+
+def _doc_freq_worker(full_text: str) -> frozenset[int]:
     """Worker: return set of unique n-gram hashes for one text."""
-    full_text, n = args
-    return fast_ngram_hashes(full_text, n)
+    return fast_ngram_hashes(full_text, _worker_n)
 
 
 def compute_document_frequencies(
@@ -72,16 +77,20 @@ def compute_document_frequencies(
     # full_text is used intentionally: document frequencies should reflect
     # all content (including prefaces) since stop-gram identification must
     # be based on actual corpus-wide frequencies.
-    args_list = [(text.full_text, n) for text in texts]
+    text_list = [text.full_text for text in texts]
 
     doc_freq: Counter[int] = Counter()
     if num_workers <= 1 or len(texts) < 10:
-        for args in args_list:
-            doc_freq.update(_doc_freq_worker(args))
+        global _worker_n
+        _worker_n = n
+        for full_text in text_list:
+            doc_freq.update(_doc_freq_worker(full_text))
     else:
-        chunksize = max(1, len(args_list) // (num_workers * 4))
-        with Pool(num_workers, maxtasksperchild=config.MAXTASKSPERCHILD) as pool:
-            for hash_set in pool.imap_unordered(_doc_freq_worker, args_list,
+        chunksize = max(1, len(text_list) // (num_workers * 4))
+        with Pool(num_workers, initializer=_doc_freq_init,
+                  initargs=(n,),
+                  maxtasksperchild=config.MAXTASKSPERCHILD) as pool:
+            for hash_set in pool.imap_unordered(_doc_freq_worker, text_list,
                                                 chunksize=chunksize):
                 doc_freq.update(hash_set)
 

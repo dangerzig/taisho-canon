@@ -10,6 +10,8 @@ and profiling without Cython overhead).
 import logging
 import os
 
+__all__ = ["fast_ngram_hashes", "fast_find_seeds", "fast_fuzzy_extend"]
+
 logger = logging.getLogger(__name__)
 
 if os.environ.get("DIGEST_NO_CYTHON"):

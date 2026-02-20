@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 
 # Bump this when dataclass fields change (ExtractedText, CandidatePair, etc.)
 # to force cache invalidation rather than silent pickle breakage.
-CACHE_VERSION = 2
+CACHE_VERSION = 3
 
 
 def _config_snapshot() -> dict:

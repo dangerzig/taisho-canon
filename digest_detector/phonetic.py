@@ -18,6 +18,15 @@ logger = logging.getLogger(__name__)
 # Default path to DDB dictionary
 DDB_PATH = config.BASE_DIR / "sc-data" / "dictionaries" / "simple" / "en" / "lzh2en_ddb.json"
 
+# Common Buddhist prose characters that enter the phonetic table via
+# positional alignment of mixed semantic+phonetic compounds (e.g. 梵天外道
+# brahmadeva maps 天→ma, 道→va). These are too frequent in ordinary prose
+# to be reliable phonetic indicators and would add noise to transliteration
+# detection. Identified by reviewing the table for false equivalence pairs.
+_COMMON_PROSE_EXCLUSIONS = frozenset(
+    '無一大佛法人世天空色善道得行知說想相'
+)
+
 
 def _is_cjk(ch: str) -> bool:
     """Check if a character is a CJK ideograph."""
@@ -185,6 +194,11 @@ def build_equivalence_table(ddb_path: Path = None) -> dict[str, set[str]]:
                 char_to_syllables[ch] = set()
             char_to_syllables[ch].add(syl)
 
+    # Filter out common prose characters that contaminate the table
+    prose_removed = [ch for ch in char_to_syllables if ch in _COMMON_PROSE_EXCLUSIONS]
+    for ch in prose_removed:
+        del char_to_syllables[ch]
+
     # Filter out overly ambiguous characters (too many syllable values)
     max_syls = config.PHONETIC_MAX_SYLLABLES
     ambiguous = [ch for ch, syls in char_to_syllables.items()
@@ -193,10 +207,10 @@ def build_equivalence_table(ddb_path: Path = None) -> dict[str, set[str]]:
         del char_to_syllables[ch]
 
     logger.info("Built phonetic equivalence table: %d chars, %d syllable groups "
-                "(%d ambiguous chars removed)",
+                "(%d ambiguous, %d common prose chars removed)",
                 len(char_to_syllables),
                 len(get_equivalence_groups(char_to_syllables)),
-                len(ambiguous))
+                len(ambiguous), len(prose_removed))
 
     return char_to_syllables
 
@@ -314,12 +328,15 @@ def text_to_syllable_ngrams(
 
     results = []
 
+    # Precompute canonical syllable for each char in the table (avoids
+    # repeated sorted() calls inside canonical_syllable per character)
+    canonical = {ch: sorted(syls)[0] for ch, syls in table.items()}
+
     for reg_start, reg_end in regions:
         # Build syllable sequence for this region
         syllables = []  # (canonical_syllable, char_position)
         for i in range(reg_start, min(reg_end, len(text))):
-            ch = text[i]
-            syl = canonical_syllable(ch, table)
+            syl = canonical.get(text[i])
             if syl is not None:
                 syllables.append((syl, i))
 

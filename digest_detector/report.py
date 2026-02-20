@@ -9,6 +9,12 @@ import logging
 from collections import defaultdict
 from pathlib import Path
 
+try:
+    import orjson
+    _HAS_ORJSON = True
+except ImportError:
+    _HAS_ORJSON = False
+
 from . import config
 from .models import (
     AlignmentResult, AlignmentSegment, DigestScore, MultiSourceDigest,
@@ -200,6 +206,16 @@ def _segment_to_dict(seg: AlignmentSegment) -> dict:
     return d
 
 
+def _write_json(path: Path, data) -> None:
+    """Write JSON to file, using orjson if available for speed."""
+    if _HAS_ORJSON:
+        with open(path, 'wb') as f:
+            f.write(orjson.dumps(data, option=orjson.OPT_INDENT_2))
+    else:
+        with open(path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+
+
 def generate_reports(
     scores: list[DigestScore],
     alignments: list[AlignmentResult],
@@ -238,8 +254,7 @@ def generate_reports(
             rel['phonetic_coverage'] = round(s.phonetic_coverage, 4)
         relationships.append(rel)
 
-    with open(results_dir / "digest_relationships.json", 'w', encoding='utf-8') as f:
-        json.dump(relationships, f, ensure_ascii=False, indent=2)
+    _write_json(results_dir / "digest_relationships.json", relationships)
 
     # 2. Per-pair alignment JSON files
     for alignment in alignments:
@@ -259,8 +274,7 @@ def generate_reports(
                     for seg in alignment.segments
                 ],
             }
-            with open(alignments_dir / fname, 'w', encoding='utf-8') as f:
-                json.dump(data, f, ensure_ascii=False, indent=2)
+            _write_json(alignments_dir / fname, data)
 
     # 3. summary.md
     _generate_summary(scores, alignments, multi_source, metadata_map, results_dir)

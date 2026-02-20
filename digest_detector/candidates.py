@@ -68,7 +68,10 @@ def _candidate_worker(args: tuple) -> list[CandidatePair]:
     if len(jing_text) < n:
         return []
 
-    # Build digest's n-gram set from jing_text
+    # Build digest's n-gram set from jing_text (not full_text).
+    # This is intentionally asymmetric: digest uses jing_text to exclude
+    # preface material, while source n-gram sets (in source_sets_arr) use
+    # full_text so they can match against any digest content.
     digest_set = fast_ngram_hashes(jing_text, n, stopgrams)
 
     if not digest_set:
@@ -458,11 +461,19 @@ def generate_phonetic_candidates(
             if containment < min_containment:
                 continue
 
-            # Ensure consistent pair ordering (shorter first)
+            # Ensure consistent pair ordering (shorter text = digest)
             if d_len <= s_len:
                 pair_key = (d_id, source_id)
+                final_containment = containment
+                final_matching = matching
+                final_digest_ngrams = len(digest_set)
             else:
                 pair_key = (source_id, d_id)
+                # Recompute containment from the actual digest's perspective
+                final_matching = len(source_set & digest_set)
+                final_digest_ngrams = len(source_set)
+                final_containment = (final_matching / final_digest_ngrams
+                                     if final_digest_ngrams > 0 else 0.0)
 
             if pair_key in seen_pairs:
                 continue
@@ -471,9 +482,9 @@ def generate_phonetic_candidates(
             candidates.append(CandidatePair(
                 digest_id=pair_key[0],
                 source_id=pair_key[1],
-                containment_score=containment,
-                matching_ngrams=matching,
-                total_digest_ngrams=len(digest_set),
+                containment_score=final_containment,
+                matching_ngrams=final_matching,
+                total_digest_ngrams=final_digest_ngrams,
                 from_phonetic=True,
             ))
 

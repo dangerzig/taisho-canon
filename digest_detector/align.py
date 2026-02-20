@@ -20,7 +20,6 @@ from .models import (
 )
 from .phonetic import (
     build_equivalence_table,
-    are_phonetically_equivalent,
     phonetic_mapping_for_pair,
 )
 
@@ -145,6 +144,7 @@ def _chain_seeds(
     # DP: dp[i] = max coverage using seeds[0..i] where seed i is included
     weights = [s[1] - s[0] for s in sorted_seeds]
     dp = weights[:]
+    prev = [-1] * n  # predecessor index for backtracking
 
     # Precompute end positions for binary search (sorted ascending since
     # sorted_seeds is sorted by d_end)
@@ -158,33 +158,23 @@ def _chain_seeds(
         best_prev = bisect_right(end_positions, d_start_i, 0, i) - 1
 
         if best_prev >= 0:
-            dp[i] = max(dp[i], dp[best_prev] + weights[i])
+            candidate = dp[best_prev] + weights[i]
+            if candidate > dp[i]:
+                dp[i] = candidate
+                prev[i] = best_prev
 
-    # Also track the max dp up to each index (not necessarily including that seed)
-    max_dp = dp[:]
+    # Find the index with the global max dp value
+    best_idx = 0
     for i in range(1, n):
-        max_dp[i] = max(max_dp[i], max_dp[i - 1])
+        if dp[i] > dp[best_idx]:
+            best_idx = i
 
-    # Backtrack to find which seeds to include
-    # Rebuild: select seeds greedily from right to left
+    # Backtrack via prev chain to reconstruct the optimal solution
     selected = []
-    remaining_coverage = max(dp) if dp else 0
-    i = n - 1
-
-    # Find the index with the max dp value
+    i = best_idx
     while i >= 0:
-        # Find seeds that achieve the target coverage
-        if dp[i] == remaining_coverage:
-            selected.append(sorted_seeds[i])
-            # Find the predecessor
-            d_start_i = sorted_seeds[i][0]
-            remaining_coverage -= weights[i]
-            if remaining_coverage <= 0:
-                break
-            # Jump to rightmost non-overlapping predecessor via binary search
-            i = bisect_right(end_positions, d_start_i, 0, i) - 1
-        else:
-            i -= 1
+        selected.append(sorted_seeds[i])
+        i = prev[i]
 
     selected.reverse()
     return selected
@@ -226,12 +216,19 @@ def _find_phonetic_seeds(
     if d_len < k or s_len < k:
         return []
 
+    # Pre-compute which syllables appear in the digest so we only index
+    # source positions for relevant syllables (reduces index size significantly)
+    digest_syls: set[str] = set()
+    for ch in digest:
+        digest_syls.update(table.get(ch, ()))
+
     # Build index: for each source char, map its syllable values to positions
     # syllable → list of source positions where a char with that syllable appears
     syl_to_positions: dict[str, list[int]] = defaultdict(list)
     for i, ch in enumerate(source):
         for syl in table.get(ch, ()):
-            syl_to_positions[syl].append(i)
+            if syl in digest_syls:
+                syl_to_positions[syl].append(i)
 
     seeds = []
     d_pos = 0
@@ -242,40 +239,45 @@ def _find_phonetic_seeds(
             d_pos += 1
             continue
 
-        # Find source positions where the first digest char has a phonetic match
+        # Find source positions where the first digest char has a phonetic match.
+        # Cap at 500 positions per digest char to prevent O(D*S) blowup when
+        # a syllable like 'sa' maps to many source positions.
         candidate_positions: set[int] = set()
         for syl in d_syls:
             for s_pos in syl_to_positions.get(syl, ()):
                 candidate_positions.add(s_pos)
+                if len(candidate_positions) >= 500:
+                    break
+            if len(candidate_positions) >= 500:
+                break
 
         best_match = None
         for s_pos in candidate_positions:
             if s_pos + k > s_len:
                 continue
 
-            # Check if k consecutive chars are phonetically equivalent
+            # Inline phonetic equivalence check for speed: avoids
+            # per-character function call overhead of are_phonetically_equivalent().
+            # Uses isdisjoint() which short-circuits on first shared element.
             length = 0
-            while (d_pos + length < d_len and
-                   s_pos + length < s_len and
-                   are_phonetically_equivalent(
-                       digest[d_pos + length],
-                       source[s_pos + length],
-                       table)):
-                length += 1
+            diff_count = 0
+            while d_pos + length < d_len and s_pos + length < s_len:
+                dc = digest[d_pos + length]
+                s_ch = source[s_pos + length]
+                if dc == s_ch:
+                    length += 1
+                else:
+                    d_s = table.get(dc)
+                    s_s = table.get(s_ch)
+                    if d_s and s_s and not d_s.isdisjoint(s_s):
+                        length += 1
+                        diff_count += 1
+                    else:
+                        break
 
-            if length >= k:
-                # Require at least 2 differing characters — if all
-                # or almost all chars match exactly, exact/fuzzy
-                # matching already handles it. Requiring 2+ diffs
-                # prevents false positives from single-substitution
-                # coincidences.
-                diff_count = sum(
-                    1 for j in range(length)
-                    if digest[d_pos + j] != source[s_pos + j]
-                )
-                if diff_count >= 2:
-                    if best_match is None or length > best_match[2]:
-                        best_match = (d_pos, s_pos, length)
+            if length >= k and diff_count >= 2:
+                if best_match is None or length > best_match[2]:
+                    best_match = (d_pos, s_pos, length)
 
         if best_match:
             seeds.append(best_match)
@@ -405,16 +407,30 @@ def align_pair(
     # Step 1: Find seeds and deduplicate
     raw_seeds = _find_seeds(digest_text, source_text, source_table=source_table)
 
-    # Deduplicate: keep only the longest seed for each (d_start, s_start).
-    # _find_seeds advances d_pos by 1 each step, so nearby positions often
-    # produce overlapping seeds pointing to the same source region.
+    # Deduplicate by diagonal: seeds with the same (s_start - d_start) offset
+    # describe the same aligned region. Merge overlapping seeds on each diagonal
+    # into the maximal extent. This typically reduces seeds by 5-10x, cutting
+    # redundant work in _extend_seeds and _chain_seeds.
     if raw_seeds:
-        best_seeds: dict[tuple[int, int], int] = {}
+        diagonals: dict[int, list[tuple[int, int, int]]] = defaultdict(list)
         for d_start, s_start, length in raw_seeds:
-            key = (d_start, s_start)
-            if key not in best_seeds or length > best_seeds[key]:
-                best_seeds[key] = length
-        raw_seeds = [(d, s, l) for (d, s), l in best_seeds.items()]
+            diagonals[s_start - d_start].append((d_start, s_start, length))
+
+        deduped = []
+        for seeds_on_diag in diagonals.values():
+            seeds_on_diag.sort()  # sort by d_start
+            cur_d, cur_s, cur_len = seeds_on_diag[0]
+            cur_end = cur_d + cur_len
+            for d_start, s_start, length in seeds_on_diag[1:]:
+                d_end = d_start + length
+                if d_start <= cur_end:  # overlapping on this diagonal
+                    cur_end = max(cur_end, d_end)
+                else:  # gap — emit current, start new
+                    deduped.append((cur_d, cur_s, cur_end - cur_d))
+                    cur_d, cur_s = d_start, s_start
+                    cur_end = d_end
+            deduped.append((cur_d, cur_s, cur_end - cur_d))
+        raw_seeds = deduped
 
     # Early termination: if raw seed coverage is below SHARED_TRADITION_THRESHOLD
     # and phonetic rescan won't run, the pair cannot produce any useful

@@ -89,7 +89,22 @@ def build_char_map(xml_files: list[Path]) -> dict[str, str]:
 
         for char_elem in tree.iter(f'{TEI}char'):
             char_id = char_elem.get(f'{XML}id')
-            if not char_id or char_id in char_map:
+            if not char_id:
+                continue
+            if char_id in char_map:
+                # Check for conflicting definitions across files
+                new_resolved = None
+                for prop in char_elem.iter(f'{TEI}charProp'):
+                    local_name = prop.findtext(f'{TEI}localName')
+                    if local_name == 'normalized form':
+                        value = prop.findtext(f'{TEI}value')
+                        if value:
+                            new_resolved = value
+                            break
+                if new_resolved and new_resolved != char_map[char_id]:
+                    logger.warning(
+                        "Duplicate char_id %s: existing=%r, new=%r (keeping existing)",
+                        char_id, char_map[char_id], new_resolved)
                 continue
 
             resolved = None
@@ -184,6 +199,8 @@ def _extract_text_recursive(
 
     try:
         # Handle <g ref="#CBnnnnn"/> (special character reference)
+        # <g> is a leaf element; skip elem.text to avoid appending fallback
+        # rendering (e.g. "[覆-西+非]") alongside the resolved character.
         if tag == f'{TEI}g':
             ref = elem.get('ref', '')
             if ref.startswith('#'):
@@ -191,6 +208,7 @@ def _extract_text_recursive(
                 resolved = char_map.get(char_id, '')
                 if resolved:
                     results.append((resolved, current_div, current_dharani))
+            return results
 
         # Include text content from this element
         if elem.text:
@@ -489,8 +507,13 @@ def save_results(texts: list[ExtractedText], data_dir: Path = None):
         text_path = texts_dir / f"{text.text_id}.txt"
         text_path.write_text(text.full_text, encoding='utf-8')
 
-        # Collect metadata
+        # Collect metadata (skip texts without metadata, though this
+        # shouldn't happen since extract_all always sets it)
         m = text.metadata
+        if m is None:
+            logger.warning("Text %s has no metadata, skipping in metadata output",
+                           text.text_id)
+            continue
         metadata_list.append({
             'text_id': m.text_id,
             'title': m.title,
