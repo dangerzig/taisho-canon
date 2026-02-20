@@ -5,8 +5,8 @@
 The pipeline detects digest (*chaojing* 抄經) relationships across ~2,459 texts in the Taisho Tripitaka. A "digest" is a shorter text derived by excerpting or condensing a longer source. The pipeline processes the CBETA TEI P5b XML corpus through five sequential stages:
 
 ```
-XML corpus → Extract → Fingerprint/Candidates → Align → Score → Report
-              (1)           (2a/2b)              (3)     (4)     (5)
+XML corpus → Extract → Fingerprint/Candidates → Phonetic Candidates → Align → Score → Report
+              (1)           (2a/2b)                    (2c)            (3)     (4)     (5)
 ```
 
 Entry point: `python3 -m digest_detector.pipeline`
@@ -24,6 +24,11 @@ digest_detector/
   align.py             Stage 3: Seed-and-extend alignment with weighted interval scheduling
   score.py             Stage 4: Classification and confidence scoring
   report.py            Stage 5: Ground truth validation and report generation
+  phonetic.py          Stage 2c: Phonetic transliteration equivalence table and detection
+  cache.py             Disk cache for Stages 1–2c (invalidates on config/corpus changes)
+  fast.py              Cython/fallback dispatcher for performance-critical inner loops
+  _fast.pyx            Cython implementations (fuzzy_extend, find_seeds, phonetic seeds)
+  _fast_fallback.py    Pure-Python fallbacks when Cython is not compiled
   pipeline.py          Orchestrator: runs stages 1–5 sequentially
 
 tests/
@@ -33,6 +38,9 @@ tests/
   test_align.py        Seeds, fuzzy extension, chaining, full alignment
   test_score.py        Classification branches, confidence, multi-source detection
   test_known_pairs.py  Integration tests on T250/T251→T223 (Heart Sutra ground truth)
+  test_phonetic.py     Phonetic equivalence table, transliteration detection, seed finding
+  test_fast.py         Cython vs. fallback equivalence, edge cases for optimized functions
+  test_cache.py        Cache save/load, invalidation on config/corpus changes
 
 docs/                  Research documents (literature review, findings, analyses)
 xml/T/                 CBETA TEI P5b XML corpus (~8,982 files across 58 volumes)
@@ -45,7 +53,8 @@ results/               Pipeline output: JSON relationships, alignments, summary,
 All inter-stage data flows through dataclasses defined in `models.py`:
 
 ```
-TextMetadata          Per-text metadata (title, author, juan count, char count, docNumber refs)
+TextMetadata          Per-text metadata (title, author, juan count, char count, docNumber refs,
+                      dharani_ranges)
   ↓
 DivSegment            A contiguous text region with its cb:div type ("jing", "xu", etc.)
   ↓
@@ -88,7 +97,7 @@ MultiSourceDigest     A text with combined coverage from multiple sources
 
 5. **Segment construction.** Consecutive text regions with the same div type are merged into `DivSegment` objects, with character offsets into the concatenated full text.
 
-6. **Metadata extraction.** Title (zh-Hant, level="m"), author, extent (juan count), docNumber cross-references (parsed from bracket notation like `[Nos. 251-255, 257]`), dharani presence, and div types are extracted from the TEI header and body.
+6. **Metadata extraction.** Title (zh-Hant, level="m"), author, extent (juan count), docNumber cross-references (parsed from bracket notation like `[Nos. 251-255, 257]`), dharani presence, dharani character ranges (`dharani_ranges`), and div types are extracted from the TEI header and body. Dharani ranges record the start/end character offsets of `<cb:div type="dharani">` content within the full text, enabling precise targeting of transliterated passages in later stages.
 
 7. **Parallelization.** Text groups are processed in parallel via `multiprocessing.Pool`.
 
@@ -100,23 +109,23 @@ The `ExtractedText.jing_text` property returns only `jing`-type (sutra body) seg
 
 **Input:** List of `ExtractedText` objects
 
-**Output:** Document frequencies, stop-grams set, inverted index
+**Output:** Document frequencies, stop-grams set, per-text n-gram sets
 
 ### Process
 
-1. **Document frequency computation.** For each text's `full_text`, generate all character 5-grams, hash them, and count how many texts contain each hash. Uses a per-document `seen` set to count each n-gram at most once per document.
+1. **Document frequency computation.** For each text's `full_text`, generate all character 5-grams, hash them with `stable_hash()` (zlib.crc32, deterministic across processes), and count how many texts contain each hash. Uses a per-document `seen` set to count each n-gram at most once per document.
 
 2. **Stop-gram identification.** Any n-gram hash appearing in more than `STOPGRAM_DOC_FREQ` (5%) of all texts is flagged as a stop-gram. These are common Buddhist formulae (如是我聞, etc.) that would produce spurious matches.
 
-3. **Inverted index construction.** For each text's `full_text`, all non-stop 5-gram hashes are indexed as `hash → [(text_id, position), ...]`. This enables O(1) lookup of which texts share a given n-gram.
+3. **N-gram set construction.** For each text's `full_text`, build a `frozenset[int]` of all non-stop 5-gram hashes. Candidate generation then uses C-level set intersection to compute containment scores, avoiding the memory overhead of a full inverted index.
 
 ### Why full_text for indexing?
 
-Both document frequencies and the inverted index use `full_text` (not `jing_text`). Stop-gram identification must reflect actual corpus-wide frequencies, and source texts need their full content indexed since digests can draw from any part (including prefaces).
+Both document frequencies and n-gram sets use `full_text` (not `jing_text`). Stop-gram identification must reflect actual corpus-wide frequencies, and source texts need their full content indexed since digests can draw from any part (including prefaces).
 
 ## Stage 2b: Candidate Generation (`candidates.py`)
 
-**Input:** Texts, inverted index, stop-grams
+**Input:** Texts, per-text n-gram sets, stop-grams
 
 **Output:** List of `CandidatePair` objects, sorted by containment score
 
@@ -128,11 +137,11 @@ Two mechanisms generate candidates:
 1. For each potential digest (texts with `char_count <= MAX_DIGEST_LENGTH` = 50,000):
    - Generate 5-grams from `jing_text` (not full_text — excludes prefaces)
    - Skip stop-grams; count total non-stop n-grams
-   - Look up each n-gram hash in the inverted index
-   - Count how many of the digest's n-grams appear in each source text
-   - `containment = matching_ngrams / total_digest_ngrams`
+   - Compute set intersection with each source text's n-gram set
+   - `containment = |digest_set ∩ source_set| / |digest_set|`
 2. Filter: source must be at least `MIN_SIZE_RATIO` (2x) the digest length
 3. Filter: containment must exceed `MIN_CONTAINMENT` (0.10)
+4. Binary search prefiltering: candidates are sorted by size, skipping sources below `MIN_SIZE_RATIO`
 
 **DocNumber cross-references:**
 1. Parse `docNumber` refs from metadata (e.g., T250 references T251–T255)
@@ -144,7 +153,31 @@ Two mechanisms generate candidates:
 
 ### Complexity
 
-The inverted index makes candidate generation sublinear: only texts sharing at least one non-stop n-gram with the digest are considered, avoiding the O(n²) all-pairs comparison.
+Set intersection via `frozenset` operations runs at C level, making candidate generation efficient. Only texts whose n-gram sets overlap with the digest are scored, avoiding full O(n²) computation.
+
+## Stage 2c: Phonetic Candidate Generation (`candidates.py`, `phonetic.py`)
+
+**Input:** Texts, phonetic equivalence table
+
+**Output:** Additional `CandidatePair` objects (merged with Stage 2b output)
+
+### Purpose
+
+Buddhist texts contain transliterated Sanskrit passages (dharani, mantras) where different translators used different Chinese characters to represent the same Sanskrit syllables. Character-level n-gram matching misses these relationships entirely. Stage 2c detects them using phonetic equivalence.
+
+### Process
+
+1. **Equivalence table construction** (`phonetic.py`). The Digital Dictionary of Buddhism (DDB) is parsed to build a `char → frozenset[str]` table mapping Chinese characters to the Sanskrit syllables they transliterate. Characters with more than `PHONETIC_MAX_SYLLABLES` (5) possible readings are excluded as too ambiguous. Result: 559 characters, ~200 syllable groups.
+
+2. **Transliteration region detection.** For each text, regions containing transliterated Sanskrit are identified via two methods:
+   - XML-annotated `dharani_ranges` from `<cb:div type="dharani">` markup (precise)
+   - Density-based detection: sliding window over the text; regions where >40% of characters appear in the equivalence table are flagged (approximate, higher false-positive rate)
+
+3. **Syllable n-gram fingerprinting.** Within transliteration regions, each character is mapped to its syllable set. Syllable 3-grams are generated and hashed. Per-text syllable n-gram sets are built (analogous to Stage 2a's character n-gram sets).
+
+4. **Phonetic containment scoring.** Set intersection computes phonetic containment between text pairs. Pairs exceeding `PHONETIC_MIN_CONTAINMENT` (0.25) are added as candidates, after stopgram filtering to remove common syllable sequences (appearing in >`PHONETIC_STOPGRAM_DOC_FREQ` texts).
+
+5. **Deduplication.** Phonetic candidates are merged with Stage 2b candidates; pairs already present from character-level matching are not duplicated.
 
 ## Stage 3: Alignment (`align.py`)
 
@@ -177,8 +210,11 @@ Seeds do NOT need to be monotonic in source coordinates — digests can rearrang
 
 **Step 4: Build segments.** The chained seeds become matched segments (exact or fuzzy). Gaps between matched segments become "novel" segments. Together they partition the entire digest text.
 
-**Step 5: Compute statistics.**
-- `coverage` = fraction of digest characters explained by matched segments
+**Step 5: Phonetic rescan of novel segments.**
+If `ENABLE_PHONETIC_SCAN` is set and a phonetic equivalence table is available, novel segments (gaps between matched seeds) are rescanned for phonetic matches. For each novel segment of sufficient length, the algorithm searches the source text for positions where characters are phonetically equivalent (mapping to overlapping syllable sets). Phonetic seeds require at least `PHONETIC_SEED_LENGTH` (5) consecutive phonetically-equivalent characters with at least 2 differing characters (to avoid trivially identical matches). Discovered phonetic seeds are appended to the matched segment list with match type `phonetic`.
+
+**Step 6: Compute statistics.**
+- `coverage` = fraction of digest characters explained by matched segments (exact + fuzzy + phonetic)
 - `novel_fraction` = 1 - coverage
 - `source_span` = fraction of source text that contributes (computed via interval merging)
 - `num_source_regions` = number of disjoint source regions (gaps > 100 chars define region boundaries)
@@ -270,10 +306,16 @@ All tunable parameters are centralized in `config.py`. Key groups:
 | `DIGEST_THRESHOLD` | 0.30 | Coverage for digest |
 | `RETRANSLATION_SIZE_RATIO` | 3.0 | Max ratio for retranslation |
 | `COMMENTARY_AVG_SEG_LEN` | 10 | Below this → commentary |
+| `PHONETIC_SEED_LENGTH` | 5 | Min consecutive phonetically-equivalent chars |
+| `PHONETIC_NGRAM_SIZE` | 3 | Syllable n-gram length for fingerprinting |
+| `PHONETIC_MIN_CONTAINMENT` | 0.25 | Min phonetic containment for candidates |
+| `PHONETIC_STOPGRAM_DOC_FREQ` | 50 | Exclude common syllable n-grams |
+| `PHONETIC_MAX_SYLLABLES` | 5 | Max syllable readings per character |
+| `ENABLE_PHONETIC_SCAN` | True | Enable phonetic rescan in alignment |
 
 ## Test Suite
 
-97 tests across 6 files:
+245 tests across 9 files:
 
 - **test_extract.py** — charDecl resolution, CJK normalization, div type tracking, app/lem handling, metadata extraction
 - **test_fingerprint.py** — n-gram generation, document frequencies, stop-gram thresholds, inverted index structure
@@ -281,6 +323,9 @@ All tunable parameters are centralized in `config.py`. Key groups:
 - **test_align.py** — Seed finding, fuzzy extension, seed chaining (DP), full alignment with novel segments, coverage/span computation
 - **test_score.py** — All 6 classification branches, jing-aware size ratios, confidence weight sum = 1.0, score_all filtering, multi-source detection (union coverage, 10% threshold)
 - **test_known_pairs.py** — Integration tests on real T250/T251/T223 extractions: T250→T223 coverage ≥ 0.50, T251 jing→T223 coverage ≥ 0.30, T250/T251 classified as retranslation not digest
+- **test_phonetic.py** — Phonetic equivalence table construction, transliteration region detection, phonetic seed finding, known dharani pairs (T250→T901)
+- **test_fast.py** — Cython vs. pure-Python fallback equivalence tests, edge cases for optimized functions
+- **test_cache.py** — Cache save/load round-tripping, invalidation on config or corpus changes
 
 Run: `python3 -m pytest tests/ -v`
 
@@ -289,6 +334,7 @@ Run: `python3 -m pytest tests/ -v`
 - **lxml** — XML parsing
 - **tqdm** — Progress bars
 - **pytest** — Testing
+- **Cython** — Optional; compiles `_fast.pyx` for ~3-5x speedup on inner loops
 
 No ML frameworks, no GPU requirements. The pipeline runs on CPU using Python's `multiprocessing` for parallelism.
 
@@ -305,3 +351,9 @@ No ML frameworks, no GPU requirements. The pipeline runs on CPU using Python's `
 5. **Weighted interval scheduling for seed chaining.** Digest authors may rearrange material from the source, so seeds are not required to be monotonic in source coordinates. The DP selects the coverage-maximizing non-overlapping subset regardless of source order.
 
 6. **No Smith-Waterman.** Full dynamic programming alignment (O(nm)) is infeasible for large texts (T223 has ~286,000 characters). The seed-and-extend approach achieves near-linear time in practice by only examining regions anchored by exact k-gram matches.
+
+7. **Cython with pure-Python fallback.** Performance-critical inner loops (fuzzy extension, seed finding, phonetic seed finding) have Cython implementations in `_fast.pyx`. The `fast.py` dispatcher tries to import the compiled module; if unavailable, it falls back to equivalent pure-Python implementations in `_fast_fallback.py`. This ensures the pipeline works without a C compiler while benefiting from ~3-5x speedups when Cython is compiled.
+
+8. **Disk cache for Stages 1-2c.** Text extraction and candidate generation are deterministic given the same corpus and config. `cache.py` saves results to `data/cache/` with a version stamp, config snapshot hash, and corpus content hash. On subsequent runs, the cache is loaded in ~1 second instead of re-running Stages 1-2c (~15 minutes). The cache auto-invalidates when any config parameter, code version, or XML file changes.
+
+9. **Deterministic hashing.** `stable_hash()` uses `zlib.crc32` instead of Python's built-in `hash()`. This is critical for multiprocessing on macOS, where `spawn`-based workers get different hash seeds (PEP 456), breaking cross-process consistency.

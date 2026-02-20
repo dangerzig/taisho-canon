@@ -178,18 +178,23 @@ phrasing** from T223.
 
 ### 3.1 Pipeline Results: Summary
 
-Our pipeline detected **2,812 relationships** across the Taisho canon:
+Our pipeline detected **7,169 relationships** across the Taisho canon:
 
 | Classification   | Count | Description |
 |------------------|------:|-------------|
-| Excerpts         |   132 | Shorter text draws >=80% from the longer text |
-| Digests          |   533 | Shorter text draws 30-80% from the longer text |
-| Commentaries     |   621 | Quotation with added material |
-| Shared tradition | 1,238 | Common content, not direct derivation |
-| Retranslations   |   288 | Similar-length texts, same source, different translations |
+| Excerpts         |   138 | Shorter text draws >=80% from the longer text |
+| Digests          |   549 | Shorter text draws 30-80% from the longer text |
+| Commentaries     |   669 | Quotation with added material |
+| Shared tradition | 5,589 | Common content, not direct derivation |
+| Retranslations   |   224 | Similar-length texts, same source, different translations |
 
-Additionally, **63 multi-source digests** were detected -- texts that draw
-material from multiple longer sources.
+Additionally, **58 multi-source digests** were detected -- texts that draw
+material from multiple longer sources. The large increase in shared tradition
+pairs (from earlier runs) reflects the addition of phonetic transliteration
+detection, which identifies texts sharing transliterated Sanskrit passages
+(dharani, mantras) even when different Chinese characters are used for the same
+Sanskrit syllables. Most of these phonetic candidates resolve to shared tradition
+rather than higher-confidence digest relationships.
 
 ### 3.2 The Heart Sutra Case Study
 
@@ -262,7 +267,7 @@ These numbers are strikingly consistent with Nattier's hypothesis:
    12.89 characters -- much shorter segments, consistent with content overlap
    rather than verbatim extraction.
 
-### 3.4 Broader Patterns in Our 2,812 Relationships
+### 3.4 Broader Patterns in Our 7,169 Relationships
 
 Beyond the Heart Sutra, our dataset reveals several patterns relevant to the
 Chinese-composition question:
@@ -502,13 +507,23 @@ and coverage profiles may provide clues.
 
 ### 5.3 Scale of the Question
 
-Of our 2,812 detected relationships, the 132 excerpts and 533 digests
+Of our 7,169 detected relationships, the 138 excerpts and 549 digests
 are the primary candidates for this analysis. Among these, cases where the source
 text exists in multiple Chinese translations by different translators provide the
-most diagnostic power. Our 288 retranslation pairs identify these multi-translation
+most diagnostic power. Our 224 retranslation pairs identify these multi-translation
 text families. The intersection of these two sets -- digest texts whose sources
 also exist as retranslation groups -- is where our methodology will be most
 powerful.
+
+The addition of phonetic transliteration detection to our pipeline partially
+addresses the cross-translator gap described in Section 5.3. By mapping Chinese
+characters to their Sanskrit syllable values, the pipeline can now detect
+relationships between texts that use different transliteration conventions for
+the same Sanskrit sounds (e.g., 竭帝 vs. 揭帝 for Sanskrit *gate*). This is
+particularly relevant for dharani and mantra passages, where cross-translator
+variation is most pronounced. However, phonetic matching does not yet address
+the broader problem of different translators using entirely different Chinese
+words for the same Sanskrit concepts.
 
 ## 6. Conclusion
 
@@ -522,7 +537,7 @@ verbatim matching** that is the strongest evidence for Chinese-level composition
 
 The Heart Sutra case study, where our pipeline independently confirms Nattier's
 philological argument through computational means, demonstrates the potential of
-this approach. Extending it systematically across the 665 digest relationships
+this approach. Extending it systematically across the 687 digest relationships
 (excerpts + digests) in our dataset could identify previously unrecognized cases of
 Chinese composition and contribute new quantitative evidence to longstanding
 debates about textual authenticity in the Chinese Buddhist canon.

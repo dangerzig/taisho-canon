@@ -4,7 +4,7 @@
 
 The *Taisho shinshu daizokyo* (大正新脩大藏經, hereafter "Taisho"), compiled between 1924 and 1934 under the editorship of Takakusu Junjiro (高楠順次郎) and Watanabe Kaigyoku (渡辺海旭), contains 2,920 numbered texts across 85 volumes (with the first 55 volumes constituting the main canonical collection and volumes 56--85 containing supplementary materials, iconography, and catalogs). Among these texts are numerous cases of what the Chinese Buddhist bibliographic tradition calls *chaojing* (抄經, "digest sutras" or "excerpt scriptures") and *chongyi* (重譯, "retranslations"). Both categories represent forms of textual reduplication within the canon: digests are shorter texts created by excerpting or condensing a longer source, while retranslations are independent translation efforts of the same Indic source text. Despite their importance for understanding the formation and internal structure of the Chinese Buddhist canon, these categories have received uneven scholarly attention.
 
-This review surveys the relevant scholarship in Chinese, Japanese, and English, identifying what has been accomplished and what remains to be done. It provides context for a computational pipeline that has detected 2,812 textual relationships across 1,412 texts in the Taisho, including 132 excerpts, 533 digests, and 288 retranslations -- constituting, to our knowledge, the first corpus-wide computational survey of digest and text-reuse relationships in the Chinese Buddhist canon.
+This review surveys the relevant scholarship in Chinese, Japanese, and English, identifying what has been accomplished and what remains to be done. It provides context for a computational pipeline that has detected 7,169 textual relationships across 1,814 texts in the Taisho, including 138 excerpts, 549 digests, and 224 retranslations -- constituting, to our knowledge, the first corpus-wide computational survey of digest and text-reuse relationships in the Chinese Buddhist canon.
 
 ## 2. The Chinese Bibliographic Tradition and the Identification of Digests
 
@@ -310,7 +310,28 @@ Note that Radich and Norrish's **TACL** (discussed in Section 7.4 above) is purp
 
 While general-purpose tools like TRACER and Passim could in principle be applied to the Chinese Buddhist canon, they have not yet been systematically deployed for this purpose. The specific challenges of classical Chinese Buddhist texts (see Section 7.10 below) may require adaptations or purpose-built tools, which is what our pipeline provides.
 
-### 7.9 Computational Studies of the Pali Canon
+### 7.9 Phonetic Transliteration Detection
+
+One aspect of Chinese Buddhist textual relationships that has received little
+computational attention is the phenomenon of **transliteration variation**: when
+different translators render the same Sanskrit sounds using different Chinese
+characters. This is particularly prominent in dharani (sacred syllable sequences)
+and mantras, where the same Sanskrit phrase -- e.g., *gate gate paragate
+parasamgate bodhi svaha* -- may be transliterated as 竭帝竭帝波羅竭帝 by one
+translator (Kumarajiva) and 揭帝揭帝波羅揭帝 by another (Xuanzang). Character-level
+n-gram matching treats these as entirely different strings.
+
+Our pipeline addresses this through a phonetic equivalence detection module that
+maps Chinese characters to their Sanskrit syllable values using the Digital
+Dictionary of Buddhism (DDB), then performs syllable-level n-gram fingerprinting
+to identify texts sharing transliterated passages despite using different
+characters. This represents, to our knowledge, the first computational approach
+to detecting cross-transliterator relationships at corpus scale in the Chinese
+Buddhist canon. The approach identified 634 text pairs with phonetically
+equivalent passages, including dharani networks that are invisible to pure
+character-level matching.
+
+### 7.10 Computational Studies of the Pali Canon
 
 Relevant methodological parallels can be found in computational studies of the Pali Buddhist canon:
 
@@ -321,7 +342,7 @@ Relevant methodological parallels can be found in computational studies of the P
 
 These Pali-focused efforts provide methodological inspiration but are not directly applicable to the Chinese canon, which presents fundamentally different computational challenges (see Section 7.10).
 
-### 7.10 Challenges Specific to Classical Chinese Buddhist Texts
+### 7.11 Challenges Specific to Classical Chinese Buddhist Texts
 
 Several features of classical Chinese Buddhist texts present particular challenges for computational text reuse detection:
 
@@ -442,11 +463,11 @@ The study of digests and retranslations in the Taisho Tripitaka draws on a schol
 
 Despite this substantial body of scholarship, the systematic enumeration and verification of digest relationships across the entire Taisho has remained an unfinished project until now. The digitization of the canon through CBETA and related projects created the possibility of a comprehensive computational survey, but that possibility had not been realized. The methodological foundations existed -- in text reuse detection algorithms, sequence alignment techniques, and n-gram analysis -- but their application to the specific challenges of the classical Chinese Buddhist corpus required purpose-built tools.
 
-Our computational pipeline fills this gap, detecting 2,812 textual relationships (including 132 excerpts, 533 digests, and 288 retranslations) across 1,412 texts. The pipeline's validation against the Heart Sutra test case -- computationally confirming Nattier's 1992 philological argument with 73.2% coverage of T250 in T223 -- demonstrates that the approach works. The broader results reveal patterns of textual reuse at a scale not previously documented: encyclopedic absorption networks centered on the *Fayuan zhulin*, vinaya derivation chains, Agama extract relationships, dharani collection networks, and the verse-prose pairs of Abhidharma and Yogacara treatises.
+Our computational pipeline fills this gap, detecting 7,169 textual relationships (including 138 excerpts, 549 digests, and 224 retranslations) across 1,814 texts. The pipeline's validation against the Heart Sutra test case -- computationally confirming Nattier's 1992 philological argument with 73.2% coverage of T250 in T223 -- demonstrates that the approach works. The broader results reveal patterns of textual reuse at a scale not previously documented: encyclopedic absorption networks centered on the *Fayuan zhulin*, vinaya derivation chains, Agama extract relationships, dharani collection networks, and the verse-prose pairs of Abhidharma and Yogacara treatises.
 
 The distinction between digests produced in China and shorter texts reflecting genuinely independent Indic sources remains a fundamental analytical challenge, requiring the integration of Chinese, Sanskrit, and Tibetan evidence. But the computational data produced by our pipeline -- particularly the translator-specific matching differentials that serve as a computational signature of Chinese-level composition -- provides a new kind of evidence that complements and extends the philological methods that have been the mainstay of this field.
 
-Much work remains. The 2,812 detected relationships require philological verification; the cross-translator detection gap needs to be addressed through more sophisticated matching algorithms; chronological analysis needs to be integrated to determine directionality; and the results need to be cross-referenced with the traditional catalog classifications. But the foundation for a comprehensive study of textual reuse in the Chinese Buddhist canon is now in place.
+Much work remains. The 7,169 detected relationships require philological verification; the cross-translator detection gap needs to be addressed through more sophisticated matching algorithms; chronological analysis needs to be integrated to determine directionality; and the results need to be cross-referenced with the traditional catalog classifications. But the foundation for a comprehensive study of textual reuse in the Chinese Buddhist canon is now in place.
 
 ## References
 

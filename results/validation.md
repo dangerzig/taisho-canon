@@ -27,7 +27,7 @@ _T251 (Xuanzang Heart Sutra) jing section is a digest of T223_
 
 Detailed scores:
   - classification: digest
-  - confidence: 0.4322
+  - confidence: 0.4683
   - coverage: 0.4462
   - novel_fraction: 0.5538
   - avg_segment_length: 12.89

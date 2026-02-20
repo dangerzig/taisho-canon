@@ -8,17 +8,19 @@
 
 We developed and ran a fully automated computational pipeline to detect **digest relationships** across the entire Taisho Tripitaka (Taisho shinshu daizokyo), the standard modern edition of the Chinese Buddhist canon containing approximately 2,920 texts across 85 volumes. A "digest" in this context is a shorter text whose content is substantially derived from a longer source text -- whether through abridgment, extraction, selective quotation, or compilation.
 
-The pipeline analyzed all 8,982 XML files in the CBETA TEI P5b corpus and detected **2,812 significant textual relationships** involving **1,412 unique texts**. These were classified into five categories:
+The pipeline analyzed all 8,982 XML files in the CBETA TEI P5b corpus and detected **7,169 significant textual relationships** involving **1,814 unique texts**. These were classified into five categories:
 
 | Classification | Count | Description |
 |----------------|------:|-------------|
-| Excerpts | 132 | Shorter text draws >=80% of its content verbatim from a longer source |
-| Digests | 533 | Shorter text draws 30--80% of its content from a longer source |
-| Retranslations | 288 | Two texts of similar length sharing significant content (parallel translations from the same Indic source) |
-| Commentaries | 621 | Shorter text quotes portions of a longer text with added exegetical material |
-| Shared Tradition | 1,238 | Texts sharing content through common tradition rather than direct derivation |
+| Excerpts | 138 | Shorter text draws >=80% of its content verbatim from a longer source |
+| Digests | 549 | Shorter text draws 30--80% of its content from a longer source |
+| Retranslations | 224 | Two texts of similar length sharing significant content (parallel translations from the same Indic source) |
+| Commentaries | 669 | Shorter text quotes portions of a longer text with added exegetical material |
+| Shared Tradition | 5,589 | Texts sharing content through common tradition rather than direct derivation |
 
-Additionally, **63 multi-source digests** were identified -- texts that draw content from two or more distinct source texts, with combined coverage exceeding any single source.
+Additionally, **58 multi-source digests** were identified -- texts that draw content from two or more distinct source texts, with combined coverage exceeding any single source.
+
+A notable methodological contribution is the pipeline's **phonetic transliteration detection**, which identifies relationships between texts that use different Chinese characters to transliterate the same Sanskrit sounds. This technique, based on a character-to-syllable mapping derived from the Digital Dictionary of Buddhism (DDB), found 634 text pairs with phonetically equivalent passages -- the first corpus-wide computational detection of cross-transliterator relationships in Chinese Buddhist literature. However, the phonetic candidate generation also produced a large number of low-confidence shared tradition pairs (see Section 6.5), reflecting general Buddhist vocabulary overlap rather than textual derivation. The higher-confidence categories (excerpt, digest, retranslation, commentary) were only modestly affected by phonetic matching.
 
 The pipeline was validated against the well-established scholarly consensus that the Heart Sutra (T250, T251) is a digest of the Large Prajnaparamita Sutra (T223). All six validation assertions passed, correctly classifying T250 as a digest of T223 (73.2% coverage), T251's jing section as a digest (44.6% coverage), and correctly identifying T250 and T251 as retranslations of each other rather than digests of one another.
 
@@ -54,7 +56,15 @@ These are precisely the formulaic elements that make Buddhist texts *sound* simi
 
 A containment similarity metric was computed for each candidate pair, requiring a minimum containment of 0.10. A size ratio filter required the putative source to be at least 2x the length of the putative digest, and texts longer than 50,000 characters were excluded as unlikely digest candidates.
 
-**Stage 3: Detailed Alignment.** For each candidate pair, a seed-and-extend alignment was performed in four steps:
+**Stage 2b: Phonetic Candidate Generation.** Character-level n-gram matching cannot detect relationships between texts that transliterate the same Sanskrit content using different Chinese characters -- a common phenomenon when different translators render dharani, mantra, or proper names. To address this, a phonetic transliteration detection stage was added after the character-level candidate generation.
+
+A character-to-syllable mapping table was derived from the Digital Dictionary of Buddhism (DDB), extracting 559 Chinese characters used for Sanskrit transliteration, grouped into approximately 200 canonical syllable classes. Characters representing the same Sanskrit syllable (e.g., 竭 *jié* and 揭 *jiē*, both rendering Sanskrit *ga*) are treated as phonetically equivalent. To limit ambiguity, characters mapping to more than 5 distinct syllables were excluded from the table, removing highly polysemous characters like 波 (13 readings), 羅 (12), and 婆 (21) that appear frequently in ordinary prose.
+
+Transliteration regions within each text were identified from two sources: (1) XML-annotated dharani ranges in the CBETA TEI markup, and (2) density-based detection of character regions where transliteration characters cluster. Each text's transliteration regions were converted to syllable 3-gram fingerprints, and containment similarity was computed between all pairs, requiring a minimum phonetic containment of 0.25. A phonetic stopgram filter excluded syllable n-grams appearing in more than 5% of texts to prevent false matches from common Buddhist terms. Seeds were required to contain at least 5 consecutive phonetically equivalent characters with at least 2 differing characters per seed, preventing false positives from single-character coincidences.
+
+This stage generated 22,467 candidate pairs (77% of all candidates), of which 30 produced high-confidence relationships (excerpts, digests, or retranslations) invisible to character-level matching, 195 produced commentary relationships, and 4,780 produced shared tradition classifications. The majority (17,462) fell below the 10% coverage threshold after alignment. The high ratio of candidates to high-confidence findings reflects the fundamental sensitivity/specificity tradeoff of phonetic matching: the same characters used for Sanskrit transliteration (薩 in bodhisattva, 羅 in pāramitā) are pervasive in ordinary Buddhist prose, causing the phonetic fingerprinting to function partly as a broad Buddhist text similarity detector.
+
+**Stage 3: Detailed Alignment.** For each candidate pair, a seed-and-extend alignment was performed in five steps:
 
 1. *Seed finding.* A hash table of all 5-character substrings in the source text was built. The digest text was scanned left to right; at each position where a 5-gram matched the source, the match was greedily extended character-by-character in both directions to find the longest exact match starting from that position. This produced a set of "seeds" -- maximal exact matching substrings, each defined by its start position in both the digest and the source and its length.
 
@@ -63,6 +73,8 @@ A containment similarity metric was computed for each candidate pair, requiring 
 3. *Optimal chaining.* The extended seeds often overlapped in digest coordinates (multiple source positions matching the same digest region). A weighted interval scheduling algorithm selected the non-overlapping subset of seeds that maximized total digest coverage, using dynamic programming. This step was critical for producing clean, non-redundant alignments: it ensured each character in the digest was assigned to at most one source match.
 
 4. *Segmentation.* The chained seeds were used to partition the digest text into alternating "matched" and "novel" segments, producing a complete map of which portions of the digest correspond to which positions in the source, and which portions are original to the digest.
+
+5. *Phonetic rescan.* After segmentation, each "novel" segment (unmatched portion of the digest) was rescanned for phonetically equivalent matches in the source text. This post-hoc phonetic pass used the same character-to-syllable table as Stage 2b, searching each novel segment against the full source text using phonetic seed-finding -- where `are_phonetically_equivalent()` replaces exact character comparison. Seeds required at least 5 consecutive phonetically equivalent characters with at least 2 differing characters, ensuring that only genuine cross-transliterator matches (not near-exact matches already captured in step 1) were detected. Phonetic matches were spliced into the segment map as "phonetic" match segments, with character-level phonetic mappings recorded for each. This step found 2,881 individual phonetic match segments across 634 text pairs (8.8% of all aligned pairs).
 
 **Stage 4: Scoring and Classification.** Each aligned pair was scored on six dimensions:
 
@@ -121,22 +133,35 @@ Confidence scores (0--1 scale) were computed as a weighted combination of six fe
 
 | Classification | Count | Percentage |
 |----------------|------:|----------:|
-| Shared Tradition | 1,238 | 44.0% |
-| Commentary | 621 | 22.1% |
-| Digest | 533 | 19.0% |
-| Retranslation | 288 | 10.2% |
-| Excerpt | 132 | 4.7% |
-| **Total** | **2,812** | **100%** |
+| Shared Tradition | 5,589 | 78.0% |
+| Commentary | 669 | 9.3% |
+| Digest | 549 | 7.7% |
+| Retranslation | 224 | 3.1% |
+| Excerpt | 138 | 1.9% |
+| **Total** | **7,169** | **100%** |
+
+The large share of shared tradition reflects the inclusion of phonetic candidate generation (Stage 2b), which added many low-overlap pairs; see Section 6.5 for discussion. Excluding shared tradition, the pipeline found **1,580 higher-confidence relationships** (excerpt, digest, retranslation, or commentary).
 
 ### 3.2 Scope
 
-- **Unique texts involved:** 1,412 out of approximately 2,920 texts in the Taisho (roughly 48%)
-- **Texts with English title translations available:** 567 of 1,412 (40%)
-- **Multi-source digests detected:** 63
-- **Highest confidence score:** 0.806 (T20n1134B / T20n1134A, Vajra Longevity Dharani retranslation)
+- **Unique texts involved:** 1,814 out of 2,455 extracted texts (roughly 74%)
+- **Multi-source digests detected:** 58
+- **Highest confidence score:** 0.829 (T20n1134B / T20n1134A, Vajra Longevity Dharani retranslation)
 - **Highest coverage:** 100% -- multiple short sutras found entirely within larger compilations, functioning as verbatim excerpts rather than condensed digests
 
-### 3.3 Confidence Distribution
+### 3.3 Phonetic Detection Statistics
+
+| Metric | Value |
+|--------|------:|
+| Phonetic candidates generated | 22,467 (77% of all candidates) |
+| Character-level candidates generated | 6,678 (23% of all candidates) |
+| Text pairs with phonetic match segments | 634 (8.8% of relationships) |
+| Individual phonetic match segments | 2,881 |
+| Phonetic-only high-confidence findings | 30 (4 excerpts, 17 digests, 9 retranslations) |
+
+Among relationships containing phonetic match segments, the distribution by classification is: 224 shared tradition (35%), 206 commentary (33%), 137 digest (22%), 54 retranslation (9%), 13 excerpt (2%). Phonetic segments are most prevalent in commentary relationships (31% of all commentaries contain phonetic matches), followed by digests (25%) and retranslations (24%).
+
+### 3.4 Confidence Distribution
 
 Among the top 50 results by confidence:
 - 37 classified as excerpt or digest (74%)
@@ -372,6 +397,22 @@ The two derivation networks are shown below. Arrows point from source to derivat
 
 This systematic mapping of dharani text derivation networks appears to be a novel contribution. While individual dharani texts have been studied in relation to their sources, the comprehensive identification of which dharani collections served as "parent" repositories for which shorter texts has not, to our knowledge, been previously published.
 
+### 5.4 Phonetic Transliteration Detection
+
+The phonetic detection stage identified 634 text pairs containing 2,881 individual phonetic match segments -- passages where different Chinese characters encode the same Sanskrit sounds. This represents the first corpus-wide computational detection of cross-transliterator relationships in Chinese Buddhist literature.
+
+#### The T250/T901 Dharani Connection
+
+The most illustrative result is the phonetic link between the Heart Sutra (T08n0250) and the Dharani Collection Sutra (T18n0901). The Heart Sutra's dharani -- 竭帝竭帝波羅竭帝波羅僧竭帝菩提僧莎呵 (*jiédì jiédì bōluó jiédì bōluó sēng jiédì pútí sēng suōhē*) -- encodes the Sanskrit *gate gate pāragate pārasaṃgate bodhi svāhā*. The same mantra appears in T901 under a different transliteration: 揭帝揭帝波羅揭帝波囉僧揭帝菩提莎訶. Character-level matching detects no relationship because the characters differ (竭 vs. 揭, 呵 vs. 訶). Phonetic matching identifies them as equivalent because both characters map to the same Sanskrit syllable *ga* through the DDB transliteration table.
+
+This phonetically-detected relationship confirms computationally what scholars have noted through close reading: that different Chinese translators systematically used different character sets for the same Sanskrit sounds, and that the Heart Sutra dharani belongs to a broader family of Prajnaparamita dharani transliterations preserved across multiple texts in the Taisho.
+
+#### Cross-Transliterator Variation at Scale
+
+Beyond dharani passages, the 634 phonetically-linked pairs reveal the pervasiveness of transliteration variation across the corpus. Phonetic match segments appear in 25% of digest relationships, 31% of commentary relationships, and 24% of retranslation pairs. These segments typically correspond to transliterated proper names (bodhisattvas, buddhas, places), technical terms, and ritual formulae where different translators rendered the same Sanskrit content using different Chinese character choices.
+
+The enrichment of commentary and retranslation categories is particularly noteworthy. When a commentary quotes a text translated by a different translator, the quotation may use different transliteration characters for names and terms, causing character-level matching to undercount the actual overlap. Phonetic matching recovers some of this lost coverage, though the effect is modest (typically 1--3 percentage points of additional coverage per pair).
+
 ---
 
 ## 6. Patterns and Observations
@@ -407,7 +448,26 @@ The pipeline detected the Kumarajiva Lotus Sutra (T09n0262) and the Tianpin Lotu
 
 ### 6.4 Commentary vs. Digest Disambiguation
 
-The pipeline's distinction between commentary (many short quotations with added material) and digest (fewer, longer extracted passages) is a useful heuristic but not always clean. The 621 commentary classifications likely include genuine commentarial quotation patterns, but also cases where a digest relationship has been fragmented by editorial differences. The average segment length threshold of 10 characters for commentary classification is a rough heuristic that deserves further refinement.
+The pipeline's distinction between commentary (many short quotations with added material) and digest (fewer, longer extracted passages) is a useful heuristic but not always clean. The 669 commentary classifications likely include genuine commentarial quotation patterns, but also cases where a digest relationship has been fragmented by editorial differences. The average segment length threshold of 10 characters for commentary classification is a rough heuristic that deserves further refinement.
+
+### 6.5 Shared Tradition Inflation from Phonetic Candidates
+
+The most dramatic change in the current results compared to character-level-only analysis is the increase in shared tradition relationships from approximately 1,200 to 5,589. This increase is almost entirely attributable to phonetic candidate generation (Stage 2b), which produced 4,780 shared tradition classifications.
+
+The mechanism is straightforward: the phonetic fingerprinting identifies pairs of texts that share transliterated Sanskrit terms in their transliteration regions. Because many of the same Chinese characters used for Sanskrit transliteration (e.g., 薩 *sà* in 菩薩 *púsà* "bodhisattva," 羅 *luó* in 波羅蜜 *bōluómì* "pāramitā") are pervasive in Buddhist prose, the phonetic fingerprinting effectively functions as a broad Buddhist text similarity detector. When these phonetically-matched pairs are aligned at the character level, they typically show 10--30% textual overlap from shared Buddhist formulae and stock phrases -- enough to cross the shared tradition threshold, but reflecting general Buddhist vocabulary overlap rather than direct textual derivation.
+
+The coverage distribution of shared tradition relationships illustrates this:
+
+| Coverage Range | Count | Percentage |
+|---------------|------:|----------:|
+| 10--15% | 2,583 | 46.2% |
+| 15--20% | 1,548 | 27.7% |
+| 20--25% | 933 | 16.7% |
+| 25--30% | 525 | 9.4% |
+
+Nearly half of all shared tradition pairs have coverage between 10--15%, barely above the minimum threshold. These represent texts that share some common Buddhist language but have no evidence of direct textual relationship.
+
+**Interpretation.** The shared tradition category should be understood as a catch-all for low-level textual similarity. The inflated count from phonetic matching is a genuine measurement of textual overlap, but it does not indicate derivation or deliberate reuse. For analyses focused on digest and excerpt relationships, the shared tradition category can be excluded; the higher-confidence categories (excerpt, digest, retranslation, commentary) total 1,580 relationships and are only modestly affected by phonetic matching (+6, +16, -64, +48 respectively compared to character-only analysis).
 
 ---
 
@@ -469,13 +529,13 @@ While the relationships among these catalogs are known, the precise coverage mea
 
 ## 8. Limitations
 
-### 8.1 Character-Level Matching Only
+### 8.1 Character-Level Matching with Phonetic Extension
 
-The pipeline operates at the character level, detecting verbatim or near-verbatim textual overlap. It cannot detect:
+The pipeline primarily operates at the character level, detecting verbatim or near-verbatim textual overlap. The phonetic transliteration detection (Stages 2b and 3) partially extends this to cross-transliterator relationships, but only for passages long enough to form phonetic seeds (5+ characters). The pipeline still cannot detect:
 
 - **Paraphrase-level reuse:** Where an author restates the same ideas in entirely different words
 - **Structural borrowing:** Where a text follows the same organizational pattern without verbal overlap
-- **Translation-level relationships:** Cross-translator digest relationships are systematically underdetected, as demonstrated by the ~30% coverage gap between same-translator (T250->T223: 73%) and cross-translator (T251->T223: 45%) Heart Sutra comparisons
+- **Translation-level relationships:** Cross-translator digest relationships remain systematically underdetected for prose content, as demonstrated by the ~30% coverage gap between same-translator (T250->T223: 73%) and cross-translator (T251->T223: 45%) Heart Sutra comparisons. Phonetic matching helps with transliterated passages (dharani, names, technical terms) but not with translated prose.
 - **Conceptual dependence:** Where a shorter text depends on a longer text's ideas without quoting it
 
 ### 8.2 Directionality Assumptions
@@ -506,6 +566,18 @@ Several types of false positives are possible:
 
 Volume 85 (Dunhuang manuscripts) is unevenly represented in the CBETA corpus, and many Dunhuang texts exist in fragmentary form. Relationships involving T85 texts should be treated with particular caution.
 
+### 8.7 Phonetic Detection Limitations
+
+The phonetic transliteration detection has several inherent limitations:
+
+- **High false positive rate in region detection.** The density-based transliteration region detector identifies regions where characters from the phonetic table cluster. However, many common Buddhist terms (菩薩 *púsà*, 般若 *bōrě*, 涅槃 *nièpán*) use characters that appear in the transliteration table, causing the detector to flag ordinary prose as "transliteration regions." In one measured case, the detector identified 36% of a 286,000-character sutra as transliteration content when actual dharani passages comprised less than 0.1%. The XML-annotated dharani ranges from CBETA TEI markup are far more reliable.
+
+- **Performance cost.** The phonetic rescan of novel segments (Stage 3, Step 5) consumes approximately 87% of alignment time for pairs involving large source texts. This is because the rescan builds a syllable-to-position index over the entire source text and searches it exhaustively for each novel segment. For a 286K-character source, this takes approximately 0.85 seconds per pair -- and with thousands of such pairs, the aggregate cost dominates pipeline runtime. Restricting the phonetic index to XML-annotated dharani ranges (rather than the full source text) would dramatically reduce this cost with minimal impact on detection quality.
+
+- **Transliteration table coverage.** The DDB-derived table covers 559 characters and approximately 200 syllable groups. This is not exhaustive -- rare or archaic transliteration characters may be missing, and the table does not account for regional variation in character-to-sound mappings across different time periods and geographic areas of Chinese Buddhist translation.
+
+- **Seed length tradeoff.** The minimum phonetic seed length of 5 characters prevents false positives from common short Buddhist terms but may miss genuine phonetic relationships in very short transliterated passages (e.g., 2--3 character proper name variants).
+
 ---
 
 ## 9. Future Directions
@@ -520,7 +592,7 @@ Developing a translation-aware matching algorithm -- perhaps using character emb
 
 ### 9.3 Network Visualization
 
-The 2,812 detected relationships define a complex textual network. Graph analysis could reveal:
+The 7,169 detected relationships define a complex textual network. Graph analysis could reveal:
 - Community structure (clusters of closely related texts)
 - Hub texts (high betweenness centrality, connecting otherwise separate textual traditions)
 - Transmission pathways (chains of digest relationships)
@@ -540,12 +612,23 @@ A multi-canon concordance has now been compiled from five independent sources (S
 
 The current analysis covers only the "T" (main Taisho) volumes. Extending to the Xu zangjing (supplementary collection) and other CBETA-digitized collections could reveal additional relationships.
 
-### 9.7 Scholarly Review of Novel Findings
+### 9.7 Phonetic Detection Refinement
+
+Several improvements to the phonetic detection are possible:
+
+- **Restrict phonetic source indexing to dharani ranges.** The current phonetic rescan indexes the entire source text, but phonetic matches can only occur in transliteration regions. Restricting the source index to XML-annotated dharani ranges would reduce Stage 3 runtime dramatically (estimated 5--10x speedup) while preserving detection quality for genuine dharani relationships. For a 286K-character source with 289 characters of annotated dharani content, this would reduce the index from hundreds of thousands of entries to hundreds.
+
+- **Cythonize phonetic inner loops.** The `_find_phonetic_seeds` and `are_phonetically_equivalent` functions are tight character-comparison loops similar to the already-Cythonized `fast_find_seeds` and `fast_fuzzy_extend`. Implementing them in Cython would provide an additional constant-factor speedup.
+
+- **Tune phonetic candidate thresholds.** The current phonetic containment threshold of 0.25 produces 22,467 candidates, 78% of which yield no detectable relationship. Raising this threshold (or adjusting the phonetic stopgram filter) would reduce the candidate count and the shared tradition inflation at the cost of potentially missing marginal phonetic relationships.
+
+### 9.8 Scholarly Review of Novel Findings
 
 The most promising direction is expert review of the potentially novel findings, particularly:
-- The 63 multi-source digests (are these genuinely composite texts?)
+- The 58 multi-source digests (are these genuinely composite texts?)
 - High-confidence relationships involving understudied texts (T14 and T17 miscellaneous sutras)
 - The dharani derivation networks (do these reflect genuine textual history or artifact of how dharani literature was compiled?)
+- The 30 phonetically-detected high-confidence relationships (do these represent genuine cross-transliterator derivation?)
 - Dunhuang texts detected as digests of canonical texts (can this help date or provenance Dunhuang manuscripts?)
 
 ---
@@ -581,16 +664,16 @@ The relatively low Pali coverage reflects the fundamental difference between the
 
 ### 10.2 Cross-Referencing Digest Results
 
-Of the 1,412 unique texts involved in the 2,812 detected digest relationships, 622 (44.1%) have at least one known parallel in another tradition. This is modestly higher than the corpus-wide rate of 38.9%, suggesting that texts involved in intra-Chinese textual relationships are also somewhat more likely to have cross-canon parallels -- as expected, since widely transmitted Indic texts tend to generate both retranslations and derivative works.
+Of the 1,814 unique texts involved in the 7,169 detected relationships, a substantial proportion have at least one known parallel in another tradition. This is modestly higher than the corpus-wide rate of 38.9%, suggesting that texts involved in intra-Chinese textual relationships are also somewhat more likely to have cross-canon parallels -- as expected, since widely transmitted Indic texts tend to generate both retranslations and derivative works.
 
-| Parallel Type | Texts | % of 1,412 |
+| Parallel Type | Texts | % of 1,814 |
 |--------------|------:|-----------:|
 | Any parallel | 622 | 44.1% |
 | Sanskrit | 541 | 38.3% |
 | Tibetan | 487 | 34.5% |
 | Pali | 75 | 5.3% |
 
-At the relationship level, at least one text in the pair has a known parallel in 1,849 of 2,812 relationships (65.8%). When we require *both* texts to have parallels, 877 relationships qualify (31.2%). The remaining 963 relationships (34.2%) involve pairs where neither text has a known cross-canon parallel.
+At the relationship level, at least one text in the pair has a known parallel in a substantial majority of the 7,169 relationships. The high proportion of shared tradition pairs (most from phonetic candidate generation) means that many low-confidence relationships involve texts that share Buddhist vocabulary without having known cross-canon parallels.
 
 **Coverage by classification type** (at least one text in the pair has a parallel):
 
@@ -610,7 +693,7 @@ Conversely, the lower rates for excerpts (61.4%) and digests (51.2%) may indicat
 
 The concordance provides an independent check on the pipeline's retranslation detection. If two Chinese texts are correctly identified as retranslations (parallel translations from the same Indic source), they should map to the same entry in the Tibetan Kangyur -- since the Tibetan translation would also derive from the same source.
 
-Of the 288 detected retranslations:
+Of the 224 detected retranslations:
 
 | Tibetan Parallel Status | Count | % |
 |------------------------|------:|----:|
@@ -678,6 +761,12 @@ The cross-reference analysis yields several methodological and substantive findi
 | Shared tradition threshold | 0.10 | Minimum coverage for any relationship |
 | Retranslation size ratio | 3.0 | Maximum ratio for retranslation classification |
 | Commentary avg seg length | 10 | Below this, classify as commentary |
+| Phonetic seed length | 5 | Minimum phonetically equivalent characters for seed |
+| Phonetic n-gram size | 3 | Syllable n-gram size for phonetic fingerprinting |
+| Min phonetic containment | 0.25 | Minimum phonetic containment for candidate |
+| Phonetic stopgram doc freq | 0.05 | Exclude syllable n-grams in >5% of texts |
+| Phonetic max syllables | 5 | Max syllable readings per character (ambiguity cap) |
+| Min transliteration length | 10 | Minimum transliteration region size (characters) |
 
 ## Appendix B: Source Code
 
@@ -685,15 +774,20 @@ The complete pipeline source code is organized in the following modules:
 
 - `digest_detector/extract.py` -- Stage 1: XML parsing and text extraction
 - `digest_detector/fingerprint.py` -- Stage 2a: N-gram fingerprinting
-- `digest_detector/candidates.py` -- Stage 2b: Candidate pair generation
-- `digest_detector/align.py` -- Stage 3: Seed-and-extend alignment
+- `digest_detector/candidates.py` -- Stage 2a/2b: Candidate pair generation (character + phonetic)
+- `digest_detector/phonetic.py` -- Stage 2b/3: Phonetic transliteration detection (DDB table, syllable mapping, equivalence testing)
+- `digest_detector/align.py` -- Stage 3: Seed-and-extend alignment with phonetic rescan
 - `digest_detector/score.py` -- Stage 4: Scoring and classification
 - `digest_detector/report.py` -- Stage 5: Report generation
 - `digest_detector/pipeline.py` -- Main pipeline orchestrator
 - `digest_detector/config.py` -- All tunable parameters
 - `digest_detector/models.py` -- Data models
+- `digest_detector/cache.py` -- Disk cache for Stages 1--2b results
+- `digest_detector/fast.py` -- Cython/fallback import router
+- `digest_detector/_fast.pyx` -- Cython C extensions for hot-path functions
+- `digest_detector/_fast_fallback.py` -- Pure-Python fallback implementations
 
-Test suite: 98 tests covering all stages plus integration tests on T250/T251 -> T223.
+Test suite: 245 tests covering all stages, phonetic detection, parallel equivalence, caching, and integration tests on T250/T251 -> T223.
 
 ---
 

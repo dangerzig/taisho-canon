@@ -2,19 +2,19 @@
 
 ## Summary Statistics
 
-- Total relationships detected: 2812
-- excerpt: 132
-- digest: 533
-- commentary: 621
-- shared_tradition: 1238
-- retranslation: 288
-- Multi-source digests: 63
+- Total relationships detected: 7169
+- excerpt: 138
+- digest: 549
+- commentary: 669
+- shared_tradition: 5589
+- retranslation: 224
+- Multi-source digests: 58
 
 ## Top Digest Relationships (by confidence)
 
 | Rank | Digest | Source | Classification | Confidence | Coverage |
 |------|--------|--------|----------------|------------|----------|
-| 1 | T20n1134B (金剛壽命陀羅尼經) | T20n1134A | retranslation | 0.805 | 97.0% |
+| 1 | T20n1134B (金剛壽命陀羅尼經) | T20n1134A | retranslation | 0.829 | 97.0% |
 | 2 | T24n1501 (菩薩戒本) | T30n1579 | excerpt | 0.784 | 97.0% |
 | 3 | T02n0115 (佛說馬有八態譬人經) | T53n2122 | excerpt | 0.783 | 98.3% |
 | 4 | T24n1467b (佛說犯戒罪報輕重經) | T24n1467a | retranslation | 0.778 | 98.7% |
@@ -26,44 +26,44 @@
 | 10 | T14n0502 (佛為年少比丘說正事經) | T02n0099 | excerpt | 0.743 | 100.0% |
 | 11 | T29n1560 (阿毘達磨俱舍論本頌) | T29n1558 | excerpt | 0.740 | 99.5% |
 | 12 | T02n0110 (佛說三轉法輪經) | T24n1451 | excerpt | 0.737 | 100.0% |
-| 13 | T16n0663 (金光明經) | T16n0664 | retranslation | 0.736 | 89.8% |
-| 14 | T31n1601 (辯中邊論頌) | T31n1600 | excerpt | 0.736 | 99.7% |
-| 15 | T09n0262 (妙法蓮華經) | T09n0264 | retranslation | 0.735 | 92.0% |
-| 16 | T10n0295 (大方廣佛華嚴經入法界品) | T10n0279 | excerpt | 0.733 | 81.6% |
-| 17 | T21n1368 (佛說大七寶陀羅尼經) | T21n1336 | excerpt | 0.733 | 100.0% |
-| 18 | T20n1046 (六字大陀羅尼呪經) | T21n1336 | excerpt | 0.726 | 100.0% |
-| 19 | T22n1431 (四分比丘尼戒本) | T22n1428 | excerpt | 0.725 | 81.0% |
+| 13 | T31n1601 (辯中邊論頌) | T31n1600 | excerpt | 0.736 | 99.7% |
+| 14 | T10n0295 (大方廣佛華嚴經入法界品) | T10n0279 | excerpt | 0.734 | 81.7% |
+| 15 | T21n1368 (佛說大七寶陀羅尼經) | T21n1336 | excerpt | 0.733 | 100.0% |
+| 16 | T18n0907 (佛頂尊勝心破地獄轉業障出三界祕密陀羅尼) | T18n0905 | excerpt | 0.732 | 91.0% |
+| 17 | T20n1046 (六字大陀羅尼呪經) | T21n1336 | excerpt | 0.726 | 100.0% |
+| 18 | T22n1431 (四分比丘尼戒本) | T22n1428 | excerpt | 0.726 | 81.0% |
+| 19 | T02n0132a (佛說食施獲五福報經) | T53n2122 | excerpt | 0.723 | 82.0% |
 | 20 | T30n1570 (廣百論本) | T30n1571 | excerpt | 0.723 | 99.7% |
-| 21 | T02n0132a (佛說食施獲五福報經) | T53n2122 | excerpt | 0.723 | 82.0% |
-| 22 | T10n0295 (大方廣佛華嚴經入法界品) | T09n0278 | excerpt | 0.721 | 100.0% |
-| 23 | T48n2014 (永嘉證道歌) | T51n2076 | excerpt | 0.718 | 99.1% |
-| 24 | T48n2010 (信心銘) | T51n2076 | excerpt | 0.717 | 100.0% |
-| 25 | T45n1887A (華嚴一乘法界圖) | T45n1887B | excerpt | 0.717 | 86.5% |
-| 26 | T48n2010 (信心銘) | T49n2036 | excerpt | 0.716 | 100.0% |
-| 27 | T31n1593 (攝大乘論) | T31n1595 | excerpt | 0.716 | 96.3% |
-| 28 | T31n1594 (攝大乘論本) | T31n1597 | excerpt | 0.716 | 98.2% |
-| 29 | T12n0369 (阿彌陀佛說呪) | T85n2827 | excerpt | 0.714 | 96.6% |
-| 30 | T46n1927 (十不二門) | T33n1717 | excerpt | 0.713 | 100.0% |
-| 31 | T31n1594 (攝大乘論本) | T31n1598 | excerpt | 0.711 | 95.9% |
-| 32 | T12n0373 (後出阿彌陀佛偈) | T47n1963 | excerpt | 0.711 | 98.9% |
-| 33 | T85n2747 (挾註波羅蜜多心經) | T85n2746 | excerpt | 0.710 | 81.5% |
-| 34 | T25n1514 (能斷金剛般若波羅蜜多經論頌) | T25n1513 | excerpt | 0.709 | 95.3% |
-| 35 | T31n1586 (唯識三十論頌) | T31n1585 | excerpt | 0.707 | 80.0% |
-| 36 | T85n2918 (釋家觀化還愚經) | T04n0211 | excerpt | 0.704 | 100.0% |
-| 37 | T02n0132a (佛說食施獲五福報經) | T54n2123 | digest | 0.704 | 79.6% |
-| 38 | T40n1810 (尼羯磨) | T40n1809 | retranslation | 0.704 | 83.9% |
-| 39 | T15n0615 (菩薩訶色欲法經) | T47n1967 | excerpt | 0.702 | 99.3% |
-| 40 | T25n1518 (佛母般若波羅蜜多圓集要義論) | T25n1517 | excerpt | 0.702 | 90.3% |
-| 41 | T20n1138b (金剛祕密善門陀羅尼經) | T21n1336 | excerpt | 0.702 | 100.0% |
-| 42 | T03n0175b (佛說睒子經) | T03n0175c | retranslation | 0.702 | 85.1% |
-| 43 | T19n1013 (阿難陀目佉尼呵離陀經) | T19n1015 | retranslation | 0.698 | 85.3% |
-| 44 | T48n2010 (信心銘) | T48n2023 | excerpt | 0.696 | 100.0% |
-| 45 | T24n1483b (佛說目連問戒律中五百輕重事經) | T24n1483a | retranslation | 0.695 | 87.7% |
-| 46 | T85n2864 (進旨) | T85n2859 | excerpt | 0.694 | 100.0% |
-| 47 | T21n1352 (佛說陀隣尼鉢經) | T21n1336 | excerpt | 0.690 | 99.8% |
+| 21 | T10n0295 (大方廣佛華嚴經入法界品) | T09n0278 | excerpt | 0.721 | 100.0% |
+| 22 | T48n2014 (永嘉證道歌) | T51n2076 | excerpt | 0.718 | 99.1% |
+| 23 | T48n2010 (信心銘) | T51n2076 | excerpt | 0.717 | 100.0% |
+| 24 | T45n1887A (華嚴一乘法界圖) | T45n1887B | excerpt | 0.717 | 86.5% |
+| 25 | T48n2010 (信心銘) | T49n2036 | excerpt | 0.716 | 100.0% |
+| 26 | T31n1593 (攝大乘論) | T31n1595 | excerpt | 0.716 | 96.3% |
+| 27 | T31n1594 (攝大乘論本) | T31n1597 | excerpt | 0.716 | 98.2% |
+| 28 | T12n0369 (阿彌陀佛說呪) | T85n2827 | excerpt | 0.714 | 96.6% |
+| 29 | T46n1927 (十不二門) | T33n1717 | excerpt | 0.713 | 100.0% |
+| 30 | T31n1594 (攝大乘論本) | T31n1598 | excerpt | 0.711 | 95.9% |
+| 31 | T12n0373 (後出阿彌陀佛偈) | T47n1963 | excerpt | 0.711 | 98.9% |
+| 32 | T85n2747 (挾註波羅蜜多心經) | T85n2746 | excerpt | 0.710 | 81.5% |
+| 33 | T25n1514 (能斷金剛般若波羅蜜多經論頌) | T25n1513 | excerpt | 0.709 | 95.3% |
+| 34 | T31n1586 (唯識三十論頌) | T31n1585 | excerpt | 0.707 | 80.0% |
+| 35 | T85n2918 (釋家觀化還愚經) | T04n0211 | excerpt | 0.704 | 100.0% |
+| 36 | T02n0132a (佛說食施獲五福報經) | T54n2123 | digest | 0.704 | 79.6% |
+| 37 | T15n0615 (菩薩訶色欲法經) | T47n1967 | excerpt | 0.702 | 99.3% |
+| 38 | T25n1518 (佛母般若波羅蜜多圓集要義論) | T25n1517 | excerpt | 0.702 | 90.3% |
+| 39 | T20n1138b (金剛祕密善門陀羅尼經) | T21n1336 | excerpt | 0.702 | 100.0% |
+| 40 | T03n0175b (佛說睒子經) | T03n0175c | retranslation | 0.702 | 85.1% |
+| 41 | T19n1013 (阿難陀目佉尼呵離陀經) | T19n1015 | retranslation | 0.698 | 85.3% |
+| 42 | T48n2010 (信心銘) | T48n2023 | excerpt | 0.696 | 100.0% |
+| 43 | T85n2864 (進旨) | T85n2859 | excerpt | 0.694 | 100.0% |
+| 44 | T21n1352 (佛說陀隣尼鉢經) | T21n1336 | excerpt | 0.690 | 99.8% |
+| 45 | T15n0623 (佛說如來獨證自誓三昧經) | T15n0622 | retranslation | 0.689 | 92.5% |
+| 46 | T12n0366 (佛說阿彌陀經) | T85n2827 | excerpt | 0.689 | 100.0% |
+| 47 | T08n0232 (文殊師利所說摩訶般若波羅蜜經) | T11n0310 | excerpt | 0.686 | 97.1% |
 | 48 | T19n0990 (大雲經祈雨壇法) | T18n0864A | excerpt | 0.685 | 100.0% |
-| 49 | T19n1027b (金剛光焰止風雨陀羅尼經) | T19n1027a | retranslation | 0.682 | 99.5% |
-| 50 | T12n0369 (阿彌陀佛說呪) | T53n2122 | excerpt | 0.680 | 87.4% |
+| 49 | T02n0111 (佛說相應相可經) | T02n0101 | digest | 0.684 | 73.4% |
+| 50 | T19n1020 (大方廣佛花嚴經入法界品頓證毘盧遮那法身字輪瑜伽儀軌) | T36n1736 | excerpt | 0.684 | 98.5% |
 
 ## Cluster Analysis: Source Texts with Multiple Digests
 
@@ -98,25 +98,26 @@
 - T01n0016 (尸迦羅越六方禮經): digest, coverage=54.3%, confidence=0.535
 - T03n0183 (一切智光明仙人慈心因緣不食肉經): digest, coverage=58.1%, confidence=0.524
 - T14n0497 (佛說摩訶迦葉度貧母經): digest, coverage=60.9%, confidence=0.523
+- T54n2123 (諸經要集): excerpt, coverage=84.0%, confidence=0.519
 - T17n0751a (佛說五無反復經): digest, coverage=74.9%, confidence=0.518
 - T17n0800 (佛說無上處經): digest, coverage=59.9%, confidence=0.513
+- T14n0540b (佛說樹提伽經): digest, coverage=62.6%, confidence=0.507
 - T01n0043 (閻羅王五天使者經): digest, coverage=54.8%, confidence=0.507
-- T14n0540b (佛說樹提伽經): digest, coverage=62.1%, confidence=0.506
 - T14n0507 (佛說未生冤經): digest, coverage=52.9%, confidence=0.506
-- T03n0168 (太子墓魄經): digest, coverage=64.2%, confidence=0.505
+- T03n0168 (太子墓魄經): digest, coverage=64.5%, confidence=0.505
+- T13n0409 (觀虛空藏菩薩經): digest, coverage=50.8%, confidence=0.505
 - T02n0148 (國王不梨先泥十夢經): digest, coverage=61.9%, confidence=0.503
 - T14n0544 (辯意長者子經): digest, coverage=54.1%, confidence=0.500
 - T51n2082 (冥報記): digest, coverage=65.4%, confidence=0.497
 - T52n2106 (集神州三寶感通錄): digest, coverage=68.3%, confidence=0.495
+- T17n0749 (佛說因緣僧護經): digest, coverage=62.8%, confidence=0.494
 - T02n0150B (九橫經): digest, coverage=59.7%, confidence=0.493
-- T17n0749 (佛說因緣僧護經): digest, coverage=62.3%, confidence=0.492
 - T14n0503 (比丘避女惡名欲自殺經): digest, coverage=38.9%, confidence=0.490
 - T49n2030 (大阿羅漢難提蜜多羅所說法住記): digest, coverage=47.6%, confidence=0.486
 - T04n0195 (佛說十二遊經): digest, coverage=48.5%, confidence=0.486
-- T13n0409 (觀虛空藏菩薩經): digest, coverage=50.8%, confidence=0.483
 - T24n1502 (菩薩受齋經): digest, coverage=45.9%, confidence=0.481
 - T14n0525 (佛說長者子懊惱三處經): digest, coverage=49.1%, confidence=0.479
-- T03n0174 (菩薩睒子經): digest, coverage=55.8%, confidence=0.475
+- T03n0174 (菩薩睒子經): digest, coverage=55.9%, confidence=0.474
 - T16n0683 (佛說諸德福田經): digest, coverage=48.4%, confidence=0.470
 - T52n2107 (道宣律師感通錄): digest, coverage=53.2%, confidence=0.470
 - T17n0809 (佛說乳光佛經): digest, coverage=49.6%, confidence=0.466
@@ -124,7 +125,7 @@
 - T03n0171 (太子須大拏經): digest, coverage=53.3%, confidence=0.461
 - T45n1898 (律相感通傳): digest, coverage=51.4%, confidence=0.460
 - T17n0793 (佛說佛醫經): digest, coverage=34.5%, confidence=0.459
-- T01n0061 (受新歲經): digest, coverage=48.5%, confidence=0.458
+- T01n0061 (受新歲經): digest, coverage=48.5%, confidence=0.459
 - T17n0747a (佛說罪福報應經): digest, coverage=51.5%, confidence=0.457
 - T03n0176 (師子月佛本生經): digest, coverage=48.9%, confidence=0.455
 - T21n1329 (佛說呪小兒經): digest, coverage=47.9%, confidence=0.454
@@ -134,7 +135,7 @@
 - T03n0181a (九色鹿經): digest, coverage=47.8%, confidence=0.451
 - T14n0540a (佛說樹提伽經): digest, coverage=49.4%, confidence=0.450
 - T17n0751b (佛說五無返復經): digest, coverage=55.4%, confidence=0.450
-- T03n0181b (佛說九色鹿經): digest, coverage=49.4%, confidence=0.444
+- T03n0181b (佛說九色鹿經): digest, coverage=49.8%, confidence=0.445
 - T01n0004 (七佛父母姓字經): digest, coverage=50.0%, confidence=0.442
 - T24n1465 (舍利弗問經): digest, coverage=39.7%, confidence=0.432
 - T14n0514 (佛說諫王經): digest, coverage=32.6%, confidence=0.429
@@ -144,31 +145,33 @@
 - T03n0175c (佛說睒子經): digest, coverage=46.6%, confidence=0.419
 - T03n0175b (佛說睒子經): digest, coverage=45.7%, confidence=0.416
 - T24n1492 (佛說舍利弗悔過經): digest, coverage=39.6%, confidence=0.413
-- T85n2821 (諸經要略文): digest, coverage=32.2%, confidence=0.411
+- T85n2821 (諸經要略文): digest, coverage=32.4%, confidence=0.409
 - T16n0693 (佛說造立形像福報經): digest, coverage=32.3%, confidence=0.408
 - T17n0752 (佛說五無返復經): digest, coverage=48.4%, confidence=0.406
 - T14n0510 (採花違王上佛授決號妙花經): digest, coverage=38.5%, confidence=0.405
-- T49n2029 (佛使比丘迦旃延說法沒盡偈百二十章): digest, coverage=30.3%, confidence=0.403
+- T49n2029 (佛使比丘迦旃延說法沒盡偈百二十章): digest, coverage=30.4%, confidence=0.403
 - T17n0745 (佛說雜藏經): digest, coverage=35.2%, confidence=0.401
 - T21n1348 (佛說十二佛名神呪校量功德除障滅罪經): digest, coverage=37.9%, confidence=0.400
 - T12n0334 (佛說須摩提菩薩經): digest, coverage=39.1%, confidence=0.396
 - T03n0175a (睒子經): digest, coverage=41.4%, confidence=0.390
-- T16n0696 (佛說摩訶剎頭經): digest, coverage=32.4%, confidence=0.389
+- T16n0696 (佛說摩訶剎頭經): digest, coverage=32.7%, confidence=0.388
 - T51n2088 (釋迦方志): digest, coverage=39.4%, confidence=0.388
+- T14n0463 (佛說文殊師利般涅槃經): digest, coverage=38.2%, confidence=0.386
 - T12n0335 (佛說須摩提菩薩經): digest, coverage=37.4%, confidence=0.386
-- T14n0463 (佛說文殊師利般涅槃經): digest, coverage=37.7%, confidence=0.386
+- T02n0146 (舍衛國王夢見十事經): digest, coverage=37.5%, confidence=0.386
 - T02n0132b (施食獲五福報經): digest, coverage=34.7%, confidence=0.385
-- T02n0146 (舍衛國王夢見十事經): digest, coverage=37.5%, confidence=0.385
 - T03n0177 (大意經): digest, coverage=30.0%, confidence=0.384
 - T21n1327 (佛說呪齒經): digest, coverage=38.2%, confidence=0.381
 - T14n0530 (佛說須摩提長者經): digest, coverage=33.6%, confidence=0.371
 - T24n1495 (善恭敬經): digest, coverage=32.7%, confidence=0.369
-- T04n0209 (百喻經): digest, coverage=30.2%, confidence=0.367
-- T03n0155 (菩薩本行經): digest, coverage=37.4%, confidence=0.364
+- T03n0155 (菩薩本行經): digest, coverage=37.4%, confidence=0.367
+- T04n0209 (百喻經): digest, coverage=30.3%, confidence=0.367
 - T21n1326 (佛說呪時氣病經): digest, coverage=43.1%, confidence=0.359
-- T21n1354 (東方最勝燈王如來經): digest, coverage=34.5%, confidence=0.358
-- T14n0435 (佛說滅十方冥經): digest, coverage=33.2%, confidence=0.357
-- T24n1476 (佛說優婆塞五戒相經): digest, coverage=30.6%, confidence=0.338
+- T21n1354 (東方最勝燈王如來經): digest, coverage=34.7%, confidence=0.358
+- T14n0435 (佛說滅十方冥經): digest, coverage=33.3%, confidence=0.357
+- T04n0200 (撰集百緣經): digest, coverage=40.0%, confidence=0.338
+- T24n1476 (佛說優婆塞五戒相經): digest, coverage=30.7%, confidence=0.338
+- T04n0203 (雜寶藏經): digest, coverage=32.8%, confidence=0.336
 
 ### T53n2121 (經律異相)
 
@@ -197,7 +200,7 @@
 - T03n0167 (太子慕魄經): digest, coverage=56.1%, confidence=0.476
 - T14n0553 (佛說): digest, coverage=59.4%, confidence=0.471
 - T14n0541 (佛說佛大僧大經): digest, coverage=59.6%, confidence=0.469
-- T14n0531 (佛說長者音悅經): digest, coverage=50.6%, confidence=0.468
+- T14n0531 (佛說長者音悅經): digest, coverage=50.8%, confidence=0.469
 - T14n0523 (佛說五王經): digest, coverage=49.7%, confidence=0.465
 - T14n0518 (佛說旃陀越國王經): digest, coverage=56.4%, confidence=0.462
 - T21n1262 (佛說鬼子母經): digest, coverage=47.6%, confidence=0.451
@@ -208,13 +211,12 @@
 - T14n0522 (普達王經): digest, coverage=50.7%, confidence=0.432
 - T14n0501 (佛說沙曷比丘功德經): digest, coverage=47.1%, confidence=0.425
 - T14n0537 (佛說越難經): digest, coverage=37.4%, confidence=0.418
-- T03n0175c (佛說睒子經): digest, coverage=47.3%, confidence=0.414
-- T03n0175a (睒子經): digest, coverage=46.7%, confidence=0.414
+- T03n0175c (佛說睒子經): digest, coverage=47.5%, confidence=0.414
+- T03n0175a (睒子經): digest, coverage=46.9%, confidence=0.414
 - T14n0536 (申日兒本經): digest, coverage=43.8%, confidence=0.413
-- T03n0175b (佛說睒子經): digest, coverage=47.1%, confidence=0.413
-- T01n0035 (海八德經): digest, coverage=31.2%, confidence=0.383
+- T03n0175b (佛說睒子經): digest, coverage=47.2%, confidence=0.413
+- T01n0035 (海八德經): digest, coverage=31.2%, confidence=0.384
 - T01n0040 (文陀竭王經): digest, coverage=40.5%, confidence=0.382
-- T02n0146 (舍衛國王夢見十事經): digest, coverage=33.3%, confidence=0.378
 - T02n0119 (佛說鴦崛髻經): digest, coverage=36.8%, confidence=0.378
 - T14n0503 (比丘避女惡名欲自殺經): digest, coverage=38.0%, confidence=0.376
 - T14n0540b (佛說樹提伽經): digest, coverage=48.9%, confidence=0.374
@@ -246,7 +248,8 @@
 - T14n0552 (佛說摩登女解形中六事經): digest, coverage=45.3%, confidence=0.409
 - T03n0181b (佛說九色鹿經): digest, coverage=49.6%, confidence=0.403
 - T16n0693 (佛說造立形像福報經): digest, coverage=32.6%, confidence=0.399
-- T14n0540b (佛說樹提伽經): digest, coverage=56.8%, confidence=0.387
+- T85n2821 (諸經要略文): digest, coverage=30.2%, confidence=0.397
+- T14n0540b (佛說樹提伽經): digest, coverage=57.3%, confidence=0.388
 - T17n0745 (佛說雜藏經): digest, coverage=33.1%, confidence=0.379
 - T14n0510 (採花違王上佛授決號妙花經): digest, coverage=37.2%, confidence=0.358
 - T14n0509 (阿闍世王授決經): digest, coverage=33.2%, confidence=0.349
@@ -255,30 +258,30 @@
 
 ### T48n2016 (宗鏡錄)
 
+- T19n1020 (大方廣佛花嚴經入法界品頓證毘盧遮那法身字輪瑜伽儀軌): digest, coverage=65.9%, confidence=0.643
 - T46n1927 (十不二門): excerpt, coverage=80.4%, confidence=0.642
-- T19n1020 (大方廣佛花嚴經入法界品頓證毘盧遮那法身字輪瑜伽儀軌): digest, coverage=65.9%, confidence=0.627
 - T46n1920 (觀心論): digest, coverage=62.2%, confidence=0.572
 - T16n0709 (佛說稻芉經): digest, coverage=57.7%, confidence=0.562
 - T31n1586 (唯識三十論頌): digest, coverage=55.2%, confidence=0.488
 - T14n0575 (佛說大方等修多羅王經): digest, coverage=39.7%, confidence=0.450
 - T14n0568 (有德女所問大乘經): digest, coverage=36.7%, confidence=0.449
+- T48n2018 (永明智覺禪師唯心訣): digest, coverage=33.5%, confidence=0.439
 - T32n1667 (大乘起信論): digest, coverage=46.2%, confidence=0.432
-- T48n2018 (永明智覺禪師唯心訣): digest, coverage=33.5%, confidence=0.426
-- T45n1858 (肇論): digest, coverage=40.9%, confidence=0.411
+- T45n1858 (肇論): digest, coverage=41.0%, confidence=0.411
 - T48n2014 (永嘉證道歌): digest, coverage=32.0%, confidence=0.409
 - T24n1494 (佛說淨業障經): digest, coverage=40.9%, confidence=0.409
 - T31n1588 (唯識論): digest, coverage=44.6%, confidence=0.406
-- T45n1878 (華嚴發菩提心章): digest, coverage=36.7%, confidence=0.403
-- T45n1868 (華嚴一乘十玄門): digest, coverage=42.2%, confidence=0.402
-- T45n1876 (修華嚴奧旨妄盡還源觀): digest, coverage=39.0%, confidence=0.402
+- T45n1878 (華嚴發菩提心章): digest, coverage=36.8%, confidence=0.403
+- T45n1868 (華嚴一乘十玄門): digest, coverage=42.3%, confidence=0.402
+- T45n1876 (修華嚴奧旨妄盡還源觀): digest, coverage=39.2%, confidence=0.402
 - T31n1587 (轉識論): digest, coverage=32.6%, confidence=0.393
-- T17n0842 (大方廣圓覺修多羅了義經): digest, coverage=34.3%, confidence=0.387
+- T17n0842 (大方廣圓覺修多羅了義經): digest, coverage=34.8%, confidence=0.390
 - T50n2048 (提婆菩薩傳): digest, coverage=43.8%, confidence=0.387
 - T31n1624 (觀所緣緣論): digest, coverage=30.0%, confidence=0.386
 - T45n1857 (寶藏論): digest, coverage=30.2%, confidence=0.379
 - T32n1666 (大乘起信論): digest, coverage=37.7%, confidence=0.370
 - T85n2804 (唯識三十論要釋): digest, coverage=32.0%, confidence=0.363
-- T45n1884 (註華嚴法界觀門): digest, coverage=33.3%, confidence=0.352
+- T45n1884 (註華嚴法界觀門): digest, coverage=33.4%, confidence=0.352
 
 ### T21n1336 (陀羅尼雜集)
 
@@ -289,71 +292,82 @@
 - T21n1367 (佛說大普賢陀羅尼經): excerpt, coverage=100.0%, confidence=0.643
 - T19n1028A (佛說護諸童子陀羅尼經): excerpt, coverage=98.6%, confidence=0.632
 - T12n0370 (阿彌陀鼓音聲王陀羅尼經): excerpt, coverage=99.6%, confidence=0.615
-- T19n1029 (佛說安宅陀羅尼呪經): digest, coverage=79.7%, confidence=0.574
-- T21n1237 (阿吒婆拘鬼神大將上佛陀羅尼神呪經): excerpt, coverage=81.6%, confidence=0.556
+- T19n1029 (佛說安宅陀羅尼呪經): excerpt, coverage=81.1%, confidence=0.604
+- T21n1237 (阿吒婆拘鬼神大將上佛陀羅尼神呪經): excerpt, coverage=82.0%, confidence=0.583
+- T21n1393 (佛說摩尼羅亶經): digest, coverage=71.4%, confidence=0.556
 - T21n1326 (佛說呪時氣病經): excerpt, coverage=87.4%, confidence=0.555
-- T21n1393 (佛說摩尼羅亶經): digest, coverage=68.8%, confidence=0.547
 - T21n1391 (佛說檀特羅麻油述經): excerpt, coverage=85.2%, confidence=0.532
 - T21n1329 (佛說呪小兒經): digest, coverage=56.2%, confidence=0.494
 - T21n1327 (佛說呪齒經): digest, coverage=61.8%, confidence=0.458
-- T21n1353 (東方最勝燈王陀羅尼經): digest, coverage=44.3%, confidence=0.420
+- T21n1353 (東方最勝燈王陀羅尼經): digest, coverage=45.4%, confidence=0.424
 - T20n1178 (文殊菩薩獻佛陀羅尼名烏蘇吒): digest, coverage=43.1%, confidence=0.396
 
 ### T18n0901 (陀羅尼集經)
 
-- T20n1073 (何耶揭唎婆像法): excerpt, coverage=84.4%, confidence=0.646
+- T20n1073 (何耶揭唎婆像法): excerpt, coverage=85.1%, confidence=0.648
 - T20n1035 (千轉陀羅尼觀世音菩薩呪): excerpt, coverage=81.1%, confidence=0.616
-- T21n1338 (呪三首經): digest, coverage=53.8%, confidence=0.531
-- T21n1254 (末利支提婆華鬘經): digest, coverage=70.6%, confidence=0.510
-- T20n1180 (六字神呪經): digest, coverage=58.4%, confidence=0.493
-- T20n1070 (佛說十一面觀世音神呪經): digest, coverage=64.8%, confidence=0.479
+- T21n1338 (呪三首經): digest, coverage=56.1%, confidence=0.553
+- T21n1255a (佛說摩利支天菩薩陀羅尼經): digest, coverage=53.4%, confidence=0.537
+- T21n1254 (末利支提婆華鬘經): digest, coverage=71.0%, confidence=0.512
+- T20n1180 (六字神呪經): digest, coverage=58.8%, confidence=0.491
+- T20n1070 (佛說十一面觀世音神呪經): digest, coverage=65.2%, confidence=0.478
 - T19n0924B (藥師如來念誦儀軌): digest, coverage=48.9%, confidence=0.471
-- T20n1110 (佛說一髻尊陀羅尼經): digest, coverage=54.6%, confidence=0.460
-- T20n1074 (何耶揭唎婆觀世音菩薩受法壇): digest, coverage=59.6%, confidence=0.459
-- T21n1255a (佛說摩利支天菩薩陀羅尼經): digest, coverage=51.6%, confidence=0.456
-- T21n1266 (大聖天歡喜雙身毘那夜迦法): digest, coverage=50.9%, confidence=0.444
-- T20n1084 (觀世音菩薩如意摩尼輪陀羅尼念誦法): digest, coverage=38.4%, confidence=0.404
+- T20n1110 (佛說一髻尊陀羅尼經): digest, coverage=55.0%, confidence=0.461
+- T20n1074 (何耶揭唎婆觀世音菩薩受法壇): digest, coverage=60.1%, confidence=0.460
+- T21n1266 (大聖天歡喜雙身毘那夜迦法): digest, coverage=53.7%, confidence=0.455
+- T20n1084 (觀世音菩薩如意摩尼輪陀羅尼念誦法): digest, coverage=39.1%, confidence=0.415
 - T21n1291 (深沙大將儀軌): digest, coverage=32.2%, confidence=0.386
 
 ### T22n1428 (四分律)
 
-- T22n1431 (四分比丘尼戒本): excerpt, coverage=81.0%, confidence=0.725
+- T22n1431 (四分比丘尼戒本): excerpt, coverage=81.0%, confidence=0.726
 - T22n1434 (四分比丘尼羯磨法): digest, coverage=66.5%, confidence=0.650
 - T22n1429 (四分律比丘戒本): digest, coverage=65.8%, confidence=0.646
 - T22n1432 (曇無德律部雜羯磨): digest, coverage=69.7%, confidence=0.634
-- T22n1430 (四分僧戒本): digest, coverage=66.3%, confidence=0.630
+- T22n1430 (四分僧戒本): digest, coverage=66.5%, confidence=0.631
 - T22n1433 (羯磨): digest, coverage=68.3%, confidence=0.629
 - T40n1810 (尼羯磨): digest, coverage=61.5%, confidence=0.467
 - T40n1809 (僧羯磨): digest, coverage=65.1%, confidence=0.467
 - T40n1808 (四分律刪補隨機羯磨): digest, coverage=55.5%, confidence=0.438
 - T85n2791 (宗四分比丘隨門要略行儀): digest, coverage=41.7%, confidence=0.383
-- T40n1806 (四分律比丘含注戒本): digest, coverage=47.6%, confidence=0.357
+- T40n1806 (四分律比丘含注戒本): digest, coverage=47.7%, confidence=0.357
+
+### T30n1579 (瑜伽師地論)
+
+- T24n1501 (菩薩戒本): excerpt, coverage=97.0%, confidence=0.784
+- T85n2783 (大乘稻芉經隨聽疏決): excerpt, coverage=97.3%, confidence=0.672
+- T16n0676 (解深密經): excerpt, coverage=86.6%, confidence=0.568
+- T24n1499 (菩薩戒羯磨文): digest, coverage=72.3%, confidence=0.566
+- T31n1615 (王法正理論): digest, coverage=62.9%, confidence=0.536
+- T14n0524 (佛為優填王說王法政論經): digest, coverage=65.9%, confidence=0.517
+- T33n1695 (大般若波羅蜜多經般若理趣分述讚): digest, coverage=33.7%, confidence=0.390
+- T31n1602 (顯揚聖教論): digest, coverage=41.1%, confidence=0.334
 
 ### T51n2076 (景德傳燈錄)
 
 - T48n2014 (永嘉證道歌): excerpt, coverage=99.1%, confidence=0.718
 - T48n2010 (信心銘): excerpt, coverage=100.0%, confidence=0.717
 - T48n2012A (黃檗山斷際禪師傳心法要): digest, coverage=54.4%, confidence=0.467
-- T47n1991 (金陵清涼院文益禪師語錄): digest, coverage=52.3%, confidence=0.449
-- T47n1989 (潭州溈山靈祐禪師語錄): digest, coverage=41.2%, confidence=0.384
-- T47n1986B (瑞州洞山良价禪師語錄): digest, coverage=42.0%, confidence=0.379
+- T47n1991 (金陵清涼院文益禪師語錄): digest, coverage=52.4%, confidence=0.449
+- T47n1989 (潭州溈山靈祐禪師語錄): digest, coverage=41.3%, confidence=0.384
+- T47n1986B (瑞州洞山良价禪師語錄): digest, coverage=42.1%, confidence=0.379
 - T47n1990 (袁州仰山慧寂禪師語錄): digest, coverage=39.2%, confidence=0.376
 - T47n1986A (筠州洞山悟本禪師語錄): digest, coverage=33.1%, confidence=0.340
 
 ### T02n0125 (增壹阿含經)
 
 - T02n0128b (須摩提女經): excerpt, coverage=99.7%, confidence=0.636
-- T01n0061 (受新歲經): excerpt, coverage=99.7%, confidence=0.610
-- T14n0453 (佛說彌勒下生經): digest, coverage=73.0%, confidence=0.584
+- T01n0061 (受新歲經): excerpt, coverage=99.7%, confidence=0.618
+- T14n0453 (佛說彌勒下生經): digest, coverage=77.6%, confidence=0.604
+- T02n0147 (佛說舍衛國王十夢經): digest, coverage=42.3%, confidence=0.578
+- T02n0148 (國王不梨先泥十夢經): digest, coverage=31.8%, confidence=0.514
+- T02n0146 (舍衛國王夢見十事經): digest, coverage=37.2%, confidence=0.473
 - T01n0072 (三歸五戒慈心厭離功德經): digest, coverage=55.5%, confidence=0.460
-- T02n0147 (佛說舍衛國王十夢經): digest, coverage=42.3%, confidence=0.428
 - T16n0684 (佛說父母恩難報經): digest, coverage=31.9%, confidence=0.389
-- T02n0148 (國王不梨先泥十夢經): digest, coverage=31.8%, confidence=0.364
-- T02n0146 (舍衛國王夢見十事經): digest, coverage=37.2%, confidence=0.323
 
 ### T36n1736 (大方廣佛華嚴經隨疏演義鈔)
 
-- T19n1020 (大方廣佛花嚴經入法界品頓證毘盧遮那法身字輪瑜伽儀軌): excerpt, coverage=98.5%, confidence=0.664
+- T19n1020 (大方廣佛花嚴經入法界品頓證毘盧遮那法身字輪瑜伽儀軌): excerpt, coverage=98.5%, confidence=0.684
 - T19n1019 (大方廣佛華嚴經入法界品四十二字觀門): digest, coverage=52.5%, confidence=0.452
 - T31n1586 (唯識三十論頌): digest, coverage=40.7%, confidence=0.423
 - T32n1666 (大乘起信論): digest, coverage=39.4%, confidence=0.408
@@ -365,7 +379,7 @@
 
 - T85n2852 (入布薩堂說偈文等): digest, coverage=76.8%, confidence=0.581
 - T40n1808 (四分律刪補隨機羯磨): digest, coverage=45.7%, confidence=0.515
-- T85n2791 (宗四分比丘隨門要略行儀): digest, coverage=45.9%, confidence=0.388
+- T85n2791 (宗四分比丘隨門要略行儀): digest, coverage=46.0%, confidence=0.388
 - T24n1467a (佛說犯戒罪報輕重經): digest, coverage=38.0%, confidence=0.383
 - T22n1433 (羯磨): digest, coverage=51.7%, confidence=0.376
 - T22n1432 (曇無德律部雜羯磨): digest, coverage=50.9%, confidence=0.374
@@ -373,114 +387,107 @@
 
 ### T18n0848 (大毘盧遮那成佛神變加持經)
 
-- T18n0860 (大日經持誦次第儀軌): digest, coverage=69.7%, confidence=0.496
-- T18n0852a (大毘盧遮那成佛神變加持經蓮華胎藏悲生曼荼羅廣大成就儀軌供養方便會): digest, coverage=61.8%, confidence=0.473
+- T18n0852a (大毘盧遮那成佛神變加持經蓮華胎藏悲生曼荼羅廣大成就儀軌供養方便會): digest, coverage=64.3%, confidence=0.513
+- T18n0860 (大日經持誦次第儀軌): digest, coverage=70.0%, confidence=0.497
 - T18n0859 (供養儀式): digest, coverage=48.2%, confidence=0.426
-- T18n0850 (攝大毘盧遮那成佛神變加持經入蓮華胎藏海會悲生曼荼攞廣大念誦儀軌供養方便會): digest, coverage=44.3%, confidence=0.375
-- T18n0852b (大毘盧舍那成佛神變加持經蓮華胎藏悲生曼荼羅廣大成就儀軌): digest, coverage=37.3%, confidence=0.344
-- T18n0851 (大毘盧遮那經廣大儀軌): digest, coverage=39.5%, confidence=0.339
-- T18n0853 (大毘盧遮那成佛神變加持經蓮華胎藏菩提幢標幟普通真言藏廣大成就瑜伽): digest, coverage=38.4%, confidence=0.326
-
-### T30n1579 (瑜伽師地論)
-
-- T24n1501 (菩薩戒本): excerpt, coverage=97.0%, confidence=0.784
-- T85n2783 (大乘稻芉經隨聽疏決): excerpt, coverage=97.3%, confidence=0.672
-- T16n0676 (解深密經): excerpt, coverage=86.5%, confidence=0.568
-- T24n1499 (菩薩戒羯磨文): digest, coverage=72.3%, confidence=0.566
-- T31n1615 (王法正理論): digest, coverage=62.9%, confidence=0.536
-- T14n0524 (佛為優填王說王法政論經): digest, coverage=65.9%, confidence=0.517
+- T18n0850 (攝大毘盧遮那成佛神變加持經入蓮華胎藏海會悲生曼荼攞廣大念誦儀軌供養方便會): digest, coverage=50.8%, confidence=0.397
+- T18n0853 (大毘盧遮那成佛神變加持經蓮華胎藏菩提幢標幟普通真言藏廣大成就瑜伽): digest, coverage=45.7%, confidence=0.343
+- T18n0852b (大毘盧舍那成佛神變加持經蓮華胎藏悲生曼荼羅廣大成就儀軌): digest, coverage=38.9%, confidence=0.343
+- T18n0851 (大毘盧遮那經廣大儀軌): digest, coverage=40.6%, confidence=0.339
 
 ### T85n2746 (般若波羅蜜多心經還源述)
 
 - T85n2747 (挾註波羅蜜多心經): excerpt, coverage=81.5%, confidence=0.710
-- T08n0251 (般若波羅蜜多心經): excerpt, coverage=93.8%, confidence=0.571
+- T08n0251 (般若波羅蜜多心經): excerpt, coverage=93.8%, confidence=0.607
 - T08n0250 (摩訶般若波羅蜜大明呪經): digest, coverage=65.1%, confidence=0.494
-- T08n0253 (般若波羅蜜多心經): digest, coverage=46.2%, confidence=0.405
+- T08n0253 (般若波羅蜜多心經): digest, coverage=47.1%, confidence=0.407
 - T08n0252 (普遍智藏般若波羅蜜多心經): digest, coverage=40.0%, confidence=0.377
 - T08n0254 (般若波羅蜜多心經): digest, coverage=30.8%, confidence=0.304
 
 ### T11n0310 (大寶積經)
 
-- T08n0232 (文殊師利所說摩訶般若波羅蜜經): excerpt, coverage=97.1%, confidence=0.661
+- T08n0232 (文殊師利所說摩訶般若波羅蜜經): excerpt, coverage=97.1%, confidence=0.686
 - T12n0347 (大乘顯識經): digest, coverage=61.9%, confidence=0.592
-- T12n0336 (須摩提經): digest, coverage=52.0%, confidence=0.494
+- T12n0336 (須摩提經): digest, coverage=52.2%, confidence=0.520
 - T15n0655 (佛說勝義空經): digest, coverage=45.4%, confidence=0.465
-- T12n0353 (勝鬘師子吼一乘大方便方廣經): digest, coverage=50.1%, confidence=0.397
+- T12n0353 (勝鬘師子吼一乘大方便方廣經): digest, coverage=50.2%, confidence=0.397
 - T12n0325 (佛說決定毘尼經): digest, coverage=46.0%, confidence=0.395
+
+### T25n1509 (大智度論)
+
+- T08n0250 (摩訶般若波羅蜜大明呪經): digest, coverage=72.8%, confidence=0.617
+- T08n0223 (摩訶般若波羅蜜經): excerpt, coverage=83.5%, confidence=0.513
+- T85n2747 (挾註波羅蜜多心經): digest, coverage=51.7%, confidence=0.484
+- T08n0251 (般若波羅蜜多心經): digest, coverage=47.7%, confidence=0.483
+- T17n0783 (佛說十二頭陀經): digest, coverage=48.4%, confidence=0.452
+- T33n1697 (大慧度經宗要): digest, coverage=31.2%, confidence=0.351
+
+### T20n1072A (聖賀野紇哩縛大威怒王立成大神驗供養念誦儀軌法品)
+
+- T20n1073 (何耶揭唎婆像法): digest, coverage=57.0%, confidence=0.603
+- T20n1074 (何耶揭唎婆觀世音菩薩受法壇): digest, coverage=37.4%, confidence=0.525
+- T21n1296 (十天儀軌): digest, coverage=72.7%, confidence=0.493
+- T20n1084 (觀世音菩薩如意摩尼輪陀羅尼念誦法): digest, coverage=30.7%, confidence=0.344
+- T20n1066 (大悲心陀羅尼修行念誦略儀): digest, coverage=34.2%, confidence=0.332
+- T21n1298 (十二天供儀軌): digest, coverage=31.7%, confidence=0.316
 
 ### T14n0441 (佛說佛名經)
 
 - T85n2841 (大佛略懺): excerpt, coverage=80.4%, confidence=0.567
-- T14n0447b (現在賢劫千佛名經): digest, coverage=79.6%, confidence=0.544
+- T14n0447b (現在賢劫千佛名經): excerpt, coverage=80.8%, confidence=0.549
 - T45n1910 (慈悲水懺法): digest, coverage=68.2%, confidence=0.480
-- T14n0447a (現在賢劫千佛名經): digest, coverage=63.4%, confidence=0.473
-- T14n0446a (過去莊嚴劫千佛名經): digest, coverage=69.1%, confidence=0.453
+- T14n0447a (現在賢劫千佛名經): digest, coverage=64.9%, confidence=0.479
+- T14n0446a (過去莊嚴劫千佛名經): digest, coverage=69.7%, confidence=0.455
 - T17n0724 (佛說罪業應報教化地獄經): digest, coverage=41.1%, confidence=0.422
 
 ### T55n2157 (貞元新定釋教目錄)
 
 - T55n2152 (續古今譯經圖紀): digest, coverage=77.0%, confidence=0.530
-- T55n2155 (開元釋教錄略出): digest, coverage=69.0%, confidence=0.444
-- T50n2055 (玄宗朝翻經三藏善無畏贈鴻臚卿行狀): digest, coverage=36.1%, confidence=0.419
-- T55n2156 (大唐貞元續開元釋教錄): digest, coverage=49.6%, confidence=0.413
+- T55n2155 (開元釋教錄略出): digest, coverage=69.5%, confidence=0.445
+- T50n2055 (玄宗朝翻經三藏善無畏贈鴻臚卿行狀): digest, coverage=36.1%, confidence=0.443
+- T55n2156 (大唐貞元續開元釋教錄): digest, coverage=49.7%, confidence=0.413
 - T55n2182 (律宗章疏): digest, coverage=42.8%, confidence=0.407
 - T52n2120 (代宗朝贈司空大辨正廣智三藏和上表制集): digest, coverage=34.3%, confidence=0.338
 
 ### T33n1714 (般若波羅蜜多心經註解)
 
 - T85n2747 (挾註波羅蜜多心經): excerpt, coverage=80.8%, confidence=0.520
-- T08n0251 (般若波羅蜜多心經): digest, coverage=73.5%, confidence=0.485
-- T08n0250 (摩訶般若波羅蜜大明呪經): digest, coverage=59.7%, confidence=0.420
+- T08n0251 (般若波羅蜜多心經): digest, coverage=73.5%, confidence=0.505
+- T08n0250 (摩訶般若波羅蜜大明呪經): digest, coverage=63.8%, confidence=0.434
 - T08n0253 (般若波羅蜜多心經): digest, coverage=45.3%, confidence=0.357
 - T08n0254 (般若波羅蜜多心經): digest, coverage=38.2%, confidence=0.329
 - T08n0252 (普遍智藏般若波羅蜜多心經): digest, coverage=37.0%, confidence=0.329
 
 ### T07n0220 (大般若波羅蜜多經(第401卷-第600卷))
 
+- T08n0251 (般若波羅蜜多心經): digest, coverage=55.4%, confidence=0.481
 - T19n1019 (大方廣佛華嚴經入法界品四十二字觀門): digest, coverage=57.0%, confidence=0.458
-- T08n0251 (般若波羅蜜多心經): digest, coverage=55.4%, confidence=0.454
 - T08n0250 (摩訶般若波羅蜜大明呪經): digest, coverage=51.0%, confidence=0.454
 - T15n0655 (佛說勝義空經): digest, coverage=37.7%, confidence=0.439
-- T08n0241 (金剛頂瑜伽理趣般若經): digest, coverage=51.5%, confidence=0.429
+- T08n0231 (勝天王般若波羅蜜經): digest, coverage=56.2%, confidence=0.410
 - T14n0436 (受持七佛名號所生功德經): digest, coverage=38.5%, confidence=0.388
+
+### T47n1969A (樂邦文類)
+
+- T12n0368 (拔一切業障根本得生淨土神呪): excerpt, coverage=93.4%, confidence=0.663
+- T47n1968 (往生淨土決疑行願二門): digest, coverage=52.7%, confidence=0.493
+- T12n0373 (後出阿彌陀佛偈): digest, coverage=42.9%, confidence=0.379
+- T47n1961 (淨土十疑論): digest, coverage=32.9%, confidence=0.370
+- T47n1972 (淨土或問): digest, coverage=34.5%, confidence=0.353
 
 ### T50n2040 (釋迦譜)
 
 - T12n0396 (佛說法滅盡經): digest, coverage=76.2%, confidence=0.620
 - T85n2874 (小法滅盡經): digest, coverage=76.2%, confidence=0.602
 - T14n0512 (佛說淨飯王般涅槃經): digest, coverage=76.5%, confidence=0.536
-- T02n0145 (佛母般泥洹經): digest, coverage=57.6%, confidence=0.403
+- T02n0145 (佛母般泥洹經): digest, coverage=57.6%, confidence=0.405
 - T04n0195 (佛說十二遊經): digest, coverage=30.1%, confidence=0.356
-
-### T25n1509 (大智度論)
-
-- T08n0250 (摩訶般若波羅蜜大明呪經): digest, coverage=72.8%, confidence=0.617
-- T85n2747 (挾註波羅蜜多心經): digest, coverage=51.7%, confidence=0.484
-- T17n0783 (佛說十二頭陀經): digest, coverage=48.2%, confidence=0.453
-- T08n0251 (般若波羅蜜多心經): digest, coverage=47.7%, confidence=0.447
-- T33n1697 (大慧度經宗要): digest, coverage=31.1%, confidence=0.351
-
-### T47n1969A (樂邦文類)
-
-- T12n0368 (拔一切業障根本得生淨土神呪): excerpt, coverage=93.4%, confidence=0.570
-- T47n1968 (往生淨土決疑行願二門): digest, coverage=52.7%, confidence=0.493
-- T12n0373 (後出阿彌陀佛偈): digest, coverage=42.9%, confidence=0.379
-- T47n1961 (淨土十疑論): digest, coverage=32.9%, confidence=0.370
-- T47n1972 (淨土或問): digest, coverage=34.5%, confidence=0.353
-
-### T47n1982 (集諸經禮懺儀)
-
-- T85n2854 (禮懺文): digest, coverage=69.6%, confidence=0.506
-- T12n0369 (阿彌陀佛說呪): digest, coverage=66.7%, confidence=0.493
-- T85n2844 (文殊師利菩薩無相十禮): digest, coverage=42.1%, confidence=0.336
-- T85n2856 (禮懺文): digest, coverage=35.1%, confidence=0.332
-- T47n1978 (讚阿彌陀佛偈): digest, coverage=33.4%, confidence=0.302
 
 ### T33n1710 (般若波羅蜜多心經幽贊)
 
 - T85n2747 (挾註波羅蜜多心經): digest, coverage=80.4%, confidence=0.496
-- T08n0251 (般若波羅蜜多心經): digest, coverage=78.5%, confidence=0.476
-- T08n0250 (摩訶般若波羅蜜大明呪經): digest, coverage=57.4%, confidence=0.409
+- T08n0251 (般若波羅蜜多心經): digest, coverage=78.5%, confidence=0.491
+- T08n0250 (摩訶般若波羅蜜大明呪經): digest, coverage=61.4%, confidence=0.425
 - T08n0253 (般若波羅蜜多心經): digest, coverage=49.5%, confidence=0.362
 - T08n0252 (普遍智藏般若波羅蜜多心經): digest, coverage=42.7%, confidence=0.338
 
@@ -494,7 +501,7 @@
 ### T22n1425 (摩訶僧祇律)
 
 - T24n1467b (佛說犯戒罪報輕重經): excerpt, coverage=100.0%, confidence=0.750
-- T22n1427 (摩訶僧祇比丘尼戒本): digest, coverage=69.1%, confidence=0.626
+- T22n1427 (摩訶僧祇比丘尼戒本): digest, coverage=69.2%, confidence=0.627
 - T22n1426 (摩訶僧祇律大比丘戒本): digest, coverage=70.1%, confidence=0.621
 - T24n1467a (佛說犯戒罪報輕重經): digest, coverage=71.0%, confidence=0.587
 
@@ -502,35 +509,42 @@
 
 - T02n0110 (佛說三轉法輪經): excerpt, coverage=100.0%, confidence=0.737
 - T02n0102 (佛說五蘊皆空經): digest, coverage=76.4%, confidence=0.612
-- T24n1457 (根本說一切有部略毘奈耶雜事攝頌): excerpt, coverage=89.5%, confidence=0.587
+- T24n1457 (根本說一切有部略毘奈耶雜事攝頌): excerpt, coverage=89.5%, confidence=0.588
 - T15n0655 (佛說勝義空經): digest, coverage=44.3%, confidence=0.524
 
 ### T22n1421 (彌沙塞部和醯五分律)
 
-- T22n1422a (彌沙塞五分戒本): digest, coverage=67.5%, confidence=0.650
+- T22n1422a (彌沙塞五分戒本): digest, coverage=67.5%, confidence=0.651
 - T22n1423 (五分比丘尼戒本): digest, coverage=57.3%, confidence=0.596
 - T22n1424 (彌沙塞羯磨本): digest, coverage=49.4%, confidence=0.556
-- T15n0655 (佛說勝義空經): digest, coverage=33.0%, confidence=0.396
+- T15n0655 (佛說勝義空經): digest, coverage=34.1%, confidence=0.425
 
-### T20n1072A (聖賀野紇哩縛大威怒王立成大神驗供養念誦儀軌法品)
+### T29n1562 (阿毘達磨順正理論)
 
-- T20n1073 (何耶揭唎婆像法): digest, coverage=57.0%, confidence=0.603
-- T20n1074 (何耶揭唎婆觀世音菩薩受法壇): digest, coverage=37.4%, confidence=0.525
-- T21n1296 (十天儀軌): digest, coverage=70.6%, confidence=0.486
-- T20n1066 (大悲心陀羅尼修行念誦略儀): digest, coverage=34.2%, confidence=0.332
+- T29n1560 (阿毘達磨俱舍論本頌): excerpt, coverage=98.6%, confidence=0.603
+- T29n1558 (阿毘達磨俱舍論): digest, coverage=56.9%, confidence=0.416
+- T29n1561 (俱舍論實義疏): digest, coverage=33.2%, confidence=0.387
+- T41n1823 (俱舍論頌疏): digest, coverage=34.5%, confidence=0.294
 
 ### T33n1700 (金剛般若經贊述)
 
-- T08n0235 (金剛般若波羅蜜經): excerpt, coverage=94.1%, confidence=0.566
+- T08n0235 (金剛般若波羅蜜經): excerpt, coverage=94.2%, confidence=0.567
 - T85n2739 (金剛般若經挾註): excerpt, coverage=91.7%, confidence=0.564
 - T08n0236a (金剛般若波羅蜜經): digest, coverage=74.6%, confidence=0.453
 - T85n2732 (梁朝傅大士頌金剛經): digest, coverage=57.1%, confidence=0.426
 
+### T39n1788 (金光明最勝王經疏)
+
+- T16n0665 (金光明最勝王經): excerpt, coverage=94.6%, confidence=0.553
+- T46n1946 (金光明最勝懺儀): digest, coverage=49.2%, confidence=0.452
+- T15n0655 (佛說勝義空經): digest, coverage=31.3%, confidence=0.360
+- T16n0664 (合部金光明經): digest, coverage=34.7%, confidence=0.297
+
 ### T55n2154 (開元釋教錄)
 
 - T55n2152 (續古今譯經圖紀): digest, coverage=75.1%, confidence=0.525
-- T55n2155 (開元釋教錄略出): digest, coverage=73.9%, confidence=0.493
-- T50n2055 (玄宗朝翻經三藏善無畏贈鴻臚卿行狀): digest, coverage=48.8%, confidence=0.462
+- T55n2155 (開元釋教錄略出): digest, coverage=74.2%, confidence=0.493
+- T50n2055 (玄宗朝翻經三藏善無畏贈鴻臚卿行狀): digest, coverage=48.8%, confidence=0.487
 - T55n2182 (律宗章疏): digest, coverage=45.4%, confidence=0.413
 
 ### T85n2788 (律戒本疏)
@@ -538,20 +552,21 @@
 - T24n1467b (佛說犯戒罪報輕重經): excerpt, coverage=87.3%, confidence=0.520
 - T24n1467a (佛說犯戒罪報輕重經): digest, coverage=65.3%, confidence=0.497
 - T17n0794a (佛說時非時經): digest, coverage=59.5%, confidence=0.399
-- T17n0794b (佛說時非時經): digest, coverage=54.0%, confidence=0.354
+- T17n0794b (佛說時非時經): digest, coverage=54.0%, confidence=0.356
+
+### T47n1982 (集諸經禮懺儀)
+
+- T85n2854 (禮懺文): digest, coverage=69.6%, confidence=0.506
+- T12n0369 (阿彌陀佛說呪): digest, coverage=66.7%, confidence=0.493
+- T85n2844 (文殊師利菩薩無相十禮): digest, coverage=42.1%, confidence=0.336
+- T85n2856 (禮懺文): digest, coverage=35.1%, confidence=0.332
 
 ### T45n1909 (慈悲道場懺法)
 
 - T17n0724 (佛說罪業應報教化地獄經): digest, coverage=67.8%, confidence=0.492
-- T14n0447b (現在賢劫千佛名經): digest, coverage=67.8%, confidence=0.475
-- T14n0447a (現在賢劫千佛名經): digest, coverage=35.2%, confidence=0.352
+- T14n0447b (現在賢劫千佛名經): digest, coverage=70.1%, confidence=0.484
+- T14n0447a (現在賢劫千佛名經): digest, coverage=38.1%, confidence=0.362
 - T17n0734 (佛說鬼問目連經): digest, coverage=39.0%, confidence=0.335
-
-### T10n0279 (大方廣佛華嚴經)
-
-- T10n0295 (大方廣佛華嚴經入法界品): excerpt, coverage=81.6%, confidence=0.733
-- T10n0287 (佛說十地經): digest, coverage=40.5%, confidence=0.487
-- T36n1742 (大方廣佛華嚴經願行觀門骨目): digest, coverage=58.7%, confidence=0.411
 
 ### T49n2036 (佛祖歷代通載)
 
@@ -562,20 +577,20 @@
 ### T85n2827 (淨土五會念佛誦經觀行儀卷中．下)
 
 - T12n0369 (阿彌陀佛說呪): excerpt, coverage=96.6%, confidence=0.714
-- T12n0366 (佛說阿彌陀經): excerpt, coverage=100.0%, confidence=0.667
+- T12n0366 (佛說阿彌陀經): excerpt, coverage=100.0%, confidence=0.689
 - T85n2828 (大乘淨土讚): digest, coverage=66.9%, confidence=0.449
 
 ### T08n0223 (摩訶般若波羅蜜經)
 
 - T08n0250 (摩訶般若波羅蜜大明呪經): digest, coverage=73.2%, confidence=0.660
 - T85n2747 (挾註波羅蜜多心經): digest, coverage=48.7%, confidence=0.470
-- T08n0251 (般若波羅蜜多心經): digest, coverage=44.6%, confidence=0.432
+- T08n0251 (般若波羅蜜多心經): digest, coverage=44.6%, confidence=0.468
 
 ### T20n1060 (千手千眼觀世音菩薩廣大圓滿無礙大悲心陀羅尼經)
 
 - T85n2843 (大悲啟請): excerpt, coverage=80.1%, confidence=0.589
-- T20n1160 (日光菩薩月光菩薩陀羅尼): excerpt, coverage=94.7%, confidence=0.583
-- T20n1059 (千手千眼觀世音菩薩治病合藥經): digest, coverage=45.4%, confidence=0.359
+- T20n1160 (日光菩薩月光菩薩陀羅尼): excerpt, coverage=94.7%, confidence=0.588
+- T20n1059 (千手千眼觀世音菩薩治病合藥經): digest, coverage=45.6%, confidence=0.359
 
 ### T25n1511 (金剛般若波羅蜜經論)
 
@@ -607,17 +622,23 @@
 - T44n1849 (大乘起信論內義略探記): digest, coverage=38.0%, confidence=0.495
 - T85n2815 (起信論註): digest, coverage=32.5%, confidence=0.312
 
+### T44n1840 (因明入正理論疏)
+
+- T32n1630 (因明入正理論): excerpt, coverage=91.3%, confidence=0.538
+- T32n1628 (因明正理門論本): digest, coverage=36.5%, confidence=0.326
+- T32n1629 (因明正理門論): digest, coverage=34.4%, confidence=0.318
+
 ### T46n1956 (密呪圓因往生集)
 
 - T17n0789 (金剛頂瑜伽念珠經): digest, coverage=72.0%, confidence=0.538
+- T19n1002 (不空羂索毘盧遮那佛大灌頂光真言): digest, coverage=44.0%, confidence=0.381
 - T21n1395 (拔濟苦難陀羅尼經): digest, coverage=47.4%, confidence=0.377
-- T19n1002 (不空羂索毘盧遮那佛大灌頂光真言): digest, coverage=43.4%, confidence=0.354
 
-### T44n1840 (因明入正理論疏)
+### T39n1796 (大毘盧遮那成佛經疏)
 
-- T32n1630 (因明入正理論): excerpt, coverage=91.3%, confidence=0.537
-- T32n1628 (因明正理門論本): digest, coverage=36.5%, confidence=0.326
-- T32n1629 (因明正理門論): digest, coverage=34.4%, confidence=0.318
+- T39n1797 (大毘盧遮那經供養次第法疏): digest, coverage=37.5%, confidence=0.525
+- T18n0863 (大毘盧遮那經阿闍梨真實智品中阿闍梨住阿字觀門): digest, coverage=45.5%, confidence=0.390
+- T18n0848 (大毘盧遮那成佛神變加持經): digest, coverage=39.4%, confidence=0.316
 
 ### T52n2103 (廣弘明集)
 
@@ -627,27 +648,27 @@
 
 ### T23n1442 (根本說一切有部毘奈耶)
 
-- T24n1454 (根本說一切有部戒經): digest, coverage=63.6%, confidence=0.486
-- T24n1455 (根本說一切有部苾芻尼戒經): digest, coverage=57.4%, confidence=0.448
+- T24n1454 (根本說一切有部戒經): digest, coverage=63.7%, confidence=0.486
+- T24n1455 (根本說一切有部苾芻尼戒經): digest, coverage=57.6%, confidence=0.448
 - T15n0655 (佛說勝義空經): digest, coverage=34.9%, confidence=0.409
 
 ### T40n1806 (四分律比丘含注戒本)
 
 - T22n1429 (四分律比丘戒本): digest, coverage=70.8%, confidence=0.449
 - T22n1430 (四分僧戒本): digest, coverage=68.5%, confidence=0.434
-- T22n1431 (四分比丘尼戒本): digest, coverage=50.7%, confidence=0.356
+- T22n1431 (四分比丘尼戒本): digest, coverage=50.8%, confidence=0.356
 
 ### T18n0850 (攝大毘盧遮那成佛神變加持經入蓮華胎藏海會悲生曼荼攞廣大念誦儀軌供養方便會)
 
 - T18n0856 (大毘盧遮那成佛神變加持經略示七支念誦隨行法): digest, coverage=43.6%, confidence=0.428
-- T18n0857 (大日經略攝念誦隨行法): digest, coverage=30.4%, confidence=0.392
+- T18n0857 (大日經略攝念誦隨行法): digest, coverage=32.8%, confidence=0.396
 - T18n0880 (瑜伽金剛頂經釋字母品): digest, coverage=52.3%, confidence=0.351
 
 ### T85n2787 (四分戒本疏卷第一．第二．第三)
 
 - T22n1429 (四分律比丘戒本): digest, coverage=45.3%, confidence=0.392
 - T22n1430 (四分僧戒本): digest, coverage=43.9%, confidence=0.365
-- T24n1460 (解脫戒經): digest, coverage=34.2%, confidence=0.304
+- T24n1460 (解脫戒經): digest, coverage=34.3%, confidence=0.304
 
 ### T31n1602 (顯揚聖教論)
 
@@ -659,6 +680,11 @@
 - T29n1560 (阿毘達磨俱舍論本頌): excerpt, coverage=99.5%, confidence=0.740
 - T29n1561 (俱舍論實義疏): digest, coverage=31.1%, confidence=0.523
 
+### T10n0279 (大方廣佛華嚴經)
+
+- T10n0295 (大方廣佛華嚴經入法界品): excerpt, coverage=81.7%, confidence=0.734
+- T36n1742 (大方廣佛華嚴經願行觀門骨目): digest, coverage=58.7%, confidence=0.412
+
 ### T09n0278 (大方廣佛華嚴經)
 
 - T10n0295 (大方廣佛華嚴經入法界品): excerpt, coverage=100.0%, confidence=0.721
@@ -667,17 +693,22 @@
 ### T45n1887B (法界圖記叢髓錄)
 
 - T45n1887A (華嚴一乘法界圖): excerpt, coverage=86.5%, confidence=0.717
-- T45n1871 (華嚴經旨歸): digest, coverage=69.0%, confidence=0.434
+- T45n1871 (華嚴經旨歸): digest, coverage=69.0%, confidence=0.571
 
 ### T47n1963 (淨土論)
 
 - T12n0373 (後出阿彌陀佛偈): excerpt, coverage=98.9%, confidence=0.711
 - T12n0370 (阿彌陀鼓音聲王陀羅尼經): digest, coverage=46.5%, confidence=0.489
 
+### T02n0101 (雜阿含經)
+
+- T02n0111 (佛說相應相可經): digest, coverage=73.4%, confidence=0.684
+- T15n0612 (身觀經): excerpt, coverage=90.0%, confidence=0.517
+
 ### T20n1092 (不空羂索神變真言經)
 
+- T20n1098 (佛說不空羂索陀羅尼儀軌經): digest, coverage=61.0%, confidence=0.654
 - T19n1002 (不空羂索毘盧遮那佛大灌頂光真言): excerpt, coverage=87.7%, confidence=0.650
-- T20n1098 (佛說不空羂索陀羅尼儀軌經): digest, coverage=58.8%, confidence=0.625
 
 ### T85n2733 (御注金剛般若波羅蜜經宣演)
 
@@ -689,15 +720,15 @@
 - T85n2745 (仁王經疏): excerpt, coverage=83.9%, confidence=0.615
 - T85n2770 (維摩經疏): excerpt, coverage=88.8%, confidence=0.577
 
-### T29n1562 (阿毘達磨順正理論)
-
-- T29n1560 (阿毘達磨俱舍論本頌): excerpt, coverage=98.6%, confidence=0.603
-- T29n1561 (俱舍論實義疏): digest, coverage=33.2%, confidence=0.387
-
 ### T54n2133B (梵語千字文)
 
 - T54n2133A (梵語千字文): digest, coverage=54.3%, confidence=0.595
 - T54n2134 (唐梵文字): digest, coverage=42.2%, confidence=0.324
+
+### T15n0619 (五門禪經要用法)
+
+- T15n0617 (思惟略要法): excerpt, coverage=81.7%, confidence=0.564
+- T85n2914 (觀經): digest, coverage=55.7%, confidence=0.377
 
 ### T23n1443 (根本說一切有部苾芻尼毘奈耶)
 
@@ -709,30 +740,20 @@
 - T14n0452 (佛說觀彌勒菩薩上生兜率天經): excerpt, coverage=88.2%, confidence=0.550
 - T03n0183 (一切智光明仙人慈心因緣不食肉經): digest, coverage=33.7%, confidence=0.326
 
-### T02n0101 (雜阿含經)
-
-- T02n0111 (佛說相應相可經): digest, coverage=73.4%, confidence=0.534
-- T15n0612 (身觀經): excerpt, coverage=90.0%, confidence=0.517
-
 ### T21n1268 (大使呪法經)
 
-- T21n1267 (使呪法經): excerpt, coverage=88.0%, confidence=0.534
-- T21n1266 (大聖天歡喜雙身毘那夜迦法): digest, coverage=32.0%, confidence=0.315
+- T21n1267 (使呪法經): excerpt, coverage=88.0%, confidence=0.536
+- T21n1266 (大聖天歡喜雙身毘那夜迦法): digest, coverage=32.0%, confidence=0.321
 
 ### T24n1458 (根本薩婆多部律攝)
 
 - T24n1454 (根本說一切有部戒經): excerpt, coverage=81.9%, confidence=0.530
 - T24n1455 (根本說一切有部苾芻尼戒經): digest, coverage=61.3%, confidence=0.452
 
-### T39n1796 (大毘盧遮那成佛經疏)
-
-- T39n1797 (大毘盧遮那經供養次第法疏): digest, coverage=37.3%, confidence=0.524
-- T18n0863 (大毘盧遮那經阿闍梨真實智品中阿闍梨住阿字觀門): digest, coverage=45.3%, confidence=0.389
-
 ### T39n1803 (佛頂尊勝陀羅尼經教跡義記)
 
-- T19n0967 (佛頂尊勝陀羅尼經): excerpt, coverage=82.6%, confidence=0.523
-- T19n0971 (佛說佛頂尊勝陀羅尼經): digest, coverage=46.6%, confidence=0.355
+- T19n0967 (佛頂尊勝陀羅尼經): excerpt, coverage=82.8%, confidence=0.526
+- T19n0971 (佛說佛頂尊勝陀羅尼經): digest, coverage=46.8%, confidence=0.356
 
 ### T19n0939 (佛說大乘觀想曼拏羅淨諸惡趣經)
 
@@ -744,20 +765,15 @@
 - T55n2150 (續大唐內典錄): digest, coverage=62.5%, confidence=0.502
 - T55n2151 (古今譯經圖紀): digest, coverage=45.6%, confidence=0.339
 
-### T15n0619 (五門禪經要用法)
+### T46n1951 (熾盛光道場念誦儀)
 
-- T15n0617 (思惟略要法): excerpt, coverage=81.7%, confidence=0.491
-- T85n2914 (觀經): digest, coverage=55.7%, confidence=0.377
+- T19n0963 (佛說熾盛光大威德消災吉祥陀羅尼經): digest, coverage=63.1%, confidence=0.499
+- T19n0964 (佛說大威德金輪佛頂熾盛光如來消除一切災難陀羅尼經): digest, coverage=33.2%, confidence=0.319
 
 ### T55n2167 (入唐新求聖教目錄)
 
 - T55n2165 (日本國承和五年入唐求法目錄): digest, coverage=72.1%, confidence=0.487
-- T55n2162 (根本大和尚真跡策子等目錄): digest, coverage=36.6%, confidence=0.304
-
-### T46n1951 (熾盛光道場念誦儀)
-
-- T19n0963 (佛說熾盛光大威德消災吉祥陀羅尼經): digest, coverage=63.1%, confidence=0.486
-- T19n0964 (佛說大威德金輪佛頂熾盛光如來消除一切災難陀羅尼經): digest, coverage=33.2%, confidence=0.316
+- T55n2162 (根本大和尚真跡策子等目錄): digest, coverage=36.8%, confidence=0.304
 
 ### T05n0220 (大般若波羅蜜多經(第1卷-第200卷))
 
@@ -774,10 +790,15 @@
 - T46n1946 (金光明最勝懺儀): digest, coverage=48.8%, confidence=0.476
 - T15n0655 (佛說勝義空經): digest, coverage=30.2%, confidence=0.312
 
+### T27n1545 (阿毘達磨大毘婆沙論)
+
+- T26n1544 (阿毘達磨發智論): digest, coverage=72.4%, confidence=0.476
+- T14n0547 (大花嚴長者問佛那羅延力經): digest, coverage=34.9%, confidence=0.396
+
 ### T40n1810 (尼羯磨)
 
 - T22n1434 (四分比丘尼羯磨法): digest, coverage=64.7%, confidence=0.466
-- T85n2791 (宗四分比丘隨門要略行儀): digest, coverage=42.2%, confidence=0.341
+- T85n2791 (宗四分比丘隨門要略行儀): digest, coverage=42.3%, confidence=0.342
 
 ### T40n1814 (菩薩戒本疏)
 
@@ -787,12 +808,7 @@
 ### T40n1809 (僧羯磨)
 
 - T22n1434 (四分比丘尼羯磨法): digest, coverage=61.5%, confidence=0.457
-- T85n2791 (宗四分比丘隨門要略行儀): digest, coverage=46.9%, confidence=0.360
-
-### T39n1788 (金光明最勝王經疏)
-
-- T46n1946 (金光明最勝懺儀): digest, coverage=48.9%, confidence=0.451
-- T15n0655 (佛說勝義空經): digest, coverage=30.2%, confidence=0.331
+- T85n2791 (宗四分比丘隨門要略行儀): digest, coverage=47.0%, confidence=0.360
 
 ### T50n2053 (大唐大慈恩寺三藏法師傳)
 
@@ -801,7 +817,7 @@
 
 ### T23n1435 (十誦律)
 
-- T23n1437 (十誦比丘尼波羅提木叉戒本): digest, coverage=58.1%, confidence=0.421
+- T23n1437 (十誦比丘尼波羅提木叉戒本): digest, coverage=58.2%, confidence=0.421
 - T24n1476 (佛說優婆塞五戒相經): digest, coverage=47.1%, confidence=0.405
 
 ### T15n0639 (月燈三昧經)
@@ -809,10 +825,15 @@
 - T15n0641 (佛說月燈三昧經): digest, coverage=60.5%, confidence=0.418
 - T15n0655 (佛說勝義空經): digest, coverage=32.4%, confidence=0.353
 
+### T19n0973 (尊勝佛頂脩瑜伽法軌儀)
+
+- T19n0974D (佛頂尊勝陀羅尼注義): digest, coverage=50.7%, confidence=0.411
+- T19n0974F (佛頂尊勝陀羅尼別法): digest, coverage=55.2%, confidence=0.359
+
 ### T21n1318 (瑜伽集要救阿難陀羅尼焰口軌儀經)
 
-- T21n1313 (佛說救拔焰口餓鬼陀羅尼經): digest, coverage=52.5%, confidence=0.402
-- T21n1314 (佛說救面然餓鬼陀羅尼神呪經): digest, coverage=30.4%, confidence=0.267
+- T21n1313 (佛說救拔焰口餓鬼陀羅尼經): digest, coverage=53.2%, confidence=0.402
+- T21n1314 (佛說救面然餓鬼陀羅尼神呪經): digest, coverage=32.1%, confidence=0.293
 
 ### T26n1537 (阿毘達磨法蘊足論)
 
@@ -829,6 +850,11 @@
 - T21n1382 (佛說宿命智陀羅尼): digest, coverage=53.1%, confidence=0.356
 - T21n1389 (佛說無量壽大智陀羅尼): digest, coverage=31.0%, confidence=0.237
 
+### T26n1525 (彌勒菩薩所問經論)
+
+- T15n0655 (佛說勝義空經): digest, coverage=32.7%, confidence=0.349
+- T14n0465 (伽耶山頂經): digest, coverage=39.5%, confidence=0.334
+
 ### T24n1483a (佛說目連問戒律中五百輕重事)
 
 - T24n1467b (佛說犯戒罪報輕重經): digest, coverage=51.6%, confidence=0.338
@@ -839,11 +865,6 @@
 - T24n1467b (佛說犯戒罪報輕重經): digest, coverage=51.6%, confidence=0.337
 - T24n1467a (佛說犯戒罪報輕重經): digest, coverage=40.2%, confidence=0.295
 
-### T26n1525 (彌勒菩薩所問經論)
-
-- T14n0465 (伽耶山頂經): digest, coverage=39.5%, confidence=0.334
-- T15n0655 (佛說勝義空經): digest, coverage=31.6%, confidence=0.321
-
 ### T51n2069 (天台九祖傳)
 
 - T50n2047b (龍樹菩薩傳): digest, coverage=50.2%, confidence=0.290
@@ -852,13 +873,13 @@
 ## Multi-Source Digests
 
 ### T22n1431 (四分比丘尼戒本)
-Combined coverage: 90.6%
+Combined coverage: 89.6%
 
 - T22n1428: coverage=81.0%
-- T40n1806: coverage=50.7%
+- T40n1806: coverage=50.8%
 
 ### T85n2747 (挾註波羅蜜多心經)
-Combined coverage: 97.0%
+Combined coverage: 96.3%
 
 - T85n2746: coverage=81.5%
 - T33n1714: coverage=80.8%
@@ -867,13 +888,13 @@ Combined coverage: 97.0%
 - T08n0223: coverage=48.7%
 
 ### T08n0250 (摩訶般若波羅蜜大明呪經)
-Combined coverage: 95.6%
+Combined coverage: 94.6%
 
 - T08n0223: coverage=73.2%
 - T25n1509: coverage=72.8%
 - T85n2746: coverage=65.1%
-- T33n1714: coverage=59.7%
-- T33n1710: coverage=57.4%
+- T33n1714: coverage=63.8%
+- T33n1710: coverage=61.4%
 - T07n0220: coverage=51.0%
 
 ### T22n1434 (四分比丘尼羯磨法)
@@ -890,7 +911,7 @@ Combined coverage: 81.0%
 - T53n2122: coverage=63.9%
 
 ### T22n1429 (四分律比丘戒本)
-Combined coverage: 93.2%
+Combined coverage: 91.7%
 
 - T40n1806: coverage=70.8%
 - T22n1428: coverage=65.8%
@@ -905,7 +926,7 @@ Combined coverage: 96.0%
 - T14n0441: coverage=41.1%
 
 ### T22n1432 (曇無德律部雜羯磨)
-Combined coverage: 80.9%
+Combined coverage: 81.0%
 
 - T22n1428: coverage=69.7%
 - T40n1804: coverage=50.9%
@@ -914,45 +935,39 @@ Combined coverage: 80.9%
 Combined coverage: 89.0%
 
 - T40n1806: coverage=68.5%
-- T22n1428: coverage=66.3%
+- T22n1428: coverage=66.5%
 - T85n2787: coverage=43.9%
 
 ### T22n1433 (羯磨)
-Combined coverage: 82.0%
+Combined coverage: 80.7%
 
 - T22n1428: coverage=68.3%
 - T40n1804: coverage=51.7%
 
-### T85n2745 (仁王經疏)
-Combined coverage: 92.9%
-
-- T38n1776: coverage=83.9%
-- T37n1764: coverage=57.3%
-
-### T17n0753 (十二品生死經)
-Combined coverage: 69.1%
-
-- T53n2122: coverage=58.7%
-- T54n2123: coverage=54.8%
-
 ### T17n0805 (佛說栴檀樹經)
-Combined coverage: 89.5%
+Combined coverage: 85.7%
 
 - T53n2122: coverage=76.9%
 - T54n2123: coverage=75.3%
 - T53n2121: coverage=55.4%
 
 ### T85n2815 (起信論註)
-Combined coverage: 71.0%
+Combined coverage: 70.9%
 
 - T85n2813: coverage=57.9%
 - T44n1846: coverage=32.5%
 
 ### T46n1920 (觀心論)
-Combined coverage: 82.0%
+Combined coverage: 74.4%
 
 - T48n2016: coverage=62.2%
 - T46n1921: coverage=59.2%
+
+### T21n1237 (阿吒婆拘鬼神大將上佛陀羅尼神呪經)
+Combined coverage: 93.0%
+
+- T21n1336: coverage=82.0%
+- T21n1238: coverage=75.1%
 
 ### T24n1499 (菩薩戒羯磨文)
 Combined coverage: 82.4%
@@ -969,17 +984,11 @@ Combined coverage: 79.4%
 - T53n2121: coverage=49.7%
 
 ### T14n0510 (採花違王上佛授決號妙花經)
-Combined coverage: 79.9%
+Combined coverage: 79.3%
 
 - T53n2121: coverage=71.2%
 - T53n2122: coverage=38.5%
 - T54n2123: coverage=37.2%
-
-### T21n1237 (阿吒婆拘鬼神大將上佛陀羅尼神呪經)
-Combined coverage: 99.4%
-
-- T21n1336: coverage=81.6%
-- T21n1238: coverage=74.9%
 
 ### T14n0506 (犍陀國王經)
 Combined coverage: 89.4%
@@ -995,62 +1004,74 @@ Combined coverage: 77.9%
 - T53n2121: coverage=50.7%
 
 ### T14n0447b (現在賢劫千佛名經)
-Combined coverage: 90.8%
+Combined coverage: 91.6%
 
-- T14n0441: coverage=79.6%
-- T45n1909: coverage=67.8%
+- T14n0441: coverage=80.8%
+- T45n1909: coverage=70.1%
+
+### T19n0924B (藥師如來念誦儀軌)
+Combined coverage: 72.2%
+
+- T18n0901: coverage=48.9%
+- T19n0924A: coverage=44.9%
+
+### T55n2152 (續古今譯經圖紀)
+Combined coverage: 88.7%
+
+- T55n2157: coverage=77.0%
+- T55n2154: coverage=75.1%
+- T50n2061: coverage=39.6%
 
 ### T24n1454 (根本說一切有部戒經)
 Combined coverage: 95.1%
 
 - T24n1458: coverage=81.9%
 - T23n1443: coverage=69.2%
-- T23n1442: coverage=63.6%
-
-### T55n2152 (續古今譯經圖紀)
-Combined coverage: 89.2%
-
-- T55n2157: coverage=77.0%
-- T55n2154: coverage=75.1%
-- T50n2061: coverage=39.6%
+- T23n1442: coverage=63.7%
 
 ### T20n1074 (何耶揭唎婆觀世音菩薩受法壇)
-Combined coverage: 69.6%
+Combined coverage: 69.1%
 
-- T18n0901: coverage=59.6%
+- T18n0901: coverage=60.1%
 - T20n1072A: coverage=37.4%
 
 ### T15n0655 (佛說勝義空經)
-Combined coverage: 67.3%
+Combined coverage: 64.3%
 
 - T11n0310: coverage=45.4%
 - T24n1451: coverage=44.3%
+- T11n0316: coverage=42.1%
 - T11n0312: coverage=41.8%
-- T11n0316: coverage=41.0%
 - T24n1450: coverage=41.0%
 - T03n0191: coverage=39.1%
+- T17n0721: coverage=38.2%
 - T07n0220: coverage=37.7%
 - T16n0711: coverage=37.1%
-- T17n0721: coverage=36.0%
 - T17n0762: coverage=36.0%
 - T17n0776: coverage=35.2%
 - T23n1442: coverage=34.9%
 - T24n1448: coverage=34.6%
 - T14n0516: coverage=34.6%
+- T22n1421: coverage=34.1%
 - T01n0003: coverage=34.1%
 - T13n0404: coverage=33.2%
 - T16n0715: coverage=33.2%
-- T22n1421: coverage=33.0%
+- T03n0187: coverage=33.2%
 - T08n0231: coverage=33.0%
+- T26n1525: coverage=32.7%
+- T09n0264: coverage=32.4%
+- T09n0262: coverage=32.4%
 - T15n0639: coverage=32.4%
 - T24n1480: coverage=32.4%
-- T03n0187: coverage=31.9%
-- T26n1525: coverage=31.6%
+- T17n0763: coverage=31.9%
 - T26n1537: coverage=31.3%
 - T16n0659: coverage=31.3%
+- T39n1788: coverage=31.3%
+- T08n0261: coverage=31.0%
+- T24n1482: coverage=31.0%
 - T46n1937: coverage=30.5%
-- T39n1788: coverage=30.2%
 - T16n0665: coverage=30.2%
+- T01n0001: coverage=30.1%
 
 ### T03n0183 (一切智光明仙人慈心因緣不食肉經)
 Combined coverage: 67.8%
@@ -1081,16 +1102,23 @@ Combined coverage: 81.6%
 - T20n1118: coverage=34.7%
 
 ### T16n0686 (佛說報恩奉盆經)
-Combined coverage: 95.6%
+Combined coverage: 93.6%
 
 - T39n1792: coverage=82.0%
 - T53n2121: coverage=62.5%
 
 ### T40n1808 (四分律刪補隨機羯磨)
-Combined coverage: 70.5%
+Combined coverage: 70.6%
 
 - T22n1428: coverage=55.5%
 - T40n1804: coverage=45.7%
+
+### T02n0148 (國王不梨先泥十夢經)
+Combined coverage: 82.4%
+
+- T53n2122: coverage=61.9%
+- T53n2121: coverage=53.3%
+- T02n0125: coverage=31.8%
 
 ### T17n0800 (佛說無上處經)
 Combined coverage: 73.4%
@@ -1099,49 +1127,36 @@ Combined coverage: 73.4%
 - T02n0099: coverage=36.9%
 
 ### T14n0540b (佛說樹提伽經)
-Combined coverage: 80.4%
+Combined coverage: 80.1%
 
-- T53n2122: coverage=62.1%
-- T54n2123: coverage=56.8%
+- T53n2122: coverage=62.6%
+- T54n2123: coverage=57.3%
 - T53n2121: coverage=48.9%
-
-### T02n0148 (國王不梨先泥十夢經)
-Combined coverage: 82.8%
-
-- T53n2122: coverage=61.9%
-- T53n2121: coverage=53.3%
-- T02n0125: coverage=31.8%
-
-### T19n0924B (藥師如來念誦儀軌)
-Combined coverage: 90.9%
-
-- T18n0901: coverage=48.9%
-- T19n0924A: coverage=43.2%
 
 ### T03n0174 (菩薩睒子經)
 Combined coverage: 67.3%
 
 - T53n2121: coverage=60.4%
-- T53n2122: coverage=55.8%
+- T53n2122: coverage=55.9%
 
 ### T26n1520 (妙法蓮華經論優波提舍)
 Combined coverage: 91.3%
 
-- T40n1818: coverage=79.9%
+- T40n1818: coverage=80.0%
 - T34n1723: coverage=63.0%
 
 ### T21n1329 (佛說呪小兒經)
-Combined coverage: 80.3%
+Combined coverage: 67.1%
 
 - T21n1336: coverage=56.2%
 - T53n2122: coverage=47.9%
 - T21n1406: coverage=37.0%
 
 ### T55n2155 (開元釋教錄略出)
-Combined coverage: 86.9%
+Combined coverage: 87.1%
 
-- T55n2154: coverage=73.9%
-- T55n2157: coverage=69.0%
+- T55n2154: coverage=74.2%
+- T55n2157: coverage=69.5%
 
 ### T04n0195 (佛說十二遊經)
 Combined coverage: 59.1%
@@ -1150,36 +1165,29 @@ Combined coverage: 59.1%
 - T50n2040: coverage=30.1%
 
 ### T19n0974F (佛頂尊勝陀羅尼別法)
-Combined coverage: 64.7%
+Combined coverage: 64.2%
 
 - T19n0973: coverage=55.2%
 - T19n0974E: coverage=44.0%
 
-### T46n1946 (金光明最勝懺儀)
-Combined coverage: 57.0%
+### T14n0447a (現在賢劫千佛名經)
+Combined coverage: 72.7%
 
-- T39n1788: coverage=48.9%
+- T14n0441: coverage=64.9%
+- T45n1909: coverage=38.1%
+
+### T46n1946 (金光明最勝懺儀)
+Combined coverage: 55.9%
+
+- T39n1788: coverage=49.2%
 - T16n0665: coverage=48.8%
 - T16n0664: coverage=31.5%
 
-### T19n0974D (佛頂尊勝陀羅尼注義)
-Combined coverage: 73.5%
+### T02n0146 (舍衛國王夢見十事經)
+Combined coverage: 49.7%
 
-- T19n0972: coverage=39.8%
-- T19n0974C: coverage=38.9%
-
-### T14n0447a (現在賢劫千佛名經)
-Combined coverage: 74.8%
-
-- T14n0441: coverage=63.4%
-- T45n1909: coverage=35.2%
-
-### T50n2055 (玄宗朝翻經三藏善無畏贈鴻臚卿行狀)
-Combined coverage: 78.6%
-
-- T55n2152: coverage=63.9%
-- T55n2154: coverage=48.8%
-- T55n2157: coverage=36.1%
+- T53n2122: coverage=37.5%
+- T02n0125: coverage=37.2%
 
 ### T14n0540a (佛說樹提伽經)
 Combined coverage: 81.7%
@@ -1189,17 +1197,18 @@ Combined coverage: 81.7%
 - T54n2123: coverage=44.7%
 
 ### T03n0181b (佛說九色鹿經)
-Combined coverage: 56.2%
+Combined coverage: 55.8%
 
 - T53n2121: coverage=50.2%
+- T53n2122: coverage=49.8%
 - T54n2123: coverage=49.6%
-- T53n2122: coverage=49.4%
 
-### T45n1871 (華嚴經旨歸)
-Combined coverage: 100.0%
+### T19n0974D (佛頂尊勝陀羅尼注義)
+Combined coverage: 67.0%
 
-- T45n1887B: coverage=69.0%
-- T51n2073: coverage=31.0%
+- T19n0973: coverage=50.7%
+- T19n0974C: coverage=45.8%
+- T19n0972: coverage=45.2%
 
 ### T18n0856 (大毘盧遮那成佛神變加持經略示七支念誦隨行法)
 Combined coverage: 50.6%
@@ -1208,41 +1217,41 @@ Combined coverage: 50.6%
 - T18n0852b: coverage=30.8%
 
 ### T03n0175c (佛說睒子經)
-Combined coverage: 55.2%
+Combined coverage: 55.3%
 
-- T53n2121: coverage=47.3%
+- T53n2121: coverage=47.5%
 - T53n2122: coverage=46.6%
 
 ### T03n0175b (佛說睒子經)
-Combined coverage: 54.5%
+Combined coverage: 54.6%
 
-- T53n2121: coverage=47.1%
+- T53n2121: coverage=47.2%
 - T53n2122: coverage=45.7%
 
 ### T03n0175a (睒子經)
-Combined coverage: 53.2%
+Combined coverage: 53.3%
 
-- T53n2121: coverage=46.7%
+- T53n2121: coverage=46.9%
 - T53n2122: coverage=41.4%
 
 ### T55n2182 (律宗章疏)
-Combined coverage: 56.9%
+Combined coverage: 50.8%
 
 - T55n2154: coverage=45.4%
 - T55n2157: coverage=42.8%
+
+### T08n0253 (般若波羅蜜多心經)
+Combined coverage: 60.0%
+
+- T33n1710: coverage=49.5%
+- T85n2746: coverage=47.1%
+- T33n1714: coverage=45.3%
 
 ### T24n1476 (佛說優婆塞五戒相經)
 Combined coverage: 60.4%
 
 - T23n1435: coverage=47.1%
-- T53n2122: coverage=30.6%
-
-### T08n0253 (般若波羅蜜多心經)
-Combined coverage: 62.8%
-
-- T33n1710: coverage=49.5%
-- T85n2746: coverage=46.2%
-- T33n1714: coverage=45.3%
+- T53n2122: coverage=30.7%
 
 ### T14n0436 (受持七佛名號所生功德經)
 Combined coverage: 45.1%
@@ -1251,58 +1260,46 @@ Combined coverage: 45.1%
 - T07n0220: coverage=38.5%
 
 ### T85n2791 (宗四分比丘隨門要略行儀)
-Combined coverage: 70.2%
+Combined coverage: 69.8%
 
-- T40n1809: coverage=46.9%
+- T40n1809: coverage=47.0%
 - T40n1808: coverage=46.8%
-- T40n1804: coverage=45.9%
-- T40n1810: coverage=42.2%
+- T40n1804: coverage=46.0%
+- T40n1810: coverage=42.3%
 - T22n1428: coverage=41.7%
 - T22n1433: coverage=39.0%
 
 ### T21n1389 (佛說無量壽大智陀羅尼)
-Combined coverage: 71.4%
+Combined coverage: 75.0%
 
 - T19n0939: coverage=48.8%
+- T19n0937: coverage=31.0%
 - T21n1386: coverage=31.0%
 
-### T02n0146 (舍衛國王夢見十事經)
-Combined coverage: 54.1%
-
-- T53n2122: coverage=37.5%
-- T02n0125: coverage=37.2%
-- T53n2121: coverage=33.3%
-
 ### T08n0252 (普遍智藏般若波羅蜜多心經)
-Combined coverage: 51.6%
+Combined coverage: 48.5%
 
 - T33n1710: coverage=42.7%
 - T85n2746: coverage=40.0%
 - T33n1714: coverage=37.0%
 
 ### T85n2804 (唯識三十論要釋)
-Combined coverage: 53.8%
+Combined coverage: 53.7%
 
 - T36n1736: coverage=34.9%
 - T48n2016: coverage=32.0%
 
 ### T18n0891 (佛說幻化網大瑜伽教十忿怒明王大明觀想儀軌經)
-Combined coverage: 61.7%
+Combined coverage: 61.8%
 
-- T18n0890: coverage=47.7%
-- T18n0885: coverage=40.5%
-
-### T08n0254 (般若波羅蜜多心經)
-Combined coverage: 45.0%
-
-- T33n1714: coverage=38.2%
-- T85n2746: coverage=30.8%
+- T18n0890: coverage=47.9%
+- T18n0885: coverage=40.7%
 
 ## Alignment Visualizations (Top 20)
 
 ```
 T20n1134B (金剛壽命陀羅尼經) → T20n1134A (金剛壽命陀羅尼經法)
-Coverage: 97% | Novel: 3% | Confidence: 0.81 | Class: retranslation
+Coverage: 97% | Novel: 3% | Confidence: 0.83 | Class: retranslation
 
 DIGEST                                        SOURCE
 ------------------------------------------------------------------------------------------
@@ -2222,57 +2219,6 @@ DIGEST                                        SOURCE
 ```
 
 ```
-T16n0663 (金光明經) → T16n0664 (合部金光明經)
-Coverage: 90% | Novel: 10% | Confidence: 0.74 | Class: retranslation
-
-DIGEST                                        SOURCE
-------------------------------------------------------------------------------------------
-[0-5]      金光明經序                              T16n0664 pos 2-7 (EXACT)
-[5-51]     夫靈心絕待泯萬物而獨存妙行難思諸緣普現則實際理地雖不受於一毫...  [NOVEL]
-[51-56]    金光明經依                              T16n0664 pos 25513-25518 (EXACT)
-[56-289]   清淨心建解脫行顯出塵之經卷永廓迷情示伏藏之寶王頓圓大用夫以信...  [NOVEL]
-[289-294]  十千天子聞                              T16n0664 pos 43254-43259 (EXACT)
-[294-300]  而頓證於菩提                             [NOVEL]
-[300-305]  一切眾生入                              T16n0664 pos 18597-18602 (EXACT)
-[305-351]  者皆同於甘露則見聞隨喜讀誦受持於一念具了無上法門者豈小緣哉凡...  [NOVEL]
-[351-356]  序金光明經                              T16n0664 pos 6-11 (EXACT)
-[356-620]  序品第一如是我聞一時佛住王舍大城耆闍崛山是時如來遊於無量甚深...  T16n0664 pos 539-803 (FUZZY)
-[620-1628] 持是經者大辯天神尼連河神鬼子母神地神堅牢大梵尊天三十三天大神...  [NOVEL]
-[1628-1634] 不現金光明經                             T16n0664 pos 50358-50364 (EXACT)
-[1634-1804] 懺悔品第三爾時信相菩薩即於其夜夢見金鼓其狀姝大其明普照喻如日...  T16n0664 pos 7921-8091 (FUZZY)
-[1804-1808] 目不暫捨                               [NOVEL]
-[1808-4420] 以其夢中所見金鼓及懺悔偈向如來說昨夜所夢至心憶持夢見金鼓妙色...  T16n0664 pos 8091-10703 (FUZZY)
-[4420-6184] 讚歎品第四爾時佛告地神堅牢善女天過去有王名金龍尊常以讚歎讚歎...  T16n0664 pos 23672-25436 (FUZZY)
-[6184-6188] 金光明經                               [NOVEL]
-[6188-11643] 四天王品第六爾時毘沙門天王提頭賴吒天王毘留勒叉天王毘留博叉天...  T16n0664 pos 28060-33513 (FUZZY)
-[11643-11651] 金光明經大辯天神                           [NOVEL]
-[11651-11656] 品第七爾時                              T16n0664 pos 23674-23679 (EXACT)
-[11656-11658] 大辯                                 [NOVEL]
-[11658-11670] 天白佛言世尊是說法者我當                       T16n0664 pos 36094-36106 (EXACT)
-[11670-11829] 益其樂說辯才令其所說莊嚴次第善得大智若是經中有失文字句義違錯...  [NOVEL]
-[11829-12379] 阿耨多羅三藐三菩提金光明經功德天品第八爾時功德天白佛言世尊是...  T16n0664 pos 36069-36618 (FUZZY)
-[12379-12381] 羅佉                                 [NOVEL]
-[12381-12452] 摩訶毘呵羅伽帝三曼陀毘陀那伽帝摩訶迦梨波帝波婆禰薩婆哆㖃三曼...  T16n0664 pos 36618-36687 (FUZZY)
-[12452-12455] 婆羅尼                                [NOVEL]
-[12455-15809] 是灌頂章句必定吉祥真實不虛等行眾生及中善根應當受持讀誦通利七...  T16n0664 pos 36817-40165 (FUZZY)
-[15809-15814] 金光明經善                              T16n0664 pos 22213-22218 (EXACT)
-[15814-15815] 集                                  [NOVEL]
-[15815-15821] 品第十二爾時                             T16n0664 pos 34204-34210 (EXACT)
-[15821-16403] 如來復為地神說往昔因緣而作偈言我昔曾為轉輪聖王捨四大地及以大...  T16n0664 pos 40173-40754 (FUZZY)
-[16403-16411] 羅摩訶曼殊眾妙寶                           [NOVEL]
-[16411-17655] 華無量百千種種妓樂於虛空中不鼓自鳴寶冥比丘能說法者尋上高座結...  T16n0664 pos 40754-41998 (FUZZY)
-[17655-17663] 令無災禍永離諸苦                           [NOVEL]
-[17663-17942] 釋提桓因及日月天閻摩羅王風水諸神違馱天神及毘紐天大辯天神及自...  T16n0664 pos 41998-42277 (FUZZY)
-[17942-17959] 梨多醯波醯阿伽跋羅支羅摩伽央掘摩羅                  [NOVEL]
-[17959-27180] 如是等神皆有無量神足大力常勤擁護聽受如是微妙經者阿耨達龍娑伽...  T16n0664 pos 42278-51499 (FUZZY)
-[27180-27206] 一切眾生若聞此法皆入甘露無生法門金光明經囑累品第十九         [NOVEL]
-[27206-27624] 爾時釋迦牟尼佛從三昧起現大神力以右手摩諸菩薩摩訶薩頂與諸天王...  T16n0664 pos 52388-52804 (FUZZY)
-[27624-28769] 金光明經懺悔滅罪傳昔溫州治中張居道滄州景城縣人未莅職日因適女...  [NOVEL]
-[28769-28774] 差平復如本                              T16n0664 pos 44733-44738 (EXACT)
-[28774-29022] 當此之時溫州一郡所養雞猪鵝鴨肉用之徒咸悉放生家家斷肉人人善念...  [NOVEL]
-```
-
-```
 T31n1601 (辯中邊論頌) → T31n1600 (辯中邊論)
 Coverage: 100% | Novel: 0% | Confidence: 0.74 | Class: excerpt
 
@@ -2387,119 +2333,8 @@ DIGEST                                        SOURCE
 ```
 
 ```
-T09n0262 (妙法蓮華經) → T09n0264 (添品妙法蓮華經)
-Coverage: 92% | Novel: 8% | Confidence: 0.73 | Class: retranslation
-
-DIGEST                                        SOURCE
-------------------------------------------------------------------------------------------
-[0-4]      御製大乘                               [NOVEL]
-[4-10]     妙法蓮華經序                             T09n0264 pos 2-8 (EXACT)
-[10-14]    昔如來於                               [NOVEL]
-[14-21]    耆闍崛山中與大                            T09n0264 pos 433-440 (EXACT)
-[21-24]    阿羅漢                                [NOVEL]
-[24-33]    阿若憍陳如摩訶迦葉                          T09n0264 pos 476-485 (EXACT)
-[33-42]    無量等眾演說大乘真                          [NOVEL]
-[42-47]    經名無量義                              T09n0264 pos 1149-1154 (EXACT)
-[47-65]    是時天雨寶華布濩充滿慧光現瑞洞燭幽顯                 [NOVEL]
-[65-73]    普佛世界六種震動                           T09n0264 pos 3129-3137 (EXACT)
-[73-81]    一切人天得未曾有                           T09n0264 pos 62921-62929 (EXACT)
-[81-92]    咸皆歡喜讚歎以為是經乃                        [NOVEL]
-[92-100]   諸佛如來祕密之藏                           T09n0264 pos 45052-45060 (EXACT)
-[100-146]  神妙叵測廣大難名所以拔滯溺之沈流拯昏迷之失性功德弘遠莫可涯涘...  [NOVEL]
-[146-151]  沙門竺法護                              T09n0264 pos 81-86 (EXACT)
-[151-254]  者初加翻譯名曰正法華暨東晉龜茲三藏法師鳩摩羅什重翻名曰妙法蓮...  [NOVEL]
-[254-273]  諸眾生有種種性種種欲種種行種種憶想分別                T09n0264 pos 49245-49264 (EXACT)
-[273-326]  歷劫纏繞無有出期乃為此大事因緣現世敷暢妙旨作殊勝方便俾皆得度...  [NOVEL]
-[326-332]  女人一切眾生                             T09n0264 pos 31792-31798 (EXACT)
-[332-356]  能秉心至誠持誦佩服頂禮供養即離一切苦惱除一切業障           [NOVEL]
-[356-362]  解一切生死之                             T09n0264 pos 63552-63558 (EXACT)
-[362-581]  厄不啻如飢之得食如渴之得飲如寒之得火如熱之得涼如貧之得寶如病...  [NOVEL]
-[581-586]  妙法蓮華經                              T09n0264 pos 2-7 (EXACT)
-[586-588]  弘傳                                 [NOVEL]
-[588-595]  序妙法蓮華經者                            T09n0264 pos 7-14 (EXACT)
-[595-671]  統諸佛降靈之本致也蘊結大夏出彼千齡東傳震旦三百餘載西晉惠帝永...  [NOVEL]
-[671-677]  經名妙法蓮華                             T09n0264 pos 3306-3312 (EXACT)
-[677-986]  隋氏仁壽大興善寺北天竺沙門闍那笈多後所翻者同名妙法三經重沓文...  [NOVEL]
-[986-21632] 序品第一如是我聞一時佛住王舍城耆闍崛山中與大比丘眾萬二千人俱...  T09n0264 pos 418-21071 (FUZZY)
-[21632-43932] 妙法蓮華經授記品第六爾時世尊說是偈已告諸大眾唱如是言我此弟子...  T09n0264 pos 23419-45725 (FUZZY)
-[43932-55816] 妙法蓮華經從地踊出品第十五爾時他方國土諸來菩薩摩訶薩過八恒河...  T09n0264 pos 45727-57616 (FUZZY)
-[55816-55819] 花經故                                [NOVEL]
-[55819-57331] 妙法蓮華經常不輕菩薩品第二十爾時佛告得大勢菩薩摩訶薩汝今當知...  T09n0264 pos 57621-59133 (FUZZY)
-[57331-57340] 妙法蓮華經如來神力                          [NOVEL]
-[57340-57347] 品第二十一爾時                            T09n0264 pos 60279-60286 (EXACT)
-[57347-57608] 千世界微塵等菩薩摩訶薩從地踊出者皆於佛前一心合掌瞻仰尊顏而白...  [NOVEL]
-[57608-57632] 天龍夜叉乾闥婆阿修羅迦樓羅緊那羅摩睺羅伽人非人等           T09n0264 pos 37031-37055 (EXACT)
-[57632-57700] 以佛神力故皆見此娑婆世界無量無邊百千萬億眾寶樹下師子座上諸佛...  [NOVEL]
-[57700-57705] 眾恭敬圍繞                              T09n0264 pos 64692-64697 (EXACT)
-[57705-58468] 釋迦牟尼佛既見是已皆大歡喜得未曾有即時諸天於虛空中高聲唱言過...  [NOVEL]
-[58468-58943] 妙法蓮華經囑累品第二十二爾時釋迦牟尼佛從法座起現大神力以右手...  T09n0264 pos 72164-72638 (FUZZY)
-[58943-59727] 妙法蓮華經藥王菩薩本事品第二十三爾時宿王華菩薩白佛言世尊藥王...  T09n0264 pos 61495-62279 (FUZZY)
-[59727-59732] 供養於世尊                              [NOVEL]
-[59732-59737] 為求無上慧                              T09n0264 pos 32135-32140 (EXACT)
-[59737-61757] 說是偈已而白父言日月淨明德佛今故現在我先供養佛已得解一切眾生...  T09n0264 pos 62279-64299 (FUZZY)
-[61757-62796] 妙音菩薩品第二十四爾時釋迦牟尼佛放大人相肉髻光明及放眉間白毫...  T09n0264 pos 64583-65623 (FUZZY)
-[62796-62968] 邪見不善心不攝五情不世尊眾生能降伏諸魔怨不久滅度多寶如來在七...  [NOVEL]
-[62968-62983] 多陀阿伽度阿羅訶三藐三佛陀國名                    T09n0264 pos 68859-68874 (EXACT)
-[62983-63032] 現一切世間劫名憙見妙音菩薩於萬二千歲以十萬種伎樂供養雲雷音王...  [NOVEL]
-[63032-63039] 淨華宿王智佛國                            T09n0264 pos 65215-65222 (EXACT)
-[63039-63270] 有是神力華德於汝意云何爾時雲雷音王佛所妙音菩薩伎樂供養奉上寶...  [NOVEL]
-[63270-63295] 天龍夜叉乾闥婆阿修羅迦樓羅緊那羅摩睺羅伽人非人等身          T09n0264 pos 67810-67835 (EXACT)
-[63295-63760] 而說是經諸有地獄餓鬼畜生及眾難處皆能救濟乃至於王後宮變為女身...  [NOVEL]
-[63760-63770] 見文殊師利法王子菩薩                         T09n0264 pos 64893-64903 (EXACT)
-[63770-63835] 及見藥王菩薩得勤精進力菩薩勇施菩薩等亦令是八萬四千菩薩得現一...  T09n0264 pos 66599-66664 (EXACT)
-[63835-63845] 御製觀世音普門品經序                         [NOVEL]
-[63845-63851] 觀世音菩薩以                             T09n0264 pos 66708-66714 (EXACT)
-[63851-63909] 爍迦羅心應變無窮自在神通遍遊法界入微塵國土說法濟度具足妙相弘...  [NOVEL]
-[63909-63915] 妙法蓮華經普                             T09n0264 pos 70540-70546 (EXACT)
-[63915-64204] 門品者為度脫苦惱之真詮也人能常以是經作觀一念方萌即見大悲勝相...  [NOVEL]
-[64204-64217] 妙法蓮華經觀世音菩薩普門品                      T09n0264 pos 66666-66679 (EXACT)
-[64217-64230] 經妙法蓮華經觀世音菩薩普門                      [NOVEL]
-[64230-64237] 品第二十五爾時                            T09n0264 pos 68820-68827 (EXACT)
-[64237-64374] 無盡意菩薩即從座起偏袒右肩合掌向佛而作是言世尊觀世音菩薩以何...  [NOVEL]
-[64374-64386] 金銀琉璃車璩馬瑙珊瑚虎珀                       T09n0264 pos 53515-53527 (EXACT)
-[64386-64767] 真珠等寶入於大海假使黑風吹其船舫飄墮羅剎鬼國其中若有乃至一人...  [NOVEL]
-[64767-64774] 供養觀世音菩薩                            T09n0264 pos 67899-67906 (EXACT)
-[64774-65403] 便生福德智慧之男設欲求女便生端正有相之女宿殖德本眾人愛敬無盡...  [NOVEL]
-[65403-65409] 身得度者即現                             T09n0264 pos 67494-67500 (EXACT)
-[65409-65412] 執金剛                                [NOVEL]
-[65412-65417] 身而為說法                              T09n0264 pos 45472-45477 (EXACT)
-[65417-65688] 無盡意是觀世音菩薩成就如是功德以種種形遊諸國土度脫眾生是故汝...  [NOVEL]
-[65688-65695] 爾時無盡意菩薩                            T09n0264 pos 66683-66690 (EXACT)
-[65695-65699] 以偈問曰                               [NOVEL]
-[65699-66297] 世尊妙相具我今重問彼佛子何因緣名為觀世音具足妙相尊偈答無盡意...  T09n0264 pos 68209-68807 (FUZZY)
-[66297-66470] 妙法蓮華經陀羅尼品第二十六爾時藥王菩薩即從座起偏袒右肩合掌向...  T09n0264 pos 60271-60445 (FUZZY)
-[66470-66627] 安爾曼爾摩禰摩摩禰旨隷遮梨第賒咩賒履多瑋羶帝目帝目多履娑履阿...  [NOVEL]
-[66627-66779] 多夜世尊是陀羅尼神咒六十二億恒河沙等諸佛所說若有侵毀此法師者...  T09n0264 pos 60600-60752 (FUZZY)
-[66779-66805] 痤隷摩訶痤隷郁枳目枳阿隷阿羅婆第涅隷第涅隷多婆第伊緻         T09n0264 pos 64458-64484 (EXACT)
-[66805-66821] 柅韋緻柅旨緻柅涅隷𡎰柅涅犁𡎰婆底                   [NOVEL]
-[66821-66894] 世尊是陀羅尼神呪恒河沙等諸佛所說亦皆隨喜若有侵毀此法師者則為...  T09n0264 pos 60801-60874 (EXACT)
-[66894-66909] 阿梨那梨㝹那梨阿那盧那履拘那履                    T09n0264 pos 64500-64515 (EXACT)
-[66909-66993] 世尊以是神呪擁護法師我亦自當擁護持是經者令百由旬內無諸衰患爾...  T09n0264 pos 60892-60976 (FUZZY)
-[66993-67015] 阿伽禰伽禰瞿利乾陀利旃陀利摩蹬耆常求利浮樓莎             T09n0264 pos 64515-64537 (EXACT)
-[67015-67018] 柅頞底                                [NOVEL]
-[67018-67169] 世尊是陀羅尼神呪四十二億諸佛所說若有侵毀此法師者則為侵毀是諸...  T09n0264 pos 61005-61155 (FUZZY)
-[67169-67211] 伊提履伊提泯伊提履阿提履伊提履泥履泥履泥履泥履泥履樓醯樓醯樓...  [NOVEL]
-[67211-67333] 醯寧上我頭上莫惱於法師若夜叉若羅剎若餓鬼若富單那若吉遮若毘陀...  T09n0264 pos 61168-61290 (FUZZY)
-[67333-67537] 阿梨樹枝如殺父母罪亦如壓油殃斗秤欺誑人調達破僧罪犯此法師者當...  [NOVEL]
-[67537-69959] 妙法蓮華經妙莊嚴王本事品第二十七爾時佛告諸大眾乃往古世過無量...  T09n0264 pos 68809-71232 (FUZZY)
-[69959-70088] 阿檀地檀陀婆地檀陀婆帝檀陀鳩舍隷檀陀修陀隷修陀隷修陀羅婆底佛...  T09n0264 pos 72638-72767 (FUZZY)
-[70088-70930] 世尊若有菩薩得聞是陀羅尼者當知普賢神通之力若法華經行閻浮提有...  T09n0264 pos 71324-72162 (FUZZY)
-[70930-70939] 佛說是經時普賢等諸                          [NOVEL]
-[70939-70944] 菩薩舍利弗                              T09n0264 pos 9013-9018 (EXACT)
-[70944-70952] 等諸聲聞及諸天龍                           [NOVEL]
-[70952-70958] 人非人等一切                             T09n0264 pos 59294-59300 (EXACT)
-[70958-70972] 大會皆大歡喜受持佛語作禮而去                     [NOVEL]
-[70972-70977] 妙法蓮華經                              T09n0264 pos 2-7 (EXACT)
-[70977-71044] 後序法華經者諸佛之祕藏眾經之實體也以華為名者照其本也稱芬陀利...  [NOVEL]
-[71044-71050] 八萬四千法藏                             T09n0264 pos 39295-39301 (EXACT)
-[71050-71532] 者道果之原也故以喻焉諸華之中蓮華最勝華尚未敷名屈摩羅敷而將落...  [NOVEL]
-[71532-71537] 妙法蓮華經                              T09n0264 pos 2-7 (EXACT)
-[71537-71576] 七卷法華三昧等經三卷共計一十卷伏茲勝因薦嚴超生淨土時紹興二十...  [NOVEL]
-```
-
-```
 T10n0295 (大方廣佛華嚴經入法界品) → T10n0279 (大方廣佛華嚴經)
-Coverage: 82% | Novel: 18% | Confidence: 0.73 | Class: excerpt
+Coverage: 82% | Novel: 18% | Confidence: 0.73 | Class: excerpt | Phonetic: 0%
 
 DIGEST                                        SOURCE
 ------------------------------------------------------------------------------------------
@@ -2509,7 +2344,10 @@ DIGEST                                        SOURCE
 [12-18]    言善男子於此                             T10n0279 pos 556899-556905 (EXACT)
 [18-115]   世界三十三天有王名正念王有童女名天主光汝詣彼問云何菩薩學菩薩...  [NOVEL]
 [115-127]  菩薩云何學菩薩行修菩薩道                       T10n0279 pos 441717-441729 (EXACT)
-[127-160]  我聞聖者善能誘誨願為我說天女答言善男子我得菩薩解脫名無礙念清...  [NOVEL]
+[127-139]  我聞聖者善能誘誨願為我說                       [NOVEL]
+[139-144]  天女答言善                              T10n0279 pos 494663-494668 (PHONETIC)
+           Transliteration: 天→ya←夜 女→ni←神
+[144-160]  男子我得菩薩解脫名無礙念清淨莊嚴                   [NOVEL]
 [160-168]  善男子我念過去有                           T10n0279 pos 486328-486336 (EXACT)
 [168-341]  最勝劫名青蓮華我於彼劫中供養恒河沙等諸佛如來彼諸如來從初出家...  [NOVEL]
 [341-347]  世界微塵等諸                             T10n0279 pos 260852-260858 (EXACT)
@@ -2590,6 +2428,52 @@ DIGEST                                        SOURCE
 ```
 
 ```
+T18n0907 (佛頂尊勝心破地獄轉業障出三界祕密陀羅尼) → T18n0905 (三種悉地破地獄轉業障出三界祕密陀羅尼法)
+Coverage: 91% | Novel: 9% | Confidence: 0.73 | Class: excerpt
+
+DIGEST                                        SOURCE
+------------------------------------------------------------------------------------------
+[0-4]      名金剛鼓                               [NOVEL]
+[4-26]     口開舌舉震法界宮蓮華藏諸如來出定即以摧破地獄             T18n0905 pos 12-35 (FUZZY)
+[26-43]    滅七遍之殃起教菩薩說五字祕密執本授                  [NOVEL]
+[43-88]    如法布字人主頂戴乎冠中萬國清泰節度觀察旌旗上書寫真言四方晏靜...  T18n0905 pos 43-88 (FUZZY)
+[88-114]   遠聞妖氣潛熾盛布千里苗稼洪潤人無災疾地土神祇風恬雨順         T18n0905 pos 90-116 (FUZZY)
+[114-116]  瑜迦                                 [NOVEL]
+[116-126]  事法約有千條略述少分                         T18n0905 pos 2-12 (EXACT)
+[126-142]  念誦加持戰鼓上書賊軍自降一人不損                   T18n0905 pos 116-132 (EXACT)
+[142-143]  焉                                  [NOVEL]
+[143-152]  佛言阿字金剛部主肝                          T18n0905 pos 276-285 (EXACT)
+[152-159]  鑁字蓮華部主肺                            [NOVEL]
+[159-164]  字寶部主心                              T18n0905 pos 712-717 (EXACT)
+[164-170]  唅字羯磨部主                             T18n0905 pos 905-911 (EXACT)
+[170-171]  胃                                  [NOVEL]
+[171-178]  欠字虛空部主脾                            T18n0905 pos 1147-1154 (EXACT)
+[178-429]  山海大地從阿字出江河萬流從鑁字出金玉珍寶日月星辰火珠光明從覽...  T18n0905 pos 1361-1611 (FUZZY)
+[429-435]  阿金剛地部一                             T18n0905 pos 1713-1719 (EXACT)
+[435-441]  鑁金剛水部二                             T18n0905 pos 1728-1734 (EXACT)
+[441-442]  覽                                  [NOVEL]
+[442-447]  金剛火部三                              T18n0905 pos 1743-1748 (EXACT)
+[447-453]  唅金剛風部四                             T18n0905 pos 1754-1760 (EXACT)
+[453-455]  欠字                                 [NOVEL]
+[455-460]  金剛空部五                              T18n0905 pos 1766-1771 (EXACT)
+[460-515]  如來體性無生觀右五部真言是一切如來無生甘露之珍漿醍醐佛性之妙...  T18n0905 pos 1776-1831 (FUZZY)
+[515-520]  五分法身義                              [NOVEL]
+[520-674]  阿鑁覽唅欠右上五法身真言若日誦一遍或七遍二十一遍或四十九遍者...  T18n0905 pos 1831-1986 (FUZZY)
+[674-697]  已下三箇真言是三種悉地成就法中立上中下品差別也            [NOVEL]
+[697-725]  阿羅波遮那是名出悉地能生根莖遍滿四方誦一遍如轉藏經一百遍       T18n0905 pos 2033-2061 (FUZZY)
+[725-756]  阿微羅𤙖佉大日經悉地品名降伏四魔解脫六趣滿足一切智智金剛字句...  [NOVEL]
+[756-792]  是名入悉地能生枝葉遍滿四方光明晃曜入佛法界名入悉地若誦一遍如...  T18n0905 pos 2157-2193 (FUZZY)
+[792-795]  阿鑁藍                                [NOVEL]
+[795-934]  唅欠是名祕密悉地亦名成就悉地亦名蘇悉地蘇悉地者遍法界也成就佛...  T18n0905 pos 2200-2338 (FUZZY)
+[934-935]  藏                                  [NOVEL]
+[935-945]  是故稽首禮毘盧遮那佛                         T18n0905 pos 2356-2366 (EXACT)
+[945-1001] 稽首毘盧遮那佛開敷淨眼如蓮華三界調御天人師大菩提心救世者深妙...  T18n0905 pos 136-192 (FUZZY)
+[1001-1056] 阿閦寶生救世者彌陀成就不空王咸於悉地吉祥輪傳斯妙法化諸有慈心...  T18n0905 pos 220-275 (FUZZY)
+[1056-1057] 剛                                  [NOVEL]
+[1057-1099] 我依毘盧遮那佛開心智印建標儀無量功德普莊嚴同入總持諸善逝願共...  T18n0905 pos 3844-3886 (FUZZY)
+```
+
+```
 T20n1046 (六字大陀羅尼呪經) → T21n1336 (陀羅尼雜集)
 Coverage: 100% | Novel: 0% | Confidence: 0.73 | Class: excerpt
 
@@ -2600,7 +2484,7 @@ DIGEST                                        SOURCE
 
 ```
 T22n1431 (四分比丘尼戒本) → T22n1428 (四分律)
-Coverage: 81% | Novel: 19% | Confidence: 0.73 | Class: excerpt
+Coverage: 81% | Novel: 19% | Confidence: 0.73 | Class: excerpt | Phonetic: 0%
 
 DIGEST                                        SOURCE
 ------------------------------------------------------------------------------------------
@@ -2636,7 +2520,9 @@ DIGEST                                        SOURCE
 [688-747]  若比丘尼染污心共染污心男子從腋已下膝已上身相觸若捉摩若牽若推...  T22n1428 pos 198839-198898 (EXACT)
 [747-796]  若比丘尼染污心知男子染污心受捉手捉衣入屏處共立共語共行或身相...  T22n1428 pos 200069-200118 (EXACT)
 [796-871]  若比丘尼知比丘尼犯波羅夷不自發露不語眾人不白大眾若於異時彼比...  T22n1428 pos 201077-201152 (EXACT)
-[871-945]  若比丘尼知比丘僧為作舉如法如律如佛所教不順從不懺悔僧未與作共...  [NOVEL]
+[871-876]  若比丘尼知                              T22n1428 pos 198897-198902 (PHONETIC)
+           Transliteration: 若→ya←也 知→va←義
+[876-945]  比丘僧為作舉如法如律如佛所教不順從不懺悔僧未與作共住而順從諸...  [NOVEL]
 [945-964]  是比丘尼諫彼比丘尼時堅持不捨彼比丘尼應                T22n1428 pos 213863-213882 (EXACT)
 [964-998]  第二第三諫令捨此事故乃至三諫捨者善若不捨者是比丘尼波羅夷不共...  T22n1428 pos 202298-202333 (FUZZY)
 [998-1004] 故諸大姊我已                             [NOVEL]
@@ -3140,6 +3026,31 @@ DIGEST                                        SOURCE
 [11195-11280] 當觀如是處有智勤護戒戒淨有智慧便得第一道如過去諸佛及以未來者...  [NOVEL]
 [11280-11285] 諸縛得解脫                              T22n1428 pos 500494-500499 (EXACT)
 [11285-11455] 已入於涅槃諸戲永滅盡尊行大仙說聖賢稱譽戒弟子之所行入寂滅涅槃...  [NOVEL]
+```
+
+```
+T02n0132a (佛說食施獲五福報經) → T53n2122 (法苑珠林)
+Coverage: 82% | Novel: 18% | Confidence: 0.72 | Class: excerpt
+
+DIGEST                                        SOURCE
+------------------------------------------------------------------------------------------
+[0-5]      聞如是一時                              [NOVEL]
+[5-16]     佛在舍衛國祇樹給孤獨園                        T53n2122 pos 398983-398994 (EXACT)
+[16-384]   佛告諸比丘當知食以節度受而不損佛言人持飯食施人有五福德令人得...  T53n2122 pos 453448-453816 (FUZZY)
+[384-395]  其施辯者世世聰明口說流                        [NOVEL]
+[395-424]  利無所躓礙慧辯通達生天世間聞者歡喜靡不稽首聽採法言是為五福      T53n2122 pos 453819-453848 (FUZZY)
+[424-428]  施食之報                               [NOVEL]
+[428-433]  佛言若族姓                              T53n2122 pos 395504-395509 (EXACT)
+[433-468]  子族姓女若發道意施一切飲食衣被在所生處見現在佛諮受三法四意三...  [NOVEL]
+[468-476]  三十二相八十種好                           T53n2122 pos 148545-148553 (EXACT)
+[476-487]  進止十方猶如日出暉暉有                        [NOVEL]
+[487-492]  光遍照十方                              T53n2122 pos 268123-268128 (EXACT)
+[492-514]  教化一切般泥洹後經法續現奉之得度與佛無二佛說             [NOVEL]
+[514-520]  是時天龍鬼神                             T53n2122 pos 563370-563376 (EXACT)
+[520-524]  世間人民                               [NOVEL]
+[524-529]  帝主大臣四                              T53n2122 pos 694185-694190 (EXACT)
+[529-534]  輩弟子靡不                              [NOVEL]
+[534-540]  歡喜為佛作禮                             T53n2122 pos 345555-345561 (EXACT)
 ```
 
 ```

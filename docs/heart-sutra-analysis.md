@@ -11,10 +11,10 @@ relationship is textual and verifiable: a digest shares significant verbatim or
 near-verbatim overlap with its source.
 
 Our computational pipeline analyzed the entire Taisho canon -- approximately
-8,982 XML files across 58 volumes -- and detected 2,812 digest-type
-relationships, of which 132 were classified as excerpts (coverage >= 80%),
-533 as digests (coverage 30-80%), 621 as commentaries, 1,238 as shared
-tradition, and 288 as retranslations. Against this landscape, the Heart Sutra
+8,982 XML files across 58 volumes -- and detected 7,169 digest-type
+relationships, of which 138 were classified as excerpts (coverage >= 80%),
+549 as digests (coverage 30-80%), 669 as commentaries, 5,589 as shared
+tradition, and 224 as retranslations. Against this landscape, the Heart Sutra
 occupies a distinctive position.
 
 ## 2. The Heart Sutra as a Digest of the Large Prajnaparamita
@@ -91,7 +91,7 @@ parallel versions of the same text rather than one being derived from the other.
 
 ### 2.3 The Heart Sutra Among All Detected Relationships
 
-Among all 2,812 relationships our pipeline detected, T250 -> T223 ranks **51st
+Among all 7,169 relationships our pipeline detected, T250 -> T223 ranks **51st
 overall** by confidence score (0.660). This places it firmly in the upper tier of
 detected digest relationships, though not at the very top. The relationships that
 rank higher tend to involve either:
@@ -185,7 +185,7 @@ T255 (41.2%). These form a tight cluster of parallel translations.
 
 ### 3.3 Multi-Source Digests
 
-Our pipeline detected 63 multi-source digests -- texts that draw material from
+Our pipeline detected 58 multi-source digests -- texts that draw material from
 multiple sources. Two Heart Sutra-related texts appear among these:
 
 **T08n0250 (Kumarajiva Heart Sutra):**
@@ -297,6 +297,18 @@ sacred formulae. But dharani texts typically share ritual material (mantras,
 visualization instructions) rather than philosophical content. The Heart Sutra
 uniquely bridges both worlds: it is simultaneously a philosophical digest and a
 dharani text.
+
+Our pipeline's phonetic transliteration detection adds a new dimension to this
+observation. The Heart Sutra's dharani -- *gate gate paragate parasamgate bodhi
+svaha* -- is transliterated differently by different translators: T250
+(Kumarajiva) uses 竭帝竭帝波羅竭帝 while T901 (a dharani collection) uses 揭帝揭帝波羅揭帝.
+These are different Chinese characters encoding the same Sanskrit syllables.
+Character-level matching cannot detect this relationship, but our phonetic
+equivalence detection (which maps characters to their Sanskrit syllable values
+via the Digital Dictionary of Buddhism) identifies a 15-character phonetic match
+between the two dharani passages. This computationally confirms that different
+translators used different characters for the same sounds -- a phenomenon
+previously documented only through close philological reading.
 
 ### 5.3 The Diamond Sutra
 
@@ -462,7 +474,7 @@ within T223, consistent with selective extraction rather than sequential copying
 
 ### 7.2 A Qualitative Assessment
 
-Among the 132 excerpts and 533 digests detected by our pipeline, the
+Among the 138 excerpts and 549 digests detected by our pipeline, the
 Heart Sutra is qualitatively unique in several ways:
 
 1. **It is the only philosophical digest that includes a mantra.** No other
@@ -522,8 +534,8 @@ vs. 44.6% for Xuanzang's T251 against Kumarajiva's T223) provides quantitative
 support for the Chinese-composition hypothesis.
 
 But our analysis also reveals just how exceptional the Heart Sutra is within the
-broader landscape of digests. Among 2,812 detected relationships, including 132
-excerpts and 533 digests, no other text combines:
+broader landscape of digests. Among 7,169 detected relationships, including 138
+excerpts and 549 digests, no other text combines:
 
 - Extreme compression (960:1)
 - Creative reframing (new speakers, added mantra)
@@ -546,5 +558,6 @@ That is an achievement no pipeline can fully measure.
 *Analysis based on digest detection pipeline results from the Taisho Canon
 project, covering 8,982 XML texts across 58 volumes. Pipeline methodology:
 5-stage process (extract, fingerprint/candidates, align, score, report) with
-validation against ground truth including T250/T251 -> T223 relationships. All
-statistics drawn from pipeline output dated 2026.*
+phonetic transliteration detection and validation against ground truth including
+T250/T251 -> T223 relationships. All statistics drawn from pipeline output
+dated February 2026.*
