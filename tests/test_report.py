@@ -17,76 +17,14 @@ from digest_detector.report import (
     generate_reports,
     validate_ground_truth,
 )
-
-
-# ---------- Helpers ----------
-
-def _make_segment(d_start, d_end, s_start, s_end, match_type="exact",
-                  digest_text="", source_text="", phonetic_mapping=None):
-    return AlignmentSegment(
-        digest_start=d_start,
-        digest_end=d_end,
-        source_start=s_start,
-        source_end=s_end,
-        match_type=match_type,
-        digest_text=digest_text or "x" * (d_end - d_start),
-        source_text=source_text or "y" * (s_end - s_start),
-        phonetic_mapping=phonetic_mapping,
-    )
-
-
-def _make_alignment(digest_id, source_id, coverage=0.50, segments=None):
-    if segments is None:
-        segments = [_make_segment(0, 10, 0, 10)]
-    return AlignmentResult(
-        digest_id=digest_id,
-        source_id=source_id,
-        coverage=coverage,
-        novel_fraction=1.0 - coverage,
-        source_span=0.01,
-        num_source_regions=1,
-        segments=segments,
-    )
-
-
-def _make_score(digest_id, source_id, classification="digest",
-                coverage=0.50, confidence=0.6):
-    return DigestScore(
-        digest_id=digest_id,
-        source_id=source_id,
-        classification=classification,
-        confidence=confidence,
-        containment=coverage,
-        coverage=coverage,
-        novel_fraction=1.0 - coverage,
-        avg_segment_length=15.0,
-        longest_segment=30,
-        num_source_regions=2,
-        source_span=0.01,
-        has_docnumber_xref=False,
-        phonetic_coverage=0.0,
-    )
-
-
-def _make_metadata(text_id, title="Test Text", char_count=100):
-    return TextMetadata(
-        text_id=text_id,
-        title=title,
-        author="",
-        extent_juan=1,
-        char_count=char_count,
-        file_count=1,
-        docnumber_refs=[],
-        div_types=["body"],
-        has_dharani=False,
-    )
+from tests.helpers import make_alignment, make_metadata, make_score, make_segment
 
 
 # ---------- _segment_to_dict ----------
 
 class TestSegmentToDict:
     def test_exact_segment(self):
-        seg = _make_segment(0, 5, 10, 15, "exact", "你好世界人", "天地玄黃宇")
+        seg = make_segment(0, 5, 10, 15, "exact", "你好世界人", "天地玄黃宇")
         d = _segment_to_dict(seg)
         assert d['digest_start'] == 0
         assert d['digest_end'] == 5
@@ -98,14 +36,14 @@ class TestSegmentToDict:
         assert 'phonetic_mapping' not in d
 
     def test_novel_segment(self):
-        seg = _make_segment(5, 10, 0, 0, "novel", "一二三四五", "")
+        seg = make_segment(5, 10, 0, 0, "novel", "一二三四五", "")
         d = _segment_to_dict(seg)
         assert d['match_type'] == "novel"
         assert 'phonetic_mapping' not in d
 
     def test_phonetic_segment_with_mapping(self):
         mapping = [("竭", "ga", "揭"), ("帝", "te", "帝")]
-        seg = _make_segment(0, 2, 0, 2, "phonetic", "竭帝", "揭帝",
+        seg = make_segment(0, 2, 0, 2, "phonetic", "竭帝", "揭帝",
                             phonetic_mapping=mapping)
         d = _segment_to_dict(seg)
         assert d['match_type'] == "phonetic"
@@ -116,13 +54,13 @@ class TestSegmentToDict:
         }
 
     def test_phonetic_segment_empty_mapping(self):
-        seg = _make_segment(0, 2, 0, 2, "phonetic", "竭帝", "揭帝",
+        seg = make_segment(0, 2, 0, 2, "phonetic", "竭帝", "揭帝",
                             phonetic_mapping=[])
         d = _segment_to_dict(seg)
         assert 'phonetic_mapping' not in d
 
     def test_all_fields_present(self):
-        seg = _make_segment(3, 8, 20, 25, "fuzzy")
+        seg = make_segment(3, 8, 20, 25, "fuzzy")
         d = _segment_to_dict(seg)
         required_keys = {'digest_start', 'digest_end', 'source_start',
                          'source_end', 'match_type', 'digest_text', 'source_text'}
@@ -134,17 +72,17 @@ class TestSegmentToDict:
 class TestValidateGroundTruth:
     def test_both_pairs_found_and_correct(self):
         scores = [
-            _make_score('T08n0250', 'T08n0223', 'digest', 0.732),
-            _make_score('T08n0251', 'T08n0223', 'digest', 0.446),
+            make_score('T08n0250', 'T08n0223', 'digest', coverage=0.732),
+            make_score('T08n0251', 'T08n0223', 'digest', coverage=0.446),
         ]
         alignments = [
-            _make_alignment('T08n0250', 'T08n0223', 0.732),
-            _make_alignment('T08n0251', 'T08n0223', 0.446),
+            make_alignment('T08n0250', 'T08n0223', 0.732),
+            make_alignment('T08n0251', 'T08n0223', 0.446),
         ]
         metadata_map = {
-            'T08n0250': _make_metadata('T08n0250'),
-            'T08n0251': _make_metadata('T08n0251'),
-            'T08n0223': _make_metadata('T08n0223'),
+            'T08n0250': make_metadata('T08n0250'),
+            'T08n0251': make_metadata('T08n0251'),
+            'T08n0223': make_metadata('T08n0223'),
         }
         report = validate_ground_truth(scores, alignments, metadata_map)
         # 2 pairs × 2 checks (classification + coverage) + 2 not-digest checks = 6
@@ -160,12 +98,12 @@ class TestValidateGroundTruth:
 
     def test_wrong_classification(self):
         scores = [
-            _make_score('T08n0250', 'T08n0223', 'shared_tradition', 0.732),
-            _make_score('T08n0251', 'T08n0223', 'digest', 0.446),
+            make_score('T08n0250', 'T08n0223', 'shared_tradition', coverage=0.732),
+            make_score('T08n0251', 'T08n0223', 'digest', coverage=0.446),
         ]
         alignments = [
-            _make_alignment('T08n0250', 'T08n0223', 0.732),
-            _make_alignment('T08n0251', 'T08n0223', 0.446),
+            make_alignment('T08n0250', 'T08n0223', 0.732),
+            make_alignment('T08n0251', 'T08n0223', 0.446),
         ]
         metadata_map = {}
         report = validate_ground_truth(scores, alignments, metadata_map)
@@ -174,14 +112,14 @@ class TestValidateGroundTruth:
     def test_t250_not_digest_of_t251(self):
         """T250/T251 should not be classified as digests of each other."""
         scores = [
-            _make_score('T08n0250', 'T08n0223', 'digest', 0.732),
-            _make_score('T08n0251', 'T08n0223', 'digest', 0.446),
-            _make_score('T08n0250', 'T08n0251', 'retranslation', 0.654),
+            make_score('T08n0250', 'T08n0223', 'digest', coverage=0.732),
+            make_score('T08n0251', 'T08n0223', 'digest', coverage=0.446),
+            make_score('T08n0250', 'T08n0251', 'retranslation', coverage=0.654),
         ]
         alignments = [
-            _make_alignment('T08n0250', 'T08n0223', 0.732),
-            _make_alignment('T08n0251', 'T08n0223', 0.446),
-            _make_alignment('T08n0250', 'T08n0251', 0.654),
+            make_alignment('T08n0250', 'T08n0223', 0.732),
+            make_alignment('T08n0251', 'T08n0223', 0.446),
+            make_alignment('T08n0250', 'T08n0251', 0.654),
         ]
         metadata_map = {}
         report = validate_ground_truth(scores, alignments, metadata_map)
@@ -201,14 +139,14 @@ class TestValidateGroundTruth:
 class TestFormatVisualization:
     def test_basic_visualization(self):
         segs = [
-            _make_segment(0, 5, 0, 5, "exact", "你好世界人", "你好世界人"),
-            _make_segment(5, 10, 0, 0, "novel", "一二三四五", ""),
+            make_segment(0, 5, 0, 5, "exact", "你好世界人", "你好世界人"),
+            make_segment(5, 10, 0, 0, "novel", "一二三四五", ""),
         ]
-        alignment = _make_alignment("T08n0250", "T08n0223", 0.5, segs)
-        score = _make_score("T08n0250", "T08n0223", "digest", 0.5)
+        alignment = make_alignment("T08n0250", "T08n0223", 0.5, segments=segs)
+        score = make_score("T08n0250", "T08n0223", "digest", coverage=0.5)
         metadata_map = {
-            'T08n0250': _make_metadata('T08n0250', '心經'),
-            'T08n0223': _make_metadata('T08n0223', '大品般若'),
+            'T08n0250': make_metadata('T08n0250', title='心經'),
+            'T08n0223': make_metadata('T08n0223', title='大品般若'),
         }
         viz = _format_alignment_visualization(alignment, score, metadata_map)
         assert "T08n0250" in viz
@@ -221,11 +159,11 @@ class TestFormatVisualization:
     def test_phonetic_visualization(self):
         mapping = [("竭", "ga", "揭"), ("帝", "te", "帝")]
         segs = [
-            _make_segment(0, 2, 0, 2, "phonetic", "竭帝", "揭帝",
+            make_segment(0, 2, 0, 2, "phonetic", "竭帝", "揭帝",
                           phonetic_mapping=mapping),
         ]
-        alignment = _make_alignment("T08n0250", "T18n0901", 0.8, segs)
-        score = _make_score("T08n0250", "T18n0901", "digest", 0.8)
+        alignment = make_alignment("T08n0250", "T18n0901", 0.8, segments=segs)
+        score = make_score("T08n0250", "T18n0901", "digest", coverage=0.8)
         score = replace(score, phonetic_coverage=0.3)
         metadata_map = {}
         viz = _format_alignment_visualization(alignment, score, metadata_map)
@@ -238,12 +176,12 @@ class TestFormatVisualization:
 
 class TestGenerateReports:
     def test_creates_output_files(self, tmp_path):
-        scores = [_make_score("T08n0250", "T08n0223", "digest", 0.732)]
-        alignments = [_make_alignment("T08n0250", "T08n0223", 0.732)]
+        scores = [make_score("T08n0250", "T08n0223", "digest", coverage=0.732)]
+        alignments = [make_alignment("T08n0250", "T08n0223", 0.732)]
         multi_source = []
         metadata_map = {
-            'T08n0250': _make_metadata('T08n0250'),
-            'T08n0223': _make_metadata('T08n0223'),
+            'T08n0250': make_metadata('T08n0250'),
+            'T08n0223': make_metadata('T08n0223'),
         }
         validation = {'tests': [], 'passed': 0, 'failed': 0}
 
@@ -262,9 +200,9 @@ class TestGenerateReports:
         assert (tmp_path / "alignments").is_dir()
 
     def test_json_fields(self, tmp_path):
-        score = _make_score("T01n0001", "T01n0002", "excerpt", 0.95, 0.8)
+        score = make_score("T01n0001", "T01n0002", "excerpt", confidence=0.8, coverage=0.95)
         scores = [score]
-        alignments = [_make_alignment("T01n0001", "T01n0002", 0.95)]
+        alignments = [make_alignment("T01n0001", "T01n0002", 0.95)]
         generate_reports(scores, alignments, [], {},
                          {'tests': [], 'passed': 0, 'failed': 0},
                          results_dir=tmp_path)
@@ -278,10 +216,10 @@ class TestGenerateReports:
         assert expected_keys.issubset(rel.keys())
 
     def test_phonetic_coverage_in_json(self, tmp_path):
-        score = _make_score("T01n0001", "T01n0002", "digest", 0.5)
+        score = make_score("T01n0001", "T01n0002", "digest", coverage=0.5)
         score = replace(score, phonetic_coverage=0.15)
         scores = [score]
-        alignments = [_make_alignment("T01n0001", "T01n0002", 0.5)]
+        alignments = [make_alignment("T01n0001", "T01n0002", 0.5)]
         generate_reports(scores, alignments, [], {},
                          {'tests': [], 'passed': 0, 'failed': 0},
                          results_dir=tmp_path)
@@ -291,9 +229,9 @@ class TestGenerateReports:
         assert data[0]['phonetic_coverage'] == 0.15
 
     def test_no_relationship_excluded_from_alignment_files(self, tmp_path):
-        score = _make_score("T01n0001", "T01n0002", "no_relationship", 0.05)
+        score = make_score("T01n0001", "T01n0002", "no_relationship", coverage=0.05)
         scores = [score]
-        alignments = [_make_alignment("T01n0001", "T01n0002", 0.05)]
+        alignments = [make_alignment("T01n0001", "T01n0002", 0.05)]
         generate_reports(scores, alignments, [], {},
                          {'tests': [], 'passed': 0, 'failed': 0},
                          results_dir=tmp_path)

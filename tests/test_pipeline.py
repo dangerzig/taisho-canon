@@ -12,17 +12,7 @@ from digest_detector.models import (
     ExtractedText, TextMetadata, CandidatePair, AlignmentResult, DigestScore,
 )
 from digest_detector.pipeline import run_pipeline
-from tests.helpers import make_text
-
-
-def _make_candidate(digest_id: str, source_id: str) -> CandidatePair:
-    return CandidatePair(
-        digest_id=digest_id,
-        source_id=source_id,
-        containment_score=0.5,
-        matching_ngrams=10,
-        total_digest_ngrams=20,
-    )
+from tests.helpers import make_text, make_candidate
 
 
 def _save_valid_cache(cache_dir: Path, xml_dir: Path, texts, candidates):
@@ -88,7 +78,7 @@ class TestPipelineCacheBypass:
         """With no_cache=True, extract_all is called even when cache is valid."""
         xml_dir, results_dir, cache_dir = tmp_dirs
         texts = [make_text("T01n0001", "般若波羅蜜多心經觀自在菩薩")]
-        candidates = [_make_candidate("T01n0001", "T01n0002")]
+        candidates = [make_candidate("T01n0001", "T01n0002")]
 
         _save_valid_cache(cache_dir, xml_dir, texts, candidates)
 
@@ -122,7 +112,7 @@ class TestPipelineCacheBypass:
         """With no_cache=False, extract_all is NOT called when cache is valid."""
         xml_dir, results_dir, cache_dir = tmp_dirs
         texts = [make_text("T01n0001", "般若波羅蜜多心經觀自在菩薩")]
-        candidates = [_make_candidate("T01n0001", "T01n0002")]
+        candidates = [make_candidate("T01n0001", "T01n0002")]
 
         _save_valid_cache(cache_dir, xml_dir, texts, candidates)
 
@@ -154,7 +144,7 @@ class TestPipelineCacheBypass:
         """After a fresh run (no existing cache), cache files are written."""
         xml_dir, results_dir, cache_dir = tmp_dirs
         texts = [make_text("T01n0001", "般若波羅蜜多心經觀自在菩薩")]
-        candidates = [_make_candidate("T01n0001", "T01n0002")]
+        candidates = [make_candidate("T01n0001", "T01n0002")]
 
         # No cache saved — verify cache dir starts empty
         assert not (cache_dir / "manifest.json").exists()

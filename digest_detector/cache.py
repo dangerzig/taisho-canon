@@ -12,6 +12,7 @@ import pickle
 from pathlib import Path
 
 from . import config
+from .models import CandidatePair, ExtractedText
 
 logger = logging.getLogger(__name__)
 
@@ -100,12 +101,8 @@ class PipelineCache:
         logger.info("Saved cache: %d texts, %d candidates to %s",
                      len(texts), len(candidates), self.cache_dir)
 
-    def load(self) -> tuple[list, list]:
-        """Load texts and candidates from disk cache.
-
-        Returns:
-            Tuple of (list[ExtractedText], list[CandidatePair]).
-        """
+    def load(self) -> tuple[list[ExtractedText], list[CandidatePair]]:
+        """Load texts and candidates from disk cache."""
         with open(self.texts_path, "rb") as f:
             texts = pickle.load(f)
         with open(self.candidates_path, "rb") as f:

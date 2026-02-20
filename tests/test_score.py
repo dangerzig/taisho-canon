@@ -14,65 +14,22 @@ from digest_detector.models import (
     AlignmentResult, AlignmentSegment, DigestScore, TextMetadata,
     ExtractedText, MultiSourceDigest,
 )
-
-
-def _make_alignment(
-    digest_id: str = "d",
-    source_id: str = "s",
-    coverage: float = 0.0,
-    novel_fraction: float = 1.0,
-    source_span: float = 0.0,
-    num_source_regions: int = 0,
-    segments: list = None,
-) -> AlignmentResult:
-    """Helper to build an AlignmentResult with defaults."""
-    return AlignmentResult(
-        digest_id=digest_id,
-        source_id=source_id,
-        segments=segments or [],
-        coverage=coverage,
-        novel_fraction=novel_fraction,
-        source_span=source_span,
-        num_source_regions=num_source_regions,
-    )
-
-
-def _make_segment(
-    d_start: int, d_end: int,
-    s_start: int = 0, s_end: int = 0,
-    match_type: str = "exact",
-) -> AlignmentSegment:
-    """Helper to build an AlignmentSegment."""
-    return AlignmentSegment(
-        digest_start=d_start, digest_end=d_end,
-        source_start=s_start, source_end=s_end,
-        match_type=match_type,
-        digest_text="x" * (d_end - d_start),
-        source_text="x" * (s_end - s_start) if match_type != "novel" else "",
-    )
-
-
-def _make_metadata(text_id: str, char_count: int) -> TextMetadata:
-    return TextMetadata(
-        text_id=text_id, title='', author='',
-        extent_juan=1, char_count=char_count,
-        file_count=1,
-    )
+from tests.helpers import make_alignment, make_segment, make_metadata
 
 
 class TestAvgSegmentLength:
     def test_basic(self):
         segs = [
-            _make_segment(0, 10, 0, 10),
-            _make_segment(15, 25, 50, 60),
+            make_segment(0, 10, 0, 10),
+            make_segment(15, 25, 50, 60),
         ]
         assert _avg_segment_length(segs) == 10.0
 
     def test_ignores_novel(self):
         segs = [
-            _make_segment(0, 10, 0, 10),
-            _make_segment(10, 20, match_type="novel"),
-            _make_segment(20, 30, 100, 110),
+            make_segment(0, 10, 0, 10),
+            make_segment(10, 20, match_type="novel"),
+            make_segment(20, 30, 100, 110),
         ]
         assert _avg_segment_length(segs) == 10.0
 
@@ -80,15 +37,15 @@ class TestAvgSegmentLength:
         assert _avg_segment_length([]) == 0.0
 
     def test_all_novel(self):
-        segs = [_make_segment(0, 10, match_type="novel")]
+        segs = [make_segment(0, 10, match_type="novel")]
         assert _avg_segment_length(segs) == 0.0
 
 
 class TestLongestSegment:
     def test_basic(self):
         segs = [
-            _make_segment(0, 5, 0, 5),
-            _make_segment(10, 30, 50, 70),
+            make_segment(0, 5, 0, 5),
+            make_segment(10, 30, 50, 70),
         ]
         assert _longest_segment(segs) == 20
 
@@ -106,10 +63,10 @@ class TestClassifyRelationship:
         segments = []
         d_pos = 0
         for i in range(seg_count):
-            segments.append(_make_segment(d_pos, d_pos + seg_len, i * 100, i * 100 + seg_len))
+            segments.append(make_segment(d_pos, d_pos + seg_len, i * 100, i * 100 + seg_len))
             d_pos += seg_len + 2  # small gap
 
-        alignment = _make_alignment(
+        alignment = make_alignment(
             coverage=coverage,
             novel_fraction=1.0 - coverage,
             num_source_regions=num_regions,
@@ -218,60 +175,60 @@ class TestComputeConfidence:
 class TestScoreAll:
     def test_filters_no_relationship(self):
         """score_all should exclude 'no_relationship' from results."""
-        alignment = _make_alignment(
+        alignment = make_alignment(
             digest_id="d", source_id="s",
             coverage=0.01, novel_fraction=0.99,
-            segments=[_make_segment(0, 1, 0, 1)],
+            segments=[make_segment(0, 1, 0, 1)],
         )
         meta_map = {
-            "d": _make_metadata("d", 100),
-            "s": _make_metadata("s", 10000),
+            "d": make_metadata("d", 100),
+            "s": make_metadata("s", 10000),
         }
         scores = score_all([alignment], meta_map)
         assert len(scores) == 0
 
     def test_includes_valid_relationships(self):
         segments = [
-            _make_segment(0, 80, 0, 80),
-            _make_segment(80, 100, match_type="novel"),
+            make_segment(0, 80, 0, 80),
+            make_segment(80, 100, match_type="novel"),
         ]
-        alignment = _make_alignment(
+        alignment = make_alignment(
             digest_id="d", source_id="s",
             coverage=0.80, novel_fraction=0.20,
             num_source_regions=1,
             segments=segments,
         )
         meta_map = {
-            "d": _make_metadata("d", 100),
-            "s": _make_metadata("s", 50000),
+            "d": make_metadata("d", 100),
+            "s": make_metadata("s", 50000),
         }
         scores = score_all([alignment], meta_map)
         assert len(scores) == 1
         assert scores[0].classification == "excerpt"
 
     def test_skips_missing_metadata(self):
-        alignment = _make_alignment(
+        alignment = make_alignment(
             digest_id="d", source_id="s", coverage=0.80,
-            segments=[_make_segment(0, 80, 0, 80)],
+            segments=[make_segment(0, 80, 0, 80)],
         )
         # Only digest metadata, no source metadata
-        meta_map = {"d": _make_metadata("d", 100)}
+        meta_map = {"d": make_metadata("d", 100)}
         scores = score_all([alignment], meta_map)
         assert len(scores) == 0
 
     def test_sorted_by_confidence_descending(self):
-        segs_high = [_make_segment(0, 80, 0, 80)]
-        segs_low = [_make_segment(0, 30, 0, 30)]
+        segs_high = [make_segment(0, 80, 0, 80)]
+        segs_low = [make_segment(0, 30, 0, 30)]
         alignments = [
-            _make_alignment("d1", "s", coverage=0.30, segments=segs_low,
+            make_alignment("d1", "s", coverage=0.30, segments=segs_low,
                             num_source_regions=1),
-            _make_alignment("d2", "s", coverage=0.80, segments=segs_high,
+            make_alignment("d2", "s", coverage=0.80, segments=segs_high,
                             num_source_regions=3),
         ]
         meta_map = {
-            "d1": _make_metadata("d1", 100),
-            "d2": _make_metadata("d2", 100),
-            "s": _make_metadata("s", 50000),
+            "d1": make_metadata("d1", 100),
+            "d2": make_metadata("d2", 100),
+            "s": make_metadata("s", 50000),
         }
         scores = score_all(alignments, meta_map)
         assert len(scores) == 2
@@ -290,9 +247,9 @@ class TestDetectMultiSourceDigests:
                 num_source_regions=1, source_span=0.01,
             ),
         ]
-        alignments = [_make_alignment("d", "s1", coverage=0.8,
-                                       segments=[_make_segment(0, 80, 0, 80)])]
-        meta_map = {"d": _make_metadata("d", 100)}
+        alignments = [make_alignment("d", "s1", coverage=0.8,
+                                       segments=[make_segment(0, 80, 0, 80)])]
+        meta_map = {"d": make_metadata("d", 100)}
         result = detect_multi_source_digests(scores, alignments, meta_map)
         assert len(result) == 0
 
@@ -317,12 +274,12 @@ class TestDetectMultiSourceDigests:
         ]
         # Non-overlapping segments from different sources
         alignments = [
-            _make_alignment("d", "s1", coverage=0.5,
-                            segments=[_make_segment(0, 50, 0, 50)]),
-            _make_alignment("d", "s2", coverage=0.5,
-                            segments=[_make_segment(50, 100, 0, 50)]),
+            make_alignment("d", "s1", coverage=0.5,
+                            segments=[make_segment(0, 50, 0, 50)]),
+            make_alignment("d", "s2", coverage=0.5,
+                            segments=[make_segment(50, 100, 0, 50)]),
         ]
-        meta_map = {"d": _make_metadata("d", 100)}
+        meta_map = {"d": make_metadata("d", 100)}
         result = detect_multi_source_digests(scores, alignments, meta_map)
         assert len(result) == 1
         assert result[0].digest_id == "d"
@@ -349,12 +306,12 @@ class TestDetectMultiSourceDigests:
         ]
         # Both sources cover the same digest region
         alignments = [
-            _make_alignment("d", "s1", coverage=0.5,
-                            segments=[_make_segment(0, 50, 0, 50)]),
-            _make_alignment("d", "s2", coverage=0.5,
-                            segments=[_make_segment(0, 50, 200, 250)]),
+            make_alignment("d", "s1", coverage=0.5,
+                            segments=[make_segment(0, 50, 0, 50)]),
+            make_alignment("d", "s2", coverage=0.5,
+                            segments=[make_segment(0, 50, 200, 250)]),
         ]
-        meta_map = {"d": _make_metadata("d", 100)}
+        meta_map = {"d": make_metadata("d", 100)}
         result = detect_multi_source_digests(scores, alignments, meta_map)
         # Combined coverage (0.5) is not > best_single (0.5) * 1.1
         assert len(result) == 0
@@ -378,11 +335,11 @@ class TestDetectMultiSourceDigests:
             ),
         ]
         alignments = [
-            _make_alignment("d", "s1", coverage=0.2,
-                            segments=[_make_segment(0, 20, 0, 20)]),
-            _make_alignment("d", "s2", coverage=0.3,
-                            segments=[_make_segment(20, 50, 0, 30)]),
+            make_alignment("d", "s1", coverage=0.2,
+                            segments=[make_segment(0, 20, 0, 20)]),
+            make_alignment("d", "s2", coverage=0.3,
+                            segments=[make_segment(20, 50, 0, 30)]),
         ]
-        meta_map = {"d": _make_metadata("d", 100)}
+        meta_map = {"d": make_metadata("d", 100)}
         result = detect_multi_source_digests(scores, alignments, meta_map)
         assert len(result) == 0

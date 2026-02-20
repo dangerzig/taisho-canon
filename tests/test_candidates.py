@@ -13,24 +13,13 @@ from digest_detector.fingerprint import (
     build_ngram_sets,
 )
 from digest_detector.models import ExtractedText, TextMetadata, DivSegment
-from tests.helpers import make_text
-
-
-def _make_metadata(text_id: str, char_count: int, **overrides) -> TextMetadata:
-    """Helper to create a minimal TextMetadata."""
-    kwargs = dict(
-        text_id=text_id, title='', author='',
-        extent_juan=1, char_count=char_count,
-        file_count=1,
-    )
-    kwargs.update(overrides)
-    return TextMetadata(**kwargs)
+from tests.helpers import make_text, make_metadata
 
 
 class TestParseDocnumberToTextIds:
     def test_basic_self_reference(self):
         meta_map = {
-            'T08n0250': _make_metadata('T08n0250', 300),
+            'T08n0250': make_metadata('T08n0250', 300),
         }
         result = _parse_docnumber_to_text_ids(meta_map)
         # Leading zeros stripped: "0250" → "250"
@@ -38,9 +27,9 @@ class TestParseDocnumberToTextIds:
 
     def test_cross_reference(self):
         meta_map = {
-            'T08n0250': _make_metadata('T08n0250', 300,
+            'T08n0250': make_metadata('T08n0250', 300,
                                         docnumber_refs=['251', '252']),
-            'T08n0251': _make_metadata('T08n0251', 1000),
+            'T08n0251': make_metadata('T08n0251', 1000),
         }
         result = _parse_docnumber_to_text_ids(meta_map)
         # Both T08n0250 (via ref) and T08n0251 (via self) share key "T08:251"
@@ -49,8 +38,8 @@ class TestParseDocnumberToTextIds:
 
     def test_malformed_text_id_skipped(self):
         meta_map = {
-            'bad_id': _make_metadata('bad_id', 100),
-            'T08n0250': _make_metadata('T08n0250', 300),
+            'bad_id': make_metadata('bad_id', 100),
+            'T08n0250': make_metadata('T08n0250', 300),
         }
         result = _parse_docnumber_to_text_ids(meta_map)
         # bad_id should not appear in any docnum entry
@@ -59,7 +48,7 @@ class TestParseDocnumberToTextIds:
 
     def test_empty_refs(self):
         meta_map = {
-            'T08n0250': _make_metadata('T08n0250', 300,
+            'T08n0250': make_metadata('T08n0250', 300,
                                         docnumber_refs=[]),
         }
         result = _parse_docnumber_to_text_ids(meta_map)
@@ -72,9 +61,9 @@ class TestFindDocnumberPairs:
     def test_pair_ordering_by_size(self):
         """Shorter text should be first (potential digest)."""
         meta_map = {
-            'T08n0250': _make_metadata('T08n0250', 300,
+            'T08n0250': make_metadata('T08n0250', 300,
                                         docnumber_refs=['251']),
-            'T08n0251': _make_metadata('T08n0251', 1000,
+            'T08n0251': make_metadata('T08n0251', 1000,
                                         docnumber_refs=['250']),
         }
         pairs = _find_docnumber_pairs(meta_map)
@@ -85,9 +74,9 @@ class TestFindDocnumberPairs:
     def test_reverse_ordering_when_second_is_shorter(self):
         """If the second text is shorter, it should come first."""
         meta_map = {
-            'T08n0300': _make_metadata('T08n0300', 50000,
+            'T08n0300': make_metadata('T08n0300', 50000,
                                         docnumber_refs=['301']),
-            'T08n0301': _make_metadata('T08n0301', 500),
+            'T08n0301': make_metadata('T08n0301', 500),
         }
         pairs = _find_docnumber_pairs(meta_map)
         assert ('T08n0301', 'T08n0300') in pairs
@@ -95,7 +84,7 @@ class TestFindDocnumberPairs:
     def test_no_self_pairs(self):
         """A text should not be paired with itself."""
         meta_map = {
-            'T08n0250': _make_metadata('T08n0250', 300,
+            'T08n0250': make_metadata('T08n0250', 300,
                                         docnumber_refs=['250']),
         }
         pairs = _find_docnumber_pairs(meta_map)
@@ -104,8 +93,8 @@ class TestFindDocnumberPairs:
     def test_no_pairs_without_cross_ref(self):
         """Texts without cross-references should not be paired."""
         meta_map = {
-            'T08n0250': _make_metadata('T08n0250', 300),
-            'T08n0251': _make_metadata('T08n0251', 1000),
+            'T08n0250': make_metadata('T08n0250', 300),
+            'T08n0251': make_metadata('T08n0251', 1000),
         }
         pairs = _find_docnumber_pairs(meta_map)
         assert len(pairs) == 0
