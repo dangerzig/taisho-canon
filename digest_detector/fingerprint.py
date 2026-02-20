@@ -10,6 +10,8 @@ import zlib
 from collections import Counter, defaultdict
 from multiprocessing import Pool
 
+from tqdm import tqdm
+
 from . import config
 from .fast import fast_ngram_hashes
 from .models import ExtractedText
@@ -83,15 +85,18 @@ def compute_document_frequencies(
     if num_workers <= 1 or len(texts) < 10:
         global _worker_n
         _worker_n = n
-        for full_text in text_list:
+        for full_text in tqdm(text_list, desc="Doc freq", unit="text"):
             doc_freq.update(_doc_freq_worker(full_text))
     else:
         chunksize = max(1, len(text_list) // (num_workers * 4))
         with Pool(num_workers, initializer=_doc_freq_init,
                   initargs=(n,),
                   maxtasksperchild=config.MAXTASKSPERCHILD) as pool:
-            for hash_set in pool.imap_unordered(_doc_freq_worker, text_list,
-                                                chunksize=chunksize):
+            for hash_set in tqdm(
+                pool.imap_unordered(_doc_freq_worker, text_list,
+                                    chunksize=chunksize),
+                total=len(text_list), desc="Doc freq", unit="text",
+            ):
                 doc_freq.update(hash_set)
 
     return dict(doc_freq)
@@ -150,7 +155,7 @@ def build_ngram_sets(
         global _worker_stopgrams, _worker_n
         _worker_stopgrams = stopgrams
         _worker_n = n
-        for args in args_list:
+        for args in tqdm(args_list, desc="N-gram sets", unit="text"):
             text_id, hash_set = _ngram_set_worker(args)
             result[text_id] = hash_set
     else:
@@ -158,8 +163,11 @@ def build_ngram_sets(
         with Pool(num_workers, initializer=_ngram_set_init,
                   initargs=(stopgrams, n),
                   maxtasksperchild=config.MAXTASKSPERCHILD) as pool:
-            for text_id, hash_set in pool.imap_unordered(
-                _ngram_set_worker, args_list, chunksize=chunksize,
+            for text_id, hash_set in tqdm(
+                pool.imap_unordered(
+                    _ngram_set_worker, args_list, chunksize=chunksize,
+                ),
+                total=len(args_list), desc="N-gram sets", unit="text",
             ):
                 result[text_id] = hash_set
 

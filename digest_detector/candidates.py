@@ -11,6 +11,8 @@ from bisect import bisect_left
 from collections import defaultdict
 from multiprocessing import Pool
 
+from tqdm import tqdm
+
 from . import config
 from .fast import fast_ngram_hashes
 from .fingerprint import stable_hash
@@ -261,8 +263,11 @@ def generate_candidates(
                       source_sets_arr, n, min_containment, docnum_pair_set),
             maxtasksperchild=config.MAXTASKSPERCHILD,
         ) as pool:
-            for result_batch in pool.imap_unordered(
-                _candidate_worker, worker_args, chunksize=chunksize,
+            for result_batch in tqdm(
+                pool.imap_unordered(
+                    _candidate_worker, worker_args, chunksize=chunksize,
+                ),
+                total=len(worker_args), desc="Candidates", unit="text",
             ):
                 for cand in result_batch:
                     pair_key = (cand.digest_id, cand.source_id)
@@ -280,7 +285,7 @@ def generate_candidates(
         _cand_min_containment = min_containment
         _cand_docnum_pair_set = docnum_pair_set
 
-        for args in worker_args:
+        for args in tqdm(worker_args, desc="Candidates", unit="text"):
             for cand in _candidate_worker(args):
                 pair_key = (cand.digest_id, cand.source_id)
                 seen_pairs.add(pair_key)
@@ -383,7 +388,7 @@ def generate_phonetic_candidates(
         global _worker_table, _worker_min_region_len
         _worker_table = table
         _worker_min_region_len = min_region_len
-        for args in args_list:
+        for args in tqdm(args_list, desc="Phonetic scan", unit="text"):
             result = _phonetic_worker(args)
             if result is not None:
                 text_ngrams[result[0]] = result[1]
@@ -392,8 +397,11 @@ def generate_phonetic_candidates(
         with Pool(num_workers, initializer=_phonetic_init,
                   initargs=(table, min_region_len),
                   maxtasksperchild=config.MAXTASKSPERCHILD) as pool:
-            for result in pool.imap_unordered(
-                _phonetic_worker, args_list, chunksize=chunksize,
+            for result in tqdm(
+                pool.imap_unordered(
+                    _phonetic_worker, args_list, chunksize=chunksize,
+                ),
+                total=len(args_list), desc="Phonetic scan", unit="text",
             ):
                 if result is not None:
                     text_ngrams[result[0]] = result[1]
