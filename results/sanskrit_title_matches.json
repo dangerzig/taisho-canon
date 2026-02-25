@@ -1,0 +1,2644 @@
+{
+  "validated": [
+    {
+      "taisho_id": "T12n0390",
+      "tohoku": 121,
+      "taisho_sanskrit": "Mahāparinirvāṇasūtra",
+      "kangyur_sanskrit": "Mahāparinirvāṇasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T01n0021",
+      "tohoku": 352,
+      "taisho_sanskrit": "Brahmajālasūtra",
+      "kangyur_sanskrit": "Brahmajālasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T02n0109",
+      "tohoku": 31,
+      "taisho_sanskrit": "Dharmacakrapravartanasūtra.",
+      "kangyur_sanskrit": "Dharmacakrapravartanasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T02n0110",
+      "tohoku": 31,
+      "taisho_sanskrit": "Dharmacakrapravartanasūtra.",
+      "kangyur_sanskrit": "Dharmacakrapravartanasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T02n0118",
+      "tohoku": 213,
+      "taisho_sanskrit": "Angulimālīyasūtra.",
+      "kangyur_sanskrit": "Aṅgulimālīyasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T02n0119",
+      "tohoku": 213,
+      "taisho_sanskrit": "Aṅgulimālīyasūtra.",
+      "kangyur_sanskrit": "Aṅgulimālīyasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T02n0120",
+      "tohoku": 213,
+      "taisho_sanskrit": "Aṅgulimālīyasūtra",
+      "kangyur_sanskrit": "Aṅgulimālīyasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T02n0125",
+      "tohoku": 36,
+      "taisho_sanskrit": "Maitrībhāvanāsūtra",
+      "kangyur_sanskrit": "Maitribhāvanāsūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T02n0138",
+      "tohoku": 36,
+      "taisho_sanskrit": "Maitrībhāvanāsūtra.",
+      "kangyur_sanskrit": "Maitribhāvanāsūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T08n0228",
+      "tohoku": 12,
+      "taisho_sanskrit": "Aṣṭasāhasrikāprajñāpāramitā.",
+      "kangyur_sanskrit": "Aṣṭasāhasrikāprajñāpāramitā",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T08n0230",
+      "tohoku": 25,
+      "taisho_sanskrit": "Prajñapāramitānāmāṣṭaśataka.",
+      "kangyur_sanskrit": "Prajñāpāramitānāmāṣṭaśataka",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T08n0230",
+      "tohoku": 553,
+      "taisho_sanskrit": "Prajñapāramitānāmāṣṭaśataka.",
+      "kangyur_sanskrit": "Prajñāpāramitānāmāṣṭaśataka",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T09n0270",
+      "tohoku": 222,
+      "taisho_sanskrit": "Mahābherihārakaparivarta(sūtra)",
+      "kangyur_sanskrit": "Mahābherīhārakaparivartasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T09n0274",
+      "tohoku": 227,
+      "taisho_sanskrit": "Sarvavaidalyasaṃgraha(sūtra)",
+      "kangyur_sanskrit": "Sarvavaidalyasaṃgrahasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T09n0275",
+      "tohoku": 227,
+      "taisho_sanskrit": "Sarvavaidalyasaṃgrahasūtra",
+      "kangyur_sanskrit": "Sarvavaidalyasaṃgrahasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T10n0296",
+      "tohoku": 1095,
+      "taisho_sanskrit": "Bhadracaryapraṇidhāna.",
+      "kangyur_sanskrit": "Bhadra­caryāpraṇidhāna",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T10n0296",
+      "tohoku": 4377,
+      "taisho_sanskrit": "Bhadracaryapraṇidhāna.",
+      "kangyur_sanskrit": "Bhadra­caryāpraṇidhāna",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ],
+      "section_demoted": true
+    },
+    {
+      "taisho_id": "T12n0329",
+      "tohoku": 71,
+      "taisho_sanskrit": "Surataparipṛcchā(sūtra)",
+      "kangyur_sanskrit": "Surataparipṛcchāsūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T12n0334",
+      "tohoku": 74,
+      "taisho_sanskrit": "Sumatidārikāparipṛcchā(sūtra)",
+      "kangyur_sanskrit": "Sumatidārikā­pari­pṛcchā­sūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T12n0336",
+      "tohoku": 74,
+      "taisho_sanskrit": "Sumatidārikāparipṛcchā(sūtra)",
+      "kangyur_sanskrit": "Sumatidārikā­pari­pṛcchā­sūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T12n0338",
+      "tohoku": 77,
+      "taisho_sanskrit": "Vimaladattāparipṛcchā(sūtra)",
+      "kangyur_sanskrit": "Vimaladattaparipṛcchāsūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T12n0339",
+      "tohoku": 77,
+      "taisho_sanskrit": "Vimaladattāparipṛcchā(sūtra)",
+      "kangyur_sanskrit": "Vimaladattaparipṛcchāsūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T12n0341",
+      "tohoku": 80,
+      "taisho_sanskrit": "Suṣṭhitamati(devaputra)paripṛcchā(sūtra)",
+      "kangyur_sanskrit": "Susthitamatidevaputra­paripṛcchāsūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T12n0342",
+      "tohoku": 80,
+      "taisho_sanskrit": "Suṣṭhitamati(devaputra)paripṛcchā(sūtra)",
+      "kangyur_sanskrit": "Susthitamatidevaputra­paripṛcchāsūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T12n0350",
+      "tohoku": 87,
+      "taisho_sanskrit": "Kāśyapaparivarta(sūtra)",
+      "kangyur_sanskrit": "Kāśyapaparivartasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T12n0351",
+      "tohoku": 87,
+      "taisho_sanskrit": "Kāśyapaparivarta(sūtra)",
+      "kangyur_sanskrit": "Kāśyapaparivartasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T12n0352",
+      "tohoku": 87,
+      "taisho_sanskrit": "Kāśyapaparivarta(sūtra).",
+      "kangyur_sanskrit": "Kāśyapaparivartasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T12n0353",
+      "tohoku": 92,
+      "taisho_sanskrit": "Śrīmālā(devī)siṃhanādasūtra",
+      "kangyur_sanskrit": "Śrīmālādevīsiṃhanādasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T12n0370",
+      "tohoku": 676,
+      "taisho_sanskrit": "Aparimitāyurjñānahṛdayadhāraṇī",
+      "kangyur_sanskrit": "Aparimitāyur­jñāna­hṛdaya­dhāraṇī",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T12n0370",
+      "tohoku": 850,
+      "taisho_sanskrit": "Aparimitāyurjñānahṛdayadhāraṇī",
+      "kangyur_sanskrit": "Aparimitāyur­jñāna­hṛdaya­dhāraṇī",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T12n0380",
+      "tohoku": 111,
+      "taisho_sanskrit": "Mahākaruṇāpuṇḍarīkasūtra",
+      "kangyur_sanskrit": "Mahākaruṇāpuṇḍarīkasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T13n0397",
+      "tohoku": 230,
+      "taisho_sanskrit": "Tathāgataśrīsamaya(sūtra)",
+      "kangyur_sanskrit": "Tathāgataśrīsamayasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T13n0399",
+      "tohoku": 169,
+      "taisho_sanskrit": "Mahāyānopadeśa(sūtra)",
+      "kangyur_sanskrit": "Mahāyānopadeśasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T13n0404",
+      "tohoku": 148,
+      "taisho_sanskrit": "Gagaṇagañjaparipṛcchā(sūtra).",
+      "kangyur_sanskrit": "Gaganagañjaparipṛcchāsūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T13n0405",
+      "tohoku": 260,
+      "taisho_sanskrit": "Ākāśagarbhasūtra",
+      "kangyur_sanskrit": "Ākāśa­garbha­sūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T13n0407",
+      "tohoku": 260,
+      "taisho_sanskrit": "Ākāśagarbhasūtra",
+      "kangyur_sanskrit": "Ākāśa­garbha­sūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T13n0408",
+      "tohoku": 260,
+      "taisho_sanskrit": "Ākāśagarbhasūtra",
+      "kangyur_sanskrit": "Ākāśa­garbha­sūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T13n0410",
+      "tohoku": 239,
+      "taisho_sanskrit": "Daśacakrakṣitigarbha(sūtra)",
+      "kangyur_sanskrit": "Daśacakrakṣitigarbhasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T13n0411",
+      "tohoku": 239,
+      "taisho_sanskrit": "Daśacakrakṣitigarbha(sūtra)",
+      "kangyur_sanskrit": "Daśacakrakṣitigarbhasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T13n0420",
+      "tohoku": 167,
+      "taisho_sanskrit": "Vikurvāṇarājaparipṛcchā(sūtra)",
+      "kangyur_sanskrit": "Vikurvāṇarājaparipṛcchāsūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T13n0421",
+      "tohoku": 167,
+      "taisho_sanskrit": "Vikurvāṇarājaparipṛcchā(sūtra)",
+      "kangyur_sanskrit": "Vikurvāṇarājaparipṛcchāsūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T14n0438",
+      "tohoku": 274,
+      "taisho_sanskrit": "Buddhamakuṭasūtra.",
+      "kangyur_sanskrit": "Buddhamakuṭasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T15n0593",
+      "tohoku": 221,
+      "taisho_sanskrit": "Rājāvavādaka(sūtra)",
+      "kangyur_sanskrit": "Rājāvavādakasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T15n0588",
+      "tohoku": 161,
+      "taisho_sanskrit": "Suvikrānta(cintā)devaputraparipṛcchā(sūtra)",
+      "kangyur_sanskrit": "Suvikrāntacintadevaputra­paripṛcchāsūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T15n0592",
+      "tohoku": 329,
+      "taisho_sanskrit": "Devatāsūtra.",
+      "kangyur_sanskrit": "Devatāsūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T15n0597",
+      "tohoku": 39,
+      "taisho_sanskrit": "Nandopanandanāgarājadamanasūtra.",
+      "kangyur_sanskrit": "Nandopanandanāgarājadamanasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T15n0642",
+      "tohoku": 132,
+      "taisho_sanskrit": "Śuraṅgamasamādhisūtra",
+      "kangyur_sanskrit": "Śūraṅgamasamādhisūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T16n0667",
+      "tohoku": 258,
+      "taisho_sanskrit": "Tathāgatagarbhasūtra.",
+      "kangyur_sanskrit": "Tathāgatagarbhasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T16n0666",
+      "tohoku": 258,
+      "taisho_sanskrit": "Tathāgatagarbhasūtra",
+      "kangyur_sanskrit": "Tathāgatagarbhasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T16n0670",
+      "tohoku": 107,
+      "taisho_sanskrit": "Laṅkāvatārasūtra",
+      "kangyur_sanskrit": "Laṅkāvatārasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T16n0671",
+      "tohoku": 107,
+      "taisho_sanskrit": "Laṅkāvatārasūtra",
+      "kangyur_sanskrit": "Laṅkāvatārasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T16n0672",
+      "tohoku": 107,
+      "taisho_sanskrit": "Laṅkāvatārasūtra",
+      "kangyur_sanskrit": "Laṅkāvatārasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T16n0680",
+      "tohoku": 275,
+      "taisho_sanskrit": "Buddhabhūmi(sūtra)",
+      "kangyur_sanskrit": "Buddhabhūmisūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T16n0681",
+      "tohoku": 110,
+      "taisho_sanskrit": "Ghanavyūhasūtra",
+      "kangyur_sanskrit": "Ghanavyūhasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T16n0682",
+      "tohoku": 110,
+      "taisho_sanskrit": "Ghanavyūhasūtra.",
+      "kangyur_sanskrit": "Ghanavyūhasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T16n0702",
+      "tohoku": 204,
+      "taisho_sanskrit": "Pradīpadānīya(sūtra)",
+      "kangyur_sanskrit": "Pradīpadānīyasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T16n0704",
+      "tohoku": 332,
+      "taisho_sanskrit": "Kūṭāgārasūtra.",
+      "kangyur_sanskrit": "Kūṭāgārasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T17n0758",
+      "tohoku": 310,
+      "taisho_sanskrit": "Anityatāsūtra.",
+      "kangyur_sanskrit": "Anityatāsūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T17n0801",
+      "tohoku": 309,
+      "taisho_sanskrit": "Anityatāsūtra.",
+      "kangyur_sanskrit": "Anityatāsūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T19n0918",
+      "tohoku": 514,
+      "taisho_sanskrit": "Buddhahṛdayadhāraṇī(dharmaparyāya)",
+      "kangyur_sanskrit": "Buddha­hṛdaya­dhāraṇī­dharma­paryāya",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T19n0918",
+      "tohoku": 854,
+      "taisho_sanskrit": "Buddhahṛdayadhāraṇī(dharmaparyāya)",
+      "kangyur_sanskrit": "Buddha­hṛdaya­dhāraṇī­dharma­paryāya",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T19n0943",
+      "tohoku": 612,
+      "taisho_sanskrit": "Dhvajāgrakeyūrādhāraṇī.",
+      "kangyur_sanskrit": "Dhva­jāgrakeyūrā­dhāraṇī",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T19n0943",
+      "tohoku": 923,
+      "taisho_sanskrit": "Dhvajāgrakeyūrādhāraṇī.",
+      "kangyur_sanskrit": "Dhva­jāgrakeyūrā­dhāraṇī",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T20n1093",
+      "tohoku": 682,
+      "taisho_sanskrit": "Amoghapāśahṛdaya(sūtra)",
+      "kangyur_sanskrit": "Amoghapāśahṛdayasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T20n1093",
+      "tohoku": 901,
+      "taisho_sanskrit": "Amoghapāśahṛdaya(sūtra)",
+      "kangyur_sanskrit": "Amoghapāśahṛdayasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T20n1094",
+      "tohoku": 682,
+      "taisho_sanskrit": "Amoghapāśahṛdaya(sūtra)",
+      "kangyur_sanskrit": "Amoghapāśahṛdayasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T20n1094",
+      "tohoku": 901,
+      "taisho_sanskrit": "Amoghapāśahṛdaya(sūtra)",
+      "kangyur_sanskrit": "Amoghapāśahṛdayasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T25n1516",
+      "tohoku": 3812,
+      "taisho_sanskrit": "Bhagavatīprajñāparamitānavaślokapiṇḍārtha.",
+      "kangyur_sanskrit": "Bhagavatī­prajñāpāramitā­navaśloka­piṇḍārtha",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T09n0271",
+      "tohoku": 146,
+      "taisho_sanskrit": "Bodhisattvagocaropāyaviṣayavikurvāṇanirdeśa(sūtra)",
+      "kangyur_sanskrit": "Bodhisattva­gocaropāyaviṣayavikurvita­nirdeśasūtra",
+      "match_type": "fuzzy",
+      "match_score": 0.9583,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T09n0272",
+      "tohoku": 146,
+      "taisho_sanskrit": "Bodhisattvagocaropāyaviṣayavikurvāṇanirdeśa(sūtra)",
+      "kangyur_sanskrit": "Bodhisattva­gocaropāyaviṣayavikurvita­nirdeśasūtra",
+      "match_type": "fuzzy",
+      "match_score": 0.9583,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T19n0998",
+      "tohoku": 242,
+      "taisho_sanskrit": "Pariṇāmacakra(sūtra).",
+      "kangyur_sanskrit": "Pariṇatacakrasūtra",
+      "match_type": "fuzzy",
+      "match_score": 0.9444,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T01n0019",
+      "tohoku": 34,
+      "taisho_sanskrit": "Mahāsamāja(sūtra).",
+      "kangyur_sanskrit": "Mahāsamayasūtra",
+      "match_type": "fuzzy",
+      "match_score": 0.9333,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T13n0424",
+      "tohoku": 102,
+      "taisho_sanskrit": "Sanghāṭīsūtradharmaparyāya.",
+      "kangyur_sanskrit": "Saṃghāṭasūtradharmaparyāya",
+      "match_type": "fuzzy",
+      "match_score": 0.9231,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T25n1516",
+      "tohoku": 3813,
+      "taisho_sanskrit": "Bhagavatīprajñāparamitānavaślokapiṇḍārtha.",
+      "kangyur_sanskrit": "Bhagavatī­prajñāpāramitā­navaśloka­piṇḍārtha­ṭīkā",
+      "match_type": "fuzzy",
+      "match_score": 0.9111,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T09n0266",
+      "tohoku": 240,
+      "taisho_sanskrit": "Avaivartikacakrasūtra",
+      "kangyur_sanskrit": "Avaivartacakrasūtra",
+      "match_type": "fuzzy",
+      "match_score": 0.9048,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T09n0267",
+      "tohoku": 240,
+      "taisho_sanskrit": "Avaivartikacakrasūtra",
+      "kangyur_sanskrit": "Avaivartacakrasūtra",
+      "match_type": "fuzzy",
+      "match_score": 0.9048,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T09n0268",
+      "tohoku": 240,
+      "taisho_sanskrit": "Avaivartikacakrasūtra",
+      "kangyur_sanskrit": "Avaivartacakrasūtra",
+      "match_type": "fuzzy",
+      "match_score": 0.9048,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    }
+  ],
+  "contradicted": [
+    {
+      "taisho_id": "T12n0374",
+      "tohoku": 121,
+      "taisho_sanskrit": "Mahāparinirvāṇasūtra",
+      "kangyur_sanskrit": "Mahāparinirvāṇasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ],
+      "known_tohoku": [
+        3,
+        106,
+        107,
+        119,
+        120
+      ]
+    },
+    {
+      "taisho_id": "T12n0375",
+      "tohoku": 121,
+      "taisho_sanskrit": "Mahāparinirvāṇasūtra.",
+      "kangyur_sanskrit": "Mahāparinirvāṇasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ],
+      "known_tohoku": [
+        119,
+        120
+      ]
+    },
+    {
+      "taisho_id": "T12n0376",
+      "tohoku": 121,
+      "taisho_sanskrit": "Mahāparinirvāṇasūtra",
+      "kangyur_sanskrit": "Mahāparinirvāṇasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ],
+      "known_tohoku": [
+        120
+      ]
+    },
+    {
+      "taisho_id": "T12n0377",
+      "tohoku": 121,
+      "taisho_sanskrit": "Mahāparinirvāṇasūtra",
+      "kangyur_sanskrit": "Mahāparinirvāṇasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ],
+      "known_tohoku": [
+        105,
+        107,
+        119,
+        787
+      ]
+    },
+    {
+      "taisho_id": "T24n1484",
+      "tohoku": 352,
+      "taisho_sanskrit": "Brahmajālasūtra",
+      "kangyur_sanskrit": "Brahmajālasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ],
+      "known_tohoku": [
+        256,
+        922
+      ]
+    },
+    {
+      "taisho_id": "T04n0192",
+      "tohoku": 551,
+      "taisho_sanskrit": "Buddhacarita.",
+      "kangyur_sanskrit": "Buddhacārita",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ],
+      "known_tohoku": [
+        4156,
+        5656
+      ]
+    },
+    {
+      "taisho_id": "T12n0363",
+      "tohoku": 115,
+      "taisho_sanskrit": "Sukhāvatīvyūha.",
+      "kangyur_sanskrit": "Sukhāvatī­vyūha",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ],
+      "known_tohoku": [
+        49
+      ]
+    },
+    {
+      "taisho_id": "T13n0405",
+      "tohoku": 534,
+      "taisho_sanskrit": "Ākāśagarbhasūtra",
+      "kangyur_sanskrit": "Ākāśa­garbha­sūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ],
+      "known_tohoku": [
+        260
+      ]
+    },
+    {
+      "taisho_id": "T13n0405",
+      "tohoku": 861,
+      "taisho_sanskrit": "Ākāśagarbhasūtra",
+      "kangyur_sanskrit": "Ākāśa­garbha­sūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ],
+      "known_tohoku": [
+        260
+      ]
+    },
+    {
+      "taisho_id": "T13n0407",
+      "tohoku": 534,
+      "taisho_sanskrit": "Ākāśagarbhasūtra",
+      "kangyur_sanskrit": "Ākāśa­garbha­sūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ],
+      "known_tohoku": [
+        260
+      ]
+    },
+    {
+      "taisho_id": "T13n0407",
+      "tohoku": 861,
+      "taisho_sanskrit": "Ākāśagarbhasūtra",
+      "kangyur_sanskrit": "Ākāśa­garbha­sūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ],
+      "known_tohoku": [
+        260
+      ]
+    },
+    {
+      "taisho_id": "T13n0408",
+      "tohoku": 534,
+      "taisho_sanskrit": "Ākāśagarbhasūtra",
+      "kangyur_sanskrit": "Ākāśa­garbha­sūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ],
+      "known_tohoku": [
+        260
+      ]
+    },
+    {
+      "taisho_id": "T13n0408",
+      "tohoku": 861,
+      "taisho_sanskrit": "Ākāśagarbhasūtra",
+      "kangyur_sanskrit": "Ākāśa­garbha­sūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ],
+      "known_tohoku": [
+        260
+      ]
+    },
+    {
+      "taisho_id": "T14n0425",
+      "tohoku": 199,
+      "taisho_sanskrit": "Bhadrakalpikasūtra",
+      "kangyur_sanskrit": "Bhadrakalpikasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ],
+      "known_tohoku": [
+        94
+      ]
+    },
+    {
+      "taisho_id": "T17n0758",
+      "tohoku": 309,
+      "taisho_sanskrit": "Anityatāsūtra.",
+      "kangyur_sanskrit": "Anityatāsūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ],
+      "known_tohoku": [
+        310
+      ]
+    },
+    {
+      "taisho_id": "T17n0801",
+      "tohoku": 310,
+      "taisho_sanskrit": "Anityatāsūtra.",
+      "kangyur_sanskrit": "Anityatāsūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ],
+      "known_tohoku": [
+        309,
+        975
+      ]
+    },
+    {
+      "taisho_id": "T19n0919",
+      "tohoku": 515,
+      "taisho_sanskrit": "Buddhahṛdayadhāraṇī",
+      "kangyur_sanskrit": "Buddha­hṛdaya­dhāraṇī",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ],
+      "known_tohoku": [
+        514,
+        854
+      ]
+    },
+    {
+      "taisho_id": "T19n0919",
+      "tohoku": 855,
+      "taisho_sanskrit": "Buddhahṛdayadhāraṇī",
+      "kangyur_sanskrit": "Buddha­hṛdaya­dhāraṇī",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ],
+      "known_tohoku": [
+        514,
+        854
+      ]
+    },
+    {
+      "taisho_id": "T24n1448",
+      "tohoku": 336,
+      "taisho_sanskrit": "Vinayavastu.",
+      "kangyur_sanskrit": "Vinayavastu",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ],
+      "known_tohoku": [
+        1,
+        312,
+        813
+      ]
+    },
+    {
+      "taisho_id": "T24n1449",
+      "tohoku": 336,
+      "taisho_sanskrit": "Vinayavastu.",
+      "kangyur_sanskrit": "Vinayavastu",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ],
+      "known_tohoku": [
+        1
+      ]
+    },
+    {
+      "taisho_id": "T24n1450",
+      "tohoku": 336,
+      "taisho_sanskrit": "Vinayavastu.",
+      "kangyur_sanskrit": "Vinayavastu",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ],
+      "known_tohoku": [
+        1
+      ]
+    },
+    {
+      "taisho_id": "T14n0429",
+      "tohoku": 105,
+      "taisho_sanskrit": "Maṅgalāṣṭaka(sūtra)",
+      "kangyur_sanskrit": "Maṇḍalāṣṭakasūtra",
+      "match_type": "fuzzy",
+      "match_score": 0.9412,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ],
+      "known_tohoku": [
+        278
+      ]
+    },
+    {
+      "taisho_id": "T08n0228",
+      "tohoku": 8,
+      "taisho_sanskrit": "Aṣṭasāhasrikāprajñāpāramitā.",
+      "kangyur_sanskrit": "Śata­sāhasrikā­prajñā­pāramitā",
+      "match_type": "fuzzy",
+      "match_score": 0.9259,
+      "sources": [
+        "84000-kangyur/translations"
+      ],
+      "known_tohoku": [
+        12,
+        21
+      ]
+    },
+    {
+      "taisho_id": "T08n0228",
+      "tohoku": 11,
+      "taisho_sanskrit": "Aṣṭasāhasrikāprajñāpāramitā.",
+      "kangyur_sanskrit": "Daśa­sāhasrikā­prajñā­pāramitā",
+      "match_type": "fuzzy",
+      "match_score": 0.9259,
+      "sources": [
+        "84000-kangyur/translations"
+      ],
+      "known_tohoku": [
+        12,
+        21
+      ]
+    }
+  ],
+  "new_proposals": [
+    {
+      "taisho_id": "T01n0002",
+      "tohoku": 270,
+      "taisho_sanskrit": "Saptabuddhaka.",
+      "kangyur_sanskrit": "Saptabuddhaka",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T01n0002",
+      "tohoku": 512,
+      "taisho_sanskrit": "Saptabuddhaka.",
+      "kangyur_sanskrit": "Saptabuddhaka",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T01n0002",
+      "tohoku": 852,
+      "taisho_sanskrit": "Saptabuddhaka.",
+      "kangyur_sanskrit": "Saptabuddhaka",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T01n0005",
+      "tohoku": 121,
+      "taisho_sanskrit": "Mahāparinirvāṇasūtra.",
+      "kangyur_sanskrit": "Mahāparinirvāṇasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T01n0006",
+      "tohoku": 121,
+      "taisho_sanskrit": "Mahāparinirvāṇasūtra.",
+      "kangyur_sanskrit": "Mahāparinirvāṇasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T01n0007",
+      "tohoku": 121,
+      "taisho_sanskrit": "Mahāparinirvāṇasūtra.",
+      "kangyur_sanskrit": "Mahāparinirvāṇasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T01n0032",
+      "tohoku": 316,
+      "taisho_sanskrit": "Catuḥsatyasūtra.",
+      "kangyur_sanskrit": "Catuḥsatyasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T02n0113",
+      "tohoku": 328,
+      "taisho_sanskrit": "Nandapravrajyāsūtra.",
+      "kangyur_sanskrit": "Nanda­pravrajyā­sūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T04n0173",
+      "tohoku": 347,
+      "taisho_sanskrit": "Puṇyabalāvadāna.",
+      "kangyur_sanskrit": "Puṇyabalāvadāna",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T04n0188",
+      "tohoku": 301,
+      "taisho_sanskrit": "Abhiniṣkramaṇa(sūtra)",
+      "kangyur_sanskrit": "Abhiniṣkramaṇasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T04n0190",
+      "tohoku": 301,
+      "taisho_sanskrit": "Abhiniṣkramaṇasūtra.",
+      "kangyur_sanskrit": "Abhiniṣkramaṇasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T12n0311",
+      "tohoku": 45,
+      "taisho_sanskrit": "Trisaṃvaranirdeśaparivarta(sūtra)",
+      "kangyur_sanskrit": "Trisaṃvaranirdeśaparivartasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T12n0313",
+      "tohoku": 50,
+      "taisho_sanskrit": "Akṣobhyatathāgatasyavyūhasūtra",
+      "kangyur_sanskrit": "Akṣobhyatathāgatasya vyūhasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T12n0314",
+      "tohoku": 53,
+      "taisho_sanskrit": "Daśadharma(ka)(sūtra)",
+      "kangyur_sanskrit": "Daśadharmakasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T12n0320",
+      "tohoku": 60,
+      "taisho_sanskrit": "Pitāputrasamāgama(sūtra).",
+      "kangyur_sanskrit": "Pitāputrasamāgamasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T15n0484",
+      "tohoku": 103,
+      "taisho_sanskrit": "Acintyaprabhāsanirdeśa",
+      "kangyur_sanskrit": "Acintya­prabhāsa­nirdeśa",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T15n0488",
+      "tohoku": 184,
+      "taisho_sanskrit": "Bodhisattvacaryānirdeśa(sūtra).",
+      "kangyur_sanskrit": "bodhisattva­caryānirdeśa­sūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T00n1583",
+      "tohoku": 184,
+      "taisho_sanskrit": "Bodhisattvacāryanirdeśa(sūtra)",
+      "kangyur_sanskrit": "bodhisattva­caryānirdeśa­sūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T15n0514",
+      "tohoku": 221,
+      "taisho_sanskrit": "Rājāvavādaka(sūtra)",
+      "kangyur_sanskrit": "Rājāvavādakasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T15n0515",
+      "tohoku": 221,
+      "taisho_sanskrit": "Rājāvavādaka(sūtra)",
+      "kangyur_sanskrit": "Rājāvavādakasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T15n0516",
+      "tohoku": 221,
+      "taisho_sanskrit": "Rājāvavādakasūtra.",
+      "kangyur_sanskrit": "Rājāvavādakasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T15n0545",
+      "tohoku": 217,
+      "taisho_sanskrit": "Śrīguptasūtra",
+      "kangyur_sanskrit": "Śrīguptasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T15n0550",
+      "tohoku": 4144,
+      "taisho_sanskrit": "Suvarṇavarṇāvadāna.",
+      "kangyur_sanskrit": "Suvarṇavarṇāvadāna",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T15n0575",
+      "tohoku": 226,
+      "taisho_sanskrit": "Bhavasaṅkrāntisūtra",
+      "kangyur_sanskrit": "Bhava­saṅkrānti­sūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T15n0576",
+      "tohoku": 226,
+      "taisho_sanskrit": "Bhavasaṅkrāntisūtra",
+      "kangyur_sanskrit": "Bhava­saṅkrānti­sūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T15n0577",
+      "tohoku": 226,
+      "taisho_sanskrit": "Bhavasaṅkrāntisūtra",
+      "kangyur_sanskrit": "Bhava­saṅkrānti­sūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T18n0821",
+      "tohoku": 258,
+      "taisho_sanskrit": "Tathāgatagarbhasūtra",
+      "kangyur_sanskrit": "Tathāgatagarbhasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T16n0727",
+      "tohoku": 4176,
+      "taisho_sanskrit": "Daśākuśalakarmapathanirdeśa.",
+      "kangyur_sanskrit": "Daśa­kuśala­karma­patha­nirdeśa",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T16n0727",
+      "tohoku": 4178,
+      "taisho_sanskrit": "Daśākuśalakarmapathanirdeśa.",
+      "kangyur_sanskrit": "Daśākuśala­karma­patha­nirdeśa",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T18n0807",
+      "tohoku": 200,
+      "taisho_sanskrit": "Lokānuvartanasūtra",
+      "kangyur_sanskrit": "Lokānuvartanasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T18n0810",
+      "tohoku": 228,
+      "taisho_sanskrit": "Buddhasaṅgītisūtra",
+      "kangyur_sanskrit": "Buddhasaṅgītisūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T18n0835",
+      "tohoku": 209,
+      "taisho_sanskrit": "Siṃhanādikasūtra",
+      "kangyur_sanskrit": "Siṃhanādikasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T18n0836",
+      "tohoku": 209,
+      "taisho_sanskrit": "Siṃhanādikasūtra",
+      "kangyur_sanskrit": "Siṃhanādikasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T19n0895",
+      "tohoku": 70,
+      "taisho_sanskrit": "Subāhuparipṛcchā(sūtra)",
+      "kangyur_sanskrit": "Subāhu­pari­pṛcchā­sūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T19n0896",
+      "tohoku": 70,
+      "taisho_sanskrit": "Subāhuparipṛcchā(sūtra).",
+      "kangyur_sanskrit": "Subāhu­pari­pṛcchā­sūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T19n0983",
+      "tohoku": 559,
+      "taisho_sanskrit": "Mahāmāyūrī(vidyārājñī).",
+      "kangyur_sanskrit": "Mahā­māyūrī­vidyārājñī",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T19n1002",
+      "tohoku": 682,
+      "taisho_sanskrit": "Amoghapāśahṛdayasūtra.",
+      "kangyur_sanskrit": "Amoghapāśahṛdayasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T19n1002",
+      "tohoku": 901,
+      "taisho_sanskrit": "Amoghapāśahṛdayasūtra.",
+      "kangyur_sanskrit": "Amoghapāśahṛdayasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T21n1163",
+      "tohoku": 662,
+      "taisho_sanskrit": "Vasudhārādhāraṇī.",
+      "kangyur_sanskrit": "Vasudhārādhāraṇī",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T21n1163",
+      "tohoku": 1007,
+      "taisho_sanskrit": "Vasudhārādhāraṇī.",
+      "kangyur_sanskrit": "Vasudhārādhāraṇī",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T21n1167",
+      "tohoku": 277,
+      "taisho_sanskrit": "Aṣṭamaṇḍalakasūtra.",
+      "kangyur_sanskrit": "Aṣṭamaṇḍalakasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T21n1167",
+      "tohoku": 644,
+      "taisho_sanskrit": "Aṣṭamaṇḍalakasūtra.",
+      "kangyur_sanskrit": "Aṣṭamaṇḍalakasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T21n1167",
+      "tohoku": 882,
+      "taisho_sanskrit": "Aṣṭamaṇḍalakasūtra.",
+      "kangyur_sanskrit": "Aṣṭamaṇḍalakasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T21n1168",
+      "tohoku": 277,
+      "taisho_sanskrit": "Aṣṭamaṇḍalaka(sūtra).",
+      "kangyur_sanskrit": "Aṣṭamaṇḍalakasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T21n1168",
+      "tohoku": 644,
+      "taisho_sanskrit": "Aṣṭamaṇḍalaka(sūtra).",
+      "kangyur_sanskrit": "Aṣṭamaṇḍalakasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T21n1168",
+      "tohoku": 882,
+      "taisho_sanskrit": "Aṣṭamaṇḍalaka(sūtra).",
+      "kangyur_sanskrit": "Aṣṭamaṇḍalakasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T21n1191",
+      "tohoku": 543,
+      "taisho_sanskrit": "Mañjuśrīmūlakalpa",
+      "kangyur_sanskrit": "Mañjuśrī­mūla­kalpa",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T21n1191",
+      "tohoku": 546,
+      "taisho_sanskrit": "Mañjuśrīmūlakalpa",
+      "kangyur_sanskrit": "Mañjuśrīmūlakalpa",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T21n1191",
+      "tohoku": 893,
+      "taisho_sanskrit": "Mañjuśrīmūlakalpa",
+      "kangyur_sanskrit": "Mañjuśrīmūlakalpa",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T21n1197",
+      "tohoku": 642,
+      "taisho_sanskrit": "Mañjuśrīnāmāṣṭaśataka.",
+      "kangyur_sanskrit": "Mañjuśrīnāmāṣṭaśataka",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T22n1217",
+      "tohoku": 604,
+      "taisho_sanskrit": "Krodhavijayakalpaguhyatantra.",
+      "kangyur_sanskrit": "Krodhavijayakalpaguhyatantra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T22n1243",
+      "tohoku": 757,
+      "taisho_sanskrit": "Mahābalasūtra.",
+      "kangyur_sanskrit": "Mahābalasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T22n1243",
+      "tohoku": 947,
+      "taisho_sanskrit": "Mahābalasūtra.",
+      "kangyur_sanskrit": "Mahābalasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T22n1244",
+      "tohoku": 33,
+      "taisho_sanskrit": "Ātānātīyasūtra.",
+      "kangyur_sanskrit": "Āṭānāṭiyasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T22n1252",
+      "tohoku": 740,
+      "taisho_sanskrit": "Mahāśrīsūtra.",
+      "kangyur_sanskrit": "Mahāśrīsūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T22n1252",
+      "tohoku": 1005,
+      "taisho_sanskrit": "Mahāśrīsūtra.",
+      "kangyur_sanskrit": "Mahāśrīsūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T22n1325",
+      "tohoku": 621,
+      "taisho_sanskrit": "Arśapraśamanasūtra.",
+      "kangyur_sanskrit": "Arśapraśamanasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T22n1325",
+      "tohoku": 1020,
+      "taisho_sanskrit": "Arśapraśamanasūtra.",
+      "kangyur_sanskrit": "Arśapraśamanasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T22n1339",
+      "tohoku": 133,
+      "taisho_sanskrit": "Pratyutpannabuddhasammukhāvasthitasamādhisūtra",
+      "kangyur_sanskrit": "Pratyutpannabuddha­saṃmukhāvasthita­samādhisūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T22n1415",
+      "tohoku": 751,
+      "taisho_sanskrit": "Mahāvajrameruśikharakūṭāgāradhāraṇī.",
+      "kangyur_sanskrit": "Mahāvajrameru­śikharakūṭāgāradhāraṇī",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T22n1415",
+      "tohoku": 946,
+      "taisho_sanskrit": "Mahāvajrameruśikharakūṭāgāradhāraṇī.",
+      "kangyur_sanskrit": "Mahāvajrameru­śikharakūṭāgāradhāraṇī",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T24n1444",
+      "tohoku": 336,
+      "taisho_sanskrit": "Vinayavastu.",
+      "kangyur_sanskrit": "Vinayavastu",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T24n1445",
+      "tohoku": 336,
+      "taisho_sanskrit": "Vinayavastu.",
+      "kangyur_sanskrit": "Vinayavastu",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T24n1446",
+      "tohoku": 336,
+      "taisho_sanskrit": "Vinayavastu.",
+      "kangyur_sanskrit": "Vinayavastu",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T24n1447",
+      "tohoku": 336,
+      "taisho_sanskrit": "Vinayavastu.",
+      "kangyur_sanskrit": "Vinayavastu",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T24n1460",
+      "tohoku": 2,
+      "taisho_sanskrit": "Prātimokṣasūtra.",
+      "kangyur_sanskrit": "Prātimokṣasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T24n1492",
+      "tohoku": 284,
+      "taisho_sanskrit": "Triskandhaka(sūtra)",
+      "kangyur_sanskrit": "Triskandhakasūtra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1560",
+      "tohoku": 4089,
+      "taisho_sanskrit": "Abhidharmakośakārikā.",
+      "kangyur_sanskrit": "Abhidharma­kośa­kārikā",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1566",
+      "tohoku": 3853,
+      "taisho_sanskrit": "Prajñāpradīpamūlamadhyamakavṛtti",
+      "kangyur_sanskrit": "Prajñā­pradīpa­mūla­madhyamaka­vṛtti",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1575",
+      "tohoku": 3825,
+      "taisho_sanskrit": "Yuktiṣaṣṭikākārikā.",
+      "kangyur_sanskrit": "Yukti­ṣaṣṭikā­kārikā",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1576",
+      "tohoku": 3833,
+      "taisho_sanskrit": "Mahāyānavimśaka.",
+      "kangyur_sanskrit": "Mahāyāna­viṃśaka",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1586",
+      "tohoku": 4055,
+      "taisho_sanskrit": "Triṃśikā(kārikā)",
+      "kangyur_sanskrit": "Triṃśikā­kārikā",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1587",
+      "tohoku": 4055,
+      "taisho_sanskrit": "Triṁśikā(kārikā).",
+      "kangyur_sanskrit": "Triṃśikā­kārikā",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1588",
+      "tohoku": 4057,
+      "taisho_sanskrit": "Viṁśatikāvṛtti.",
+      "kangyur_sanskrit": "Viṃśatikā­vṛtti",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1589",
+      "tohoku": 4057,
+      "taisho_sanskrit": "Viṁśatikāvṛtti.",
+      "kangyur_sanskrit": "Viṃśatikā­vṛtti",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1590",
+      "tohoku": 4057,
+      "taisho_sanskrit": "Viṃśatikāvṛtti",
+      "kangyur_sanskrit": "Viṃśatikā­vṛtti",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1605",
+      "tohoku": 4049,
+      "taisho_sanskrit": "Abhidharmasamuccaya",
+      "kangyur_sanskrit": "Abhidharma­samuccaya",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1606",
+      "tohoku": 4054,
+      "taisho_sanskrit": "Abhidharmasamuccayavyākhyā",
+      "kangyur_sanskrit": "Abhidharma­samuccaya­vyākhyā",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1608",
+      "tohoku": 4062,
+      "taisho_sanskrit": "Karmasiddhiprakaraṇa",
+      "kangyur_sanskrit": "Karma­siddhi­prakaraṇa",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1609",
+      "tohoku": 4062,
+      "taisho_sanskrit": "Karmasiddhiprakaraṇa",
+      "kangyur_sanskrit": "Karma­siddhi­prakaraṇa",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1612",
+      "tohoku": 3866,
+      "taisho_sanskrit": "Pañcaskandhaprakaraṇa.",
+      "kangyur_sanskrit": "Pañca­skandha­prakaraṇa",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1612",
+      "tohoku": 4059,
+      "taisho_sanskrit": "Pañcaskandhaprakaraṇa.",
+      "kangyur_sanskrit": "Pañca­skandha­prakaraṇa",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1613",
+      "tohoku": 3866,
+      "taisho_sanskrit": "Pañcaskandhaprakaraṇa",
+      "kangyur_sanskrit": "Pañca­skandha­prakaraṇa",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1613",
+      "tohoku": 4059,
+      "taisho_sanskrit": "Pañcaskandhaprakaraṇa",
+      "kangyur_sanskrit": "Pañca­skandha­prakaraṇa",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1614",
+      "tohoku": 4063,
+      "taisho_sanskrit": "Mahāyānaśatadharmaprakāśamukhaśāstra.",
+      "kangyur_sanskrit": "Mahāyāna­śatadharma­prakāśa­mukha­śāstra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1619",
+      "tohoku": 4205,
+      "taisho_sanskrit": "Ālambanaparīkṣā.",
+      "kangyur_sanskrit": "Ālambana­parīkṣā",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1624",
+      "tohoku": 4205,
+      "taisho_sanskrit": "Ālambanaparīkṣā.",
+      "kangyur_sanskrit": "Ālambana­parīkṣā",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1625",
+      "tohoku": 4205,
+      "taisho_sanskrit": "(Ālaṁbanaparīkṣā)",
+      "kangyur_sanskrit": "Ālambana­parīkṣā",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1635",
+      "tohoku": 3934,
+      "taisho_sanskrit": "Sūtrasamuccaya.",
+      "kangyur_sanskrit": "Sūtra­samuccaya",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1636",
+      "tohoku": 3940,
+      "taisho_sanskrit": "Śikṣāsamuccaya.",
+      "kangyur_sanskrit": "Śikṣā­samuccaya",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1637",
+      "tohoku": 3905,
+      "taisho_sanskrit": "Mahāyānalakṣaṇasamuccaya.",
+      "kangyur_sanskrit": "Mahāyāna­lakṣaṇa­samuccaya",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1663",
+      "tohoku": 3913,
+      "taisho_sanskrit": "Bodhicittabhāvanā.",
+      "kangyur_sanskrit": "Bodhicitta­bhāvanā",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1672",
+      "tohoku": 4182,
+      "taisho_sanskrit": "Suhṛllekha.",
+      "kangyur_sanskrit": "Suhṛl­lekha",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1673",
+      "tohoku": 4182,
+      "taisho_sanskrit": "Suhṛllekha.",
+      "kangyur_sanskrit": "Suhṛl­lekha",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1674",
+      "tohoku": 4182,
+      "taisho_sanskrit": "Suhṛllekha.",
+      "kangyur_sanskrit": "Suhṛl­lekha",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1675",
+      "tohoku": 1118,
+      "taisho_sanskrit": "Dharmadhātustotra.",
+      "kangyur_sanskrit": "Dharmadhātu­stotra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1677",
+      "tohoku": 1123,
+      "taisho_sanskrit": "Kāyatrayastotra.",
+      "kangyur_sanskrit": "Kāyatraya­stotra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1678",
+      "tohoku": 1123,
+      "taisho_sanskrit": "Kāyatrayastotra",
+      "kangyur_sanskrit": "Kāyatraya­stotra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1683",
+      "tohoku": 1149,
+      "taisho_sanskrit": "Gaṇḍīstotragāthā.",
+      "kangyur_sanskrit": "Gaṇḍī­stotra­gāthā",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1684",
+      "tohoku": 1168,
+      "taisho_sanskrit": "Aṣṭamahāsthānacaityavandanāstava.",
+      "kangyur_sanskrit": "Aṣṭamahāsthāna­caitya­vandanā­stava",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1685",
+      "tohoku": 1133,
+      "taisho_sanskrit": "Aṣṭamahāsthānacaityastotra.",
+      "kangyur_sanskrit": "Aṣṭamahāsthāna­caitya­stotra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1685",
+      "tohoku": 1134,
+      "taisho_sanskrit": "Aṣṭamahāsthānacaityastotra.",
+      "kangyur_sanskrit": "Aṣṭamahāsthāna­caitya­stotra",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1687",
+      "tohoku": 3721,
+      "taisho_sanskrit": "Gurupañcāśikā.",
+      "kangyur_sanskrit": "Guru­pañcāśikā",
+      "match_type": "exact",
+      "match_score": 1.0,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1598",
+      "tohoku": 4051,
+      "taisho_sanskrit": "Mahāyānasaṅgrahopanibandhana",
+      "kangyur_sanskrit": "Mahāyāna­saṃgrahopanibandhana",
+      "match_type": "fuzzy",
+      "match_score": 0.9643,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1599",
+      "tohoku": 4027,
+      "taisho_sanskrit": "Madhyāntavibhaṅgabhāṣya",
+      "kangyur_sanskrit": "Madhyānta­vibhāga­bhāṣya",
+      "match_type": "fuzzy",
+      "match_score": 0.9565,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1600",
+      "tohoku": 4027,
+      "taisho_sanskrit": "Madhyāntavibhaṅgabhāṣya",
+      "kangyur_sanskrit": "Madhyānta­vibhāga­bhāṣya",
+      "match_type": "fuzzy",
+      "match_score": 0.9565,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1595",
+      "tohoku": 4050,
+      "taisho_sanskrit": "Mahāyānasaṅgrāhabhāṣya",
+      "kangyur_sanskrit": "Mahāyāna­saṃgraha­bhāṣya",
+      "match_type": "fuzzy",
+      "match_score": 0.9545,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1596",
+      "tohoku": 4050,
+      "taisho_sanskrit": "Mahāyānasaṅgrahabhāṣya",
+      "kangyur_sanskrit": "Mahāyāna­saṃgraha­bhāṣya",
+      "match_type": "fuzzy",
+      "match_score": 0.9545,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1597",
+      "tohoku": 4050,
+      "taisho_sanskrit": "Mahāyānasaṅgrahabhāṣya",
+      "kangyur_sanskrit": "Mahāyāna­saṃgraha­bhāṣya",
+      "match_type": "fuzzy",
+      "match_score": 0.9545,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1656",
+      "tohoku": 4158,
+      "taisho_sanskrit": "Rājaparikathāratnamālī.",
+      "kangyur_sanskrit": "Rāja­parikathā­ratnāvali",
+      "match_type": "fuzzy",
+      "match_score": 0.9545,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T17n0754",
+      "tohoku": 319,
+      "taisho_sanskrit": "Adbhutadharmparyāya",
+      "kangyur_sanskrit": "Adbhuta­dharma­paryāya",
+      "match_type": "fuzzy",
+      "match_score": 0.95,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T12n0316",
+      "tohoku": 56,
+      "taisho_sanskrit": "Bodhisattvapiṭaka.",
+      "kangyur_sanskrit": "Bodhisatva­piṭaka",
+      "match_type": "fuzzy",
+      "match_score": 0.9412,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T00n1563",
+      "tohoku": 4091,
+      "taisho_sanskrit": "Abhidharmakośaśāstrakārikāvibhāṣya.",
+      "kangyur_sanskrit": "Abhidharma­kośa­śāstra­kārikā­bhāṣya",
+      "match_type": "fuzzy",
+      "match_score": 0.9412,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1592",
+      "tohoku": 4048,
+      "taisho_sanskrit": "Mahāyānasaṅgraha",
+      "kangyur_sanskrit": "Mahāyāna­saṃgraha",
+      "match_type": "fuzzy",
+      "match_score": 0.9375,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1593",
+      "tohoku": 4048,
+      "taisho_sanskrit": "Mahāyānasaṅgraha",
+      "kangyur_sanskrit": "Mahāyāna­saṃgraha",
+      "match_type": "fuzzy",
+      "match_score": 0.9375,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1594",
+      "tohoku": 4048,
+      "taisho_sanskrit": "Mahāyānasaṅgraha",
+      "kangyur_sanskrit": "Mahāyāna­saṃgraha",
+      "match_type": "fuzzy",
+      "match_score": 0.9375,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T19n0885",
+      "tohoku": 442,
+      "taisho_sanskrit": "Sarvatathāgatakāyavākcittarahasyaguhyasamājamahākalparāja.",
+      "kangyur_sanskrit": "Sarvatathāgata­kāyavākcittarahasyaguhyasamāja­nāmamahākalparāja",
+      "match_type": "fuzzy",
+      "match_score": 0.9344,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1612",
+      "tohoku": 4066,
+      "taisho_sanskrit": "Pañcaskandhaprakaraṇavaibhāṣya",
+      "kangyur_sanskrit": "Pañca­skandha­prakaraṇa­vibhāṣā",
+      "match_type": "fuzzy",
+      "match_score": 0.9333,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1613",
+      "tohoku": 4066,
+      "taisho_sanskrit": "Pañcaskandhaprakaraṇavaibhāṣya.",
+      "kangyur_sanskrit": "Pañca­skandha­prakaraṇa­vibhāṣā",
+      "match_type": "fuzzy",
+      "match_score": 0.9333,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T22n1316",
+      "tohoku": 679,
+      "taisho_sanskrit": "Paramitaguṇānuśaṃsādhāraṇī",
+      "kangyur_sanskrit": "Aparimita­guṇānuśāṁsa­dhāraṇī",
+      "match_type": "fuzzy",
+      "match_score": 0.9259,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T22n1316",
+      "tohoku": 851,
+      "taisho_sanskrit": "Paramitaguṇānuśaṃsādhāraṇī",
+      "kangyur_sanskrit": "Aparimita­guṇānuśāṁsa­dhāraṇī",
+      "match_type": "fuzzy",
+      "match_score": 0.9259,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T18n0811",
+      "tohoku": 276,
+      "taisho_sanskrit": "Buddakṣepana.",
+      "kangyur_sanskrit": "Buddhākṣepaṇa",
+      "match_type": "fuzzy",
+      "match_score": 0.9231,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T18n0831",
+      "tohoku": 276,
+      "taisho_sanskrit": "Buddakṣepana.",
+      "kangyur_sanskrit": "Buddhākṣepaṇa",
+      "match_type": "fuzzy",
+      "match_score": 0.9231,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T04n0171",
+      "tohoku": 351,
+      "taisho_sanskrit": "Jinaputrārthasiddasūtra",
+      "kangyur_sanskrit": "Jinaputrārthasiddhisūtra",
+      "match_type": "fuzzy",
+      "match_score": 0.9167,
+      "sources": [
+        "84000-kangyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n2031",
+      "tohoku": 4138,
+      "taisho_sanskrit": "Samayabhedoparacanacakra.",
+      "kangyur_sanskrit": "Samaya­bhedopacaraṇa­cakra",
+      "match_type": "fuzzy",
+      "match_score": 0.9167,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n2032",
+      "tohoku": 4138,
+      "taisho_sanskrit": "Samayabhedoparacanacakra.",
+      "kangyur_sanskrit": "Samaya­bhedopacaraṇa­cakra",
+      "match_type": "fuzzy",
+      "match_score": 0.9167,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n2033",
+      "tohoku": 4138,
+      "taisho_sanskrit": "Samayabhedoparacanacakra.",
+      "kangyur_sanskrit": "Samaya­bhedopacaraṇa­cakra",
+      "match_type": "fuzzy",
+      "match_score": 0.9167,
+      "sources": [
+        "84000-tengyur/placeholders"
+      ]
+    },
+    {
+      "taisho_id": "T00n1651",
+      "tohoku": 212,
+      "taisho_sanskrit": "Pratītyasamutpādaśāstra.",
+      "kangyur_sanskrit": "Pratītya­samutpāda­sūtra",
+      "match_type": "fuzzy",
+      "match_score": 0.913,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T00n1651",
+      "tohoku": 520,
+      "taisho_sanskrit": "Pratītyasamutpādaśāstra.",
+      "kangyur_sanskrit": "Pratītya­samutpāda­sūtra",
+      "match_type": "fuzzy",
+      "match_score": 0.913,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    },
+    {
+      "taisho_id": "T00n1651",
+      "tohoku": 980,
+      "taisho_sanskrit": "Pratītyasamutpādaśāstra.",
+      "kangyur_sanskrit": "Pratītya­samutpāda­sūtra",
+      "match_type": "fuzzy",
+      "match_score": 0.913,
+      "sources": [
+        "84000-kangyur/translations"
+      ]
+    }
+  ],
+  "filtered": [],
+  "validation_rate": 0.7624,
+  "total_exact_matches": 192,
+  "total_token_matches": 0,
+  "total_fuzzy_matches": 39
+}
