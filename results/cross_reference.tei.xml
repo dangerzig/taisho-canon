@@ -19,7 +19,7 @@
   <text>
     <body>
       <div type="summary">
-        <p>Total texts in corpus: 2455. Texts with Tibetan parallels: 733 (29.9%). Texts with any parallel: 954 (38.9%).</p>
+        <p>Total texts in corpus: 2455. Texts with Tibetan parallels: 768 (31.3%). Texts with any parallel: 974 (39.7%).</p>
       </div>
       <linkGrp type="concordance">
         <entry xml:id="T01n0001">
@@ -37,7 +37,9 @@
           </link>
           <idno type="otani">Otani 1021</idno>
           <idno type="otani">Otani 750</idno>
+          <idno type="otani">Otani 762</idno>
           <idno type="otani">Otani 879</idno>
+          <idno type="otani">Otani 953</idno>
           <idno type="otani">Otani 962</idno>
           <idno type="otani">Otani 997</idno>
           <idno type="nanjio">Nj 545</idno>
@@ -51,6 +53,16 @@
           <title type="tibetan">འདུས་པ་ཆེན་པོའི་མདོ</title>
         </entry>
         <entry xml:id="T01n0002">
+          <link type="tibetan" target="Toh_270" cert="low" />
+          <link type="tibetan" target="Toh_300" cert="low" />
+          <link type="tibetan" target="Toh_512" cert="low" />
+          <link type="tibetan" target="Toh_852" cert="low" />
+          <link type="tibetan" target="Toh_94" cert="low" />
+          <idno type="otani">Otani 152</idno>
+          <idno type="otani">Otani 477</idno>
+          <idno type="otani">Otani 762</idno>
+          <idno type="otani">Otani 936</idno>
+          <idno type="otani">Otani 966</idno>
           <idno type="nanjio">Nj 860</idno>
           <idno type="sanskrit">Saptabuddhaka</idno>
           <idno type="sanskrit">Saptabuddhaka.</idno>
@@ -60,6 +72,7 @@
           <link type="tibetan" target="Toh_94" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 762</idno>
           <idno type="nanjio">Nj 850</idno>
           <idno type="sanskrit">sf10</idno>
           <idno type="sanskrit">sf154</idno>
@@ -86,6 +99,7 @@
           <link type="tibetan" target="Toh_1" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 1030</idno>
           <idno type="nanjio">Nj 626</idno>
           <idno type="sanskrit">sf10</idno>
           <idno type="sanskrit">sf154</idno>
@@ -109,18 +123,24 @@
           <link type="pali" target="sn12.65" />
         </entry>
         <entry xml:id="T01n0005">
+          <link type="tibetan" target="Toh_121" cert="low" />
+          <idno type="otani">Otani 789</idno>
           <idno type="nanjio">Nj 552</idno>
           <idno type="sanskrit">Mahāparinirvāṇasūtra</idno>
           <idno type="sanskrit">Mahāparinirvāṇasūtra.</idno>
           <title type="chinese">佛般泥洹經</title>
         </entry>
         <entry xml:id="T01n0006">
+          <link type="tibetan" target="Toh_121" cert="low" />
+          <idno type="otani">Otani 789</idno>
           <idno type="nanjio">Nj 119</idno>
           <idno type="sanskrit">Mahāparinirvāṇasūtra</idno>
           <idno type="sanskrit">Mahāparinirvāṇasūtra.</idno>
           <title type="chinese">般泥洹經</title>
         </entry>
         <entry xml:id="T01n0007">
+          <link type="tibetan" target="Toh_121" cert="low" />
+          <idno type="otani">Otani 789</idno>
           <idno type="nanjio">Nj 118</idno>
           <idno type="sanskrit">Mahāparinirvāṇasūtra</idno>
           <idno type="sanskrit">Mahāparinirvāṇasūtra.</idno>
@@ -131,6 +151,12 @@
           <idno type="sanskrit">Mah&amp;#257;govindiya(s&amp;#363;tra)</idno>
           <idno type="sanskrit">Mahāgovindiya(sūtra).</idno>
           <title type="chinese">大堅固婆羅門綠起經</title>
+        </entry>
+        <entry xml:id="T01n0010">
+          <link type="tibetan" target="Toh_145" cert="low" />
+          <idno type="otani">Otani 472</idno>
+          <idno type="nanjio">Nj 952</idno>
+          <title type="chinese">Pai i chin ch'uang erh p'o lo men y&amp;uuml;an ch'i ching</title>
         </entry>
         <entry xml:id="T01n0012">
           <idno type="nanjio">Nj 938</idno>
@@ -206,6 +232,7 @@
           <link type="tibetan" target="Toh_1" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 1030</idno>
           <idno type="nanjio">Nj 551</idno>
           <title type="chinese">Ta lou t'an ching</title>
         </entry>
@@ -216,6 +243,10 @@
           <link type="tibetan" target="Toh_235" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 1030</idno>
+          <idno type="otani">Otani 334</idno>
+          <idno type="otani">Otani 689</idno>
+          <idno type="otani">Otani 901</idno>
           <idno type="nanjio">Nj 550</idno>
           <title type="chinese">Ch'i shih ching</title>
           <link type="pali" target="an3.36" />
@@ -293,10 +324,18 @@
           <title type="chinese">薩鉢多酥哩踰捺野經</title>
         </entry>
         <entry xml:id="T01n0032">
+          <link type="tibetan" target="Toh_316" cert="low" />
+          <idno type="otani">Otani 982</idno>
           <idno type="nanjio">Nj 598</idno>
           <idno type="sanskrit">Catuḥsatyasūtra</idno>
           <idno type="sanskrit">Catuḥsatyasūtra.</idno>
           <title type="chinese">四諦經</title>
+        </entry>
+        <entry xml:id="T01n0034">
+          <link type="tibetan" target="Toh_255" cert="low" />
+          <idno type="otani">Otani 921</idno>
+          <idno type="nanjio">Nj 673</idno>
+          <title type="chinese">Fa hai ching</title>
         </entry>
         <entry xml:id="T01n0035">
           <idno type="nanjio">Nj 672</idno>
@@ -359,6 +398,7 @@
           <link type="tibetan" target="Toh_1" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 1030</idno>
           <idno type="nanjio">Nj 578</idno>
           <title type="chinese">K'u yin ching</title>
           <link type="pali" target="mn13" />
@@ -444,10 +484,19 @@
           <title type="chinese">Fo wei huang chu y&amp;uuml;an lao p'o lo men shuo hs&amp;uuml;eh ching</title>
           <link type="pali" target="an8.11" />
         </entry>
+        <entry xml:id="T01n0077">
+          <link type="tibetan" target="Toh_313" cert="low" />
+          <idno type="otani">Otani 599</idno>
+          <idno type="otani">Otani 979</idno>
+          <idno type="nanjio">Nj 609</idno>
+          <title type="chinese">Tsun shang ching</title>
+        </entry>
         <entry xml:id="T01n0078">
+          <link type="tibetan" target="Toh_338" cert="low" />
           <link type="tibetan" target="Toh_339" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 1005</idno>
           <idno type="otani">Otani 1006</idno>
           <idno type="otani">Otani 955</idno>
           <idno type="otani">Otani 956</idno>
@@ -470,6 +519,7 @@
           <link type="tibetan" target="Toh_339" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 1005</idno>
           <idno type="otani">Otani 1006</idno>
           <idno type="otani">Otani 955</idno>
           <idno type="otani">Otani 956</idno>
@@ -501,6 +551,7 @@
             <note type="sources">existing</note>
           </link>
           <idno type="otani">Otani 1005</idno>
+          <idno type="otani">Otani 1006</idno>
           <idno type="nanjio">Nj 739</idno>
           <idno type="nanjio">Nj 783</idno>
           <idno type="sanskrit">&amp;#346;ukas&amp;#363;tra</idno>
@@ -532,6 +583,10 @@
           </link>
           <idno type="otani">Otani 1005</idno>
           <idno type="otani">Otani 1006</idno>
+          <idno type="otani">Otani 399</idno>
+          <idno type="otani">Otani 400</idno>
+          <idno type="otani">Otani 630</idno>
+          <idno type="otani">Otani 631</idno>
           <idno type="nanjio">Nj 739</idno>
           <idno type="nanjio">Nj 783</idno>
           <idno type="sanskrit">&amp;#346;ukas&amp;#363;tra</idno>
@@ -660,6 +715,7 @@
           <link type="tibetan" target="Toh_42" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 1002</idno>
           <idno type="otani">Otani 1003</idno>
           <idno type="otani">Otani 1424</idno>
           <idno type="otani">Otani 747</idno>
@@ -672,6 +728,7 @@
           <idno type="otani">Otani 959</idno>
           <idno type="otani">Otani 962</idno>
           <idno type="otani">Otani 966</idno>
+          <idno type="otani">Otani 971</idno>
           <idno type="otani">Otani 982</idno>
           <idno type="otani">Otani 996</idno>
           <idno type="otani">Otani 997</idno>
@@ -718,6 +775,7 @@
           <idno type="otani">Otani 750</idno>
           <idno type="otani">Otani 879</idno>
           <idno type="otani">Otani 962</idno>
+          <idno type="otani">Otani 996</idno>
           <idno type="otani">Otani 997</idno>
           <idno type="nanjio">Nj 434</idno>
           <idno type="nanjio">Nj 545</idno>
@@ -829,6 +887,8 @@
           <link type="pali" target="sn14.29" />
         </entry>
         <entry xml:id="T02n0113">
+          <link type="tibetan" target="Toh_328" cert="low" />
+          <idno type="otani">Otani 994</idno>
           <idno type="nanjio">Nj 660</idno>
           <idno type="sanskrit">Nandapravrajyāsūtra</idno>
           <idno type="sanskrit">Nandapravrajyāsūtra.</idno>
@@ -884,7 +944,9 @@
           <link type="tibetan" target="Toh_213" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <link type="tibetan" target="Toh_64" cert="low" />
           <idno type="otani">Otani 752</idno>
+          <idno type="otani">Otani 760,20</idno>
           <idno type="otani">Otani 877</idno>
           <idno type="otani">Otani 879</idno>
           <idno type="otani">Otani 982</idno>
@@ -959,9 +1021,13 @@
           <link type="tibetan" target="Toh_9" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 1015</idno>
+          <idno type="otani">Otani 731</idno>
           <idno type="otani">Otani 752</idno>
           <idno type="otani">Otani 877</idno>
           <idno type="otani">Otani 879</idno>
+          <idno type="otani">Otani 959</idno>
+          <idno type="otani">Otani 971</idno>
           <idno type="otani">Otani 982</idno>
           <idno type="nanjio">Nj 434</idno>
           <idno type="nanjio">Nj 543</idno>
@@ -987,24 +1053,30 @@
           <link type="tibetan" target="Toh_346" cert="low">
             <note type="sources">existing</note>
           </link>
-          <idno type="sanskrit">Sumāgadhāvadānasūtra</idno>
+          <idno type="otani">Otani 1015</idno>
+          <idno type="nanjio">Nj 615</idno>
           <idno type="sanskrit">Sumāgadhāvadānasūtra.</idno>
+          <title type="chinese">須摩提女經</title>
         </entry>
         <entry xml:id="T02n0128b">
           <link type="tibetan" target="Toh_346" cert="low">
             <note type="sources">existing</note>
           </link>
-          <idno type="nanjio">Nj 615</idno>
+          <idno type="otani">Otani 1015</idno>
+          <idno type="sanskrit">Sumāgadhāvadānasūtra</idno>
           <idno type="sanskrit">Sumāgadhāvadānasūtra.</idno>
-          <title type="chinese">須摩提女經</title>
         </entry>
         <entry xml:id="T02n0129">
+          <link type="tibetan" target="Toh_346" cert="low" />
+          <idno type="otani">Otani 1015</idno>
           <idno type="nanjio">Nj 616</idno>
           <idno type="sanskrit">Sum&amp;#257;gadh&amp;#257;vad&amp;#257;nas&amp;#363;tra</idno>
           <idno type="sanskrit">Sumāgadhāvadānasūtra.</idno>
           <title type="chinese">三摩竭經</title>
         </entry>
         <entry xml:id="T02n0130">
+          <link type="tibetan" target="Toh_346" cert="low" />
+          <idno type="otani">Otani 1015</idno>
           <idno type="nanjio">Nj 937</idno>
           <idno type="sanskrit">Sum&amp;#257;gadhavad&amp;#257;na(s&amp;#363;tra)</idno>
           <idno type="sanskrit">Sumāgadhavadāna(sūtra).</idno>
@@ -1070,6 +1142,7 @@
           <link type="tibetan" target="Toh_350" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 1019</idno>
           <idno type="nanjio">Nj 432</idno>
           <title type="chinese">P'u sa pen hsing ching</title>
         </entry>
@@ -1081,6 +1154,7 @@
             <note type="sources">acmuller; cbeta_tibetan; existing; lancaster; lancaster_full; rkts</note>
           </link>
           <idno type="otani">Otani 1022</idno>
+          <idno type="otani">Otani 1031</idno>
           <idno type="nanjio">Nj 431</idno>
           <title type="chinese">大方便佛報恩經</title>
           <title type="tibetan">ཐབས་མཁས་པ་ཆེན་པོ་སངས་རྒྱས་དྲིན་ལན་བསབ་པའི་མདོ</title>
@@ -1113,6 +1187,7 @@
           <link type="tibetan" target="Toh_4150" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 5650</idno>
           <idno type="nanjio">Nj 1312</idno>
           <idno type="sanskrit">Jātakamāla</idno>
           <title type="chinese">本生論</title>
@@ -1143,6 +1218,8 @@
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 1017</idno>
+          <idno type="otani">Otani 210</idno>
+          <idno type="otani">Otani 642</idno>
           <idno type="nanjio">Nj 1357</idno>
           <idno type="nanjio">Nj 852</idno>
           <idno type="sanskrit">Candraprabhabodhisattvacary&amp;#257;vad&amp;#257;na(s&amp;#363;tra)</idno>
@@ -1161,6 +1238,12 @@
           <idno type="nanjio">Nj 513</idno>
           <idno type="sanskrit">Candraprabhabodhisattva(sūtra)</idno>
           <title type="chinese">月明菩薩經</title>
+        </entry>
+        <entry xml:id="T03n0170">
+          <link type="tibetan" target="Toh_62" cert="low" />
+          <idno type="otani">Otani 760,17</idno>
+          <idno type="nanjio">Nj 518</idno>
+          <title type="chinese">Te kuang t'ai tzu ching</title>
         </entry>
         <entry xml:id="T03n0171">
           <link type="tibetan" target="Toh_351" cert="high">
@@ -1208,6 +1291,7 @@
           <link type="tibetan" target="Toh_95" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5949</idno>
           <idno type="otani">Otani 763</idno>
           <idno type="nanjio">Nj 159</idno>
           <idno type="nanjio">Nj 160</idno>
@@ -1224,6 +1308,7 @@
           <link type="tibetan" target="Toh_95" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5949</idno>
           <idno type="otani">Otani 763</idno>
           <idno type="nanjio">Nj 159</idno>
           <idno type="nanjio">Nj 160</idno>
@@ -1238,6 +1323,8 @@
           <title type="chinese">異出菩薩本起經</title>
         </entry>
         <entry xml:id="T03n0190">
+          <link type="tibetan" target="Toh_94" cert="low" />
+          <idno type="otani">Otani 762</idno>
           <idno type="nanjio">Nj 680</idno>
           <idno type="sanskrit">Abhini&amp;#7779;krama&amp;#7751;as&amp;#363;tra</idno>
           <idno type="sanskrit">Abhiniṣkramaṇasūtra.</idno>
@@ -1250,6 +1337,7 @@
           <link type="tibetan" target="Toh_5656" cert="low">
             <note type="sources">cbeta_sanskrit</note>
           </link>
+          <idno type="otani">Otani 5656</idno>
           <idno type="nanjio">Nj 1351</idno>
           <idno type="sanskrit">Buddhacarita</idno>
           <idno type="sanskrit">Buddhacarita-nāma-mahākāvya</idno>
@@ -1269,9 +1357,11 @@
           <title type="chinese">義足經</title>
         </entry>
         <entry xml:id="T04n0200">
+          <link type="tibetan" target="Toh_340" cert="low" />
           <link type="tibetan" target="Toh_343" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 1007</idno>
           <idno type="otani">Otani 1012</idno>
           <idno type="nanjio">Nj 1324</idno>
           <idno type="sanskrit">Avad&amp;#257;na&amp;#347;ataka</idno>
@@ -1304,6 +1394,7 @@
           <link type="tibetan" target="Toh_4099" cert="high">
             <note type="sources">cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5600</idno>
           <idno type="otani">Otani 992</idno>
           <idno type="nanjio">Nj 1321</idno>
           <idno type="nanjio">Nj 1353</idno>
@@ -2045,6 +2136,7 @@
             <note type="sources">cbeta_sanskrit; existing; lancaster; lancaster_full</note>
           </link>
           <link type="tibetan" target="up2.050" cert="low" />
+          <idno type="otani">Otani 5600</idno>
           <idno type="otani">Otani 992</idno>
           <idno type="nanjio">Nj 1321</idno>
           <idno type="nanjio">Nj 1353</idno>
@@ -2079,6 +2171,7 @@
           <link type="tibetan" target="Toh_4099" cert="high">
             <note type="sources">cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5600</idno>
           <idno type="otani">Otani 992</idno>
           <idno type="nanjio">Nj 1321</idno>
           <idno type="nanjio">Nj 1353</idno>
@@ -2896,6 +2989,7 @@
           <link type="tibetan" target="Toh_4099" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5600</idno>
           <idno type="otani">Otani 992</idno>
           <idno type="nanjio">Nj 1321</idno>
           <idno type="nanjio">Nj 1353</idno>
@@ -3716,62 +3810,6 @@
           <title type="chinese">醫喩經</title>
         </entry>
         <entry xml:id="T05n0220">
-          <link type="tibetan" target="Toh_10" cert="medium">
-            <note type="sources">cbeta_tibetan; existing</note>
-          </link>
-          <link type="tibetan" target="Toh_12" cert="medium">
-            <note type="sources">cbeta_tibetan; existing</note>
-          </link>
-          <link type="tibetan" target="Toh_13" cert="medium">
-            <note type="sources">cbeta_tibetan; existing</note>
-          </link>
-          <link type="tibetan" target="Toh_14" cert="medium">
-            <note type="sources">cbeta_tibetan; existing</note>
-          </link>
-          <link type="tibetan" target="Toh_16" cert="high">
-            <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing</note>
-          </link>
-          <link type="tibetan" target="Toh_17" cert="medium">
-            <note type="sources">cbeta_tibetan; existing</note>
-          </link>
-          <link type="tibetan" target="Toh_181" cert="medium">
-            <note type="sources">cbeta_tibetan; existing</note>
-          </link>
-          <link type="tibetan" target="Toh_24" cert="medium">
-            <note type="sources">cbeta_tibetan; existing</note>
-          </link>
-          <link type="tibetan" target="Toh_487" cert="medium">
-            <note type="sources">cbeta_tibetan; existing</note>
-          </link>
-          <link type="tibetan" target="Toh_489" cert="medium">
-            <note type="sources">cbeta_tibetan; existing</note>
-          </link>
-          <link type="tibetan" target="Toh_8" cert="medium">
-            <note type="sources">cbeta_tibetan; existing</note>
-          </link>
-          <link type="tibetan" target="Toh_9" cert="medium">
-            <note type="sources">cbeta_tibetan; existing</note>
-          </link>
-          <idno type="otani">Otani 739</idno>
-          <idno type="nanjio">Nj 1</idno>
-          <idno type="sanskrit">Mahāpraj&amp;ntilde;āpāramitāsūtra</idno>
-          <idno type="sanskrit">Mahāprajñāpāramitāsūtra</idno>
-          <idno type="sanskrit">Pañcaviṃśatisāhasrikā-prajñāpāramitā</idno>
-          <idno type="sanskrit">Ārya- prajñāpāramitā-sañcayagāthā</idno>
-          <idno type="sanskrit">Ārya-aṣṭasāhasrikā-prajñāpāramitā</idno>
-          <idno type="sanskrit">Ārya-aṣṭādaśasāhasrikā-prajñāpāramitā-nāma-mahāyānasūtra</idno>
-          <idno type="sanskrit">Ārya-pañcapāramitānirdeśa-nāma-mahāyānasūtra</idno>
-          <idno type="sanskrit">Ārya-prajñāpāramitā-naya-śatapañcāśatikā</idno>
-          <idno type="sanskrit">Ārya-prajñāpāramitānayaśatapañcaśatikā</idno>
-          <idno type="sanskrit">Ārya-saptaśatikā-nāma-prajñāpāramitā-mahāyānasūtra</idno>
-          <idno type="sanskrit">Ārya-suvikrāntavikrami-paripṛcchā- prajñāpāramitā-nirdeśa</idno>
-          <idno type="sanskrit">Ārya-vajracchedikā-nāma-prajñāpāramitā-mahāyānasūtra</idno>
-          <idno type="sanskrit">Śatasāhasrikā-prajñāpāramitā</idno>
-          <idno type="sanskrit">Śrī-paramādya-nāma-mahāyānakalparāja</idno>
-          <title type="chinese">般若波羅蜜多經</title>
-          <title type="tibetan">ཤེས་རབ་ཀྱི་ཕ་རོལ་ཏུ་ཕྱིན་པ་སྟོང་ཕྲག་བརྒྱ་བ</title>
-        </entry>
-        <entry xml:id="T06n0220">
           <link type="tibetan" target="Toh_10" cert="low">
             <note type="sources">existing</note>
           </link>
@@ -3808,7 +3846,98 @@
           <link type="tibetan" target="Toh_9" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 119</idno>
+          <idno type="otani">Otani 121</idno>
+          <idno type="otani">Otani 730</idno>
+          <idno type="otani">Otani 731</idno>
+          <idno type="otani">Otani 732</idno>
+          <idno type="otani">Otani 734</idno>
+          <idno type="otani">Otani 735</idno>
+          <idno type="otani">Otani 736</idno>
+          <idno type="otani">Otani 737</idno>
+          <idno type="otani">Otani 739</idno>
+          <idno type="otani">Otani 760,46</idno>
+          <idno type="otani">Otani 848</idno>
+          <idno type="sanskrit">Mahāpraj&amp;ntilde;āpāramitāsūtra</idno>
           <idno type="sanskrit">Mahāprajñāpāramitāsūtra</idno>
+          <idno type="sanskrit">Pañcaviṃśatisāhasrikā-prajñāpāramitā</idno>
+          <idno type="sanskrit">Ārya- prajñāpāramitā-sañcayagāthā</idno>
+          <idno type="sanskrit">Ārya-aṣṭasāhasrikā-prajñāpāramitā</idno>
+          <idno type="sanskrit">Ārya-aṣṭādaśasāhasrikā-prajñāpāramitā-nāma-mahāyānasūtra</idno>
+          <idno type="sanskrit">Ārya-pañcapāramitānirdeśa-nāma-mahāyānasūtra</idno>
+          <idno type="sanskrit">Ārya-prajñāpāramitā-naya-śatapañcāśatikā</idno>
+          <idno type="sanskrit">Ārya-prajñāpāramitānayaśatapañcaśatikā</idno>
+          <idno type="sanskrit">Ārya-saptaśatikā-nāma-prajñāpāramitā-mahāyānasūtra</idno>
+          <idno type="sanskrit">Ārya-suvikrāntavikrami-paripṛcchā- prajñāpāramitā-nirdeśa</idno>
+          <idno type="sanskrit">Ārya-vajracchedikā-nāma-prajñāpāramitā-mahāyānasūtra</idno>
+          <idno type="sanskrit">Śatasāhasrikā-prajñāpāramitā</idno>
+          <idno type="sanskrit">Śrī-paramādya-nāma-mahāyānakalparāja</idno>
+        </entry>
+        <entry xml:id="T06n0220">
+          <link type="tibetan" target="Toh_10" cert="medium">
+            <note type="sources">cbeta_tibetan; existing</note>
+          </link>
+          <link type="tibetan" target="Toh_12" cert="medium">
+            <note type="sources">cbeta_tibetan; existing</note>
+          </link>
+          <link type="tibetan" target="Toh_13" cert="medium">
+            <note type="sources">cbeta_tibetan; existing</note>
+          </link>
+          <link type="tibetan" target="Toh_14" cert="medium">
+            <note type="sources">cbeta_tibetan; existing</note>
+          </link>
+          <link type="tibetan" target="Toh_16" cert="high">
+            <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing</note>
+          </link>
+          <link type="tibetan" target="Toh_17" cert="medium">
+            <note type="sources">cbeta_tibetan; existing</note>
+          </link>
+          <link type="tibetan" target="Toh_181" cert="medium">
+            <note type="sources">cbeta_tibetan; existing</note>
+          </link>
+          <link type="tibetan" target="Toh_24" cert="medium">
+            <note type="sources">cbeta_tibetan; existing</note>
+          </link>
+          <link type="tibetan" target="Toh_487" cert="medium">
+            <note type="sources">cbeta_tibetan; existing</note>
+          </link>
+          <link type="tibetan" target="Toh_489" cert="medium">
+            <note type="sources">cbeta_tibetan; existing</note>
+          </link>
+          <link type="tibetan" target="Toh_8" cert="medium">
+            <note type="sources">cbeta_tibetan; existing</note>
+          </link>
+          <link type="tibetan" target="Toh_9" cert="medium">
+            <note type="sources">cbeta_tibetan; existing</note>
+          </link>
+          <idno type="otani">Otani 119</idno>
+          <idno type="otani">Otani 121</idno>
+          <idno type="otani">Otani 730</idno>
+          <idno type="otani">Otani 731</idno>
+          <idno type="otani">Otani 732</idno>
+          <idno type="otani">Otani 734</idno>
+          <idno type="otani">Otani 735</idno>
+          <idno type="otani">Otani 736</idno>
+          <idno type="otani">Otani 737</idno>
+          <idno type="otani">Otani 739</idno>
+          <idno type="otani">Otani 760,46</idno>
+          <idno type="otani">Otani 848</idno>
+          <idno type="nanjio">Nj 1</idno>
+          <idno type="sanskrit">Mahāprajñāpāramitāsūtra</idno>
+          <idno type="sanskrit">Pañcaviṃśatisāhasrikā-prajñāpāramitā</idno>
+          <idno type="sanskrit">Ārya- prajñāpāramitā-sañcayagāthā</idno>
+          <idno type="sanskrit">Ārya-aṣṭasāhasrikā-prajñāpāramitā</idno>
+          <idno type="sanskrit">Ārya-aṣṭādaśasāhasrikā-prajñāpāramitā-nāma-mahāyānasūtra</idno>
+          <idno type="sanskrit">Ārya-pañcapāramitānirdeśa-nāma-mahāyānasūtra</idno>
+          <idno type="sanskrit">Ārya-prajñāpāramitā-naya-śatapañcāśatikā</idno>
+          <idno type="sanskrit">Ārya-prajñāpāramitānayaśatapañcaśatikā</idno>
+          <idno type="sanskrit">Ārya-saptaśatikā-nāma-prajñāpāramitā-mahāyānasūtra</idno>
+          <idno type="sanskrit">Ārya-suvikrāntavikrami-paripṛcchā- prajñāpāramitā-nirdeśa</idno>
+          <idno type="sanskrit">Ārya-vajracchedikā-nāma-prajñāpāramitā-mahāyānasūtra</idno>
+          <idno type="sanskrit">Śatasāhasrikā-prajñāpāramitā</idno>
+          <idno type="sanskrit">Śrī-paramādya-nāma-mahāyānakalparāja</idno>
+          <title type="chinese">般若波羅蜜多經</title>
+          <title type="tibetan">ཤེས་རབ་ཀྱི་ཕ་རོལ་ཏུ་ཕྱིན་པ་སྟོང་ཕྲག་བརྒྱ་བ</title>
         </entry>
         <entry xml:id="T07n0220">
           <link type="tibetan" target="Toh_10" cert="low">
@@ -3847,7 +3976,31 @@
           <link type="tibetan" target="Toh_9" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 119</idno>
+          <idno type="otani">Otani 121</idno>
+          <idno type="otani">Otani 730</idno>
+          <idno type="otani">Otani 731</idno>
+          <idno type="otani">Otani 732</idno>
+          <idno type="otani">Otani 734</idno>
+          <idno type="otani">Otani 735</idno>
+          <idno type="otani">Otani 736</idno>
+          <idno type="otani">Otani 737</idno>
+          <idno type="otani">Otani 739</idno>
+          <idno type="otani">Otani 760,46</idno>
+          <idno type="otani">Otani 848</idno>
           <idno type="sanskrit">Mahāprajñāpāramitāsūtra</idno>
+          <idno type="sanskrit">Pañcaviṃśatisāhasrikā-prajñāpāramitā</idno>
+          <idno type="sanskrit">Ārya- prajñāpāramitā-sañcayagāthā</idno>
+          <idno type="sanskrit">Ārya-aṣṭasāhasrikā-prajñāpāramitā</idno>
+          <idno type="sanskrit">Ārya-aṣṭādaśasāhasrikā-prajñāpāramitā-nāma-mahāyānasūtra</idno>
+          <idno type="sanskrit">Ārya-pañcapāramitānirdeśa-nāma-mahāyānasūtra</idno>
+          <idno type="sanskrit">Ārya-prajñāpāramitā-naya-śatapañcāśatikā</idno>
+          <idno type="sanskrit">Ārya-prajñāpāramitānayaśatapañcaśatikā</idno>
+          <idno type="sanskrit">Ārya-saptaśatikā-nāma-prajñāpāramitā-mahāyānasūtra</idno>
+          <idno type="sanskrit">Ārya-suvikrāntavikrami-paripṛcchā- prajñāpāramitā-nirdeśa</idno>
+          <idno type="sanskrit">Ārya-vajracchedikā-nāma-prajñāpāramitā-mahāyānasūtra</idno>
+          <idno type="sanskrit">Śatasāhasrikā-prajñāpāramitā</idno>
+          <idno type="sanskrit">Śrī-paramādya-nāma-mahāyānakalparāja</idno>
         </entry>
         <entry xml:id="T08n0221">
           <link type="tibetan" target="Toh_9" cert="high">
@@ -3884,6 +4037,7 @@
           <link type="tibetan" target="Toh_9" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 160</idno>
           <idno type="otani">Otani 731</idno>
           <idno type="nanjio">Nj 1</idno>
           <idno type="nanjio">Nj 2</idno>
@@ -3908,6 +4062,9 @@
           <link type="tibetan" target="Toh_9" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 730</idno>
+          <idno type="otani">Otani 731</idno>
+          <idno type="otani">Otani 733</idno>
           <idno type="otani">Otani 734</idno>
           <idno type="nanjio">Nj 1</idno>
           <idno type="nanjio">Nj 5</idno>
@@ -3928,6 +4085,7 @@
           <link type="tibetan" target="Toh_12" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 732</idno>
           <idno type="otani">Otani 734</idno>
           <idno type="nanjio">Nj 1</idno>
           <idno type="nanjio">Nj 5</idno>
@@ -3980,6 +4138,7 @@
           <link type="tibetan" target="Toh_21" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 160</idno>
           <idno type="otani">Otani 734</idno>
           <idno type="nanjio">Nj 1</idno>
           <idno type="nanjio">Nj 5</idno>
@@ -4044,6 +4203,7 @@
           <idno type="otani">Otani 46</idno>
           <idno type="otani">Otani 737</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,46</idno>
           <idno type="nanjio">Nj 21</idno>
           <idno type="nanjio">Nj 22</idno>
           <idno type="sanskrit">Saptaśatikāpraj&amp;ntilde;āpāramitāsūtra</idno>
@@ -4056,6 +4216,7 @@
             <note type="sources">acmuller; cbeta_sanskrit; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 737</idno>
+          <idno type="otani">Otani 760,46</idno>
           <idno type="nanjio">Nj 21</idno>
           <idno type="nanjio">Nj 22</idno>
           <idno type="sanskrit">Saptaśatikāpraj&amp;ntilde;āpāramitāsūtra</idno>
@@ -4092,8 +4253,6 @@
             <note type="sources">existing</note>
           </link>
           <idno type="otani">Otani 739</idno>
-          <idno type="otani">Otani 827</idno>
-          <idno type="sanskrit">Vajracchedikāpraj&amp;ntilde;āpāramitāsūtra</idno>
           <idno type="sanskrit">Vajracchedikāprajñāpāramitāsūtra</idno>
           <idno type="sanskrit">Ārya-vajracchedikā-nāma-prajñāpāramitā-mahāyānasūtra</idno>
         </entry>
@@ -4110,7 +4269,9 @@
           <idno type="nanjio">Nj 13</idno>
           <idno type="nanjio">Nj 14</idno>
           <idno type="nanjio">Nj 190</idno>
+          <idno type="sanskrit">Vajracchedikāpraj&amp;ntilde;āpāramitāsūtra</idno>
           <idno type="sanskrit">Vajracchedikāprajñāpāramitāsūtra</idno>
+          <idno type="sanskrit">Ārya-vajracchedikā-nāma-prajñāpāramitā-mahāyānasūtra</idno>
           <title type="chinese">金剛般若波羅蜜經</title>
           <title type="tibetan">Śes-rab-kyi-pha-rol-tu-phyin-pa rdo-rje gcod-pa</title>
         </entry>
@@ -4137,6 +4298,7 @@
           <link type="tibetan" target="Toh_16" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 739</idno>
           <idno type="nanjio">Nj 1</idno>
           <idno type="sanskrit">Ārya-vajracchedikā-nāma-prajñāpāramitā-mahāyānasūtra</idno>
           <title type="chinese">聖般若波羅蜜多金剛能斷大乘經</title>
@@ -4196,6 +4358,8 @@
           <link type="tibetan" target="Toh_489" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 119</idno>
+          <idno type="otani">Otani 121</idno>
           <idno type="nanjio">Nj 1</idno>
           <idno type="sanskrit">Ārya-prajñāpāramitā-naya-śatapañcāśatikā</idno>
           <idno type="sanskrit">Ārya-prajñāpāramitānayaśatapañcaśatikā</idno>
@@ -4396,6 +4560,7 @@
           <link type="tibetan" target="Toh_531" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 160</idno>
           <idno type="nanjio">Nj 19</idno>
           <idno type="sanskrit">Bhagavatī-prajñāpāramitā-hṛdaya</idno>
           <idno type="sanskrit">Bhagavatīprajñāpāramitāhṛdaya</idno>
@@ -4409,6 +4574,7 @@
           <link type="tibetan" target="Toh_531" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 160</idno>
           <idno type="nanjio">Nj 19</idno>
           <idno type="sanskrit">Bhagavatī-prajñāpāramitā-hṛdaya</idno>
           <idno type="sanskrit">Bhagavatīprajñāpāramitāhṛdaya</idno>
@@ -4422,6 +4588,7 @@
           <link type="tibetan" target="Toh_531" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 160</idno>
           <idno type="nanjio">Nj 19</idno>
           <idno type="sanskrit">Bhagavatī-prajñāpāramitā-hṛdaya</idno>
           <idno type="sanskrit">Bhagavatīprajñāpāramitāhṛdaya</idno>
@@ -4630,6 +4797,8 @@
           <link type="tibetan" target="Toh_646" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 356</idno>
+          <idno type="otani">Otani 701</idno>
           <idno type="nanjio">Nj 394</idno>
           <title type="chinese">Kuan p'u hsien p'u sa hsing fa ching</title>
         </entry>
@@ -4655,6 +4824,9 @@
           <link type="tibetan" target="Toh_4404" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 1038</idno>
+          <idno type="otani">Otani 5924</idno>
+          <idno type="otani">Otani 5948</idno>
           <idno type="otani">Otani 716</idno>
           <idno type="otani">Otani 761</idno>
           <idno type="otani">Otani 772</idno>
@@ -4708,7 +4880,11 @@
           <link type="tibetan" target="Toh_64" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 1038</idno>
+          <idno type="otani">Otani 5924</idno>
+          <idno type="otani">Otani 5948</idno>
           <idno type="otani">Otani 716</idno>
+          <idno type="otani">Otani 760,20</idno>
           <idno type="otani">Otani 761</idno>
           <idno type="otani">Otani 772</idno>
           <idno type="otani">Otani 854</idno>
@@ -5028,6 +5204,7 @@
           <link type="tibetan" target="Toh_44" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 1038</idno>
           <idno type="otani">Otani 716</idno>
           <idno type="otani">Otani 761</idno>
           <idno type="nanjio">Nj 100</idno>
@@ -5057,6 +5234,7 @@
           <link type="tibetan" target="Toh_44" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 1038</idno>
           <idno type="otani">Otani 1341</idno>
           <idno type="otani">Otani 716</idno>
           <idno type="otani">Otani 761</idno>
@@ -5115,6 +5293,8 @@
           <link type="tibetan" target="Toh_44" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 1038</idno>
+          <idno type="otani">Otani 5924</idno>
           <idno type="otani">Otani 716</idno>
           <idno type="otani">Otani 761</idno>
           <idno type="nanjio">Nj 100</idno>
@@ -5149,6 +5329,8 @@
           <link type="tibetan" target="Toh_44" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 1038</idno>
+          <idno type="otani">Otani 5924</idno>
           <idno type="otani">Otani 716</idno>
           <idno type="otani">Otani 761</idno>
           <idno type="nanjio">Nj 100</idno>
@@ -5178,6 +5360,7 @@
           <link type="tibetan" target="Toh_145" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 472</idno>
           <idno type="nanjio">Nj 98</idno>
           <title type="chinese">Ta fang kuang p'u hsien so shuo ching</title>
         </entry>
@@ -5196,6 +5379,12 @@
           <idno type="sanskrit">Ārya-ratnolka-nāma-dhāraṇī-mahāyāna-sūtra</idno>
           <title type="chinese">大方廣惚持寶光明經</title>
           <title type="tibetan">Dkon-mchog ta-la-laḥi gzuṅs.</title>
+        </entry>
+        <entry xml:id="T10n0300">
+          <link type="tibetan" target="Toh_44" cert="low" />
+          <idno type="otani">Otani 761</idno>
+          <idno type="nanjio">Nj 96</idno>
+          <title type="chinese">Ta fang kuang fo hua yen ching pu ssu i fo ching chieh fen</title>
         </entry>
         <entry xml:id="T10n0302">
           <link type="tibetan" target="Toh_185" cert="high">
@@ -5413,7 +5602,61 @@
           <link type="tibetan" target="Toh_93" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 737</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,01</idno>
+          <idno type="otani">Otani 760,02</idno>
+          <idno type="otani">Otani 760,03</idno>
+          <idno type="otani">Otani 760,04</idno>
+          <idno type="otani">Otani 760,05</idno>
+          <idno type="otani">Otani 760,06</idno>
+          <idno type="otani">Otani 760,07</idno>
+          <idno type="otani">Otani 760,08</idno>
+          <idno type="otani">Otani 760,09</idno>
+          <idno type="otani">Otani 760,10</idno>
+          <idno type="otani">Otani 760,11</idno>
+          <idno type="otani">Otani 760,12</idno>
+          <idno type="otani">Otani 760,13</idno>
+          <idno type="otani">Otani 760,14</idno>
+          <idno type="otani">Otani 760,15</idno>
+          <idno type="otani">Otani 760,16</idno>
+          <idno type="otani">Otani 760,17</idno>
+          <idno type="otani">Otani 760,18</idno>
+          <idno type="otani">Otani 760,19</idno>
+          <idno type="otani">Otani 760,20</idno>
+          <idno type="otani">Otani 760,21</idno>
+          <idno type="otani">Otani 760,22</idno>
+          <idno type="otani">Otani 760,23</idno>
+          <idno type="otani">Otani 760,24</idno>
+          <idno type="otani">Otani 760,25</idno>
+          <idno type="otani">Otani 760,26</idno>
+          <idno type="otani">Otani 760,27</idno>
+          <idno type="otani">Otani 760,28</idno>
+          <idno type="otani">Otani 760,29</idno>
+          <idno type="otani">Otani 760,30</idno>
+          <idno type="otani">Otani 760,31</idno>
+          <idno type="otani">Otani 760,32</idno>
+          <idno type="otani">Otani 760,33</idno>
+          <idno type="otani">Otani 760,34</idno>
+          <idno type="otani">Otani 760,35</idno>
+          <idno type="otani">Otani 760,36</idno>
+          <idno type="otani">Otani 760,37</idno>
+          <idno type="otani">Otani 760,38</idno>
+          <idno type="otani">Otani 760,39</idno>
+          <idno type="otani">Otani 760,40</idno>
+          <idno type="otani">Otani 760,41</idno>
+          <idno type="otani">Otani 760,42</idno>
+          <idno type="otani">Otani 760,43</idno>
+          <idno type="otani">Otani 760,44</idno>
+          <idno type="otani">Otani 760,45</idno>
+          <idno type="otani">Otani 760,46</idno>
+          <idno type="otani">Otani 760,47</idno>
+          <idno type="otani">Otani 760,48</idno>
+          <idno type="otani">Otani 760,49</idno>
+          <idno type="otani">Otani 816</idno>
+          <idno type="otani">Otani 892</idno>
+          <idno type="otani">Otani 927</idno>
+          <idno type="otani">Otani 938</idno>
           <idno type="nanjio">Nj 1</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 24</idno>
@@ -5480,6 +5723,7 @@
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,01</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 24</idno>
           <idno type="sanskrit">Trisaṃvaranirdeśaparivarta(sūtra)</idno>
@@ -5492,6 +5736,7 @@
             <note type="sources">acmuller; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,03</idno>
           <idno type="nanjio">Nj 1043</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="sanskrit">Tath&amp;#257;gataguhyas&amp;#363;tra</idno>
@@ -5505,6 +5750,7 @@
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,06</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 28</idno>
           <idno type="sanskrit">Akṣobhyatathāgatasyavyūhasūtra</idno>
@@ -5517,6 +5763,7 @@
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,09</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 29</idno>
           <idno type="sanskrit">Daśadharma(ka)(sūtra)</idno>
@@ -5529,6 +5776,7 @@
             <note type="sources">existing</note>
           </link>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,10</idno>
           <idno type="sanskrit">Samantamukhaparivarta(sūtra)</idno>
           <idno type="sanskrit">Ārya-samantamukhaparivarta-nāma-mahāyānasūtra</idno>
         </entry>
@@ -5537,9 +5785,11 @@
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,10</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 30</idno>
           <idno type="sanskrit">Samantamukhaparivarta(sūtra)</idno>
+          <idno type="sanskrit">Ārya-samantamukhaparivarta-nāma-mahāyānasūtra</idno>
           <title type="chinese">普門品經</title>
           <title type="tibetan">Kun-nas-sgoḥi leḥu</title>
         </entry>
@@ -5548,6 +5798,7 @@
             <note type="sources">acmuller; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,12</idno>
           <idno type="nanjio">Nj 1005</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="sanskrit">Bodhisattvapi&amp;#7789;aka</idno>
@@ -5557,11 +5808,14 @@
           <title type="tibetan">Byaṅ-chub-sems-dpaḥi-sde-snod.</title>
         </entry>
         <entry xml:id="T11n0317">
+          <link type="tibetan" target="Toh_57" cert="low" />
           <link type="tibetan" target="Toh_58" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 13</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,13</idno>
+          <idno type="otani">Otani 760,14</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 32</idno>
           <idno type="sanskrit">Garbhāvakrāntinirdeśa(sūtra)</idno>
@@ -5575,6 +5829,7 @@
           </link>
           <idno type="otani">Otani 15</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,15</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 31</idno>
           <idno type="sanskrit">Ma&amp;ntilde;juśrībuddhakṣetraguṇavyūha(sūtra)</idno>
@@ -5589,6 +5844,7 @@
           </link>
           <idno type="otani">Otani 15</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,15</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 31</idno>
           <idno type="sanskrit">Ma&amp;ntilde;ju&amp;#347;r&amp;#299;buddhak&amp;#7779;etragu&amp;#7751;avy&amp;#363;has&amp;#363;tra</idno>
@@ -5602,6 +5858,7 @@
             <note type="sources">acmuller; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,16</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="sanskrit">Pit&amp;#257;putrasam&amp;#257;gama(s&amp;#363;tra)</idno>
           <idno type="sanskrit">Pitāputrasamāgama(sūtra).</idno>
@@ -5616,6 +5873,7 @@
           <idno type="otani">Otani 1361</idno>
           <idno type="otani">Otani 17</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,17</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 873</idno>
           <idno type="sanskrit">R&amp;#257;&amp;#7779;&amp;#7789;rap&amp;#257;laparip&amp;#7771;cch&amp;#257;(s&amp;#363;tra)</idno>
@@ -5631,6 +5889,7 @@
           <idno type="otani">Otani 1396</idno>
           <idno type="otani">Otani 19</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,19</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 33</idno>
           <idno type="sanskrit">Ugra(datta)paripṛcchā(sūtra)</idno>
@@ -5644,6 +5903,7 @@
           </link>
           <idno type="otani">Otani 19</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,19</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 34</idno>
           <idno type="sanskrit">Ugra(datta)paripṛcchā(sūtra)</idno>
@@ -5657,6 +5917,7 @@
           </link>
           <idno type="otani">Otani 21</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,21</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 35</idno>
           <idno type="sanskrit">Bhadramāyākāraparipṛcchā(sūtra)</idno>
@@ -5670,6 +5931,7 @@
           </link>
           <idno type="otani">Otani 24</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,24</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 36</idno>
           <idno type="sanskrit">Upāliparipṛcchā(sūtra)</idno>
@@ -5683,6 +5945,7 @@
           </link>
           <idno type="otani">Otani 24</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,24</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 979</idno>
           <idno type="sanskrit">Up&amp;#257;liparip&amp;#7771;cch&amp;#257;</idno>
@@ -5697,6 +5960,7 @@
           </link>
           <idno type="otani">Otani 25</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,25</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 37</idno>
           <idno type="sanskrit">Adhyāśayasa&amp;ntilde;codana(sūtra)</idno>
@@ -5709,6 +5973,7 @@
           <link type="tibetan" target="Toh_71" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 760,27</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="sanskrit">Ārya-surataparipṛcchā-nāma-mahāyānasūtra</idno>
           <title type="chinese">聖了義所問大乘經</title>
@@ -5720,6 +5985,7 @@
           </link>
           <idno type="otani">Otani 27</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,27</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 44</idno>
           <idno type="sanskrit">Surataparipṛcchā(sūtra)</idno>
@@ -5733,6 +5999,7 @@
           </link>
           <idno type="otani">Otani 28</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,28</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 389</idno>
           <idno type="nanjio">Nj 947</idno>
@@ -5746,6 +6013,7 @@
             <note type="sources">acmuller; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,28</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 389</idno>
           <idno type="nanjio">Nj 947</idno>
@@ -5761,6 +6029,7 @@
           </link>
           <idno type="otani">Otani 29</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,29</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 38</idno>
           <idno type="nanjio">Nj 788</idno>
@@ -5775,6 +6044,7 @@
           </link>
           <idno type="otani">Otani 29</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,29</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 38</idno>
           <idno type="nanjio">Nj 788</idno>
@@ -5790,6 +6060,7 @@
           </link>
           <idno type="otani">Otani 30</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,30</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 39</idno>
           <idno type="sanskrit">Sumatidārikāparipṛcchā(sūtra)</idno>
@@ -5801,6 +6072,7 @@
           <link type="tibetan" target="Toh_74" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 760,30</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="sanskrit">Ārya-sumatidārikā-paripṛcchā-nāma-mahāyānasūtra</idno>
           <title type="chinese">聖童女賢慧所問大乘經</title>
@@ -5812,6 +6084,7 @@
           </link>
           <idno type="otani">Otani 30</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,30</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 39</idno>
           <idno type="sanskrit">Sumatidārikāparipṛcchā(sūtra)</idno>
@@ -5825,6 +6098,7 @@
           </link>
           <idno type="otani">Otani 32</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,32</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 42</idno>
           <idno type="sanskrit">Aśokadattavyākaraṇa(sūtra)</idno>
@@ -5838,6 +6112,7 @@
           </link>
           <idno type="otani">Otani 33</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,33</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 41</idno>
           <idno type="nanjio">Nj 45</idno>
@@ -5852,6 +6127,7 @@
           </link>
           <idno type="otani">Otani 33</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,33</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 41</idno>
           <idno type="nanjio">Nj 45</idno>
@@ -5866,6 +6142,7 @@
           </link>
           <idno type="otani">Otani 35</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,35</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 46</idno>
           <idno type="sanskrit">Acintyabuddhaviṣayanirdeśa(sūtra)</idno>
@@ -5882,6 +6159,8 @@
           </link>
           <idno type="otani">Otani 36</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,36</idno>
+          <idno type="otani">Otani 760,39</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 48</idno>
           <idno type="nanjio">Nj 53</idno>
@@ -5897,6 +6176,7 @@
           </link>
           <idno type="otani">Otani 36</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,36</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 47</idno>
           <idno type="sanskrit">Suṣṭhitamati(devaputra)paripṛcchā(sūtra)</idno>
@@ -5910,6 +6190,7 @@
           </link>
           <idno type="otani">Otani 37</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,37</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 49</idno>
           <idno type="nanjio">Nj 50</idno>
@@ -5924,6 +6205,7 @@
           </link>
           <idno type="otani">Otani 37</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,37</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 49</idno>
           <idno type="nanjio">Nj 50</idno>
@@ -5941,6 +6223,7 @@
           </link>
           <idno type="otani">Otani 38</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,38</idno>
           <idno type="otani">Otani 927</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 52</idno>
@@ -5960,6 +6243,8 @@
             <note type="sources">acmuller; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,38</idno>
+          <idno type="otani">Otani 927</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 52</idno>
           <idno type="nanjio">Nj 926</idno>
@@ -5976,6 +6261,7 @@
           </link>
           <idno type="otani">Otani 39</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,39</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="sanskrit">Ārya-bhadrapālaśreṣṭhiparipṛcchā-nāma-mahāyānasūtra</idno>
           <title type="chinese">聖商主賢護所問大乘經</title>
@@ -5987,6 +6273,7 @@
           </link>
           <idno type="otani">Otani 42</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,41</idno>
           <idno type="otani">Otani 816</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 54</idno>
@@ -6004,6 +6291,7 @@
           </link>
           <idno type="otani">Otani 42</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,42</idno>
           <idno type="otani">Otani 816</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 55</idno>
@@ -6018,6 +6306,7 @@
           </link>
           <idno type="otani">Otani 43</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,43</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 57</idno>
           <idno type="nanjio">Nj 58</idno>
@@ -6033,6 +6322,7 @@
           </link>
           <idno type="otani">Otani 43</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,43</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 57</idno>
           <idno type="nanjio">Nj 58</idno>
@@ -6048,6 +6338,7 @@
           </link>
           <idno type="otani">Otani 48</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,43</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 57</idno>
           <idno type="nanjio">Nj 58</idno>
@@ -6064,6 +6355,7 @@
           </link>
           <idno type="otani">Otani 48</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,48</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 69</idno>
           <idno type="sanskrit">Ārya-śrīmālādevīsiṁhanāda-nāma-mahāyānasūtra</idno>
@@ -6072,11 +6364,14 @@
           <title type="tibetan">Lha-mo dpal-phreṅ-gi-seṅ-geḥi sgra</title>
         </entry>
         <entry xml:id="T12n0354">
+          <link type="tibetan" target="Toh_256" cert="low" />
           <link type="tibetan" target="Toh_93" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 49</idno>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,49</idno>
+          <idno type="otani">Otani 922</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 60</idno>
           <idno type="sanskrit">Vyāsaparipṛcchā(sūtra)</idno>
@@ -6091,6 +6386,8 @@
           <link type="tibetan" target="Toh_241" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 786</idno>
+          <idno type="otani">Otani 907</idno>
           <idno type="nanjio">Nj 251</idno>
           <idno type="nanjio">Nj 51</idno>
           <idno type="sanskrit">Ratnakūṭasūtra</idno>
@@ -6102,6 +6399,9 @@
           <link type="tibetan" target="Toh_118" cert="high">
             <note type="sources">acmuller; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <link type="tibetan" target="Toh_241" cert="low" />
+          <idno type="otani">Otani 786</idno>
+          <idno type="otani">Otani 907</idno>
           <idno type="nanjio">Nj 251</idno>
           <idno type="nanjio">Nj 51</idno>
           <idno type="sanskrit">Ratnakūṭasūtra</idno>
@@ -6153,6 +6453,7 @@
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,05</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 25</idno>
           <idno type="nanjio">Nj 26</idno>
@@ -6168,6 +6469,7 @@
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,05</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 25</idno>
           <idno type="nanjio">Nj 26</idno>
@@ -6183,6 +6485,7 @@
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,05</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 25</idno>
           <idno type="nanjio">Nj 26</idno>
@@ -6198,6 +6501,7 @@
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 760</idno>
+          <idno type="otani">Otani 760,05</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="nanjio">Nj 25</idno>
           <idno type="nanjio">Nj 26</idno>
@@ -6213,6 +6517,7 @@
           <link type="tibetan" target="Toh_49" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 760,05</idno>
           <idno type="nanjio">Nj 23</idno>
           <idno type="sanskrit">Ārya-amitābhavyūha-nāma-mahāyāna-sūtra</idno>
           <title type="chinese">聖無量光莊嚴大乘經</title>
@@ -6248,6 +6553,8 @@
           <link type="tibetan" target="Toh_851" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 286</idno>
+          <idno type="otani">Otani 476</idno>
           <idno type="nanjio">Nj 540</idno>
           <idno type="sanskrit">Ārya-aparimitaguṇānuśaṁsā-nāma-dhāraṇī</idno>
           <idno type="sanskrit">Ārya-aparimitāguṇānuśaṁsā-nāma-dhāraṇī</idno>
@@ -6311,6 +6618,9 @@
           <link type="tibetan" target="Toh_3" cert="low">
             <note type="sources">cbeta_sanskrit</note>
           </link>
+          <idno type="otani">Otani 1032</idno>
+          <idno type="otani">Otani 774</idno>
+          <idno type="otani">Otani 775</idno>
           <idno type="otani">Otani 787</idno>
           <idno type="otani">Otani 788</idno>
           <idno type="nanjio">Nj 113</idno>
@@ -6368,6 +6678,10 @@
           <link type="tibetan" target="Toh_787" cert="low">
             <note type="sources">cbeta_sanskrit</note>
           </link>
+          <idno type="otani">Otani 251</idno>
+          <idno type="otani">Otani 650</idno>
+          <idno type="otani">Otani 773</idno>
+          <idno type="otani">Otani 775</idno>
           <idno type="otani">Otani 787</idno>
           <idno type="otani">Otani 788</idno>
           <idno type="nanjio">Nj 113</idno>
@@ -6658,6 +6972,7 @@
           <link type="tibetan" target="Toh_260" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 926</idno>
           <idno type="nanjio">Nj 67</idno>
           <idno type="sanskrit">Ārya-ākāśagarbha-nāma-mahāyāna-sūtra</idno>
           <title type="chinese">聖虛空藏大乘經</title>
@@ -6693,13 +7008,17 @@
           <link type="tibetan" target="Toh_239" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <link type="tibetan" target="Toh_242" cert="low" />
           <link type="tibetan" target="Toh_3932" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing</note>
           </link>
           <link type="tibetan" target="Toh_4534" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 5328</idno>
+          <idno type="otani">Otani 5448</idno>
           <idno type="otani">Otani 905</idno>
+          <idno type="otani">Otani 908</idno>
           <idno type="nanjio">Nj 64</idno>
           <idno type="nanjio">Nj 65</idno>
           <idno type="sanskrit">Daśacakrakṣitigarbha(sūtra)</idno>
@@ -6719,6 +7038,8 @@
           <link type="tibetan" target="Toh_4534" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 5328</idno>
+          <idno type="otani">Otani 5448</idno>
           <idno type="otani">Otani 905</idno>
           <idno type="nanjio">Nj 64</idno>
           <idno type="nanjio">Nj 65</idno>
@@ -6860,6 +7181,7 @@
             <note type="sources">existing</note>
           </link>
           <idno type="otani">Otani 937</idno>
+          <idno type="otani">Otani 944</idno>
           <idno type="nanjio">Nj 299</idno>
           <idno type="nanjio">Nj 300</idno>
           <idno type="nanjio">Nj 301</idno>
@@ -6876,6 +7198,7 @@
             <note type="sources">existing</note>
           </link>
           <idno type="otani">Otani 937</idno>
+          <idno type="otani">Otani 944</idno>
           <idno type="nanjio">Nj 299</idno>
           <idno type="nanjio">Nj 300</idno>
           <idno type="nanjio">Nj 301</idno>
@@ -6907,6 +7230,7 @@
           </link>
           <idno type="otani">Otani 937</idno>
           <idno type="otani">Otani 943</idno>
+          <idno type="otani">Otani 944</idno>
           <idno type="nanjio">Nj 299</idno>
           <idno type="nanjio">Nj 300</idno>
           <idno type="nanjio">Nj 301</idno>
@@ -6929,6 +7253,7 @@
           </link>
           <idno type="otani">Otani 937</idno>
           <idno type="otani">Otani 943</idno>
+          <idno type="otani">Otani 944</idno>
           <idno type="nanjio">Nj 299</idno>
           <idno type="nanjio">Nj 300</idno>
           <idno type="nanjio">Nj 301</idno>
@@ -7001,6 +7326,7 @@
           <link type="tibetan" target="Toh_64" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 760,20</idno>
           <title type="chinese">Fo ming ching</title>
         </entry>
         <entry xml:id="T14n0443">
@@ -7206,6 +7532,7 @@
           <link type="tibetan" target="Toh_172" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 839</idno>
           <idno type="nanjio">Nj 442</idno>
           <idno type="sanskrit">Ma&amp;ntilde;juśrīparipṛcchā(sūtra)</idno>
           <idno type="sanskrit">Mañjuśrīparipṛcchā(sūtra)</idno>
@@ -7270,6 +7597,7 @@
           <link type="tibetan" target="Toh_64" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 760,20</idno>
           <idno type="otani">Otani 843</idno>
           <idno type="nanjio">Nj 145</idno>
           <idno type="nanjio">Nj 146</idno>
@@ -7287,6 +7615,7 @@
           <link type="tibetan" target="Toh_64" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 760,20</idno>
           <idno type="otani">Otani 843</idno>
           <idno type="nanjio">Nj 145</idno>
           <idno type="nanjio">Nj 146</idno>
@@ -7304,6 +7633,7 @@
           <link type="tibetan" target="Toh_64" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 760,20</idno>
           <idno type="otani">Otani 843</idno>
           <idno type="nanjio">Nj 145</idno>
           <idno type="nanjio">Nj 146</idno>
@@ -7435,6 +7765,7 @@
           <link type="tibetan" target="Toh_221" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 887</idno>
           <idno type="nanjio">Nj 248</idno>
           <idno type="nanjio">Nj 988</idno>
           <idno type="sanskrit">Rājāvavādaka(sūtra)</idno>
@@ -7495,12 +7826,12 @@
           <title type="chinese">申日兒本經</title>
         </entry>
         <entry xml:id="T14n0540a">
-          <idno type="sanskrit">Jyotiṣka(sūtra)</idno>
-        </entry>
-        <entry xml:id="T14n0540b">
           <idno type="nanjio">Nj 453</idno>
           <idno type="sanskrit">Jyotiṣka(sūtra)</idno>
           <title type="chinese">樹提伽經</title>
+        </entry>
+        <entry xml:id="T14n0540b">
+          <idno type="sanskrit">Jyotiṣka(sūtra)</idno>
         </entry>
         <entry xml:id="T14n0544">
           <link type="tibetan" target="Toh_151" cert="high">
@@ -7535,6 +7866,7 @@
           <link type="tibetan" target="Toh_4144" cert="high">
             <note type="sources">acmuller; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5645</idno>
           <idno type="sanskrit">Suvar&amp;#7751;avar&amp;#7751;&amp;#257;vad&amp;#257;na</idno>
           <idno type="sanskrit">Suvarṇavarṇāvadāna</idno>
           <idno type="sanskrit">Suvarṇavarṇāvadāna.</idno>
@@ -7545,6 +7877,7 @@
           <link type="tibetan" target="Toh_358" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 1027</idno>
           <idno type="nanjio">Nj 643</idno>
           <idno type="sanskrit">Mātangīsūtra</idno>
           <idno type="sanskrit">Mātangīsūtra.</idno>
@@ -7560,6 +7893,7 @@
           <link type="tibetan" target="Toh_226" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 892</idno>
           <idno type="nanjio">Nj 297</idno>
           <title type="chinese">Lung shih n&amp;uuml; ching</title>
         </entry>
@@ -7567,6 +7901,8 @@
           <link type="tibetan" target="Toh_171" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <link type="tibetan" target="Toh_351" cert="low" />
+          <idno type="otani">Otani 1020</idno>
           <idno type="otani">Otani 838</idno>
           <idno type="nanjio">Nj 224</idno>
           <idno type="nanjio">Nj 225</idno>
@@ -7606,6 +7942,7 @@
           <link type="tibetan" target="Toh_190" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 857</idno>
           <idno type="nanjio">Nj 235</idno>
           <idno type="sanskrit">Strīvivartavyākaraṇa(sūtra)</idno>
           <title type="chinese">無垢賢女經</title>
@@ -7803,6 +8140,12 @@
           <title type="chinese">摩逆經</title>
           <title type="tibetan">Ḥjam-dpal rnam-par ḥphrul-baḥi leḥu</title>
         </entry>
+        <entry xml:id="T15n0590">
+          <link type="tibetan" target="Toh_97" cert="low" />
+          <idno type="otani">Otani 765</idno>
+          <idno type="nanjio">Nj 722</idno>
+          <title type="chinese">Ssu t'ien wang ching</title>
+        </entry>
         <entry xml:id="T15n0592">
           <link type="tibetan" target="Toh_329" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
@@ -7855,7 +8198,9 @@
           <link type="tibetan" target="Toh_153" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <link type="tibetan" target="Toh_155" cert="low" />
           <idno type="otani">Otani 820</idno>
+          <idno type="otani">Otani 822</idno>
           <idno type="nanjio">Nj 456</idno>
           <idno type="sanskrit">Sāgaranāgarājaparipṛcchā=(sūtra)</idno>
           <idno type="sanskrit">Ārya-sāgaranāgarājaparipṛcchā-nāma-mahāyānasūtra</idno>
@@ -7871,6 +8216,12 @@
           <idno type="sanskrit">Sāgaranāgarājaparipṛcchā(sūtra)</idno>
           <title type="chinese">佛爲海龍王說法印經</title>
           <title type="tibetan">Kluḥu rgyal-po rgya-mtshos shus-pa</title>
+        </entry>
+        <entry xml:id="T15n0600">
+          <link type="tibetan" target="Toh_154" cert="low" />
+          <idno type="otani">Otani 821</idno>
+          <idno type="nanjio">Nj 1100</idno>
+          <title type="chinese">Shih shan yeh tao ching</title>
         </entry>
         <entry xml:id="T15n0601">
           <link type="tibetan" target="Toh_154" cert="high">
@@ -8013,6 +8364,7 @@
           <link type="tibetan" target="Toh_131" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 799</idno>
           <idno type="nanjio">Nj 255</idno>
           <idno type="sanskrit">Ārya-tathāgatajñānamudrāsamādhi-nāma-mahāyānasūtra</idno>
           <title type="chinese">聖如來智慧印契三昧大乘經</title>
@@ -8071,6 +8423,7 @@
             <note type="sources">existing</note>
           </link>
           <idno type="otani">Otani 800</idno>
+          <idno type="otani">Otani 861</idno>
           <idno type="nanjio">Nj 399</idno>
           <idno type="sanskrit">Ārya-śūraṅgamasamādhi-nāma-mahāyānasūtra</idno>
           <idno type="sanskrit">Śuraṅgamasamādhisūtra</idno>
@@ -8105,6 +8458,7 @@
           <link type="tibetan" target="Toh_202" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 868</idno>
           <idno type="nanjio">Nj 409</idno>
           <title type="chinese">Li chuang yen san mei ching</title>
         </entry>
@@ -8118,6 +8472,14 @@
           <idno type="sanskrit">Ārya-praśāntaviniścayaprātiharyasamādhi-nāma-mahāyānasūtra</idno>
           <title type="chinese">寂照神變三摩地經</title>
           <title type="tibetan">Rab-tu-shi-ba rnam-par-ṅes-paḥi cho-ḥphrul-gyi tiṅ-ṅe-ḥdsin</title>
+        </entry>
+        <entry xml:id="T15n0649">
+          <link type="tibetan" target="Toh_129" cert="low" />
+          <link type="tibetan" target="Toh_94" cert="low" />
+          <idno type="otani">Otani 762</idno>
+          <idno type="otani">Otani 797</idno>
+          <idno type="nanjio">Nj 424</idno>
+          <title type="chinese">Kuan ch'a chu fa hsing ching</title>
         </entry>
         <entry xml:id="T15n0650">
           <link type="tibetan" target="Toh_18" cert="high">
@@ -8151,6 +8513,7 @@
           <link type="tibetan" target="Toh_180" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 847</idno>
           <idno type="nanjio">Nj 163</idno>
           <idno type="sanskrit">Ārya-sarvadharmāpravṛttinirdeśa-nāma-mahāyānasūtra</idno>
           <title type="chinese">聖說一切法無生大乘經</title>
@@ -8211,6 +8574,7 @@
           <link type="tibetan" target="Toh_231" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 897</idno>
           <idno type="nanjio">Nj 964</idno>
           <idno type="sanskrit">Ārya-ratnamegha-nāma-mahāyānasūtra</idno>
           <title type="chinese">聖寶雲大乘經</title>
@@ -8272,6 +8636,7 @@
           <idno type="otani">Otani 174</idno>
           <idno type="otani">Otani 175</idno>
           <idno type="otani">Otani 176</idno>
+          <idno type="otani">Otani 5926</idno>
           <idno type="nanjio">Nj 126</idno>
           <idno type="nanjio">Nj 127</idno>
           <idno type="nanjio">Nj 130</idno>
@@ -8299,6 +8664,7 @@
           <idno type="otani">Otani 174</idno>
           <idno type="otani">Otani 175</idno>
           <idno type="otani">Otani 176</idno>
+          <idno type="otani">Otani 5926</idno>
           <idno type="nanjio">Nj 126</idno>
           <idno type="nanjio">Nj 127</idno>
           <idno type="nanjio">Nj 130</idno>
@@ -8331,9 +8697,14 @@
           <link type="tibetan" target="Toh_557" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster</note>
           </link>
+          <idno type="otani">Otani 1032</idno>
+          <idno type="otani">Otani 141</idno>
           <idno type="otani">Otani 174</idno>
           <idno type="otani">Otani 175</idno>
           <idno type="otani">Otani 176</idno>
+          <idno type="otani">Otani 508</idno>
+          <idno type="otani">Otani 5926</idno>
+          <idno type="otani">Otani 885</idno>
           <idno type="nanjio">Nj 126</idno>
           <idno type="nanjio">Nj 127</idno>
           <idno type="nanjio">Nj 130</idno>
@@ -8489,6 +8860,7 @@
           <link type="tibetan" target="Toh_106" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 774</idno>
           <idno type="nanjio">Nj 247</idno>
           <idno type="sanskrit">Ārya-saṁdhinirmocana-nāma-mahāyānasūtra</idno>
           <title type="chinese">聖密意決解大乘經</title>
@@ -8534,6 +8906,7 @@
           <link type="tibetan" target="Toh_315" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 981</idno>
           <idno type="nanjio">Nj 303</idno>
           <idno type="sanskrit">ārya-pariśaraṇabhājana-nāmasūtra</idno>
           <title type="chinese">Y&amp;uuml; lan p'en ching</title>
@@ -8542,6 +8915,7 @@
           <link type="tibetan" target="Toh_315" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 981</idno>
           <idno type="nanjio">Nj 304</idno>
           <title type="chinese">Pao en feng pen ching</title>
         </entry>
@@ -8588,6 +8962,7 @@
           <link type="tibetan" target="Toh_321" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 987</idno>
           <idno type="nanjio">Nj 523</idno>
           <title type="chinese">Tsao t'a kung te ching</title>
         </entry>
@@ -8699,6 +9074,7 @@
           <link type="tibetan" target="Toh_210" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 876</idno>
           <idno type="nanjio">Nj 867</idno>
           <idno type="sanskrit">Ārya-sālistabha-nāma-mahāyānasūtra</idno>
           <title type="chinese">聖稻芉大乘經</title>
@@ -8754,6 +9130,7 @@
           <link type="tibetan" target="Toh_4502" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 5679</idno>
           <idno type="nanjio">Nj 1349</idno>
           <idno type="nanjio">Nj 821</idno>
           <idno type="sanskrit">Saddharmamṛtyupasthānakārikā</idno>
@@ -8762,12 +9139,15 @@
           <title type="tibetan">དམ་པའི་ཆོས་དྲན་པ་ཉེ་བར་གཞག་པའི་ཚིག་ལེའུར་བྱས་པ</title>
         </entry>
         <entry xml:id="T17n0725">
+          <link type="tibetan" target="Toh_336" cert="low" />
           <link type="tibetan" target="Toh_4179" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
           <link type="tibetan" target="Toh_4502" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 1002</idno>
+          <idno type="otani">Otani 5679</idno>
           <idno type="nanjio">Nj 821</idno>
           <idno type="sanskrit">Saddharmamṛtyupasthānakārikā</idno>
           <idno type="sanskrit">Saddharmasmṛtyupasthānakārikā</idno>
@@ -8775,12 +9155,15 @@
           <title type="tibetan">དམ་པའི་ཆོས་དྲན་པ་ཉེ་བར་གཞག་པའི་ཚིག་ལེའུར་བྱས་པ</title>
         </entry>
         <entry xml:id="T17n0726">
+          <link type="tibetan" target="Toh_336" cert="low" />
           <link type="tibetan" target="Toh_4179" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
           <link type="tibetan" target="Toh_4502" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 1002</idno>
+          <idno type="otani">Otani 5679</idno>
           <idno type="nanjio">Nj 821</idno>
           <idno type="sanskrit">&amp;#7778;a&amp;#7693;gatik&amp;#257;rik&amp;#257;</idno>
           <idno type="sanskrit">Saddharmamṛtyupasthānakārikā</idno>
@@ -8802,6 +9185,9 @@
           <link type="tibetan" target="Toh_4503" cert="high">
             <note type="sources">cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5355</idno>
+          <idno type="otani">Otani 5396</idno>
+          <idno type="otani">Otani 5416</idno>
           <idno type="nanjio">Nj 1379</idno>
           <idno type="sanskrit">Da&amp;#347;&amp;#257;ku&amp;#347;alakarmapathanirde&amp;#347;a</idno>
           <idno type="sanskrit">Daśākuśalakarmapatha(deśanā)</idno>
@@ -8832,9 +9218,17 @@
           <title type="chinese">因緣僧護經</title>
         </entry>
         <entry xml:id="T17n0754">
+          <link type="tibetan" target="Toh_319" cert="low" />
+          <idno type="otani">Otani 985</idno>
           <idno type="nanjio">Nj 400</idno>
           <idno type="sanskrit">Adbhutadharmparyāya</idno>
           <title type="chinese">未曾有因緣經</title>
+        </entry>
+        <entry xml:id="T17n0755">
+          <link type="tibetan" target="Toh_338" cert="low" />
+          <idno type="otani">Otani 1005</idno>
+          <idno type="nanjio">Nj 943</idno>
+          <title type="chinese">Ching i yu p'o sai so wen ching</title>
         </entry>
         <entry xml:id="T17n0757">
           <idno type="nanjio">Nj 954</idno>
@@ -8917,6 +9311,7 @@
           <link type="tibetan" target="Toh_317" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 983</idno>
           <idno type="nanjio">Nj 928</idno>
           <idno type="sanskrit">Arthaviniścaya-nāma-dharmaparyāya</idno>
           <title type="chinese">義決定法門</title>
@@ -8968,6 +9363,7 @@
           <link type="tibetan" target="Toh_251" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 917</idno>
           <idno type="nanjio">Nj 266</idno>
           <idno type="nanjio">Nj 267</idno>
           <idno type="sanskrit">Caturdharmakasūtra</idno>
@@ -9039,6 +9435,13 @@
           <link type="pali" target="sn35.69" />
           <link type="pali" target="sn52.15-24" />
         </entry>
+        <entry xml:id="T17n0784">
+          <link type="tibetan" target="Toh_359" cert="low" />
+          <link type="tibetan" target="Toh_359a" cert="low" />
+          <idno type="otani">Otani 1029</idno>
+          <idno type="nanjio">Nj 678</idno>
+          <title type="chinese">Ssu shih erh chang ching</title>
+        </entry>
         <entry xml:id="T17n0785">
           <link type="tibetan" target="Toh_335" cert="high">
             <note type="sources">acmuller; cbeta_tibetan; existing; lancaster; lancaster_full; rkts</note>
@@ -9052,6 +9455,12 @@
           <title type="chinese">得道梯橙錫杖經</title>
           <title type="tibetan">འཕགས་པ་འཁར་གསིལ་གྱི་དམོ</title>
         </entry>
+        <entry xml:id="T17n0791">
+          <link type="tibetan" target="Toh_334" cert="low" />
+          <idno type="otani">Otani 1000</idno>
+          <idno type="nanjio">Nj 686</idno>
+          <title type="chinese">Ch'u chia kung te yin y&amp;uuml;an ching</title>
+        </entry>
         <entry xml:id="T17n0801">
           <link type="tibetan" target="Toh_309" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
@@ -9059,6 +9468,8 @@
           <link type="tibetan" target="Toh_975" cert="low">
             <note type="sources">cbeta_sanskrit</note>
           </link>
+          <idno type="otani">Otani 310</idno>
+          <idno type="otani">Otani 600</idno>
           <idno type="otani">Otani 975</idno>
           <idno type="nanjio">Nj 727</idno>
           <idno type="sanskrit">Anityat&amp;#257;s&amp;#363;tra</idno>
@@ -9125,6 +9536,7 @@
           <link type="tibetan" target="Toh_276" cert="high">
             <note type="sources">acmuller; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 942</idno>
           <idno type="nanjio">Nj 242</idno>
           <idno type="nanjio">Nj 243</idno>
           <idno type="sanskrit">Buddakṣepana</idno>
@@ -9230,6 +9642,7 @@
           <link type="tibetan" target="Toh_276" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 942</idno>
           <idno type="nanjio">Nj 242</idno>
           <idno type="nanjio">Nj 243</idno>
           <idno type="sanskrit">Buddakṣepana</idno>
@@ -9311,6 +9724,7 @@
           <link type="tibetan" target="Toh_494" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 126</idno>
           <idno type="nanjio">Nj 530</idno>
           <idno type="sanskrit">Mahāvairocanābhisaṁbodhivikurvitādhiṣthānavaipulyasūtrendrarāja-nāma-dharmaparyāya</idno>
           <title type="chinese">大毗盧遮那現等覺神變加持方廣經帝王法門</title>
@@ -9433,6 +9847,7 @@
           <link type="tibetan" target="Toh_417" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 10</idno>
           <idno type="nanjio">Nj 1060</idno>
           <idno type="sanskrit">Hevajra-tantra-nāma</idno>
           <title type="chinese">呼金剛怛特羅王</title>
@@ -9446,24 +9861,12 @@
             <note type="sources">existing</note>
           </link>
           <idno type="otani">Otani 431</idno>
+          <idno type="otani">Otani 5938</idno>
           <idno type="sanskrit">Susiddhikaramahātantrasādhanopāyikapaṭala</idno>
           <idno type="sanskrit">Susiddhikaramahātantrasādhanopāyikapaṭala(sūtra)</idno>
           <idno type="sanskrit">[Śrī-susiddhikaratantrabhāṣitapraṇidhāna]</idno>
         </entry>
         <entry xml:id="T18n0893b">
-          <link type="tibetan" target="Toh_4394" cert="high">
-            <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
-          </link>
-          <link type="tibetan" target="Toh_807" cert="high">
-            <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
-          </link>
-          <idno type="otani">Otani 431</idno>
-          <idno type="nanjio">Nj 533</idno>
-          <idno type="sanskrit">Susiddhikaramahātantrasādhanopāyikapaṭala(sūtra)</idno>
-          <title type="chinese">蘇悉地羯羅經</title>
-          <title type="tibetan">Legs par-grub par-byed-paḥi rgyud chen-po-las sgrub-paḥi thabs rim-par-phye-ba</title>
-        </entry>
-        <entry xml:id="T18n0893c">
           <link type="tibetan" target="Toh_4394" cert="low">
             <note type="sources">existing</note>
           </link>
@@ -9471,7 +9874,26 @@
             <note type="sources">existing</note>
           </link>
           <idno type="otani">Otani 431</idno>
+          <idno type="otani">Otani 5938</idno>
+          <idno type="sanskrit">Susiddhikaramahātantrasādhanopāyikapaṭala</idno>
           <idno type="sanskrit">Susiddhikaramahātantrasādhanopāyikapaṭala(sūtra)</idno>
+          <idno type="sanskrit">[Śrī-susiddhikaratantrabhāṣitapraṇidhāna]</idno>
+        </entry>
+        <entry xml:id="T18n0893c">
+          <link type="tibetan" target="Toh_4394" cert="high">
+            <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
+          </link>
+          <link type="tibetan" target="Toh_807" cert="high">
+            <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
+          </link>
+          <idno type="otani">Otani 431</idno>
+          <idno type="otani">Otani 5938</idno>
+          <idno type="nanjio">Nj 533</idno>
+          <idno type="sanskrit">Susiddhikaramahātantrasādhanopāyikapaṭala</idno>
+          <idno type="sanskrit">Susiddhikaramahātantrasādhanopāyikapaṭala(sūtra)</idno>
+          <idno type="sanskrit">[Śrī-susiddhikaratantrabhāṣitapraṇidhāna]</idno>
+          <title type="chinese">蘇悉地羯羅經</title>
+          <title type="tibetan">Legs par-grub par-byed-paḥi rgyud chen-po-las sgrub-paḥi thabs rim-par-phye-ba</title>
         </entry>
         <entry xml:id="T18n0894a">
           <idno type="sanskrit">Susiddhikarapūjāvidhi</idno>
@@ -9487,6 +9909,7 @@
           </link>
           <idno type="otani">Otani 428</idno>
           <idno type="sanskrit">Subāhuparipṛcchā(sūtra)</idno>
+          <idno type="sanskrit">Ārya-subāhuparīpṛcchā-nāma-tantra</idno>
         </entry>
         <entry xml:id="T18n0895b">
           <link type="tibetan" target="Toh_805" cert="high">
@@ -9517,6 +9940,7 @@
           <link type="tibetan" target="Toh_806" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 429</idno>
           <idno type="sanskrit">Sarvamaṇḍalasāmānyavidhīnām guhyatantra</idno>
           <title type="chinese">一切曼荼羅總儀軌秘密怛特羅</title>
           <title type="tibetan">དཀྱིལ་འཁོར་ཐམས་ཅད་ཀྱི་སྤྱིའི་ཆོ་ག་གསང་བའི་རྒྱུད</title>
@@ -9555,13 +9979,19 @@
           <link type="tibetan" target="Toh_930" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 160</idno>
           <idno type="otani">Otani 216</idno>
+          <idno type="otani">Otani 236</idno>
+          <idno type="otani">Otani 338</idno>
+          <idno type="otani">Otani 365</idno>
           <idno type="otani">Otani 373</idno>
           <idno type="otani">Otani 374</idno>
           <idno type="otani">Otani 379</idno>
           <idno type="otani">Otani 524</idno>
           <idno type="otani">Otani 531</idno>
           <idno type="otani">Otani 555</idno>
+          <idno type="otani">Otani 668</idno>
+          <idno type="otani">Otani 705</idno>
           <idno type="nanjio">Nj 327</idno>
           <idno type="nanjio">Nj 328</idno>
           <idno type="nanjio">Nj 329</idno>
@@ -9578,11 +10008,14 @@
           <link type="tibetan" target="Toh_514" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <link type="tibetan" target="Toh_515" cert="low" />
           <link type="tibetan" target="Toh_854" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 148</idno>
           <idno type="otani">Otani 149</idno>
           <idno type="otani">Otani 479</idno>
+          <idno type="otani">Otani 480</idno>
           <idno type="nanjio">Nj 489</idno>
           <idno type="nanjio">Nj 825</idno>
           <idno type="sanskrit">Buddhahṛdayadhāraṇī(dharmaparyāya)</idno>
@@ -9595,11 +10028,14 @@
           <link type="tibetan" target="Toh_514" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <link type="tibetan" target="Toh_515" cert="low" />
           <link type="tibetan" target="Toh_854" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 148</idno>
           <idno type="otani">Otani 149</idno>
           <idno type="otani">Otani 479</idno>
+          <idno type="otani">Otani 480</idno>
           <idno type="nanjio">Nj 489</idno>
           <idno type="nanjio">Nj 825</idno>
           <idno type="sanskrit">Buddhah&amp;#7771;dayadh&amp;#257;ra&amp;#7751;&amp;#299;</idno>
@@ -9636,6 +10072,9 @@
           <link type="tibetan" target="Toh_849" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 361</idno>
+          <idno type="otani">Otani 362</idno>
+          <idno type="otani">Otani 474</idno>
           <idno type="nanjio">Nj 786</idno>
           <idno type="sanskrit">Ārya-aparimitāyurjñāna-nāma-mahāyānasūtra</idno>
           <title type="chinese">聖無量壽智大乘經</title>
@@ -9652,6 +10091,7 @@
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 351</idno>
+          <idno type="otani">Otani 361</idno>
           <idno type="otani">Otani 362</idno>
           <idno type="otani">Otani 474</idno>
           <idno type="nanjio">Nj 786</idno>
@@ -9684,7 +10124,10 @@
           <link type="tibetan" target="Toh_237" cert="low">
             <note type="sources">rkts</note>
           </link>
+          <link type="tibetan" target="Toh_358" cert="low" />
+          <idno type="otani">Otani 1027</idno>
           <idno type="otani">Otani 902</idno>
+          <idno type="otani">Otani 903</idno>
           <idno type="nanjio">Nj 446</idno>
           <idno type="sanskrit">Śuraṅgamasūtra</idno>
           <title type="chinese">大佛頂如來密因修證了義諸菩薩萬行首楞嚴經</title>
@@ -9721,8 +10164,23 @@
           <link type="tibetan" target="Toh_598" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 197</idno>
+          <idno type="otani">Otani 199</idno>
+          <idno type="otani">Otani 200</idno>
+          <idno type="otani">Otani 201</idno>
         </entry>
         <entry xml:id="T19n0968">
+          <link type="tibetan" target="Toh_594" cert="low" />
+          <link type="tibetan" target="Toh_595" cert="low" />
+          <link type="tibetan" target="Toh_596" cert="low" />
+          <link type="tibetan" target="Toh_597" cert="low" />
+          <link type="tibetan" target="Toh_598" cert="low" />
+          <idno type="otani">Otani 197</idno>
+          <idno type="otani">Otani 198</idno>
+          <idno type="otani">Otani 199</idno>
+          <idno type="otani">Otani 200</idno>
+          <idno type="otani">Otani 201</idno>
+          <idno type="otani">Otani 609</idno>
           <idno type="nanjio">Nj 349</idno>
           <idno type="sanskrit">(Sarvadurgatipariśodhana)-uṣṇīṣavijayadhāraṇī(sūtra)</idno>
           <title type="chinese">佛頂尊勝陀羅尼經</title>
@@ -9742,6 +10200,7 @@
             <note type="sources">acmuller; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 197</idno>
+          <idno type="otani">Otani 199</idno>
           <idno type="nanjio">Nj 350</idno>
           <idno type="nanjio">Nj 871</idno>
           <idno type="sanskrit">(Sarvadurgatipariśodhana)-uṣṇīṣavijayadhāraṇī(sūtra)</idno>
@@ -9764,6 +10223,12 @@
           <link type="tibetan" target="Toh_598" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 197</idno>
+          <idno type="otani">Otani 198</idno>
+          <idno type="otani">Otani 199</idno>
+          <idno type="otani">Otani 200</idno>
+          <idno type="otani">Otani 201</idno>
+          <idno type="otani">Otani 609</idno>
           <idno type="nanjio">Nj 1421</idno>
           <title type="chinese">Fo ting tsun sheng t'o lo ni nien sung i kuei fa</title>
         </entry>
@@ -9786,6 +10251,12 @@
           <link type="tibetan" target="Toh_984" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 197</idno>
+          <idno type="otani">Otani 198</idno>
+          <idno type="otani">Otani 199</idno>
+          <idno type="otani">Otani 200</idno>
+          <idno type="otani">Otani 201</idno>
+          <idno type="otani">Otani 609</idno>
           <idno type="sanskrit">Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī</idno>
         </entry>
         <entry xml:id="T19n0974B">
@@ -9807,6 +10278,12 @@
           <link type="tibetan" target="Toh_984" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 197</idno>
+          <idno type="otani">Otani 198</idno>
+          <idno type="otani">Otani 199</idno>
+          <idno type="otani">Otani 200</idno>
+          <idno type="otani">Otani 201</idno>
+          <idno type="otani">Otani 609</idno>
           <idno type="sanskrit">Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī</idno>
         </entry>
         <entry xml:id="T19n0974C">
@@ -9828,7 +10305,11 @@
           <link type="tibetan" target="Toh_984" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 197</idno>
           <idno type="otani">Otani 198</idno>
+          <idno type="otani">Otani 199</idno>
+          <idno type="otani">Otani 200</idno>
+          <idno type="otani">Otani 201</idno>
           <idno type="otani">Otani 609</idno>
           <idno type="nanjio">Nj 796</idno>
           <idno type="sanskrit">Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī</idno>
@@ -9854,6 +10335,12 @@
           <link type="tibetan" target="Toh_984" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 197</idno>
+          <idno type="otani">Otani 198</idno>
+          <idno type="otani">Otani 199</idno>
+          <idno type="otani">Otani 200</idno>
+          <idno type="otani">Otani 201</idno>
+          <idno type="otani">Otani 609</idno>
           <idno type="sanskrit">Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī</idno>
         </entry>
         <entry xml:id="T19n0974E">
@@ -9875,7 +10362,11 @@
           <link type="tibetan" target="Toh_984" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 197</idno>
           <idno type="otani">Otani 198</idno>
+          <idno type="otani">Otani 199</idno>
+          <idno type="otani">Otani 200</idno>
+          <idno type="otani">Otani 201</idno>
           <idno type="otani">Otani 609</idno>
           <idno type="sanskrit">(Sarvadurgatipari&amp;#347;odhana)u&amp;#7779;&amp;#7751;&amp;#299;&amp;#7779;avijayadh&amp;#257;ra&amp;#7751;i(s&amp;#363;tra)</idno>
           <idno type="sanskrit">(Sarvadurgatipariśodhana)uṣṇīṣavijayadhāraṇi(sūtra).</idno>
@@ -9900,12 +10391,19 @@
           <link type="tibetan" target="Toh_984" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 197</idno>
+          <idno type="otani">Otani 198</idno>
+          <idno type="otani">Otani 199</idno>
+          <idno type="otani">Otani 200</idno>
+          <idno type="otani">Otani 201</idno>
+          <idno type="otani">Otani 609</idno>
           <idno type="sanskrit">Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī</idno>
         </entry>
         <entry xml:id="T19n0976">
           <link type="tibetan" target="Toh_590" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <link type="tibetan" target="Toh_591" cert="low" />
           <link type="tibetan" target="Toh_592" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
@@ -9918,6 +10416,12 @@
           <link type="tibetan" target="Toh_986" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 202</idno>
+          <idno type="otani">Otani 203</idno>
+          <idno type="otani">Otani 204</idno>
+          <idno type="otani">Otani 205</idno>
+          <idno type="otani">Otani 610</idno>
+          <idno type="otani">Otani 611</idno>
           <idno type="nanjio">Nj 1016</idno>
           <idno type="sanskrit">Ārya-sarvatathāgatoṣṇīṣasitātapatrā-nāma-aparājitapratyaṅgirāmahāvidyārājñī</idno>
           <idno type="sanskrit">Ārya-sarvatathāgatoṣṇīṣasitātapatrā-nāma-aparājitapratyaṅgirāmahāvidyārājñīi</idno>
@@ -9931,6 +10435,7 @@
           <link type="tibetan" target="Toh_590" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <link type="tibetan" target="Toh_591" cert="low" />
           <link type="tibetan" target="Toh_592" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
@@ -9943,6 +10448,12 @@
           <link type="tibetan" target="Toh_986" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 202</idno>
+          <idno type="otani">Otani 203</idno>
+          <idno type="otani">Otani 204</idno>
+          <idno type="otani">Otani 205</idno>
+          <idno type="otani">Otani 610</idno>
+          <idno type="otani">Otani 611</idno>
           <idno type="nanjio">Nj 1016</idno>
           <idno type="sanskrit">Ārya-sarvatathāgatoṣṇīṣasitātapatrā-nāma-aparājitapratyaṅgirāmahāvidyārājñī</idno>
           <idno type="sanskrit">Ārya-sarvatathāgatoṣṇīṣasitātapatrā-nāma-aparājitapratyaṅgirāmahāvidyārājñīi</idno>
@@ -9985,6 +10496,8 @@
           <link type="tibetan" target="Toh_596" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 197</idno>
+          <idno type="otani">Otani 201</idno>
           <idno type="nanjio">Nj 871</idno>
           <idno type="sanskrit">Sarvatathāgatoṣṇīṣavijaya-nāma-dhāraṇīkalpa-sahita</idno>
           <title type="chinese">一切如來頂髻勝陀羅尼儀軌</title>
@@ -10006,6 +10519,17 @@
           <idno type="sanskrit">Mahāmayūrī(vidyārājñī)(sūtra).</idno>
           <idno type="sanskrit">Mahāmāyūrīvidyārājñī</idno>
           <title type="chinese">佛母大孔雀明王經</title>
+          <title type="tibetan">Rig-sṅags-kyi rgyal-mo rma-bya chen-mo.</title>
+        </entry>
+        <entry xml:id="T19n0983A">
+          <link type="tibetan" target="Toh_559" cert="high">
+            <note type="sources">cbeta_sanskrit; cbeta_tibetan; lancaster; lancaster_full</note>
+          </link>
+          <idno type="otani">Otani 178</idno>
+          <idno type="nanjio">Nj 1499</idno>
+          <idno type="nanjio">Nj 307</idno>
+          <idno type="sanskrit">Mahāmāyūrīvidyārājñī</idno>
+          <title type="chinese">大孔雀明王畫像壇場儀軌</title>
           <title type="tibetan">Rig-sṅags-kyi rgyal-mo rma-bya chen-mo.</title>
         </entry>
         <entry xml:id="T19n0983B">
@@ -10211,6 +10735,7 @@
           <link type="tibetan" target="Toh_1059" cert="medium">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan</note>
           </link>
+          <link type="tibetan" target="Toh_312" cert="low" />
           <link type="tibetan" target="Toh_4407" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
@@ -10223,8 +10748,19 @@
           <link type="tibetan" target="Toh_588" cert="high">
             <note type="sources">acmuller; existing; lancaster</note>
           </link>
+          <link type="tibetan" target="Toh_813" cert="low" />
+          <idno type="otani">Otani 1043</idno>
+          <idno type="otani">Otani 142</idno>
           <idno type="otani">Otani 177</idno>
+          <idno type="otani">Otani 268</idno>
+          <idno type="otani">Otani 283</idno>
+          <idno type="otani">Otani 436</idno>
+          <idno type="otani">Otani 569</idno>
+          <idno type="otani">Otani 5952</idno>
           <idno type="otani">Otani 684</idno>
+          <idno type="otani">Otani 714</idno>
+          <idno type="otani">Otani 719</idno>
+          <idno type="otani">Otani 978</idno>
           <idno type="nanjio">Nj 784</idno>
           <idno type="sanskrit">Mah&amp;#257;sahasrapramardanas&amp;#363;tra</idno>
           <idno type="sanskrit">Mahāsahasrapramardana-nāma-sūtra</idno>
@@ -10235,12 +10771,16 @@
           <title type="tibetan">Stoṅ-chen-mo rab-tu ḥjoms-pa.</title>
         </entry>
         <entry xml:id="T19n1002">
+          <link type="tibetan" target="Toh_682" cert="low" />
+          <link type="tibetan" target="Toh_901" cert="low" />
+          <idno type="otani">Otani 366</idno>
+          <idno type="otani">Otani 526</idno>
           <idno type="nanjio">Nj 1002</idno>
           <idno type="sanskrit">Amoghap&amp;#257;&amp;#347;ah&amp;#7771;dayas&amp;#363;tra</idno>
           <idno type="sanskrit">Amoghapāśahṛdayasūtra.</idno>
           <title type="chinese">不空羂索毗廬遮那佛大灌頂光眞言</title>
         </entry>
-        <entry xml:id="T19n1005B">
+        <entry xml:id="T19n1005A">
           <link type="tibetan" target="Toh_506" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; lancaster; lancaster_full</note>
           </link>
@@ -10257,6 +10797,14 @@
           <idno type="sanskrit">Ārya-mahāmaṇivipulavimānasupratṣṭhitaguhyaparamarahasyakalparāja-nāma-dhāraṇī</idno>
           <title type="chinese">大寶廣博樓閣善住祕密陀羅尼經</title>
           <title type="tibetan">Nor-bu chen-po rgyas-paḥi gshal-med-khaṅ śin-tu rab-tu-gnas-pa gsaṅ-ba dam-paḥi gsaṅ-baḥi cho-ga shib-moḥi rgyal-po.</title>
+        </entry>
+        <entry xml:id="T19n1005B">
+          <link type="tibetan" target="Toh_506" cert="low" />
+          <link type="tibetan" target="Toh_885" cert="low" />
+          <idno type="otani">Otani 138</idno>
+          <idno type="otani">Otani 510</idno>
+          <idno type="sanskrit">Ārya-mahāmaṇivipulavimānasupratiṣṭhitaguhyaparamarahasyakalparāja-nāma-dhāraṇī</idno>
+          <idno type="sanskrit">Ārya-mahāmaṇivipulavimānasupratṣṭhitaguhyaparamarahasyakalparāja-nāma-dhāraṇī</idno>
         </entry>
         <entry xml:id="T19n1006">
           <link type="tibetan" target="Toh_506" cert="high">
@@ -10298,6 +10846,9 @@
           <link type="tibetan" target="Toh_508" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <link type="tibetan" target="Toh_509" cert="low" />
+          <idno type="otani">Otani 139</idno>
+          <idno type="otani">Otani 545</idno>
           <idno type="nanjio">Nj 1025</idno>
           <idno type="sanskrit">Bodhima&amp;#7751;&amp;#7693;alalak&amp;#7779;&amp;#257;la&amp;#7745;k&amp;#257;ran&amp;#257;madh&amp;#257;ra&amp;#7751;&amp;#299;(s&amp;#363;tra)</idno>
           <idno type="sanskrit">Bodhimaṇḍalalakṣālaṁkāra-nāma-dhāraṇī</idno>
@@ -10396,6 +10947,7 @@
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 539</idno>
+          <idno type="otani">Otani 808</idno>
           <idno type="nanjio">Nj 353</idno>
           <idno type="nanjio">Nj 354</idno>
           <idno type="nanjio">Nj 355</idno>
@@ -10545,6 +11097,7 @@
           <link type="tibetan" target="Toh_44" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 761</idno>
           <idno type="nanjio">Nj 1450</idno>
           <title type="chinese">Ta fang kuang fo hua yen ching ju fa chieh p'in ssu shih erh tzu kuan men</title>
         </entry>
@@ -10555,6 +11108,8 @@
           <link type="tibetan" target="Toh_941" cert="low">
             <note type="sources">cbeta_tibetan</note>
           </link>
+          <idno type="otani">Otani 280</idno>
+          <idno type="otani">Otani 566</idno>
           <title type="chinese">聖寶樹莊嚴心</title>
           <title type="tibetan">འཕགས་པ་སྡོང་པོ་བཀོད་པའི་སྙིང་པོ</title>
         </entry>
@@ -10562,6 +11117,10 @@
           <link type="tibetan" target="Toh_507" cert="low">
             <note type="sources">existing</note>
           </link>
+          <link type="tibetan" target="Toh_883" cert="low" />
+          <idno type="otani">Otani 141</idno>
+          <idno type="otani">Otani 508</idno>
+          <idno type="sanskrit">Ārya-sarvatathāgatādhiṣṭhānahṛdayaguhyadhātukaraṇḍa-nāma-dhāraṇīmahāyānāsūtra</idno>
         </entry>
         <entry xml:id="T19n1022B">
           <link type="tibetan" target="Toh_507" cert="high">
@@ -10635,6 +11194,8 @@
           <link type="tibetan" target="Toh_858" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 195</idno>
+          <idno type="otani">Otani 483</idno>
           <idno type="nanjio">Nj 799</idno>
           <idno type="sanskrit">Ārya-agrapradīpadhāraṇī-vidyārāja</idno>
           <title type="chinese">聖明咒王最上燈明陀羅尼</title>
@@ -10676,6 +11237,10 @@
           <link type="tibetan" target="Toh_930" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 216</idno>
+          <idno type="otani">Otani 235</idno>
+          <idno type="otani">Otani 555</idno>
+          <idno type="otani">Otani 667</idno>
           <idno type="nanjio">Nj 329</idno>
           <idno type="nanjio">Nj 856</idno>
           <title type="chinese">一百首盧迦轉得</title>
@@ -10718,6 +11283,7 @@
           <link type="tibetan" target="Toh_1" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 1030</idno>
         </entry>
         <entry xml:id="T20n1043">
           <idno type="nanjio">Nj 326</idno>
@@ -10728,6 +11294,7 @@
           <link type="tibetan" target="Toh_1" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 1030</idno>
           <idno type="nanjio">Nj 340</idno>
           <idno type="sanskrit">Saḍakṣaravidyāmantra(sūtra)</idno>
           <title type="chinese">六字咒王經</title>
@@ -10736,14 +11303,16 @@
           <link type="tibetan" target="Toh_1" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 1030</idno>
           <idno type="nanjio">Nj 341</idno>
-          <idno type="sanskrit">Saḍakṣaravidyāmantra(sūtra)</idno>
           <title type="chinese">六字神咒王經</title>
         </entry>
         <entry xml:id="T20n1045b">
           <link type="tibetan" target="Toh_1" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 1030</idno>
+          <idno type="sanskrit">Saḍakṣaravidyāmantra(sūtra)</idno>
         </entry>
         <entry xml:id="T20n1047">
           <link type="tibetan" target="Toh_575" cert="high">
@@ -10762,6 +11331,10 @@
           <title type="tibetan">Yi-ge drug-paḥi rig-sṅags.</title>
         </entry>
         <entry xml:id="T20n1048">
+          <link type="tibetan" target="Toh_312" cert="low" />
+          <idno type="otani">Otani 142</idno>
+          <idno type="otani">Otani 714</idno>
+          <idno type="otani">Otani 978</idno>
           <idno type="nanjio">Nj 794</idno>
           <idno type="sanskrit">Mah&amp;#257;(rak&amp;#7779;&amp;#257;)mantr&amp;#257;nus&amp;#257;ri&amp;#7751;&amp;#299;s&amp;#363;tra</idno>
           <idno type="sanskrit">Mahā(rakṣā)mantrānusāriṇīsūtra.</idno>
@@ -10783,9 +11356,11 @@
           <link type="tibetan" target="Toh_705" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <link type="tibetan" target="Toh_706" cert="low" />
           <link type="tibetan" target="Toh_900" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 328</idno>
           <idno type="otani">Otani 381</idno>
           <idno type="otani">Otani 525</idno>
           <idno type="nanjio">Nj 816</idno>
@@ -10827,6 +11402,8 @@
           <link type="tibetan" target="Toh_897" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 369</idno>
+          <idno type="otani">Otani 522</idno>
           <idno type="nanjio">Nj 320</idno>
           <title type="chinese">千手千眼聖觀自在菩薩儀軌細釋</title>
           <title type="tibetan">བྱང་ཆུབ་སེམས་དཔའ་འཕགས་པ་སྤྱན་རས་གཟིགས་དབང་ཕྱུག་ལག་པ་སྟོང་དང། མིག་སྟོང་དང་ལྡན་པའི་ཆོ་ག་ཞིབ་མོ</title>
@@ -10990,6 +11567,7 @@
           </link>
           <idno type="otani">Otani 164</idno>
           <idno type="otani">Otani 188</idno>
+          <idno type="otani">Otani 614</idno>
           <idno type="nanjio">Nj 344</idno>
           <idno type="nanjio">Nj 345</idno>
           <idno type="nanjio">Nj 346</idno>
@@ -11012,6 +11590,7 @@
           </link>
           <idno type="otani">Otani 188</idno>
           <idno type="otani">Otani 614</idno>
+          <idno type="otani">Otani 784</idno>
           <idno type="nanjio">Nj 344</idno>
           <idno type="nanjio">Nj 345</idno>
           <idno type="nanjio">Nj 346</idno>
@@ -11209,6 +11788,9 @@
           <link type="tibetan" target="Toh_901" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 365</idno>
+          <idno type="otani">Otani 366</idno>
+          <idno type="otani">Otani 526</idno>
           <idno type="nanjio">Nj 312</idno>
           <idno type="nanjio">Nj 317</idno>
           <idno type="nanjio">Nj 363</idno>
@@ -11222,6 +11804,7 @@
           <link type="tibetan" target="Toh_686" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 365</idno>
           <idno type="nanjio">Nj 314</idno>
           <idno type="nanjio">Nj 363</idno>
           <idno type="sanskrit">Ārya-amoghapāśa-kalparāja</idno>
@@ -11232,6 +11815,7 @@
           <link type="tibetan" target="Toh_686" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 365</idno>
           <idno type="nanjio">Nj 313</idno>
           <idno type="nanjio">Nj 363</idno>
           <idno type="sanskrit">Ārya-amoghapāśa-kalparāja</idno>
@@ -11242,6 +11826,7 @@
           <link type="tibetan" target="Toh_686" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 365</idno>
           <idno type="nanjio">Nj 363</idno>
           <idno type="sanskrit">Ārya-amoghapāśa-kalparāja</idno>
           <title type="chinese">聖不空羂索儀軌細釋王</title>
@@ -11282,11 +11867,14 @@
           <link type="tibetan" target="Toh_735" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <link type="tibetan" target="Toh_736" cert="low" />
           <link type="tibetan" target="Toh_994" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 185</idno>
+          <idno type="otani">Otani 186</idno>
           <idno type="otani">Otani 619</idno>
+          <idno type="otani">Otani 620</idno>
           <idno type="nanjio">Nj 973</idno>
           <idno type="sanskrit">Par&amp;#7751;a&amp;#347;avar&amp;#299;dh&amp;#257;ra&amp;#7751;&amp;#299;(s&amp;#363;tra)</idno>
           <idno type="sanskrit">Parṇaśavarīdhāraṇī(sūtra).</idno>
@@ -11358,6 +11946,8 @@
             <note type="sources">cbeta_tibetan</note>
           </link>
           <idno type="otani">Otani 391</idno>
+          <idno type="otani">Otani 392</idno>
+          <idno type="otani">Otani 625</idno>
           <idno type="nanjio">Nj 1079</idno>
           <idno type="nanjio">Nj 813</idno>
           <idno type="nanjio">Nj 815</idno>
@@ -11366,9 +11956,20 @@
           <title type="chinese">Sheng to lo p'u sa fan tsan</title>
           <title type="tibetan">རྗེ་བཙུན་མ་འཕགས་མ་སྒྲོལ་མའི་མཚན་བརྒྱ་རྩ་བརྒྱད་པ་ཞེས་བྱ་བ</title>
         </entry>
-        <entry xml:id="T20n1108B">
+        <entry xml:id="T20n1108A">
           <link type="tibetan" target="Toh_438" cert="low" />
+          <idno type="otani">Otani 77</idno>
           <idno type="sanskrit">Namastāre-ekaviṁśatistotraguṇahitasahita</idno>
+        </entry>
+        <entry xml:id="T20n1108B">
+          <link type="tibetan" target="Toh_438" cert="low">
+            <note type="sources">cbeta_tibetan</note>
+          </link>
+          <idno type="otani">Otani 77</idno>
+          <idno type="nanjio">Nj 1068</idno>
+          <idno type="sanskrit">Namastāre-ekaviṁśatistotraguṇahitasahita</idno>
+          <title type="chinese">多羅母二十一拜禮讚利益</title>
+          <title type="tibetan">སྒྲོལ་མ་ལ་ཕྱག་འཚལ་ཉི་ཤུ་རྩ་གཅིག་གིས་བསྟོད་པ་ཕན་ཡོན་དང་བཅས་པ</title>
         </entry>
         <entry xml:id="T20n1111">
           <link type="tibetan" target="Toh_697" cert="medium">
@@ -11377,6 +11978,8 @@
           <link type="tibetan" target="Toh_905" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 378</idno>
+          <idno type="otani">Otani 530</idno>
           <idno type="nanjio">Nj 320</idno>
           <idno type="sanskrit">Ārya-karuṇānāvṛtta-nāma-dhāraṇī</idno>
           <idno type="sanskrit">Ārya-nīlakaṇṭha-nāma-dhāraṇī</idno>
@@ -11390,6 +11993,23 @@
           <link type="tibetan" target="Toh_905" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 378</idno>
+          <idno type="otani">Otani 530</idno>
+          <idno type="nanjio">Nj 320</idno>
+          <idno type="sanskrit">Ārya-karuṇānāvṛtta-nāma-dhāraṇī</idno>
+          <idno type="sanskrit">Ārya-nīlakaṇṭha-nāma-dhāraṇī</idno>
+          <title type="chinese">觀青頸陀羅尼</title>
+          <title type="tibetan">འཕགས་པ་ནཱི་ལ་ཀཎྛ་ཞེས་བྱ་བའི་གཟུངས</title>
+        </entry>
+        <entry xml:id="T20n1113A">
+          <link type="tibetan" target="Toh_697" cert="low">
+            <note type="sources">cbeta_tibetan</note>
+          </link>
+          <link type="tibetan" target="Toh_905" cert="low">
+            <note type="sources">cbeta_tibetan</note>
+          </link>
+          <idno type="otani">Otani 378</idno>
+          <idno type="otani">Otani 530</idno>
           <idno type="nanjio">Nj 320</idno>
           <idno type="sanskrit">Ārya-karuṇānāvṛtta-nāma-dhāraṇī</idno>
           <idno type="sanskrit">Ārya-nīlakaṇṭha-nāma-dhāraṇī</idno>
@@ -11397,17 +12017,12 @@
           <title type="tibetan">འཕགས་པ་ནཱི་ལ་ཀཎྛ་ཞེས་བྱ་བའི་གཟུངས</title>
         </entry>
         <entry xml:id="T20n1113B">
-          <link type="tibetan" target="Toh_697" cert="low">
-            <note type="sources">cbeta_tibetan</note>
-          </link>
-          <link type="tibetan" target="Toh_905" cert="low">
-            <note type="sources">cbeta_tibetan</note>
-          </link>
-          <idno type="nanjio">Nj 320</idno>
+          <link type="tibetan" target="Toh_697" cert="low" />
+          <link type="tibetan" target="Toh_905" cert="low" />
+          <idno type="otani">Otani 378</idno>
+          <idno type="otani">Otani 530</idno>
           <idno type="sanskrit">Ārya-karuṇānāvṛtta-nāma-dhāraṇī</idno>
           <idno type="sanskrit">Ārya-nīlakaṇṭha-nāma-dhāraṇī</idno>
-          <title type="chinese">觀青頸陀羅尼</title>
-          <title type="tibetan">འཕགས་པ་ནཱི་ལ་ཀཎྛ་ཞེས་བྱ་བའི་གཟུངས</title>
         </entry>
         <entry xml:id="T20n1117">
           <link type="tibetan" target="Toh_725" cert="high">
@@ -11565,6 +12180,9 @@
           <link type="tibetan" target="Toh_4378" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 1039</idno>
+          <idno type="otani">Otani 5925</idno>
+          <idno type="otani">Otani 717</idno>
           <idno type="sanskrit">Ārya-maitreyapraṇidhānarāja</idno>
           <title type="chinese">聖彌勒誓願文</title>
           <title type="tibetan">འཕགས་པ་བྱམས་པའི་སྨོན་ལམ</title>
@@ -11718,9 +12336,24 @@
           <link type="tibetan" target="Toh_882" cert="low" />
           <idno type="otani">Otani 158</idno>
           <idno type="otani">Otani 507</idno>
+          <idno type="sanskrit">Ārya-aṣṭamaṇḍalaka-nāma-mahāyāna-sūtra</idno>
+        </entry>
+        <entry xml:id="T20n1168B">
+          <link type="tibetan" target="Toh_644" cert="high">
+            <note type="sources">cbeta_sanskrit; cbeta_tibetan; lancaster; lancaster_full</note>
+          </link>
+          <link type="tibetan" target="Toh_882" cert="high">
+            <note type="sources">cbeta_sanskrit; cbeta_tibetan; lancaster; lancaster_full</note>
+          </link>
+          <idno type="otani">Otani 158</idno>
+          <idno type="otani">Otani 507</idno>
+          <idno type="nanjio">Nj 880</idno>
+          <idno type="nanjio">Nj 981</idno>
           <idno type="sanskrit">A&amp;#7779;&amp;#7789;ama&amp;#7751;&amp;#7693;alaka(s&amp;#363;tra)</idno>
           <idno type="sanskrit">Aṣṭamaṇḍalaka(sūtra).</idno>
           <idno type="sanskrit">Ārya-aṣṭamaṇḍalaka-nāma-mahāyāna-sūtra</idno>
+          <title type="chinese">大乘八大曼拏羅經</title>
+          <title type="tibetan">Dkyil-ḥkhor brgyad-pa.</title>
         </entry>
         <entry xml:id="T20n1171">
           <link type="tibetan" target="Toh_482" cert="high">
@@ -11758,6 +12391,8 @@
           <link type="tibetan" target="Toh_639" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 325</idno>
+          <idno type="otani">Otani 504</idno>
           <idno type="nanjio">Nj 1044</idno>
           <title type="chinese">Ta ch'eng y&amp;uuml; ch'ieh chin kang hsing hai man shu shih li ch'ien pei ch'ien po ta chiao wang ching</title>
         </entry>
@@ -11765,6 +12400,11 @@
           <idno type="nanjio">Nj 331</idno>
           <idno type="sanskrit">Saḍakṣaravidyāmantra(satra)</idno>
           <title type="chinese">六字神咒經</title>
+        </entry>
+        <entry xml:id="T20n1186">
+          <link type="tibetan" target="Toh_639" cert="low" />
+          <idno type="otani">Otani 325</idno>
+          <idno type="otani">Otani 504</idno>
         </entry>
         <entry xml:id="T20n1187">
           <link type="tibetan" target="Toh_360" cert="high">
@@ -11783,6 +12423,7 @@
           <link type="tibetan" target="Toh_360" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 2</idno>
           <idno type="nanjio">Nj 1032</idno>
           <idno type="sanskrit">Mañjuśrījñānasattvasya paramārthanāmasaṁgīti</idno>
           <title type="chinese">文殊智慧有情勝義名集</title>
@@ -11792,6 +12433,7 @@
           <link type="tibetan" target="Toh_360" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 2</idno>
           <idno type="nanjio">Nj 1032</idno>
           <idno type="sanskrit">Mañjuśrījñānasattvasya paramārthanāmasaṁgīti</idno>
           <title type="chinese">文殊智慧有情勝義名集</title>
@@ -11807,6 +12449,9 @@
           <link type="tibetan" target="Toh_642" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 165</idno>
+          <idno type="otani">Otani 2</idno>
+          <idno type="otani">Otani 329</idno>
           <idno type="nanjio">Nj 1032</idno>
           <idno type="sanskrit">Mañjuśrījñānasattvasya paramārthanāmasaṁgīti</idno>
           <idno type="sanskrit">Ārya-mañjuśrīnāmāṣṭaśataka</idno>
@@ -11829,6 +12474,7 @@
           <link type="tibetan" target="Toh_59" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 760,15</idno>
           <idno type="nanjio">Nj 1455</idno>
           <title type="chinese">Ta sheng wen shu shih li p'u sa tsan fo fa shen li</title>
         </entry>
@@ -11836,6 +12482,7 @@
           <link type="tibetan" target="Toh_642" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 329</idno>
           <idno type="nanjio">Nj 1032</idno>
           <idno type="nanjio">Nj 1073</idno>
           <idno type="sanskrit">Ma&amp;ntilde;ju&amp;#347;r&amp;#299;n&amp;#257;m&amp;#257;&amp;#7779;&amp;#7789;a&amp;#347;ataka</idno>
@@ -11854,6 +12501,7 @@
           <link type="tibetan" target="Toh_543" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 162</idno>
           <idno type="nanjio">Nj 1056</idno>
           <idno type="sanskrit">Ārya-mañjuśrīmūlatantra</idno>
           <title type="chinese">聖文殊師利根本怛特羅</title>
@@ -11863,6 +12511,7 @@
           <link type="tibetan" target="Toh_543" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 162</idno>
           <idno type="nanjio">Nj 1056</idno>
           <idno type="sanskrit">Ārya-mañjuśrīmūlatantra</idno>
           <title type="chinese">聖文殊師利根本怛特羅</title>
@@ -11880,13 +12529,13 @@
           <title type="tibetan">Khro-bo rnam-par rgyal-baḥi rtog-pa gsaṅ-baḥi rgyud.</title>
         </entry>
         <entry xml:id="T21n1222a">
+          <idno type="nanjio">Nj 1064</idno>
           <idno type="sanskrit">Vajrakum&amp;#257;ratantra</idno>
           <idno type="sanskrit">Vajrakumāratantra.</idno>
+          <title type="chinese">聖迦尼忿怒金剛童子菩薩成就儀軌經</title>
         </entry>
         <entry xml:id="T21n1222b">
-          <idno type="nanjio">Nj 1064</idno>
           <idno type="sanskrit">Vajrakumāratantra.</idno>
-          <title type="chinese">聖迦尼忿怒金剛童子菩薩成就儀軌經</title>
         </entry>
         <entry xml:id="T21n1227">
           <idno type="nanjio">Nj 1048</idno>
@@ -11961,6 +12610,26 @@
           <title type="tibetan">Lcaṅ-lo-can-gyi pho-braṅ-gi mdo.</title>
         </entry>
         <entry xml:id="T21n1252a">
+          <link type="tibetan" target="Toh_1005" cert="low">
+            <note type="sources">existing</note>
+          </link>
+          <link type="tibetan" target="Toh_1006" cert="low">
+            <note type="sources">existing</note>
+          </link>
+          <link type="tibetan" target="Toh_740" cert="low">
+            <note type="sources">existing</note>
+          </link>
+          <link type="tibetan" target="Toh_741" cert="low">
+            <note type="sources">existing</note>
+          </link>
+          <idno type="otani">Otani 399</idno>
+          <idno type="otani">Otani 400</idno>
+          <idno type="otani">Otani 630</idno>
+          <idno type="otani">Otani 631</idno>
+          <idno type="sanskrit">Mahāśrīsūtra.</idno>
+          <idno type="sanskrit">Ārya-mahālakṣmī-sūtra</idno>
+        </entry>
+        <entry xml:id="T21n1252b">
           <link type="tibetan" target="Toh_1005" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
@@ -11984,30 +12653,13 @@
           <title type="chinese">大吉祥天女十二名號經</title>
           <title type="tibetan">Dpal chen-moḥi mdo.</title>
         </entry>
-        <entry xml:id="T21n1252b">
-          <link type="tibetan" target="Toh_1005" cert="low">
-            <note type="sources">existing</note>
-          </link>
-          <link type="tibetan" target="Toh_1006" cert="low">
-            <note type="sources">existing</note>
-          </link>
-          <link type="tibetan" target="Toh_740" cert="low">
-            <note type="sources">existing</note>
-          </link>
-          <link type="tibetan" target="Toh_741" cert="low">
-            <note type="sources">existing</note>
-          </link>
-          <idno type="otani">Otani 399</idno>
-          <idno type="otani">Otani 400</idno>
-          <idno type="otani">Otani 630</idno>
-          <idno type="otani">Otani 631</idno>
-          <idno type="sanskrit">Mahāśrīsūtra.</idno>
-        </entry>
         <entry xml:id="T21n1253">
+          <link type="tibetan" target="Toh_193" cert="low" />
           <link type="tibetan" target="Toh_739" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 398</idno>
+          <idno type="otani">Otani 860</idno>
           <idno type="nanjio">Nj 959</idno>
           <idno type="sanskrit">&amp;#346;r&amp;#299;mah&amp;#257;dev&amp;#299;vy&amp;#257;kara&amp;#7751;a(s&amp;#363;tra)</idno>
           <idno type="sanskrit">Ārya-srīmahādevī-vyākaraṇa</idno>
@@ -12047,7 +12699,6 @@
           <idno type="nanjio">Nj 845</idno>
           <idno type="nanjio">Nj 846</idno>
           <idno type="nanjio">Nj 847</idno>
-          <idno type="sanskrit">M&amp;#257;r&amp;#299;c&amp;#299;dh&amp;#257;ra&amp;#7751;&amp;#299;(s&amp;#363;tra)</idno>
           <idno type="sanskrit">Mārīcīdhāraṇī(sūtra).</idno>
           <idno type="sanskrit">Ārya-mārīcī-nāma-dhāraṇī</idno>
           <title type="chinese">摩利支天菩薩陀羅尼經</title>
@@ -12062,7 +12713,9 @@
           </link>
           <idno type="otani">Otani 182</idno>
           <idno type="otani">Otani 613</idno>
+          <idno type="sanskrit">M&amp;#257;r&amp;#299;c&amp;#299;dh&amp;#257;ra&amp;#7751;&amp;#299;(s&amp;#363;tra)</idno>
           <idno type="sanskrit">Mārīcīdhāraṇī(sūtra).</idno>
+          <idno type="sanskrit">Ārya-mārīcī-nāma-dhāraṇī</idno>
         </entry>
         <entry xml:id="T21n1256">
           <link type="tibetan" target="Toh_564" cert="high">
@@ -12120,7 +12773,9 @@
           </link>
           <idno type="otani">Otani 189</idno>
           <idno type="otani">Otani 615</idno>
+          <idno type="sanskrit">J&amp;#257;&amp;#7749;gul&amp;#299;n&amp;#257;mavidy&amp;#257;</idno>
           <idno type="sanskrit">Jāṅgulīnāmavidyā.</idno>
+          <idno type="sanskrit">Ārya-jāṅguli-nāma-vidyā</idno>
         </entry>
         <entry xml:id="T21n1264b">
           <link type="tibetan" target="Toh_571" cert="high">
@@ -12132,7 +12787,6 @@
           <idno type="otani">Otani 189</idno>
           <idno type="otani">Otani 615</idno>
           <idno type="nanjio">Nj 961</idno>
-          <idno type="sanskrit">J&amp;#257;&amp;#7749;gul&amp;#299;n&amp;#257;mavidy&amp;#257;</idno>
           <idno type="sanskrit">Jāṅgulīnāmavidyā.</idno>
           <idno type="sanskrit">Ārya-jāṅguli-nāma-vidyā</idno>
           <title type="chinese">觀自在菩薩化身蘘麌哩曳童女銷伏毒害陀羅尼經</title>
@@ -12142,6 +12796,8 @@
           <link type="tibetan" target="Toh_665" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 338</idno>
+          <idno type="otani">Otani 705</idno>
           <idno type="nanjio">Nj 1403</idno>
           <title type="chinese">Ta sheng t'ien huan hsi shuang shen p'i na yeh chia fa</title>
         </entry>
@@ -12237,6 +12893,10 @@
           <link type="tibetan" target="Toh_998" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 339</idno>
+          <idno type="otani">Otani 340</idno>
+          <idno type="otani">Otani 622</idno>
+          <idno type="otani">Otani 623</idno>
           <idno type="nanjio">Nj 811</idno>
           <idno type="sanskrit">Grahamātṛikā-nāma-dhāraṇī</idno>
           <idno type="sanskrit">Grahamātṛkā-nāma-dhāraṇī</idno>
@@ -12329,6 +12989,11 @@
           <title type="chinese">救面然餓鬼陀羅尼神呪經</title>
           <title type="tibetan">ཡི་དྭགས་ཁ་ནས་མེ་འབར་བ་ལ་སྐྱབ་མཛས་པ་ཞེས་བྱ་བའི་གཟུངས</title>
         </entry>
+        <entry xml:id="T21n1315">
+          <link type="tibetan" target="Toh_647" cert="low" />
+          <idno type="otani">Otani 355</idno>
+          <idno type="otani">Otani 700</idno>
+        </entry>
         <entry xml:id="T21n1316">
           <link type="tibetan" target="Toh_679" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
@@ -12336,6 +13001,8 @@
           <link type="tibetan" target="Toh_851" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 286</idno>
+          <idno type="otani">Otani 476</idno>
           <idno type="nanjio">Nj 540</idno>
           <idno type="sanskrit">Paramitaguṇānuśaṃsādhāraṇī</idno>
           <idno type="sanskrit">Ārya-aparimitaguṇānuśaṁsā-nāma-dhāraṇī</idno>
@@ -12350,6 +13017,8 @@
           <link type="tibetan" target="Toh_851" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 286</idno>
+          <idno type="otani">Otani 476</idno>
           <idno type="nanjio">Nj 540</idno>
           <idno type="sanskrit">Ārya-aparimitaguṇānuśaṁsā-nāma-dhāraṇī</idno>
           <idno type="sanskrit">Ārya-aparimitāguṇānuśaṁsā-nāma-dhāraṇī</idno>
@@ -12360,6 +13029,8 @@
           <link type="tibetan" target="Toh_647" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 355</idno>
+          <idno type="otani">Otani 700</idno>
         </entry>
         <entry xml:id="T21n1323">
           <link type="tibetan" target="Toh_1014" cert="high">
@@ -12401,6 +13072,7 @@
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 213</idno>
+          <idno type="otani">Otani 645</idno>
           <idno type="nanjio">Nj 738</idno>
           <idno type="sanskrit">Ar&amp;#347;apra&amp;#347;amanas&amp;#363;tra</idno>
           <idno type="sanskrit">Arśapraśamanasūtra.</idno>
@@ -12767,6 +13439,9 @@
           <link type="tibetan" target="Toh_141" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 312</idno>
+          <idno type="otani">Otani 541</idno>
+          <idno type="otani">Otani 809</idno>
         </entry>
         <entry xml:id="T21n1362">
           <link type="tibetan" target="Toh_313" cert="high">
@@ -12792,6 +13467,8 @@
           <link type="tibetan" target="Toh_612" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 306</idno>
+          <idno type="otani">Otani 548</idno>
           <idno type="nanjio">Nj 361</idno>
           <title type="chinese">Sheng ch'uang pei yin t'o lo ni ching</title>
         </entry>
@@ -12848,6 +13525,7 @@
           <link type="tibetan" target="Toh_98" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 766</idno>
           <idno type="nanjio">Nj 504</idno>
           <idno type="sanskrit">Sarvatathāgatādhiṣṭhānasattvāvalokanabuddhakṣetrasandarśanavyūharāja(dhāraṇī)sūtra</idno>
           <idno type="sanskrit">Ārya-sarvatathāgatādhiṣṭhānasattvāvalokena buddhakṣetranirdeśanavyūha-nāma-mahāyānasūtra</idno>
@@ -13077,6 +13755,12 @@
           <link type="tibetan" target="Toh_955" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 132</idno>
+          <idno type="otani">Otani 406</idno>
+          <idno type="otani">Otani 409</idno>
+          <idno type="otani">Otani 573</idno>
+          <idno type="otani">Otani 574</idno>
+          <idno type="otani">Otani 580</idno>
           <idno type="nanjio">Nj 1001</idno>
           <idno type="sanskrit">Vajrasūkṣmāpratihata-nāma-dhāraṇī</idno>
           <idno type="sanskrit">Vajravidāraṇā-nāma-dhāraṇī</idno>
@@ -13091,6 +13775,10 @@
           <link type="tibetan" target="Toh_948" cert="low">
             <note type="sources">cbeta_tibetan</note>
           </link>
+          <idno type="otani">Otani 132</idno>
+          <idno type="otani">Otani 406</idno>
+          <idno type="otani">Otani 573</idno>
+          <idno type="otani">Otani 574</idno>
           <idno type="nanjio">Nj 1001</idno>
           <idno type="sanskrit">Vajravidāraṇā-nāma-dhāraṇī</idno>
           <idno type="sanskrit">Ārya-nīlāmbaradharavajrapāṇikalpa-nāma-dhāraṇī</idno>
@@ -13101,6 +13789,7 @@
           <link type="tibetan" target="Toh_1" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 1030</idno>
           <idno type="nanjio">Nj 1122</idno>
           <idno type="sanskrit">Mah&amp;#299;&amp;#347;&amp;#257;sakavinaya</idno>
           <idno type="sanskrit">Mahīśāsakavinaya.</idno>
@@ -13128,6 +13817,7 @@
           <link type="tibetan" target="Toh_6" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 1035</idno>
           <idno type="nanjio">Nj 1117</idno>
           <idno type="sanskrit">Dharmaguputa(ka)vinaya</idno>
           <idno type="sanskrit">Dharmaguputa(ka)vinaya.</idno>
@@ -13178,6 +13868,7 @@
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
           <link type="tibetan" target="up8.029" cert="low" />
+          <idno type="otani">Otani 1030</idno>
           <idno type="otani">Otani 1032</idno>
           <idno type="nanjio">Nj 1118</idno>
           <idno type="sanskrit">(M&amp;#363;lasarv&amp;#257;stiv&amp;#257;da)Vinayavibha&amp;#7749;ga</idno>
@@ -13203,6 +13894,7 @@
           <link type="tibetan" target="Toh_5" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 1001</idno>
           <idno type="otani">Otani 1034</idno>
           <idno type="nanjio">Nj 1124</idno>
           <idno type="sanskrit">(M&amp;#363;lasarv&amp;#257;stiv&amp;#257;da)Bhik&amp;#7779;u&amp;#7751;&amp;#299;vinayavibha&amp;#7749;ga</idno>
@@ -13270,6 +13962,12 @@
             <note type="sources">existing</note>
           </link>
           <idno type="otani">Otani 1030</idno>
+          <idno type="otani">Otani 1043</idno>
+          <idno type="otani">Otani 142</idno>
+          <idno type="otani">Otani 436</idno>
+          <idno type="otani">Otani 714</idno>
+          <idno type="otani">Otani 719</idno>
+          <idno type="otani">Otani 978</idno>
           <idno type="nanjio">Nj 1123</idno>
           <idno type="sanskrit">Vinaya-vastu</idno>
           <idno type="sanskrit">Vinayavastu</idno>
@@ -13334,6 +14032,12 @@
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
           <idno type="otani">Otani 1035</idno>
+          <idno type="otani">Otani 142</idno>
+          <idno type="otani">Otani 714</idno>
+          <idno type="otani">Otani 760,13</idno>
+          <idno type="otani">Otani 760,14</idno>
+          <idno type="otani">Otani 948</idno>
+          <idno type="otani">Otani 978</idno>
           <idno type="nanjio">Nj 1121</idno>
           <idno type="sanskrit">(M&amp;#363;lasarv&amp;#257;stiv&amp;#257;da)vinayak&amp;#7779;udrakavastu</idno>
           <idno type="sanskrit">(Mūlasarvāstivāda)vinayakṣudrakavastu.</idno>
@@ -13373,6 +14077,7 @@
           <link type="tibetan" target="Toh_1" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 1030</idno>
           <idno type="nanjio">Nj 1131</idno>
           <idno type="sanskrit">(M&amp;#363;lasarv&amp;#257;stiv&amp;#257;da)eka&amp;#347;atakarman</idno>
           <idno type="sanskrit">(Mūlasarvāstivāda)ekaśatakarman.</idno>
@@ -13412,6 +14117,7 @@
           <link type="tibetan" target="Toh_4105" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5606</idno>
           <idno type="nanjio">Nj 1127</idno>
           <idno type="sanskrit">(M&amp;#363;lasarv&amp;#257;stiv&amp;#257;da)Vinayayasangraha</idno>
           <idno type="sanskrit">(Mūlasarvāstivāda)Vinayayasangraha.</idno>
@@ -13423,6 +14129,7 @@
           <link type="tibetan" target="Toh_4123" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5625</idno>
           <idno type="nanjio">Nj 1143</idno>
           <idno type="sanskrit">(M&amp;#363;lasarv&amp;#257;stiv&amp;#257;da)vinayak&amp;#257;rik&amp;#257;</idno>
           <idno type="sanskrit">(Mūlasarvāstivāda)vinayakārikā.</idno>
@@ -13431,6 +14138,8 @@
           <title type="tibetan">Ḥdul-ba tshig-leḥur-byas-pa.</title>
         </entry>
         <entry xml:id="T24n1460">
+          <link type="tibetan" target="Toh_2" cert="low" />
+          <idno type="otani">Otani 1031</idno>
           <idno type="nanjio">Nj 1108</idno>
           <idno type="sanskrit">Pr&amp;#257;timok&amp;#7779;as&amp;#363;tra</idno>
           <idno type="sanskrit">Prātimokṣasūtra.</idno>
@@ -13466,13 +14175,13 @@
           <title type="chinese">大愛道比丘尼經</title>
         </entry>
         <entry xml:id="T24n1483a">
-          <idno type="sanskrit">Mu lien wen chieh lü chung wu po ching chung shih. (1 chüan)</idno>
-        </entry>
-        <entry xml:id="T24n1483b">
           <idno type="nanjio">Nj 1148</idno>
-          <idno type="sanskrit">Mu lien wen chieh l&amp;uuml; chung wu po ching chung shih</idno>
           <idno type="sanskrit">Mu lien wen chieh lü chung wu po ching chung shih. (1 chüan)</idno>
           <title type="chinese">目連問戒律中五百輕重事</title>
+        </entry>
+        <entry xml:id="T24n1483b">
+          <idno type="sanskrit">Mu lien wen chieh l&amp;uuml; chung wu po ching chung shih</idno>
+          <idno type="sanskrit">Mu lien wen chieh lü chung wu po ching chung shih. (1 chüan)</idno>
         </entry>
         <entry xml:id="T24n1484">
           <link type="tibetan" target="Toh_256" cert="high">
@@ -13481,6 +14190,8 @@
           <link type="tibetan" target="Toh_922" cert="low">
             <note type="sources">cbeta_sanskrit</note>
           </link>
+          <idno type="otani">Otani 292</idno>
+          <idno type="otani">Otani 547</idno>
           <idno type="otani">Otani 922</idno>
           <idno type="nanjio">Nj 1087</idno>
           <idno type="sanskrit">Brahmajālasūtra</idno>
@@ -13531,6 +14242,8 @@
           <title type="tibetan">Las-kyi sgrib-pa rgyun gcod-pa</title>
         </entry>
         <entry xml:id="T24n1492">
+          <link type="tibetan" target="Toh_284" cert="low" />
+          <idno type="otani">Otani 950</idno>
           <idno type="nanjio">Nj 1106</idno>
           <idno type="sanskrit">Triskandhaka(sūtra)</idno>
           <title type="chinese">舍利弗悔過經</title>
@@ -13558,6 +14271,12 @@
           <title type="chinese">淨業障經</title>
           <title type="tibetan">Sgrib-pa rnam-par-dag-pa</title>
         </entry>
+        <entry xml:id="T24n1497">
+          <link type="tibetan" target="Toh_303" cert="low" />
+          <idno type="otani">Otani 969</idno>
+          <idno type="nanjio">Nj 877</idno>
+          <title type="chinese">Ta ch'eng chieh ching</title>
+        </entry>
         <entry xml:id="T25n1509">
           <link type="tibetan" target="Toh_292" cert="low">
             <note type="sources">existing</note>
@@ -13576,6 +14295,11 @@
           </link>
           <link type="tibetan" target="up1.032" cert="low" />
           <link type="tibetan" target="up5.003" cert="low" />
+          <idno type="otani">Otani 1000</idno>
+          <idno type="otani">Otani 5184</idno>
+          <idno type="otani">Otani 731</idno>
+          <idno type="otani">Otani 958</idno>
+          <idno type="otani">Otani 997</idno>
           <idno type="nanjio">Nj 1169</idno>
           <idno type="sanskrit">Mahāpraj&amp;ntilde;āpāramitāśāstra</idno>
           <idno type="sanskrit">Mahāprajñāpāramitāśāstra</idno>
@@ -13600,6 +14324,7 @@
             <note type="sources">existing</note>
           </link>
           <idno type="sanskrit">Vajracchedikāprajñāpāramitāsūtraśāstra</idno>
+          <idno type="sanskrit">Ārya-bhagavatīprajñāpāramitāvajraccheditāsaptārthaṭīkā</idno>
         </entry>
         <entry xml:id="T25n1510b">
           <link type="tibetan" target="Toh_3816" cert="high">
@@ -13625,6 +14350,8 @@
           <link type="tibetan" target="Toh_9" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 730</idno>
+          <idno type="otani">Otani 731</idno>
         </entry>
         <entry xml:id="T25n1513">
           <idno type="nanjio">Nj 1231</idno>
@@ -13648,6 +14375,10 @@
           <link type="tibetan" target="Toh_4462" cert="high">
             <note type="sources">existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5210</idno>
+          <idno type="otani">Otani 5212</idno>
+          <idno type="otani">Otani 5213</idno>
+          <idno type="otani">Otani 5906</idno>
           <idno type="nanjio">Nj 1313</idno>
           <idno type="sanskrit">Bhagavat&amp;#299;praj&amp;ntilde;&amp;#257;paramit&amp;#257;nava&amp;#347;lokapi&amp;#7751;&amp;#7693;&amp;#257;rtha</idno>
           <idno type="sanskrit">Bhagavatīprajñāparamitānavaślokapiṇḍārtha.</idno>
@@ -13660,6 +14391,7 @@
           <link type="tibetan" target="Toh_3810" cert="high">
             <note type="sources">acmuller; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5208</idno>
           <idno type="nanjio">Nj 1310</idno>
           <idno type="sanskrit">Praj&amp;ntilde;&amp;#257;p&amp;#257;ramit&amp;#257;sa&amp;#7745;grahak&amp;#257;rik&amp;#257;vivara&amp;#7751;a</idno>
           <idno type="sanskrit">Prajñāpāramitāsaṁgrahakārikāvivaraṇa.</idno>
@@ -13674,6 +14406,9 @@
           <link type="tibetan" target="Toh_3908" cert="high">
             <note type="sources">acmuller; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5207</idno>
+          <idno type="otani">Otani 5304</idno>
+          <idno type="otani">Otani 5870</idno>
           <idno type="nanjio">Nj 1309</idno>
           <idno type="sanskrit">Praj&amp;ntilde;&amp;#257;p&amp;#257;ramit&amp;#257;sa&amp;#7749;grahak&amp;#257;rik&amp;#257;</idno>
           <idno type="sanskrit">Prajñāpāramitāsaṅgrahakārikā.</idno>
@@ -13695,6 +14430,7 @@
           <link type="tibetan" target="Toh_3993" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5494</idno>
           <idno type="nanjio">Nj 1194</idno>
           <idno type="sanskrit">Daśabhūmikasūtraśāstra</idno>
           <idno type="sanskrit">Ārya-daśabhūmivyākhyāna</idno>
@@ -13705,6 +14441,7 @@
           <link type="tibetan" target="Toh_4009" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5510</idno>
           <idno type="nanjio">Nj 1234</idno>
           <idno type="sanskrit">Ratnakūṭasūtraśāstra</idno>
           <idno type="sanskrit">Ārya-mahāratnakūṭadharmaparyāyaśata-sāhasrikakāśyapaparivartaṭīkā</idno>
@@ -13738,6 +14475,8 @@
           <link type="tibetan" target="Toh_3991" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5492</idno>
+          <idno type="otani">Otani 777</idno>
           <idno type="nanjio">Nj 1191</idno>
           <idno type="sanskrit">Gayāśīrṣasūtraṭīka</idno>
           <idno type="sanskrit">[Ārya-gayāśīrṣa-nāma-sūtravyākhyāna]</idno>
@@ -13830,6 +14569,7 @@
           <link type="tibetan" target="Toh_4087" cert="high">
             <note type="sources">acmuller; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5588</idno>
           <idno type="nanjio">Nj 1317</idno>
           <idno type="sanskrit">Kāraṇaprajñāpti</idno>
           <idno type="sanskrit">Praj&amp;ntilde;apti&amp;#347;&amp;#257;stra</idno>
@@ -13877,6 +14617,7 @@
           <link type="tibetan" target="Toh_323" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 989</idno>
           <idno type="nanjio">Nj 1263</idno>
           <idno type="sanskrit">(Abhidharma)mah&amp;#257;vibh&amp;#257;&amp;#7779;a(&amp;#347;&amp;#257;stra)</idno>
           <idno type="sanskrit">(Abhidharma)mahāvibhāṣa(śāstra).</idno>
@@ -13939,6 +14680,7 @@
           <link type="tibetan" target="Toh_4098" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5599</idno>
           <idno type="nanjio">Nj 1291</idno>
           <idno type="sanskrit">Abhidharm&amp;#257;vat&amp;#257;raprakara&amp;#7751;&amp;#257;</idno>
           <idno type="sanskrit">Abhidharmāvatāraprakaraṇa-nāma</idno>
@@ -13956,6 +14698,7 @@
           <link type="tibetan" target="Toh_4090" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5591</idno>
           <idno type="nanjio">Nj 1267</idno>
           <idno type="nanjio">Nj 1269</idno>
           <idno type="sanskrit">Abhidharmako&amp;#347;a&amp;#347;astra</idno>
@@ -13968,6 +14711,7 @@
           <link type="tibetan" target="Toh_4090" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5591</idno>
           <idno type="nanjio">Nj 1267</idno>
           <idno type="nanjio">Nj 1269</idno>
           <idno type="sanskrit">Abhidharmako&amp;#347;a&amp;#347;&amp;#257;stra</idno>
@@ -13980,6 +14724,7 @@
           <link type="tibetan" target="Toh_4089" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5590</idno>
           <idno type="nanjio">Nj 1270</idno>
           <idno type="sanskrit">Abhidharmako&amp;#347;ak&amp;#257;rik&amp;#257;</idno>
           <idno type="sanskrit">Abhidharmakośakārikā.</idno>
@@ -13998,6 +14743,7 @@
           <link type="tibetan" target="Toh_4091" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5592</idno>
           <idno type="nanjio">Nj 1266</idno>
           <idno type="sanskrit">Abhidharmako&amp;#347;a&amp;#347;&amp;#257;strak&amp;#257;rik&amp;#257;vibh&amp;#257;&amp;#7779;ya</idno>
           <idno type="sanskrit">Abhidharmakośaśāstrakārikāvibhāṣya.</idno>
@@ -14009,6 +14755,7 @@
           <link type="tibetan" target="Toh_3824" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5224</idno>
           <idno type="nanjio">Nj 1179</idno>
           <idno type="sanskrit">(Mūla)madhyamakaśāstra</idno>
           <idno type="sanskrit">Prajñā-nāma-mūlamadhyamakakārīkā</idno>
@@ -14019,6 +14766,7 @@
           <link type="tibetan" target="Toh_3853" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5253</idno>
           <idno type="nanjio">Nj 1185</idno>
           <idno type="sanskrit">Praj&amp;ntilde;āpradīpamūlamadhyamakavṛtti</idno>
           <idno type="sanskrit">Prajñāpradīpamūlamadhyamakavṛtti</idno>
@@ -14039,6 +14787,7 @@
           <link type="tibetan" target="Toh_3846" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5246</idno>
           <idno type="nanjio">Nj 1189</idno>
           <idno type="sanskrit">Catuḥśataka</idno>
           <idno type="sanskrit">Catuḥśatakaśāstrakārikā-nāma</idno>
@@ -14052,6 +14801,8 @@
           <link type="tibetan" target="Toh_3835" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5234</idno>
+          <idno type="otani">Otani 5235</idno>
           <idno type="nanjio">Nj 1254</idno>
           <idno type="sanskrit">Akṣaraśataka</idno>
           <idno type="sanskrit">Akṣaraśataka-nāma-vṛtti</idno>
@@ -14067,6 +14818,7 @@
           <title type="chinese">壹輸盧迦論</title>
         </entry>
         <entry xml:id="T30n1574">
+          <link type="tibetan" target="Toh_226" cert="low" />
           <link type="tibetan" target="Toh_3840" cert="high">
             <note type="sources">acmuller; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
@@ -14076,6 +14828,9 @@
           <link type="tibetan" target="Toh_4558" cert="high">
             <note type="sources">cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5240</idno>
+          <idno type="otani">Otani 5662</idno>
+          <idno type="otani">Otani 892</idno>
           <idno type="nanjio">Nj 1305</idno>
           <idno type="sanskrit">Bhavasa&amp;#7749;kranti&amp;#347;&amp;#257;stra</idno>
           <idno type="sanskrit">Bhavasaṁkrāniparikathā</idno>
@@ -14088,6 +14843,7 @@
           <link type="tibetan" target="Toh_3825" cert="high">
             <note type="sources">acmuller; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5225</idno>
           <idno type="nanjio">Nj 1307</idno>
           <idno type="sanskrit">Yukti&amp;#7779;a&amp;#7779;&amp;#7789;ik&amp;#257;k&amp;#257;rik&amp;#257;</idno>
           <idno type="sanskrit">Yuktiṣaṣṭhikākārikā-nāma</idno>
@@ -14102,6 +14858,7 @@
           <link type="tibetan" target="Toh_4551" cert="high">
             <note type="sources">cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5465</idno>
           <idno type="nanjio">Nj 1308</idno>
           <idno type="sanskrit">Mah&amp;#257;y&amp;#257;navim&amp;#347;aka</idno>
           <idno type="sanskrit">Mahāyānavimśaka.</idno>
@@ -14155,6 +14912,16 @@
           <link type="tibetan" target="Toh_4085" cert="high">
             <note type="sources">acmuller; existing; lancaster</note>
           </link>
+          <idno type="otani">Otani 5536</idno>
+          <idno type="otani">Otani 5537</idno>
+          <idno type="otani">Otani 5538</idno>
+          <idno type="otani">Otani 5539</idno>
+          <idno type="otani">Otani 5540</idno>
+          <idno type="otani">Otani 5541</idno>
+          <idno type="otani">Otani 5542</idno>
+          <idno type="otani">Otani 5543</idno>
+          <idno type="otani">Otani 5586</idno>
+          <idno type="otani">Otani 777</idno>
           <idno type="nanjio">Nj 1085</idno>
           <idno type="nanjio">Nj 1086</idno>
           <idno type="nanjio">Nj 1170</idno>
@@ -14179,6 +14946,7 @@
           <link type="tibetan" target="Toh_4037" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5538</idno>
           <idno type="nanjio">Nj 1085</idno>
           <idno type="nanjio">Nj 1086</idno>
           <idno type="nanjio">Nj 1170</idno>
@@ -14189,6 +14957,7 @@
           <link type="tibetan" target="Toh_4037" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5538</idno>
           <idno type="nanjio">Nj 1085</idno>
           <idno type="nanjio">Nj 1086</idno>
           <idno type="nanjio">Nj 1170</idno>
@@ -14210,6 +14979,7 @@
           <link type="tibetan" target="Toh_4055" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5556</idno>
           <idno type="nanjio">Nj 1214</idno>
           <idno type="nanjio">Nj 1215</idno>
           <idno type="nanjio">Nj 1217</idno>
@@ -14222,6 +14992,7 @@
           <link type="tibetan" target="Toh_4055" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5556</idno>
           <idno type="nanjio">Nj 1214</idno>
           <idno type="nanjio">Nj 1215</idno>
           <idno type="nanjio">Nj 1217</idno>
@@ -14238,6 +15009,8 @@
           <link type="tibetan" target="Toh_4057" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5557</idno>
+          <idno type="otani">Otani 5558</idno>
           <idno type="nanjio">Nj 1238</idno>
           <idno type="nanjio">Nj 1239</idno>
           <idno type="nanjio">Nj 1240</idno>
@@ -14255,6 +15028,8 @@
           <link type="tibetan" target="Toh_4057" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5557</idno>
+          <idno type="otani">Otani 5558</idno>
           <idno type="nanjio">Nj 1238</idno>
           <idno type="nanjio">Nj 1239</idno>
           <idno type="nanjio">Nj 1240</idno>
@@ -14272,6 +15047,8 @@
           <link type="tibetan" target="Toh_4057" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5557</idno>
+          <idno type="otani">Otani 5558</idno>
           <idno type="nanjio">Nj 1238</idno>
           <idno type="nanjio">Nj 1239</idno>
           <idno type="nanjio">Nj 1240</idno>
@@ -14285,6 +15062,7 @@
           <link type="tibetan" target="Toh_4048" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5549</idno>
           <idno type="nanjio">Nj 1183</idno>
           <idno type="nanjio">Nj 1184</idno>
           <idno type="nanjio">Nj 1247</idno>
@@ -14297,6 +15075,7 @@
           <link type="tibetan" target="Toh_4048" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5549</idno>
           <idno type="nanjio">Nj 1183</idno>
           <idno type="nanjio">Nj 1184</idno>
           <idno type="nanjio">Nj 1247</idno>
@@ -14309,6 +15088,7 @@
           <link type="tibetan" target="Toh_4048" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5549</idno>
           <idno type="nanjio">Nj 1183</idno>
           <idno type="nanjio">Nj 1184</idno>
           <idno type="nanjio">Nj 1247</idno>
@@ -14321,6 +15101,7 @@
           <link type="tibetan" target="Toh_4050" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5551</idno>
           <idno type="nanjio">Nj 1171</idno>
           <idno type="sanskrit">Mahāyānasaṁgrahabhāṣya</idno>
           <idno type="sanskrit">Mahāyānasaṅgrāhabhāṣya</idno>
@@ -14331,6 +15112,7 @@
           <link type="tibetan" target="Toh_4050" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5551</idno>
           <idno type="nanjio">Nj 1171</idno>
           <idno type="sanskrit">Mahāyānasaṁgrahabhāṣya</idno>
           <idno type="sanskrit">Mahāyānasaṅgrahabhāṣya</idno>
@@ -14341,6 +15123,7 @@
           <link type="tibetan" target="Toh_4050" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5551</idno>
           <idno type="nanjio">Nj 1171</idno>
           <idno type="sanskrit">Mahāyānasaṁgrahabhāṣya</idno>
           <idno type="sanskrit">Mahāyānasaṅgrahabhāṣya</idno>
@@ -14351,6 +15134,7 @@
           <link type="tibetan" target="Toh_4051" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5552</idno>
           <idno type="nanjio">Nj 1171</idno>
           <idno type="sanskrit">Mahāyānasaṅgrahopanibandhana</idno>
           <idno type="sanskrit">Mahāyāsaṁgrahopanibandhana</idno>
@@ -14364,6 +15148,8 @@
           <link type="tibetan" target="Toh_4027" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5522</idno>
+          <idno type="otani">Otani 5528</idno>
           <idno type="nanjio">Nj 1244</idno>
           <idno type="nanjio">Nj 1248</idno>
           <idno type="sanskrit">Madhyāntavibhaṅgabhāṣya</idno>
@@ -14376,6 +15162,7 @@
           <link type="tibetan" target="Toh_4027" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5528</idno>
           <idno type="nanjio">Nj 1244</idno>
           <idno type="nanjio">Nj 1248</idno>
           <idno type="sanskrit">Madhyāntavibhaṅgabhāṣya</idno>
@@ -14387,6 +15174,7 @@
           <link type="tibetan" target="Toh_4021" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5522</idno>
           <idno type="nanjio">Nj 1245</idno>
           <idno type="nanjio">Nj 1248</idno>
           <idno type="sanskrit">Madhyāntavibhaṅgakārikā</idno>
@@ -14401,6 +15189,8 @@
           <link type="tibetan" target="Toh_4026" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5521</idno>
+          <idno type="otani">Otani 5527</idno>
           <idno type="nanjio">Nj 1190</idno>
           <idno type="sanskrit">(Mahāyāna)sūtralāṃkāraśāstra</idno>
           <idno type="sanskrit">Mahāyānasūtrālaṁkāra-nāma-kārikā</idno>
@@ -14412,6 +15202,7 @@
           <link type="tibetan" target="Toh_4049" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5550</idno>
           <idno type="nanjio">Nj 1199</idno>
           <idno type="sanskrit">Abhidharmasamuccaya</idno>
           <title type="chinese">大乘阿毘達磨集論</title>
@@ -14421,6 +15212,7 @@
           <link type="tibetan" target="Toh_4054" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5555</idno>
           <idno type="nanjio">Nj 1178</idno>
           <idno type="sanskrit">Abhidharmasamuccayavyākhyā</idno>
           <idno type="sanskrit">Abhidharmasamuccayavyākhyā-nāma</idno>
@@ -14431,6 +15223,7 @@
           <link type="tibetan" target="Toh_4062" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5563</idno>
           <idno type="nanjio">Nj 1221</idno>
           <idno type="nanjio">Nj 1222</idno>
           <idno type="sanskrit">Karmasiddhiprakaraṇa</idno>
@@ -14441,6 +15234,7 @@
           <link type="tibetan" target="Toh_4062" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5563</idno>
           <idno type="nanjio">Nj 1221</idno>
           <idno type="nanjio">Nj 1222</idno>
           <idno type="sanskrit">Karmasiddhiprakaraṇa</idno>
@@ -14454,6 +15248,8 @@
           <link type="tibetan" target="Toh_4025" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5525</idno>
+          <idno type="otani">Otani 5526</idno>
           <idno type="nanjio">Nj 1236</idno>
           <idno type="sanskrit">(Ratnagotravibhāga)Mahāyānottaratantraśāstra</idno>
           <idno type="sanskrit">Mahāyānottaratantraśāstra</idno>
@@ -14468,6 +15264,8 @@
           <link type="tibetan" target="Toh_4066" cert="low">
             <note type="sources">cbeta_sanskrit</note>
           </link>
+          <idno type="otani">Otani 5560</idno>
+          <idno type="otani">Otani 5567</idno>
           <idno type="nanjio">Nj 1176</idno>
           <idno type="sanskrit">Pa&amp;ntilde;caskandhaprakaraṇa</idno>
           <idno type="sanskrit">Pañcaskandhaprakaraṇa</idno>
@@ -14482,6 +15280,8 @@
           <link type="tibetan" target="Toh_4066" cert="high">
             <note type="sources">acmuller; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5560</idno>
+          <idno type="otani">Otani 5567</idno>
           <idno type="nanjio">Nj 1175</idno>
           <idno type="sanskrit">Pa&amp;ntilde;caskandhaprakaraṇavaibhāṣya</idno>
           <idno type="sanskrit">Pañcaskandhaprakaraṇavaibhāṣya</idno>
@@ -14493,6 +15293,7 @@
           <link type="tibetan" target="Toh_4063" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5564</idno>
           <idno type="nanjio">Nj 1213</idno>
           <idno type="sanskrit">Mahāyānaśatadharmaprakāśamukhaśāstra</idno>
           <idno type="sanskrit">Mahāyānaśatadharmaprakāśamukhaśāstra.</idno>
@@ -14512,6 +15313,8 @@
           <link type="tibetan" target="Toh_4206" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5703</idno>
+          <idno type="otani">Otani 5704</idno>
           <idno type="nanjio">Nj 1172</idno>
           <idno type="nanjio">Nj 1173</idno>
           <idno type="sanskrit">Ālambanaparīkṣā</idno>
@@ -14534,6 +15337,10 @@
           <link type="tibetan" target="Toh_3849" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5244</idno>
+          <idno type="otani">Otani 5245</idno>
+          <idno type="otani">Otani 5248</idno>
+          <idno type="otani">Otani 5249</idno>
           <idno type="nanjio">Nj 1255</idno>
           <idno type="nanjio">Nj 1256</idno>
           <idno type="sanskrit">Hastavākavṛtti</idno>
@@ -14558,6 +15365,10 @@
           <link type="tibetan" target="Toh_3849" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5244</idno>
+          <idno type="otani">Otani 5245</idno>
+          <idno type="otani">Otani 5248</idno>
+          <idno type="otani">Otani 5249</idno>
           <idno type="nanjio">Nj 1255</idno>
           <idno type="nanjio">Nj 1256</idno>
           <idno type="sanskrit">Hastavākavṛtti</idno>
@@ -14576,6 +15387,8 @@
           <link type="tibetan" target="Toh_4206" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5703</idno>
+          <idno type="otani">Otani 5704</idno>
           <idno type="nanjio">Nj 1172</idno>
           <idno type="nanjio">Nj 1173</idno>
           <idno type="sanskrit">Ālambanaparīkṣā</idno>
@@ -14604,6 +15417,7 @@
           <link type="tibetan" target="Toh_4208" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5707</idno>
           <idno type="nanjio">Nj 1216</idno>
           <idno type="sanskrit">Gyin-miṅ-gshauḥ-ciṅ-liḥi-lun</idno>
           <idno type="sanskrit">Nyāyapraveśa</idno>
@@ -14617,6 +15431,8 @@
           <link type="tibetan" target="Toh_3832" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5228</idno>
+          <idno type="otani">Otani 5232</idno>
           <idno type="nanjio">Nj 1251</idno>
           <idno type="sanskrit">Vigrahavyāvartanī</idno>
           <idno type="sanskrit">Vigrahavyāvartanī.</idno>
@@ -14647,6 +15463,7 @@
           <link type="tibetan" target="Toh_3934" cert="high">
             <note type="sources">acmuller; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5330</idno>
           <idno type="nanjio">Nj 1311</idno>
           <idno type="sanskrit">S&amp;#363;trasamuccaya</idno>
           <idno type="sanskrit">Sūtrasamuccaya</idno>
@@ -14670,6 +15487,11 @@
           <link type="tibetan" target="Toh_4549" cert="high">
             <note type="sources">cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5335</idno>
+          <idno type="otani">Otani 5336</idno>
+          <idno type="otani">Otani 5337</idno>
+          <idno type="otani">Otani 5438</idno>
+          <idno type="otani">Otani 5463</idno>
           <idno type="nanjio">Nj 1298</idno>
           <idno type="sanskrit">&amp;#346;ik&amp;#7779;&amp;#257;samuccaya</idno>
           <idno type="sanskrit">[Tathāgatahṛdayapādadeśanāvidhisahita-śatākṣararakṣā]</idno>
@@ -14684,6 +15506,7 @@
           <link type="tibetan" target="Toh_3905" cert="high">
             <note type="sources">acmuller; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5301</idno>
           <idno type="nanjio">Nj 1306</idno>
           <idno type="sanskrit">Mah&amp;#257;y&amp;#257;nalak&amp;#7779;a&amp;#7751;asamuccaya</idno>
           <idno type="sanskrit">Mahāyānalakṣaṇasamuccaya(-nāma)</idno>
@@ -14746,6 +15569,9 @@
           <link type="tibetan" target="Toh_4554" cert="low">
             <note type="sources">cbeta_tibetan</note>
           </link>
+          <idno type="otani">Otani 5236</idno>
+          <idno type="otani">Otani 5237</idno>
+          <idno type="otani">Otani 5468</idno>
           <idno type="sanskrit">Pratītyasamutpādahṛdayakārikā</idno>
           <idno type="sanskrit">Pratītyasamutpādahṛdayavyākhyāna</idno>
           <title type="chinese">緣起心頌</title>
@@ -14758,6 +15584,8 @@
           <link type="tibetan" target="Toh_4388" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5658</idno>
+          <idno type="otani">Otani 5928</idno>
           <idno type="nanjio">Nj 1253</idno>
           <idno type="sanskrit">Rājaparikathāratnamālā</idno>
           <idno type="sanskrit">Rājaparikathāratnamālī</idno>
@@ -14778,6 +15606,8 @@
           <link type="tibetan" target="Toh_4383" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5272</idno>
+          <idno type="otani">Otani 5929</idno>
           <idno type="nanjio">Nj 1354</idno>
           <idno type="sanskrit">Bodhi(sattva)cary&amp;#257;vat&amp;#257;ra</idno>
           <idno type="sanskrit">Bodhi(sattva)caryāvatāra.</idno>
@@ -14801,6 +15631,7 @@
           <link type="tibetan" target="Toh_3915" cert="high">
             <note type="sources">acmuller; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5310</idno>
           <idno type="nanjio">Nj 1301</idno>
           <idno type="sanskrit">(P&amp;#363;rva)Bh&amp;#257;van&amp;#257;krama</idno>
           <idno type="sanskrit">(Pūrva)Bhāvanākrama.</idno>
@@ -14820,7 +15651,7 @@
           <idno type="sanskrit">Mahāyānaśraddhotpādaśāstra.</idno>
           <title type="chinese">大乘起信論</title>
         </entry>
-        <entry xml:id="T32n1670B">
+        <entry xml:id="T32n1670A">
           <idno type="sanskrit">Mili&amp;#7751;&amp;#7693;apa&amp;ntilde;ha</idno>
           <idno type="sanskrit">Miliṇḍapañha.</idno>
         </entry>
@@ -14831,6 +15662,8 @@
           <link type="tibetan" target="Toh_4496" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5409</idno>
+          <idno type="otani">Otani 5682</idno>
           <idno type="nanjio">Nj 1440</idno>
           <idno type="nanjio">Nj 1441</idno>
           <idno type="nanjio">Nj 1464</idno>
@@ -14847,6 +15680,8 @@
           <link type="tibetan" target="Toh_4496" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5409</idno>
+          <idno type="otani">Otani 5682</idno>
           <idno type="nanjio">Nj 1440</idno>
           <idno type="nanjio">Nj 1441</idno>
           <idno type="nanjio">Nj 1464</idno>
@@ -14863,6 +15698,8 @@
           <link type="tibetan" target="Toh_4496" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5409</idno>
+          <idno type="otani">Otani 5682</idno>
           <idno type="nanjio">Nj 1440</idno>
           <idno type="nanjio">Nj 1441</idno>
           <idno type="nanjio">Nj 1464</idno>
@@ -14876,6 +15713,7 @@
           <link type="tibetan" target="Toh_1118" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 2010</idno>
           <idno type="nanjio">Nj 1070</idno>
           <idno type="sanskrit">Dharmadh&amp;#257;tustotra</idno>
           <idno type="sanskrit">Dharmadhātustava</idno>
@@ -14892,6 +15730,7 @@
           <link type="tibetan" target="Toh_1123" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 2015</idno>
           <idno type="nanjio">Nj 1066</idno>
           <idno type="sanskrit">K&amp;#257;yatrayastotra</idno>
           <idno type="sanskrit">Kāyatrayastotra</idno>
@@ -14903,6 +15742,7 @@
           <link type="tibetan" target="Toh_1147" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 2038</idno>
           <idno type="nanjio">Nj 1456</idno>
           <idno type="sanskrit">&amp;#346;atapa&amp;ntilde;ca&amp;#347;atikastotra</idno>
           <idno type="sanskrit">Śatapañcaśatikastotra.</idno>
@@ -14920,6 +15760,7 @@
           <link type="tibetan" target="Toh_1149" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 2040</idno>
           <idno type="nanjio">Nj 1081</idno>
           <idno type="sanskrit">Ga&amp;#7751;&amp;#7693;&amp;#299;stotrag&amp;#257;th&amp;#257;</idno>
           <idno type="sanskrit">Gaṇḍīstotragāthā</idno>
@@ -14931,6 +15772,7 @@
           <link type="tibetan" target="Toh_1168" cert="high">
             <note type="sources">cbeta_tibetan; existing; lancaster</note>
           </link>
+          <idno type="otani">Otani 2057</idno>
           <idno type="nanjio">Nj 1071</idno>
           <idno type="sanskrit">Aṣṭamahāsthānacaityavandanāstava</idno>
           <idno type="sanskrit">Aṣṭamahāsthānacaityavandanāstava.</idno>
@@ -14941,6 +15783,7 @@
           <link type="tibetan" target="Toh_1133" cert="high">
             <note type="sources">cbeta_tibetan; existing; lancaster</note>
           </link>
+          <idno type="otani">Otani 2024</idno>
           <idno type="nanjio">Nj 898</idno>
           <idno type="sanskrit">Aṣṭamahāsthānacaityastotra</idno>
           <idno type="sanskrit">Aṣṭamahāsthānacaityastotra.</idno>
@@ -14951,6 +15794,7 @@
           <link type="tibetan" target="Toh_3721" cert="high">
             <note type="sources">acmuller; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 4544</idno>
           <idno type="nanjio">Nj 1080</idno>
           <idno type="sanskrit">Gurupa&amp;ntilde;c&amp;#257;&amp;#347;ik&amp;#257;</idno>
           <idno type="sanskrit">Gurupañcāśikā</idno>
@@ -14962,6 +15806,7 @@
           <link type="tibetan" target="Toh_4017" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
+          <idno type="otani">Otani 5518</idno>
           <title type="chinese">妙法蓮華註</title>
           <title type="tibetan">དམ་པའི་ཆོས་བུཎྜ་རཱི་ཀའི་འགྲེལ་པ</title>
         </entry>
@@ -14969,11 +15814,13 @@
           <link type="tibetan" target="Toh_44" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 761</idno>
         </entry>
         <entry xml:id="T38n1775">
           <link type="tibetan" target="Toh_64" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 760,20</idno>
         </entry>
         <entry xml:id="T40n1809">
           <idno type="nanjio">Nj 1128</idno>
@@ -14999,6 +15846,8 @@
           <link type="tibetan" target="Toh_93" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 5647</idno>
+          <idno type="otani">Otani 760,49</idno>
           <idno type="nanjio">Nj 1466</idno>
           <idno type="sanskrit">Nandimitr&amp;#257;vad&amp;#257;na</idno>
           <idno type="sanskrit">Nandimitrāvadāna.</idno>
@@ -15010,6 +15859,7 @@
           <link type="tibetan" target="Toh_4138" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5639</idno>
           <idno type="nanjio">Nj 1284</idno>
           <idno type="nanjio">Nj 1285</idno>
           <idno type="nanjio">Nj 1286</idno>
@@ -15026,6 +15876,7 @@
           <link type="tibetan" target="Toh_5639" cert="low">
             <note type="sources">cbeta_sanskrit</note>
           </link>
+          <idno type="otani">Otani 5639</idno>
           <idno type="nanjio">Nj 1284</idno>
           <idno type="nanjio">Nj 1285</idno>
           <idno type="nanjio">Nj 1286</idno>
@@ -15042,6 +15893,7 @@
           <link type="tibetan" target="Toh_5639" cert="low">
             <note type="sources">cbeta_sanskrit</note>
           </link>
+          <idno type="otani">Otani 5639</idno>
           <idno type="nanjio">Nj 1284</idno>
           <idno type="nanjio">Nj 1285</idno>
           <idno type="nanjio">Nj 1286</idno>
@@ -15055,6 +15907,7 @@
           <link type="tibetan" target="Toh_259" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 925</idno>
           <idno type="nanjio">Nj 1504</idno>
           <title type="chinese">Li tai san pao chi</title>
         </entry>
@@ -15078,6 +15931,7 @@
           <link type="tibetan" target="Toh_4145" cert="high">
             <note type="sources">acmuller; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="otani">Otani 5646</idno>
           <idno type="nanjio">Nj 1343</idno>
           <idno type="sanskrit">A&amp;#347;okar&amp;#257;jas&amp;#363;tra</idno>
           <idno type="sanskrit">Aśokarājasūtra.</idno>
@@ -15089,8 +15943,15 @@
           <link type="tibetan" target="Toh_21" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 160</idno>
           <idno type="nanjio">Nj 1494</idno>
           <title type="chinese">Ta tz'u en ssu san ts'ang fa shih chuan</title>
+        </entry>
+        <entry xml:id="T50n2059">
+          <link type="tibetan" target="Toh_109" cert="low" />
+          <idno type="otani">Otani 777</idno>
+          <idno type="nanjio">Nj 1490</idno>
+          <title type="chinese">Kao seng chuan</title>
         </entry>
         <entry xml:id="T54n2125">
           <link type="tibetan" target="Toh_1" cert="low">
@@ -15105,6 +15966,10 @@
           <link type="tibetan" target="Toh_336" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 1001</idno>
+          <idno type="otani">Otani 1002</idno>
+          <idno type="otani">Otani 1030</idno>
+          <idno type="otani">Otani 965</idno>
           <idno type="nanjio">Nj 1492</idno>
           <title type="chinese">Nan hai chi kuei nei fa chuan</title>
         </entry>
@@ -15112,6 +15977,7 @@
           <link type="tibetan" target="Toh_64" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 760,20</idno>
           <title type="chinese">I ch'ieh ching yin i</title>
         </entry>
         <entry xml:id="T54n2137">
@@ -15136,6 +16002,9 @@
           <link type="tibetan" target="Toh_64" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 760,13</idno>
+          <idno type="otani">Otani 760,14</idno>
+          <idno type="otani">Otani 760,20</idno>
           <idno type="nanjio">Nj 1485</idno>
           <title type="chinese">K'ai y&amp;uuml;an shih chiao lu</title>
         </entry>
@@ -15143,17 +16012,20 @@
           <link type="tibetan" target="Toh_64" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 760,20</idno>
           <title type="chinese">Chen y&amp;uuml;an hsin ting shih chiao mu lu</title>
         </entry>
         <entry xml:id="T85n2777">
           <link type="tibetan" target="Toh_64" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 760,20</idno>
         </entry>
         <entry xml:id="T85n2871">
           <link type="tibetan" target="Toh_264" cert="low">
             <note type="sources">rkts</note>
           </link>
+          <idno type="otani">Otani 930</idno>
           <idno type="sanskrit">ārya-mahāmokṣadiśunpuṣyakrokramtyapāpaṃśodhana-nāma-viharatisma?</idno>
         </entry>
         <entry xml:id="T85n2881">
@@ -15163,17 +16035,21 @@
           <link type="tibetan" target="Toh_355" cert="low">
             <note type="sources">existing</note>
           </link>
+          <idno type="otani">Otani 1023</idno>
+          <idno type="otani">Otani 1024</idno>
         </entry>
         <entry xml:id="T85n2883">
           <link type="tibetan" target="Toh_243" cert="low">
             <note type="sources">rkts</note>
           </link>
+          <idno type="otani">Otani 909</idno>
           <idno type="sanskrit">saddharmarāja-mahāyānasūtra</idno>
         </entry>
         <entry xml:id="T85n2897">
           <link type="tibetan" target="Toh_1067" cert="low">
             <note type="sources">rkts</note>
           </link>
+          <idno type="otani">Otani 693</idno>
         </entry>
       </linkGrp>
     </body>

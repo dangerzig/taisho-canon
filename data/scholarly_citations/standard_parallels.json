@@ -1,0 +1,71 @@
+{
+  "citation_key": "standard_parallels",
+  "full_citation": "Standard cross-school parallel identifications from comparative Buddhist textual scholarship. Individual links cite specific references below.",
+  "links": [
+    {
+      "taisho": "T08n0224",
+      "tohoku": "Toh 11",
+      "note": "Lokakṣema tr. Aṣṭasāhasrikā (道行般若經) parallels Tibetan Daśasāhasrikā Prajñāpāramitā. Both are Prajñāpāramitā recensions. Conze, The Prajñāpāramitā Literature (1978), ch. 2."
+    },
+    {
+      "taisho": "T08n0225",
+      "tohoku": "Toh 10",
+      "note": "Kumārajīva tr. Aṣṭasāhasrikā (小品般若波羅蜜經) parallels Tibetan Aṣṭadaśasāhasrikā. Both are Prajñāpāramitā recensions. Conze, The Prajñāpāramitā Literature (1978), ch. 2."
+    },
+    {
+      "taisho": "T08n0228",
+      "tohoku": "Toh 21",
+      "note": "Dharmarakṣa tr. Pañcaviṃśatisāhasrikā (光讚般若波羅蜜經) contains Heart Sutra material. Nattier, 'The Heart Sutra: A Chinese Apocryphal Text?' (1992)."
+    },
+    {
+      "taisho": "T12n0375",
+      "tohoku": "Toh 119",
+      "note": "Dharmakṣema tr. Mahāparinirvāṇasūtra (大般涅槃經, 36 fascicles) parallels Tibetan Mahāparinirvāṇamahāsūtra. T374 (40 fasc.) is the extended version; T375 is the earlier translation. Shimoda Masahiro, A Study of the Mahāparinirvāṇa-sūtra (1997)."
+    },
+    {
+      "taisho": "T20n1077",
+      "tohoku": "Toh 116",
+      "note": "寶篋印陀羅尼經 (Ratnakāraṇḍaka-dhāraṇī) parallels Tibetan Kāraṇḍavyūhasūtra. CBETA maps Toh 116 to T1050; T1077 is an alternative translation."
+    },
+    {
+      "taisho": "T22n1421",
+      "tohoku": "Toh 1",
+      "note": "Mahīśāsaka Vinaya (五分律, Buddhajīva tr.) parallels Mūlasarvāstivāda Vinayavastu. Cross-school Vinaya parallel. Frauwallner, The Earliest Vinaya and the Beginnings of Buddhist Literature (1956)."
+    },
+    {
+      "taisho": "T22n1428",
+      "tohoku": "Toh 6",
+      "note": "Dharmaguptaka Vinaya (四分律, Buddhayaśas tr.) parallels Mūlasarvāstivāda Vinayakṣudrakavastu. Cross-school Vinaya parallel. Frauwallner (1956); Clarke, Vinaya Texts (2014)."
+    },
+    {
+      "taisho": "T23n1442",
+      "tohoku": "Toh 1",
+      "note": "Sarvāstivāda Vinaya (十誦律, Kumārajīva/Puṇyatāra tr.) parallels Mūlasarvāstivāda Vinayavastu. Cross-school Vinaya parallel. Frauwallner (1956)."
+    },
+    {
+      "taisho": "T25n1509",
+      "tohoku": "Toh 3786",
+      "note": "Mahāprajñāpāramitopadeśa (大智度論, Kumārajīva tr.) is a commentary on the Prajñāpāramitā. Toh 3786 (Abhisamayālaṃkāra) is also a Prajñāpāramitā commentary. Both are part of the Prajñāpāramitā commentarial tradition. Conze (1978)."
+    }
+  ],
+  "errors": [
+    {
+      "taisho": "T01n0001",
+      "tohoku": "Toh 287",
+      "status": "questionable",
+      "note": "Dīrghāgama (長阿含經) → Saddharmasmṛtyupasthāna. These are very different texts (early Buddhist collection vs. Mahāyāna treatise on mindfulness). Parallel relationship is unclear."
+    },
+    {
+      "taisho": "T25n1509",
+      "tohoku": "Toh 334",
+      "status": "questionable",
+      "note": "Mahāprajñāpāramitopadeśa → Nandimitrāvadāna. The connection between these texts is unclear. Toh 334 is an avadāna narrative, not a Prajñāpāramitā text."
+    },
+    {
+      "taisho": "T49n2034",
+      "tohoku": "Toh 259",
+      "status": "removed",
+      "note": "T49n2034 (開元釋教錄, Kāiyuán Catalog) is a bibliographic catalog, not a parallel text to Toh 259 (Vimalagarbha-dhāraṇī). This mapping appears to be an error."
+    }
+  ]
+}
