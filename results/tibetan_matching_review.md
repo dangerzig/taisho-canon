@@ -1,0 +1,2893 @@
+# Tibetan-Chinese Concordance Matching Review
+
+## Summary
+
+- Total candidate pairs evaluated: 2352
+- MATCH verdicts: 620
+  - High confidence (>=90): 103
+  - Medium confidence (60-89): 517
+  - Low confidence (<60): 0
+- NO_MATCH verdicts: 1688
+- UNCERTAIN/ERROR: 35
+- New Taisho texts with Tibetan parallels: 150
+- New CBETA entries matched: 144
+
+## High-Confidence Matches (auto-accept)
+
+- **T02n0138** (佛說十一想思念如來經) <-> CBETA #311 (聖十一想說示經)
+  - Confidence: 92%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan '聖十一想說示經' (Noble Eleven-Fold Meditation Teaching) perfectly matches Taishō T02n0138 '佛說十一想思念如來經' (Eleven Contemplations on the Tathāgata). Both titles explicitly reference 'eleven' (十一) meditative reflections. Opening with 如是我聞, same translator tradition, content lists eleven contemplative themes—title semantics, structure, and content fully aligned.
+- **T05n0220** (大般若波羅蜜多經(第1卷-第200卷)) <-> CBETA #11 (聖般若波羅蜜多一萬八千頌大乘經)
+  - Confidence: 92%
+  - Signals: chinese_title_overlap
+  - Reason: Excellent match: T05n0220 is the 大般若波羅蜜多經 (Mahāprajñāpāramitā Sutra) translated by Xuanzang, containing the daśasāhasrikā (10,000-verse) prajñāpāramitā material. Sanskrit title Ārya-daśasāhasrikā-prajñāpāramitā matches. At 1.5+ million characters across 200 volumes, the length is consistent with an 18,000-verse comprehensive text. Volume 5 (T05) falls within sūtra section (vols 1-21).
+- **T05n0220** (大般若波羅蜜多經(第1卷-第200卷)) <-> CBETA #3790 (般若波羅蜜多二萬五千（頌）)
+  - Confidence: 95%
+  - Signals: chinese_title_overlap
+  - Reason: T05n0220 is the famous 600-volume 'Great Prajñāpāramitā Sutra' (大般若波羅蜜多經) translated by Xuanzang. The Sanskrit title Pañcaviṁśatisāhasrikāprajñāpāramitā matches perfectly (25,000 line/verse version). Massive length (1.5M+ characters) is consistent with a complete Prajñāpāramitā canon. Section and genre alignment are perfect.
+- **T06n0220** (大般若波羅蜜多經(第201卷-第400卷)) <-> CBETA #11 (聖般若波羅蜜多一萬八千頌大乘經)
+  - Confidence: 90%
+  - Signals: chinese_title_overlap
+  - Reason: Excellent match: T06n0220 continues the 大般若波羅蜜多經 (volumes 201-400), the same Xuanzang translation as pair 5. Covers the daśasāhasrikā prajñāpāramitā material. The enormous length (1.5+ million characters) is consistent with an 18,000-verse text. Volume 6 (T06) falls within sūtra section.
+- **T06n0220** (大般若波羅蜜多經(第201卷-第400卷)) <-> CBETA #3790 (般若波羅蜜多二萬五千（頌）)
+  - Confidence: 94%
+  - Signals: chinese_title_overlap
+  - Reason: T06n0220 is volumes 201-400 of the Great Prajñāpāramitā Sutra (大般若波羅蜜多經) by Xuanzang—continuation of the same work as Pair 1. The Sanskrit title and Tibetan entry match perfectly. Massive length (1.5M+ characters), perfect genre alignment. This is Part 2 of the parallel text.
+- **T06n0220** (大般若波羅蜜多經(第201卷-第400卷)) <-> CBETA #3807 (聖般若波羅蜜多十萬（頌）廣註疏)
+  - Confidence: 92%
+  - Signals: chinese_title_overlap
+  - Reason: T06n0220 is the Great Prajñāpāramitā Sutra (大般若波羅蜜多經) translated by Xuanzang, spanning 600 fascicles. This corresponds to the 100,000-line (Śatasāhasrikā) Prajñāpāramitā mentioned in the Tibetan catalogue. The massive length (1.5M characters) and systematic structure match a complete Śatasāhasrikā translation. The opening and closing formulas (爾時世尊...聞佛所說皆大歡喜信受奉行) are standard for this text family.
+- **T07n0220** (大般若波羅蜜多經(第401卷-第600卷)) <-> CBETA #11 (聖般若波羅蜜多一萬八千頌大乘經)
+  - Confidence: 90%
+  - Signals: chinese_title_overlap
+  - Reason: Excellent match: T07n0220 continues the 大般若波羅蜜多經 (volumes 401-600), the same Xuanzang translation. Covers the daśasāhasrikā prajñāpāramitā material. At 1.5+ million characters, consistent with an 18,000-verse comprehensive text. Volume 7 (T07) falls within sūtra section (vols 1-21).
+- **T07n0220** (大般若波羅蜜多經(第401卷-第600卷)) <-> CBETA #3790 (般若波羅蜜多二萬五千（頌）)
+  - Confidence: 94%
+  - Signals: chinese_title_overlap
+  - Reason: T07n0220 is volumes 401-600 of the Great Prajñāpāramitā Sutra by Xuanzang—continuation of the same work. Sanskrit title and genre match perfectly. Massive length (1.58M+ characters) consistent with Prajñāpāramitā canon. This is Part 3 of the parallel text.
+- **T08n0223** (摩訶般若波羅蜜經) <-> CBETA #3790 (般若波羅蜜多二萬五千（頌）)
+  - Confidence: 92%
+  - Signals: sanskrit_fuzzy
+  - Reason: T08n0223 (摩訶般若波羅蜜經, Kumārajīva translation) is the standard translation of the Pañcaviṁśatisāhasrikā-prajñāpāramitā. Sanskrit title matches perfectly. Opening contains proper sūtra formula (如是我聞). Genre (般若部) matches Taishō vol. 8 (sūtra section). Length (~286K characters) is appropriate for a 25,000-line prajñāpāramitā text. This is the most widely used version.
+- **T08n0235** (金剛般若波羅蜜經) <-> CBETA #3817 (聖薄伽梵母般若波羅蜜多金剛能斷廣註)
+  - Confidence: 90%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan entry is Diamond Sutra commentary (vajracchedikā-ṭīkā). T08n0235 is Kumārajīva's Diamond Sutra translation, the most widely used version (5164 characters, with dhāraṇī). Opening (如是我聞) and closing confirm Diamond Sutra. This would be the base text for the commentary specified in the Tibetan entry.
+- **T08n0251** (般若波羅蜜多心經) <-> CBETA #3819 (聖般若波羅蜜多心（經）解說)
+  - Confidence: 92%
+  - Signals: chinese_title_substring
+  - Reason: T08n0251 is the Heart Sutra translated by Xuanzang (玄奘), titled 般若波羅蜜多心經. Sanskrit title Prajñāpāramitāhṛdaya corresponds directly to the Tibetan catalogue Sanskrit 'hṛdaya' term. Opening formula, closing dhāraṇī section, and 1068-char length consistent with the Heart Sutra proper (not a commentary, but the base text). Pre-filter signal 'chinese_title_substring' confirms 心經 match.
+- **T08n0251** (般若波羅蜜多心經) <-> CBETA #3822 (般若波羅蜜多心（經）義正知)
+  - Confidence: 92%
+  - Signals: chinese_title_substring
+  - Reason: T08n0251 is the standard 'Heart Sutra' (般若波羅蜜多心經) translated by Xuanzang. Though the opening shows a Ming emperor's preface (not the original sūtra opening), the closing matches the classic Heart Sutra mantra ending. The Tibetan entry's Sanskrit 'hṛdaya' and Chinese 'heart' (心) align perfectly. This is the Heart Sutra itself.
+- **T08n0252** (普遍智藏般若波羅蜜多心經) <-> CBETA #2640 (般若波羅蜜多心成就法)
+  - Confidence: 90%
+  - Signals: sanskrit_fuzzy
+  - Reason: Strong match. Both titles reference Prajñāpāramitāhṛdaya (Heart Sūtra). The Tibetan is a tantric sādhana based on the Heart Sūtra, and T08n0252 is an expanded version of the Heart Sūtra with narrative frame ('如是我聞'). The genre compatibility works: tantric ritual texts can be based on prajñāpāramitā materials. Length (648 chars) is appropriate for an expanded Heart Sūtra with sādhana elements.
+- **T08n0253** (般若波羅蜜多心經) <-> CBETA #3819 (聖般若波羅蜜多心（經）解說)
+  - Confidence: 92%
+  - Signals: chinese_title_substring
+  - Reason: T08n0253 (般若波羅蜜多心經) is a direct match. Title semantics align perfectly: both refer to the Heart Sutra (hṛdaya). Sanskrit title Ārya-prajñāpāramitāhṛdaya corresponds to T08n0253's title. Genre compatible (般若部, sūtra vol 8). Opening matches standard sūtra formula (如是我聞). Length (545 chars) appropriate for Heart Sutra commentary expansion. The text explicitly teaches deep prajñāpāramitā doctrine with Avalokiteśvara and Śāriputra dialogue, matching the Tibetan entry perfectly.
+- **T08n0253** (般若波羅蜜多心經) <-> CBETA #3822 (般若波羅蜜多心（經）義正知)
+  - Confidence: 92%
+  - Signals: chinese_title_substring
+  - Reason: T08n0253 is titled 'Heart Prajñāpāramitā Sutra' (般若波羅蜜多心經). The Tibetan entry's Sanskrit 'Ārya-prajñāpāramitāhṛdayārthaparijñāna' and Chinese '般若波羅蜜多心（經）義正知' both refer to Heart Sutra meaning-clarification. Opening matches Heart Sutra structure (Avalokiteśvara teaching). Length (~545 chars) consistent with Heart Sutra. Pre-filter signal confirms substring match.
+- **T08n0255** (般若波羅蜜多心經) <-> CBETA #3818 (聖般若波羅蜜多心（經）廣疏)
+  - Confidence: 90%
+  - Signals: chinese_title_substring
+  - Reason: T08n0255 is the Heart Sutra (般若波羅蜜多心經) by Facheng, containing characteristic structure: Avalokiteśvara (觀自在菩薩) teaching Śāriputra about five aggregates being empty (五蘊體性皆空). Perfect title match and content alignment with Tibetan entry's Heart Sutra focus.
+- **T08n0255** (般若波羅蜜多心經) <-> CBETA #3819 (聖般若波羅蜜多心（經）解說)
+  - Confidence: 90%
+  - Signals: chinese_title_substring
+  - Reason: T08n0255 (般若波羅蜜多心經) is another Heart Sutra translation. Title exact semantic match: 般若波羅蜜多心經 = prajñāpāramitā-hṛdaya-sūtra. Genre fully compatible (般若部, sūtra vol 8). Opening formula correct (如是我聞). Content matches perfectly: Avalokiteśvara, emptiness of five aggregates, Śāriputra dialogue, dharaṇī sections typical of Heart Sutra traditions. Length (579 chars) consistent with Heart Sutra variants. Translator (法成) attribution matches historical records.
+- **T08n0258** (佛說聖佛母小字般若波羅蜜多經) <-> CBETA #23 (一切如來母般若波羅蜜多一字母（經）)
+  - Confidence: 92%
+  - Signals: chinese_title_overlap
+  - Reason: Strong match: both titles refer to the 'One-Letter Mother' (Ekākṣarīmātā) Prajñāpāramitā text. The Tibetan 'yi-ge gcig-ma' and Chinese '小字' both indicate 'one letter/small letter'. The text opens with standard sūtra formula, mentions Avalokiteśvara requesting the teaching, and the length (1276 chars) is appropriate for this short Prajñāpāramitā text. Contains dhāraṇī as expected.
+- **T15n0586** (思益梵天所問經) <-> CBETA #158 (聖梵天所問大乘經)
+  - Confidence: 95%
+  - Signals: chinese_title_overlap
+  - Reason: The Taishō text (T15n0586) 'Thinking Benefit Brahma's Questions' (思益梵天所問經) is an earlier translation that shares the same Sanskrit source as T15n0587. The opening features Brahma, standard sūtra opening, and the closing explicitly identifies the text as 'Brahma's Questions' (梵天所問). This is a parallel translation by Kumārajīva. All criteria align perfectly.
+- **T15n0586** (思益梵天所問經) <-> CBETA #159 (聖梵施所問大乘經)
+  - Confidence: 92%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics align well: Tibetan 'tshaṅs-pas-byin-gyis shus-pa' (Brahma's question) matches Sanskrit brahmadatta-paripṛcchā. Chinese 思益梵天所問 (Siyi Brahma's question) is a variant translation of the same text. The Taishō closing explicitly names it as '思益梵天所問'. Genre (經部/sūtra, T15), length (~37k chars), and opening (standard sūtra formula) all consistent. High confidence match.
+- **T15n0587** (勝思惟梵天所問經) <-> CBETA #158 (聖梵天所問大乘經)
+  - Confidence: 92%
+  - Signals: chinese_title_overlap
+  - Reason: The Taishō text (T15n0587) 'Victorious Thinking Brahma's Questions' (勝思惟梵天所問經) directly parallels the Sanskrit title Brahmaparipṛcchā (Brahma's Questions). The opening presents Brahma and bodhisattvas in the standard sūtra format. The closing explicitly names it as 'Victorious Thinking Brahma's Questions' with Brahma as interlocutor. Title semantics, Sanskrit correspondence, and content all align.
+- **T17n0727** (十不善業道經) <-> CBETA #4504 (十不善業道說示)
+  - Confidence: 92%
+  - Signals: sanskrit_exact
+  - Reason: Strong alignment across all criteria: (1) Title semantics: 十不善業道說示 (Tibetan) vs 十不善業道經 (Chinese) both refer to the ten unwholesome paths of action; (2) Sanskrit titles match exactly (Daśakuśalakarmapathanirdeśa = ten-good-action-path-exposition, with 'good' being standard alternative term); (3) Genre compatible: both are śāstra/instructional texts from Atiśa's collection; (4) Content matches perfectly—opening immediately explains the ten unwholesome deeds (killing, stealing, sexual misconduct, lying, etc.) with detailed enumeration matching the structure; (5) Length of 514 characters is appropriate for a doctrinal exposition text. Pre-filter signal 'sanskrit_exact' with 1.0 score confirms high confidence.
+- **T17n0772** (大乘四法經) <-> CBETA #249 (聖說四法大乘經)
+  - Confidence: 90%
+  - Signals: chinese_title_overlap
+  - Reason: Perfect match: Tibetan 聖說四法大乘經 (Ārya-caturdharmanirdeśa) directly corresponds to T17n0772 大乘四法經. Both explicitly cover four dharmas taught by Buddha to bodhisattvas. Opening formula, closing 歡喜奉行, and concise length (291 chars) consistent with genre. Sanskrit and Chinese titles align perfectly.
+- **T17n0772** (大乘四法經) <-> CBETA #250 (四法經)
+  - Confidence: 90%
+  - Signals: chinese_title_substring
+  - Reason: Title 大乘四法經 directly matches Caturdharmaka-sūtra. Sanskrit title alignment confirmed. Opens with 如是我聞 and proper sūtra frame. Content teaches four dharmas: 菩提心, 善知識, 堪忍, 阿練若. Translator (地婆訶羅) and length (291 chars) consistent with other recension. Genre (經部) and volume range (T17) correct.
+- **T17n0774** (大乘四法經) <-> CBETA #250 (四法經)
+  - Confidence: 92%
+  - Signals: chinese_title_substring
+  - Reason: Title 大乘四法經 matches Caturdharmaka-sūtra (四法經). Sanskrit titles align. Text opens with proper sūtra formula (如是我聞) and closes with standard colophon. Content concerns four dharmas for bodhisattva practice. Length (3596 chars) consistent with Mahāyāna sūtra. Genre (經部/sūtra) matches Taishō vol. 17.
+- **T18n0901** (陀羅尼集經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 95%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan entry title '陀羅尼' from section '陀羅尼集' corresponds directly to '陀羅尼集經' (Dhāraṇī Collection Scripture). This is the canonical text for the dhāraṇī collection section. Length (136451 characters) is substantial and consistent with a major collection. Translator (Amoghavajra/阿地瞿多) and opening confirm this is the primary dhāraṇī compilation text referenced in the catalogue section header.
+- **T18n0901** (陀羅尼集經) <-> CBETA #1075 (右繞陀羅尼)
+  - Confidence: 90%
+  - Signals: chinese_title_overlap
+  - Reason: Direct match: Tibetan catalogue entry '右繞陀羅尼' corresponds to T18n0901 '陀羅尼集經' (Dharani Collection Sutra). Both share identical Sanskrit section designation. T18n0901 is the canonical Dharani Collection by Amoghavajra (阿地瞿多), the standard text for this category. The extensive length (136,451 characters) and opening structure confirm this is the comprehensive dharani compilation.
+- **T18n0908** (金剛頂瑜伽護摩儀軌) <-> CBETA #1965 (護摩儀軌)
+  - Confidence: 90%
+  - Signals: chinese_title_substring
+  - Reason: T18n0908 '金剛頂瑜伽護摩儀軌' is a direct match with Tibetan catalogue entry '護摩儀軌'. Both are homa (護摩/Sbyin-sreg) ritual texts from tantric tradition. Title semantics align perfectly, translated by 不空, contains extensive dhāraṇī sections. Length (4024 chars) and tantric genre placement are appropriate.
+- **T18n0908** (金剛頂瑜伽護摩儀軌) <-> CBETA #2935 (護摩儀軌)
+  - Confidence: 90%
+  - Signals: chinese_title_substring
+  - Reason: T18n0908 '金剛頂瑜伽護摩儀軌' has identical title structure to Pair 0's Taishō text (both by 不空); contains identical opening passage describing five homa types (息災、增益、降伏、鉤召、敬愛); clear parallel text with nearly identical content and translator.
+- **T18n0908** (金剛頂瑜伽護摩儀軌) <-> CBETA #3101 (護摩)
+  - Confidence: 91%
+  - Signals: chinese_title_substring
+  - Reason: T18n0908 'Vajra Peak Yoga Homa Ritual' by Bukong. Tibetan entry is generic 護摩. Title explicitly contains 護摩儀軌 (homa ritual). Opening states 'I now explain homa' (我今說護摩). Both texts belong to tantra section. Detailed systematic exposition of five types of homa practices with specific construction instructions.
+- **T18n0909** (金剛頂瑜伽護摩儀軌) <-> CBETA #2935 (護摩儀軌)
+  - Confidence: 92%
+  - Signals: chinese_title_substring
+  - Reason: T18n0909 title '金剛頂瑜伽護摩儀軌' contains '護摩儀軌' (homa ritual); Sanskrit Homavidhi matches; both in tantra section; opening describes homa ritual types and procedures matching expected tantric content.
+- **T19n0919** (諸佛心印陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 90%
+  - Signals: chinese_title_substring
+  - Reason: Both are dhāraṇī texts with matching genre (陀羅尼集). T19n0919 (諸佛心印陀羅尼經) contains standard sūtra opening (如是我聞), describes dhāraṇī transmission, and ends with standard closure formula. Title includes 陀羅尼 matching Tibetan entry. Length (521 chars) is reasonable for a shorter dhāraṇī sūtra. Volume 19 is appropriate for dhāraṇī texts.
+- **T19n0937** (佛說大乘聖無量壽決定光明王如來陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 90%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan catalogue entry '陀羅尼' matches T19n0937 '佛說大乘聖無量壽決定光明王如來陀羅尼經' (Buddha speaks of the Mahāyāna Holy Immeasurable Life Decisive Light King Tathāgata Dhāraṇī Sūtra). Both are dhāraṇī texts with standard sūtra opening (如是我聞). Volume 19 is appropriate. Length (2277 characters) is consistent with complete dhāraṇī sūtra. Contains dhāraṇī sections as expected.
+- **T19n0943** (佛說無能勝幡王如來莊嚴陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 91%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan catalogue entry '陀羅尼' matches T19n0943 '佛說無能勝幡王如來莊嚴陀羅尼經' (Buddha speaks of the Invincible Banner King Tathāgata Adornment Dhāraṇī Sūtra). Both are dhāraṇī texts with standard sūtra opening (如是我聞). Volume 19 is appropriate for dhāraṇī. Length (1021 characters) is reasonable for a shorter dhāraṇī sūtra. Text contains dhāraṇī sections as expected.
+- **T19n0956** (大陀羅尼末法中一字心呪經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 90%
+  - Signals: chinese_title_substring
+  - Reason: T19n0956 (大陀羅尼末法中一字心呪經) is explicitly a dhāraṇī scripture in Taishō vol. 19. Tibetan catalogue entry lists '陀羅尼' in 陀羅尼集. Opening '如是我聞' confirms sūtra structure. Title contains both 陀羅尼 and 經, clearly indicating dhāraṇī sūtra. Length (6336 chars) appropriate. Strong semantic match.
+- **T19n0959** (頂輪王大曼荼羅灌頂儀軌) <-> CBETA #1269 (灌頂儀軌)
+  - Confidence: 90%
+  - Signals: chinese_title_substring
+  - Reason: Both texts are about 灌頂儀軌 (abhiṣeka/initiation ritual) in tantric context. The Taishō text is specifically about 頂輪王大曼荼羅灌頂儀軌 (Uṣṇīṣacakravartin Maṇḍala Abhiṣeka Vidhi), which is a specific type of initiation ritual. Both are from 怛特羅部 (tantra section), contain dhāraṇī sections, and the Chinese title of the catalogue entry (灌頂儀軌) is contained within the full Taishō title. The length (1916 chars) is appropriate for a ritual manual.
+- **T19n0963** (佛說熾盛光大威德消災吉祥陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 92%
+  - Signals: chinese_title_substring
+  - Reason: Title matches (陀羅尼), section is 陀羅尼集. T19n0963 is a dhāraṇī text. Contains closing formula with assembly and rejoicing (聞佛所說皆大歡喜信受奉行). Text focuses on protective dhāraṇī for disaster prevention and auspiciousness. Length (877 characters) is typical for a single dhāraṇī scripture.
+- **T19n0969** (佛頂最勝陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 90%
+  - Signals: chinese_title_substring
+  - Reason: Title matches (陀羅尼), section is 陀羅尼集. T19n0969 is a dhāraṇī scripture with multiple mantras. Closing shows characteristic dhāraṇī practice instructions and mantra texts. Contains standard closing formula with assembly rejoicing. Length (3146 characters) consistent with a comprehensive dhāraṇī compendium.
+- **T19n0974A** (最勝佛頂陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 90%
+  - Signals: chinese_title_substring
+  - Reason: T19n0974A 'Most Victorious Buddha Crown Dhāraṇī Sūtra' has '陀羅尼' explicitly in the title and consists primarily of mantric text in Sanskrit transliteration. The brief length (589 chars) is typical for concentrated dhāraṇī texts. Fits the dhāraṇī collection perfectly.
+- **T19n0982** (佛母大孔雀明王經) <-> CBETA #587 (聖大孔雀母心)
+  - Confidence: 92%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan 'rma-bya chen-moḥi sñiṅ-po' (Mahāmayūrī heart/essence) directly corresponds to T19n0982 '佛母大孔雀明王經' (Buddha Mother Great Peacock Sovereign Tantra). Both refer to the Mahāmayūrī dhāraṇī queen. Genre classification (十萬怛特羅部 = tantra section vol 19) matches. Length (20,597 chars) consistent with tantra text. Translator Amoghavajra (不空) is documented translator of this work.
+- **T19n0997** (守護國界主陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 90%
+  - Signals: chinese_title_substring
+  - Reason: Title contains 陀羅尼 and matches section. T19n0997 is a full dhāraṇī sūtra with proper opening formula (如是我聞), extensive dhāraṇī sections, and appropriate length (~68K characters). Genre compatibility: Taishō vol. 19 (sūtra range) aligns with 陀羅尼集 section classification.
+- **T19n1018** (出生無邊門陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 90%
+  - Signals: chinese_title_substring
+  - Reason: T19n1018 is a dhāraṇī sūtra with explicit title 出生無邊門陀羅尼經. Opens with 如是我聞, structured as a Buddhist sūtra. Contains dhāraṇī sections. Matches Tibetan section (陀羅尼集) and genre expectations for volume 19.
+- **T19n1022B** (一切如來心祕密全身舍利寶篋印陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 91%
+  - Signals: chinese_title_substring
+  - Reason: T19n1022B 'All Tathāgatas' Heart Secret Complete Sarīra Reliquary Seal Dhāraṇī Sūtra' is explicitly titled with '陀羅尼' and follows standard sūtra format with 'thus have I heard' opening. Contains significant dhāraṇī content (3584 chars suggests a longer dhāraṇī sūtra). Fits dhāraṇī collection.
+- **T19n1024** (無垢淨光大陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 92%
+  - Signals: chinese_title_substring
+  - Reason: T19n1024 titled 無垢淨光大陀羅尼經is a full dhāraṇī sūtra. Opens with 如是我聞, contains assembly of celestial beings, extensive dhāraṇī material. Length (5117 characters) consistent with major dhāraṇī texts. Perfect match to Tibetan category.
+- **T20n1043** (請觀世音菩薩消伏毒害陀羅尼呪經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 92%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan catalogue entry '陀羅尼' (dhāraṇī) matches the Taishō text T20n1043 which is titled '請觀世音菩薩消伏毒害陀羅尼呪經' (Request to Avalokiteśvara Bodhisattva's Dhāraṇī Spell Sūtra). Both are dhāraṇī texts. The opening formula (如是我聞) is standard for sūtra. T20n1043 is in vol. 20 which is appropriate for dhāraṇī texts. Length (4705 characters) is consistent with a complete sūtra. The text contains dhāraṇī sections as expected.
+- **T20n1054** (聖觀自在菩薩一百八名經) <-> CBETA #706 (聖觀自在一百八名)
+  - Confidence: 92%
+  - Signals: chinese_title_overlap
+  - Reason: Sanskrit titles match exactly: Ārya-avalokiteśvaranāmāṣṭaśataka = 聖觀自在菩薩一百八名經. Chinese titles are semantically identical. Text opens with standard sūtra formula (如是我聞). Format and content both describe 108 names enumeration. Length (1491 CJK characters) is appropriate for a name-list dhāraṇī text.
+- **T20n1054** (聖觀自在菩薩一百八名經) <-> CBETA #874 (聖觀自在一百八名陀羅尼真言)
+  - Confidence: 92%
+  - Signals: chinese_title_overlap
+  - Reason: Strong title match: Tibetan entry 聖觀自在一百八名陀羅尼真言 (Holy Avalokiteśvara's 108 Names Dhāraṇī) matches T20n1054 聖觀自在菩薩一百八名經 (Holy Avalokiteśvara Bodhisattva's 108 Names Sūtra). Same deity, same 108-names structure. Opening confirms sūtra format (如是我聞), Chinese volume T20 is appropriate for dhāraṇī/tantra material. Length (1491 chars) reasonable for named dhāraṇī collection.
+- **T20n1055** (佛說聖觀自在菩薩梵讚) <-> CBETA #2731 (聖觀自在讚)
+  - Confidence: 90%
+  - Signals: chinese_title_overlap
+  - Reason: Strong match. The Tibetan 'Āryāvalokiteśvarastotra' (Avalokiteśvara praise) matches T20n1055 '佛說聖觀自在菩薩梵讚' perfectly. 聖觀自在 = Ārya-avalokiteśvara. The text contains Sanskrit verses in transliteration (梵讚 = Sanskrit hymn). The opening includes a Chinese imperial praise followed by Sanskrit verses, typical format for stotra texts.
+- **T20n1055** (佛說聖觀自在菩薩梵讚) <-> CBETA #2735 (吉祥,聖觀自在讚)
+  - Confidence: 90%
+  - Signals: chinese_title_overlap
+  - Reason: Same as Pair 8. The Tibetan 'Śrī-āryāvalokiteśvarastuti' (with Śrī = 吉祥 prefix, stuti = praise) matches the same T20n1055. The addition of 'Śrī' is a minor variant in titling. Both refer to the same Avalokiteśvara praise hymn with Sanskrit verses. This represents the same text with slight title variation in the catalogue.
+- **T20n1055** (佛說聖觀自在菩薩梵讚) <-> CBETA #2738 (聖觀自在讚)
+  - Confidence: 90%
+  - Signals: chinese_title_overlap
+  - Reason: Both refer to praises/hymns to Avalokiteśvara. Sanskrit title matches (Āryāvalokiteśvarastotra). Chinese titles are semantically equivalent: 聖觀自在讚 vs 佛說聖觀自在菩薩梵讚 (both are 'Praises to Noble Avalokiteśvara'). Section is 怛特羅部 (tantra) which matches the dhāraṇī content. The text contains Sanskrit dhāraṇīs and is a hymnic work consistent with a stotra genre.
+- **T20n1055** (佛說聖觀自在菩薩梵讚) <-> CBETA #2739 (聖觀自在讚)
+  - Confidence: 90%
+  - Signals: chinese_title_overlap
+  - Reason: This is the same Taishō text (T20n1055) as Pair 0, paired with a nearly identical catalogue entry (CBETA #2739 vs #2738). Both have identical Sanskrit titles and nearly identical Tibetan titles. This represents a duplicate catalogue entry for the same text. Same reasoning as Pair 0 applies.
+- **T20n1067** (攝無礙大悲心大陀羅尼經計一法中出無量義南方滿願補陀落海會五部諸尊等弘誓力方位及威儀形色執持三摩耶幖幟曼荼羅儀軌) <-> CBETA #3763 (曼荼羅儀軌)
+  - Confidence: 90%
+  - Signals: chinese_title_substring
+  - Reason: Strong title match: Tibetan '曼荼羅儀軌' (Maṇḍalavidhi) appears as substring in Taishō T20n1067 title which explicitly includes '曼荼羅儀軌' at the end. Both describe compassion-focused maṇḍala structure. Genre compatible: tantra section (怛特羅部) with Taishō vol. 20 (tantra). Text content emphasizes theoretical framework (hand mudras as emptiness/wisdom dichotomy) and visual specifications (colored earth, geometric zones)—appropriate for systematic ritual manual.
+- **T20n1093** (不空羂索呪經) <-> CBETA #689 (聖不空羂索儀軌王儀軌)
+  - Confidence: 90%
+  - Signals: chinese_title_overlap
+  - Reason: Strong match. Tibetan title translates as 'Noble Amoghapāśa ritual manual' (Ārya-amoghapāśa-kalparājavidhi), Chinese T1093 is '不空羂索呪經' (Amoghapāśa dhāraṇī sūtra). Both concern Amoghapāśa (不空羂索/don-yod-shags-pa). The text opens with standard sūtra formula, features Avalokiteśvara teaching this dhāraṇī at Mt. Potalaka, and is appropriately classified in tantric section. Length (4466 chars) is reasonable for a ritual manual.
+- **T20n1107** (聖多羅菩薩梵讚) <-> CBETA #3688 (聖多羅母讚)
+  - Confidence: 90%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics align: 聖多羅母讚 (Ārya-tārāstotra - 'Holy Tārā praise') vs 聖多羅菩薩梵讚 ('Holy Tārā Bodhisattva Sanskrit praise'). Both refer to Tārā devotional praise text. Sanskrit titles both derive from tāra-stotra. Tantra section appropriate for stotra/hymn. T20n1107 volume fits tantra range. Opening with Sanskrit mantra 曩謨薩多囉 ('namo tārāya') confirms Tārā invocation. Text length (2112 chars) consistent with praise text. Minor title variation (梵讚 vs 讚) is standard for Sanskrit texts.
+- **T20n1107** (聖多羅菩薩梵讚) <-> CBETA #3693 (聖多羅母讚)
+  - Confidence: 90%
+  - Signals: chinese_title_overlap
+  - Reason: Identical to Pair 4: Same Tibetan entry (CBETA #3693) matched with T20n1107 (聖多羅菩薩梵讚). Title semantics, Sanskrit correspondence, volume placement, opening Sanskrit mantra, and length all confirm parallel texts on Tārā praise.
+- **T20n1107** (聖多羅菩薩梵讚) <-> CBETA #3694 (聖多羅母讚)
+  - Confidence: 90%
+  - Signals: chinese_title_overlap
+  - Reason: Identical to Pairs 4-5: Same Tibetan entry (CBETA #3694) matched with T20n1107 (聖多羅菩薩梵讚). All evaluation criteria identical to previous pairs confirming Tārā praise stotra parallel.
+- **T20n1113A** (觀自在菩薩廣大圓滿無礙大悲心陀羅尼) <-> CBETA #865 (陀羅尼)
+  - Confidence: 92%
+  - Signals: chinese_title_substring
+  - Reason: T20n1113A 'Avalokiteśvara Bodhisattva Great Perfect Unobstructed Great Compassionate Heart Dhāraṇī' is explicitly titled with '陀羅尼' and consists almost entirely of Sanskrit mantric transliteration with Chinese annotations. This is a classic dhāraṇī text widely distributed in Buddhist collections.
+- **T20n1116** (廣大蓮華莊嚴曼拏羅滅一切罪陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 91%
+  - Signals: chinese_title_substring
+  - Reason: Title matches (陀羅尼), section is 陀羅尼集. T20n1116 opens with 如是我聞 and contains detailed dhāraṇī practice descriptions. Closes with standard sūtra formula and rejoicing of assembly. Focuses on protective and purification aspects typical of dhāraṇī texts. Length (4148 characters) is appropriate for an elaborate dhāraṇī scripture.
+- **T20n1118** (佛說十八臂陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 90%
+  - Signals: chinese_title_substring
+  - Reason: Both are dhāraṇī texts with identical section assignment (陀羅尼集). Title 佛說十八臂陀羅尼經 contains 陀羅尼. Text opens with Buddha teaching a dhāraṇī and closes with typical formula (阿難聞佛...歡喜信受作禮而退). Length (314 chars) is plausible for a single dhāraṇī sūtra. Taishō T20n1118 is in vol. 20, appropriate for dhāraṇī texts.
+- **T20n1119** (大樂金剛薩埵修行成就儀軌) <-> CBETA #1680 (金剛薩埵成就法)
+  - Confidence: 90%
+  - Signals: chinese_title_overlap
+  - Reason: Identical Sanskrit title (Vajrasattvasādhana) and identical content as Pair 1. CBETA #1680 and #1628 are the same catalogue entry paired with same T20n1119. This is a duplicate verification.
+- **T20n1119** (大樂金剛薩埵修行成就儀軌) <-> CBETA #2518 (金剛薩埵成就法)
+  - Confidence: 90%
+  - Signals: chinese_title_overlap
+  - Reason: Identical Taishō text as Pair 3 (T20n1119). Tibetan titles slightly differ in wording (Pair 3: 'Rdo-rje-sems-dpaḥ ḥbyuṅ-ba shes-bya-baḥi sgrub-paḥi thabs' vs. Pair 4: 'Rdo-rje-sems-dpaḥi sgrub-thabs') but both refer to Vajrasattva achievement/sādhana practice. The Chinese '大樂金剛薩埵修行成就儀軌' directly translates the Tibetan concept. Strong match.
+- **T20n1138a** (金剛祕密善門陀羅尼呪經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 91%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan '陀羅尼' matches T20n1138a '金剛祕密善門陀羅尼呪經'. Opening '如是我聞' confirms sūtra format. Title semantics: 'vajra secret gateway dhāraṇī' perfectly fits dhāraṇī collection. Closing narrative ('聞佛所說歡喜奉行') confirms sūtra conclusion. Contains substantial dhāraṇī sections with protective function. Length (~1,466 chars) consistent with mid-sized dhāraṇī scripture. Pre-filter signal matches perfectly.
+- **T20n1140** (佛說延壽妙門陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 92%
+  - Signals: chinese_title_substring
+  - Reason: T20n1140 '佛說延壽妙門陀羅尼經' (Buddha Spoke the Wonderful Dharma Dhāraṇī for Extending Life) clearly contains dhāraṇī sections and follows standard sūtra format with 'thus have I heard' opening. The title explicitly includes '陀羅尼' (dhāraṇī). Fits the dhāraṇī collection category perfectly.
+- **T20n1147** (聖虛空藏菩薩陀羅尼經) <-> CBETA #876 (聖虛空藏一百八名陀羅尼真言)
+  - Confidence: 92%
+  - Signals: chinese_title_overlap
+  - Reason: Strong match: Chinese title '聖虛空藏菩薩陀羅尼經' aligns with Tibetan '虛空藏一百八名陀羅尼真言' (Ākāśagarbha); opening formula '如是我聞' confirms sūtra format; 2717 characters consistent with expanded named-dharani text; content describes Ākāśagarbha explicitly and includes narrative frame with Buddha addressing bodhisattvas and dharani mantras. Translator (法天, Song period) matches catalogue expectations for Taishō vol. 20 (sūtra section).
+- **T20n1162** (持世陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 90%
+  - Signals: chinese_title_substring
+  - Reason: T20n1162 titled 持世陀羅尼經(translated by Xuanzang) is a standard dhāraṇī sūtra. Opens with 如是我聞, contains narrative setting and dhāraṇī exposition. Length (1413 characters) typical for medium-length dhāraṇī texts. Strong match.
+- **T20n1162** (持世陀羅尼經) <-> CBETA #3606 (持世母陀羅尼優波提舍)
+  - Confidence: 92%
+  - Signals: chinese_title_overlap
+  - Reason: Title and content aligned: Both refer to '持世陀羅尼' (Vasudhārā dhāraṇī). T20n1162 opens with standard sūtra formula '如是我聞' and includes extended dhāraṇī section with multiple names for the dhāraṇī (滅罪、除一切危懼). Text length (1413 chars) appropriate for sūtra translation. Sanskrit title Vasudhārādhāraṇyupadeśa matches this sūtra version.
+- **T20n1163** (佛說雨寶陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 93%
+  - Signals: chinese_title_substring
+  - Reason: Title matches (陀羅尼), section is 陀羅尼集. T20n1163 opens with 如是我聞 (standard sūtra opening) and closes with typical sūtra conclusion formula (聞佛所說皆大歡喜信受奉行). Contains dhāraṇī sections and mantras. Length (1576 characters) consistent with a mid-length dhāraṇī sūtra. Translator is Amoghavajra (不空), a major dhāraṇī text translator.
+- **T20n1164** (佛說大乘聖吉祥持世陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 93%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan catalogue entry '陀羅尼' matches T20n1164 '佛說大乘聖吉祥持世陀羅尼經' (Buddha speaks of the Mahāyāna Holy Auspicious World-holding Dhāraṇī Sūtra). Both are dhāraṇī texts with standard sūtra opening (如是我聞). Text is in appropriate volume (20) and length (2876 characters) is consistent with a complete dhāraṇī sūtra. The closing explicitly names it as a dhāraṇī sūtra to be maintained.
+- **T20n1181** (大方廣菩薩藏經中文殊師利根本一字陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 91%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan catalogue entry '陀羅尼' matches T20n1181 '大方廣菩薩藏經中文殊師利根本一字陀羅尼經' (One-Character Dhāraṇī of Mañjuśrī from the Great Expanded Bodhisattva Treasury Sūtra). Both are dhāraṇī texts with standard sūtra opening (如是我聞). Volume 20 is appropriate. Length (1271 characters) is consistent. Contains extensive dhāraṇī sections and teachings on the dhāraṇī's power.
+- **T20n1185B** (文殊師利寶藏陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 90%
+  - Signals: chinese_title_substring
+  - Reason: Title '文殊師利寶藏陀羅尼經' (Mañjuśrī Treasure Dhāraṇī Sūtra) is a major dhāraṇī sūtra. Opening with 'thus have I heard' (如是我聞) confirms sūtra format. Substantial length (11329 characters) consistent with comprehensive dhāraṇī collection. Standard sūtra closing with assembly rejoicing. T20n1185B is appropriate volume for dhāraṇī sūtras.
+- **T20n1194** (妙吉祥平等觀門大教王經略出護摩儀) <-> CBETA #3101 (護摩)
+  - Confidence: 92%
+  - Signals: chinese_title_substring
+  - Reason: T20n1194 'Manjushri Equal-View Dharma King Sutra Brief Homa Ritual' by Cixian is a homa ritual text. Tibetan entry generically lists 護摩 (homa). Title explicitly contains 護摩儀 (homa ritual). Both are tantra section texts with detailed ritual instructions and dhāraṇī. Genre and content alignment perfect.
+- **T20n1197** (佛說文殊師利一百八名梵讚) <-> CBETA #879 (聖文殊師利法王子一百八名陀羅尼真言)
+  - Confidence: 90%
+  - Signals: chinese_title_overlap
+  - Reason: Strong match: Tibetan '聖文殊師利法王子一百八名陀羅尼真言' parallels T20n1197 '佛說文殊師利一百八名梵讚' (Mañjuśrī's 108 names). Text length 943 characters appropriate for hymnic/dharani format. Opening explicitly promises '文殊師利一百八名' and describes benefits of recitation ('所求意願決定現前'). Mantric Sanskrit sections ('梵讚') dominate. Translator 法天 (Song) and Taishō vol. 20 (sūtra) consistent with dhāraṇī collections.
+- **T20n1197** (佛說文殊師利一百八名梵讚) <-> CBETA #2707 (聖,文殊師利讚)
+  - Confidence: 92%
+  - Signals: chinese_title_overlap
+  - Reason: Excellent match. Both are Mañjuśrī hymns/praises. The Tibetan 'Mañjuśrīstotra' and Chinese T20n1197 '文殊師利一百八名梵讚' (108 Names Sanskrit Hymn) both contain Sanskrit verses in transliteration. The Chinese explicitly states it's a梵讚 (Sanskrit praise) with 108 names, matching the stotra genre. Length (943 chars) appropriate for a hymn text.
+- **T21n1233** (佛說無能勝大明王陀羅尼經) <-> CBETA #709 (無能勝大明母)
+  - Confidence: 92%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics align: 無能勝大明母 (Tibetan: Gshan-gyis-mi-thub-paḥi rig-pa chen-mo = 'Unconquerable Wisdom Mother') matches 無能勝大明王 in Chinese text. Both are dhāraṇī texts in the 十萬怛特羅部 (100,000 Tantra section). Genre and content structure (dhāraṇī sections with opening declaration and mantra formulas) are perfectly consistent. Length (2166 CJK characters) is reasonable for a tantra dhāraṇī sūtra.
+- **T21n1249** (毘沙門儀軌) <-> CBETA #3735 (毗沙門天儀軌)
+  - Confidence: 92%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics and structure align perfectly: 毗沙門天儀軌 (Vaiśravaṇa ritual) vs T21n1249 毘沙門儀軌 (identical Chinese title). Both refer to Vaiśravaṇa/Bishaimen ritual procedure. Tantra section appropriate. T21n1249 fits tantra volume. Opening with Sanskrit mantras (阿他渴嚧蔇室拏末拏寫 = a-tha-kaḥ-etc.) confirms Vaiśravaṇa mantra liturgy. Length (2572 chars) matches ritual text expectations. 儀軌 (vidhi/ritual) format matches precisely. Clear parallel Chinese titles with identical meaning.
+- **T21n1249** (毘沙門儀軌) <-> CBETA #3736 (毗沙門天儀軌)
+  - Confidence: 92%
+  - Signals: chinese_title_overlap
+  - Reason: Both titles refer to Vaiśravaṇa (毗沙門/毘沙門) ritual. Sanskrit Rnam-sras = Vaiśravaṇa. T21n1296 mentions 毘沙門 in opening dhāraṇī sections. Genre matches (怛特羅部 = tantra, vol. 21). Text length (2572 chars) appropriate for tantric sādhana.
+- **T21n1255b** (佛說摩利支天經) <-> CBETA #3662 (聖摩利支天女成就法)
+  - Confidence: 92%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics align perfectly: 聖摩利支天女成就法 (Ārya-mārīcīsādhana) matches 佛說摩利支天經. Both refer to Mārīcī/Marīci deity. Sanskrit titles correspond. Tantra section (怛特羅部) appropriate for sādhana text. T21n1255b fits tantra volume range. Opening formula '如是我聞' consistent with Buddhist sūtra tradition. Text contains dhāraṇī sections and describes Mārīcī's protective powers, matching sādhana content. Length (1436 chars) reasonable for deity practice text.
+- **T21n1287** (大黑天神法) <-> CBETA #3644 (大黑天成就法)
+  - Confidence: 92%
+  - Signals: chinese_title_overlap
+  - Reason: Sanskrit title Mahākālasādhana and Tibetan 'Nag-po chen-poḥi sgrub-thabs' both mean 'Great Black [Deity] Sādhana'. Chinese titles match: 大黑天成就法 vs 大黑天神法 (both 'Mahākāla method'). Text describes Mahākāla as manifestation of Maheśvara (大自在天變身), ritual procedures, and iconography. Section 怛特羅部 appropriate. Content clearly describes the same deity and practice.
+- **T21n1310** (北斗七星護摩法) <-> CBETA #3101 (護摩)
+  - Confidence: 90%
+  - Signals: chinese_title_substring
+  - Reason: Both entries refer to 護摩 (homa/fire ritual). T21n1310 is 'North Star Seven Stars Homa Ritual' by Yixing. The Tibetan sbyin-sreg (burnt offering) and Chinese 護摩 are direct equivalents. Genre matches (怛特羅部 = tantra, T21 = tantra volume). Content is specialized fire ritual practice text with dhāraṇī sections as expected.
+- **T21n1321** (佛說施餓鬼甘露味大陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 90%
+  - Signals: chinese_title_substring
+  - Reason: T21n1321 is a dhāraṇī-focused Buddhist text with extensive Sanskrit mantra sections. The Tibetan catalogue entry is simply titled '陀羅尼' (dhāraṇī), which is a generic term that encompasses many dhāraṇī texts. The opening formula 'Thus have I heard' (如是一時) and the content focus on protective mantras align with dhāraṇī collection entries. The length and genre are consistent.
+- **T21n1324** (能淨一切眼疾病陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 90%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan '陀羅尼' matches T21n1324 '能淨一切眼疾病陀羅尼經'. Opening '如是我聞' and closing '聞佛所說歡喜奉行' confirm sūtra format. Title semantics: 'dhāraṇī capable of purifying all eye diseases' is specific therapeutic dhāraṇī. Narrative frame with named recipient (乞曬摩迦) typical of dhāraṇī sūtras. Length (~581 chars) appropriate. Genre perfectly aligned.
+- **T21n1332** (七佛八菩薩所說大陀羅尼神呪經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 92%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan '陀羅尼' section matches T21n1332 '七佛八菩薩所說大陀羅尼神呪經'. Both are major dhāraṇī compilations. Opening formula '第一維衛佛說' (though lacking standard '如是我聞') and closing with dhāraṇī repetitions confirm dhāraṇī compilation genre. Title explicitly states 'seven Buddhas and eight bodhisattvas' with multiple dhāraṇīs. Length (31,331 chars) is consistent with large dharaṇī collections. Extensive dhāraṇī sections throughout.
+- **T21n1340** (大法炬陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 93%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan '陀羅尼' matches T21n1340 '大法炬陀羅尼經' (Great Dharma Torch Dhāraṇī Sutra). Opening '如是我聞' with standard assembly formula confirms sūtra format. Closing '聞佛所說頂受奉行' confirms sūtra conclusion. Title indicates major dhāraṇī compilation (大 = great). Length (132,758 chars) is largest in set, consistent with comprehensive dhāraṇī collection. Organized with section headings (品 = chapters). Genre perfectly aligned.
+- **T21n1341** (大威德陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 92%
+  - Signals: chinese_title_substring
+  - Reason: The Tibetan entry '陀羅尼' matches '大威德陀羅尼經'. Opens with standard sūtra formula (如是我聞) with full celestial assembly. Buddha explicitly teaches dhāraṇī law for protection and benefit. Closing uses standard acceptance formula (聞佛所說歡喜奉行). Exceptionally long length (117,902 characters) indicates comprehensive dhāraṇī compendium. Translator (闍那崛多) is major Sui-era Sanskrit scholar. Genre perfectly fits T21 dhāraṇī collection.
+- **T21n1345** (金剛場陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 92%
+  - Signals: chinese_title_substring
+  - Reason: Title matches (陀羅尼), section is 陀羅尼集. T21n1345 opens with 如是我聞 and proper sūtra narrative frame. Closes with standard assembly rejoicing (聞佛所說頂禮佛足歡喜奉行). Contains extensive dhāraṇī exposition. Length (6189 characters) is consistent with a comprehensive dhāraṇī sūtra. Title explicitly includes 陀羅尼.
+- **T21n1358** (佛說花聚陀羅尼呪經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 90%
+  - Signals: chinese_title_substring
+  - Reason: Title matches (陀羅尼), section is 陀羅尼集. T21n1358 opens with 如是我聞 and closes with standard assembly rejoicing formula (聞佛所說歡喜奉行). Contains narrative frame with named bodhisattva speaker (師子奮迅). Includes dhāraṇī practice benefits. Length (1036 characters) is typical for this genre.
+- **T21n1360** (六門陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 91%
+  - Signals: chinese_title_substring
+  - Reason: Title matches (陀羅尼), section is 陀羅尼集. T21n1360 opens with 如是我聞 and proper sūtra frame. Closes with standard assembly formula (聞佛所說皆大歡喜信受奉行). Explicitly presents six dhāraṇī gates with mantra content. Length (341 characters) is brief but consistent with focused dhāraṇī texts. Translator is Xuanzang.
+- **T21n1372** (增慧陀羅尼經) <-> CBETA #1037 (智慧生起陀羅尼)
+  - Confidence: 95%
+  - Signals: chinese_title_overlap
+  - Reason: Strong match: 增慧 (increasing wisdom) directly translates Prajñāvardhanī. T1372 is dhāraṇī text (277 chars, appropriate length), explicitly promises 增彼智慧 (increase their wisdom), matches genre and function. Opening 如是我聞 provides minimal frame story typical of dhāraṇī sūtras.
+- **T21n1373** (佛說施一切無畏陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 90%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan '陀羅尼' (dhāraṇī collection) matches T21n1373 '佛說施一切無畏陀羅尼經'. Both are dhāraṇī-focused texts. Opening '如是我聞' and closing '聞佛所說踊躍歡喜作禮而去' confirm sūtra format. Title semantics align perfectly: '施一切無畏' = granting fearlessness through dhāraṇī. Length (~724 chars) appropriate for a single dhāraṇī with narrative frame. Genre classification correct.
+- **T21n1400** (佛說消除一切災障寶髻陀羅尼經) <-> CBETA #574 (聖髻寶陀羅尼)
+  - Confidence: 92%
+  - Signals: chinese_title_overlap
+  - Reason: T21n1400 is 佛說消除一切災障寶髻陀羅尼經. The title explicitly contains 寶髻 (treasure crest/jeweled crest), matching cūḍāmaṇi (jeweled crest). Sanskrit title Ārya-cūḍāmaṇi-nāma-dhāraṇī directly parallels. Opening shows standard sūtra format (爾時世尊). Length (1198 chars) is plausible for a tantra-section dhāraṇī text. Genre and content align.
+- **T21n1400** (佛說消除一切災障寶髻陀羅尼經) <-> CBETA #655 (聖障害消除陀羅尼)
+  - Confidence: 90%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics align well: 'Ārya-vighnavināyaka-nāma-dhāraṇī' (obstacle-removing dhāraṇī) matches the Taishō text's emphasis on removing obstacles (消除災障). The Taishō title 'Precious Crown' (寶髻) mirrors the Tibetan semantic field. Both texts contain dhāraṇī sections and are formatted as Buddhist protective texts. Genre is compatible (tantra section, T21). The opening and closing match the expected format for dhāraṇī literature.
+- **T21n1405** (佛說息除賊難陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 90%
+  - Signals: chinese_title_substring
+  - Reason: Both texts are dhāraṇī-focused sūtras. The Tibetan entry '陀羅尼' matches the title '佛說息除賊難陀羅尼經' which contains 陀羅尼. The text opens with standard sūtra formula (如是我聞), contains explicit dhāraṇī sections, and closes with standard Buddhist acceptance formula. Length (358 characters) is appropriate for a dhāraṇī sūtra. Genre compatibility confirmed: T21 volume contains dhāraṇī texts.
+- **T21n1409** (佛說聖最勝陀羅尼經) <-> CBETA #1004 (聖有勝陀羅尼)
+  - Confidence: 90%
+  - Signals: chinese_title_overlap
+  - Reason: Strong match: Tibetan Sanskrit title 'Ārya-jayavatī-nāma-dhāraṇī' (Holy Victorious One Named Dhāraṇī) matches well with Chinese T21n1409 '佛說聖最勝陀羅尼經' (Buddha Speaks Holy Most Victorious Dhāraṇī Sūtra). 'Jayavatī' = 'victorious one/勝' or '有勝', 'ārya' = '聖/holy'. Text has proper sūtra opening, appropriate length (1,412 chars), mentions Mañjuśrī who is central to the narrative, and discusses protection from various beings including asuras.
+- **T21n1416** (金剛摧碎陀羅尼) <-> CBETA #949 (金剛摧破陀羅尼)
+  - Confidence: 90%
+  - Signals: chinese_title_overlap
+  - Reason: Title and Sanskrit match: 金剛摧破陀羅尼 (Vajra-Shattering Dhāraṇī) vs 金剛摧碎陀羅尼 (Vajra-Crushing Dhāraṇī). Sanskrit Vajravidāraṇā-nāma-dhāraṇī maps to both 摧破 and 摧碎 (both = 'crushing/shattering'). Taishō T21n1416 is a short dhāraṇī (733 chars) appropriate for this type. Translator (宋 慈賢) is plausible. Semantic and length consistency strong.
+- **T21n1417** (佛說壞相金剛陀羅尼經) <-> CBETA #949 (金剛摧破陀羅尼)
+  - Confidence: 92%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics align well: '金剛摧破陀羅尼' (Vajra-breaking dhāraṇī) matches '佛說壞相金剛陀羅尼經' (壞相 = breaking/destroying). Sanskrit titles both reference Vajravidāraṇā. Opening explicitly features '金剛手' (Vajrapāṇi) speaking the dhāraṇī in a sūtra context (如是我聞). Length (1149 chars) appropriate for a dhāraṇī text. Genre compatibility confirmed (陀羅尼集 section, T21 volume).
+- **T25n1513** (能斷金剛般若波羅蜜多經論釋) <-> CBETA #3817 (聖薄伽梵母般若波羅蜜多金剛能斷廣註)
+  - Confidence: 92%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan entry specifies Diamond Sutra commentary (ṭīkā). T25n1513 is explicitly 'Diamond Sutra Commentary and Verses' (論釋) by Asaṅga (verses) and Vasubandhu (commentary), translated by Yijing. This is scholastic commentary material on the Diamond Sutra (11973 characters). Opening with philosophical analysis and closing with dharmadhātu discussion confirms this is interpretive commentary matching the Tibetan entry's description as '廣註' (extensive annotation).
+- **T25n1517** (佛母般若波羅蜜多圓集要義釋論) <-> CBETA #3797 (般若波羅蜜多攝義)
+  - Confidence: 90%
+  - Signals: chinese_title_overlap
+  - Reason: Strong match: Tibetan title 'Prajñāpāramitāpiṇḍārtha' (般若波羅蜜多攝義 = 'Summary/Collection of Meaning of Prajñāpāramitā') closely corresponds to Chinese T25n1517 '佛母般若波羅蜜多圓集要義釋論' ('Explanation of the Circular Collection of Essential Meaning of the Mother of Buddhas Prajñāpāramitā'). Both are śāstra texts (commentary/論) in Taishō vol. 25, matching the 般若部 section. The text is a detailed philosophical exposition, appropriate length for this type of commentary.
+- **T25n1518** (佛母般若波羅蜜多圓集要義論) <-> CBETA #3797 (般若波羅蜜多攝義)
+  - Confidence: 95%
+  - Signals: chinese_title_overlap
+  - Reason: Excellent match: Same Tibetan entry as Pair 0 (Prajñāpāramitāpiṇḍārtha), and T25n1518 '佛母般若波羅蜜多圓集要義論' is nearly identical title to T25n1517, just without '釋' character. Same author (大域龍菩薩 = Mahāyānadeva?), same translator (施護). This is clearly a related text or variant version. The opening verse structure matches perfectly with systematic enumeration of topics, consistent with a summary/compendium.
+- **T30n1576** (大乘二十頌論) <-> CBETA #2248 (大乘二十)
+  - Confidence: 92%
+  - Signals: sanskrit_fuzzy
+  - Reason: Strong match: Sanskrit title Mahāyānaviṁśati matches exactly 大乘二十. Author Nāgārjuna is confirmed (龍樹菩薩造). T30n1576 is treatise format opening with verse (歸命...) appropriate for śāstra. High Sanskrit fuzzy match score (0.867). Tantra section classification is unusual for this philosophical treatise but may reflect Tibetan tantric contextualization.
+- **T31n1590** (唯識二十論) <-> CBETA #4065 (二十論註疏)
+  - Confidence: 92%
+  - Signals: chinese_title_overlap
+  - Reason: T31n1590 (唯識二十論) is Vasubandhu's Viṁśatikā-kārikā, which corresponds to Prakaraṇaviṁśaka (Twenty Treatise). Xuanzang's translation. The Tibetan Wylie (Rab-tu-byes-pa ñi-śu-paḥi) matches '別二十' = Prakaraṇaviṁśaka. Genre (唯識部) correct. Opening shows logical structure of the kārikās. This is the foundational text; the Tibetan title '註疏' (commentary) may refer to a commentary tradition, but T31n1590 preserves the core work.
+- **T31n1606** (大乘阿毘達磨雜集論) <-> CBETA #4053 (阿毗達磨集疏)
+  - Confidence: 90%
+  - Signals: chinese_title_overlap
+  - Reason: Title 大乘阿毘達磨雜集論 matches Abhidharmasamuccayabhaṣya (雜集 = samuccaya). T31n1606 is Xuanzang's translation of Sthiramati's commentary on Asaṅga's Abhidharmasamuccaya. Sanskrit title and Tibetan Wylie (Chos mṅon-pa kun-las-btus-paḥi bśad-pa) both confirm this is the Abhidharmasamuccaya commentary. Genre (唯識部/Yogācāra section) is appropriate for this work. Length and opening formula consistent with a major śāstra.
+- **T31n1612** (大乘五蘊論) <-> CBETA #4067 (五蘊論註)
+  - Confidence: 90%
+  - Signals: chinese_title_overlap
+  - Reason: T31n1612 (大乘五蘊論) is Vasubandhu's Pañcaskandhaprakaraṇa, related to Pañcaskandhavivaraṇa tradition. Xuanzang's translation. Opening begins with Buddha's discourse on five skandhas (如薄伽梵略說五蘊), matching the base text structure. Genre (唯識部) correct. Length and content consistent with Vasubandhu's canonical work on this topic.
+- **T31n1624** (觀所緣緣論) <-> CBETA #4241 (所緣觀察註疏)
+  - Confidence: 92%
+  - Signals: chinese_title_overlap
+  - Reason: The Tibetan 'Ālaṁbanaparīkṣāṭīkā' (所緣觀察註疏 - Commentary on Investigation of Objects of Cognition) matches T31n1624 '觀所緣緣論' (Ālaṁbanaparīkṣā - Investigation of Objects of Cognition) by Dignāga, translated by Xuanzang. The Sanskrit titles are identical/synonymous. Both address the epistemological question of whether external objects serve as the object-conditions (所緣緣) for sense perception. The Chinese opening matches Dignāga's characteristic refutation of extreme realism and analysis of extreme atoms (極微).
+
+## Medium-Confidence Matches (review recommended)
+
+- **T21n1235** (無能勝大明心陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 89%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan '陀羅尼' matches T21n1235 '無能勝大明心陀羅尼經'. Both are dhāraṇī texts. Opening '歸命無上覺...' followed by dhāraṇī formula marks this as a dhāraṇī scripture. Closing contains extensive dhāraṇī mantras ('悉諦鉢囉娑嚩...娑嚩賀'). Title semantics: '無能勝大明心' = invincible great bright-mind dhāraṇī. Length (~601 chars) appropriate. Genre fully aligned with dhāraṇī section classification.
+- **T21n1379** (佛說大愛陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 89%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan '陀羅尼' matches T21n1379 '佛說大愛陀羅尼經'. Opening '如是我聞' and closing '歡喜踊躍禮佛而退' confirm sūtra format. Title semantics: 'Great Love dhāraṇī sutra' focused on ocean protection. Contains narrative frame with named bodhisattva (大愛海神) and explicit dhāraṇī mantra ('怛他祖嚕...'). Length (~291 chars) appropriate for focused dhāraṇī. Genre fully aligned with collection classification.
+- **T21n1202** (不動使者陀羅尼祕密法) <-> CBETA #865 (陀羅尼)
+  - Confidence: 89%
+  - Signals: chinese_title_substring
+  - Reason: Title matches (陀羅尼), section is 陀羅尼集. T21n1202 opens with narrative frame about practice methods and closes with practice instructions. Contains extensive dhāraṇī/mantra material. Length (4687 characters) is appropriate. Focuses on ritual practices and mantra recitation for Acalanātha (不動). Fits dhāraṇī/mantra practice texts.
+- **T20n1154** (佛說隨求即得大自在陀羅尼神呪經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 89%
+  - Signals: chinese_title_substring
+  - Reason: Title 佛說隨求即得大自在陀羅尼神呪經 contains 陀羅尼神呪經. Opens with 如是我聞 and features Buddha teaching a comprehensive dhāraṇī to Brahma at Vulture Peak. Contains extensive mantra sections throughout. Closes with proper conclusion. Larger length (7982 chars) reflects comprehensive nature of the text. Taishō T20n1154 vol. 20.
+- **T21n1407** (佛說辟除諸惡陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 89%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan catalogue entry '陀羅尼' matches T21n1407 '佛說辟除諸惡陀羅尼經' (Buddha speaks of the Dhāraṇī for Averting All Evil Sūtra). Both are dhāraṇī texts. Opening uses 爾時世尊 variant formula (acceptable). Volume 21 is at boundary of sūtra/dhāraṇī range. Length (382 characters) is short but appropriate for focused dhāraṇī text. Contains dhāraṇī and practice instructions.
+- **T20n1127** (佛說普賢菩薩陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 89%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan catalogue entry '陀羅尼' matches T20n1127 '佛說普賢菩薩陀羅尼經' (Buddha speaks of Samantabhadra Bodhisattva's Dhāraṇī Sūtra). Both are dhāraṇī texts. Opening lacks standard formula but begins with context-setting narrative. Volume 20 is appropriate. Length (916 characters) is consistent with complete dhāraṇī sūtra. Contains dhāraṇī sections and teachings on benefits of the text.
+- **T21n1347** (息除中夭陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 89%
+  - Signals: chinese_title_substring
+  - Reason: The Tibetan entry '陀羅尼' matches '息除中夭陀羅尼經'. Opens with standard sūtra formula (如是我聞), features celestial assembly with Four Heavenly Kings. Contains explicit protective dhāraṇī teachings. Closing emphasizes karmic benefits and follows standard acceptance formula (聞法歡喜信受奉行). Length (920 characters) appropriate for protective dhāraṇī sūtra. Translator施護is major Song-era dhāraṇī specialist.
+- **T20n1080** (如意輪陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 89%
+  - Signals: chinese_title_substring
+  - Reason: T20n1080 (如意輪陀羅尼經) is a dhāraṇī sūtra focused on Avalokiteśvara's wish-fulfilling wheel dhāraṇī in Taishō vol. 20. Tibetan catalogue '陀羅尼' in 陀羅尼集 matches perfectly. Opening with '序品第一' followed by '如是我聞' confirms sūtra structure. Title contains 陀羅尼經. Length (9694 chars) appropriate. Clear semantic and structural alignment.
+- **T19n0964** (佛說大威德金輪佛頂熾盛光如來消除一切災難陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 89%
+  - Signals: chinese_title_substring
+  - Reason: T19n0964 is titled 'Buddha Spoke Great Mighty Virtue Golden Wheel Buddha Crown Blazing Light Thus-come-one Eliminate All Disasters Dhāraṇī Sūtra'. Explicitly includes '陀羅尼' and focuses on protective mantras for averting calamities. Contains extensive Sanskrit mantra sections. Clearly a dhāraṇī text.
+- **T21n1365** (八名普密陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 89%
+  - Signals: chinese_title_substring
+  - Reason: T21n1365 'Eight Names Universal Secret Dhāraṇī Sūtra' explicitly includes '陀羅尼' in the title and is translated by Xuanzang. Opens with standard sūtra formula and discusses protective mantras. The content focuses on eight sacred dhāraṇī names. Fits dhāraṇī collection classification.
+- **T19n1008** (菩提場莊嚴陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 89%
+  - Signals: chinese_title_substring
+  - Reason: Title 菩提場莊嚴陀羅尼經 explicitly contains 陀羅尼經. T19n1008 has proper opening formula (如是我聞), substantial dhāraṇī sections with mantras and ritual instructions in closing, and appropriate length (~9.2K characters). Taishō vol. 19 is correct for dhāraṇī sūtras.
+- **T19n1023** (一切如來正法祕密篋印心陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 89%
+  - Signals: chinese_title_substring
+  - Reason: Title 一切如來正法祕密篋印心陀羅尼經 explicitly contains 陀羅尼經. T19n1023 has proper sūtra opening (如是我聞), strong dhāraṇī focus, closes with full assembly approval formula, appropriate length (~3.6K). Taishō vol. 19 correct for dhāraṇī sūtras.
+- **T18n0908** (金剛頂瑜伽護摩儀軌) <-> CBETA #2659 (護摩儀軌)
+  - Confidence: 89%
+  - Signals: chinese_title_substring
+  - Reason: T18n0908 (金剛頂瑜伽護摩儀軌) is another foundational Homavidhi text by Amoghavajra. Opens with comprehensive homa classification (我今說護摩), describes five protective fire offering types, and provides ritual specifications. Length (4024 characters) appropriate for ritual manual. This appears to be a variant/recension of T18n0909, both representing canonical Homavidhi teachings. High confidence due to direct Sanskrit-Chinese semantic match and authoritative translator.
+  - Sanskrit: Homavidhi
+- **T18n0912** (建立曼荼羅護摩儀軌) <-> CBETA #3101 (護摩)
+  - Confidence: 89%
+  - Signals: chinese_title_substring
+  - Reason: T18n0912 'Establishing Mandala Homa Ritual' by Faquan. Tibetan entry lists 護摩. Chinese title combines 曼荼羅 (mandala) and 護摩儀軌 (homa ritual). Both texts are in tantra section. Content shows detailed multi-day ritual procedures with mandala construction and homa offerings. Semantic and genre match confirmed.
+- **T20n1067** (攝無礙大悲心大陀羅尼經計一法中出無量義南方滿願補陀落海會五部諸尊等弘誓力方位及威儀形色執持三摩耶幖幟曼荼羅儀軌) <-> CBETA #3764 (曼荼羅儀軌)
+  - Confidence: 89%
+  - Signals: chinese_title_substring
+  - Reason: Excellent title match: Tibetan '曼荼羅儀軌' appears explicitly in Taishō T20n1067 title string '...曼荼羅儀軌'. Both describe systematic maṇḍala structure and implementation. Genre compatible: tantra section (怛特羅部) with Taishō vol. 20 (tantra). Content provides detailed cosmological framework, hand gesture explanations, and zone colorization—characteristic of comprehensive maṇḍala procedure manual.
+  - Sanskrit: Maṇḍalavidhi
+- **T31n1608** (業成就論) <-> CBETA #4071 (業成就疏)
+  - Confidence: 89%
+  - Signals: chinese_title_overlap
+  - Reason: T31n1608 (業成就論) matches Karmasiddhiśāstra. Title directly corresponds: 業成就 = karma-siddhi. Vasubandhu's work translated by Vimokṣa-candra and Paramārtha. Genre (唯識部) appropriate. Opening includes the formal framework text (業成就論翻譯之記 is translator's note, followed by the actual treatise). Length and systematic exposition of karma doctrine consistent.
+  - Sanskrit: Karmasiddhiṭīkā
+- **T08n0259** (佛說觀想佛母般若波羅蜜多菩薩經) <-> CBETA #23 (一切如來母般若波羅蜜多一字母（經）)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: T08n0259 is titled '佛說觀想佛母般若波羅蜜多菩薩經' (Meditation on the Buddha-Mother Prajñāpāramitā Bodhisattva Sutra). It explicitly features 'Buddha-mother prajñāpāramitā' and contains visualization practices with mantras (dhāraṇī sections). The 713-character length and one-deity focused meditation structure are consistent with an ekākṣarī or similar one-deity mother prajñāpāramitā text. Title semantics align closely: both emphasize佛母般若 (Buddha-Mother Prajñāpāramitā).
+  - Sanskrit: Ekākṣarīmātā-nāma-sarvatathāgata prajñāpāramitā
+- **T08n0236a** (金剛般若波羅蜜經) <-> CBETA #30 (聖般若波羅蜜多金剛幢大乘經)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: T08n0236a (金剛般若波羅蜜經) contains 'Vajra' and 'Prajñāpāramitā' in title. Opening with 'thus have I heard', proper sutra format. Length (~6193 characters) plausible for a prajñāpāramitā sutra. Sanskrit title Vajraketu may be variant/alternate designation. Genre (般若部) aligns. However, Chinese title lacks 'Vajraketu' explicitly, creating slight uncertainty.
+  - Sanskrit: Ārya-prajñāpāramitā-vajraketu-mahāyānasūtra
+- **T17n0774** (大乘四法經) <-> CBETA #249 (聖說四法大乘經)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Excellent title and Sanskrit match: Tibetan 聖說四法大乘經 with Sanskrit Ārya-caturdharmanirdeśa directly parallels T17n0774 大乘四法經. Content on four dharmas (菩提心, 善知識, 堪忍, etc.) confirmed in opening/closing. Standard sūtra format (如是我聞...歡喜奉行). Length (3596 chars) appropriate. Pre-filter overlap is strong.
+  - Sanskrit: Ārya-caturdharmanirdeśa-nāma-mahāyānasūtra
+- **T17n0773** (佛說菩薩修行四法經) <-> CBETA #250 (四法經)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: Title 佛說菩薩修行四法經 is a variant of 四法經 (Caturdharmaka-sūtra). Same Sanskrit root. Opens with 如是我聞 formula and closes with standard colophon. Text teaches four dharmas (菩提心, 善友, 忍辱, 寂靜處). Shorter length (301 chars) suggests abridged recension, but content and genre (經部) match. Minor translator difference (地婆訶羅 vs. other versions) acceptable.
+  - Sanskrit: Caturdharmaka-sūtra
+- **T17n0794b** (佛說時非時經) <-> CBETA #299 (犍稚時經)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Both texts explicitly titled with time-related content (Gaṇḍīsamaya vs. 時非時經). T17n0794b is a variant recension of T17n0794a with nearly identical content structure—same opening formula (如是我聞), same translator (若羅嚴), same seasonal time divisions framework. Minor textual variants in specific passages and character counts (858 vs 743) suggest related translations with textual revision.
+  - Sanskrit: Gaṇḍīsamaya-sūtra
+- **T19n0968** (佛頂尊勝陀羅尼經) <-> CBETA #568 (聖有勝陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: T19n0968 is titled 佛頂尊勝陀羅尼經 (Uṣṇīṣa-vijaya-dhāraṇī Sūtra) translated by Du Xingyi (唐 杜行顗). Opens with 如是我聞 formula typical of sūtras. While presented as sūtra (經), it contains the same core dhāraṇī as the Tibetan entry. The 2591-character length is consistent with a concise dhāraṇī-based sūtra. Title semantics match and content aligns with Uṣṇīṣa-vijaya tradition.
+  - Sanskrit: Ārya-jayavatī-nāma-dhāraṇī
+- **T19n1021** (華嚴經心陀羅尼) <-> CBETA #584 (聖華嚴執持陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Both texts concern Avataṃsaka (華嚴/phal-po-che) dhāraṇī. T19n1021 explicitly states it is a dhāraṇī related to Avataṃsaka (華嚴經). Tibetan section 十萬怛特羅部 matches tantra classification. Length (121 chars) is consistent with a short dhāraṇī text. Translator Śikṣānanda (實叉難陀) is known for Avataṃsaka translations.
+- **T20n1054** (聖觀自在菩薩一百八名經) <-> CBETA #634 (聖觀自在一百八名陀羅尼真言)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Both texts clearly concern Avalokiteśvara's 108 names (一百八名) dhāraṇī. Chinese titles are semantically identical: '聖觀自在菩薩一百八名經' matches '聖觀自在一百八名陀羅尼真言'. Sanskrit titles both reference Avalokiteśvara + 108 names + dhāraṇī. Opens with '如是我聞' (standard sūtra formula). Length (1491 chars) reasonable for a named-list dhāraṇī. Genre matches (tantra, T20 vol).
+  - Sanskrit: Ārya-avalokiteśvarāṣṭottaraśatakanāma-dhāraṇī-mantra-sahita
+- **T20n1147** (聖虛空藏菩薩陀羅尼經) <-> CBETA #636 (聖虛空藏一百八名陀羅尼真言)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Title alignment: both feature 虛空藏 (Ākāśagarbha). Sanskrit title khagarbhāṣṭottaraśata matches meaning of 虛空藏 (nam-mkhaḥi sñiṅ-po). T20n1147 has proper sūtra opening (如是我聞) and substantial length (2717 chars), consistent with tantra-era sūtra format. Closing contains dhāraṇī preservation formula and audience participation typical of dharani sūtras. All genre and content markers align with 怛特羅部 classification.
+  - Sanskrit: Ārya-khagarbhāṣṭottaraśatakanāma-dhāraṇī-mantra
+- **T21n1317** (甘露陀羅尼呪) <-> CBETA #645 (甘露生陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Exact title match: Both '甘露陀羅尼呪' in Chinese and Tibetan '甘露生陀羅尼' (Amṛtabhava-nāma-dhāraṇī). Sanskrit Amṛtabhava aligns with 甘露. T21n1317 is a concise ritual text (126 chars) containing pure mantra formula, fitting a dhāraṇī-mantra type text. This is the closest match for this Tibetan entry.
+  - Sanskrit: Amṛtabhava-nāma-dhāraṇī
+- **T21n1372** (增慧陀羅尼經) <-> CBETA #650 (智慧生起陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Title exact match: Both explicitly about increasing wisdom. Tibetan '智慧生起陀羅尼' (Prajñāvardhanī-nāma-dhāraṇī - Wisdom-Enhancement dhāraṇī) directly corresponds to T21n1372 '增慧陀羅尼經' (Enhanced-Wisdom dhāraṇī Sūtra). Sanskrit Prajñāvardhanī = 增慧 (enhanced wisdom). Length (277 chars), opening formula 如是我聞, and content all consistent. Best match for this entry.
+  - Sanskrit: Prajñāvardhanī-nāma-dhāraṇī
+- **T21n1253** (大吉祥天女十二契一百八名無垢大乘經) <-> CBETA #672 (吉祥大黑天女一百八名)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Strong correspondence: Both texts concern 'Great Auspicious Goddess' with 'One Hundred Eight Names' (一百八名/brgya-rtsa-brgyad pa). Sanskrit title Śrī-devīkālīnāmāṣṭaśataka directly translates to the Tibetan and Chinese content. Taishō T21n1253 explicitly lists multiple names and aspects of the goddess. Opening uses proper sūtra formula ('如是我聞'). Genre compatible (T21 = tantra). Length (2472 chars) appropriate for comprehensive name-list text.
+  - Sanskrit: Śrī-devīkālīnāmāṣṭaśataka
+- **T21n1235** (無能勝大明心陀羅尼經) <-> CBETA #709 (無能勝大明母)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: The Tibetan title 無能勝大明母 (Ájñeya-mahāvidyā-mātṛ) and Chinese 無能勝大明心陀羅尼經 both refer to the same 'Invincible/Unconquerable Great Mantra'. While 'mother/matṛ' and 'heart/hṛdaya' are slightly different, both refer to the same dhāraṇī transmission. Length (601 CJK) is reasonable for a core mantra text.
+- **T21n1398** (佛說智光滅一切業障陀羅尼經) <-> CBETA #743 (聖一切業障清淨陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Title alignment: Tibetan 'Ārya-sarvakarmāvaraṇaviśodhanī' (All Karmic Obstacles Purification) corresponds well with Chinese T21n1398 'Wisdom Light Eliminates All Karmic Obstacles Dhāraṇī (智光滅一切業障)'. Both explicitly mention 'all karmic obstacles/業障'. Standard sūtra opening (如是我聞). Length appropriate for dharani text. Sanskrit semantics align.
+  - Sanskrit: Ārya-sarvakarmāvaraṇaviśodhanī-nāma-dhāraṇī
+- **T18n0901** (陀羅尼集經) <-> CBETA #859 (聖灌頂陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan entry is 'Ārya-abhiṣecanī-nāma-dhāraṇī' (Consecration Dharani), while T18n0901 is '陀羅尼集經' (Dharani Collection Sutra) — 136k+ characters, a major comprehensive dharani compendium. Abhiseka dharani would naturally appear within such a collection. Genre compatible (T18 = tantra/dharani). The entry likely refers to content within this larger collection.
+  - Sanskrit: Ārya-abhiṣecanī-nāma-dhāraṇī
+- **T21n1369a** (百千印陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan entry '陀羅尼' from section '陀羅尼集' matches T21n1369a '百千印陀羅尼經'. Both are dhāraṇī texts with identical genre classification. Opening formula '如是我聞' and closing narrative structure ('皆大歡喜信受奉行') confirm sūtra format. Title semantics align: '百千印' = 'hundred-thousand seals' within a dhāraṇī context. Length (~389 chars) is typical for a focused dhāraṇī scripture. Pre-filter signal matches.
+- **T19n0934** (佛說無量功德陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: Perfect title alignment: 佛說無量功德陀羅尼經 directly includes 陀羅尼. Opens with sūtra formula (爾時世尊告阿難言) appropriate for dhāraṇī sutras. Contains explicit mantras and repetition instructions. Length (271 chars) reasonable for devotional dhāraṇī text. T19 volume (late period translations) matches Song translator attribution. Closing properly concludes with 歡喜奉行. All genre and content markers align.
+- **T21n1387** (佛說栴檀香身陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: Title matches (陀羅尼), section is 陀羅尼集. T21n1387 is a compact dhāraṇī text (454 characters). Opens with narrative frame (爾時世尊告阿難言) and closes with standard formula (歡喜信受禮佛而退). Contains mantra sections and practice instructions. Shorter length fits a focused single-dhāraṇī text.
+- **T20n1075** (佛說七俱胝佛母准提大明陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: Title 佛說七俱胝佛母准提大明陀羅尼經 is a major dhāraṇī sūtra. Opening formula (如是我聞) and assembly setup are canonical. Text narrates the origin of the dhāraṇī (seven koṭi Cundī Buddhas) and provides ritual instructions with detailed visualization practices. Length (6179 chars) is substantial and appropriate. Closing excerpt shows ritual detail. This is a comprehensive dhāraṇī sūtra squarely within the Tibetan catalogue's scope.
+- **T21n1388** (佛說無畏陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan and Chinese titles both reference 陀羅尼. Title 佛說無畏陀羅尼經 clearly matches the section. Text opens with Buddha teaching (爾時佛告) and contains dhāraṇī mantras. Closes with standard Buddhist formula (歡喜信受作禮而退). Length (585 chars) is consistent with dhāraṇī sūtra. Taishō T21n1388 vol. 21 is appropriate for this genre.
+- **T21n1256** (佛說摩利支天陀羅尼呪經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: Title 佛說摩利支天陀羅尼呪經 contains 陀羅尼呪經. Opens with standard 如是我聞 formula in proper sūtra setting. Buddha teaches a specific dhāraṇī regarding Marīcī Devī. Closes with standard conclusion (皆大歡喜信受奉持). Length (689 chars) is consistent. Taishō T21n1256 vol. 21.
+- **T20n1037** (觀自在菩薩說普賢陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: Strong title match: '觀自在菩薩說普賢陀羅尼經' clearly refers to a Avalokiteśvara-related dhāraṇī sūtra. Opening with 'thus have I heard' (如是我聞) confirms sūtra format. T20n1037 is an appropriate Taishō volume for dhāraṇī texts. Content and closing with standard assembly formula match expectations for a dhāraṇī sūtra.
+- **T21n1369b** (百千印陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: T21n1369b (百千印陀羅尼經) is explicitly a dhāraṇī text matching Tibetan genre. Opens with 如是我聞, features Buddha teaching a named dhāraṇī (百千印). Contains multiple dhāraṇī mantras and closes with standard formula. Length (365 chars) is brief but appropriate for a concentrated dhāraṇī teaching. Volume 21 and title both match expectations.
+- **T20n1047** (佛說聖六字大明王陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: T20n1047 (佛說聖六字大明王陀羅尼經) is a dhāraṇī sūtra with matching genre. Opens with 如是我聞, features explicit Buddha teaching of a named dhāraṇī (六字大明王). Contains dhāraṇī mantras and closes with standard formula. Length (580 chars) is reasonable for a focused dhāraṇī text. Title and content clearly align with Tibetan entry.
+- **T21n1383** (佛說宿命智陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan catalogue entry '陀羅尼' matches T21n1383 '佛說宿命智陀羅尼經' (Buddha speaks of the Past-life Knowledge Dhāraṇī Sūtra). Both are dhāraṇī texts. Opening lacks standard 如是我聞 but begins with 爾時世尊 which is acceptable variant. Volume 21 is at boundary of sūtra/dhāraṇī range. Unusually short (166 characters) but appropriate for a text focused on a single dhāraṇī. Contains extensive dhāraṇī sections.
+- **T21n1336** (陀羅尼雜集) <-> CBETA #865 (陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: T21n1336 (Dhāraṇī Miscellaneous Collection) is comprehensively a dhāraṇī compilation with title explicitly stating 'Dhāraṇī Collection' (陀羅尼雜集). Very long (69261 chars) and contains numerous independent dhāraṇīs from multiple buddhas. Perfect match to 'Dhāraṇī Collection' (陀羅尼集) catalogue entry. This appears to be a comprehensive anthology fitting the broader collection concept.
+- **T19n1010** (佛說出生無邊門陀羅尼儀軌) <-> CBETA #865 (陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: T19n1010 titled 佛說出生無邊門陀羅尼儀軌is explicitly a dhāraṇī ritual manual (儀軌). Although focused on practice methodology rather than narrative sūtra form, it treats the same 出生無邊門陀羅尼 as Pair 0, representing the ritual/exegetical tradition. Appropriately placed in dhāraṇī collection.
+- **T21n1368** (佛說大七寶陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: T21n1368 titled 佛說大七寶陀羅尼經is a dhāraṇī sūtra. Opens with 如是我聞, features protective mantras. Brief length (216 characters) is appropriate for a single dhāraṇī exposition text. Clearly belongs to dhāraṇī collection.
+- **T21n1350** (佛說一切如來名號陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: T21n1350 (佛說一切如來名號陀羅尼經) contains the standard sutra opening (如是我聞), proper dialogue structure, and multiple Tathāgata names with dhāraṇī components. Length (765 chars) is consistent with a medium-length sutra. The text falls within T21 (śāstra/sūtra range). Matches the '陀羅尼' categorization in terms of content.
+- **T19n0970** (最勝佛頂陀羅尼淨除業障呪經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: The Tibetan entry '陀羅尼' aligns with '最勝佛頂陀羅尼淨除業障呪經'. Opens with standard sūtra formula (如是我聞), contains multiple dhāraṇī sections throughout. The closing mentions '此經名為最勝佛頂陀羅尼淨除諸趣業障呪經', confirming the text identity. Length (5520 characters) appropriate for an extended dhāraṇī sūtra with detailed liturgical content.
+- **T21n1255a** (佛說摩利支天菩薩陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: The Tibetan entry '陀羅尼' corresponds to '佛說摩利支天菩薩陀羅尼經'. Opens with standard sūtra formula (如是我聞), features specific deity focus (摩利支天). Contains explicit dhāraṇī content. Closing explains practices and benefits of carrying the text. Length (932 characters) consistent with single-deity protective dhāraṇī sūtra. Translator 不空 is eminent Tang dhāraṇī specialist.
+- **T19n1022A** (一切如來心祕密全身舍利寶篋印陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: T19n1022A (一切如來心祕密全身舍利寶篋印陀羅尼經) is a dhāraṇī-focused sūtra in Taishō vol. 19. Tibetan catalogue entry lists '陀羅尼' in 陀羅尼集 section. Opening '如是我聞' confirms sūtra genre. Title contains 陀羅尼經, indicating this is a dedicated dhāraṇī scripture. Length (2618 chars) consistent with this text type.
+- **T19n0918** (諸佛心陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan entry '陀羅尼' matches T19n0918 '諸佛心陀羅尼經'. Section alignment correct. Volume 19 falls within sūtra/tantra boundary. Opening uses standard sūtra formula 'thus have I heard' (如是我聞). Content explicitly states it is a dhāraṇī teaching. Translator Xuanzang (玄奘) is canonical. Length appropriate for a sūtra-style dhāraṇī text.
+- **T20n1078** (七佛俱胝佛母心大准提陀羅尼法) <-> CBETA #865 (陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: T20n1078 'Seven Buddhas, Mother of Koti Buddhas, Heart Great Cundī Dhāraṇī Method' explicitly focuses on dhāraṇī practice and mantra recitation. Contains detailed mantra sections in Sanskrit transliteration. The opening describes ritual procedures for dhāraṇī practice. Fits the dhāraṇī collection category.
+- **T20n1153** (普遍光明清淨熾盛如意寶印心無能勝大明王大隨求陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: Title contains 陀羅尼經 with dhāraṇī focus. T20n1153 opens with proper sūtra formula (如是我聞), contains extensive dhāraṇī mantras in closing, and is appropriate length (~16.8K characters). Taishō vol. 20 is within sūtra/tantra boundary range consistent with dhāraṇī texts.
+- **T21n1317** (甘露陀羅尼呪) <-> CBETA #865 (陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: Title 甘露陀羅尼呪 contains 陀羅尼. T21n1317 consists of pure mantra text in Sanskrit transliteration without narrative frame, very brief (~126 characters). Matches as standalone dhāraṇī/spell text. Taishō vol. 21 appropriate for dhāraṇī compilations.
+- **T20n1131** (聖金剛手菩薩一百八名梵讚) <-> CBETA #878 (聖金剛手一百八名陀羅尼真言)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics align: Tibetan '聖金剛手一百八名陀羅尼真言' matches T20n1131 '聖金剛手菩薩一百八名梵讚' (both describe Vajrapāṇi's 108 names). Text is 876 characters, consistent with a dharani hymn/praise text. Opening shows mantric Sanskrit names organized in numbered meetings (會), matching the '梵讚' (Sanskrit praise) genre. However, note 'Pair 3' specifies 'dharani' section while T20 is classified as sūtra; some genre flexibility expected in dhāraṇī collections.
+- **T20n1185A** (佛說文殊師利法寶藏陀羅尼經) <-> CBETA #879 (聖文殊師利法王子一百八名陀羅尼真言)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Strong match: Tibetan '聖文殊師利法王子一百八名陀羅尼真言' aligns with T20n1185A '佛說文殊師利法寶藏陀羅尼經' (Mañjuśrī dharani). Opening '如是我聞' confirms sūtra format. 8069 characters consistent with expanded narrative dharani scripture. Text describes Mañjuśrī explicitly, frames the Buddha teaching dharani in a celestial context. Translator 菩提流志 (Tang) is canonical for dharani texts. Longer version likely includes narrative expansion alongside dharani mantras.
+- **T19n0971** (佛說佛頂尊勝陀羅尼經) <-> CBETA #962 (熾頂髻陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: The Tibetan 'Gtsug-tor ḥbar-ba shes-bya-baḥi gzuṅs' (Blazing Crown Dharani) closely matches T19n0971 '佛說佛頂尊勝陀羅尼經' (Buddha-crown Supreme Dharani Sutra). Both reference 'crown/top' (gtsug-tor/佛頂) and 'supreme/victorious' (ḥbar-ba/尊勝) concepts. The opening includes standard sutra formula ('如是我聞'), narrative of the Goodwill deva (善住天子), and prominent dharani content. The 3375-character length is reasonable for a dharani sutra. Genre (Tantra section/dhāraṇī collection) and content align well.
+- **T18n0901** (陀羅尼集經) <-> CBETA #975 (聖法海陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: T18n0901 (陀羅尼集經) matches the Tibetan 陀羅尼集 (dhāraṇī collection). The Sanskrit title Ārya-dharmasāgara-nāma-dhāraṇī corresponds semantically to a collection of dharma teachings. The translator (唐 阿地瞿多) and large length (136451 characters) align with a major compiled work. The opening confirms this is a comprehensive dhāraṇī collection text with proper Buddhist formulas.
+  - Sanskrit: Ārya-dharmasāgara-nāma-dhāraṇī
+- **T20n1039** (阿唎多羅陀羅尼阿嚕力經) <-> CBETA #1001 (聖母多羅陀羅尼)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Strong match: T20n1039 '阿唎多羅陀羅尼阿嚕力經' contains 'Tārā' (多羅) in the title and features Avalokiteśvara as the main speaker of the dhāraṇī. Length (9124 characters) is consistent with a substantial Tārā text. Opening follows standard sūtra formula (如是我聞), and closing confirms dharma transmission to assembly. The Taishō volume (T20) covers sūtra/dhāraṇī materials appropriately.
+- **T18n0908** (金剛頂瑜伽護摩儀軌) <-> CBETA #1502 (護摩)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: Direct match: Chinese title 金剛頂瑜伽護摩儀軌 directly corresponds to the general category 護摩. T18n0908 explicitly discusses five types of homa (五護摩) within the Vajradhātu yoga system. Length (4024 chars), dhāraṇī sections, and tantra classification all align perfectly.
+- **T20n1119** (大樂金剛薩埵修行成就儀軌) <-> CBETA #1628 (金剛薩埵成就法)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Sanskrit title Vajrasattvasādhana matches perfectly. Chinese title 大樂金剛薩埵修行成就儀軌 (Great Bliss Vajrasattva accomplishment ritual) is a direct expansion of the Tibetan's sgrub-thabs (sādhana). Both tantra section, both describe same deity practice with dhāraṇī sections. Content matches sādhana genre.
+  - Sanskrit: Vajrasattvasādhana
+- **T19n0959** (頂輪王大曼荼羅灌頂儀軌) <-> CBETA #1709 (曼荼羅灌頂儀軌)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: Strong match: Tibetan entry 曼荼羅灌頂儀軌 (Maṇḍalābhiṣekavidhi = mandala initiation ritual), Taishō 頂輪王大曼荼羅灌頂儀軌 (Uṣṇīṣacakravartin Great Maṇḍala Abhiṣeka Vidhi). The Sanskrit title Maṇḍalābhiṣekavidhi corresponds well with the Chinese title structure. Both are tantric initiation rituals (怛特羅部), same text as Pair 0, and the general catalogue title accurately describes the more specific Taishō text.
+  - Sanskrit: Maṇḍalābhiṣekavidhi
+- **T18n0908** (金剛頂瑜伽護摩儀軌) <-> CBETA #1825 (護摩儀軌)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: Both texts are virtually identical: Tibetan 'Homavidhi' and Taishō T18n0908 '金剛頂瑜伽護摩儀軌' (Vajradhara yoga homa ritual). Translator: 唐 不空譯 (Amoghavajra). Opening formulas are nearly identical to Pair 4 (T18n0909): '我今說護摩' with five-fold homa classification. T18 volume places it correctly in tantra section. Length (4024 chars) consistent with ritual text. This appears to be either the same text with minor variations or a close parallel recension.
+  - Sanskrit: Homavidhi
+- **T20n1175** (金剛頂經瑜伽文殊師利菩薩供養儀軌) <-> CBETA #1902 (文殊金剛供養儀軌)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Strong title alignment: Taishō text (T20n1175) '金剛頂經瑜伽文殊師利菩薩供養儀軌' directly translates to 'Vairocana Sutra Yoga Mañjuśri Bodhisattva Pūja Ritual'. The Tibetan 'Mañjuvajrapūjavidhi' (Mañjuśri-Vajra-Puja-Ritual) matches this perfectly. Text is a ritual manual for Mañjuśri worship within the Vajradhātu system. Opening establishes practice lineage and deity focus. Consistent length and genre.
+  - Sanskrit: Mañjuvajrapūjavidhi
+- **T18n0909** (金剛頂瑜伽護摩儀軌) <-> CBETA #1965 (護摩儀軌)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: T18n0909 '金剛頂瑜伽護摩儀軌' (Vajrapeak Yoga Homa Ritual) directly matches the Tibetan entry '護摩儀軌' (Homa Ritual). Both explicitly reference homa (護摩/sbyin-sreg) and ritual procedure (儀軌/cho-ga). Opening immediately presents the five types of homa rituals (五護摩) with ritual specifications. Contains dhāraṇī sections. Section 怛特羅部 with T18 volume is correct for tantric rituals. Length (3852 chars) is appropriate for detailed homa manual. Strong semantic and structural alignment.
+- **T18n0912** (建立曼荼羅護摩儀軌) <-> CBETA #1965 (護摩儀軌)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: Both texts are tantric homa rituals (護摩儀軌 = Sbyin-sreg-gi cho-ga). T18n0912 title '建立曼荼羅護摩儀軌' contains the core term 護摩儀軌. Both are translated from Sanskrit tantric sources, have appropriate dhāraṇī sections, and the length (4754 chars) is consistent with a detailed ritual manual. Section 怛特羅部 matches Taishō vol. 18 (tantra range).
+- **T20n1119** (大樂金剛薩埵修行成就儀軌) <-> CBETA #2489 (金剛薩埵成就法)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Strong title match: 金剛薩埵成就法 directly corresponds to 大樂金剛薩埵修行成就儀軌. Sanskrit Vajrasattvasādhana-nāma aligns perfectly. T20n1119 is tantra-section appropriate (Vol. 20). Contains dhāraṇī sections and ritual practice instructions. Opening discusses accomplishment practice (成就) methodology. Length (4920 chars) consistent with sādhana manual. Excellent semantic and structural alignment.
+  - Sanskrit: Vajrasattvasādhana-nāma
+- **T20n1119** (大樂金剛薩埵修行成就儀軌) <-> CBETA #2517 (金剛薩埵出現成就法)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Sanskrit titles align closely: Tibetan 'Vajrasattvodaya-nāma-sādhana' (Vajrasattva emergence named achievement practice) vs. Taishō '大樂金剛薩埵修行成就儀軌' (Great bliss Vajrasattva practice achievement ritual). Both focus on Vajrasattva practice and sādhana. Title semantics match (出現=udaya emergence, 成就=sādhana achievement). Genre and tantra section alignment correct.
+  - Sanskrit: Vajrasattvodaya-nāma-sādhana
+- **T18n0909** (金剛頂瑜伽護摩儀軌) <-> CBETA #2659 (護摩儀軌)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan entry specifies Homavidhi (火供儀軌/護摩儀軌). T18n0909 (金剛頂瑜伽護摩儀軌) is a foundational homa ritual text translated by Amoghavajra, a premier tantric translator. The text opens with direct homa instruction (我今說護摩) and covers five types of fire offerings (五種護摩), consistent with tantric homa theory. Length (3852 characters) fits ritual manual conventions. Genre and volume range (T18-21 = tantra) align perfectly. Sanskrit title 'Homavidhi' directly matches.
+  - Sanskrit: Homavidhi
+- **T21n1416** (金剛摧碎陀羅尼) <-> CBETA #2687 (金剛摧破陀羅尼分次第廣註明燈)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Strong match. The Tibetan is an extensive commentary (bhāṣyavṛtti + pradīpa) on Vajravidāraṇa dhāraṇī, and T21n1416 '金剛摧碎陀羅尼' is a concise dhāraṇī text (733 chars, primarily mantra). 摧碎 = vidāraṇa. The brevity of the Chinese suggests it's the core dhāraṇī that the Tibetan commentary explains. This is a text-commentary relationship.
+  - Sanskrit: Vajravidāraṇā-nāma-dhāraṇīpaṭalakrama-bhāṣyavṛttipradīpa-nāma
+- **T21n1361** (六門陀羅尼經論) <-> CBETA #2694 (聖,六門陀羅尼釋)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: T21n1361 (六門陀羅尼經論) is explicitly a śāstra commentary (論) by Vasubandhu on the Six-Gate Dhāraṇī sūtra. The Tibetan title 'Ārya-ṣaṇmukhadhāraṇīvyākhyāna' (commentary/interpretation) matches a treatise explaining the sūtra. The 4803-character length and Vasubandhu authorship are consistent with a major exegetical work. Perfect thematic match on the six-gate dhāraṇī teaching.
+  - Sanskrit: Ārya-ṣaṇmukhadhāraṇīvyākhyāna
+- **T18n0908** (金剛頂瑜伽護摩儀軌) <-> CBETA #2844 (護摩儀軌)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan '護摩儀軌' (fire-offering ritual) matches Chinese '金剛頂瑜伽護摩儀軌' (Vajraśekhara Yoga fire-offering ritual). Nearly identical to Pair 6, both translated by 不空 (Amoghavajra). Opening text is extremely similar, discussing five types of homa (五種護摩). Length (4024 chars) consistent with ritual text. Genre appropriate (T18 = tantra). The small length difference (3852 vs 4024 chars) and closing differences suggest different manuscript versions of the same text.
+- **T20n1093** (不空羂索呪經) <-> CBETA #2862 (不空羂索供物儀軌)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Strong semantic match: both concern 'Amoghapāśa' (不空羂索). Chinese title 'dhāraṇī sūtra' (呪經) aligns with Tibetan 'gtor-ma ritual'. T20n1093 is a dhāraṇī-centred sūtra with proper opening formula. Tantra section compatible with Vol. 20.
+- **T21n1417** (佛說壞相金剛陀羅尼經) <-> CBETA #2910 (金剛摧破陀羅尼儀軌)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Sanskrit title Vajravidāraṇā-nāma-dhāraṇīvidhi indicates this is a ritual/dhāraṇī text of Vajravidāraṇa ('vajra-destroyer/crusher'). Chinese titles semantically aligned: 金剛摧破陀羅尼儀軌 vs 佛說壞相金剛陀羅尼經 (both refer to 'vajra-crushing/destroying dhāraṇī'). 壞相 and 摧破 are variant translations of vidāraṇa. Text opens with 'Thus have I heard' formula and contains dhāraṇī. Section 怛特羅部 matches tantra content.
+  - Sanskrit: Vajravidāraṇā-nāma-dhāraṇīvidhi
+- **T21n1306** (北斗七星護摩祕要儀軌) <-> CBETA #3101 (護摩)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: T21n1306 'North Pole Seven Stars Homa Secret Essential Ritual' by Bukong. Tibetan entry is generic 護摩. Chinese title contains 護摩 and focuses on seven-star homa practice. Both belong to tantra section. Detailed ritual content with dhāraṇī sections. Appropriate length for specialized ritual manual.
+- **T20n1162** (持世陀羅尼經) <-> CBETA #3240 (持世陀羅尼優波提舍)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Excellent alignment: Both titles translate 持世陀羅尼 (Vasundhārā/Vasudhārā dhāraṇī). T20n1162 (玄奘 translation) is a dhāraṇī sūtra with proper narrative opening (如是我聞). While the Tibetan entry specifies 'upadeśa' (commentary), T20n1162 may be the base text from which commentaries derive. The dhāraṇī content and textual structure match the genre. Tantra section placement compatible with dhāraṇī sūtras in expanded Buddhist canons.
+  - Sanskrit: Vasudhārādhāraṇyupadeśa
+- **T21n1259** (摩利支天一印法) <-> CBETA #3344 (烏仗那摩利支天成就法)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Both texts concern Mārīcī (摩利支天) practice. Tibetan 'Uḍḍiyāna-mārīcī-sādhana' matches the Taishō 摩利支天一印法 (Mārīcī single-seal practice). The Taishō text is a sādhana (成就法 = sgrub-thabs) with ritual instructions, dhāraṇī, hand seals (印), and visualizations characteristic of tantric practice. Both fit 怛特羅部 classification. Length (262 chars) is appropriate for a ritual manual.
+  - Sanskrit: Uḍḍiyānamārīcīsādhana
+- **T21n1255a** (佛說摩利支天菩薩陀羅尼經) <-> CBETA #3537 (聖摩利支天陀羅尼讀誦優波提舍)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Excellent match. Sanskrit Ārya-mārīcīdhāraṇīpāṭhopadeśa aligns with T21n1255a (佛說摩利支天菩薩陀羅尼經). Both focus on Mārīcī dharaṇī instruction (陀羅尼). T21n1255a includes practical guidance on the dharaṇī's use (wearing in hair/clothing), recitation benefits, protective effects. Length (932 chars) appropriate. Opening 如是我聞 standard for tantra-sūtra hybrids. Directly parallel texts.
+  - Sanskrit: Ārya-mārīcīdhāraṇīpāṭhopadeśa
+- **T20n1165** (聖持世陀羅尼經) <-> CBETA #3606 (持世母陀羅尼優波提舍)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics aligned: 'Vasudhārādhāraṇyupadeśa' (Vasudhārā dhāraṇī teaching) matches 'Śāntideva-Vasudhāra-dhāraṇī'. T20n1165 is titled '聖持世陀羅尼經' but focuses on Vasudhārā-related practice (持世 = Vasudhāra). Opening shows dhāraṇī instructions with ritual procedures. Text length (2637 chars) and dhāraṇī content consistent with sādhana-upadeśa genre.
+  - Sanskrit: Vasudhārādhāraṇyupadeśa
+- **T21n1245** (佛說毘沙門天王經) <-> CBETA #3730 (大王毗沙門天成就法)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics align: 大王毗沙門天成就法 (Mahārājavaiśravaṇasādhana) vs 佛說毘沙門天王經 ('Buddha's Vaiśravaṇa King Sūtra'). Both refer to Vaiśravaṇa/Bishaimen deity practice. Sanskrit titles correspond. Tantra section appropriate. T21n1245 fits tantra volume. Opening 如是我聞 + Vaiśravaṇa appearing with retinue matches sādhana content pattern. Text emphasizes protective powers and mantras. Length (3115 chars) consistent with deity sādhana. Minor form variation (經 vs 法) acceptable.
+  - Sanskrit: Mahārājavaiśravaṇasādhana
+- **T21n1275** (聖歡喜天式法) <-> CBETA #3738 (歡喜天秘密成就法)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan Gaṇapatiguhyasādhana matches Sanskrit title and content. Chinese 聖歡喜天式法 (Śrī Gaṇapati Ritual) = 歡喜天 (Gaṇapati). Opening describes Gaṇapati iconography (red-faced, holding implements). Genre matches (怛特羅部, vol. 21). Length (1711 chars) appropriate for sādhana text.
+  - Sanskrit: Gaṇapatiguhyasādhana-nāma
+- **T18n0912** (建立曼荼羅護摩儀軌) <-> CBETA #3761 (曼荼羅作法儀軌)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Title match: Tibetan 'Maṇḍalakriyāvidhi' and Taishō '建立曼荼羅護摩儀軌' (establishing maṇḍala homa ritual) both describe maṇḍala construction procedures. Sanskrit term 'kriyāvidhi' (rite/procedure) matches 儀軌. Genre compatible: tantra section (怛特羅部) aligns with Taishō vol. 18 (tantra). Text opens with procedural instructions (initial day preparations, sacred geometry, mantras), consistent with ritual manual.
+  - Sanskrit: Maṇḍalakriyāvidhi
+- **T20n1067** (攝無礙大悲心大陀羅尼經計一法中出無量義南方滿願補陀落海會五部諸尊等弘誓力方位及威儀形色執持三摩耶幖幟曼荼羅儀軌) <-> CBETA #3767 (曼荼羅儀軌)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: Title overlap confirmed: The Taishō title explicitly contains '曼荼羅儀軌' (Maṇḍala ritual) as a primary component. Sanskrit 'Maṇḍalavidhi' equivalence is clear. T20n1067 is attributed to 不空 (Amoghavajra), a known tantric translator. Length (6891 chars) substantial and consistent with a comprehensive maṇḍala text. Opening correctly shows dharmic instruction format for tantric teaching.
+  - Sanskrit: Maṇḍalavidhi
+- **T08n0222** (光讚經) <-> CBETA #3790 (般若波羅蜜多二萬五千（頌）)
+  - Confidence: 88%
+  - Signals: sanskrit_fuzzy
+  - Reason: T08n0222 (光讚經, Dharmarakṣa translation) is another primary translation of the Pañcaviṁśatisāhasrikā-prajñāpāramitā (25,000-line version). Sanskrit title matches. Opening has proper sūtra formula (聞如是). Genre and volume placement correct. Length (~99K characters) is shorter than T08n0223 but still appropriate for this text. This represents an independent Western Jin translation tradition.
+  - Sanskrit: Pañcaviṁśatisāhasrikāprajñāpāramitā
+- **T07n0220** (大般若波羅蜜多經(第401卷-第600卷)) <-> CBETA #3807 (聖般若波羅蜜多十萬（頌）廣註疏)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: T07n0220 is a continuation of the Great Prajñāpāramitā Sutra (fascicles 401-600), part of the same Xuanzang translation of the Śatasāhasrikā. The enormous length (1.5M+ characters) and same translator confirm this is the same work as Pair 2, covering different fascicles.
+  - Sanskrit: [Śatasāhasrikāprajñāpāramitābṛhaṭṭīkā]
+- **T08n0236b** (金剛般若波羅蜜經) <-> CBETA #3817 (聖薄伽梵母般若波羅蜜多金剛能斷廣註)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan entry is Diamond Sutra commentary. T08n0236b is a Diamond Sutra translation (base text), one of the standard versions. While Tibetan specifies a commentary (ṭīkā/廣註) and T08n0236b is the sutra itself, this Diamond Sutra version would be the underlying text for such a commentary. The opening (如是我聞), structure, and content all match Diamond Sutra.
+  - Sanskrit: Ārya-prajñāpāramitāvajracchedikāṭīkā
+- **T08n0237** (金剛般若波羅蜜經) <-> CBETA #3817 (聖薄伽梵母般若波羅蜜多金剛能斷廣註)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan entry is Diamond Sutra commentary. T08n0237 is another Diamond Sutra translation. Like Pair 5, this is the base sutra text (Chen Zhen-di translation, 6627 characters). The opening and closing formulas confirm this is Diamond Sutra, which would be the foundation text for the commentary described in the Tibetan entry.
+  - Sanskrit: Ārya-prajñāpāramitāvajracchedikāṭīkā
+- **T08n0239** (佛說能斷金剛般若波羅蜜多經) <-> CBETA #3817 (聖薄伽梵母般若波羅蜜多金剛能斷廣註)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan entry is Diamond Sutra commentary. T08n0239 is Yijing's Diamond Sutra translation (佛說能斷金剛般若波羅蜜多經). Opening (如是我聞) and closing formulas confirm Diamond Sutra. This represents the base text for the commentary described in the Tibetan catalogue entry.
+  - Sanskrit: Ārya-prajñāpāramitāvajracchedikāṭīkā
+- **T08n0253** (般若波羅蜜多心經) <-> CBETA #3818 (聖般若波羅蜜多心（經）廣疏)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: T08n0253 is the Heart Sutra (般若波羅蜜多心經), matching the Tibetan 'sñiṅ-po' (heart/essence). Both are Heart Sutras, though Tibetan entry emphasizes commentary aspect while this is base sutra. Contains 'śes-rab-kyi-pha-rol-tu-phyin' (prajñāpāramitā) and traditional sutra opening structure with Śāriputra dialogue.
+  - Sanskrit: Ārya-prajñāpāramitāhṛdayaṭīkā
+- **T08n0257** (佛說聖佛母般若波羅蜜多經) <-> CBETA #3819 (聖般若波羅蜜多心（經）解說)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: T08n0257 (佛說聖佛母般若波羅蜜多經) is a Heart Sutra variant. Title semantics: 聖佛母般若波羅蜜多 = Ārya-bhagavatī-prajñāpāramitā (another name for Heart Sutra). Genre compatible (般若部, sūtra vol 8). Opening formula correct (如是我聞). Content matches: Avalokiteśvara teaching emptiness of five aggregates, Śāriputra's question, standard Heart Sutra structure. Length (643 chars) consistent with expanded Heart Sutra versions. Minor title variant (佛母 = mother/feminine aspect) is expected variation for same text.
+  - Sanskrit: Ārya-prajñāpāramitāhṛdayavyākhyā
+- **T08n0253** (般若波羅蜜多心經) <-> CBETA #3821 (聖般若波羅蜜多心（經）廣註)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan entry Sanskrit is 'Ārya-prajñāpāramitāhṛdayaṭīka' - the commentary on the Heart Sutra. T08n0253 is titled 'Prajñāpāramitā Heart Sutra' and contains the classic opening 'zhào jiàn wǔ yùn' (seeing five aggregates as empty) and closing dialogues between Śāriputra and Avalokiteśvara characteristic of Heart Sutra texts. The 545-character length is plausible for a Heart Sutra version. This is the base text upon which the commentary in the Tibetan catalogue would be based.
+  - Sanskrit: Ārya-prajñāpāramitāhṛdayaṭīka
+- **T08n0255** (般若波羅蜜多心經) <-> CBETA #3822 (般若波羅蜜多心（經）義正知)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: T08n0255 (般若波羅蜜多心經) is the Heart Sutra itself. The Tibetan catalogue entry title '般若波羅蜜多心（經）義正知' translates as 'understanding the meaning of the Heart Sutra', and the Sanskrit Ārya-prajñāpāramitāhṛdayārthaparijñāna could refer to the Heart Sutra or its meaning-analysis. The opening matches Heart Sutra conventions (Avalokiteśvara dialogue with Śāriputra on emptiness of five aggregates), and the text is 579 characters, appropriate for a Heart Sutra translation. The pre-filter signal 'chinese_title_substring' confirms title overlap.
+  - Sanskrit: Ārya-prajñāpāramitāhṛdayārthaparijñāna
+- **T08n0258** (佛說聖佛母小字般若波羅蜜多經) <-> CBETA #3822 (般若波羅蜜多心（經）義正知)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: T08n0258 '聖佛母小字般若波羅蜜多經' (Holy Mother Short Version Heart Sutra) is explicitly a Heart Sutra variant ('small character' edition), with Avalokiteśvara speaking. Contains dhāraṇī sections. The title contains 'heart' (心 implied in context), matching the Tibetan hṛdaya reference.
+  - Sanskrit: Ārya-prajñāpāramitāhṛdayārthaparijñāna
+- **T31n1612** (大乘五蘊論) <-> CBETA #3866 (五蘊論)
+  - Confidence: 88%
+  - Signals: chinese_title_substring
+  - Reason: T31n1612 (大乘五蘊論) attributed to Vasubandhu and translated by Xuanzang is a direct match for the Tibetan entry CBETA #3866 (Pañcaskandhaprakaraṇa). Standard opening formula (如薄伽梵略說五蘊). Title and content align precisely. Length (3099 chars) is appropriate for a standard Abhidharma treatise. This is the canonical Vasubandhu text.
+  - Sanskrit: Pañcaskandhaprakaraṇa
+- **T31n1613** (大乘廣五蘊論) <-> CBETA #4067 (五蘊論註)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: T31n1613 (大乘廣五蘊論) is Sthiramati's expanded commentary on the Pañcaskandha, matching Pañcaskandhavivaraṇa. Translator Dharmapāla. Genre (唯識部) appropriate. Opening matches expected content structure (五蘊 = five skandhas). The title includes 廣 (expanded/commentary), which aligns with the Tibetan '註' (commentary) designation.
+  - Sanskrit: Pañcaskandhavivaraṇa
+- **T16n0676** (解深密經) <-> CBETA #4358 (聖深密意決解經解說)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Title and content match: Tibetan 'Saṁdhinirmocanasūtravyākhyāna' (Sandhinirmocana Sūtra Exposition) matches T16n0676 'Jie Shenmi Jing' (Unraveling the Profound Secret Sūtra). Sanskrit titles align (saṁdhinirmocana = deepest intent). Opening 'Thus have I heard' confirms sūtra genre. Length (31,871 characters) appropriate for major Mahāyāna sūtra with exposition.
+  - Sanskrit: Ārya-saṁdhinirmocanasūtravyākhyāna
+- **T10n0296** (文殊師利發願經) <-> CBETA #4396 (勝行誓願)
+  - Confidence: 88%
+  - Signals: sanskrit_fuzzy
+  - Reason: Strong match: Tibetan 'Agracaryāpraṇidhāna' (勝行誓願, Mchog-gi spyod-paḥi smon-lam) means 'Supreme Conduct Vow/Aspiration.' T10n0296 '文殊師利發願經' (Mañjuśrī's Vow Sūtra) is a praṇidhāna text. The content perfectly matches: opens with body-speech-mind purification, paying homage to Buddhas of ten directions and three times, invoking Samantabhadra's vow-power (普賢願力), and concludes with aspiring to fulfill Samantabhadra and Mañjuśrī's practices, rebirth in Sukhāvatī. This is the famous Bhadracaryāpraṇidhāna often attributed to/associated with Mañjuśrī. Sanskrit match score 0.857 supports this. Short aspirational prayer genre fits both entries.
+  - Sanskrit: Agracaryāpraṇidhāna
+- **T32n1663** (菩提心觀釋) <-> CBETA #4556 (菩提心解說)
+  - Confidence: 88%
+  - Signals: chinese_title_overlap
+  - Reason: Strong evidence for parallelism: (1) Title semantics: 菩提心解說 (explanation of bodhicitta) vs 菩提心觀釋 (exegesis on bodhicitta meditation) are closely related; both focus on explaining bodhicitta; (2) Sanskrit titles both derive from Bodhicitta- with vivaraṇa (explanation) and similar exegetical functions; (3) Genre compatible: both are philosophical commentarial texts (śāstra) from Atiśa's collection; (4) Content matches—opening invokes Buddha, discusses the nature of bodhicitta with emphasis on its non-dual, emptiness-based character, lists synonyms (benefiting heart, peaceful heart, supreme heart), and emphasizes its merit; (5) Length of 1096 characters is substantial but appropriate for an exegetical work. Pre-filter signal 'chinese_title_overlap' is consistent with minor title variation.
+  - Sanskrit: Bodhicittavivaraṇa
+- **T20n1197** (佛說文殊師利一百八名梵讚) <-> CBETA #639 (聖文殊師利法王子一百八名陀羅尼真言)
+  - Confidence: 87%
+  - Signals: chinese_title_overlap
+  - Reason: Perfect title and deity match: both feature 文殊師利 (Mañjuśrī) with explicit '一百八名' and 梵讚 (Sanskrit hymns). T20n1197 explicitly states 'one hundred eight names of Mañjuśrī' in opening (一百八名). Sanskrit title mañjuśrīkumārabhūtaṣṭottaraśata aligns with text content. Length (943 chars) is reasonable for 108-name hymn collection. Opening and closing show proper sequence of 20 dharani verses following 108-name structure pattern. Dhāraṇī sections present throughout.
+  - Sanskrit: Ārya-mañjuśrīkumārabhūtaṣṭottaraśatakanāma-dhāraṇī-mantra-sahita
+- **T21n1236** (聖無能勝金剛火陀羅尼經) <-> CBETA #752 (聖金剛無能勝火迷闇陀羅尼)
+  - Confidence: 87%
+  - Signals: chinese_title_overlap
+  - Reason: Title alignment: Tibetan 'Ārya-vajrājitānalapramohanī' (Diamond Fire Delusion) maps well to Chinese T21n1236 'Saint Unsurpassable Diamond Fire Dhāraṇī (聖無能勝金剛火陀羅尼)'. Both include 'vajra/金剛', 'fire/火', 'unsurpassable/無能勝'. Standard sūtra opening (如是我聞). Length appropriate. Sanskrit semantics align.
+  - Sanskrit: Ārya-vajrājitānalapramohanī-nāma-dhāraṇī
+- **T21n1412** (佛說寶生陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 87%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan '陀羅尼' matches T21n1412 '佛說寶生陀羅尼經'. Both are dhāraṇī texts. Opening begins with dhāraṇī formula '曩謨囉怛曩...' and closing confirms narrative context with merit-accrual language. Title '寶生' = jewel-producing, semantically consistent with wish-granting dhāraṇī context. Length (~343 chars) appropriate for focused dhāraṇī. Genre perfectly aligned with section classification.
+- **T20n1077** (佛說七俱胝佛母心大准提陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 87%
+  - Signals: chinese_title_substring
+  - Reason: Title 佛說七俱胝佛母心大准提陀羅尼經 directly includes 陀羅尼. Opens with sūtra formula (爾時佛在) followed by explicit mantra instruction. Contains multiple detailed dhāraṇī sections with benefits enumerated. Length (1205 chars) appropriate for substantial ritual text. T20 volume correct. Closing demonstrates standard convention (作禮而去). Tang translator attribution (地婆訶羅) matches historical period. All genre markers align perfectly.
+- **T20n1143** (佛說慈氏菩薩誓願陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 87%
+  - Signals: chinese_title_substring
+  - Reason: Title 佛說慈氏菩薩誓願陀羅尼經 contains explicit 陀羅尼經. Opens with Buddha teaching Maitreya a dhāraṇī (爾時佛告慈氏菩薩言). Closes with standard formula (禮佛...歡喜而退). Contains dhāraṇī mantras. Length (272 chars) is plausible. Taishō T20n1143 vol. 20 is appropriate for dhāraṇī texts.
+- **T20n1039** (阿唎多羅陀羅尼阿嚕力經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 87%
+  - Signals: chinese_title_substring
+  - Reason: Title 阿唎多羅陀羅尼阿嚕力經 contains 陀羅尼 and references a specific mantra (阿嚕力). Opens with 如是我聞 formula with Avalokiteśvara teaching the dhāraṇī. Contains explicit mantras (唵阿嚕力迦娑嚩訶). Closes with standard conclusion (皆大歡喜禮佛而退). Length (9124 chars) reflects comprehensive dhāraṇī and visualization text. Taishō T20n1039 vol. 20.
+- **T20n1082** (觀世音菩薩祕密藏如意輪陀羅尼神呪經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 87%
+  - Signals: chinese_title_substring
+  - Reason: Title '觀世音菩薩祕密藏如意輪陀羅尼神呪經' is clearly an Avalokiteśvara Wish-Fulfilling Wheel dhāraṇī sūtra. Opening with 'thus have I heard' (如是我聞) confirms sūtra format. Substantial length (3493 characters) appropriate for a major dhāraṇī sūtra. Closing with extensive dhāraṇī formulas. T20n1082 in correct volume range.
+- **T21n1409** (佛說聖最勝陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 87%
+  - Signals: chinese_title_substring
+  - Reason: T21n1409 (佛說聖最勝陀羅尼經) is a dhāraṇī sūtra with matching Tibetan section. Opens with 如是我聞 and features teaching by Mañjuśrī about a specific dhāraṇī. Contains dhāraṇī mantra sections and closes with 信受奉行. Length (1412 chars) is consistent with medium-length dhāraṇī sūtra. Title clearly indicates dhāraṇī content.
+- **T21n1302** (諸星母陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 87%
+  - Signals: chinese_title_substring
+  - Reason: T21n1302 titled 諸星母陀羅尼經is a dhāraṇī sūtra focused on stellar deities. Opens with 如是我聞, features celestial assembly. Length (1471 characters) consistent with genre. Though specialized in content, clearly fits dhāraṇī collection.
+- **T20n1060** (千手千眼觀世音菩薩廣大圓滿無礙大悲心陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 87%
+  - Signals: chinese_title_substring
+  - Reason: T20n1060 (千手千眼觀世音菩薩廣大圓滿無礙大悲心陀羅尼經) is a major Avalokiteśvara dhāraṇī sutra with authorial attribution (唐 伽梵達摩譯), substantial length (8373 chars), and proper sutra structure. Opening discusses observance of dhāraṇī with clear soteriological benefits. Perfectly fits '陀羅尼' categorization within T20 range (dhāraṇī-focused sutras).
+- **T21n1417** (佛說壞相金剛陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 87%
+  - Signals: chinese_title_substring
+  - Reason: The Tibetan entry '陀羅尼' corresponds to '佛說壞相金剛陀羅尼經'. Opens with standard sūtra formula (如是我聞) set in Gold Adamantine location. Contains explicit dhāraṇī sections describing fierce protective deity (金剛忿怒). Closing emphasizes protective benefits and recitation methods. Length (1149 characters) consistent with ritual dhāraṇī sūtra. Genre fits T21 dhāraṇī section.
+- **T20n1185A** (佛說文殊師利法寶藏陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 87%
+  - Signals: chinese_title_substring
+  - Reason: T20n1185A (佛說文殊師利法寶藏陀羅尼經) is a dhāraṇī sūtra in Taishō vol. 20, dedicated to Mañjuśrī's dhāraṇī teachings. Tibetan catalogue entry '陀羅尼' in 陀羅尼集 matches. Opening '如是我聞' confirms narrative sūtra format. Title explicitly contains 陀羅尼經. Volume 20 (late sūtra section) appropriate for dhāraṇī texts. Length (8069 chars) plausible.
+- **T19n1016** (舍利弗陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 87%
+  - Signals: chinese_title_substring
+  - Reason: Title 舍利弗陀羅尼經 contains 陀羅尼經. T19n1016 has proper sūtra opening (如是我聞), closes with multiple names for the text and dhāraṇī sections, appropriate length (~3.4K characters). Genre alignment with Taishō vol. 19 (dhāraṇī sūtra range).
+- **T20n1058** (千手千眼觀世音菩薩姥陀羅尼身經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 87%
+  - Signals: chinese_title_substring
+  - Reason: Title 千手千眼觀世音菩薩姥陀羅尼身經 contains 陀羅尼. T20n1058 lacks standard sūtra opening (begins with direct speech) but is clearly a dhāraṇī sūtra presentation, contains extensive dhāraṇī mantras and ritual instructions, appropriate length (~9.2K characters). Taishō vol. 20 correct for dhāraṇī texts.
+- **T20n1107** (聖多羅菩薩梵讚) <-> CBETA #1693 (聖多羅母讚)
+  - Confidence: 87%
+  - Signals: chinese_title_overlap
+  - Reason: Sanskrit Āryatārāstotra (praise to Tara) matches both Tibetan (sgrol-ma bstod-pa = Tara praise) and Chinese (聖多羅菩薩梵讚 = Arya Tara Sanskrit praise). All refer to same goddess, same literary genre (stotra/hymn). Genre matches tantra section. Opening shows Sanskrit mantras/chanting style.
+  - Sanskrit: Āryatārāstotra
+- **T21n1222b** (聖迦柅忿怒金剛童子菩薩成就儀軌經) <-> CBETA #1979 (成就儀軌)
+  - Confidence: 87%
+  - Signals: chinese_title_substring
+  - Reason: T21n1222b '聖迦柅忿怒金剛童子菩薩成就儀軌經' explicitly contains 成就儀軌 in title. This is a detailed sādhana for a specific wrathful deity (忿怒金剛童子). Contains extensive dhāraṇī sections, proper tantric dialogue opening, and lengthy ritual instructions (14015 chars). Taishō vol. 21 is appropriate for tantra.
+- **T18n0908** (金剛頂瑜伽護摩儀軌) <-> CBETA #2525 (護摩儀軌)
+  - Confidence: 87%
+  - Signals: chinese_title_substring
+  - Reason: Sanskrit 'Homavidhi' directly corresponds to T18n0908 '金剛頂瑜伽護摩儀軌' (Diamond peak yoga homa ritual). Tibetan 'Sbyin-sreg-gi cho-ga' translates 護摩儀軌. Text is dedicated homa instruction with authentic tantric structure. Nearly identical to T18n0909 (Pair 5) with minor variations. Strong match.
+  - Sanskrit: Homavidhi
+- **T21n1304** (宿曜儀軌) <-> CBETA #3129 (九曜供養儀軌)
+  - Confidence: 87%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan entry '九曜供養儀軌' (Nine Planets Offering Ritual) matches T21n1304 'Nakshatra Ritual' by Yixing. Opening explicitly addresses nine celestial bodies: 日月星 (sun, moon, stars) and discusses planetary deities (日曜、金曜、水曜 etc.). Title 'Nakshatra' (宿曜) refers to lunar mansions/planets. Content discusses planetary offerings and astrological applications. Genre and semantic alignment confirmed.
+- **T19n0959** (頂輪王大曼荼羅灌頂儀軌) <-> CBETA #3764 (曼荼羅儀軌)
+  - Confidence: 87%
+  - Signals: chinese_title_overlap
+  - Reason: Strong title alignment: Tibetan 'Maṇḍalavidhi' and Taishō '頂輪王大曼荼羅灌頂儀軌' both address maṇḍala ritual procedures, with specific focus on initiation (灌頂). Genre compatible: tantra section (怛特羅部) with Taishō vol. 19 (tantra). Detailed procedural content describing temple construction, deity positioning, ritual implements, and cosmographic details matches expectations for a maṇḍala vidhi.
+  - Sanskrit: Maṇḍalavidhi
+- **T08n0255** (般若波羅蜜多心經) <-> CBETA #3821 (聖般若波羅蜜多心（經）廣註)
+  - Confidence: 87%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan entry Sanskrit is 'Ārya-prajñāpāramitāhṛdayaṭīka' (Heart Sutra). T08n0255 is 'Prajñāpāramitā Heart Sutra' translated by Facheng (Tang dynasty). Contains the defining opening formula 'zhào jiàn wǔ yùn' (observing five aggregates), core Heart Sutra dialogues between Avalokiteśvara and Śāriputra, and appropriate closing with standard sūtra colophon. The 579-character length is consistent with Heart Sutra versions. This is the base sūtra text.
+  - Sanskrit: Ārya-prajñāpāramitāhṛdayaṭīka
+- **T23n1437** (十誦比丘尼波羅提木叉戒本) <-> CBETA #4104 (波羅提木叉經本疏)
+  - Confidence: 87%
+  - Signals: chinese_title_overlap
+  - Reason: T23n1437 (十誦比丘尼波羅提木叉戒本) is a Pratimokṣa code for nuns from the Sarvāstivāda Vinaya. The Tibetan entry '波羅提木叉經本疏' references Pratimokṣasūtrapaddhati. While the Taishō text is the bhikṣuṇī-specific version (not generic), it remains a Pratimokṣa recitation text matching the core designation. Genre (律部/vinaya section) is correct. Opening shows proper bhikṣuṇī assembly formula (說法章).
+  - Sanskrit: Pratimokṣasūtrapaddhati
+- **T20n1117** (佛說觀自在菩薩母陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 86%
+  - Signals: chinese_title_substring
+  - Reason: Title 佛說觀自在菩薩母陀羅尼經 directly matches 陀羅尼 catalogue entry. Opens with standard sūtra formula (如是我聞) with detailed assembly description. Contains explicit dhāraṇī mantras and ritual instructions for practice. Length (849 chars) appropriate for substantial dhāraṇī sutra. T20 volume appropriate. Closing properly formatted (皆大歡喜信受奉行). Song translator (法賢) matches period. All elements align clearly.
+- **T21n1402** (消除一切閃電障難隨求如意陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 86%
+  - Signals: chinese_title_substring
+  - Reason: T21n1402 '消除一切閃電障難隨求如意陀羅尼經' (Sutra on Dhāraṇī for Removing Lightning Obstacles and Obtaining All Wishes) is a practical dhāraṇī sutra. Matches generic Tibetan '陀羅尼' entry. Vol. 21 appropriate for dhāraṇī texts. Standard opening 'Thus have I heard' (如是我聞). Length (1267 CJK chars) and content (directional lightning deities with protective mantras) match expectations for a focused-purpose dhāraṇī scripture.
+- **T21n1384** (佛說鉢蘭那賒嚩哩大陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 86%
+  - Signals: chinese_title_substring
+  - Reason: Title 佛說鉢蘭那賒嚩哩大陀羅尼經 contains 大陀羅尼經 matching catalogue. Opens with Buddha teaching Ānanda a specific dhāraṇī (爾時世尊告阿難言). Contains mantra sections. Closes with Ānanda's acceptance formula (歡喜而退). Length (629 chars) is appropriate. Taishō T21n1384 vol. 21.
+- **T21n1236** (聖無能勝金剛火陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 86%
+  - Signals: chinese_title_substring
+  - Reason: Title 聖無能勝金剛火陀羅尼經 contains 陀羅尼經. Opens with 如是我聞 and features Buddha teaching in celestial setting with assembled bodhisattvas and devas. Explicitly mentions 大陀羅尼. Closes with proper formula (皆大歡喜信受奉行). Length (1547 chars) is appropriate. Taishō T21n1236 vol. 21.
+- **T21n1398** (佛說智光滅一切業障陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 86%
+  - Signals: chinese_title_substring
+  - Reason: Title '佛說智光滅一切業障陀羅尼經' is clearly a dhāraṇī sūtra for eliminating karma. Opening with 'thus have I heard' (如是我聞) and assembly of multiple buddhas confirms sūtra format. Standard closing with assembly's understanding and rejoicing. T21n1372 is in appropriate volume. Content focuses on a single dhāraṇī's benefits.
+- **T20n1099** (佛說聖觀自在菩薩不空王祕密心陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 86%
+  - Signals: chinese_title_substring
+  - Reason: T20n1099 (佛說聖觀自在菩薩不空王祕密心陀羅尼經) is a dhāraṇī sūtra matching genre. Opens with 如是我聞, set at Potalaka mountain with Avalokiteśvara. Contains extensive dhāraṇī teachings with mantra sections. Closes with standard sūtra formula. Length (3882 chars) is substantial but appropriate for a detailed tantrized dhāraṇī text. Title clearly matches.
+- **T21n1356** (佛說華積陀羅尼神呪經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 86%
+  - Signals: chinese_title_substring
+  - Reason: T21n1356 titled 佛說華積陀羅尼神呪經(translated by Zhi Qian, Wu dynasty) is a dhāraṇī sūtra. Opens with 如是我聞, features celestial assembly, contains extensive dhāraṇī material. Length (828 characters) typical for medium dhāraṇī texts. Clear match.
+- **T20n1081** (佛說觀自在菩薩如意心陀羅尼呪經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 86%
+  - Signals: chinese_title_substring
+  - Reason: T20n1081 (佛說觀自在菩薩如意心陀羅尼呪經) has canonical sutra opening (如是我聞), Avalokiteśvara presenting a specific dhāraṇī with clear benefits, proper closing formula. Length (1379 chars) is consistent with medium sutra. Attribution to 唐 義淨 is documented. Fits '陀羅尼' category perfectly within T20.
+- **T20n1159B** (佛說地藏菩薩陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 86%
+  - Signals: chinese_title_substring
+  - Reason: T20n1159B (佛說地藏菩薩陀羅尼經) has proper sutra opening (如是我聞), extensive narrative with dialogue, Kṣitigarbha presenting dharma protections and dhāraṇī benefits, and traditional closing formula with audience confirmation. Length (6682 chars) is appropriate for major sutra. Fits '陀羅尼' category within T20 dhāraṇī range.
+- **T21n1269** (佛說金色迦那鉢底陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 86%
+  - Signals: chinese_title_substring
+  - Reason: The Tibetan entry '陀羅尼' aligns with '佛說金色迦那鉢底陀羅尼經'. Opens with standard sūtra formula (如是我聞), presents specific named dhāraṇī (金色迦那鉢底), includes mantric content (曩謨率都...). Closing provides practical applications and ritual restrictions. Length (585 characters) appropriate for single-deity dhāraṇī. Translator (金剛智) is major Tang-era dhāraṇī specialist.
+- **T20n1147** (聖虛空藏菩薩陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 86%
+  - Signals: chinese_title_substring
+  - Reason: T20n1147 (聖虛空藏菩薩陀羅尼經) is a dhāraṇī sūtra focused on Ākāśagarbha in Taishō vol. 20. Tibetan catalogue entry '陀羅尼' in 陀羅尼集 matches. Opening '如是我聞' confirms sūtra narrative structure. Title contains 陀羅尼經. Length (2717 chars) consistent with dhāraṇī scripture. Clear alignment.
+- **T20n1135** (佛說一切如來金剛壽命陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 86%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan entry '陀羅尼' matches T20n1135 '佛說一切如來金剛壽命陀羅尼經'. Section 'dhāraṇī collection' appropriate. Volume 20 within tantra range. Opening uses 'thus have I heard' sūtra formula. Title explicitly names a dhāraṇī (金剛壽命陀羅尼). Translator Bukong (不空) is standard for Tantric texts. Length (750 chars) reasonable for a shorter dhāraṇī scripture.
+- **T21n1410** (佛說勝幡瓔珞陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 86%
+  - Signals: chinese_title_substring
+  - Reason: Title 佛說勝幡瓔珞陀羅尼經 contains 陀羅尼經. T21n1410 has proper sūtra opening (如是我聞), closes with assembly approval formula and merit dedication, contains dhāraṇī sections, appropriate length (~781 characters). Taishō vol. 21 within sūtra/tantra boundary for dhāraṇī texts.
+- **T19n0968** (佛頂尊勝陀羅尼經) <-> CBETA #962 (熾頂髻陀羅尼)
+  - Confidence: 86%
+  - Signals: chinese_title_overlap
+  - Reason: T19n0968 '佛頂尊勝陀羅尼經' (Buddha-crown Supreme Dharani Sutra) directly matches the Tibetan entry 'Gtsug-tor ḥbar-ba shes-bya-baḥi gzuṅs' in core semantics. Both reference crown (頂/gtsug-tor) and supreme (勝/ḥbar-ba) dharani. Opening includes standard sutra formula (如是我聞) and lists major bodhisattvas. Text describes transmission of dharani and includes closing narrative of Heavenly King Indra. 2591 characters is reasonable length. Translator is Du Xingyi (杜行顗), a known Tang translator.
+- **T20n1119** (大樂金剛薩埵修行成就儀軌) <-> CBETA #1979 (成就儀軌)
+  - Confidence: 86%
+  - Signals: chinese_title_substring
+  - Reason: T20n1119 '大樂金剛薩埵修行成就儀軌' contains 成就儀軌 explicitly. This is a sādhana for Vajrasattva (金剛薩埵) focused on anusmaraṇa and accomplishment practices. Contains dhāraṇī, standard tantric opening invocation, and detailed ritual methodology (4920 chars). Taishō vol. 20 is appropriate for tantra classification.
+- **T19n1009** (出生無邊門陀羅尼經) <-> CBETA #2695 (聖,無邊門成就陀羅尼釋偈)
+  - Confidence: 86%
+  - Signals: chinese_title_overlap
+  - Reason: T19n1009 (出生無邊門陀羅尼經, Amoghavajra's translation) is the root Infinite-Gate Dhāraṇī sūtra with proper opening and closing formulas. The Tibetan catalogue entry's Sanskrit title matches: Ārya-anantamukhanirhāradhāraṇī. While the Tibetan entry describes a verse commentary (kārikā), this is the foundational sūtra text. The 4409-character length and tantra section classification are appropriate.
+  - Sanskrit: Ārya-anantamukhanirhāradhāriṇīvyā-khyānakārikā
+- **T18n0909** (金剛頂瑜伽護摩儀軌) <-> CBETA #3101 (護摩)
+  - Confidence: 86%
+  - Signals: chinese_title_substring
+  - Reason: Strong match: Tibetan entry '護摩' (Homa/Fire Ritual - sbyin-sreg) aligns with Taishō '金剛頂瑜伽護摩儀軌' (Vajrapeak Yoga Homa Ritual). Both refer to tantric fire rituals (homa). Text classification as tantric (怛特羅部) matches Taishō volume 18 (tantric section). Content demonstrates detailed homa procedure with multiple ritual variations (息災, 增益, 降伏, 鉤召, 敬愛). Length and ritual focus consistent.
+- **T20n1171** (金剛頂經瑜伽文殊師利菩薩法) <-> CBETA #3313 (文殊師利金剛成就法)
+  - Confidence: 86%
+  - Signals: chinese_title_overlap
+  - Reason: Strong alignment: Both concern Mañjuśrīvajra sādhana. T20n1171 (金剛頂經瑜伽文殊師利菩薩法) explicitly describes Mañjuśrī vajra practice with visualization (曼荼羅法), mantra (五字陀羅尼), and mudrā instructions. Opening with Mañjuśrī in Vairocana's assembly typical of Vajradhātu yoga texts. Length (4123 chars) consistent with detailed sādhana manual. Sanskrit title alignment: Mañjuśrīvajrasādhana.
+  - Sanskrit: Mañjuśrīvajrasādhana
+- **T15n0634** (佛說大乘智印經) <-> CBETA #203 (聖法印契大乘經)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Strong semantic match: Ārya-dharmamudrā-nāma-mahāyānasūtra (聖法印契) closely corresponds to 大乘智印經. Both 'dharmamudrā' (法印/法印契) and 'jñānamudrā' (智印) refer to Buddhist seals/印契. The text opens properly with 如是我聞, discusses mudrā/samādhi (智印三昧), and has appropriate mahāyāna content. The closing mentions 智印三昧 explicitly, confirming the seal/mudrā theme.
+  - Sanskrit: Ārya-dharmamudrā-nāma-mahāyānasūtra
+- **T17n0791** (佛說出家緣經) <-> CBETA #301 (出家經)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan 'Abhiniṣkramaṇa-sūtra' (Mṅon-par ḥbyuṅ-baḥi mdo = 'Renunciation sutra') matches Chinese '佛說出家緣經' (Sutra on the Causes of Renunciation). T17n0791 opens with 如是我聞, discusses five precepts and moral consequences—content consistent with renunciation teaching. Length (677 characters) reasonable for a sūtra. Title and genre alignment strong.
+  - Sanskrit: Abhiniṣkramaṇa-sūtra
+- **T19n0918** (諸佛心陀羅尼經) <-> CBETA #515 (聖佛心陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: T19n0918 'Sarva-buddha-hṛdaya-nāma-dhāraṇī' directly parallels the Tibetan entry for 'Buddha-heart dhāraṇī'. Title overlap is explicit (佛心陀羅尼). Opening uses standard 如是我聞 sūtra formula appropriate for dhāraṇī sūtras. Content explicitly names 'dhāraṇī called Sarva-buddha-hṛdaya'. Length (844 CJK) is reasonable for a dhāraṇī text.
+  - Sanskrit: Ārya-buddhahṛdaya-nāma-dhāraṇī
+- **T19n0974A** (最勝佛頂陀羅尼經) <-> CBETA #568 (聖有勝陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: T19n0974A is titled 最勝佛頂陀羅尼經 (Most Victorious Buddha-Crown Dhāraṇī Sūtra) by Fa-tian. Title contains 佛頂 (Buddha-crown/Uṣṇīṣa) and 最勝 (most victorious), semantically parallel to Ārya-jayavatī (noble victorious). The opening preserves the full dhāraṇī mantra. 589 characters is appropriate for a concise dhāraṇī text. Genre and content align with tantra-section dhāraṇī texts.
+  - Sanskrit: Ārya-jayavatī-nāma-dhāraṇī
+- **T19n0971** (佛說佛頂尊勝陀羅尼經) <-> CBETA #600 (熾頂髻陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Both reference Buddha's crown/crest dhāraṇī focused on salvation from unfortunate rebirths. T19n0971 opens with standard sūtra formula (如是我聞) and features the Uṣṇīṣavijaya dhāraṇī. The Tibetan title Gtsug-tor (crown) and 佛頂尊勝 (Buddha's crown supreme) are compatible translations. Genre and length appropriate for tantra section.
+- **T21n1386** (佛說妙色陀羅尼經) <-> CBETA #627 (神色不奪（陀羅尼）)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan title 'Mdaṅs phyir-mi-ḥphrog-pa' (神色不奪 = 'color/complexion not seized/stolen') closely corresponds to T1386 '妙色陀羅尼經' (Wondrous Color Dhāraṇī). Both are short dhāraṇī texts (262 chars). The semantic connection between 神色不奪 (color not stolen/taken away) and 妙色 (wondrous/beautiful color) is strong, representing the same concept of preserving or perfecting one's appearance/complexion.
+- **T20n1131** (聖金剛手菩薩一百八名梵讚) <-> CBETA #638 (聖金剛手一百八名陀羅尼真言)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Title and deity alignment: 聖金剛手 / Vajrapāṇi (lag-na rdo-rje) appears in both. T20n1131 explicitly titled with '聖金剛手菩薩' and '一百八名' matching Tibetan catalogue structure. Sanskrit title vajrapāṇyaṣṭottaraśata closely matches T20n1131 content (108-name hymn structure). Length (876 chars) is consistent with 108-name dhāraṇī-mantra compilation. Opening shows multiple sequential hymn sections with proper mantra content.
+  - Sanskrit: Ārya-vajrapāṇyaṣṭottaraśatakanāma-dhāraṇī-mantra-sahita
+- **T21n1234** (無能勝大明陀羅尼經) <-> CBETA #709 (無能勝大明母)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: The Tibetan entry 無能勝大明母 matches T1234's 無能勝大明陀羅尼經 as the fuller version. Both describe the same 'Invincible Great Mantra' (Ajñeyamahāvidyā). Length (2945 CJK) is substantially longer, consistent with an expanded textual tradition. Both are by translator Fǎtiān (法天) suggesting same transmission lineage.
+- **T21n1372** (增慧陀羅尼經) <-> CBETA #718 (智慧生起陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics align closely: 智慧生起陀羅尼 (Prajñāvardhanī, 'Wisdom-Increase') matches 增慧陀羅尼經 ('Increased-Wisdom Dhāraṇī Sutra'). Both refer to wisdom enhancement via dhāraṇī. T1372 contains standard sūtra opening (如是我聞), dhāraṇī formula, and practical ritual application. Content (memory enhancement, intelligent practice) aligns with wisdom-increase theme. Length (277 CJK characters) is appropriate.
+  - Sanskrit: Prajñāvardhanī-nāma-dhāraṇī
+- **T21n1372** (增慧陀羅尼經) <-> CBETA #719 (智慧生起陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: T21n1372 (增慧陀羅尼經 = 'Enhancing-wisdom dhāraṇī sutra') directly corresponds semantically to 智慧生起 (wisdom-arising/increasing). Sanskrit title Prajñāvardhanī means 'wisdom-increasing.' Opening matches sutra form (如是我聞). Contains explicit dhāraṇī transmission. Closing mentions memory retention and wisdom growth. Length (277 chars) and Vol. 21 placement both appropriate. Title correspondence is strong.
+  - Sanskrit: Prajñāvardhanī-nāma-dhāraṇī
+- **T21n1234** (無能勝大明陀羅尼經) <-> CBETA #752 (聖金剛無能勝火迷闇陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Title alignment: Tibetan 'Ārya-vajrājitānalapramohanī' (Unsurpassable Diamond Fire Delusion) corresponds with Chinese T21n1234 'Unsurpassable Great Bright Dhāraṇī (無能勝大明陀羅尼)'. Both emphasize 'unsurpassable/無能勝' and 'great radiance/大明' as primary theme. Length appropriate (2945 chars). Opening format consistent with dharani tradition.
+  - Sanskrit: Ārya-vajrājitānalapramohanī-nāma-dhāraṇī
+- **T21n1323** (除一切疾病陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: Title semantics clearly match: 除一切疾病陀羅尼經 directly corresponds to 陀羅尼 catalogue entry. Opens with standard sūtra formula (如是我聞) in formal Buddhist context. Contains explicit dhāraṇī mantras with healing properties. T21 volume is appropriate for dhāraṇī/tantra texts. Length (298 chars) is reasonable for a healing dhāraṇī sutra. Closing follows proper sutra convention (歡喜奉行).
+- **T19n1027a** (金剛光焰止風雨陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: T19n1027a '金剛光焰止風雨陀羅尼經' (Diamond Flame Stop Wind and Rain Dhāraṇī Sutra) is a dhāraṇī scripture. The Tibetan entry '陀羅尼' generically matches. Vol. 19 is appropriate for sūtra/dhāraṇī texts. Opening formula 'Thus have I heard' (如是我聞) is standard. Length (8394 CJK chars) and extensive mantra sections with multiple wind-stopping formulas match content expectations for a functional dhāraṇī sutra.
+- **T21n1389** (佛說無量壽大智陀羅尼) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: Title matches (陀羅尼), section is 陀羅尼集. T21n1389 is an extremely brief text (84 characters) consisting entirely of a transliterated mantra with opening and closing formulas. This fits a specific category of pure dhāraṇī texts without narrative frame. Genre and format are consistent with the catalogue section.
+- **T19n0971** (佛說佛頂尊勝陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: Title 佛說佛頂尊勝陀羅尼經 is explicitly a dhāraṇī sūtra. Opening formula (如是我聞) and assembly structure match standard Buddhist sūtra conventions. Content focuses on a specific dhāraṇī (佛頂尊勝) with promise of benefits. Length (3375 chars) and Taishō volume (T19) are consistent with major dhāraṇī sūtra genre. This is a canonical dhāraṇī scripture clearly covered by the Tibetan catalogue entry's scope.
+- **T21n1339** (大方等陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: Title 大方等陀羅尼經 (Great Equanimity Dhāraṇī Sūtra) is a major dhāraṇī text. Opening (如是我聞) with elaborate assembly (Mañjuśrī and 92 billion bodhisattvas) follows classic Mahāyāna sūtra structure. Extensive length (28036 chars) is consistent with comprehensive dhāraṇī compilations. Closing includes multiple mantra sequences. This is clearly a canonical dhāraṇī sūtra well within Tibetan catalogue scope.
+- **T21n1392** (大寒林聖難拏陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: Title contains 陀羅尼經 matching the catalogue entry. Opens with 如是我聞 (standard sūtra formula) and features a dhāraṇī teaching context with Rāhula learning from Buddha. Contains 難拏陀羅尼 (dhāraṇī). Closes with proper sūtra conclusion (歡喜信受禮佛而退). Length (1443 chars) is appropriate. Taishō T21n1392 vol. 21.
+- **T20n1136** (佛說一切諸如來心光明加持普賢菩薩延命金剛最勝陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: Title semantics align: Samantabhadra bodhisattva dhāraṇī focusing on longevity (延命 = extending life), which is a common theme. Standard sūtra opening 'thus have I heard' (如是我聞) and closing with assembly rejoicing formula. T21n1136 volume is appropriate for dhāraṇī sūtras. Length and content structure consistent with genre.
+- **T21n1353** (東方最勝燈王陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: T21n1353 (東方最勝燈王陀羅尼經) is a dhāraṇī sūtra with matching genre and section. Opens with 如是我聞 and standard sūtra framework with assembly of deities and bodhisattvas. Contains extensive dhāraṇī sections. Closing shows typical sūtra conclusion. Length (2459 chars) is substantial but consistent with dhāraṇī sūtra conventions. Title clearly contains 陀羅尼.
+- **T21n1375** (佛說莊嚴王陀羅尼呪經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: T21n1375 (佛說莊嚴王陀羅尼呪經) is a dhāraṇī sūtra matching Tibetan section. Opens with 如是我聞 at Potalaka with Avalokiteśvara. Contains narrative of past teaching and extensive dhāraṇī sections. Closes with standard sūtra formula and benefits of recitation. Length (1363 chars) is consistent with medium dhāraṇī sūtras. Title clearly indicates dhāraṇī content.
+- **T19n1025** (佛頂放無垢光明入普門觀察一切如來心陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: T19n1025 (佛頂放無垢光明入普門觀察一切如來心陀羅尼經) is a dhāraṇī sūtra matching Tibetan genre. Opens with 如是我聞 at Tuṣita heaven with assembly of deities. Contains teaching of Pāramitās leading to dhāraṇī revelation with extended mantra sections. Closes with protective deities and standard formula. Length (5517 chars) is substantial but appropriate for comprehensive dhāraṇī sūtra with philosophical framing.
+- **T20n1157** (香王菩薩陀羅尼呪經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan catalogue entry '陀羅尼' matches T20n1157 '香王菩薩陀羅尼呪經' (Fragrant King Bodhisattva Dhāraṇī Spell Sūtra). Both are dhāraṇī texts. Opening lacks standard formula but begins directly with dhāraṇī text, which is acceptable for dhāraṇī-focused works. Volume 20 is appropriate. Length (724 characters) is consistent with shorter dhāraṇī sūtra. Contains extensive dhāraṇī and instructions.
+- **T21n1318** (瑜伽集要救阿難陀羅尼焰口軌儀經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: T21n1318 is titled 瑜伽集要救阿難陀羅尼焰口軌儀經, explicitly a dhāraṇī work. Opens with 爾時世尊, contains extensive dhāraṇī material. Though ritualistic rather than purely sūtra-based, clearly belongs to dhāraṇī collection. Volume 21 is appropriate for later tantra-influenced texts.
+- **T19n1021** (華嚴經心陀羅尼) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: T19n1021 titled 華嚴經心陀羅尼is a pure dhāraṇī text (121 characters) without narrative frame, representing mantra-only forms in collection. Attributed to Puxian (Samantabhadra) Buddha; translated by Śikṣānanda. Appropriately brief for a dharani excerpt from major sūtra.
+- **T21n1230** (佛說大輪金剛總持陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: T21n1230 (佛說大輪金剛總持陀羅尼經) has canonical sutra structure with proper opening (如是我聞), extensive dhāraṇī content, and length (6607 chars) appropriate for a major sutra. Contains dialogue between Buddha and celestial beings about dharma transmission. Fits '陀羅尼' categorization and is consistent with tantra-adjacent sutra in T21 range.
+- **T20n1103b** (觀自在菩薩怛嚩多唎隨心陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: T20n1103b (觀自在菩薩怛嚩多唎隨心陀羅尼經) follows sutra format with opening (如是我聞), Avalokiteśvara teaching a specialized dhāraṇī for benefits and wisdom attainment, proper closing with audience participation. Length (8718 chars) and structure match major dhāraṇī sutra conventions. Clear match to '陀羅尼集' designation.
+- **T20n1186** (佛說妙吉祥菩薩陀羅尼) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: T20n1186 (佛說妙吉祥菩薩陀羅尼) is explicitly a Mañjuśrī dhāraṇī text. The opening contains praise verses followed by extensive mantra content. Text length (664 chars) and structure are consistent with a dhāraṇī text. Clear match with the generic dhāraṇī catalogue entry.
+- **T19n1027b** (金剛光焰止風雨陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: T19n1027b is a complete dhāraṇī scripture with proper sūtra opening formula (如是我聞). Title explicitly contains 陀羅尼經. Closing follows standard 'all beings heard and rejoiced' formula. Length (8383 chars) consistent with dhāraṇī scripture. Volume T19 appropriate for dhāraṇī texts.
+- **T21n1414** (佛說金身陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: The Tibetan entry '陀羅尼' matches '佛說金身陀羅尼經'. The opening proceeds directly to recitation of the dhāraṇī without standard 如是我聞 formula, which is consistent with some dhāraṇī texts. Contains explicit dhāraṇī mantric content (那謨沒馱喃...). Closing explains practical applications of the dhāraṇī. Text length (668 characters) appropriate for a single dhāraṇī with instructions.
+- **T19n0962** (寶悉地成佛陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: T19n0962 (寶悉地成佛陀羅尼經) is a dhāraṇī text from Taishō vol. 19 (dhāraṇī section). The Tibetan entry simply lists '陀羅尼' (dhāraṇī) in the 陀羅尼集 section. Opening formula '如是我聞' confirms sūtra-type structure. Length (3133 chars) is plausible for a dhāraṇī scripture. Title contains 陀羅尼, matching the catalogue's generic dhāraṇī classification.
+- **T21n1313** (佛說救拔焰口餓鬼陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: T21n1313 (佛說救拔焰口餓鬼陀羅尼經) is a ritual-narrative dhāraṇī text in Taishō vol. 21. Title contains both 救拔 and 陀羅尼經. Tibetan catalogue entry '陀羅尼' in 陀羅尼集 is appropriate. Opening describes narrative context (Ānanda's encounter with preta), followed by ritual instructions. Length (1396 chars) suitable. Genre is mixed narrative-ritual dhāraṇī.
+- **T18n0907** (佛頂尊勝心破地獄轉業障出三界祕密陀羅尼) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan entry '陀羅尼' matches T18n0907 '佛頂尊勝心破地獄轉業障出三界祕密陀羅尼'. Section 'dhāraṇī collection' is appropriate. Volume 18 is within tantra range. Opening references mantra transmission and tantric practice. Length consistent with a dhāraṇī ritual text. Closing comments confirm textual transmission.
+- **T21n1363** (勝幢臂印陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan entry '陀羅尼' matches T21n1363 '勝幢臂印陀羅尼經'. Section 'dhāraṇī collection' appropriate. Volume 21 is at upper boundary of tantra range. Opening uses canonical 'thus have I heard' formula with standard sūtra setting. Text explicitly teaches a dhāraṇī (勝幢臂印). Translator Xuanzang (玄奘) reliable. Closing shows standard sūtra conclusion formula.
+- **T20n1178** (文殊菩薩獻佛陀羅尼名烏蘇吒) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: T20n1178 is explicitly titled '文殊菩薩獻佛陀羅尼名烏蘇吒' (Mañjuśrī Bodhisattva Presents to Buddha a Dhāraṇī Named Ūṣṇīṣa). It contains the key dhāraṇī text in both Sanskrit transliteration and Chinese. Though brief (436 chars), this is appropriate for a single-mantra text. Fits dhāraṇī collection.
+- **T19n0974C** (加句靈驗佛頂尊勝陀羅尼記) <-> CBETA #865 (陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: Title contains 陀羅尼 (尊勝陀羅尼). T19n0974C presents a commentary/record on the Bhaiṣajyaguru dhāraṇī, opens with traditional praise formula, contains mantra text in closing, appropriate length (~2.8K). While more of a record than full sūtra, it belongs in dhāraṇī collection.
+- **T20n1185A** (佛說文殊師利法寶藏陀羅尼經) <-> CBETA #892 (聖文殊師利口訣陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: The Tibetan entry 聖文殊師利口訣陀羅尼 (Ārya-mañjuśrīsvākhyāta-nāma-dhāraṇī) aligns well with T20n1185A's 佛說文殊師利法寶藏陀羅尼經. Both are Mañjuśrī dharani sutras from the Tang (菩提流志). Opening formula 如是我聞 matches sutra expectations. Sanskrit title correspondence is strong. Text length and content structure align.
+  - Sanskrit: Ārya-mañjuśrīsvākhyāta-nāma-dhāraṇī
+- **T20n1197** (佛說文殊師利一百八名梵讚) <-> CBETA #894 (聖文殊師利名號)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Strong match: Tibetan '聖文殊師利名號' (Ḥphags-pa ḥjam-dpal-gyi mtshan, 'Noble Mañjuśrī's Names') corresponds well to T20n1197 '文殊師利一百八名梵讚' (108 Names of Mañjuśrī in Sanskrit Praise). Both are lists of Mañjuśrī's names in praise format. The text structure (梵讚 sections) and content match expectation for a name-recitation text.
+- **T20n1181** (大方廣菩薩藏經中文殊師利根本一字陀羅尼經) <-> CBETA #896 (文殊師利一字陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: T20n1181 title explicitly includes '文殊師利根本一字陀羅尼' (Mañjuśrī root one-syllable dharani), perfectly matching Tibetan 'yi-ge bru gcig-pa'. Text length (1271 chars) appropriate for focused dharani teaching. Opening explicitly sets up dharani transmission. Semantic and structural alignment excellent.
+- **T19n0982** (佛母大孔雀明王經) <-> CBETA #943 (聖大孔雀母心)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics: 聖大孔雀母心 (Holy Great Peacock-Mother Heart/Core) aligns with 佛母大孔雀明王經 (Buddha-Mother Great Peacock Radiant King Sutra). Both reference the Great Peacock (孔雀) and mother/feminine aspect. T19n0982 (20,597 chars) is a substantial tantra work with dhāraṇī sections, consistent with peacock-queen liturgy. Translator (不空) is known for peacock texts. Strong semantic and textual match.
+- **T21n1234** (無能勝大明陀羅尼經) <-> CBETA #954 (聖金剛無能勝火迷闇陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Strong match: Tibetan Sanskrit title 'Ārya-vajrājitānalapramohanī-nāma-dhāraṇī' (Holy Vajra Invincible Fire Deluding Dhāraṇī) corresponds well with Chinese title T21n1234 '無能勝大明陀羅尼經' (Invincible Great Vidyā Dhāraṇī Sūtra). 'Vajrājita' = 'invincible/無能勝', 'anala' = 'fire', 'pramohanī' = 'deluding/迷'. The text length (2,945 chars) is appropriate for a single dhāraṇī sūtra.
+  - Sanskrit: Ārya-vajrājitānalapramohanī-nāma-dhāraṇī
+- **T19n0967** (佛頂尊勝陀羅尼經) <-> CBETA #962 (熾頂髻陀羅尼)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: The Tibetan 'Gtsug-tor ḥbar-ba shes-bya-baḥi gzuṅs' matches T19n0967 '佛頂尊勝陀羅尼經' (Buddha-crown Supreme Dharani Sutra) in core semantics: both reference crown (尊/gtsug-tor) and supreme/victorious (勝/ḥbar-ba) dharani. T19n0967 has imperial preface (御製) but contains standard sutra framework with dharani transmission. 4781 characters is appropriate for an expanded dharani text. The closing contains extensive mantra syllables typical of dharani sutras.
+- **T21n1253** (大吉祥天女十二契一百八名無垢大乘經) <-> CBETA #1088 (吉祥大黑天女一百八名)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Strong match: Tibetan 'Śrī-devīkālīnāmāṣṭaśataka' (108 Names of Black Goddess) aligns with Taishō 'T21n1253' titled '大吉祥天女十二契一百八名無垢大乘經' (Great Auspicious Goddess Twelve Mudras and 108 Names Pure Mahāyāna Sutra). Both explicitly reference '108 names' (一百八名). Opening follows sūtra format (如是我聞). Content includes dhāraṇī sections with mantras. Both concern goddess veneration with elaborate ritual and namings.
+  - Sanskrit: Śrī-devīkālīnāmāṣṭaśataka
+- **T20n1124** (普賢金剛薩埵略瑜伽念誦儀軌) <-> CBETA #1682 (吉祥金剛薩埵隨念儀軌)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Sanskrit Śrī-vajrasattvānusmṛti-nāma-vidhi (memorial recollection) matches Chinese 普賢金剛薩埵略瑜伽念誦儀軌 (Samantabhadra Vajrasattva brief yoga recitation ritual). Both focus on remembrance/念誦 (anusmṛti). Text length (3484) appropriate for brief ritual. Content emphasizes practice of body-speech-mind.
+  - Sanskrit: Śrī-vajrasattvānusmṛti-nāma-vidhi
+- **T20n1119** (大樂金剛薩埵修行成就儀軌) <-> CBETA #1814 (金剛薩埵成就法)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan Vajrasattvasādhana-nāma (Vajrasattva accomplishment method) matches Chinese T20n1119 大樂金剛薩埵修行成就儀軌 (great bliss Vajrasattva practice accomplishment ritual). Sanskrit and Tibetan titles align semantically. Chinese includes 成就儀軌 which translates sādhana. Length (~4920 chars) appropriate for detailed sādhana. Opening describes Vajrasattva practice methodology and mantras consistent with sādhana genre.
+  - Sanskrit: Vajrasattvasādhana-nāma
+- **T18n0909** (金剛頂瑜伽護摩儀軌) <-> CBETA #1825 (護摩儀軌)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: Both texts address homa (護摩/fire offering) rituals. Tibetan: 'Homavidhi' (homa ritual instructions). Taishō T18n0909: '金剛頂瑜伽護摩儀軌' (Vajradhara yoga homa ritual). Both translator attributions match (唐 不空譯 = Amoghavajra). Opening formula '我今說護摩' (I now expound homa) and content structure (five types of homa:息災, 增益, 降伏, 鉤召, 敬愛) align perfectly. Length (3852 chars) is appropriate. Genre compatibility: T18 = tantra, 怛特羅部 = tantra section.
+  - Sanskrit: Homavidhi
+- **T21n1211** (甘露軍荼利菩薩供養念誦成就儀軌) <-> CBETA #1979 (成就儀軌)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: T21n1211 '甘露軍荼利菩薩供養念誦成就儀軌' contains explicit 成就儀軌 terminology matching the Tibetan entry. The text is a sādhana/achievement ritual (sgrub-pa'i thabs), includes standard tantric elements (dhāraṇī, visualization), and its length (7371 chars) is consistent with a comprehensive ritual manual. Taishō vol. 21 is appropriate for tantra.
+- **T18n0908** (金剛頂瑜伽護摩儀軌) <-> CBETA #1997 (大金剛怖畏護摩儀軌)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: The Tibetan entry specifies 大金剛怖畏護摩儀軌 (Mahāvajrabhairavahomavidhi). T18n0908, also titled 金剛頂瑜伽護摩儀軌 (similar to T18n0909) and attributed to 不空, has nearly identical opening text (only minor variants: 五類 vs. 五種). Both texts describe five types of homa ritual (息災, 增益, 降伏, 鉤召, 敬愛). However, neither explicitly mentions Bhairava. The similarity to T18n0909 suggests this may also be a general homa manual rather than specifically Bhairava-focused, creating slight uncertainty about the Bhairava specification.
+  - Sanskrit: Mahāvajrabhairavahomavidhi-nāma
+- **T18n0909** (金剛頂瑜伽護摩儀軌) <-> CBETA #2525 (護摩儀軌)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: Sanskrit 'Homavidhi' (Fire ritual procedure) matches Taishō '金剛頂瑜伽護摩儀軌' (Diamond peak yoga homa/fire ritual). Tibetan 'Sbyin-sreg-gi cho-ga' (fire/burnt offering ritual procedure) is direct translation of 護摩儀軌. T18n0909 is dedicated homa ritual text with appropriate length and content structure. Good match.
+  - Sanskrit: Homavidhi
+- **T20n1185B** (文殊師利寶藏陀羅尼經) <-> CBETA #2588 (聖,文殊師利寶儀軌)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan 'Ārya-mañjuśrīratnavidhi' (treasure ritual) matches T20n1185B 'Mañjuśrī treasure storehouse dhāraṇī scripture' (11329 chars). Both emphasize 'treasure' (ratna/藏) aspect. Text length is appropriate for named ritual. Both tantra-based texts with dhāraṇī sections. Sanskrit semantic alignment.
+  - Sanskrit: Ārya-mañjuśrīratnavidhi
+- **T21n1417** (佛說壞相金剛陀羅尼經) <-> CBETA #2683 (金剛摧破陀羅尼釋)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Good match. Both refer to Vajravidāraṇa dhāraṇī. The Tibetan entry is a 'vyākhyāna' (commentary/explanation) on the dhāraṇī, while T21n1417 titled '壞相金剛陀羅尼經' (壞相 = vidāraṇa = 'crushing/destroying') is the base text. The Chinese opens with proper sūtra formula and contains extensive dhāraṇī material. A commentary and its base text are considered parallel/related works in this context.
+  - Sanskrit: Vajravidārāṇā-nāma-dhāraṇīvyākhyāna
+- **T19n0985** (佛說大孔雀呪王經) <-> CBETA #2691 (明呪王大孔雀經十萬註)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Strong match: T19n0985 (22004 chars) is the full Mayūrī-vidyārājñī sūtra by Yijing. Title 'Great Peacock Dhāraṇī King' corresponds to Sanskrit 'Mahāmayūrī-vidyārājñī'. Length appropriate for a major sūtra commentary base text. Opening structure and extensive dhāraṇī sections align with expected genre. This is likely the source text for which the Tibetan #2691 commentary was composed.
+  - Sanskrit: Mahāmayūrīvidyārājñīsūtraśatasahasraṭīkā-nāma
+- **T19n1018** (出生無邊門陀羅尼經) <-> CBETA #2695 (聖,無邊門成就陀羅尼釋偈)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: T19n1018 (出生無邊門陀羅尼經) is the root sūtra for the Infinite-Gate Dhāraṇī (無邊門). The Tibetan entry describes a kārikā (verse commentary) on this dhāraṇī. The sūtra has proper 'thus have I heard' opening, contains the teaching of infinite gates, and the 6161-character length is appropriate. Title overlap on 無邊門 is direct and Sanskrit title Ārya-anantamukhanirhāradhāriṇī matches the content structure.
+  - Sanskrit: Ārya-anantamukhanirhāradhāriṇīvyā-khyānakārikā
+- **T19n1018** (出生無邊門陀羅尼經) <-> CBETA #2696 (聖,無邊門成就陀羅尼廣註)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Good match. Both refer to Anantamukha-nirhāra-dhāraṇī (無邊門). The Tibetan is a ṭīkā (commentary), while T19n1018 '出生無邊門陀羅尼經' is the base sūtra (6,161 chars, proper opening '如是我聞'). 出生無邊門 correctly translates Anantamukha-nirhāra. Text-commentary relationship indicates these are parallel works in the canonical tradition.
+  - Sanskrit: Ārya-anantamukhanirhāradhāraṇīṭīkā
+- **T20n1195** (大聖文殊師利菩薩讚佛法身禮) <-> CBETA #2718 (聖,文殊師利讚)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Direct match: Tibetan Ārya-mañjuśrīstotra-nāma corresponds to Taishō T20n1195 大聖文殊師利菩薩讚佛法身禮. Sanskrit titles match closely (both 'stotra'). Format is praise/hymn of Mañjuśrī. Same text as Pair 4, confirming consistency.
+  - Sanskrit: Ārya-mañjuśrīstotra-nāma
+- **T18n0859** (供養儀式) <-> CBETA #2773 (火供養儀軌)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Both concern homa/fire offering rituals. Tibetan title 'Meḥi mchod-paḥi cho-ga' = 'fire offering ritual' matches Chinese 火供養儀軌. The Taishō text 供養儀式 (T18n0859) is about ritual procedures including fire offerings, describing '護摩' (homa). Section 怛特羅部 matches tantra volume. Content describes ritual procedures consistent with tantric practice. Length (2282 chars) is appropriate for a ritual manual.
+- **T18n0909** (金剛頂瑜伽護摩儀軌) <-> CBETA #2844 (護摩儀軌)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan '護摩儀軌' (fire-offering ritual) matches Chinese '金剛頂瑜伽護摩儀軌' (Vajraśekhara Yoga fire-offering ritual). Both texts concern homa (sbyin-sreg/護摩) rituals. Sanskrit/Tibetan terminology aligns. Chinese opening discusses various types of homa (五種護摩 - five types), which is consistent with sādhana methodology. Length (3852 chars) appropriate for comprehensive ritual. Genre and volume range (T18 = tantra) correct.
+- **T21n1416** (金剛摧碎陀羅尼) <-> CBETA #2910 (金剛摧破陀羅尼儀軌)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Strong match: Both concern 'Vajra-breaking/crushing dhāraṇī'. Sanskrit title Vajravidāraṇā matches semantic content. T21n1416 is pure dhāraṇī form (no sūtra frame), which is appropriate for a dhāraṇīvidhi. Vol. 21 placement correct for tantra. Text opens directly with mantra.
+  - Sanskrit: Vajravidāraṇā-nāma-dhāraṇīvidhi
+- **T21n1416** (金剛摧碎陀羅尼) <-> CBETA #2938 (金剛摧破陀羅尼成就法)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: T21n1416 '金剛摧碎陀羅尼' corresponds to '金剛摧破陀羅尼成就法' (摧碎 vs 摧破 are synonymous); Sanskrit Vajravidāraṇādhāraṇīsādhana aligns with the dhāraṇī focus; opening is pure dhāraṇī mantra recitation matching sādhana genre; length appropriate for sādhana text.
+  - Sanskrit: Vajravidāraṇādhāraṇīsādhana-nāma
+- **T21n1287** (大黑天神法) <-> CBETA #3304 (大黑天成就法)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Strong title alignment: 大黑天 = Mahākāla, and both are sādhana/practice manuals (成就法 = sādhana). T21n1287 describes Mahākāla (大黑天神) ritual practices, visualization, and deity properties typical of tantric sādhana texts. Length (2485 chars) consistent with detailed practice manual. Tantra section appropriate. Minor discrepancy: T21n1287 labeled as 神愷記 (record/notes) rather than direct sādhana text, but content aligns.
+  - Sanskrit: Mahākālasādhana
+- **T21n1256** (佛說摩利支天陀羅尼呪經) <-> CBETA #3537 (聖摩利支天陀羅尼讀誦優波提舍)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics align well: 聖摩利支天陀羅尼讀誦優波提舍 ('dharaṇī recitation instructions') = Ārya-mārīcīdhāraṇīpāṭhopadeśa. T21n1256 (佛說摩利支天陀羅尼呪經) contains the same core subject (Mārīcī dharaṇī), opening formula 如是我聞, and practical recitation instructions with specific ritual protocols. Length (689 chars) consistent with dharaṇī instruction text. Genre: tantric section, Taishō vol. 21.
+  - Sanskrit: Ārya-mārīcīdhāraṇīpāṭhopadeśa
+- **T21n1244** (毘沙門天王經) <-> CBETA #3730 (大王毗沙門天成就法)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics align: 大王毗沙門天成就法 (Mahārājavaiśravaṇasādhana) vs 毘沙門天王經. Both refer to Vaiśravaṇa practice. Sanskrit titles correspond. Tantra section appropriate. T21n1244 fits tantra volume. Opening shows Vaiśravaṇa offering mantra and requesting Buddha's permission to teach, matching sādhana-sūtra hybrid format. Contains dhāraṇī sections and ritual instructions. Length (1820 chars) reasonable for deity practice text. Slightly more concise than Pair 7 but same source tradition.
+  - Sanskrit: Mahārājavaiśravaṇasādhana
+- **T19n0959** (頂輪王大曼荼羅灌頂儀軌) <-> CBETA #3760 (曼荼羅儀軌)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Sanskrit Maṇḍalavidhi and Tibetan 'Maṇḍala-gyi cho-ga' both mean 'Maṇḍala Ritual'. Chinese titles aligned: 曼荼羅儀軌 vs 頂輪王大曼荼羅灌頂儀軌 (both maṇḍala ritual texts, latter more specific about cakravartin/initiation). Text describes detailed maṇḍala layout with deities and ritual procedures. Section 怛特羅部 matches tantra genre. The Taishō is a specific type of maṇḍala ritual that fits the generic catalogue description.
+  - Sanskrit: Maṇḍalavidhi
+- **T19n0959** (頂輪王大曼荼羅灌頂儀軌) <-> CBETA #3763 (曼荼羅儀軌)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics match well: Tibetan 'Maṇḍalavidhi' (Maṇḍala procedure) and Taishō '頂輪王大曼荼羅灌頂儀軌' (crown/pinnacle maṇḍala initiation ritual). Sanskrit 'vidhi' = 儀軌 (ritual procedure). Genre compatible: tantra section (怛特羅部) with Taishō vol. 19 (tantra). Opening describes detailed maṇḍala construction with cosmographic elements, seed syllables, and ritual positions—consistent with ritual instruction.
+  - Sanskrit: Maṇḍalavidhi
+- **T08n0254** (般若波羅蜜多心經) <-> CBETA #3822 (般若波羅蜜多心（經）義正知)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: T08n0254 is a Heart Sutra text (般若波羅蜜多心經) with proper opening formula and featuring Avalokiteśvara and Śāriputra dialogue on deep Prajñāpāramitā practice. While the catalogue entry describes exegesis, the text's treatment of Heart Sutra 'meaning' (don/義) and practice aligns with interpretive traditions. 568 characters is plausible for a philosophical Heart Sutra recension.
+  - Sanskrit: Ārya-prajñāpāramitāhṛdayārthaparijñāna
+- **T08n0252** (普遍智藏般若波羅蜜多心經) <-> CBETA #3822 (般若波羅蜜多心（經）義正知)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: T08n0252 '普遍智藏般若波羅蜜多心經' (Universal Knowledge Treasury Heart Sutra) is a variant Heart Sutra with expanded opening frame (Avalokiteśvara speaks) and standard Heart Sutra closure. Contains the expected dhāraṇī. Clearly a Heart Sutra variant, matching the hṛdaya ('Heart') reference in the Tibetan entry.
+  - Sanskrit: Ārya-prajñāpāramitāhṛdayārthaparijñāna
+- **T08n0253** (般若波羅蜜多心經) <-> CBETA #3823 (般若心（經）解說)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: T08n0253 is another Heart Sutra translation (般若波羅蜜多心經) with standard sūtra opening (如是我聞) and the Avalokiteśvara-Śāriputra dialogue structure. The Tibetan entry seeks 般若心經解說 (Heart Sutra explanation). This version presents the teaching through dialogue, effectively functioning as an explanatory recension. Text length (545 chars) is consistent.
+  - Sanskrit: [prajñāhṛdayavyākhyā]
+- **T30n1576** (大乘二十頌論) <-> CBETA #4065 (二十論註疏)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: T30n1576 (大乘二十頌論) is a translation of the Prakaraṇaviṁśaka itself. The Tibetan entry title '二十論註疏' (twenty treatise commentary) and Sanskrit Prakaraṇaviṁśakaṭīkā suggest a commentary, but T30n1576 is the base text itself translated by Śikṣānanda. While this is technically the work being commented upon rather than the commentary, it is the primary text referenced and may represent the essential content of the tradition. Partial match but with cautious confidence.
+  - Sanskrit: Prakaraṇaviṁśakaṭīkā
+- **T24n1455** (根本說一切有部苾芻尼戒經) <-> CBETA #4112 (聖說一切有部根本比丘尼波羅提木叉經註)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Both describe Sarvāstivāda bhikṣuṇī pratimokṣa texts. The Sanskrit titles align (Ārya-sarvāstivādimūlabhikṣuṇīpratimokṣa-sūtra). T24n1455 is titled 根本說一切有部苾芻尼戒經 which matches the Tibetan catalogue's focus on 'Ārya-sarvāstivādimūlabhikṣuṇīpratimokṣa'. Genre: both are vinaya/律部. Length (11777 chars) is appropriate for a monastic code.
+  - Sanskrit: Ārya-sarvāstivādimūlabhikṣuṇīpratimokṣa-sūtravṛtti
+- **T16n0675** (深密解脫經) <-> CBETA #4358 (聖深密意決解經解說)
+  - Confidence: 85%
+  - Signals: chinese_title_overlap
+  - Reason: Title and content match: Both refer to Sandhinirmocana Sūtra (Tibetan 'Saṁdhinirmocanasūtravyākhyāna'). T16n0675 'Shenmi Jiefujing' (Profound Secret Liberation Sūtra) is an earlier translation by Bodhiruci of the same source text as T16n0676. The closing 'Lord of Dharma' teaching name matches sūtra structure. Both are major Sandhinirmocana translations, though by different translators.
+  - Sanskrit: Ārya-saṁdhinirmocanasūtravyākhyāna
+- **T17n0776** (佛說四品法門經) <-> CBETA #4363 (法門)
+  - Confidence: 85%
+  - Signals: chinese_title_substring
+  - Reason: Title match: Tibetan 法門 corresponds to T17n0776 佛說四品法門經. Opens with standard sūtra formula (如是我聞一時佛在舍衛國...). Length (2,023 chars) is concise but appropriate for a dharma-teaching text. Volume 17 consistent with miscellaneous sūtras. Text explicitly names itself at closing: '此經名為四品法門'. Perfect structural match.
+  - Sanskrit: [Dharmaparyāya]
+- **T21n1359** (佛說花積樓閣陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 84%
+  - Signals: chinese_title_substring
+  - Reason: T21n1359 '佛說花積樓閣陀羅尼經' (Buddha-spoken Flower Store Tower Dhāraṇī Sutra) is a dhāraṇī sutra. Matches generic Tibetan '陀羅尼' entry. Vol. 21 appropriate for tantra/dhāraṇī texts. Standard opening 'Thus have I heard' (如是我聞). Length (1248 CJK chars) reasonable for focused single-dhāraṇī text with bodhisattva dialogue frame.
+- **T20n1048** (佛說大護明大陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 84%
+  - Signals: chinese_title_substring
+  - Reason: Title 佛說大護明大陀羅尼經 contains 大陀羅尼經. Opens with Buddha narrative (爾時世尊...告尊者阿難陀言) and explicitly mentions 大護明大陀羅尼及以伽陀. Contains extensive dharani mantras. Text is longer (2229 chars) but appropriate for comprehensive dhāraṇī text. Taishō T20n1048 vol. 20.
+- **T21n1376** (佛說聖莊嚴陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 84%
+  - Signals: chinese_title_substring
+  - Reason: Title '佛說聖莊嚴陀羅尼經' (Noble Adornment Dhāraṇī Sūtra) clearly indicates a dhāraṇī sūtra. Standard sūtra opening with 'thus have I heard' (如是我聞) and extensive assembly. Substantial length (3363 characters) appropriate for major dhāraṇī sūtra. Closing with standard assembly formula and rejoicing. T21n1376 in correct volume range.
+- **T20n1138b** (金剛祕密善門陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 84%
+  - Signals: chinese_title_substring
+  - Reason: T20n1138b (金剛祕密善門陀羅尼經) is a dhāraṇī sūtra matching Tibetan genre. Opens with 如是我聞 at Bodhi tree with assembly of bodhisattvas and protective deities. Contains named dhāraṇī (善門陀羅尼) with mantric content. Closes with standard formula showing Buddha's praise. Length (1895 chars) is appropriate for detailed dhāraṇī sūtra.
+- **T20n1083** (觀世音菩薩如意摩尼陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 84%
+  - Signals: chinese_title_substring
+  - Reason: T20n1083 (觀世音菩薩如意摩尼陀羅尼經) presents Avalokiteśvara teaching a specific dhāraṇī with structured dialogue and response from Buddha. While opening lacks 如是我聞, it has proper dialogue and closing convention. Length (2688 chars) is reasonable for a medium sutra. Attribution to 唐 寶思惟 is documented. Fits '陀羅尼' category within T20 range.
+- **T21n1399** (佛說滅除五逆罪大陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 84%
+  - Signals: chinese_title_substring
+  - Reason: T21n1399 (佛說滅除五逆罪大陀羅尼經) is explicitly a dhāraṇī for eliminating grave karmic offenses. The opening directly states the mantra's power and function, followed by extensive Sanskrit mantra. Text length (231 chars) is appropriately brief for a focused dhāraṇī. Clear match with the dhāraṇī catalogue entry.
+- **T21n1403** (佛說如意摩尼陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 84%
+  - Signals: chinese_title_substring
+  - Reason: T21n1403 is a dhāraṇī scripture with proper sūtra opening formula (如是我聞). Title explicitly contains 陀羅尼經. Standard closing with 'all beings heard and rejoiced' formula. Contains practical dhāraṇī mantras. Length (1184 chars) consistent with shorter dhāraṇī scripture.
+- **T20n1057a** (千眼千臂觀世音菩薩陀羅尼神呪經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 84%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan entry '陀羅尼' matches T20n1057a '千眼千臂觀世音菩薩陀羅尼神呪經'. Section 'dhāraṇī collection' appropriate. Volume 20 within tantra range. Title explicitly references dhāraṇī and mantra (神呪). Content focuses on visualization, ritual mudras (手印), and mantra recitation. Very substantial length (7870 chars) consistent with comprehensive Tantric practice manual. Closing shows ritual instruction and dharma conclusion.
+- **T19n0968** (佛頂尊勝陀羅尼經) <-> CBETA #600 (熾頂髻陀羅尼)
+  - Confidence: 83%
+  - Signals: chinese_title_overlap
+  - Reason: Title matches: 佛頂尊勝 (Buddha's crown supreme) corresponds to Uṣṇīṣavijaya. Opens with proper sūtra formula (如是我聞) and describes the standard narrative framework with Ananda inquiring about the Uṣṇīṣavijaya dhāraṇī. T19n0968 is recognized Uṣṇīṣavijaya translation. Length and genre appropriate for tantra section.
+- **T20n1185A** (佛說文殊師利法寶藏陀羅尼經) <-> CBETA #639 (聖文殊師利法王子一百八名陀羅尼真言)
+  - Confidence: 83%
+  - Signals: chinese_title_overlap
+  - Reason: Title and deity match: both Mañjuśrī (文殊師利) texts about dharani. T20n1185A is complete sūtra with proper opening (如是我聞) and narrative frame, indicating fuller translation tradition. Sanskrit title mañjuśrī-kumārabhūta-dharani matches Mañjuśrī focus. Length (8069 chars) substantial for complete sūtra. While not specifically titled '一百八名梵讚', the text is the dharani scripture source that underlies 108-name compilations. Classification as doctrinal text (likely tantra-era sūtra in vol. 20) fits 怛特羅部.
+  - Sanskrit: Ārya-mañjuśrīkumārabhūtaṣṭottaraśatakanāma-dhāraṇī-mantra-sahita
+- **T20n1057b** (千眼千臂觀世音菩薩陀羅尼神呪經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 83%
+  - Signals: chinese_title_substring
+  - Reason: T20n1057b '千眼千臂觀世音菩薩陀羅尼神呪經' (Thousand-Eyed Thousand-Armed Avalokiteśvara Dhāraṇī Divine Spell Sutra) is a dhāraṇī text centered on Avalokiteśvara. Matches generic Tibetan '陀羅尼' entry. Vol. 20 appropriate for sūtra-tantric texts. Opening formula matches (佛說); length (7305 CJK chars) appropriate for comprehensive practice manual with multiple spell sections and ritual instructions.
+- **T21n1385** (佛說俱枳羅陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 83%
+  - Signals: chinese_title_substring
+  - Reason: Title 佛說俱枳羅陀羅尼經 is a dhāraṇī sūtra. Opening (如是我聞) and assembly structure follow sūtra conventions. Text presents a single dhāraṇī with explicit therapeutic benefits (illness healing, life extension). Length (407 chars) is reasonable for a focused single-dhāraṇī text. Closing shows typical sūtra closure (assembly approval, 作禮而退). Clear alignment with dhāraṇī sūtra genre in Tibetan catalogue.
+- **T20n1111** (青頸觀自在菩薩心陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 83%
+  - Signals: chinese_title_substring
+  - Reason: Title '青頸觀自在菩薩心陀羅尼經' clearly identifies a specific dhāraṇī sūtra about Green-necked Avalokiteśvara. Opening with context setting (though not standard 'thus have I heard' format) and closing with iconographic details. T20n1111 is in correct volume range. Content focuses on a single important dhāraṇī with its benefits and visualization.
+- **T21n1233** (佛說無能勝大明王陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 83%
+  - Signals: chinese_title_substring
+  - Reason: T21n1233 (佛說無能勝大明王陀羅尼經) is explicitly a dhāraṇī text featuring an 'invincible great king mantra'. The opening shows Buddha explaining the mantra's power to subdue obstacles, followed by mantra sections. Length (2166 chars) and structure are consistent. Clear match with the dhāraṇī catalogue entry.
+- **T21n1364** (妙臂印幢陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 83%
+  - Signals: chinese_title_substring
+  - Reason: T21n1364 is a dhāraṇī scripture with proper sūtra opening (如是我聞). Title explicitly contains 陀羅尼經. Standard closing formula present. Though catalogued in T21 (typically commentary), the text itself is a sūtra. Length (515 chars) reasonable for shorter dhāraṇī scripture.
+- **T20n1066** (大悲心陀羅尼修行念誦略儀) <-> CBETA #865 (陀羅尼)
+  - Confidence: 83%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan entry '陀羅尼' matches T20n1066 '大悲心陀羅尼修行念誦略儀'. Section 'dhāraṇī collection' appropriate. Volume 20 within tantra range. Title explicitly references dhāraṇī practice. Opening describes ritual setup for mantra practice (道場, initiation). Length consistent with a ritual manual. Content focuses on proper recitation and visualization of dhāraṇī.
+- **T18n0852b** (大毘盧舍那成佛神變加持經蓮華胎藏悲生曼荼羅廣大成就儀軌) <-> CBETA #1979 (成就儀軌)
+  - Confidence: 83%
+  - Signals: chinese_title_substring
+  - Reason: T18n0852b '大毘盧舍那成佛神變加持經蓮華胎藏悲生曼荼羅廣大成就儀軌' contains explicit 成就儀軌. This is a major ritual manual associated with the Womb Realm mandala (蓮華胎藏) of esoteric Buddhism. Length (13525 chars) and extensive ritual instructions match sgrub-pa'i thabs. Taishō vol. 18 is within tantra range.
+- **T21n1218** (文殊師利耶曼德迦呪法) <-> CBETA #3312 (聖文殊師利成就法)
+  - Confidence: 83%
+  - Signals: chinese_title_overlap
+  - Reason: Both concern Mañjuśrī (文殊師利) sādhana practice. Sanskrit titles aligned: Ārya-mañjuśrīsādhana matches the sādhana genre. T21n1218 describes ritual practices, mantras, and visualizations for Mañjuśrī. Length (4907 chars) appropriate for comprehensive sādhana manual. Opening (爾時世尊於王舍城) and closing with mantra and mudrā instructions are typical of sādhana texts. Slight title variation (耶曼德迦 = Yamāntaka variant) acceptable.
+  - Sanskrit: Ārya-mañjuśrīsādhana
+- **T08n0255** (般若波羅蜜多心經) <-> CBETA #3823 (般若心（經）解說)
+  - Confidence: 83%
+  - Signals: chinese_title_overlap
+  - Reason: T08n0255 is another Heart Sutra translation (般若波羅蜜多心經) with proper sūtra format (如是我聞) and the dialogue structure between Avalokiteśvara and Śāriputra. Matches Tibetan entry CBETA #3823 seeking 般若心經解說. The text conveys teaching through exegetical dialogue. Length (579 chars) is appropriate.
+  - Sanskrit: [prajñāhṛdayavyākhyā]
+- **T14n0579** (優婆夷淨行法門經) <-> CBETA #4363 (法門)
+  - Confidence: 83%
+  - Signals: chinese_title_substring
+  - Reason: Title contains 法門; T14n0579 is 優婆夷淨行法門經. Opens with sūtra formula (如是我聞一時佛住舍衛國...). Length (13,969 chars) appropriate for extended teaching on laywomen's practice. Volume 14 in sūtra range. Sanskrit Dharmaparyāya matches 法門. Text explicitly names itself as teaching the 優婆夷淨行 (lay practitioner conduct), fitting miscellaneous category. Standard sūtra structure throughout.
+  - Sanskrit: [Dharmaparyāya]
+- **T15n0591** (商主天子所問經) <-> CBETA #158 (聖梵天所問大乘經)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Title alignment: 聖梵天所問大乘經 vs 商主天子所問經. Both feature a questioner asking Buddha (梵天 vs 商主天子). Tibetan Sanskrit brahmaparipṛcchā ('Brahma's Question') aligns semantically even though Chinese uses 商主天子. T15n0591 is proper Mahāyāna sūtra (7,525 chars, reasonable length). Opening 爾時婆伽婆 matches expected format. Different questioner reflects translation variant tradition.
+  - Sanskrit: Ārya-brahmaparipṛcchā-nāma-mahāyānasūtra
+- **T12n0321** (佛說護國尊者所問大乘經) <-> CBETA #166 (聖持國所問大乘經)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics: '聖持國所問' (Ārya-rāṣṭrapāla) matches '護國尊者所問' (protective nation theme). Sanskrit Ārya-rāṣṭrapālaparipṛcchā confirmed. Genre: 經部 (sūtra section), T12n0321 in vol.12 (sūtra range). Text opens with 'thus have I heard' formula and closes with standard assembly approval. Length (16473 chars) consistent with Mahāyāna dialogue sutra.
+  - Sanskrit: Ārya-rāṣṭrapālaparipṛcchā-nāma-mahāyānasutra
+- **T16n0714** (緣起聖道經) <-> CBETA #212 (聖緣起大乘經)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Strong semantic alignment: Tibetan '聖緣起大乘經' matches Chinese '緣起聖道經' (both focus on pratītyasamutpāda). Sanskrit title Ārya-pratītyasamutpāda-mahāyānasūtra directly corresponds. Both are sūtra texts (經部) with opening formula '如是我聞'. Length of 1896 characters is reasonable for this type of teaching text. Closing formula standard for Mahāyāna sūtra.
+  - Sanskrit: Ārya-pratītyasamutpāda-mahāyānasūtra
+- **T17n0772** (大乘四法經) <-> CBETA #245 (聖法蘊大乘經)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Title match: Both refer to 大乘四法經. Sanskrit Ārya-caturdharmanirdeśa matches T17n0772's content on four dharmas (菩提心, 善知識, 堪忍, 阿練若). Text length (291 chars) is short but plausible for a concise sutra. Opening formula and closing follow standard sūtra conventions. However, this doesn't match the Tibetan entry's Sanskrit title 'dharmaskanda' (law aggregate), so there may be cataloguing confusion in the source.
+  - Sanskrit: Ārya-dharmaskanda-nāma-mahāyānasūtra
+- **T02n0113** (佛說難提釋經) <-> CBETA #328 (難陀出家經)
+  - Confidence: 82%
+  - Signals: sanskrit_exact
+  - Reason: T02n0113 is titled '佛說難提釋經' - 難提 (Nandi/Nanda) directly matches the protagonist name in the Tibetan entry. The Sanskrit title 'Nandapravrajyā-sūtra' matches the expected Nanda narrative. The opening formula '聞如是' (thus have I heard variant) is appropriate for a sūtra. The content about Nanda asking questions and receiving Buddhist teachings aligns with an ordination/instruction narrative. The length (1669 characters) is reasonable for a standalone sūtra.
+  - Sanskrit: Nandapravrajyā-sūtra
+- **T21n1376** (佛說聖莊嚴陀羅尼經) <-> CBETA #509 (菩提心莊嚴十萬陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Strong semantic alignment: Tibetan '菩提心莊嚴十萬陀羅尼' (Bodhicitta Adornment hundred-thousand dhāraṇī) matches T21n1376 '佛說聖莊嚴陀羅尼經' (Holy Adornment dhāraṇī). Sanskrit titles align (Bodhigarbhālaṁkāra). Text length (3363 chars) appropriate for extensive dhāraṇī collection. Opening with standard sūtra formula and broad assembly matches mahāyāna style. Section (十萬怛特羅部) consistent with Taishō volume 21 (tantric sūtra range).
+  - Sanskrit: Bodhigarbhālaṁkāralakṣa-dhāraṇi
+- **T20n1185A** (佛說文殊師利法寶藏陀羅尼經) <-> CBETA #545 (聖文殊師利直說陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics align (Mañjuśrī dhāraṇī). Sanskrit title 'Ārya-mañjuśrīsvākhyāta-nāma-dhāraṇī' matches Chinese 聖文殊師利直說陀羅尼 (svākhyāta=直說, nāma=名/法寶藏). Genre (十萬怛特羅部) matches tantra section. Opening 'Thus have I heard' consistent with sūtra-style dhāraṇī text. Length (8069 chars) reasonable for sūtra-format dhāraṇī compilation. Slight title variant (法寶藏 vs direct translation) is normal translation variation.
+  - Sanskrit: Ārya-mañjuśrīsvākhyāta-nāma-dhāraṇī
+- **T19n0971** (佛說佛頂尊勝陀羅尼經) <-> CBETA #568 (聖有勝陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan Ārya-jayavatī-nāma-dhāraṇī (jayavatī = victorious) aligns with T19n0971 '佛說佛頂尊勝陀羅尼經' (Buddha-crown supremely victorious dhāraṇī). 尊勝 (supremely victorious/dignified) is a close semantic match to jayavatī. Both are dhāraṇī texts. The Chinese text opens with proper sūtra formula (如是我聞). Length (3375 chars) is appropriate for a tantric dhāraṇī text. Classification as tantra matches.
+  - Sanskrit: Ārya-jayavatī-nāma-dhāraṇī
+- **T19n0974E** (佛頂尊勝陀羅尼真言) <-> CBETA #568 (聖有勝陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: T19n0974E is titled 佛頂尊勝陀羅尼真言 and contains the full Uṣṇīṣa-vijaya-dhāraṇī. While the title differs slightly from Tibetan Ārya-jayavatī, the Sanskrit term jayavatī (victorious/conquering) aligns with vijaya (victory), and both reference the same dhāraṇī. The 8660-character length is appropriate for an extensive dhāraṇī text with practices. Genre matches (tantra section for dhāraṇī).
+  - Sanskrit: Ārya-jayavatī-nāma-dhāraṇī
+- **T19n0967** (佛頂尊勝陀羅尼經) <-> CBETA #600 (熾頂髻陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Strong title match: 佛頂尊勝 (Buddha's crown supreme) directly corresponds to Uṣṇīṣavijaya tradition. Though opening begins with imperial preface rather than 如是我聞, the core text contains the expected dhāraṇī sections. T19n0967 is a well-known Uṣṇīṣavijaya translation by Buddhapāli. Compatible with tantra section classification.
+- **T19n1028A** (佛說護諸童子陀羅尼經) <-> CBETA #615 (聖多子依陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: The Tibetan entry 'Ārya-bahuputrapratisaraṇa-nāma-dhāraṇī' (many children protection dhāraṇī) and the Chinese text T19n1028A '佛說護諸童子陀羅尼經' (Protection of Children dhāraṇī) are semantically equivalent. Both concern protection of children/infants from harm. The content matches: the Chinese text explicitly addresses protection of children (童子/嬰孩小兒) from demons, spirits, and miscarriage. The opening formula and dhāraṇī content align. Volume T19 (Taishō 19) falls within the tantra section (vols 18-21). Length is reasonable for a dhāraṇī text.
+  - Sanskrit: Ārya-bahuputrapratisaraṇa-nāma-dhāraṇī
+- **T21n1202** (不動使者陀羅尼祕密法) <-> CBETA #631 (聖不動陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Both texts concern Ācala (不動) dhāraṇī. T21n1202 title includes '不動' and describes a ritual practice text with dhāraṇī sections. The Sanskrit titles are identical (Ārya-acala-nāma-dhāraṇī). Genre matches (tantra, T21 = tantric texts). Length (4687 chars) is reasonable for a ritual dhāraṇī text. Opening describes ritualistic practice consistent with tantric dhāraṇī literature.
+  - Sanskrit: Ārya-acala-nāma-dhāraṇī
+- **T21n1316** (佛說甘露經陀羅尼呪) <-> CBETA #645 (甘露生陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Title and Sanskrit alignment: Tibetan '甘露生陀羅尼' (Amṛtabhava-nāma-dhāraṇī) matches T21n1316 '甘露經陀羅尼呪' (Amrita/Nectar dhāraṇī). Both are short texts (68 chars fits brief ritual formula). The content shows a nectar-generation ritual for feeding hungry ghosts, consistent with Amṛtabhava semantics.
+  - Sanskrit: Amṛtabhava-nāma-dhāraṇī
+- **T21n1381** (佛說大吉祥陀羅尼經) <-> CBETA #668 (吉祥大黑天尊天陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Strong semantic alignment: Both address 'Great Auspiciousness' (大吉祥/gSal-chen). Taishō T21n1381 title 'Great Auspiciousness dhāraṇī' directly corresponds to Tibetan entry. Sanskrit/Tibetan references to Mahākāla compatible with auspiciousness themes in tantric Buddhism. Opening follows proper sūtra format ('如是我聞'). Genre compatible (T21 = tantra section, matching 十萬怛特羅部). Length and dhāraṇī-heavy content expected for this text type.
+  - Sanskrit: Śrī-mahākāla-nāma-dhāraṇī
+- **T20n1162** (持世陀羅尼經) <-> CBETA #720 (聞持陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: T20n1162 (持世陀羅尼經) contains 持世 where 持 (retention/holding) semantically overlaps with 聞持 (hearing-retention). Both concern Dhṛtarāṣṭra/world-sustaining deity and dhāraṇī transmission. Opens with standard sutra formula (如是我聞). Contains explicit dhāraṇī teaching and benefits tied to memory/wisdom. Closing confirms proper sutra structure. Length (1413 chars) appropriate. Vol. 20 is acceptable boundary position. Title semantic connection is reasonable given variant translations of the same source.
+- **T19n0918** (諸佛心陀羅尼經) <-> CBETA #855 (聖佛心髓陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: T19n0918 (諸佛心陀羅尼經) translated by Xuanzang contains explicit 'heart' (心) terminology. The Sanskrit title Ārya-buddhahṛdaya-nāma-dhāraṇī directly translates to 'Buddha's Heart dhāraṇī', and this text is titled 'All Buddhas' Heart dhāraṇī'. Standard sūtra opening (如是我聞), closing (信受奉行), and proper narrative structure present. Length (844 characters) is reasonable for a complete dhāraṇī sūtra. Xuanzang's translator credentials support canonical authenticity.
+  - Sanskrit: Ārya-buddhahṛdaya-nāma-dhāraṇī
+- **T20n1046** (六字大陀羅尼呪經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: Both texts are dhāraṇī sutras with matching title semantics (六字大陀羅尼呪經 contains 陀羅尼). The Taishō text opens with standard sūtra formula (如是我聞) and contains extensive dhāraṇī mantras. Length (357 chars) is consistent with a medium dhāraṇī text. Genre alignment: Taishō T20 volume is appropriate for dhāraṇī texts. The closing follows standard sutra convention (歡喜奉行).
+- **T21n1390** (佛說洛叉陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: T21n1390 is titled '佛說洛叉陀羅尼經' (Buddha-spoken Lakṣa Dhāraṇī Sutra). The Tibetan entry generically lists '陀羅尼' (Dhāraṇī) under '陀羅尼集' (Dhāraṇī Collection). This is a specific dhāraṇī sutra in the correct Taishō volume range (vol. 21 = tantra/dhāraṇī). The opening formula 'Buddha tells Ānanda' and extensive dhāraṇī mantras match expectations. Length (370 CJK chars) is reasonable for a focused dhāraṇī text.
+- **T21n1250** (北方毘沙門多聞寶藏天王神妙陀羅尼別行儀軌) <-> CBETA #865 (陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: T21n1250 '北方毘沙門多聞寶藏天王神妙陀羅尼別行儀軌' (North Direction Vaiśravaṇa Wealth-Treasure King Divine Dhāraṇī Separate Practice Ritual Manual) is a dhāraṇī ritual text. Matches generic Tibetan '陀羅尼' entry. Vol. 21 appropriate for tantra/dhāraṇī. Opens with Vaiśravaṇa's direct teaching. Length (3042 CJK chars) and extensive ritual/mantra content fit expectations for a heaven-king protective dhāraṇī practice guide.
+- **T19n0952** (五佛頂三昧陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: Title T19n0952 '五佛頂三昧陀羅尼經' contains 陀羅尼. Standard sūtra opening with elaborate scene-setting. Substantial length (28412 chars) justified by comprehensive treatment of five buddha-crown dhāraṇīs and elaborate ritual instructions. Taishō vol. 19 correct for major dhāraṇī text. Structure and content fully consistent.
+- **T19n0946** (大佛頂廣聚陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: Title 大佛頂廣聚陀羅尼經 is a major dhāraṇī text (佛頂 = Buddha-crown, 廣聚 = gathering). Opening (如是我聞) and structure (divine assembly, request for dharma) match sūtra conventions. Extensive length (31160 chars) is appropriate for a comprehensive dhāraṇī compilation. Taishō T19n0946 falls within dhāraṇī text range. Closing includes mantric formulas and assembly approval typical of dhāraṇī sūtras.
+- **T20n1113B** (大慈大悲救苦觀世音自在王菩薩廣大圓滿無礙自在青頸大悲心陀羅尼) <-> CBETA #865 (陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: Title 大慈大悲救苦觀世音自在王菩薩廣大圓滿無礙自在青頸大悲心陀羅尼 is explicitly a Guanyin (Avalokiteśvara) dhāraṇī text. Opening invocation (南無歸命頂禮) and enumeration of multiple dhāraṇī aspects (救苦陀羅尼, 延壽陀羅尼, etc.) are characteristic of this genre. Length (1215 chars) is appropriate. Closing shows mantra details and hand-seal instructions typical of dhāraṇī ritual texts. Strong generic match.
+- **T21n1282** (寶藏天女陀羅尼法) <-> CBETA #865 (陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: Title '寶藏天女陀羅尼法' (Treasure Goddess Dhāraṇī Practice) fits the dhāraṇī collection category. T21n1282 is in appropriate volume range for dhāraṇī texts. Contains multiple dhāraṇī formulas (eight真言 listed), ritual instructions, and mudra practices typical of dhāraṇī collections. Lack of 'thus have I heard' suggests ritual manual format, which is acceptable for dhāraṇī texts.
+- **T21n1239** (阿吒薄俱元帥大將上佛陀羅尼經修行儀軌) <-> CBETA #865 (陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: T21n1239 (阿吒薄俱元帥大將上佛陀羅尼經修行儀軌) is a dhāraṇī text with ritual practice instruction matching genre. Opens with 如是我聞 at Kuśinagara with assembly including Avalokiteśvara. Contains extensive dhāraṇī teachings. Length (16648 chars) is notably long but consistent with tantric ritual manuals combining sūtra and detailed practice instructions. Title indicates dhāraṇī content.
+- **T20n1038** (清淨觀世音普賢陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: T20n1038 (Pure Avalokiteśvara & Samantabhadra Dhāraṇī Sutra) is explicitly a dhāraṇī text with standard opening (如是我聞) and proper colophon closing. Content shows Avalokiteśvara teaching dhāraṇī for sentient benefit. Length (2038 chars) reasonable. Clear dhāraṇī sutra matching catalogue entry.
+- **T20n1160** (日光菩薩月光菩薩陀羅尼) <-> CBETA #865 (陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: T20n1160 titled 日光菩薩月光菩薩陀羅尼is a brief dhāraṇī text (281 characters) featuring divine protection mantras. Lacks traditional sūtra opening but is recognizably a dhāraṇī work. Short length is appropriate for standalone dhāraṇī texts in the collection.
+- **T20n1105** (聖多羅菩薩一百八名陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: T20n1105 (聖多羅菩薩一百八名陀羅尼經) is explicitly a dhāraṇī text. The title mentions Tārā bodhisattva and 108 names, with extensive mantra sections in the opening and closing. Matches the generic dhāraṇī catalogue header. Text length (2267 chars) and content are consistent with a formal dhāraṇī sūtra.
+- **T21n1395** (拔濟苦難陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: T21n1395 (拔濟苦難陀羅尼經) is explicitly a dhāraṇī text for relieving suffering. Opens with standard sūtra formula (如是我聞), features a bodhisattva requesting the mantra, followed by teaching and mantra sections. Length (626 chars) is consistent. Good match with generic dhāraṇī catalogue entry.
+- **T19n0976** (佛頂大白傘蓋陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: T19n0976 is a dhāraṇī scripture with proper sūtra opening formula (如是我聞). Title contains 陀羅尼 matching catalogue entry. Volume T19 is appropriate for dhāraṇī texts. Length (3365 chars) and content structure consistent with dhāraṇī-focused sūtra.
+- **T19n0972** (佛頂尊勝陀羅尼念誦儀軌法) <-> CBETA #865 (陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: T19n0972 (佛頂尊勝陀羅尼念誦儀軌法) is a ritual manual (念誦儀軌) for dhāraṇī practice in Taishō vol. 19. While formatted as a practice guide rather than narrative sūtra (opening differs from typical '如是我聞'), it is categorized as a dhāraṇī text. Tibetan catalogue entry '陀羅尼' in 陀羅尼集 is appropriate. Confidence slightly lower due to genre variant (ritual rather than narrative sūtra).
+- **T20n1134B** (金剛壽命陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan entry title '陀羅尼' (dhāraṇī) matches T20n1134B '金剛壽命陀羅尼經' which is a dhāraṇī text. Section 'dhāraṇī collection' is appropriate. Volume 20 falls within tantra range (18-21). Text contains dhāraṇī sections. Opening shows tantric cosmology (Vairocana). Length reasonable for a dhāraṇī scripture.
+- **T19n1009** (出生無邊門陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan entry '陀羅尼' matches T19n1009 '出生無邊門陀羅尼經'. Section 'dhāraṇī collection' fits. Volume 19 appropriate for sūtra/tantra texts. Opening uses standard 'thus have I heard' formula. Title explicitly references a dhāraṇī. Translator Bukong (不空) canonical for Tantric texts. Length substantial (4409 chars). Closing confirms this is a teaching about acquiring dhāraṇī.
+- **T20n1142** (佛說慈氏菩薩陀羅尼) <-> CBETA #865 (陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: Title 佛說慈氏菩薩陀羅尼 contains 陀羅尼. T20n1142 is extremely brief (~58 characters), containing only mantra/dhāraṇī text without narrative frame. Matches genre as independent dhāraṇī text. Taishō vol. 20 appropriate for dhāraṇī compilation.
+- **T20n1185B** (文殊師利寶藏陀羅尼經) <-> CBETA #892 (聖文殊師利口訣陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Both reference Mañjuśrī dhāraṇī teaching. The Tibetan title 聖文殊師利口訣陀羅尼 ('Ārya-Mañjuśrī's oral instruction dharani') semantically aligns with T20n1185B's 文殊師利寶藏陀羅尼經 ('Mañjuśrī Treasure Dharani Sutra'). Sanskrit title Ārya-mañjuśrīsvākhyāta-nāma-dhāraṇī matches the Mañjuśrī focus. Both are tantra-period sūtra texts (T20). The opening and theme of teaching dharanis via Mañjuśrī align.
+  - Sanskrit: Ārya-mañjuśrīsvākhyāta-nāma-dhāraṇī
+- **T20n1099** (佛說聖觀自在菩薩不空王祕密心陀羅尼經) <-> CBETA #910 (聖觀自在陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Title overlap (聖觀自在陀羅尼 vs 佛說聖觀自在菩薩不空王祕密心陀羅尼經) with shared Sanskrit referent (Ārya-avalokiteśvara). Both are dhāraṇī texts with proper sūtra opening (如是我聞) and closing formulas. T20n1099 length (3882 chars) is consistent with a medium-length dhāraṇī scripture. Setting in Potalaka (補陀落迦山) and Avalokiteśvara as main speaker match the Tibetan entry's focus on the Arya-avalokiteśvara-nāma-dhāraṇī.
+  - Sanskrit: Ārya-avalokiteśvara-nāma-dhāraṇī
+- **T21n1360** (六門陀羅尼經) <-> CBETA #935 (六波羅蜜多心陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: The Tibetan title 六波羅蜜多心陀羅尼 (six pāramitā-heart dhāraṇī) aligns well with T21n1360 六門陀羅尼經 (six-gate dhāraṇī sūtra). Both reference 'six' and dhāraṇī, likely parallel translations. The opening formula (如是我聞) and closing with dharani text and recitation benefits match expectations. Length (341 CJK) is appropriate for a shorter dhāraṇī sūtra.
+- **T20n1162** (持世陀羅尼經) <-> CBETA #942 (聖三昧王經執持陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Title match: 聖三昧王經執持陀羅尼 vs 持世陀羅尼經. The Tibetan 'tiṅ-ṅe-ḥdsin-gyi rgyal-po' (Samādhi-King) does not directly match 持世 (Sustainer), yet T20n1162 is titled 持世陀羅尼經. However, the Sanskrit-to-Tibetan mapping may differ; internal evidence (open with 如是我聞, dhāraṇī content, length 1,413 chars suitable for single dhāraṇī) supports this as a core dhāraṇī work. Catalogue pre-filter signals suggest overlap. Confidence moderate due to title term variance.
+- **T21n1236** (聖無能勝金剛火陀羅尼經) <-> CBETA #954 (聖金剛無能勝火迷闇陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Strong title match: 聖無能勝金剛火陀羅尼經 directly corresponds to Tibetan 'Vajra-invincible fire-confusing dhāraṇī'. Sanskrit titles align (Ārya-vajrājitānalapramohanī). Opening 'Thus have I heard' (如是我聞) confirms sūtra genre. Length (1547 chars) is reasonable for a mid-length dhāraṇī sūtra. Closing shows formal conclusion with assembly's acceptance.
+  - Sanskrit: Ārya-vajrājitānalapramohanī-nāma-dhāraṇī
+- **T19n1028A** (佛說護諸童子陀羅尼經) <-> CBETA #976 (聖多子依陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: T19n1028A (佛說護諸童子陀羅尼經) concerns protection of children (童子), which correlates with the Tibetan 'Bahuputrapratisaraṇa' (多子依 = refuge for many children). Both texts address child protection through dhāraṇī. The opening shows standard sūtra format with proper Buddhist formulas. Length (1250 chars) is reasonable for a single dhāraṇī text.
+  - Sanskrit: Ārya-bahuputrapratisaraṇa-nāma-dhāraṇī
+- **T21n1235** (無能勝大明心陀羅尼經) <-> CBETA #978 (無能勝大明母)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: T21n1235 (無能勝大明心陀羅尼經) has title semantically compatible with Mahāvidyā-aparājita (無能勝=aparājita 'invincible'; 大明心=mahāvidyā-hṛdaya 'great knowledge-heart'). Sanskrit title match evident. Length (601 chars) consistent with single named dhāraṇī. Opened with Sanskrit invocation and dhāraṇī text. Genre (陀羅尼) matches Taishō volume 21 (tantra). Tibetan section 陀羅尼集 aligns with dhāraṇī text classification.
+  - Sanskrit: Mahāvidyā-aparājita
+- **T21n1366** (佛說祕密八名陀羅尼經) <-> CBETA #999 (聖八天女陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Both texts deal with Eight Secret Names/Eight Dharanis. T21n1366 '佛說祕密八名陀羅尼經' directly parallels the Tibetan catalogue entry '聖八天女陀羅尼'. The opening formula (如是我聞), Vajrapani as main interlocutor, and the doctrinal content of secret eight names align well. Title variation explained by translation differences (密 = secret aspect emphasizing mystery).
+  - Sanskrit: Ārya-aṣṭadevī-dhāraṇī
+- **T19n0974A** (最勝佛頂陀羅尼經) <-> CBETA #1004 (聖有勝陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Chinese title 最勝佛頂陀羅尼經 closely parallels 聖有勝陀羅尼 (both emphasize jayavatī/'victorious' and reference 佛頂/supreme). Sanskrit titles appear related (both concern jayavatī-dhāraṇī). Though opening lacks explicit 如是我聞, the text structure suggests a variant translation. Length (589 chars) is reasonable for a condensed dhāraṇī text. Categorized as dhāraṇī scripture in vol. 19.
+  - Sanskrit: Ārya-jayavatī-nāma-dhāraṇī
+- **T18n0901** (陀羅尼集經) <-> CBETA #1033 (悅豫陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Both texts are comprehensive dhāraṇī compilations. Tibetan catalogue entry #1033 '悅豫陀羅尼' from 陀羅尼集 section matches T18n0901 '陀羅尼集經' (Dhāraṇī Collection Scripture). Large length (136451 chars) confirms this is a major compilation. Both contain multiple dhāraṇīs in structured format with ritual instructions.
+- **T21n1372** (增慧陀羅尼經) <-> CBETA #1038 (智慧生起陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: T21n1372 (增慧陀羅尼經) matches the Tibetan entry. Sanskrit title Prajñāvardhanī-nāma-dhāraṇī corresponds to 增慧 (increased wisdom/prajñā-vardhanī). The Chinese title 增慧陀羅尼 directly translates the Sanskrit. Both are dhāraṇī texts in the appropriate section. Length (277 chars) is consistent with a dhāraṇī sutra with narrative frame. Opening formula 如是我聞 is standard.
+  - Sanskrit: Prajñāvardhanī-nāma-dhāraṇī
+- **T21n1372** (增慧陀羅尼經) <-> CBETA #1039 (智慧生起陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Identical to Pair 0. T21n1372 (增慧陀羅尼經) matches Prajñāvardhanī-nāma-dhāraṇī. The same Chinese title appears, with matching Sanskrit semantics, appropriate genre (dhāraṇī sutra), standard opening formula, and plausible length for a narrative dhāraṇī text.
+  - Sanskrit: Prajñāvardhanī-nāma-dhāraṇī
+- **T18n0901** (陀羅尼集經) <-> CBETA #1040 (聞持陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: T18n0901 '陀羅尼集經' (Dhāraṇī Collection Sūtra) is a comprehensive dhāraṇī compilation matching the Tibetan '聞持陀羅尼' (hearing and retention dhāraṇī). The translator (Amoghavajra) and substantial length (136,451 characters) are consistent with a major canonical text. Opening mentions transmission and dhāraṇī methodology.
+- **T18n0901** (陀羅尼集經) <-> CBETA #1041 (聞持陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: T18n0901 '陀羅尼集經' is the major dhāraṇī compilation by Amoghavajra. Matches Tibetan '聞持陀羅尼' as a comprehensive dhāraṇī collection emphasizing transmission and retention. Large size (136,451 chars), professional translation, and methodological content consistent with canonical status.
+- **T21n1400** (佛說消除一切災障寶髻陀羅尼經) <-> CBETA #1051 (一切毒害消滅陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics match closely: Tibetan '一切毒害消滅陀羅尼' (dhāraṇī for eliminating all poisons) aligns with T21n1400 '佛說消除一切災障寶髻陀羅尼經' (sutra for eliminating all calamities with Jewel-Crest dhāraṇī). Both address poison/harm elimination. Genre matches (dhāraṇī), volume 21 appropriate. Text has standard sutra opening. Length plausible for a single dhāraṇī sutra.
+- **T21n1323** (除一切疾病陀羅尼經) <-> CBETA #1056 (膽病除滅陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan 'Mkhris-paḥi nad sel-bar-byed-paḥi gzuṅs' (bile/liver disease eliminating dhāraṇī) corresponds closely with T21n1323 '除一切疾病陀羅尼經' (Eliminating all diseases dhāraṇī sūtra). The opening 'thus have I heard' confirms sūtra format. Text length (298 chars) appropriate for brief dhāraṇī. Tibetan title references one specific disease, Chinese generalizes to all diseases, but same underlying text treating illness removal through dhāraṇī.
+- **T21n1336** (陀羅尼雜集) <-> CBETA #1075 (右繞陀羅尼)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Title '右繞陀羅尼' (circumambulation dhāraṇī) appears semantically compatible with T21n1336 '陀羅尼雜集' (Dhāraṇī Collection). Both are large dharani compilations (陀羅尼集 catalogue section). T21n1336 at 69,261 characters is a comprehensive collection consistent with a catalogue entry for circumambulation dharanis within a broader collection. The opening shows multiple dharani practices, matching the genre.
+- **T32n1682** (七佛讚唄伽他) <-> CBETA #1114 (佛讚)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: Strong match: Tibetan 'Buddhastotra-nāma' (Buddha Praise/Eulogy text) aligns with Taishō 'T32n1682' titled '七佛讚唄伽他' (Seven Buddhas Praise-verses and gāthā). Both concern Buddha praise/eulogy (讚). Taishō vol. 32 is proper for hymns/praises. Genre alignment: 禮讚部 (praise section) matches stotra tradition. Content shows verses praising past Buddhas with Sanskrit/transliterated mantric elements consistent with Buddhist hymnography.
+  - Sanskrit: Buddhastotra-nāma
+- **T18n0908** (金剛頂瑜伽護摩儀軌) <-> CBETA #1223 (護摩儀軌)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: Genre and content match: Both are homa ritual texts (護摩儀軌/Homavidhi) in tantric section. Title 'Vajradhātu Yoga Homa Ritual' (金剛頂瑜伽護摩儀軌) contains core homa terminology. Length (4024 chars) appropriate for detailed ritual instructions. Opening explicitly discusses homa types and methods. Same translator (不空) known for Vajradhātu texts. Very similar textual content to Pair 3.
+  - Sanskrit: Homavidhi
+- **T18n0908** (金剛頂瑜伽護摩儀軌) <-> CBETA #1255 (護摩儀軌)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: T18n0908 '金剛頂瑜伽護摩儀軌' (Vajra Peak Yoga Homa Ritual) and the generic Homavidhi entry are semantically aligned. Both concern homa ritual. The title includes 護摩儀軌 directly. T18 is the correct volume for tantra. The opening states '我今說護摩' (I now expound homa), and the text discusses five types of homa (息災、增益、降伏、鉤召、敬愛). Length and content are appropriate. This is a strong parallel match.
+  - Sanskrit: Homavidhi
+- **T20n1119** (大樂金剛薩埵修行成就儀軌) <-> CBETA #1454 (吉祥金剛薩埵成就法)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics align: Tibetan 'Dpal rdo-rje sesm-dpaḥi sgrub-thabs' (Śrī-vajrasattva sādhana/achievement practice) matches Chinese '大樂金剛薩埵修行成就儀軌' (Mahāsukha Vajrasattva practice achievement ritual). Sanskrit titles match: Śrīvajrasattva-nāma-sādhana. Both are tantric achievement rituals (sādhana) for Vajrasattva. Length (4920 characters) is substantial for a ritual practice text. Opening addresses practitioners seeking accomplishment. Section classification (怛特羅部) matches T20 volume range.
+  - Sanskrit: Śrīvajrasattva-nāma-sādhana
+- **T18n0912** (建立曼荼羅護摩儀軌) <-> CBETA #1502 (護摩)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: Both concern homa (護摩/sbyin-sreg) rituals in tantra section. T18n0912 (建立曼荼羅護摩儀軌) explicitly includes mandala construction and homa procedures. Length (4754 chars) is substantial and consistent with a detailed ritual manual. Contains dhāraṇī and proper tantra content.
+- **T18n0862** (阿闍梨大曼荼攞灌頂儀軌) <-> CBETA #1709 (曼荼羅灌頂儀軌)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Sanskrit Maṇḍalābhiṣekavidhi and Tibetan dkyil-ḥkhor-du dbaṅ-bskur-baḥi cho-ga both mean 'mandala initiation ritual'. Chinese 阿闍梨大曼荼攞灌頂儀軌 (master's great mandala initiation ritual) is semantically identical. Both tantra texts describing same ritual procedure. Length (3515) appropriate.
+  - Sanskrit: Maṇḍalābhiṣekavidhi
+- **T18n0912** (建立曼荼羅護摩儀軌) <-> CBETA #1709 (曼荼羅灌頂儀軌)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Both texts concern maṇḍala abhiṣeka (mandala initiation) ritual. Tibetan title Dkyil-ḥkhor-du dbaṅ-bskur-baḥi cho-ga directly translates the Sanskrit Maṇḍalābhiṣekavidhi. Chinese title 建立曼荼羅護摩儀軌 (establishing mandala homa ritual) is a variant focusing on the homa component. Both are tantra section texts (vol 18). Length (~4754 chars) appropriate for detailed ritual manual. Content opening describes multi-day mandala construction and consecration matching ritual context.
+  - Sanskrit: Maṇḍalābhiṣekavidhi
+- **T21n1211** (甘露軍荼利菩薩供養念誦成就儀軌) <-> CBETA #1816 (甘露軍荼利成就法)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan Amṛtakuṇḍalīsādhana (Amṛta Spiral accomplishment) matches Chinese T21n1211 甘露軍荼利菩薩供養念誦成就儀軌 (Amrita Spiral Bodhisattva offering recitation accomplishment ritual). 甘露 = amṛta, 軍荼利 = kuṇḍalī. Length (~7371 chars) appropriate for comprehensive sādhana with offering, recitation, and accomplishment sections. Opening describes Amrita Spiral with mantras and practice methodology consistent with sādhana.
+  - Sanskrit: Amṛtakuṇḍalīsādhana
+- **T20n1119** (大樂金剛薩埵修行成就儀軌) <-> CBETA #1820 (金剛薩埵供養儀軌)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Both texts focus on Vajrasattva (金剛薩埵) practice and achievement (成就). T20n1119 is titled '大樂金剛薩埵修行成就儀軌' (Mahāsukha Vajrasattva practice achievement ritual). The Tibetan entry 'Vajrasattvasādhanavyākhyā' (Vajrasattva sādhana commentary) aligns with a sādhana-style text. Both emphasize quick achievement (速疾成就) and contain extensive dhāraṇī sections. The opening and closing formulas match tantra ritual patterns. Length (4920 chars) is appropriate for a sādhana text.
+  - Sanskrit: Vajrasattvapūjāvidhi
+- **T21n1260** (大藥叉女歡喜母并愛子成就法) <-> CBETA #1883 (歡喜成就法)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: The Taishō text (T21n1260) titled '大藥叉女歡喜母并愛子成就法' (Great Yakṣiṇī Mother Joyful and Beloved Son Sādhana) directly corresponds to the Tibetan 'Priyasādhana' (Joyful Sādhana). The title explicitly includes 'sādhana/成就法' and discusses a 'Mother' deity (歡喜母) in primary position. The opening establishes Buddhist context and leads into ritual procedures. Both texts describe practice of a specific deity.
+  - Sanskrit: Priyasādhana-nāma
+- **T19n0959** (頂輪王大曼荼羅灌頂儀軌) <-> CBETA #1933 (曼荼羅儀軌)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: T19n0959 '頂輪王大曼荼羅灌頂儀軌' directly matches the Tibetan entry title semantically. Both explicitly reference maṇḍala (曼荼羅) and ritual procedure (儀軌/cho-ga). Sanskrit title Maṇḍalavidhi is consistent. Section is 怛特羅部 (tantra) matching T19 volume. Text opens with maṇḍala construction details and contains dhāraṇī sections as expected. Length (1916 chars) is reasonable for a ritual manual. Strong match despite T19n0959 being more specific (focused on coronation ritual).
+  - Sanskrit: Maṇḍalavidhi
+- **T19n0959** (頂輪王大曼荼羅灌頂儀軌) <-> CBETA #1934 (曼荼羅儀軌)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Identical match to Pair 0. T19n0959 '頂輪王大曼荼羅灌頂儀軌' matches the Tibetan entry CBETA #1934 (which appears to be a variant catalogue entry with -nāma suffix in Sanskrit). The text, volume, section, length, and content all align perfectly with maṇḍala-vidhi expectations. The opening describes elaborate maṇḍala construction with detailed iconographic specifications. Presence of dhāraṇī sections confirms tantric classification.
+  - Sanskrit: Maṇḍalavidhi-nāma
+- **T21n1205** (勝軍不動明王四十八使者祕密成就儀軌) <-> CBETA #1979 (成就儀軌)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: T21n1205 '勝軍不動明王四十八使者祕密成就儀軌' explicitly contains 成就儀軌. This is a specific accomplishment ritual (sādhana) focused on Acala (不動明王) and his retinue. Contains traditional tantric elements (dhāraṇī, visualization). Length (5072 chars) and genre fit the sgrub-pa'i thabs category. Taishō vol. 21 matches tantra range.
+- **T20n1170** (佛說金剛香菩薩大明成就儀軌經) <-> CBETA #1979 (成就儀軌)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: Both texts are tantric ritual manuals (成就儀軌/sgrub-paḥi thabs). The Taishō text T20n1170 is explicitly titled with 成就儀軌經 and contains dhāraṇī sections. The opening formula 爾時世尊 is appropriate for tantric sūtra-style texts. The length (12540 characters) is reasonable for a ritual manual. Genre compatibility is perfect (怛特羅部, vol. 20). However, the specific deity focus differs (金剛香菩薩 vs. generic 成就儀軌), creating minor uncertainty.
+- **T21n1260** (大藥叉女歡喜母并愛子成就法) <-> CBETA #2052 (喜愛女成就法)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Chinese titles both reference 'Ratipriya' (喜愛女/歡喜母) and 'sādhana' (成就法). T21n1260 is explicitly a yakṣī sādhana text. The Taishō text opens with narrative frame (佛在王舍城) and contains extensive dhāraṇī sections, consistent with tantric sādhana. Length (4347 chars) appropriate for medium sādhana. Sanskrit title Ratipriyāsādhana is directly paralleled.
+  - Sanskrit: Ratipriyāsādhana-nāma
+- **T18n0908** (金剛頂瑜伽護摩儀軌) <-> CBETA #2119 (護摩儀軌)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: T18n0908 is an alternate translation of the same work as Pair 4 (T18n0909)—both translated by Amoghavajra (不空), both titled 'Vajradhātu Yoga Homa Ritual,' with nearly identical opening passages. Length (4024 chars) comparable. Represents different recension of same tantric homa manual. Both match Tibetan entry for homa ritual (sbyin-sreg-gi cho-ga).
+- **T20n1067** (攝無礙大悲心大陀羅尼經計一法中出無量義南方滿願補陀落海會五部諸尊等弘誓力方位及威儀形色執持三摩耶幖幟曼荼羅儀軌) <-> CBETA #2324 (曼荼羅儀軌)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: Strong title overlap: 曼荼羅儀軌 appears in both T20n1067's longer title. Sanskrit Maṇḍalavidhi-nāma and Chinese 儀軌 both mean ritual procedure/vidhi. T20n1067 is comprehensive maṇḍala ritual text (6891 chars) with proper tantra section classification. Opening discusses maṇḍala forms and ritual procedures. Good content alignment.
+  - Sanskrit: Maṇḍalavidhi-nāma
+- **T21n1218** (文殊師利耶曼德迦呪法) <-> CBETA #2587 (聖,文殊師利成就法)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan 'Ārya-mañjuśrīsādhana-nāma' (Mañjuśrī achievement/practice method) directly matches the content focus of T21n1218 'Mañjuśrī practice' (4907 chars, appropriately-sized sādhana). Both are sādhana texts with dhāraṇī sections and hand gesture instructions. Sanskrit titles align semantically.
+  - Sanskrit: Ārya-mañjuśrīsādhana-nāma
+- **T21n1322** (新集浴像儀軌) <-> CBETA #2651 (沐浴儀軌)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Both texts address bathing/ablution (沐浴/Snānavidhi) rituals in tantric context (怛特羅部, T21n1322). T21n1322 (新集浴像儀軌) describes ritual bathing practices for images, consistent with tantric purification protocols. The text length (1342 characters) is appropriate for a ritual manual. Opening (西國五印度僧眾...) indicates authentic Indian practice description. Sanskrit title 'Snānavidhi' directly matches the bathing ritual concept. Genre compatibility confirmed (Tantra section, T21 volume range).
+  - Sanskrit: Snānavidhi
+- **T21n1416** (金剛摧碎陀羅尼) <-> CBETA #2678 (金剛摧破陀羅尼釋)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics correspond well. Tibetan 金剛摧破陀羅尼釋 (Vajra Breaking Dharani Commentary) and Sanskrit Vajravidāraṇā-nāma-dhāraṇīṭīkā both describe a commentary (釋 = ṭīkā) on a Vajra-breaking dharani. While T21n1416's title (金剛摧碎陀羅尼) emphasizes 'crushing' rather than 'breaking,' the Tibetan rnam-par-ḥjoms-pa encompasses both meanings semantically. The short length (733 chars) and pure dharani text suggest this may be the root text being commented upon rather than the commentary itself, but the titles and meaning are substantially aligned.
+  - Sanskrit: Vajravidāraṇā-nāma-dhāraṇīṭīkā
+- **T19n1025** (佛頂放無垢光明入普門觀察一切如來心陀羅尼經) <-> CBETA #2688 (觀普門入光明頂髻無垢照一切如來心髓三摩耶陀羅尼釋)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Strong title correspondence: Tibetan 'Samantamukhapraveśa...Samayavilokita-dhāraṇī' directly parallels Taishō 'Budding Raśmi...Entry Contemplation of All Tathāgatas' Heart Dhāraṇī'. Both are sūtra-form texts with dhāraṇī sections. Length (5517 chars) appropriate for sūtra. Opening with 'thus have I heard' formula, proper narrative structure with bodhisattvas and devas. Sanskrit titles align semantically if not orthographically identical.
+  - Sanskrit: Samantamukhapraveśaraśmivimaloṣṇīṣa-prabhāsasarvatathāgatahṛdayasamayavilokita-nāma-dhāraṇīvṛtti
+- **T21n1360** (六門陀羅尼經) <-> CBETA #2694 (聖,六門陀羅尼釋)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Both texts concern the 'Six-Gate Dhāraṇī' (六門陀羅尼). T21n1360 is the root sūtra with 'thus have I heard' opening, containing the six doors teaching and dhāraṇī mantras. The Tibetan title indicates a commentary/vyākhyāna on this material. The tantra section classification and 341-character length are appropriate for a translated dhāraṇī sūtra. Title overlap on 六門陀羅尼 is direct.
+  - Sanskrit: Ārya-ṣaṇmukhadhāraṇīvyākhyāna
+- **T19n0930** (無量壽如來觀行供養儀軌) <-> CBETA #2700 (壽智無量儀軌)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics align: both refer to an Amitāyus ritual (壽智無量儀軌 vs 無量壽如來觀行供養儀軌). Sanskrit Aparimitāyurjñānavidhi matches the concept. Taishō T19n0930 is a tantra/ritual text (opens with ritual context, not 如是我聞), consistent with 怛特羅部 classification. Length and content match an elaborate ritual manual.
+  - Sanskrit: Aparimitāyurjñānavidhi-nāma
+- **T20n1053** (聖觀自在菩薩功德讚) <-> CBETA #2731 (聖觀自在讚)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Title alignment: '聖觀自在讚' (Saint Avalokiteśvara Praise) matches 'Āryāvalokiteśvarastotra'. T20n1053 is titled '聖觀自在菩薩功德讚' (Saint Avalokiteśvara Bodhisattva Virtue Praise), semantically parallel. Opening shows verse-based praise format without 如是我聞, consistent with stotra genre. Length (1288 chars) appropriate for a praise text. Sanskrit titles align.
+  - Sanskrit: Āryāvalokiteśvarastotra
+- **T20n1053** (聖觀自在菩薩功德讚) <-> CBETA #2738 (聖觀自在讚)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Title alignment: '聖觀自在讚' (Saint Avalokiteśvara Praise) matches 'Āryāvalokiteśvarastotra'. T20n1053 is titled '聖觀自在菩薩功德讚', clearly parallel in meaning. Opening presents verse-based praise material without sutra narrative formula. Length (1288 chars) consistent with devotional praise text. Sanskrit titles match; tantra section classification appropriate for Avalokiteśvara stotra.
+  - Sanskrit: Āryāvalokiteśvarastotra
+- **T20n1053** (聖觀自在菩薩功德讚) <-> CBETA #2739 (聖觀自在讚)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Title alignment: '聖觀自在讚' matches 'Āryāvalokiteśvarastotra'. T20n1053 '聖觀自在菩薩功德讚' is semantically parallel. Verse-based praise opening without 如是我聞 confirms stotra format. Length (1288 chars) appropriate for praise composition. Sanskrit titles align; tantra section and text format all consistent with straightforward stotra translation.
+  - Sanskrit: Āryāvalokiteśvarastotra
+- **T18n0908** (金剛頂瑜伽護摩儀軌) <-> CBETA #2901 (忿怒執金剛護摩儀軌)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Strong match: Both titled 'Vajradhātu homa ritual' in Chinese/Tibetan. T18n0908 is a closely-related variant of T18n0909 (same translator, similar length and content). Wrathful aspect implied in context. Tantra classification appropriate for Vol. 18.
+- **T19n0976** (佛頂大白傘蓋陀羅尼經) <-> CBETA #3096 (聖如來頂髻所出白傘蓋陀羅尼儀軌)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Strong alignment: Tibetan catalogue entry '聖如來頂髻所出白傘蓋陀羅尼儀軌' with Sanskrit Ārya-tathāgatoṣṇīṣasitātapatrā-nāma-dhāraṇīvidhi matches Taishō '佛頂大白傘蓋陀羅尼經'. Both describe the White Parasol (Sitātapatra) dhāraṇī from the Buddha's crown (tathāgatoṣṇīṣa = Buddha crown/uṣṇīṣa). Text opens with sūtra formula but contains extensive dhāraṇī sections typical of dhāraṇī sūtras. Genre and content align.
+  - Sanskrit: Ārya-tathāgatoṣṇīṣasitātapatrā-nāma-dhāraṇīvidhi-nāma
+- **T21n1259** (摩利支天一印法) <-> CBETA #3234 (無憂愛摩利支天成就法)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Both concern Mārīcī (摩利支天) sādhana practices. Sanskrit titles are closely related (Aśokakāntā- vs. generic Mārīcī). T21n1259 is a condensed ritual manual for Mārīcī, matching the sādhana genre. The dhāraṇī sections and ritual instructions (印法) align with tantric sādhana format. The 'Aśoka' variant suggests different recensions of the same text.
+  - Sanskrit: Aśokakāntāmārīcīsādhana
+- **T21n1259** (摩利支天一印法) <-> CBETA #3535 (摩利支天成就法)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Both are tantric texts on Mārīcī. T21n1259 (摩利支天一印法) matches the Mārīcīsādhana entry well: it contains ritual instructions (印法 = mudrā practice), dhāraṇī, precise ritual formulas, and is located in Taishō vol. 21 (tantric texts). Length (262 chars) is appropriate for a condensed sādhana (略攝). Content focuses on practical ritual rather than narrative exposition.
+  - Sanskrit: Mārīcīsādhana
+- **T19n0959** (頂輪王大曼荼羅灌頂儀軌) <-> CBETA #3767 (曼荼羅儀軌)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Title alignment: Both reference Maṇḍala ritual instructions (儀軌). T19n0959 is '頂輪王大曼荼羅灌頂儀軌' (Crown Wheel King Maṇḍala Initiation Ritual), which directly matches the Maṇḍalavidhi Sanskrit title. Tantra section (怛特羅部) correct for Taishō vols 18-21. Length (1916 chars) appropriate for detailed ritual instructions. Contains detailed maṇḍala iconography and ritual procedures as expected.
+  - Sanskrit: Maṇḍalavidhi
+- **T25n1518** (佛母般若波羅蜜多圓集要義論) <-> CBETA #3804 (般若波羅多攝義燈)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: The Tibetan entry is Prajñāpāramitāpiṇḍārthapradīpa, a summary/synthesis (piṇḍ-artha) of prajñāpāramitā. T25n1518 is titled 'Buddha Mother Prajñāpāramitā Compiled Essential Meaning Treatise' (佛母般若波羅蜜多圓集要義論), which matches this genre: a compiled synthesis (圓集) of essential meanings from the 8000-verse prajñāpāramitā. The opening lacks sūtra formula and discusses the text's structure systematically. Length (1133 characters) is reasonable for a śāstra summary. Volume location (T25 = śāstra) is appropriate.
+  - Sanskrit: Prajñāpāramitāpiṇḍārthapradīpa
+- **T08n0257** (佛說聖佛母般若波羅蜜多經) <-> CBETA #3818 (聖般若波羅蜜多心（經）廣疏)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: T08n0257 is the Sacred Mother Prajñāpāramitā Sutra with Heart Sutra content (觀自在菩薩 = Avalokiteśvara dialogue). Contains prajñāpāramitā teaching and Śāriputra exchange characteristic of Heart Sutra tradition, though with dhāraṇī additions. Matches 般若部 classification.
+  - Sanskrit: Ārya-prajñāpāramitāhṛdayaṭīkā
+- **T08n0254** (般若波羅蜜多心經) <-> CBETA #3821 (聖般若波羅蜜多心（經）廣註)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: Taishō T08n0254 is the Heart Sutra proper (般若波羅蜜多心經) with opening formula 'Thus have I heard', features core Heart Sutra content (five aggregates, emptiness doctrine, dhāraṇī closure). While the Tibetan entry describes a commentary on the Heart Sutra rather than the sutra itself, this is the primary Heart Sutra text that would be the subject of such commentaries.
+  - Sanskrit: Ārya-prajñāpāramitāhṛdayaṭīka
+- **T08n0252** (普遍智藏般若波羅蜜多心經) <-> CBETA #3821 (聖般若波羅蜜多心（經）廣註)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: T08n0252 is a Heart Sutra variant (普遍智藏般若波羅蜜多心經) with proper sūtra opening formula (如是我聞). While the Chinese title differs from the catalogue entry, both refer to Heart Sutra teachings. The 648 characters is reasonable for a single Heart Sutra recension. Contains expected dhāraṇī section and standard closing formula.
+  - Sanskrit: Ārya-prajñāpāramitāhṛdayaṭīka
+- **T08n0254** (般若波羅蜜多心經) <-> CBETA #3823 (般若心（經）解說)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: T08n0254 is a Heart Sutra translation with standard sūtra format (如是我聞). Tibetan entry CBETA #3823 (般若心經解說) seeks an explanatory Heart Sutra text. T08n0254's opening shows Avalokiteśvara explaining the practice to Śāriputra, which constitutes a form of exegesis/vyākhyā through dialogue. Text length (568 chars) is appropriate for a Heart Sutra variant with some elaboration.
+  - Sanskrit: [prajñāhṛdayavyākhyā]
+- **T26n1522** (十地經論) <-> CBETA #3999 (聖十地經因緣疏)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan Ārya-daśabhūmisūtranidānabhāṣya ('commentary on the nidāna [introductory teaching] of the Ten Stages Sutra') and T26n1522 (十地經論 'Ten Stages Sutra-Treatise') both directly concern the Ten Bhūmis (十地). Sanskrit titles align in essence (daśabhūmi + sūtra = 十地經). T26n1522 is attributed to Vasubandhu and is a major śāstra-exegesis at 108,333 characters, plausibly covering extended nidāna and systematic exposition. 經論 format matches bhāṣya/upadeśa function. Genre compatibility: śāstra section and vol. 26 (śāstra range).
+  - Sanskrit: [Ārya-daśabhūmisūtranidānabhāṣya]
+- **T39n1791** (注大乘入楞伽經) <-> CBETA #4019 (聖入楞伽大乘經註如來心莊嚴)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Both texts are commentaries on the Laṅkāvatāra-sūtra. The Tibetan entry specifies it is a vṛtti (commentary) on the Laṅkāvatārasūtra with 'Tathāgatahṛdaya' in the title. The Taishō text (T39n1791) is titled '注大乘入楞伽經' (commentary on the Laṅkāvatāra-sūtra). The opening describes it as a commentary drawing together various annotations. Genre matches (經疏部 = sūtra commentary). The Sanskrit titles are closely related though not identical—both reference Laṅkāvatāra and commentary elements.
+  - Sanskrit: Ārya-laṁkāvatāra-nāma-mahāyānasūtra-vṛttitathāgatahṛdayālaṁkāra-nāma
+- **T01n0012** (大集法門經) <-> CBETA #4363 (法門)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: Title match: Tibetan 'Chos-kyi rnam-graṅs' (Dharma arrangements) aligns with T01n0012 'Daji Famen Jing' (Great Collection Dharma-gate Sūtra). Opening 'Thus have I heard' confirms sūtra genre. Length (8,581 characters) appropriate for sūtra. 'Famen' (dharma-gate) matches the semantic field of 'rnam-graṅs,' both referring to dharma categories and teachings.
+  - Sanskrit: [Dharmaparyāya]
+- **T12n0372** (佛說如幻三摩地無量印法門經) <-> CBETA #4363 (法門)
+  - Confidence: 82%
+  - Signals: chinese_title_substring
+  - Reason: Title contains 法門; T12n0372 is 佛說如幻三摩地無量印法門經. Opens with standard formula (如是我聞一時世尊在波羅奈國...). Length (8,752 chars) consistent with medium sūtra. Volume 12 falls in sūtra range. Sanskrit title Dharmaparyāya aligns with 法門. Content matches Mahāyāna teaching style with extensive bodhisattva assembly.
+  - Sanskrit: [Dharmaparyāya]
+- **T32n1659** (發菩提心經論) <-> CBETA #4492 (發菩提心儀軌)
+  - Confidence: 82%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics compatible: Tibetan 'Bodhicittotpādavidhi' (Ritual for Generating Bodhicitta) vs T32n1659 'Treatise on Generating Bodhicitta Heart' (發菩提心). Sanskrit titles closely related (both focus on bodhicitta generation). Genre compatible (both śāstra, T32 = 32 volume matches expected range for 阿底沙小部集). Opening emphasizes bodhicitta practice in context of Mahāyāna aspiration and ethical discipline. Length 12,283 characters reasonable for Vasubandhu commentary on bodhicitta. Author attribution (天親菩薩造) consistent with Vasubandhu as known bodhicitta text author.
+  - Sanskrit: Bodhicittotpādavidhi
+- **T21n1397** (智炬陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 81%
+  - Signals: chinese_title_substring
+  - Reason: Title 智炬陀羅尼經 directly includes 陀羅尼. Opens with standard sūtra formula (如是我聞) in elaborate Buddhist assembly context. Contains explicit dhāraṇī mantras and ritual instructions. Length (909 chars) consistent with medium-length dhāraṇī sutra. T21 volume appropriate. Closing follows convention (歡喜奉行). All elements align with catalogue entry expectations for dhāraṇī texts.
+- **T20n1173** (金剛頂經曼殊室利菩薩五字心陀羅尼品) <-> CBETA #865 (陀羅尼)
+  - Confidence: 81%
+  - Signals: chinese_title_substring
+  - Reason: T20n1173 '金剛頂經曼殊室利菩薩五字心陀羅尼品' (Diamond Peak Sutra Manjuśrī Bodhisattva Five-Character Heart Dhāraṇī Chapter) is a dhāraṇī text. Matches generic Tibetan '陀羅尼' entry. Vol. 20 appropriate for sūtra-tantric materials. Opens with Vajrasattva assembly and transitions to Manjuśrī's dhāraṇī teaching. Length (3810 CJK chars) and tantric frame fit expectations.
+- **T20n1036** (千轉大明陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 81%
+  - Signals: chinese_title_substring
+  - Reason: Title T20n1036 '千轉大明陀羅尼經' contains 陀羅尼. Standard sūtra opening with Indra presenting the dhāraṇī. Content focused on single powerful dhāraṇī with protective and beneficial properties. Length (1163 chars) fitting for single-dhāraṇī sūtra. Taishō vol. 20 correct for dhāraṇī texts.
+- **T21n1372** (增慧陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 81%
+  - Signals: chinese_title_substring
+  - Reason: Title '增慧陀羅尼經' (Wisdom-Increasing Dhāraṇī Sūtra) is clearly a dhāraṇī sūtra. Opening with 'thus have I heard' (如是我聞) confirms sūtra format. Shorter length (277 characters) is plausible for a focused single-dharaṇī text. Closing with standard rejoicing formula. T21n1372 is appropriate volume for dhāraṇī sūtras.
+- **T20n1096** (不空羂索陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 81%
+  - Signals: chinese_title_substring
+  - Reason: T20n1096 (Noose Dhāraṇī Sutra) is explicitly a major dhāraṇī text taught by Avalokiteśvara. Contains elaborate philosophical framing and extensive ritual mantras. Length (15398 chars) substantial for major dhāraṇī sutra. Proper colophon closing. Clear membership in dhāraṇī textual tradition matching generic catalogue entry.
+- **T21n1264a** (觀自在菩薩化身蘘麌哩曳童女銷伏毒害陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 81%
+  - Signals: chinese_title_substring
+  - Reason: T21n1264a (觀自在菩薩化身蘘麌哩曳童女銷伏毒害陀羅尼經) is a Avalokiteśvara-related dhāraṇī text. Opens with standard sūtra formula (如是我聞), features a dhāraṇī for subduing poison, with explicit mantra text in opening and closing. Length (640 chars) is reasonable for a focused dhāraṇī sūtra. Good match with catalogue entry.
+- **T21n1411** (佛說蓮華眼陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 81%
+  - Signals: chinese_title_substring
+  - Reason: T21n1411 is a dhāraṇī scripture, though brief (276 chars). Title contains 陀羅尼經. Opening is entirely mantra content (proper for compact dhāraṇī texts). Closing describes benefits of practice and provides proper ending formula. Despite brevity, all markers confirm dhāraṇī scripture classification.
+- **T32n1685** (佛說八大靈塔名號經) <-> CBETA #1134 (八大聖地制多讚)
+  - Confidence: 81%
+  - Signals: sanskrit_fuzzy
+  - Reason: T32n1685 (佛說八大靈塔名號經) names and describes the eight great stupas (caityas) associated with Buddha's life, which corresponds directly to Aṣṭamahāsthānacaitystotra. High Sanskrit title match (0.962), same subject matter, genre compatible (禮讚部 texts include stotra-style enumerations). The sūtra format is typical for this type of praise text.
+  - Sanskrit: Aṣṭamahāsthānacaitystotra
+- **T21n1342** (佛說無崖際總持法門經) <-> CBETA #4363 (法門)
+  - Confidence: 81%
+  - Signals: chinese_title_substring
+  - Reason: Title contains 法門; T21n1342 is 佛說無崖際總持法門經. Opens with sūtra formula (如是我聞一時佛在舍衛國...). Length (6,806 chars) appropriate for medium sūtra. However, T21 is typically tantra/esoteric range, which creates slight genre mismatch with 雜部 classification. Text emphasizes 總持 (dhāraṇī) and demonstrates Mahāyāna structure. Closing names the text explicitly.
+  - Sanskrit: [Dharmaparyāya]
+- **T17n0818** (大莊嚴法門經) <-> CBETA #4363 (法門)
+  - Confidence: 81%
+  - Signals: chinese_title_substring
+  - Reason: Title contains 法門; T17n0818 is 大莊嚴法門經. Opens with sūtra formula (如是我聞一時佛在王舍城...). Length (11,570 chars) appropriate for medium-length sūtra. Volume 17 consistent with miscellaneous sūtras. Sanskrit Dharmaparyāya aligns with 法門. Text explicitly identifies itself: '此經名大莊嚴法門' at closing. Narrative structure with dharma teaching matches miscellaneous sūtra pattern.
+  - Sanskrit: [Dharmaparyāya]
+- **T15n0585** (持心梵天所問經) <-> CBETA #158 (聖梵天所問大乘經)
+  - Confidence: 80%
+  - Signals: chinese_title_overlap
+  - Reason: Title alignment: 聖梵天所問大乘經 vs 持心梵天所問經. Both explicitly feature 梵天 (Brahma) as questioner. Tibetan Sanskrit brahmaparipṛcchā directly matches '梵天所問' (Brahma's Question). T15n0585 is very substantial (41,907 chars), matching canonical status. Opening 聞如是 follows proper sūtra format. Title variance (持心 = 'Heart-Holding') is likely translator's elaboration. Strong match.
+  - Sanskrit: Ārya-brahmaparipṛcchā-nāma-mahāyānasūtra
+- **T19n1008** (菩提場莊嚴陀羅尼經) <-> CBETA #509 (菩提心莊嚴十萬陀羅尼)
+  - Confidence: 80%
+  - Signals: chinese_title_overlap
+  - Reason: Strong semantic correspondence: Tibetan '菩提心莊嚴十萬陀羅尼' aligns with T19n1008 '菩提場莊嚴陀羅尼經' (Bodhi Site Adornment dhāraṇī). Both emphasize 'adornment' (莊嚴) and dhāraṇī. Text length (9259 chars) consistent with extensive dhāraṇī collection. Standard sūtra opening (如是我聞) and tantric assembly (金剛手) appropriate. Sanskrit alignment (Bodhigarbhālaṁkāra ≈ Bodhimaṇḍa/Bodhi-place adornment) is reasonably close despite variant translations.
+  - Sanskrit: Bodhigarbhālaṁkāralakṣa-dhāraṇi
+- **T20n1185B** (文殊師利寶藏陀羅尼經) <-> CBETA #545 (聖文殊師利直說陀羅尼)
+  - Confidence: 80%
+  - Signals: chinese_title_overlap
+  - Reason: Good semantic correspondence: Ārya-mañjuśrīsvākhyāta-dhāraṇī (文殊師利直說陀羅尼) vs 文殊師利寶藏陀羅尼. Both are Mañjuśrī dhāraṇī texts. 'Svākhyāta' (directly spoken/自說) relates to the text where Mañjuśrī enters samādhi and proclaims dhāraṇī. Section classification matches (十萬怛特羅部). Text contains extensive dhāraṇī content and proper tantra structure.
+  - Sanskrit: Ārya-mañjuśrīsvākhyāta-nāma-dhāraṇī
+- **T20n1197** (佛說文殊師利一百八名梵讚) <-> CBETA #548 (聖文殊師利名號)
+  - Confidence: 80%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics clearly align: Tibetan 'mtshan' (names) = Chinese 名梵讚 (name-verses). Both describe Mañjuśrī names/praises. T20n1197 opening shows 'one hundred eight names' compilation format consistent with Tibetan entry genre (十萬怛特羅部 = tantra section). Length (943 chars) appropriate for name list with verses. Both texts focus on enumeration of Mañjuśrī epithets/names with praise verses.
+- **T19n0967** (佛頂尊勝陀羅尼經) <-> CBETA #568 (聖有勝陀羅尼)
+  - Confidence: 80%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan Ārya-jayavatī-nāma-dhāraṇī matches T19n0967 '佛頂尊勝陀羅尼經' (Buddha-crown supremely victorious dhāraṇī). 尊勝 = victorious/dignified, close semantic match to jayavatī. Both are dhāraṇī texts with similar content focus. The preface (sequence) is characteristic of prestigious Tang translations. Length (4781 chars) fits the genre. Tantric classification matches.
+  - Sanskrit: Ārya-jayavatī-nāma-dhāraṇī
+- **T21n1400** (佛說消除一切災障寶髻陀羅尼經) <-> CBETA #630 (聖一切障害消除陀羅尼真言)
+  - Confidence: 80%
+  - Signals: chinese_title_overlap
+  - Reason: Sanskrit titles closely related: 'Sarvāntarāyikasaṁgrāsa' (一切障害消除 = eliminating all obstacles) matches T1400's 消除一切災障 (eliminating all disaster-obstacles). Both concern removing obstacles/barriers. Similar length (1198 chars), proper dhāraṇī structure with standard opening, and matching genre (十萬怛特羅部 = tantra section).
+  - Sanskrit: Ārya-sarvāntarāyikasaṁgrāsa-dharaṇī-mantra
+- **T20n1048** (佛說大護明大陀羅尼經) <-> CBETA #790 (己身守護陀羅尼)
+  - Confidence: 80%
+  - Signals: chinese_title_overlap
+  - Reason: Title alignment: Tibetan '己身守護陀羅尼' (Self-Protection Dhāraṇī) and Chinese T20n1048 '佛說大護明大陀羅尼經' (Great Protective/Radiant Dhāraṇī) both emphasize protection/guardianship (守護/護). Opening format '爾時' and dhāraṇī content consistent. Length (2229 chars) reasonable for protection dhāraṇī. Volume range T20 appropriate for tantra. Semantic alignment on protection theme strong.
+- **T21n1228** (穢跡金剛說神通大滿陀羅尼法術靈要門) <-> CBETA #865 (陀羅尼)
+  - Confidence: 80%
+  - Signals: chinese_title_substring
+  - Reason: Title 穢跡金剛說神通大滿陀羅尼法術靈要門 includes explicit 陀羅尼. Opens with sūtra formula (如是我聞) in elaborate assembly context. Contains extensive dhāraṇī mantras and ritual applications. Length (1499 chars) consistent with detailed ritual-instruction text. T21 volume appropriate for tantric dhāraṇī material. Tang translator (阿質達霰) matches historical period. Content focuses on supernatural applications typical of dhāraṇī compilations.
+- **T19n0947** (大佛頂如來放光悉怛多般怛羅大神力都攝一切呪王陀羅尼經大威德最勝金輪三昧呪品) <-> CBETA #865 (陀羅尼)
+  - Confidence: 80%
+  - Signals: chinese_title_substring
+  - Reason: T19n0947 is a complex dhāraṇī scripture with multiple spell sections ('大佛頂如來放光悉怛多般怛羅大神力都攝一切呪王陀羅尼經'). The Tibetan '陀羅尼' entry generically matches. Vol. 19 is appropriate for sūtra/dhāraṇī. Standard opening 'Thus have I heard' (如是我聞) and large length (10589 CJK chars) consistent with a comprehensive dhāraṇī compilation with numerous deity presentations and spell variants.
+- **T20n1137** (佛說善法方便陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 80%
+  - Signals: chinese_title_substring
+  - Reason: Direct title match: T20n1137 '善法方便陀羅尼經' contains explicit 陀羅尼. Standard sūtra opening (如是我聞), dhāraṇī content throughout, closing with standard acceptance formula. Length (2011 chars) reasonable for medium-length dhāraṇī sūtra. Taishō vol. 20 appropriate for dhāraṇī texts.
+- **T21n1408** (佛說最上意陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 80%
+  - Signals: chinese_title_substring
+  - Reason: Title T21n1408 '佛說最上意陀羅尼經' contains 陀羅尼. Standard sūtra opening (如是我聞). Narrative presentation of single powerful dhāraṇī with protective and auspicious benefits. Length (2178 chars) reasonable for medium sūtra. Taishō vol. 21 appropriate for dhāraṇī texts. All structural elements align.
+- **T19n0967** (佛頂尊勝陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 80%
+  - Signals: chinese_title_substring
+  - Reason: Title 佛頂尊勝陀羅尼經 is a well-known dhāraṇī sūtra (佛頂 = Buddha-crown, 尊勝 = supremely victorious). Opening includes imperial preface followed by (御製序) but core text has standard sūtra structure. Length (4781 chars) is substantial for a dhāraṇī scripture. Closing shows extensive mantra with typical Sanskrit transliteration. Content emphasizes karmic purification through mantra practice, consistent with dhāraṇī genre. Clear match to catalogue scope.
+- **T21n1343** (尊勝菩薩所問一切諸法入無量門陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 80%
+  - Signals: chinese_title_substring
+  - Reason: T21n1343 (Zun Sheng Bodhisattva Asking Dhāraṇī Sutra) contains dhāraṇī sections with standard opening (如是我聞). Text explicitly asks about dhāraṇī dharma gates. Length (8468 chars) and content align with dharma dhāraṇī sutras. Falls within Taishō 21 (late sutras/dhāraṇī zone). Good match to generic dhāraṇī catalogue entry.
+- **T21n1401** (佛說大金剛香陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 80%
+  - Signals: chinese_title_substring
+  - Reason: T21n1401 (佛說大金剛香陀羅尼經) is explicitly a dhāraṇī text focused on a powerful mantra for subduing celestial deities. The opening explains the mantra's efficacy, followed by extensive Sanskrit mantra. Length (1137 chars) and content match the dhāraṇī genre. Consistent with catalogue header despite tantra-adjacent volume assignment.
+- **T19n0994** (仁王護國般若波羅蜜多經陀羅尼念誦儀軌) <-> CBETA #865 (陀羅尼)
+  - Confidence: 80%
+  - Signals: chinese_title_substring
+  - Reason: T19n0994 is a ritual manual (儀軌) specifically for dhāraṇī recitation derived from Prajñāpāramitā context. Contains dhāraṇī sections. Though opening is a translated colophon rather than standard formula, the text is a canonical ritual work for dhāraṇī practice. Volume T19 appropriate.
+- **T21n1381** (佛說大吉祥陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 80%
+  - Signals: chinese_title_substring
+  - Reason: T21n1381 (佛說大吉祥陀羅尼經) is a brief dhāraṇī sūtra in Taishō vol. 21. Title contains 陀羅尼經. Tibetan catalogue entry '陀羅尼' in 陀羅尼集 matches. Opening '如是我聞' confirms sūtra format. Length (374 chars) is quite short but plausible for a focused dhāraṇī scripture. Closing shows mantra recitation. Clear genre alignment, though exceptionally brief.
+- **T19n0977** (佛說大白傘蓋總持陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 80%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan entry '陀羅尼' matches T19n0977 '佛說大白傘蓋總持陀羅尼經'. Section 'dhāraṇī collection' fits. Volume 19 appropriate. Text explicitly focuses on dhāraṇī practice (mantra, visualization, protection). Opening shows tantric visualization practice (White Umbrella Buddha Mother). Length is substantial (4325 chars), consistent with an elaborate dhāraṇī ritual manual. Closing shows protective prayers.
+- **T21n1376** (佛說聖莊嚴陀羅尼經) <-> CBETA #920 (菩提心莊嚴十萬陀羅尼)
+  - Confidence: 80%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan '菩提心莊嚴十萬陀羅尼' (Bodhicitta/Bodhigarbha Adornment Hundred-Thousand dhāraṇī) with Sanskrit Bodhigarbhālaṁkāralakṣa-dhāraṇī. T21n1376 titled '佛說聖莊嚴陀羅尼經' contains core terms '莊嚴' (adornment) and '陀羅尼' (dhāraṇī). Opening with standard sūtra format (如是我聞). Length (3,363 chars) reasonable for sūtra with narrative + mantra. Minor: Tibetan specifies '菩提心' (bodhicitta) and '十萬' (hundred thousand) not explicit in T21n1376 title, but these are likely understood in transmission.
+  - Sanskrit: Bodhigarbhālaṁkāralakṣa-dhāraṇī
+- **T21n1233** (佛說無能勝大明王陀羅尼經) <-> CBETA #954 (聖金剛無能勝火迷闇陀羅尼)
+  - Confidence: 80%
+  - Signals: chinese_title_overlap
+  - Reason: Same Tibetan entry as Pair 5, matched with T21n1233 '佛說無能勝大明王陀羅尼經' (Buddha Speaks Invincible Great Vidyā King Dhāraṇī Sūtra). Very similar title to T21n1234, both emphasizing '無能勝' (invincible = vajrājita). Likely parallel translations of the same Sanskrit source, though this version is slightly shorter (2,166 chars). Both Pairs 5 and 6 could be valid matches.
+  - Sanskrit: Ārya-vajrājitānalapramohanī-nāma-dhāraṇī
+- **T21n1323** (除一切疾病陀羅尼經) <-> CBETA #1057 (啖病除滅陀羅尼)
+  - Confidence: 80%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan 'Bad-kan-gyi nad sel-baḥi gzuṅs' (phlegm/kapha disease eliminating dhāraṇī) corresponds with T21n1323 '除一切疾病陀羅尼經' (Eliminating all diseases). Same text as Pair 2. Tibetan specifies phlegm disease, Chinese text generalizes to all diseases but treats the same underlying disease-curing dhāraṇī. Opening 'thus have I heard' and format consistent.
+- **T18n0909** (金剛頂瑜伽護摩儀軌) <-> CBETA #1223 (護摩儀軌)
+  - Confidence: 80%
+  - Signals: chinese_title_substring
+  - Reason: Strong content and genre match: Both are homa rituals (護摩儀軌/Homavidhi) in tantric section (怛特羅部). Title overlap on 'homa ritual' (護摩儀軌). Both contain dhāraṇī sections and ritual instructions. The Vajradhātu Yoga framework in Chinese title is consistent with tantric homa practice. Length (3852 chars) appropriate for detailed ritual manual.
+  - Sanskrit: Homavidhi
+- **T18n0909** (金剛頂瑜伽護摩儀軌) <-> CBETA #1255 (護摩儀軌)
+  - Confidence: 80%
+  - Signals: chinese_title_substring
+  - Reason: Genre and content match: Both are homa ritual texts (護摩儀軌/Homavidhi) in tantric section (怛特羅部). Title overlap on 'homa ritual'. T18n0909 'Vajradhātu Yoga Homa Ritual' covers the full spectrum of homa practice with detailed instructions. Length (3852 chars) appropriate for ritual manual. Openingexplicitly teaches homa methods, types, and applications consistent with Homavidhi.
+  - Sanskrit: Homavidhi
+- **T18n0909** (金剛頂瑜伽護摩儀軌) <-> CBETA #1502 (護摩)
+  - Confidence: 80%
+  - Signals: chinese_title_substring
+  - Reason: Title overlap: Tibetan 'Sbyin-sreg' (homa/fire offering) matches Chinese T18n0909 '金剛頂瑜伽護摩儀軌' (Vajra Peak yoga fire offering ritual). Both address homa/护摩 (fire sacrifice). Generic tantric section classification is consistent. Length (3852 characters) appropriate for detailed homa ritual procedures. Opening discusses homa types and accomplishments. Pre-filter signal (substring match) is appropriate—the Chinese title is more specific variant of the generic 'homa' category.
+- **T20n1067** (攝無礙大悲心大陀羅尼經計一法中出無量義南方滿願補陀落海會五部諸尊等弘誓力方位及威儀形色執持三摩耶幖幟曼荼羅儀軌) <-> CBETA #1882 (曼荼羅儀軌)
+  - Confidence: 80%
+  - Signals: chinese_title_substring
+  - Reason: The Taishō text (T20n1067) title contains 'maṇḍala ritual' (曼荼羅儀軌) as its core component and explicitly discusses Taishō transmission (by Bukong). While the full title is longer and emphasizes the Avalokiteśvara/Guanyin aspect, the text's content on maṇḍala arrangement, deity configuration, and ritual procedures aligns with Maṇḍalavidhi. The opening discusses arrangement of deities and the text covers maṇḍala construction systematically.
+  - Sanskrit: Maṇḍalavidhi
+- **T20n1169** (佛說持明藏瑜伽大教尊那菩薩大明成就儀軌經) <-> CBETA #1979 (成就儀軌)
+  - Confidence: 80%
+  - Signals: chinese_title_substring
+  - Reason: T20n1169 '佛說持明藏瑜伽大教尊那菩薩大明成就儀軌經' contains 成就儀軌 terminology. This is a comprehensive ritual text for accomplishment (成就法) of a specific deity (尊那菩薩). Extensive length (16077 chars) is appropriate for a major sādhana with multiple practice sections. Taishō vol. 20 is within tantra range.
+- **T19n0959** (頂輪王大曼荼羅灌頂儀軌) <-> CBETA #1983 (曼荼羅儀軌)
+  - Confidence: 80%
+  - Signals: chinese_title_overlap
+  - Reason: The Tibetan entry 曼荼羅儀軌 (Maṇḍalavidhi / Dkyil-ḥkhor-gyi cho-ga) directly matches T19n0959 titled 頂輪王大曼荼羅灌頂儀軌. Both concern maṇḍala rituals and initiation procedures. Volume 19 is appropriate for tantric texts (怛特羅部). The opening describes maṇḍala construction with specific details about cosmic representation. Length (1916 characters) is reasonable for a focused maṇḍala instruction. Genre and content alignment is strong.
+  - Sanskrit: Maṇḍalavidhi
+- **T18n0909** (金剛頂瑜伽護摩儀軌) <-> CBETA #2119 (護摩儀軌)
+  - Confidence: 80%
+  - Signals: chinese_title_substring
+  - Reason: Both concern homa (護摩/sbyin-sreg) ritual based on Vajradhātu system. T18n0909 is 'Vajradhātu Yoga Homa Ritual'—directly matches genre and content. Sanskrit 'homa-vidhi' would correspond to 護摩儀軌. Length (3852 chars) appropriate for medium homa manual. Opens with systematic exposition of homa types, consistent with ritual manual structure.
+- **T18n0908** (金剛頂瑜伽護摩儀軌) <-> CBETA #2603 (護摩儀軌略)
+  - Confidence: 80%
+  - Signals: chinese_title_overlap
+  - Reason: Strong Sanskrit and content alignment: Tibetan 'Homavidhipiṇḍita' matches T0908 '金剛頂瑜伽護摩儀軌' (Vajraśekhara Yoga Homa Ritual). Both texts present abbreviated homa ritual instruction in tantric context (T18 range). Openings are nearly identical (beginning '我今說護摩...'), confirming parallel translation of same Indic source. Minor character variations expected in parallel translations.
+  - Sanskrit: Homavidhipiṇḍita
+- **T18n0912** (建立曼荼羅護摩儀軌) <-> CBETA #2659 (護摩儀軌)
+  - Confidence: 80%
+  - Signals: chinese_title_substring
+  - Reason: T18n0912 (建立曼荼羅護摩儀軌) addresses homa (護摩) ritual practice within maṇḍala establishment, core tantric methodology. The text details six-day maṇḍala construction and homa procedures, directly aligned with Homavidhi traditions. Length (4754 characters) suits detailed ritual instructions. Opening describes methodical homa preparation steps, consistent with tantric ritual protocols. Sanskrit 'Homavidhi' matches the practice described. The maṇḍala + homa combination is standard in Tantric Buddhism.
+  - Sanskrit: Homavidhi
+- **T19n0982** (佛母大孔雀明王經) <-> CBETA #2691 (明呪王大孔雀經十萬註)
+  - Confidence: 80%
+  - Signals: chinese_title_overlap
+  - Reason: Strong match: T19n0982 (20597 chars) is 'Bhagavati Mahā-mayūrī-vidyārājñī' by Amoghavajra. Title directly parallels '明呪王大孔雀經' (Peacock Wisdom-King Dhāraṇī Sūtra). Length and structure consistent with major sūtra commentary base text. Extensive dhāraṇī sections and protective deities listed. This is a major version of the Mayūrī-vidyārājñī text that could serve as basis for commentarial study.
+  - Sanskrit: Mahāmayūrīvidyārājñīsūtraśatasahasraṭīkā-nāma
+- **T20n1195** (大聖文殊師利菩薩讚佛法身禮) <-> CBETA #2707 (聖,文殊師利讚)
+  - Confidence: 80%
+  - Signals: chinese_title_overlap
+  - Reason: Title and content alignment: both refer to praises/hymns of Mañjuśrī (文殊師利讚). Sanskrit Ārya-mañjusrīstotra directly matches. Taishō T20n1195 is titled 大聖文殊師利菩薩讚佛法身禮 (praise/hymn format), consistent with stotra. Length (1202 chars) appropriate for extended praise text.
+  - Sanskrit: Ārya-mañjusrīstotra
+- **T21n1322** (新集浴像儀軌) <-> CBETA #2774 (影像儀軌)
+  - Confidence: 80%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan '影像儀軌' (image ritual) matches Chinese '新集浴像儀軌' (newly compiled image-bathing ritual). Both concern ritual procedures for venerating/bathing Buddhist statues. Sanskrit sku-gzugs = 'body-form/image'. The Chinese text opening explicitly discusses bathing practices for various image materials (gold, silver, copper, etc.). Genre appropriate (T21 = tantra/rituals). Length (1342 chars) suitable for ritual manual.
+- **T18n0912** (建立曼荼羅護摩儀軌) <-> CBETA #2844 (護摩儀軌)
+  - Confidence: 80%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan '護摩儀軌' (fire-offering ritual) matches Chinese '建立曼荼羅護摩儀軌' (mandala establishment and fire-offering ritual). Both concern homa procedures. The Chinese title explicitly combines mandala and homa (護摩). Opening describes establishing mandala and subsequent homa practices over multiple days. Length (4754 chars) consistent with detailed ritual manual. Genre matches (tantra). This is the more comprehensive version of homa ritual.
+- **T18n0909** (金剛頂瑜伽護摩儀軌) <-> CBETA #2901 (忿怒執金剛護摩儀軌)
+  - Confidence: 80%
+  - Signals: chinese_title_overlap
+  - Reason: Both concern vajra/wrathful deity homa rituals. Tibetan 'Khro-bo rdo-rje ḥdsin-paḥi sbyin-sreg-gi cho-ga' = 'wrathful vajra-holder homa ritual' aligns with Chinese 金剛頂瑜伽護摩儀軌 (Vajraśekhara yoga homa ritual). The text explicitly discusses '護摩' (homa) procedures with five types mentioned. Section 怛特羅部 appropriate. Opening describes homa methods. Some title difference but content matches the ritual focus.
+- **T21n1286** (堅牢地天儀軌) <-> CBETA #3307 (堅輪儀軌)
+  - Confidence: 80%
+  - Signals: chinese_title_overlap
+  - Reason: Title alignment: 堅輪儀軌 (Sthiracakra vidhi) and T21n1286 堅牢地天儀軌 both concern Sthiracakra/Firm Wheel ritual. The opening (爾時堅牢地天) confirms deity-focused ritual content. Translator attribution (善無畏 Śubhakarasiṁha) is historically appropriate for Tang-era tantric translations. Ritual instructions match vidhi genre. Length (955 chars) appropriate for focused ritual manual.
+  - Sanskrit: Sthiracakrabhāvanā
+- **T21n1259** (摩利支天一印法) <-> CBETA #3536 (摩利支天成就法略攝)
+  - Confidence: 80%
+  - Signals: chinese_title_overlap
+  - Reason: Sanskrit title match: Saṁkṣiptamārīcīsādhana corresponds to 摩利支天一印法 (condensed, one-mudrā form). T21n1259 is a brief, practical tantric text (262 chars) focusing on essential ritual practices. The term 略攝 (condensed) aligns with saṁkṣipta, and 一印法 matches the single-mudrā focus of a condensed sādhana.
+  - Sanskrit: Saṁkṣiptamārīcīsādhana
+- **T19n0959** (頂輪王大曼荼羅灌頂儀軌) <-> CBETA #3761 (曼荼羅作法儀軌)
+  - Confidence: 80%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan Maṇḍalakriyāvidhi (maṇḍala construction ritual) matches T19n0959 which emphasizes maṇḍala creation/establishment (建立 = construction) and procedures. Sanskrit title variant 'kriyāvidhi' (action/construction ritual) aligns with T19n0959 focus on detailed construction. Genre matches. Same text appears to match both Pairs 5 and 9.
+  - Sanskrit: Maṇḍalakriyāvidhi
+- **T18n0912** (建立曼荼羅護摩儀軌) <-> CBETA #3767 (曼荼羅儀軌)
+  - Confidence: 80%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics match: T18n0912 '建立曼荼羅護摩儀軌' (Establishment of Maṇḍala Homa Ritual) is a specific variant of Maṇḍalavidhi. Section (怛特羅部) correct for tantra. Length (4754 chars) appropriate for detailed ritual instructions. Contains precise ritual procedures, maṇḍala setup, mantra recitations, and initiation rites typical of Maṇḍalavidhi texts. Opening format matches tantric instructional text.
+  - Sanskrit: Maṇḍalavidhi
+- **T31n1605** (大乘阿毘達磨集論) <-> CBETA #4053 (阿毗達磨集疏)
+  - Confidence: 80%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan entry '阿毗達磨集疏' with Sanskrit Abhidharmasamuccayabhaṣya matches T31n1605 '大乘阿毘達磨集論'. The Taishō title corresponds to the Sanskrit title (Abhidharmasamuccaya = 阿毘達磨集論). Both are part of 唯識部 (Yogācāra section). Genre compatible (vols 25-32 = śāstra). Length (42,000 characters) is reasonable. This is the root text of Asaṅga's Abhidharmasamuccaya.
+  - Sanskrit: Abhidharmasamuccayabhaṣya
+- **T03n0160** (菩薩本生鬘論) <-> CBETA #4157 (菩薩本生法犍稚)
+  - Confidence: 80%
+  - Signals: chinese_title_overlap
+  - Reason: Both describe Bodhisattva Jātaka narratives: Tibetan 'Bodhisattvajātakadharmagaṇḍī' and Taishō '菩薩本生鬘論' (Bodhisattva Birth Stories Garland Commentary). While the Tibetan uses 'gaṇḍī' and the Taishō uses 'mālā/garland', these are Near-synonymous terms for verse/narrative collections. The opening verse style matches Bodhisattva narrative tradition, and both texts are lengthy (75656 chars supports a major collection). The titles align semantically.
+  - Sanskrit: Bodhisattvajātakadharmagaṇḍī
+- **T01n0097** (廣義法門經) <-> CBETA #4363 (法門)
+  - Confidence: 80%
+  - Signals: chinese_title_substring
+  - Reason: Title match: Tibetan 'Chos-kyi rnam-graṅs' (Dharma arrangements) aligns with T01n0097 'Guangyi Famen Jing' (Expansive Dharma-gate Sūtra). Opening 'Thus have I heard' confirms sūtra genre. Length (3,923 characters) appropriate for shorter sūtra. 'Famen' (dharma-gate) matches 'rnam-graṅs' semantic field, both referring to dharma categories/arrangements.
+  - Sanskrit: [Dharmaparyāya]
+- **T16n0717** (分別緣起初勝法門經) <-> CBETA #4363 (法門)
+  - Confidence: 80%
+  - Signals: chinese_title_substring
+  - Reason: Title contains 法門; T16n0717 is 分別緣起初勝法門經. Opens with proper formula (如是我聞一時薄伽梵在室羅筏...). Length (9,062 chars) reasonable for philosophical sūtra on dependent origination. Volume 16 in sūtra range. Sanskrit Dharmaparyāya matches 法門. Content focuses on dharma teaching about causality, matching genre expectations.
+  - Sanskrit: [Dharmaparyāya]
+- **T20n1145** (虛空藏菩薩能滿諸願最勝心陀羅尼求聞持法) <-> CBETA #865 (陀羅尼)
+  - Confidence: 79%
+  - Signals: chinese_title_substring
+  - Reason: Title contains 陀羅尼 with specialized function (虛空藏菩薩能滿諸願最勝心陀羅尼). Opens without traditional 如是我聞 but with tantric formula (薄伽梵入諸波羅蜜), typical of advanced dhāraṇī texts derived from tantra. Length (1751 chars) is substantial, consistent with detailed ritual instruction. T20 volume appropriate for dhāraṇī. Contains explicit mantras and ritual procedures. Matches the catalogue expectation for specialized dhāraṇī practice texts.
+- **T19n0933** (九品往生阿彌陀三摩地集陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 79%
+  - Signals: chinese_title_substring
+  - Reason: T19n0933 '九品往生阿彌陀三摩地集陀羅尼經' (Nine Grades of Rebirth Amitābha Samādhi Collection Dhāraṇī Sutra) combines Amitābha Pure Land aspirations with dhāraṇī practice. Matches generic Tibetan '陀羅尼' entry. Vol. 19 appropriate for sūtra/dhāraṇī texts. Opens with Vairocana assembly (non-standard but acceptable). Length (805 CJK chars) is brief, consistent with a concentrated dhāraṇī-focused sutra. Post-colophon notes indicate textual transmission concerns but core content matches.
+- **T21n1333** (虛空藏菩薩問七佛陀羅尼呪經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 79%
+  - Signals: chinese_title_substring
+  - Reason: Title T21n1333 '虛空藏菩薩問七佛陀羅尼呪經' contains 陀羅尼. Standard sūtra opening (如是我聞). Dialogue-based presentation of seven buddha dhāraṇīs with medicinal and practical applications. Length (4647 chars) appropriate for multi-dhāraṇī compilation. Taishō vol. 21 within acceptable range.
+- **T21n1377** (佛說寶帶陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 79%
+  - Signals: chinese_title_substring
+  - Reason: Title T21n1377 '佛說寶帶陀羅尼經' contains 陀羅尼. Standard sūtra opening (如是我聞) with narrative frame (Rāhula threatened). Buddha presents protective dhāraṇī with benefits. Length (2985 chars) appropriate for medium sūtra with narrative and teaching sections. Taishō vol. 21 appropriate for dhāraṇī texts.
+- **T21n1367** (佛說大普賢陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 79%
+  - Signals: chinese_title_substring
+  - Reason: Title 佛說大普賢陀羅尼經 (Great Samantabhadra Dhāraṇī Sūtra) is a dhāraṇī text. Opening (如是我聞) follows sūtra convention. Text presents specific dhāraṇī formulas with therapeutic applications (healing, protection from supernatural beings). Length (589 chars) is appropriate for a compact focused dhāraṇī sūtra. Closing emphasizes protective powers of the dhāraṇī. Clear genre alignment with Tibetan catalogue's dhāraṇī scope.
+- **T20n1165** (聖持世陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 79%
+  - Signals: chinese_title_substring
+  - Reason: T20n1165 (Holy Dhāraṇī-Bearer Sutra) explicitly focuses on dhāraṇī teaching and practice by Dhāraṇī-Bearer Bodhisattva. Contains detailed ritual instructions for dhāraṇī practice. Length (2637 chars) appropriate. Standard closing with explicit sutra closure formula. Clear dhāraṇī sutra matching generic catalogue entry.
+- **T21n1206** (佛說俱利伽羅大龍勝外道伏陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 79%
+  - Signals: chinese_title_substring
+  - Reason: T21n1206 (佛說俱利伽羅大龍勝外道伏陀羅尼經) is explicitly a dhāraṇī text featuring the Ucchuṣma-cakra (Great Dragon subduing externalists). Opens with standard sūtra formula (如是我聞), features interaction between bodhisattvas and Buddha concerning mantra power. Length (406 chars) is reasonable. Consistent with dhāraṇī catalogue entry despite tantric associations.
+- **T20n1134A** (金剛壽命陀羅尼經法) <-> CBETA #865 (陀羅尼)
+  - Confidence: 79%
+  - Signals: chinese_title_substring
+  - Reason: T20n1134A is a dhāraṇī ritual practice text (法) with proper sūtra-like opening. Title contains 陀羅尼經法. Contains dhāraṇī sections. Describes Vairocana and mandala context typical of esoteric dhāraṇī works. Length (1805 chars) reasonable. Volume T20 appropriate for dhāraṇī materials.
+- **T17n0830** (大乘遍照光明藏無字法門經) <-> CBETA #4363 (法門)
+  - Confidence: 79%
+  - Signals: chinese_title_substring
+  - Reason: Title contains 法門; T17n0830 is 大乘遍照光明藏無字法門經. Opens with sūtra formula (如是我聞一時佛住王舍城...). Length (2,580 chars) appropriate for Mahāyāna dharma text. Volume 17 consistent with miscellaneous sūtras. Explicitly mentions '無字法門'. Sanskrit Dharmaparyāya aligns with 法門. Closure follows standard sūtra pattern.
+  - Sanskrit: [Dharmaparyāya]
+- **T05n0220** (大般若波羅蜜多經(第1卷-第200卷)) <-> CBETA #27 (聖月藏般若波羅蜜多大乘經)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: T05n0220 (大般若波羅蜜多經) is Xuanzang's translation of the Mahā-prajñāpāramitā-sūtra. While the current entry references Candragarbha-prajñāpāramitā specifically, the Tibetan section (般若部) and sūtra opening (如是我聞) are consistent with a major Prajñāpāramitā compilation. The massive length (1.5M characters) and encyclopedic scope suggest this may be a large collection where Candragarbha material appears, though the specific text title differs from the catalogue entry.
+  - Sanskrit: Ārya-candragarbha-prajñāpāramitā-mahāyānasūtra
+- **T08n0223** (摩訶般若波羅蜜經) <-> CBETA #29 (聖般若波羅蜜多金剛手大乘經)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: T08n0223 (Mahāprajñāpāramitā Sūtra) is the largest and most comprehensive prajñāpāramitā text. While title doesn't explicitly mention Vajrapāṇi, this massive compilation (285,968 chars) of prajñāpāramitā teachings could encompass the Vajrapāṇi section. Standard sūtra opening and closing. Best match among prajñāpāramitā candidates, though Vajrapāṇi emphasis unclear.
+  - Sanskrit: Ārya-prajñāpāramitā-vajrapāṇi-mahāyānasūtra
+- **T05n0220** (大般若波羅蜜多經(第1卷-第200卷)) <-> CBETA #29 (聖般若波羅蜜多金剛手大乘經)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: T05n0220 is the massive 大般若波羅蜜多經 (Great Prajñāpāramitā Sutra) translation by Xuanzang. While the Tibetan Sanskrit title 'Ārya-prajñāpāramitā-vajrapāṇi-mahāyānasūtra' is more specific (mentioning Vajrapāṇi), the Taishō text is the canonical prajñāpāramitā collection. Vajrapāṇi may appear within; length (1.5M characters) fits a major collection. Best candidate despite title specificity mismatch.
+  - Sanskrit: Ārya-prajñāpāramitā-vajrapāṇi-mahāyānasūtra
+- **T16n0659** (大乘寶雲經) <-> CBETA #124 (聖寶藏大乘經)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Title partially matches: 聖寶藏大乘經 vs 大乘寶雲經. Both emphasize treasure (寶) in Mahāyāna context. T16n0659 is 66,368 characters (substantial, matching catalog expectation). Proper Mahāyāna sūtra opening (如是我聞). Sanskrit Ārya-ratnākara could plausibly relate to 寶雲 (Precious Cloud) as alternative translation. However, '寶雲' (Cloud of Gems) differs notably from 'Treasure Treasury' semantics. Confidence moderate due to title variance.
+  - Sanskrit: Ārya-ratnākara-nāma-mahāyānasūtra
+- **T14n0478** (大乘頂王經) <-> CBETA #214 (王訓誡大乘經)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Sanskrit titles correspond closely: Rājādeśa-nāma-mahāyānasūtra (王訓誡) vs '大乘頂王經' contains 'royal' (王) element. Chinese title semantic shift from 'instruction' (訓誡) to 'crown/supreme' (頂王) is plausible variant translation. Both are Mahāyāna sūtras with proper opening/closing formulas. Length (7828 chars) reasonable for this genre.
+  - Sanskrit: Rājādeśa-nāma-mahāyānasūtra
+- **T14n0478** (大乘頂王經) <-> CBETA #215 (王訓誡大乘經)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Identical match to Pair 3 with same Taishō text (T14n0478). Sanskrit title Rājadeśa-nāma-mahāyānasūtra aligns with both Tibetan and Chinese titles despite translation variant. This appears to be a duplicate entry in the Tibetan catalogue (CBETA #215 vs #214).
+  - Sanskrit: Rājadeśa-nāma-mahāyānasūtra
+- **T15n0654** (佛說入無分別法門經) <-> CBETA #247 (聖分別法義大乘經)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics compatible: Tibetan 聖分別法義大乘經 (Dharma-artha-vibhaṅga) and T15n0654 佛說入無分別法門經 (non-discriminative dharma gate) both address non-discrimination (無分別) and dharma meaning/distinction. Sanskrit Ārya-dharmārthavibhaṅga aligns with this theme. Opening 如是我聞 and closing follow sūtra format. Length (1941 chars) reasonable. Pre-filter overlap strong.
+  - Sanskrit: Ārya-dharmārthavibhaṅga-nāma-mahāyānasūtra
+- **T21n1417** (佛說壞相金剛陀羅尼經) <-> CBETA #462 (金剛心金剛焰陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Taishō T21n1417 is titled '佛說壞相金剛陀羅尼經' and explicitly mentions '金剛心陀羅尼' (Vajra Heart dhāraṇī) in the opening. While the full Sanskrit title 'Vajrahṛdayavajrajihvānala-nāma-dhāraṇī' includes 'flame' which is not explicitly in the Chinese title, the core term 'Vajra Heart' (金剛心/Vajrahṛdaya) is present. The opening describes it as 'most excellent vajra heart dhāraṇī', matching the Tibetan entry's focus.
+  - Sanskrit: Vajrahṛdayavajrajihvānala-nāma-dhāraṇī
+- **T21n1366** (佛說祕密八名陀羅尼經) <-> CBETA #497 (聖八天女陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Both texts concern secret eight names and dhāraṇī. T21n1366 title '佛說祕密八名陀羅尼經' aligns with the eight-name structure of Ārya-aṣṭadevī-dhāraṇi. Golden Vajra-hand (金剛手) as main interlocutor matches tantric context. Opening formula (如是我聞) appropriate for sūtra. Length (600 chars) reasonable for dhāraṇī text. However, title emphasizes 'secret eight names' rather than explicitly 'eight goddesses,' creating some ambiguity.
+  - Sanskrit: Ārya-aṣṭadevī-dhāraṇi
+- **T19n0919** (諸佛心印陀羅尼經) <-> CBETA #515 (聖佛心陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: T19n0919 '諸佛心印陀羅尼經' (All Buddhas' Heart-seal Dharani Sutra) shows significant semantic overlap with the Tibetan entry's 'buddhahṛdaya' (Buddha's Heart). Opening formula '如是我聞' matches sutra conventions. The text describes a dharani named 'Buddha's heart-seal' (佛心印). Length (521 chars) is brief but appropriate for a dharani text. Sanskrit title 'buddhahṛdaya' semantically matches, though exact Sanskrit form unclear in source.
+  - Sanskrit: Ārya-buddhahṛdaya-nāma-dhāraṇī
+- **T19n0918** (諸佛心陀羅尼經) <-> CBETA #533 (聖釋迦牟尼心陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics align: both concern 'Buddha's heart dhāraṇī' (Śākyamuni specifically). T19n0918 '諸佛心陀羅尼經' (All Buddhas' heart dhāraṇī sutra) includes Śākyamuni's teaching and matches genre (tantra-format dhāraṇī sutra in vol. 19). Opening formula and dhāraṇī content are consistent. Length reasonable for dhāraṇī text.
+- **T21n1409** (佛說聖最勝陀羅尼經) <-> CBETA #568 (聖有勝陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan Ārya-jayavatī-nāma-dhāraṇī aligns with T21n1409 '佛說聖最勝陀羅尼經' (Holy supremely victorious dhāraṇī). 最勝 (supremely victorious) semantically matches jayavatī. Both are named dhāraṇī texts. Opens with proper sūtra formula (如是我聞). Contains the expected dhāraṇī structure. Length (1412 chars) and tantric classification appropriate. Song translation by Śīhù.
+  - Sanskrit: Ārya-jayavatī-nāma-dhāraṇī
+- **T21n1360** (六門陀羅尼經) <-> CBETA #579 (六波羅蜜多心陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan title 'pha-rol-tu-phyin-pa drug-gi sñiṅ-po' = six pāramitās heart/essence dhāraṇī aligns with Chinese '六門陀羅尼經'. The text opening (如是我聞formula) confirms sutra format. Closing shows standard mahāyāna conclusion. Length (341 characters) is reasonable for a dhāraṇī scripture. Content describes six-door dharaṇī practice. Minor title variation (六波羅蜜多心 vs 六門) but semantically compatible, as '門' (gate) can represent the practical application of pāramitās.
+- **T21n1323** (除一切疾病陀羅尼經) <-> CBETA #623 (聖一切病善治陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: The Tibetan entry refers to curing all diseases (nad thams-cad rab-tu shi-bar-byed-pa), and T21n1323 is '除一切疾病陀羅尼經' (Eliminating All Diseases dhāraṇī). The titles are directly equivalent. The opening explicitly states the dhāraṇī 'can eliminate all worldly diseases' (能除世間一切疾病). The content lists various illnesses (indigestion, wind imbalance, fever, hemorrhoids, cough, malaria) and their cures. Length (298 characters) is appropriate. However, confidence is moderate due to the generic nature of disease-cure dhāraṇīs in the canon.
+- **T21n1321** (佛說施餓鬼甘露味大陀羅尼經) <-> CBETA #645 (甘露生陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantic alignment: Tibetan '甘露生陀羅尼' (Amṛtabhava-nāma-dhāraṇī) corresponds to T21n1321 '佛說施餓鬼甘露味大陀羅尼經' (Offering Nectar-flavored Amṛta to Hungry Ghosts). Sanskrit Amṛtabhava matches 甘露 (nectar/amṛta). Longer length (5793 chars) fits expanded sūtra form with narrative frame. Content is thematically consistent with nectar generation and hungry ghost feeding.
+  - Sanskrit: Amṛtabhava-nāma-dhāraṇī
+- **T21n1397** (智炬陀羅尼經) <-> CBETA #718 (智慧生起陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics align reasonably: 智慧生起陀羅尼 (Prajñāvardhanī, 'Wisdom-Increase') correlates with 智炬陀羅尼 ('Wisdom-Torch Dhāraṇī'). Both concern wisdom enhancement. T1397 is a sūtra-form dhāraṇī (contains 如是我聞 opening, celestial assembly, standard narrative structure). However, no direct Sanskrit correlation is provided in T1397, creating modest uncertainty. Length (909 CJK characters) is reasonable.
+  - Sanskrit: Prajñāvardhanī-nāma-dhāraṇī
+- **T21n1397** (智炬陀羅尼經) <-> CBETA #719 (智慧生起陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: T21n1397 (智炬陀羅尼經 = 'Wisdom-torch dhāraṇī sutra') shows semantic overlap with 智慧生起 (wisdom-arising). Both concern wisdom through dhāraṇī. Contains standard sutra framing (如是我聞), multiple dhāraṇī sections, and standard closing. Length (909 chars) plausible for dhāraṇī sutra. Volume 21 is correct for tantra-dhāraṇī texts. Main uncertainty: 智炬 (torch) vs 智慧生起 (arising) are not identical, but express related concepts.
+  - Sanskrit: Prajñāvardhanī-nāma-dhāraṇī
+- **T21n1398** (佛說智光滅一切業障陀羅尼經) <-> CBETA #786 (一切罪業消滅陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Title overlap in semantic core: Tibetan '一切罪業消滅陀羅尼' (All Karma Destroyed) and Chinese T21n1398 '佛說智光滅一切業障陀羅尼經' (Wisdom Light Destroys All Karma Obstacles) both address elimination of karmic hindrances (業障/罪業). Opening '如是我聞' confirms sūtra format. Length (1202 chars) consistent with dhāraṇī text. Genre matches (tantra section, T19-21 range). Possible semantic alignment despite title variations.
+- **T21n1323** (除一切疾病陀羅尼經) <-> CBETA #801 (啖病除滅陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Strong semantic alignment. Tibetan '啖病除滅陀羅尼' (phlegm disease removal dhāraṇī) and T21n1323 '除一切疾病陀羅尼經' (all-disease removal dhāraṇī) both address disease removal, with phlegm as one specific condition within 'all diseases'. Standard dhāraṇī sūtra format with proper opening. Same translator (Amoghavajra).
+- **T19n0919** (諸佛心印陀羅尼經) <-> CBETA #855 (聖佛心髓陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: T19n0919 (諸佛心印陀羅尼經) contains 'heart' (心) terminology matching the 'heart essence' (心髓) concept. The Sanskrit title Ārya-buddhahṛdaya-nāma-dhāraṇī references 'buddhahṛdaya' (heart). While this uses 'heart-print/seal' (心印) rather than 'heart-essence' (心髓), the semantic overlap is stronger than other candidates. Standard sūtra opening (如是我聞) and closing (信受奉行) present. Length (521 characters) is plausible for a condensed dhāraṇī text.
+  - Sanskrit: Ārya-buddhahṛdaya-nāma-dhāraṇī
+- **T21n1400** (佛說消除一切災障寶髻陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_substring
+  - Reason: Title T21n1400 '消除一切災障寶髻陀羅尼經' contains 陀羅尼. Narrative opening (爾時世尊告) typical of dhāraṇī sūtras. Content focuses on specific dhāraṇī teachings with benefit promises. Length (1198 chars) consistent with focused teaching. Taishō vol. 21 acceptable range for dhāraṇī texts (though typically vol. 20).
+- **T21n1386** (佛說妙色陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_substring
+  - Reason: Title 佛說妙色陀羅尼經 is a dhāraṇī text. Tibetan entry broadly indexes 陀羅尼 (dhāraṇī) texts. Opening formula (爾時佛告) and content (dhāraṇī mantra with ritual instructions) align with dhāraṇī sūtra genre. Length (262 chars) is short but consistent with a single dhāraṇī scripture. T21n1386 falls within expected Taishō range for dhāraṇī texts.
+- **T20n1098** (佛說不空羂索陀羅尼儀軌經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_substring
+  - Reason: T20n1098 (Noose Dhāraṇī Ritual Sutra) is explicitly a dhāraṇī text with standard opening (如是我聞) and closing colophon. Length (13374 chars) is substantial for a ritual text. Clearly belongs to dhāraṇī collection. Generic Tibetan entry matches this specialized dhāraṇī ritual text.
+- **T19n0968** (佛頂尊勝陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_substring
+  - Reason: T19n0968 (佛頂尊勝陀羅尼經) is a dhāraṇī text containing extensive mantra sections. The Tibetan catalogue entry 陀羅尼 (dhāraṇī collection) is a generic header. The text fits the dhāraṇī genre with proper sūtra opening formula (如是我聞), substantial length (2591 chars), and complete dhāraṇī content. The pairing is reasonable though not certain since the catalogue entry is very generic.
+- **T19n0944A** (大佛頂如來放光悉怛多鉢怛囉陀羅尼) <-> CBETA #865 (陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_substring
+  - Reason: T19n0944A (大佛頂如來放光悉怛多鉢怛囉陀羅尼) is a dhāraṇī text in Taishō vol. 19, consisting of Indic/Tibetan transliteration without narrative framing. Title contains 陀羅尼. Tibetan catalogue entry '陀羅尼' in 陀羅尼集 matches. However, opening lacks '如是我聞' (purely Indic mantra form), suggesting this is a mantra recitation rather than narrative sūtra. Still valid dhāraṇī classification but genre variant.
+- **T19n1006** (廣大寶樓閣善住祕密陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_substring
+  - Reason: T19n1006 is titled '廣大寶樓閣善住祕密陀羅尼經' (Dharani Sutra) with opening '如是我聞' indicating sutra format. It contains extensive dhāraṇī sections and is 26984 characters—substantial enough to be a major dhāraṇī collection text. Matches the dhāraṇī collection genre expectation, though the Tibetan entry's vague title makes perfect confirmation difficult.
+- **T20n1185A** (佛說文殊師利法寶藏陀羅尼經) <-> CBETA #895 (聖文殊師利尊智慧覺增上陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: T20n1185A is a shorter version (8069 chars) of T20n1185B. Title 'Faxang' (法寶藏) is semantically closer to Sanskrit 'bhaṭṭārakaprajñābuddhivardhana' than T20n1185B. Both contain opening 'dharma treasure storehouse' narrative. The Tibetan title emphasis on wisdom/intellect could align with a dharma treasure text. Reasonable match despite title variation.
+  - Sanskrit: Ārya-mañjuśrībhaṭṭārakaprajñābuddhivardhana-nāma-dhāraṇī
+- **T20n1081** (佛說觀自在菩薩如意心陀羅尼呪經) <-> CBETA #910 (聖觀自在陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: T20n1081 (佛說觀自在菩薩如意心陀羅尼呪經) matches the Tibetan catalogue entry for 聖觀自在陀羅尼. Both focus on Avalokiteśvara dhāraṇī with 如意 (wish-fulfilling) aspect. Proper sūtra structure with 如是我聞 opening and standard closing (皆悉歡喜信受奉行). Length (1379 chars) is appropriate for a dhāraṇī sūtra. Main speaker is Avalokiteśvara revealing heart-mantra teachings.
+  - Sanskrit: Ārya-avalokiteśvara-nāma-dhāraṇī
+- **T21n1409** (佛說聖最勝陀羅尼經) <-> CBETA #913 (最勝大悲陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Title contains '最勝' and '陀羅尼'. T21n1409 titled '佛說聖最勝陀羅尼經' matches the '最勝陀羅尼' core. Sanskrit Karuṇāgra ('great compassion') relates to 大悲. Opening with 'Buddha in a location + monk narrative' is consistent with dhāraṇī sūtra format. However, title includes '大悲' (great compassion) which is not explicit in T21n1409's title, creating minor semantic gap.
+  - Sanskrit: Karuṇāgra-nāma-dhāraṇī
+- **T21n1400** (佛說消除一切災障寶髻陀羅尼經) <-> CBETA #922 (聖髻寶陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: T21n1400 '佛說消除一切災障寶髻陀羅尼經' (Ratna-cūḍā-dhāraṇī for removing disasters) strongly aligns with Tibetan 'Ārya-cūḍāmaṇi-nāma-dhāraṇī'. 'Cūḍā/cūḍāmaṇi' (topknot jewel) + protective/beneficial dharaṇī function. Length (1198 chars) appropriate for sūtra-style text. 'Bao ji' (寶髻) = jewel-topknot matches Sanskrit.
+  - Sanskrit: Ārya-cūḍāmaṇi-nāma-dhāraṇī
+- **T19n1021** (華嚴經心陀羅尼) <-> CBETA #940 (聖華嚴執持陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Title overlap: 華嚴 appears in both (聖華嚴執持陀羅尼 vs 華嚴經心陀羅尼). Both are dhāraṇī texts in the 陀羅尼集 section. Taishō T19n1021 is a short dhāraṇī (121 chars) consistent with dhāraṇī genre. Translator attribution (實叉難陀) matches Huayan tradition. Minor title variation is expected for dhāraṇī extracts.
+- **T18n0901** (陀羅尼集經) <-> CBETA #952 (夢見陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan '夢見陀羅尼' appears in T18n0901 '陀羅尼集經' (Dhāraṇī Collection Sūtra), a comprehensive 136451-char compilation. While the opening shown does not explicitly mention dreams, this is the canonical Dhāraṇī Collection translated by Amoghavajra. The text is known to contain numerous named dhāraṇīs. High probability dream dhāraṇī is included in this master collection. Genre and length consistent.
+- **T21n1233** (佛說無能勝大明王陀羅尼經) <-> CBETA #978 (無能勝大明母)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: T21n1233 (佛說無能勝大明王陀羅尼經) title semantically compatible with Mahāvidyā-aparājita (無能勝=aparājita; 大明王=mahāvidyā-rāja). Opening contains direct discourse by Buddha on this named dhāraṇī. Length (2166 chars) appropriate for single named dhāraṇī. Genre matches tantra classification (T21). However, title specifies 王 (king) variant, introducing minor textual variant vs. catalogue entry title 'mother' (母), suggesting this may be related but distinct recension.
+  - Sanskrit: Mahāvidyā-aparājita
+- **T18n0901** (陀羅尼集經) <-> CBETA #1004 (聖有勝陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: T18n0901 (陀羅尼集經) is a comprehensive dhāraṇī collection translated by Amoghavajra. The Tibetan catalogue entry is labeled 陀羅尼集 (dhāraṇī collection), which matches this title directly. As a major canonical dhāraṇī collection, this text would naturally contain Ārya-jayavatī-nāma-dhāraṇī among its contents. The section classification aligns.
+  - Sanskrit: Ārya-jayavatī-nāma-dhāraṇī
+- **T19n0968** (佛頂尊勝陀羅尼經) <-> CBETA #1004 (聖有勝陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Sanskrit titles are closely related (both contain jayavatī = 尊勝 'victorious'). Chinese title 佛頂尊勝陀羅尼經 contains 尊勝 which matches jayavatī. Standard dhāraṇī sūtra format with proper opening formula (如是我聞). Length (2591 chars) appropriate for a dhāraṇī sūtra. However, Tibetan title 聖有勝陀羅尼 is slightly abbreviated compared to Chinese 佛頂尊勝陀羅尼經; the difference may reflect variant translations of the same source.
+  - Sanskrit: Ārya-jayavatī-nāma-dhāraṇī
+- **T18n0901** (陀羅尼集經) <-> CBETA #1048 (不忘陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: T18n0901 '陀羅尼集經' (Dhāraṇī Collection Sutra) is the primary dhāraṇī collection text. The Tibetan catalogue entry '不忘陀羅尼' could plausibly appear within this 136451-character collection. Genre matches (陀羅尼集 section), Taishō volume 18 is tantra/dhāraṇī appropriate. This is likely the source text for multiple dhāraṇī catalogue entries.
+- **T21n1381** (佛說大吉祥陀羅尼經) <-> CBETA #1085 (吉祥大黑尊天陀羅尼)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Strong match: Tibetan 'Śrī-mahākāla-nāma-dhāraṇī' (Mahākāla dhāraṇī) aligns well with Taishō 'T21n1381' titled '佛說大吉祥陀羅尼經'. While '大吉祥' (Great Auspiciousness) appears to reference Lakṣmī rather than Mahākāla literally, Taishō text content explicitly mentions 'Bodhisattva Great Auspiciousness' (大吉祥菩薩) and contains substantial dhāraṇī sections consistent with the Tibetan entry. Opening follows standard sūtra format (如是我聞). Both are from Taishō dhāraṇī section (T21).
+  - Sanskrit: Śrī-mahākāla-nāma-dhāraṇī
+- **T32n1678** (佛三身讚) <-> CBETA #1124 (三身讚註釋)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: T32n1678 (佛三身讚) is a stotra (praise) on the three bodies of Buddha with clear philosophical exposition about dharma body, enjoyment body, and emanation body. The opening formula and content structure match expectations for a Prajñāpāramitāstotra-type text in the 禮讚部. While not explicitly labeled as vivaraṇa, the verse format and explanatory content are consistent with the Tibetan entry on three body praise.
+  - Sanskrit: Kāyatrayastotra-nāma-vivaraṇa
+- **T18n0912** (建立曼荼羅護摩儀軌) <-> CBETA #1223 (護摩儀軌)
+  - Confidence: 78%
+  - Signals: chinese_title_substring
+  - Reason: Content and genre match: Both are homa ritual texts (護摩儀軌/Homavidhi) in tantric section. Title overlap on core term. T18n0912 'Building Maṇḍala and Homa Ritual' includes both maṇḍala setup and homa performance. Length (4754 chars) appropriate for comprehensive ritual manual covering multiple days of ritual activity. Opening and structure consistent with Homavidhi.
+  - Sanskrit: Homavidhi
+- **T18n0912** (建立曼荼羅護摩儀軌) <-> CBETA #1255 (護摩儀軌)
+  - Confidence: 78%
+  - Signals: chinese_title_substring
+  - Reason: T18n0912 '建立曼荼羅護摩儀軌' (Establishment of Mandala Homa Ritual) and the generic Tibetan catalogue entry for 'Homavidhi' share core semantic overlap. Both concern homa ritual procedures (護摩儀軌). The text is in the correct volume (T18 = tantra), contains dhāraṇī sections, and the length (4754 characters) is substantial and consistent with a detailed tantra ritual text. The opening explicitly discusses ritual procedures for multiple days. This appears to be a valid parallel translation.
+  - Sanskrit: Homavidhi
+- **T21n1306** (北斗七星護摩祕要儀軌) <-> CBETA #1502 (護摩)
+  - Confidence: 78%
+  - Signals: chinese_title_substring
+  - Reason: Both concern homa (護摩/sbyin-sreg) rituals in the tantra section. T21n1306 is a specific homa ritual (北斗七星 Big Dipper), which is a type of the general 護摩 category. The text contains dhāraṇī sections and mandala construction appropriate to tantra. Length (629 chars) is reasonable for a specific ritual procedure.
+- **T18n0915** (受菩提心戒儀) <-> CBETA #1801 (菩提心釋)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan Bodhicittavivaraṇa appears to match Chinese T18n0915 受菩提心戒儀. While 'vivaraṇa' suggests explanation, the text functions as both explanation and ritual procedure. Opening with 弟子某甲等稽首歸命禮 (disciple bows to refuge) shows both expository and ritualistic elements. The ceremony structure explains and enacts bodhicitta precept receipt. Acceptable as parallel despite genre ambiguity.
+  - Sanskrit: Bodhicittavivaraṇa
+- **T18n0856** (大毘盧遮那成佛神變加持經略示七支念誦隨行法) <-> CBETA #1888 (七支)
+  - Confidence: 78%
+  - Signals: chinese_title_substring
+  - Reason: The Taishō text (T18n0856) is titled '大毘盧遮那成佛神變加持經略示七支念誦隨行法' which contains '七支' (seven limbs/divisions) as a core component. The Tibetan 'Saptāṅga' (Seven Limbs) directly corresponds. This is a practice manual for the Mahāvairocana system, providing ritual procedures for the seven-part structure. Both are tantra texts (T18 = tantra section) dealing with the same structural framework.
+  - Sanskrit: Saptāṅga
+- **T18n0912** (建立曼荼羅護摩儀軌) <-> CBETA #1933 (曼荼羅儀軌)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: T18n0912 '建立曼荼羅護摩儀軌' (Establishment of Maṇḍala and Homa Ritual) shares core semantic elements with the Tibetan entry: both focus on maṇḍala (曼荼羅) and ritual procedure (儀軌). The opening describes detailed steps for maṇḍala construction and ritual installation. Sanskrit Maṇḍalavidhi is consistent. Section 怛特羅部 matches T18 volume. Text contains dhāraṇī sections and procedural content as expected. Length (4754 chars) is appropriate. The text combines maṇḍala with homa (fire ritual), representing a natural expansion of basic maṇḍala vidhi.
+  - Sanskrit: Maṇḍalavidhi
+- **T18n0912** (建立曼荼羅護摩儀軌) <-> CBETA #1934 (曼荼羅儀軌)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Identical match to Pair 2. T18n0912 '建立曼荼羅護摩儀軌' directly corresponds to maṇḍalavidhi-nāma through its explicit maṇḍala-establishment and ritual-procedure focus. Opening details construction methodology across six ritual days. Text includes dhāraṇī sections and ritual instructions. Section 怛特羅部 with T18 volume is correct for tantric ritual manuals. Length (4754 chars) is consistent. The addition of homa (護摩) represents a natural ritual extension.
+  - Sanskrit: Maṇḍalavidhi-nāma
+- **T21n1242** (佛說妙吉祥瑜伽大教金剛陪囉嚩輪觀想成就儀軌經) <-> CBETA #1979 (成就儀軌)
+  - Confidence: 78%
+  - Signals: chinese_title_substring
+  - Reason: T21n1242 '佛說妙吉祥瑜伽大教金剛陪囉嚩輪觀想成就儀軌經' contains 成就儀軌 in title. This is a sādhana text (成就 = sgrub-pa) with explicit ritual instructions. The opening dialogue format and visualization instructions match tantric sādhana conventions. Length (5820 chars) is appropriate. Section and Taishō vol. 21 are consistent with tantra classification.
+- **T21n1222a** (聖迦抳忿怒金剛童子菩薩成就儀軌經) <-> CBETA #1979 (成就儀軌)
+  - Confidence: 78%
+  - Signals: chinese_title_substring
+  - Reason: Both are tantric ritual manuals (成就儀軌/sgrub-paḥi thabs) in 怛特羅部. T21n1222a explicitly contains 成就儀軌經 in its title and is attributed to 不空 (Amoghavajra), a major translator. The opening 爾時金剛手菩薩 is appropriate for tantric texts. Length (19674 characters) is plausible. The specific focus on 迦抳忿怒金剛童子 creates slight uncertainty about whether this matches a generic 成就儀軌 entry, but the genre and category alignment is strong.
+- **T18n0912** (建立曼荼羅護摩儀軌) <-> CBETA #2119 (護摩儀軌)
+  - Confidence: 78%
+  - Signals: chinese_title_substring
+  - Reason: T18n0912 'Building Maṇḍala Homa Ritual' directly matches homa ritual category. Text systematically describes maṇḍala construction combined with homa performance over multiple days, consistent with tantric ritual manual. Length (4754 chars) and content appropriate. Opening describes step-by-step homa preparation (altar construction, deity positioning, recitation counts).
+- **T18n0912** (建立曼荼羅護摩儀軌) <-> CBETA #2324 (曼荼羅儀軌)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Title match: 曼荼羅儀軌 appears in T18n0912 as part of compound title. Sanskrit Maṇḍalavidhi-nāma corresponds to 建立曼荼羅...儀軌. T18n0912 is maṇḍala-focused ritual text with dhāraṇī sections. Tantra section appropriate. Length (4754 chars) plausible for ritual procedure manual. Some content focuses on homa ritual variant, but core maṇḍala ritual framework matches.
+  - Sanskrit: Maṇḍalavidhi-nāma
+- **T18n0909** (金剛頂瑜伽護摩儀軌) <-> CBETA #2603 (護摩儀軌略)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Sanskrit and genre alignment: Both catalogue entry and T0909 refer to 'homa' (fire ritual) with 'vidhi' (ritual manual) structure. Tibetan Sanskrit 'Homavidhipiṇḍita' (abbreviated homa ritual) parallels T0909 '金剛頂瑜伽護摩儀軌' (Vajraśekhara Yoga Homa Ritual Manual). Both are tantric rituals in T18 range. The opening speaks of homa accomplishment, consistent with sādhana content. Minor title variation acceptable for this genre.
+  - Sanskrit: Homavidhipiṇḍita
+- **T21n1417** (佛說壞相金剛陀羅尼經) <-> CBETA #2679 (金剛摧破陀羅尼釋金剛燈)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics align: 金剛摧破 (Vajravidāraṇā = 'vajra-shattering') and 壞相金剛 (same concept). Sanskrit titles both reference Vajravidāraṇā-dhāraṇī. Genre match: both tantra (怛特羅部, T21). Length (1149 chars) plausible for a dhāraṇī text with commentary elements. Opening formula 如是我聞 appropriate for tantra sūtra format. Minor title variation (摧破 vs 壞相) and different translators (entry vs 沙囉巴) suggest possible parallel translations from same Indic source.
+  - Sanskrit: Vajravidāraṇā-nāma-dhāraṇīvyākhyānavajrāloka-nāma
+- **T21n1416** (金剛摧碎陀羅尼) <-> CBETA #2683 (金剛摧破陀羅尼釋)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Title match: '金剛摧破陀羅尼釋' exactly matches Taishō title '金剛摧碎陀羅尼' (摧破≈摧碎, variant). Sanskrit 'Vajravidārāṇā-nāma-dhāraṇīvyākhyāna' aligns with 'explanation of vajravidāraṇā'. Section is 怛特羅部 (tantra), Taishō T21 is tantra range. Length (733 chars) is reasonable for a dhāraṇī text. Opening goes directly to mantra recitation (daraṇī formula), appropriate for a tantra text. Minor caveat: 摧碎 vs 摧破 may indicate variant recensions.
+  - Sanskrit: Vajravidārāṇā-nāma-dhāraṇīvyākhyāna
+- **T21n1416** (金剛摧碎陀羅尼) <-> CBETA #2685 (金剛摧破陀羅尼優波提舍)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics align: both reference Vajravidāraṇā with upadeśa/commentary element. Sanskrit titles compatible (upadeśa = explanatory teaching). Section agreement: both 怛特羅部. T21n1416 contains pure dhāraṇī exposition consistent with upadeśa genre. Minor uncertainty due to generic dhāraṇī text format, but strongest available match for this Tibetan entry.
+  - Sanskrit: Vajravidāraṇā-nāma-dhāraṇyupadeśa
+- **T21n1218** (文殊師利耶曼德迦呪法) <-> CBETA #2717 (聖,文殊師利成就法)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Title and genre alignment: Tibetan entry is for Ārya-mañjuśrīsādhana (Mañjuśrī sādhana/practice ritual), and Taishō T21n1218 is 文殊師利耶曼德迦呪法 (Mañjuśrī ritual practice). Both are tantric sādhanas. Opening context (ritual setting with deities) matches sādhana format. Length (4907 chars) consistent with detailed ritual manual.
+  - Sanskrit: Ārya-mañjuśrīsādhana
+- **T21n1416** (金剛摧碎陀羅尼) <-> CBETA #2914 (金剛摧破陀羅尼成就法)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Good title alignment: Tibetan '金剛摧破陀羅尼成就法' (sādhana/accomplishment method) matches Taishō T21n1416 '金剛摧碎陀羅尼' (摧碎 ≈ 摧破). Sanskrit likely 'Vajravidāraṇā-nāma-dhāraṇīsādhana' aligns. Vol 21 is tantra section. Text is purely dharani practice (no sūtra framing), appropriate for sādhana genre. Length (733 chars) plausible for practice manual.
+  - Sanskrit: Vajravidāraṇā-nāma-dhāraṇīsādhana
+- **T21n1416** (金剛摧碎陀羅尼) <-> CBETA #2925 (聖金剛摧破陀羅尼有細儀軌成就法)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Title and Sanskrit semantics align: Both concern the 'Vajravidāraṇā dhāraṇī' (金剛摧破/摧碎 + 陀羅尼). Tibetan specifies a detailed ritual (with subsidiary procedures), Taishō is the core dhāraṇī text. Text is purely dhāraṇī content (733 chars fits a standalone dhāraṇī). Tantra section (怛特羅部/T21) matches. Credible as shorter core text vs expanded Tibetan catalogue entry.
+  - Sanskrit: Ārya-vajravidāraṇā-nāma-dhāraṇī-sakalpasādhana
+- **T18n0862** (阿闍梨大曼荼攞灌頂儀軌) <-> CBETA #2943 (灌頂)
+  - Confidence: 78%
+  - Signals: chinese_title_substring
+  - Reason: T18n0862 is titled 阿闍梨大曼荼羅灌頂儀軌 (Ācārya's Great Maṇḍala Abhiṣeka Ritual), which directly corresponds to 灌頂 (abhiṣeka/initiation). Genre matches (tantra, Vol. 18). Length (3515 chars) is consistent with a ritual manual. Opening shows ritual context with Golden-handed Bodhisattva and merit discussion typical of tantra initiations.
+- **T21n1259** (摩利支天一印法) <-> CBETA #3226 (摩利支天成就法)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantic match: both reference Mārīcī/摩利支天 deity practice. Chinese titles '摩利支天成就法' (sādhana) and '摩利支天一印法' (single-mudra ritual) both describe tantric accomplishment/practice methods. T21n1259 is in tantra section (vol. 21), consistent with 怛特羅部. Text lacks sūtra opening formula, contains mudra instructions and mantras (唵引摩利支娑嚩訶). Length (262 chars) is brief but reasonable for a short practice instruction. Both texts focus on ritual accomplishment rather than doctrinal teaching.
+  - Sanskrit: Mārīcīsādhana
+- **T21n1255b** (佛說摩利支天經) <-> CBETA #3227 (摩利支天成就法)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantic match: Both concern Mārīcī (摩利支天); T21n1255b is '佛說摩利支天經' (Sūtra on Mārīcī) which presents the teaching and benefits of Mārīcī practice. While the Tibetan catalogue lists 'sādhana' and the Chinese is a 'sūtra,' they share the same Sanskrit title Mārīcīsādhana and both present Mārīcī practice instruction. Opening formula '如是我聞' confirms sūtra status. Length (1436 chars) is reasonable for a translated sūtra. The sādhana title in Tibetan catalogue may reflect how tantra texts were categorized. Translator attribution (不空 Amoghavajra) is authoritative.
+  - Sanskrit: Mārīcīsādhana
+- **T21n1255b** (佛說摩利支天經) <-> CBETA #3229 (摩利支天成就法)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Same reasoning as Pair 1: semantic title match and shared Sanskrit Mārīcīsādhana. T21n1255b presents Mārīcī teaching in sūtra form. The sūtra-sādhana distinction reflects different cataloguing traditions (Chinese sūtra tradition vs. Tibetan tantric tradition) for the same underlying text.
+  - Sanskrit: Mārīcīsādhana
+- **T21n1255b** (佛說摩利支天經) <-> CBETA #3230 (摩利支天成就法)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Same as Pair 1 and 3: semantic match and shared Sanskrit title. T21n1255b (佛說摩利支天經) presents Mārīcī practice instruction despite genre designation differences.
+  - Sanskrit: Mārīcīsādhana
+- **T21n1255b** (佛說摩利支天經) <-> CBETA #3232 (摩利支天成就法)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Same as Pairs 1, 3, 5: T21n1255b semantic match with shared Sanskrit title. Sūtra vs. sādhana label reflects cataloguing tradition differences, but both present Mārīcī practice.
+  - Sanskrit: Mārīcīsādhana
+- **T21n1255b** (佛說摩利支天經) <-> CBETA #3233 (摩利支天成就法)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Same as Pairs 1, 3, 5, 7: T21n1255b (佛說摩利支天經) semantic match with shared Sanskrit Mārīcīsādhana. Genre designation difference reflects Chinese sūtra vs. Tibetan tantric cataloguing traditions, but underlying text is the same.
+  - Sanskrit: Mārīcīsādhana
+- **T21n1218** (文殊師利耶曼德迦呪法) <-> CBETA #3464 (文殊師利成就法)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics: Tibetan 'Mañjuśrīsādhana' (文殊師利成就法) directly parallels the generic Mañjuśrī sādhana focus. The Chinese text T21n1218 '文殊師利耶曼德迦呪法' contains Mañjuśrī content with wrathful (耶曼德迦) practices and sādhana elements (成就法). Generic match despite title variation. Same Taishō text as Pair 0, suggesting broader Mañjuśrī sādhana family.
+  - Sanskrit: Mañjuśrīsādhana
+- **T21n1218** (文殊師利耶曼德迦呪法) <-> CBETA #3469 (文殊師利成就法)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Identical to Pair 2: Generic 'Mañjuśrīsādhana' catalogue entry matched to the same T21n1218 text. The repetition across different Tibetan catalogue entries (#3464, #3469) suggests the Chinese text represents the standard Mañjuśrī sādhana in this corpus.
+  - Sanskrit: Mañjuśrīsādhana
+- **T21n1259** (摩利支天一印法) <-> CBETA #3660 (摩利支天女成就法)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics aligned: Both address 'Mārīcīdevīsādhana' (Mārīcī goddess practice method). T21n1259 is titled '摩利支天一印法' and contains two mudrā instructions and mantra recitation (the essential core of a short sādhana). Text length (262 chars) consistent with brief technical sādhana. Dhāraṇī and mudrā practices match tantra genre classification.
+  - Sanskrit: Mārīcīdevīsādhana
+- **T21n1259** (摩利支天一印法) <-> CBETA #3661 (摩利支天女成就法)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Same as Pair 5: Title semantics aligned (Mārīcīdevīsādhana). T21n1259 contains mudrā and mantra practice instructions characteristic of short tantric sādhana. Text focuses on practical implementation (隱形印, 身印) rather than narrative exposition. Tantra genre classification (怛特羅部) compatible with T21 (tantra section) placement.
+  - Sanskrit: Mārīcīdevīsādhana
+- **T20n1067** (攝無礙大悲心大陀羅尼經計一法中出無量義南方滿願補陀落海會五部諸尊等弘誓力方位及威儀形色執持三摩耶幖幟曼荼羅儀軌) <-> CBETA #3760 (曼荼羅儀軌)
+  - Confidence: 78%
+  - Signals: chinese_title_substring
+  - Reason: T20n1067 explicitly includes 曼荼羅儀軌 in its title and discusses maṇḍala structure at length. Opening describes maṇḍala arrangement and symbolism. Genre matches (怛特羅部, vol. 20 = tantra). Length (6891 chars) consistent with comprehensive maṇḍala ritual text.
+  - Sanskrit: Maṇḍalavidhi
+- **T25n1510b** (金剛般若波羅蜜經論) <-> CBETA #3797 (般若波羅蜜多攝義)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: T25n1510b (金剛般若波羅蜜經論) is an Asaṅga-authored śāstra commentary on the Vajracchedikā-prajñāpāramitā. The Sanskrit title pattern aligns (Prajñāpāramitā + interpretation/summary content), it is in the śāstra section (vol 25), and the opening discusses establishing 'seven kinds of meanings' (義), consistent with a piṇḍārtha work summarizing essential meanings. However, Sanskrit title in the Chinese text is not explicitly verified as 'Prajñāpāramitāpiṇḍārtha-nāma'.
+  - Sanskrit: Prajñāpāramitāpiṇḍārtha-nāma
+- **T05n0220** (大般若波羅蜜多經(第1卷-第200卷)) <-> CBETA #3807 (聖般若波羅蜜多十萬（頌）廣註疏)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: T05n0220 is the Great Prajñāpāramitā Sutra (大般若波羅蜜多經), the full 100,000-line text in Chinese translation by Xuanzang. The Tibetan entry describes a broad commentary (ḥgrel-ba) on the 100,000-line Prajñāpāramitā (ḥbum-pa = 'hundred thousand'). While the Tibetan text is technically a commentary and the Chinese is the base sutra, they share the same foundational source and are tightly paired in the Buddhist textual tradition. Likely a base-text/commentary pairing.
+  - Sanskrit: [Śatasāhasrikāprajñāpāramitābṛhaṭṭīkā]
+- **T08n0254** (般若波羅蜜多心經) <-> CBETA #3818 (聖般若波羅蜜多心（經）廣疏)
+  - Confidence: 78%
+  - Signals: chinese_title_substring
+  - Reason: T08n0254 (般若波羅蜜多心經) is the Heart Sutra. The Tibetan entry requests commentary (廣疏/rgya-cher bśad-pa) on the Heart Sutra. This text is the Heart Sutra itself, though not strictly a commentary. The title substring overlap indicates this is the correct core text. Medium confidence due to text vs. commentary distinction, but likely the correct base text referenced.
+  - Sanskrit: Ārya-prajñāpāramitāhṛdayaṭīkā
+- **T08n0254** (般若波羅蜜多心經) <-> CBETA #3819 (聖般若波羅蜜多心（經）解說)
+  - Confidence: 78%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan entry describes a commentary/explanation (vyākhyā) on the Heart Sutra. T08n0254 is the Heart Sutra with explanatory dialogue format where Avalokiteśvara explains the practice to Śāriputra. Structure shows explanation/interpretation of the Heart teaching, matching vyākhyā-type function.
+  - Sanskrit: Ārya-prajñāpāramitāhṛdayavyākhyā
+- **T08n0249** (佛說帝釋般若波羅蜜多心經) <-> CBETA #3822 (般若波羅蜜多心（經）義正知)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: T08n0249 (佛說帝釋般若波羅蜜多心經) matches the Sanskrit title Ārya-prajñāpāramitāhṛdayārthaparijñāna in scope (Heart Sutra with meaning-focused content). Standard sūtra opening (如是我聞). Chinese title overlaps with catalogue entry on Heart Sutra and prajñāpāramitā. However, the specific focus on Indra (帝釋) as main interlocutor rather than Avalokiteśvara may indicate a variant recension rather than exact parallel.
+  - Sanskrit: Ārya-prajñāpāramitāhṛdayārthaparijñāna
+- **T32n1659** (發菩提心經論) <-> CBETA #3966 (發菩提心儀軌)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan Bodhicittopādavidhi ('procedure for arousing bodhicitta') and T32n1659 (發菩提心經論 'Sutra-treatise on arousing bodhicitta') share core subject matter. Both titles translate Sanskrit *bodhicitta* (菩提心) and concern its undertaking/arousal. T32n1659 is a śāstra (論) treating the topic comprehensively. Length (12,283 chars) is plausible for a full doctrinal treatise. Opening (敬禮無邊際...) and structure match śāstra genre. Minor title variance (儀軌 'ritual procedure' vs 經論 'sutra-treatise') is acceptable within Buddhist textual diversity.
+  - Sanskrit: Bodhicittopādavidhi
+- **T30n1582** (菩薩善戒經) <-> CBETA #4045 (菩薩戒品疏)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan entry '菩薩戒品疏' (commentary on Bodhisattva precepts chapter) matches T30n1582 '菩薩善戒經'. Opening shows '如是我聞' formula appropriate for a sūtra. The Tibetan specifies it's commentary on the śīla chapter, and T30n1582 contains bodhisattva precepts material. Genre matches (唯識部). Length (77,690 characters) is consistent with a comprehensive precepts text.
+  - Sanskrit: [Bodhisattvaśīlaparivartabhāṣya]
+- **T17n0817** (佛說大淨法門經) <-> CBETA #4363 (法門)
+  - Confidence: 78%
+  - Signals: chinese_title_substring
+  - Reason: Title contains 法門 (Dharmaparyāya). T17n0817 is 佛說大淨法門經, which matches the generic 法門 category. Opens with proper sūtra formula (聞如是一時佛遊...). Length (11,140 chars) is reasonable for a medium-length sūtra. Volume 17 is consistent with miscellaneous sūtras (雜部). The text discusses dharma teachings through a narrative about a woman, fitting the pattern.
+  - Sanskrit: [Dharmaparyāya]
+- **T08n0257** (佛說聖佛母般若波羅蜜多經) <-> CBETA #4463 (薄伽梵母般若波羅蜜多聖七頌經)
+  - Confidence: 78%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics align: 'Āryasaptaślokikābhagavatīprajñāpāramitā' (Seven Verses on Bhagavatī Prajñāpāramitā) vs 'Bhagavān Mother Prajñāpāramitā Sūtra'. The Taishō text (T08n0257) is a Prajñāpāramitā sūtra with Avalokiteśvara dialogue, matching the philosophical content expected. Genre compatible (雜部 matches sūtra range). Opening formula 'thus have I heard' standard for sūtra. Length 643 characters reasonable for concise teaching, though shorter than typical full Prajñāpāramitā texts. Sanskrit titles both reference the same root.
+  - Sanskrit: Āryasaptaślokikābhagavatīprajñāpāramitā(-nāma)sūtra
+- **T21n1346** (諸佛集會陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 77%
+  - Signals: chinese_title_substring
+  - Reason: Title T21n1346 '諸佛集會陀羅尼經' contains 陀羅尼. Standard sūtra opening (如是我聞). Buddha teaching dhāraṇī against four fears, with ritual application instructions. Length (1241 chars) appropriate. Taishō vol. 21 acceptable for dhāraṇī sūtras. Content structure fully consistent with dhāraṇī genre.
+- **T21n1234** (無能勝大明陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 77%
+  - Signals: chinese_title_substring
+  - Reason: T21n1336 (Invincible Great Bright Dhāraṇī Sutra) is explicitly a dhāraṇī text with mantra formulas and protection teachings. Bodhisattva-framed discourse (though not standard 如是我聞). Length (2945 chars) reasonable. Falls within Taishō 21. Clearly a dhāraṇī sutra matching collection entry.
+- **T10n0305** (信力入印法門經) <-> CBETA #4363 (法門)
+  - Confidence: 77%
+  - Signals: chinese_title_substring
+  - Reason: Title contains 法門; T10n0305 is 信力入印法門經. Opens with sūtra formula (歸命...如是我聞一時婆伽婆...). Length (43,859 chars) is very large, suggesting comprehensive teaching text. Volume 10 in sūtra range. Sanskrit Dharmaparyāya aligns with 法門. Text discusses faith and dharma-sealing (印法門), fitting category. Large size indicates comprehensive miscellaneous sūtra collection.
+  - Sanskrit: [Dharmaparyāya]
+- **T17n0840** (稱讚大乘功德經) <-> CBETA #229 (讚如來大乘經)
+  - Confidence: 76%
+  - Signals: chinese_title_overlap
+  - Reason: Strong title semantic match: Tibetan '讚如來大乘經' (Tathāgatasaṅgīti) directly corresponds to Chinese '稱讚大乘功德經' (both use 'praise/acclaim' concept 讚/稱讚). Sanskrit title Tathāgatasaṅgīti-mahāyānasūtra aligns perfectly. Standard sūtra opening/closing formulas present. Length (1934 chars) proportionate to text type.
+  - Sanskrit: Tathāgatasaṅgīti-mahāyānasūtra
+- **T21n1416** (金剛摧碎陀羅尼) <-> CBETA #865 (陀羅尼)
+  - Confidence: 76%
+  - Signals: chinese_title_substring
+  - Reason: Title 金剛摧碎陀羅尼 includes 陀羅尼. Opens directly with mantra sequence (曩謨囉怛那...), characteristic of Vajrayāna dhāraṇī texts that prioritize mantric content over narrative framework. Contains extensive mantra repetitions with variations. Length (733 chars) reasonable for dhāraṇī-focused text. T21 volume appropriate for tantra/dhāraṇī. Song translator (慈賢) matches late-period attribution. Lacks traditional sūtra opening but consistent with advanced tantric dhāraṇī texts where mantra takes precedence.
+- **T20n1183** (一髻文殊師利童子陀羅尼念誦儀軌) <-> CBETA #865 (陀羅尼)
+  - Confidence: 76%
+  - Signals: chinese_title_substring
+  - Reason: T20n1183 (One-Topknot Mañjuśrī Dhāraṇī Recitation Ritual) is a dhāraṇī ritual text with proper opening showing dharani mantra formulas (曩謨...). Contains ritual instructions and liturgical content. Length (2491 chars) fits ritual text category. Matches dhāraṇī collection entry, though specialized as ritual/mantra text.
+- **T21n1376** (佛說聖莊嚴陀羅尼經) <-> CBETA #1066 (聖寶樹最勝莊嚴陀羅尼)
+  - Confidence: 76%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan Sanskrit 'Ārya-gulmālaṁkārāgra-nāma-dhāraṇī' (tree ornament supreme) appears closest to T21n1376 '佛說聖莊嚴陀羅尼經' (Buddha speaks of sacred adornment/decoration). Both emphasize 'ornament/decoration' (gulmā/莊嚴) and 'supreme' concepts. Length (3363 chars) consistent. Opening with assembly at Kapilavastu; both are expansive dhāraṇī compilations. Semantic alignment is reasonable.
+  - Sanskrit: Ārya-gulmālaṁkārāgra-nāma-dhāraṇī
+- **T18n0912** (建立曼荼羅護摩儀軌) <-> CBETA #1983 (曼荼羅儀軌)
+  - Confidence: 76%
+  - Signals: chinese_title_overlap
+  - Reason: Both are maṇḍala ritual texts (曼荼羅儀軌/Maṇḍalavidhi). T18n0912 is titled 建立曼荼羅護摩儀軌 (establishing maṇḍala homa rituals). The opening provides step-by-step construction procedures (日 = daily stages), which matches ritual manual expectations. Length (4754 characters) is appropriate for a detailed ritual text. The integration of maṇḍala and homa (护摩) practices is characteristic of tantric manuals. Genre compatibility with 怛特羅部 is perfect.
+  - Sanskrit: Maṇḍalavidhi
+- **T21n1259** (摩利支天一印法) <-> CBETA #3662 (聖摩利支天女成就法)
+  - Confidence: 76%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics aligned: Both refer to Mārīcī sādhana with explicit 'ārya' honorific in Sanskrit. T21n1259 '摩利支天一印法' contains mudrā (印) and mantra practice instructions consistent with Ārya-mārīcīsādhana genre. Short length (262 chars) fits focused sādhana format. Tantra classification (怛特羅部, T21) both compatible.
+  - Sanskrit: Ārya-mārīcīsādhana-nāma
+- **T32n1659** (發菩提心經論) <-> CBETA #3968 (發菩提心取受儀軌)
+  - Confidence: 76%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan Bodhicittotpādasamādānavidhi ('procedure for arousing bodhicitta and taking up a chosen deity') closely parallels T32n1659 (發菩提心經論) in core content. Both treat bodhicitta (菩提心) arousal. T32n1659 is same text as Pair 4, explicitly titled as 經論 (śāstra). The Tibetan entry adds 'taking up a deity' (yi-dam) which could be contained within a comprehensive bodhicitta treatise. Identical Chinese text and translator confirm the match, with the Tibetan title capturing additional ritual/tantric aspects possibly elaborated in the full work.
+  - Sanskrit: Bodhicittotpādasamādānavidhi
+- **T06n0220** (大般若波羅蜜多經(第201卷-第400卷)) <-> CBETA #29 (聖般若波羅蜜多金剛手大乘經)
+  - Confidence: 75%
+  - Signals: chinese_title_overlap
+  - Reason: T06n0220 is volumes 201-400 of Xuanzang's 大般若波羅蜜多經. This is continuation of the Great Prajñāpāramitā collection. Same translator and work family as Pair 5. While Vajrapāṇi specificity in Tibetan title remains ambiguous, this represents the canonical prajñāpāramitā tradition. Plausible parallel to the Tibetan entry's source, though title specificity suggests possible variant or abbreviation.
+  - Sanskrit: Ārya-prajñāpāramitā-vajrapāṇi-mahāyānasūtra
+- **T19n1024** (無垢淨光大陀羅尼經) <-> CBETA #517 (聖無垢陀羅尼)
+  - Confidence: 75%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantic match: Tibetan 聖無垢陀羅尼 (Ārya-vimala-nāma-dhāraṇī, 'immaculate') aligns closely with Taishō T19n1024 'Vimala-prabhā-nāma-dhāraṇī' (無垢淨光大陀羅尼, 'immaculate pure light'). Both Sanskrit titles use vimala (immaculate/pure). Genre compatible (dhāraṇī, 10-million tantra section). Standard sūtra opening. Length plausible (5K characters for brief dhāraṇī text). Minor uncertainty due to epithet variation (淨光 vs base Ārya-vimala).
+  - Sanskrit: Ārya-vimala-nāma-dhāraṇī
+- **T20n1185B** (文殊師利寶藏陀羅尼經) <-> CBETA #547 (文殊師利誓願陀羅尼)
+  - Confidence: 75%
+  - Signals: chinese_title_overlap
+  - Reason: Plausible match: 文殊師利誓願陀羅尼 (Mañjuśrī's vow dhāraṇī) with T20n1185B. Though the title emphasizes 'vow/pledge' (誓願/dam-bcas) rather than 'treasure' (寶藏), dhāraṇī texts often have variant titles. Same Taishō text as Pair 8, which may contain multiple dhāraṇī sections including vow-related content. Both classified in tantra section. Moderate confidence due to title variation.
+- **T19n0934** (佛說無量功德陀羅尼經) <-> CBETA #582 (四無量證得陀羅尼)
+  - Confidence: 75%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan 'tshad-med-pa bshi' = four immeasurables (四無量). Chinese title '佛說無量功德陀羅尼經' (Buddha spoke the immeasurable merit dhāraṇī sutra) aligns semantically. Opening uses 爾時世尊formula appropriate for dhāraṇī sutra. Text length (271 characters) reasonable. Content describes merit accumulation through recitation with specific mantra benefits. Match is semantic rather than literal, but four immeasurables and boundless merit are conceptually aligned.
+- **T21n1397** (智炬陀羅尼經) <-> CBETA #650 (智慧生起陀羅尼)
+  - Confidence: 75%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantic alignment: Tibetan '智慧生起陀羅尼' (Prajñāvardhanī - Wisdom Enhancement/Generation) corresponds to T21n1397 '智炬陀羅尼經' (Wisdom-Torch dhāraṇī). Both emphasize wisdom/intelligence enhancement. Length (909 chars) fits expanded sūtra form with narrative frame and dialogue. Opening shows traditional sūtra formula 如是我聞.
+  - Sanskrit: Prajñāvardhanī-nāma-dhāraṇī
+- **T20n1162** (持世陀羅尼經) <-> CBETA #651 (聞持陀羅尼)
+  - Confidence: 75%
+  - Signals: chinese_title_overlap
+  - Reason: Strong semantic match: Tibetan 聞持陀羅尼 ('hearing/retention dhāraṇī') aligns with T20n1162 持世陀羅尼經 ('Dharmadhara/Zhishi dhāraṇī'). Both reference 持 (holding/retention). Opening 如是我聞 is standard sūtra formula. Length (1413 chars) appropriate for named dhāraṇī sūtra. Closing confirms dharmadhara/holder (持世) theme. Text structure and content compatible.
+- **T19n1029** (佛說安宅陀羅尼呪經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 75%
+  - Signals: chinese_title_substring
+  - Reason: Both are dhāraṇī texts with standard sūtra opening (如是我聞). Title T19n1029 '安宅陀羅尼呪經' contains 陀羅尼 matching Tibetan catalogue entry. Length (557 chars) is short but appropriate for a focused dhāraṇī teaching. Genre alignment: Taishō vol. 19 is correct for dhāraṇī-focused sūtras.
+- **T20n1049** (聖六字增壽大明陀羅尼經) <-> CBETA #865 (陀羅尼)
+  - Confidence: 75%
+  - Signals: chinese_title_substring
+  - Reason: Both texts are dhāraṇī-related. T20n1049 (Six-Character Great Bright Dhāraṇī) is a standalone dhāraṇī sutra with standard opening (如是我聞). Tibetan entry is generic 'dhāraṇī' from the dhāraṇī collection. The text fits the category but the specific title match is loose. Reasonable confidence as it represents a dhāraṇī within the expected collection.
+- **T20n1103b** (觀自在菩薩怛嚩多唎隨心陀羅尼經) <-> CBETA #910 (聖觀自在陀羅尼)
+  - Confidence: 75%
+  - Signals: chinese_title_overlap
+  - Reason: T20n1103b (觀自在菩薩怛嚩多唎隨心陀羅尼經) is another variant of Avalokiteśvara dhāraṇī text, with focus on 隨心 (following mind/wish-fulfilling). Proper sūtra opening (如是我聞) and closing formula. Setting in 極樂世界 is appropriate for Avalokiteśvara context. Large length (8718 chars) consistent with elaborate dhāraṇī ritual text. Multiple texts on the same theme are common in Buddhist canons.
+  - Sanskrit: Ārya-avalokiteśvara-nāma-dhāraṇī
+- **T19n0974A** (最勝佛頂陀羅尼經) <-> CBETA #913 (最勝大悲陀羅尼)
+  - Confidence: 75%
+  - Signals: chinese_title_overlap
+  - Reason: T19n0974A titled '最勝佛頂陀羅尼經' contains '最勝' which directly matches Tibetan title. However, adds '佛頂' (Buddha crown) element not in Tibetan. Sanskrit might be different (possibly Uṣṇīṣa-related). Opening is pure mantra format. Title overlap is strong for '最勝', but additional '佛頂' suggests possible variant or hybrid text. Moderate confidence due to title expansion.
+  - Sanskrit: Karuṇāgra-nāma-dhāraṇī
+- **T21n1398** (佛說智光滅一切業障陀羅尼經) <-> CBETA #1009 (聖一切業障清淨陀羅尼)
+  - Confidence: 75%
+  - Signals: chinese_title_overlap
+  - Reason: T21n1398 is titled 佛說智光滅一切業障陀羅尼經, which explicitly contains 一切業障 ('all karma-obstacles'), matching the core concept of 聖一切業障清淨陀羅尼. Sanskrit correspondence to sarvakarmāvaraṇaviśodhanī is plausible. Standard dhāraṇī sūtra format with 如是我聞 opening. Length (1202 chars) appropriate. The semantic alignment on 'karma-obstacle purification' and presence of multiple dhāraṇī mantras suggest this is a legitimate parallel.
+  - Sanskrit: Ārya-sarvakarmāvaraṇaviśodhanī-nāma-dhāraṇī
+- **T18n0901** (陀羅尼集經) <-> CBETA #1027 (慎語陀羅尼)
+  - Confidence: 75%
+  - Signals: chinese_title_overlap
+  - Reason: Strong genre and structural match: Tibetan '慎語陀羅尼' and Taishō T18n0901 '陀羅尼集經' are both major dhāraṇī collections. The opening explicitly identifies it as a compiled work ('陀羅尼集經翻譯序' - translation preface to the dhāraṇī collection). The massive length (136451 characters) indicates a comprehensive collection that would contain individual dhāraṇīs like the 'careful speech' one. This appears to be the collection text itself containing the Tibetan entry's item.
+- **T18n0901** (陀羅尼集經) <-> CBETA #1049 (禮拜陀羅尼)
+  - Confidence: 75%
+  - Signals: chinese_title_overlap
+  - Reason: T18n0901 '陀羅尼集經' (Dhāraṇī Collection Sutra) is the primary dhāraṇī collection that would contain '禮拜陀羅尼' (worship dhāraṇī). The massive length (136451 characters) accommodates multiple dhāraṇī entries. Genre and Taishō volume 18 are appropriate. This is likely the canonical collection source.
+- **T18n0901** (陀羅尼集經) <-> CBETA #1073 (禮拜陀羅尼)
+  - Confidence: 75%
+  - Signals: chinese_title_overlap
+  - Reason: Title match: Both reference 'Dhāraṇī Collection'. Tibetan '禮拜陀羅尼' (Worship Dhāraṇī) could be a subsection of Chinese '陀羅尼集經' (Dhāraṇī Collection Sutra), which is a comprehensive 136,451 character compilation by Amoghavajra. The Tibetan entry under '陀羅尼集' section likely refers to individual entries within this larger canonical collection.
+- **T18n0862** (阿闍梨大曼荼攞灌頂儀軌) <-> CBETA #1269 (灌頂儀軌)
+  - Confidence: 75%
+  - Signals: chinese_title_substring
+  - Reason: T18n0862 '阿闍梨大曼荼攞灌頂儀軌' (Ācārya Great Mandala Initiation Ritual) and the Tibetan entry '灌頂儀軌' (Initiation Ritual) share direct semantic overlap on the core term 灌頂 (abhiṣeka/initiation). The Sanskrit title Dbaṅ skur-ba (abhiṣeka) matches. T18 is the correct volume. The text contains dhāraṇī sections and discusses the ritual procedures. Although the Taishō title is more specific (including 'ācārya' and 'great mandala'), both concern initiation ritual. The opening uses '爾時' formula appropriate for tantra texts.
+- **T20n1067** (攝無礙大悲心大陀羅尼經計一法中出無量義南方滿願補陀落海會五部諸尊等弘誓力方位及威儀形色執持三摩耶幖幟曼荼羅儀軌) <-> CBETA #1933 (曼荼羅儀軌)
+  - Confidence: 75%
+  - Signals: chinese_title_substring
+  - Reason: T20n1067 contains '曼荼羅儀軌' as a significant subtitle within a longer compassion-focused work. The opening explicitly discusses maṇḍala configuration (大曼荼羅相), ritual positions (威儀形色), and hand mudras (印相) for the five Buddha families. Sanskrit title Maṇḍalavidhi is compatible. Section 怛特羅部 matches T20 volume (tantra). Text demonstrates procedural content typical of a vidhi. Length (6891 chars) is appropriate for a detailed maṇḍala ritual text. Slightly lower confidence due to the maṇḍala section being embedded within a larger work rather than standalone.
+  - Sanskrit: Maṇḍalavidhi
+- **T20n1067** (攝無礙大悲心大陀羅尼經計一法中出無量義南方滿願補陀落海會五部諸尊等弘誓力方位及威儀形色執持三摩耶幖幟曼荼羅儀軌) <-> CBETA #1934 (曼荼羅儀軌)
+  - Confidence: 75%
+  - Signals: chinese_title_substring
+  - Reason: Identical match to Pair 1. T20n1067 demonstrates explicit maṇḍala ritual procedures (maṇḍalavidhi-nāma compatible). The text discusses maṇḍala configuration, five-buddha family arrangement (五部), and ritual implementation (海會諸尊). Despite being embedded within a larger compassion-sutra framework, the substantial maṇḍala-focused section provides sufficient content for the Maṇḍalavidhi-nāma classification. Length (6891 chars) and tantra-volume placement are appropriate.
+  - Sanskrit: Maṇḍalavidhi-nāma
+- **T19n0940** (佛說帝釋巖祕密成就儀軌) <-> CBETA #1979 (成就儀軌)
+  - Confidence: 75%
+  - Signals: chinese_title_substring
+  - Reason: T19n0940 '佛說帝釋巖祕密成就儀軌' contains 成就儀軌 explicitly. This is a shorter ritual manual (1743 chars) focused on achievement practices related to a sacred site. Includes dhāraṇī sections and tantric dialog format. While shorter than some parallels, the length is still consistent with a focused sādhana. Taishō vol. 19 is within broader tantric range.
+- **T18n0909** (金剛頂瑜伽護摩儀軌) <-> CBETA #2177 (護摩儀軌)
+  - Confidence: 75%
+  - Signals: chinese_title_substring
+  - Reason: Both catalogue entry and text concern homa/fire ritual (護摩儀軌/Hotṛvidhi). T0909 is '金剛頂瑜伽護摩儀軌' - a homa manual from the Vajraśekhara tradition. The text systematically describes five types of homa (息災/增益/降伏/鉤召/敬愛), which matches the comprehensive nature suggested by the generic Sanskrit title 'Hotṛvidhi'. The length (3852 chars) is appropriate for a detailed ritual manual. The section (怛特羅部) and content align well.
+  - Sanskrit: Hotṛvidhi
+- **T20n1152** (佛說佛母般若波羅蜜多大明觀想儀軌) <-> CBETA #2644 (般若波羅蜜多曼荼羅儀軌)
+  - Confidence: 75%
+  - Signals: chinese_title_overlap
+  - Reason: Both texts are prajñāpāramitā-related tantric visualization rituals (儀軌). T20n1152 uses standard sūtra opening (爾時世尊) and focuses on visualization (觀想) and dhāraṇī recitation for siddhi attainment. The Tibetan title 'dkyil-ḥkhor-gyi cho-ga' (maṇḍala ritual) aligns with visualization practices. Length (895 characters) is reasonable for a concise ritual manual. The prajñāpāramitā connection is explicit in both titles. Minor uncertainty due to title variance (大明觀想儀軌 vs 曼荼羅儀軌), but core content appears parallel.
+  - Sanskrit: Prajñāpāramitāmaṇḍalavidhi
+- **T21n1417** (佛說壞相金剛陀羅尼經) <-> CBETA #2681 (金剛摧破陀羅尼註釋)
+  - Confidence: 75%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics align: Tibetan 金剛摧破陀羅尼 matches Taishō 壞相金剛陀羅尼經 (摧破 and 壞相 both mean 'shattering/destroying'). Genre compatible: both tantra (怛特羅部, T21). Opening formula 如是我聞 appropriate for tantra sūtra. Length (1149 chars) reasonable for dhāraṇī sūtra with explanation. Note: Tibetan entry is for commentary (註釋/ṭīkā) but Taishō appears to be root text; possible that Taishō represents the base text being commented upon.
+  - Sanskrit: Vajravidāraṇā-nāma-dhāraṇīṭīkā
+- **T21n1416** (金剛摧碎陀羅尼) <-> CBETA #2684 (金剛摧破陀羅尼註釋)
+  - Confidence: 75%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics align: 摧破/摧碎 both translate Vajravidāraṇā. Sanskrit titles both reference Vajravidāraṇā-dhāraṇī with commentary/vrtti element. Both in 怛特羅部 (tantra section). T21 volume range appropriate for tantra. Opening shows pure dhāraṇī text structure consistent with catalogue description.
+  - Sanskrit: Vajravidāraṇā-nāma-dhāraṇīvṛtti
+- **T20n1087** (觀自在如意輪菩薩瑜伽法要) <-> CBETA #2758 (觀(自在)如意珠成就法)
+  - Confidence: 75%
+  - Signals: chinese_title_overlap
+  - Reason: Both texts concern Avalokiteśvara (Guanyin/Guan-zizai) practice. The Tibetan 'Spyan-ras-gzigs yid-bshin-nor-bu sgrub-thabs' (Avalokiteśvara Cintāmaṇi achievement ritual) aligns with the Chinese '觀自在如意輪菩薩瑜伽法要' (Avalokiteśvara Wish-fulfilling Wheel Yoga method). Both are tantric ritual texts with dhāraṇī. Length (3658 chars) is consistent with detailed sādhana. Genre matches (怛特羅部 = tantra, T20 vol = tantra range).
+- **T19n0959** (頂輪王大曼荼羅灌頂儀軌) <-> CBETA #2943 (灌頂)
+  - Confidence: 75%
+  - Signals: chinese_title_substring
+  - Reason: T19n0959 is 頂輪王大曼荼羅灌頂儀軌 (Crown Wheel King Great Maṇḍala Abhiṣeka Ritual), directly matching 灌頂 in title semantic. Genre correct (tantra, Vol. 19). Length (1916 chars) appropriate for ritual manual. Opening describes maṇḍala construction and visualization procedures typical of tantric abhiṣeka rituals.
+- **T18n0912** (建立曼荼羅護摩儀軌) <-> CBETA #3760 (曼荼羅儀軌)
+  - Confidence: 75%
+  - Signals: chinese_title_overlap
+  - Reason: T18n0912 '建立曼荼羅護摩儀軌' (Establishing Maṇḍala Fire-Ritual) directly addresses maṇḍala construction ritual. Contains maṇḍala preparation procedures, deity positioning, ritual protocol. Genre matches (怛特羅部, vol. 18 = tantra). Length appropriate.
+  - Sanskrit: Maṇḍalavidhi
+- **T39n1790** (入楞伽心玄義) <-> CBETA #4018 (聖入楞伽註)
+  - Confidence: 75%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan Ārya-laṁkāvatāravṛtti ('noble Laṅkāvatāra commentary') and T39n1790 (入楞伽心玄義 'esoteric profound meanings of entering Laṅkāvatāra') both address the Laṅkāvatāra-sūtra. 楞伽 = Laṅkā. T39n1790 is titled as 心玄義 (heart/essence profound meanings), a meta-exegetical work on the sūtra's interpretation, authored by Fazang (法藏, not directly a vṛtti but a xuanyi *commentary on meaning*). The opening discusses hermeneutical frameworks for understanding the Laṅkāvatāra. Both are interpretive works on the same sūtra. Minor genre variation (vṛtti vs. xuanyi) acceptable.
+  - Sanskrit: Ārya-laṁkāvatāravṛtti
+- **T31n1599** (中邊分別論) <-> CBETA #4032 (中邊分別註疏)
+  - Confidence: 75%
+  - Signals: chinese_title_overlap
+  - Reason: Tibetan entry is '中邊分別註疏' (commentary on Madhyāntavibhaṅga), T31n1599 is '中邊分別論' (the root text itself). The genre is 唯識部 (Yogācāra section) which matches. However, this is the root text, not the commentary. Sanskrit titles differ (Ṭīkā vs root). This is a partial match—same textual tradition but not the exact text described.
+  - Sanskrit: Madhyāntavibhaṅgaṭīkā
+- **T08n0248** (佛說五十頌聖般若波羅蜜經) <-> CBETA #4463 (薄伽梵母般若波羅蜜多聖七頌經)
+  - Confidence: 75%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics strong: T08n0248 '佛說五十頌聖般若波羅蜜經' (Fifty Verses on Sacred Prajñāpāramitā) vs Tibetan 'Seven Verses on Bhagavatī Prajñāpāramitā'. Both are concise verse-based Prajñāpāramitā texts. Opening formula 'thus have I heard' standard for sūtra. Genre compatible (雜部 = miscellaneous sūtras). Length 738 characters plausible for a verse work, though verse count differs (50 vs 7). Translator Shi Hu (宋 施護) known for Prajñāpāramitā translations. Content discusses Prajñāpāramitā practice with Subodhi.
+  - Sanskrit: Āryasaptaślokikābhagavatīprajñāpāramitā(-nāma)sūtra
+- **T08n0228** (佛說佛母出生三法藏般若波羅蜜多經) <-> CBETA #26 (聖般若波羅蜜多日藏大乘經)
+  - Confidence: 72%
+  - Signals: chinese_title_overlap
+  - Reason: T08n0228 titled 佛說佛母出生三法藏般若波羅蜜多經 is a major Prajñāpāramitā sūtra (123,902 characters) with full sūtra format (如是我聞, Buddha's discourse, assembly of arhats and bodhisattvas). While the Chinese title emphasizes 'three dharma treasures' rather than 'sun-womb,' the scale, genre, and Prajñāpāramitā focus align with the expected content of a major Prajñāpāramitā Mahāyāna sūtra. Sanskrit title not explicitly provided but textually consistent.
+  - Sanskrit: Ārya-prajñāpāramitā-sūryagarbha-mahāyānasūtra
+- **T08n0223** (摩訶般若波羅蜜經) <-> CBETA #27 (聖月藏般若波羅蜜多大乘經)
+  - Confidence: 72%
+  - Signals: chinese_title_overlap
+  - Reason: Taishō T08n0223 '摩訶般若波羅蜜經' is a major Prajñāpāramitā sūtra translated by Kumārajīva (後秦). While title does not explicitly reference 'candragarbha', this is the largest prajñāpāramitā sūtra in the canon. Tibetan entry may reference a specific compiled/rearranged version, but texts share core prajñāpāramitā doctrine. Length (285,968 chars) is consistent with major sūtra. Standard sūtra opening (如是我聞). However, specific 'candragarbha' reference is absent, reducing confidence.
+  - Sanskrit: Ārya-candragarbha-prajñāpāramitā-mahāyānasūtra
+- **T08n0239** (佛說能斷金剛般若波羅蜜多經) <-> CBETA #29 (聖般若波羅蜜多金剛手大乘經)
+  - Confidence: 72%
+  - Signals: chinese_title_overlap
+  - Reason: T08n0239 '佛說能斷金剛般若波羅蜜多經' (Diamond Prajñāpāramitā) mentions 'vajra' (金剛) and prajñāpāramitā. The opening '如是我聞' and closing with standard assembly response formula match sūtra conventions. However, this text features Maitreya (妙生) as interlocutor rather than Vajrapāṇi specifically, creating mild uncertainty about whether it is the exact 'vajrapāṇi' version.
+  - Sanskrit: Ārya-prajñāpāramitā-vajrapāṇi-mahāyānasūtra
+- **T21n1236** (聖無能勝金剛火陀羅尼經) <-> CBETA #760 (金剛雷嘴陀羅尼)
+  - Confidence: 72%
+  - Signals: chinese_title_overlap
+  - Reason: Title overlap: Tibetan 'Vajralohatuṇḍa' vs. Taishō '聖無能勝金剛火' (holy-invincible-vajra-fire). While not identical, '無能勝' (anuṣṭhāna/invincible) and '金剛火' (vajra-fire) are semantically related to Sanskrit Vajralohatuṇḍa (loha=fire/metal, tuṇḍa=mouth). Text length (1547 chars) appropriate for dhāraṇī with narrative. Opening follows proper dhāraṇī sūtra format. Both in tantra section of canon.
+  - Sanskrit: Vajralohatuṇḍa-nāma-dhāraṇī
+- **T21n1323** (除一切疾病陀羅尼經) <-> CBETA #793 (一切義成就陀羅尼)
+  - Confidence: 72%
+  - Signals: chinese_title_overlap
+  - Reason: Title proximity acceptable. Tibetan '一切義成就陀羅尼' (All-Meanings Accomplishment) could encompass disease removal as one benefit. T21n1323 '除一切疾病陀羅尼經' (All-Disease Removal dhāraṇī) addresses one specific application. Standard dhāraṇī sūtra format with opening 'thus have I heard'. However, semantic connection is indirect rather than direct equivalence.
+- **T20n1117** (佛說觀自在菩薩母陀羅尼經) <-> CBETA #910 (聖觀自在陀羅尼)
+  - Confidence: 72%
+  - Signals: chinese_title_overlap
+  - Reason: T20n1117 is 'Avalokiteśvara Mother dharani'. Tibetan Sanskrit 'Ārya-avalokiteśvara-nāma-dhāraṇī' matches the deity. 'Mother' (母) variant is common in translation lineages. Text length (849 chars) appropriate for dharani teaching. Opening 'thus have I heard' confirms sūtra format consistent with category.
+  - Sanskrit: Ārya-avalokiteśvara-nāma-dhāraṇī
+- **T20n1110** (佛說一髻尊陀羅尼經) <-> CBETA #922 (聖髻寶陀羅尼)
+  - Confidence: 72%
+  - Signals: chinese_title_overlap
+  - Reason: T20n1110 '佛說一髻尊陀羅尼經' (Eka-cūḍā-bhagavat-dhāraṇī/one-topknot deity dharaṇī) contains 'cūḍā' (topknot), matching Tibetan 'cūḍāmaṇi'. Opening features Avalokiteśvara teaching dharaṇī for protective/beneficial purposes. Length (5583 chars) appropriate for sūtra. While 'eka' (one) vs plain 'cūḍāmaṇi' differs slightly, the core concept aligns.
+  - Sanskrit: Ārya-cūḍāmaṇi-nāma-dhāraṇī
+- **T21n1336** (陀羅尼雜集) <-> CBETA #1048 (不忘陀羅尼)
+  - Confidence: 72%
+  - Signals: chinese_title_overlap
+  - Reason: Title plausibly matches: T21n1336 '陀羅尼雜集' (Dhāraṇī Miscellaneous Collection) could contain the '不忘陀羅尼' (non-forgetting dhāraṇī) entry. The large size (69261 characters) is consistent with a collection. Genre and Taishō volume (vol 21, tantra section) match dhāraṇī collection expectations. However, the specific entry title is not visible in the opening provided.
+- **T21n1336** (陀羅尼雜集) <-> CBETA #1049 (禮拜陀羅尼)
+  - Confidence: 72%
+  - Signals: chinese_title_overlap
+  - Reason: T21n1336 '陀羅尼雜集' (Dhāraṇī Miscellaneous Collection) is the likely container for '禮拜陀羅尼' (worship dhāraṇī). The large collection size accommodates multiple specific dhāraṇī entries. Genre and volume match dhāraṇī collection expectations. The specific entry title is likely a section within this larger work.
+- **T25n1516** (聖佛母般若波羅蜜多九頌精義論) <-> CBETA #1127 (般若波羅蜜多讚)
+  - Confidence: 72%
+  - Signals: chinese_title_overlap
+  - Reason: T25n1516 (聖佛母般若波羅蜜多九頌精義論) contains praise verses for Prajñāpāramitā (opening with 稽首般若波羅蜜) and appears to be based on nine stanzas with accompanying explanation. While labeled 論 (commentary), the structure combines stotra (praise) with exegesis, matching a stotra-nāma commentary hybrid. Sanskrit author Guṇaśrī (勝德赤衣菩薩) fits the pattern.
+  - Sanskrit: Prajñāpāramitāstotra
+- **T20n1197** (佛說文殊師利一百八名梵讚) <-> CBETA #2621 (聖,文殊師利名等誦一切曼荼羅讚)
+  - Confidence: 72%
+  - Signals: chinese_title_overlap
+  - Reason: Title alignment: Tibetan 'Mañjuśrīnāmasaṅgīti-sarvamaṇḍala-stotra' (praise of all maṇḍalas related to name-enumeration) matches T20n1197 'Mañjuśrī 108 Names Sanskrit Praise'. Both focus on enumeration of names (nāmasaṅgīti) and praise (stotra/vaṅ). Small text (943 chars) appropriate for stotra genre. Sanskrit and Tibetan titles align well.
+  - Sanskrit: Ārya-mañjuśrīnāmasaṅgītisarvamaṇḍala-stotra
+- **T21n1416** (金剛摧碎陀羅尼) <-> CBETA #2926 (金剛摧破陀羅尼成就法一勇者成就)
+  - Confidence: 72%
+  - Signals: chinese_title_overlap
+  - Reason: Title and Sanskrit semantics align: Both reference 'Vajravidāraṇī single-hero achievement' (金剛摧破 + 一勇者成就). Taishō dhāraṇī text (733 chars) could be the core dhāraṇī portion of the Tibetan 'single-hero achievement' ritual. Tantra section matches (T21). Short length appropriate for dhāraṇī-focused practice manual.
+  - Sanskrit: Vajravidāraṇā-nāma-dhāraṇyekavīra-sādhana-nāma
+- **T25n1516** (聖佛母般若波羅蜜多九頌精義論) <-> CBETA #3820 (薄伽梵母般若波羅蜜多心（經）註義燈)
+  - Confidence: 72%
+  - Signals: chinese_title_overlap
+  - Reason: T25n1516 is a śāstra/commentary work on prajñāpāramitā (2958 chars, moderate length). Title includes '聖佛母般若波羅蜜多' matching Tibetan '薄伽梵母般若波羅蜜多'. Sanskrit title parallels are both about prajñāpāramitā commentary. Genre (śāstra vol 25) fits 般若部. However, this work is specifically on 'nine verses' (九頌) rather than explicitly the Heart sutra commentary.
+  - Sanskrit: Bhagavatīprajñāpāramitāhṛdayaṭīkārtha-pradīpa-nāma
+- **T15n0654** (佛說入無分別法門經) <-> CBETA #4363 (法門)
+  - Confidence: 72%
+  - Signals: chinese_title_substring
+  - Reason: Both texts focus on 'dharma-gate' (法門). The Taishō text T15n0654 (入無分別法門經) discusses entering the non-discriminative dharma gate, which aligns with 'Dharmaparyāya' (dharma exposition). Both are sūtra-style texts with standard opening/closing formulas. However, the Tibetan title 'Chos-kyi rnam-graṅs' (dharma enumeration) is slightly more general than the specific 'non-discriminative gate' focus in the Chinese text.
+  - Sanskrit: [Dharmaparyāya]
+- **T21n1400** (佛說消除一切災障寶髻陀羅尼經) <-> CBETA #891 (聖障除陀羅尼)
+  - Confidence: 70%
+  - Signals: chinese_title_overlap
+  - Reason: Possible match: Tibetan '聖障除陀羅尼' (Āvaraṇaviṣkambhi, obstacle-removing) and T21n1400 '消除一切災障寶髻陀羅尼經' (Eliminating All Disasters and Obstacles Ratnacūḍa Dhāraṇī). Both focus on removing obstacles/disasters (障/災障). The 'Ratnacūḍa' (寶髻) may be an alternate name. Text mentions removing karma, providing protection—consistent with obstacle-removal genre. However, confidence reduced due to different specific names.
+  - Sanskrit: Ārya-āvaraṇaviṣkambhi-nāma-dhāraṇī
+- **T18n0901** (陀羅尼集經) <-> CBETA #1074 (摩尼琢陀羅尼)
+  - Confidence: 70%
+  - Signals: chinese_title_overlap
+  - Reason: Title match: Both reference comprehensive dhāraṇī collections. Tibetan '摩尼琢陀羅尼' under '陀羅尼集' section likely indicates this is an entry within the larger '陀羅尼集經' (T18n0901), Amoghavajra's 136,451-character compilation. The jewel dhāraṇī could be one of many contained within this canonical work.
+- **T20n1175** (金剛頂經瑜伽文殊師利菩薩供養儀軌) <-> CBETA #2612 (文殊師利金剛瓶儀軌)
+  - Confidence: 70%
+  - Signals: chinese_title_overlap
+  - Reason: Title semantics: Both concern Mañjuśrī with ritual/worship elements. Sanskrit 'Mañjuśrīvajraghaṭavidhi' (vajra-vase ritual) plausibly matches 'Mañjuśrī supply/worship ritual' in Chinese. T20n1175 is a concise tantra text (5884 chars) appropriate for a vidhi. Opening shows non-sutric ritualistic format. Both in tantra section (T20). Confidence moderate due to title variation.
+  - Sanskrit: Mañjuśrīvajraghaṭavidhi
+- **T20n1152** (佛說佛母般若波羅蜜多大明觀想儀軌) <-> CBETA #2645 (般若波羅蜜多曼荼羅儀軌)
+  - Confidence: 70%
+  - Signals: chinese_title_overlap
+  - Reason: T20n1152 (佛說佛母般若波羅蜜多大明觀想儀軌) appears more suitable for the Prajñāpāramitāmaṇḍalavidhi-nāma entry than pair 2's text. Both explicitly combine prajñāpāramitā with ritual visualization (maṇḍala/觀想). The text uses standard sūtra framing (爾時世尊) and focuses on visualization methods for attaining siddhi. Length and tantric genre match expectations. The -nāma suffix in Sanskrit suggests a classified/named ritual text, which T20n1152 represents. However, minor uncertainty due to title variation (大明觀想 vs simple 儀軌).
+  - Sanskrit: Prajñāpāramitāmaṇḍalavidhi-nāma
+- **T21n1416** (金剛摧碎陀羅尼) <-> CBETA #2927 (聖金剛摧破陀羅尼供物儀軌次第)
+  - Confidence: 70%
+  - Signals: chinese_title_overlap
+  - Reason: Title and Sanskrit semantics align: Both address 'Vajravidāraṇī offering/bali ritual procedure' (供物儀軌/bali-vidhi). Taishō text contains full dhāraṇī with ritual framework. Tantra section (怛特羅部/T21) appropriate. Text length (733 chars) plausible for combined dhāraṇī + offering procedure instructions.
+  - Sanskrit: Ārya-vajravidāraṇā-nāma-dhāraṇībali-vidhikrama-nāma
+- **T08n0252** (普遍智藏般若波羅蜜多心經) <-> CBETA #3820 (薄伽梵母般若波羅蜜多心（經）註義燈)
+  - Confidence: 70%
+  - Signals: chinese_title_overlap
+  - Reason: T08n0252 is '普遍智藏般若波羅蜜多心經' (648 chars), a Heart Sutra variant with proper sūtra opening (如是我聞). Chinese title contains '般若波羅蜜多心經' matching Tibetan substring. Includes dhāraṇī sections typical of Heart Sutra. However, Tibetan entry describes commentary, while this is independent sutra text.
+  - Sanskrit: Bhagavatīprajñāpāramitāhṛdayaṭīkārtha-pradīpa-nāma
+- **T18n0908** (金剛頂瑜伽護摩儀軌) <-> CBETA #2177 (護摩儀軌)
+  - Confidence: 68%
+  - Signals: chinese_title_substring
+  - Reason: Tibetan '護摩儀軌' (homa ritual) appears as substring in Taishō '金剛頂瑜伽護摩儀軌' (Vajraśekhara yoga homa ritual). Both are tantra-section texts covering homa rituals. While Tibetan Sanskrit 'Hotṛvidhi' is generic and Taishō specifies Vajraśekhara, the homa ritual content and context align. This may represent a broader to narrower relationship.
+  - Sanskrit: Hotṛvidhi
+- **T21n1259** (摩利支天一印法) <-> CBETA #3533 (摩利支天成就法)
+  - Confidence: 68%
+  - Signals: chinese_title_overlap
+  - Reason: Generic title match: Tibetan 'Mārīcīsādhana' is a broad category. Chinese T21n1259 '摩利支天一印法' is a Mārīcī practice text, though more limited in scope (single-mudra focus). The Chinese text represents a partial or concentrated sādhana component rather than full system, but falls under generic Mārīcī sādhana umbrella. Modest confidence due to scope difference.
+  - Sanskrit: Mārīcīsādhana
+- **T08n0251** (般若波羅蜜多心經) <-> CBETA #3820 (薄伽梵母般若波羅蜜多心（經）註義燈)
+  - Confidence: 68%
+  - Signals: chinese_title_substring
+  - Reason: T08n0251 is the Heart Sutra (般若波羅蜜多心經, 1068 chars) with standard sūtra opening and dhāraṇī sections. Matches substring of Tibetan title (般若波羅蜜多心經). However, Tibetan entry indicates commentary (註義燈/ṭīkā), while this is the root text itself, not commentary. Textually related but different genre.
+  - Sanskrit: Bhagavatīprajñāpāramitāhṛdayaṭīkārtha-pradīpa-nāma
+- **T08n0229** (佛說佛母寶德藏般若波羅蜜經) <-> CBETA #27 (聖月藏般若波羅蜜多大乘經)
+  - Confidence: 65%
+  - Signals: chinese_title_overlap
+  - Reason: Taishō T08n0229 '佛說佛母寶德藏般若波羅蜜經' contains '寶德藏' (treasure/garbha element) and explicitly labels itself as prajñāpāramitā mahāyāna sūtra. While title uses 'bao-de-zang' (treasure-virtue-garbha) rather than 'candragarbha' (moon-garbha), both reference garbha/womb tradition texts. Length (9,106 chars) appropriate for mahāyāna sūtra. Opening formula present. However, 'candragarbha' vs 'bao-de-zang' mismatch reduces confidence.
+  - Sanskrit: Ārya-candragarbha-prajñāpāramitā-mahāyānasūtra
+- **T08n0258** (佛說聖佛母小字般若波羅蜜多經) <-> CBETA #3820 (薄伽梵母般若波羅蜜多心（經）註義燈)
+  - Confidence: 65%
+  - Signals: chinese_title_overlap
+  - Reason: T08n0258 is '聖佛母小字般若波羅蜜多經' (1276 chars) with sūtra opening (如是我聞) and dhāraṇī sections. Title contains '聖佛母般若波羅蜜多' closely matching Tibetan '薄伽梵母般若波羅蜜多'. Genre matches 般若部. However, Tibetan indicates commentary (註義燈) while this is independent sutra; this is a variant/abbreviated Heart Sutra rather than commentary.
+  - Sanskrit: Bhagavatīprajñāpāramitāhṛdayaṭīkārtha-pradīpa-nāma
+
+## Uncertain Cases
+
+- T08n0242 (佛說遍照般若波羅蜜經) <-> CBETA #29 (聖般若波羅蜜多金剛手大乘經)
+  - Verdict: UNCERTAIN
+  - Reason: The Tibetan entry is 'Vajrapāṇi Prajñāpāramitā' while T08n0242 is 'Universal Illumination Prajñāpāramitā Sūtra' (遍照般若波羅蜜經). The opening describes a tantric setting with vajra elements and mentions Vajrapāṇi at the end. This could be the same text with different title emphasis (Vajrapāṇi vs. universal illumination), or related texts. More evidence needed.
+- T02n0134 (佛說長者子六過出家經) <-> CBETA #301 (出家經)
+  - Verdict: UNCERTAIN
+  - Reason: Title partially matches: Abhiniṣkramaṇa-sūtra (出家經) and the Taishō text about '長者子六過出家' both concern going forth/ordination. The text describes Saṅghārāma's six attempts at ordination with proper sūtra opening. However, the specific focus on 'six times' (六過) is not clearly indicated in the Sanskrit title. Possible match but uncertain if same recension.
+- T20n1185A (佛說文殊師利法寶藏陀羅尼經) <-> CBETA #547 (文殊師利誓願陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: No response
+- T20n1185B (文殊師利寶藏陀羅尼經) <-> CBETA #549 (聖文殊師利尊智慧覺增上陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: No response
+- T21n1413 (佛說尊勝大明王經) <-> CBETA #567 (聖明咒大王母有勝)
+  - Verdict: UNCERTAIN
+  - Reason: No response
+- T19n0974F (佛頂尊勝陀羅尼別法) <-> CBETA #568 (聖有勝陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: No response
+- T19n0974D (佛頂尊勝陀羅尼注義) <-> CBETA #568 (聖有勝陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: No response
+- T20n1110 (佛說一髻尊陀羅尼經) <-> CBETA #574 (聖髻寶陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: No response
+- T19n0974B (佛頂尊勝陀羅尼) <-> CBETA #600 (熾頂髻陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: No response
+- T19n0974A (最勝佛頂陀羅尼經) <-> CBETA #600 (熾頂髻陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: No response
+- T21n1409 (佛說聖最勝陀羅尼經) <-> CBETA #603 (最勝大悲陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: No response
+- T21n1344 (金剛上味陀羅尼經) <-> CBETA #605 (聖金剛怖畏陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: No response
+- T21n1408 (佛說最上意陀羅尼經) <-> CBETA #652 (聖勝者上師陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: Tibetan 'Rgyal-baḥi bla-ma' (勝者上師 = Victorious Teacher/Master) vs T1408 最上意 (Supreme Intent). Possible semantic connection if 最上 represents 勝者 (victorious/supreme) and 意 relates to mind/teacher, but the match is not clear. Both are dhāraṇī texts of similar length (2178 chars). Need more evidence to confirm parallel.
+- T20n1095 (不空羂索呪心經) <-> CBETA #689 (聖不空羂索儀軌王儀軌)
+  - Verdict: UNCERTAIN
+  - Reason: Sanskrit 'Amoghapāśa-kalparāja-vidhi' (不空羂索儀軌王儀軌 = Amoghapāśa Ritual-King Ritual) vs T1095 不空羂索呪心經 (Amoghapāśa Mantra-Heart Sūtra). Same deity (Amoghapāśa) but different focus: catalogue indicates ritual manual (儀軌/vidhi) while T1095 emphasizes mantra-heart (呪心). Length moderate (3947 chars). Could be abbreviated version but uncertain without clearer title match.
+- T20n1099 (佛說聖觀自在菩薩不空王祕密心陀羅尼經) <-> CBETA #696 (聖觀自在陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: Uncertain match. Tibetan has Sanskrit 'Nīlakaṇṭha-dhāraṇī', but T1099 is '聖觀自在菩薩不空王祕密心陀羅尼' (Secret Heart Dhāraṇī of Noble Avalokiteśvara Amoghapāśa King). While both are Avalokiteśvara texts, T1099's emphasis on 'Amoghapāśa' (不空王) and 'secret heart' suggests a different text than Nīlakaṇṭha. However, Tibetan catalogues sometimes group related texts under variant titles. Opening at Potalaka with similar assembly structure increases uncertainty.
+- T21n1403 (佛說如意摩尼陀羅尼經) <-> CBETA #774 (摩尼琢磨陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: Uncertain. Tibetan 'Rin-po-che bdar-baḥi gzuṅs' means 'Jewel-polishing dhāraṇī', T1403 is '如意摩尼陀羅尼' (Wish-fulfilling jewel dhāraṇī). Both involve jewel/maṇi imagery (摩尼 = maṇi, 琢磨 = polishing, bdar-ba = polishing). However, T1403 focuses on protection from thunder/lightning with lists of thunder names by direction, while 'jewel polishing' suggests different ritual purpose. Semantic overlap exists but ritual context appears different.
+- T21n1336 (陀羅尼雜集) <-> CBETA #952 (夢見陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: The Tibetan entry 'Dream Vision Dhāraṇī' could potentially be found within T21n1336 'Dhāraṇī Miscellaneous Collection' (69,261 characters). Both are collections of dhāraṇīs, but without being able to search the content of T21n1336 for a dream-related dhāraṇī, cannot confirm if this specific text is included.
+- T21n1345 (金剛場陀羅尼經) <-> CBETA #953 (金剛手夜叉主陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: The Tibetan entry 'Vajrapāṇi Yakṣa Lord Dhāraṇī' and T21n1345 'Vajra Arena Dhāraṇī Sūtra' both involve Vajrapāṇi/vajra themes. The Chinese text opens with proper sūtra formula, has appropriate length (6,189 chars) for a single dhāraṇī text, and mentions many deities including yakṣas. However, title semantics don't clearly match - 'vajra arena/field' (金剛場) vs 'Vajrapāṇi yakṣa lord' (金剛手夜叉主).
+- T21n1344 (金剛上味陀羅尼經) <-> CBETA #953 (金剛手夜叉主陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: Same Tibetan entry as Pair 3 but matched with T21n1344 'Vajra Supreme Taste Dhāraṇī Sūtra'. Similar situation: both texts involve vajra themes, proper sūtra structure, similar length (6,079 chars), but title semantics differ - 'supreme taste' (上味) doesn't clearly correspond to 'Vajrapāṇi yakṣa lord'. Without Sanskrit title for comparison, cannot definitively confirm or deny.
+- T18n0901 (陀羅尼集經) <-> CBETA #1034 (美音陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: T18n0901 '陀羅尼集經' is a very large dhāraṇī collection (136,451 characters) translated by Atikūṭa. The Tibetan entry 'Mgrin-pa sñan-paḥi gzuṅs' (美音陀羅尼 = Beautiful Voice Dhāraṇī) could potentially be one section within this comprehensive collection. However, without access to a detailed table of contents or the ability to search the full text for this specific dhāraṇī, it's uncertain whether this particular dhāraṇī is included. The collection's comprehensive nature makes inclusion possible but not confirmable.
+- T21n1397 (智炬陀羅尼經) <-> CBETA #1037 (智慧生起陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: Tibetan Prajñāvardhanī (wisdom-increasing) has semantic overlap with 智炬 (wisdom-torch), both relating to wisdom/prajñā. However, T1397 is a full sūtra (如是我聞, multiple Buddhas assembly) not just a dhāraṇī, and 'torch/jvala' vs 'increasing/vardhanī' are different concepts. Length (909 chars) suggests more elaborate text than simple dhāraṇī.
+- T21n1397 (智炬陀羅尼經) <-> CBETA #1038 (智慧生起陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: Duplicate of Pair 1 evaluation. Same semantic overlap issues: 智炬 relates to wisdom but T1397 is elaborate sūtra not simple dhāraṇī. 'Torch' vs 'increasing' are different Sanskrit terms.
+- T21n1397 (智炬陀羅尼經) <-> CBETA #1039 (智慧生起陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: Duplicate of Pairs 1 and 6. CBETA #1039 matches same T1397. Same reasoning: semantic connection through prajñā/智 but structural and terminological differences remain problematic.
+- T21n1336 (陀羅尼雜集) <-> CBETA #1069 (禮拜陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: Tibetan title 'Phyag-bya-baḥi gzuṅs' (禮拜陀羅尼 = 'Worship/Prostration dhāraṇī') suggests a specific dhāraṇī text focused on prostration practices. T21n1336 陀羅尼雜集 is a large compilation (69,261 chars) of miscellaneous dhāraṇī texts from multiple sources. While such a compilation could contain a prostration dhāraṇī, the generic nature of the compilation and lack of specific title match makes definitive identification impossible without examining internal contents.
+- T18n0901 (陀羅尼集經) <-> CBETA #1069 (禮拜陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: Same Tibetan entry as Pair 0. T18n0901 陀羅尼集經 is an even larger compilation (136,451 chars) translated by Amoghavajra, containing extensive dhāraṇī materials with ritual instructions. The substantial size and comprehensive nature means it could plausibly contain a prostration dhāraṇī section, but without examining internal organization, cannot confirm the specific Tibetan text is present. Both T1336 and T0901 are possible candidates.
+- T21n1336 (陀羅尼雜集) <-> CBETA #1070 (讚嘆陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: Tibetan 'Bstod-paḥi gzuṅs' (讚嘆陀羅尼 = 'Praise dhāraṇī') indicates a dhāraṇī focused on praise/eulogy. T21n1336 is the same miscellaneous dhāraṇī compilation as Pairs 0-1. While compilations often include praise-focused dhāraṇīs, the generic title and lack of specific correspondence prevent definitive matching. Would require internal content analysis.
+- T18n0901 (陀羅尼集經) <-> CBETA #1070 (讚嘆陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: Same Tibetan entry as Pair 2 (Praise dhāraṇī). T18n0901 is the large Amoghavajra compilation. Given the comprehensive nature of this collection and its inclusion of various dhāraṇī types with ritual contexts, it could contain a praise dhāraṇī, but specific identification impossible without detailed content examination.
+- T21n1336 (陀羅尼雜集) <-> CBETA #1073 (禮拜陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: This is CBETA #1073, another instance of 'Phyag-bya-baḥi gzuṅs' (Prostration dhāraṇī), paired again with T21n1336. Same assessment as Pair 0: the compilation nature makes it possible but unconfirmable without internal analysis. The repetition of catalogue numbers (1069, 1073) with same titles suggests possible catalogue duplication or variant manuscript entries.
+- T21n1336 (陀羅尼雜集) <-> CBETA #1074 (摩尼琢陀羅尼)
+  - Verdict: UNCERTAIN
+  - Reason: Tibetan 'Rin-po-che bdar-baḥi gzuṅs' (Jewel-polishing dhāraṇī) vs T21n1336 (miscellaneous dhāraṇī compilation). The specific technical nature of 'jewel-polishing' seems like an unusual dhāraṇī topic. While T1336 contains many diverse dhāraṇīs, this particular subject seems less typical. Lower confidence than other pairs with this compilation.
+- T18n0909 (金剛頂瑜伽護摩儀軌) <-> CBETA #1556 (吉祥金剛瑜祇母護摩儀軌)
+  - Verdict: UNCERTAIN
+  - Reason: Possible but uncertain match. Tibetan entry: 吉祥金剛瑜祇母護摩儀軌 (Śrī-vajrayoginī-homa-vidhi). Taishō: 金剛頂瑜伽護摩儀軌 (Vajraśekhara Yoga Homa Vidhi). Both involve vajra yoga homa rituals in tantric context. However, Vajrayoginī (瑜祇母) and Vajraśekhara/Vajra Peak (金剛頂) are different traditions within tantric Buddhism. The similar genre and ritual type create ambiguity, but the deity/tradition focus differs.
+- T18n0859 (供養儀式) <-> CBETA #1908 (最後供養儀軌)
+  - Verdict: UNCERTAIN
+  - Reason: Tibetan title 'Antamahasvidhi' (最後供養儀軌 = 'final offering ritual') vs Chinese '供養儀式' (offering ritual). The Sanskrit 'Antamaha' suggests a 'final' or 'ultimate' offering, while T0859 appears to be a general offering manual from the Mahāvairocana tradition. The Chinese text opens with choosing ritual sites and establishing procedures, which could be compatible, but lacks clear indication of being specifically about 'final' offerings. Length (2282 chars) is reasonable for a ritual manual.
+- T18n0912 (建立曼荼羅護摩儀軌) <-> CBETA #2177 (護摩儀軌)
+  - Verdict: UNCERTAIN
+  - Reason: Same Tibetan entry as Pair 4 (護摩儀軌/Hotṛvidhi) but matched with T0912 '建立曼荼羅護摩儀軌'. This text combines maṇḍala establishment and homa rituals. While it does contain homa content, it's more focused on maṇḍala construction in the opening sections. The combined nature makes it less likely to be a pure 'Hotṛvidhi' text, though it could be a version that integrated both practices. Length (4754 chars) is substantial.
+- T20n1191 (大方廣菩薩藏文殊師利根本儀軌經) <-> CBETA #2572 (聖,文殊師利名等誦儀軌經會)
+  - Verdict: UNCERTAIN
+  - Reason: Tibetan title 'Ārya-mañjuśrīnāmasaṅgītividhisūtra-piṇḍita' suggests a ritual manual (vidhi) combined with the Mañjuśrīnāmasaṃgīti text. T1191 '大方廣菩薩藏文殊師利根本儀軌經' is a very long text (87,170 chars) that appears to be a comprehensive Mañjuśrī tantra with ritual instructions. The length and comprehensive nature could encompass the nāmasaṃgīti with ritual instructions, but the Chinese title doesn't explicitly mention 'nāmasaṃgīti'. Need more evidence to confirm.
+- T20n1191 (大方廣菩薩藏文殊師利根本儀軌經) <-> CBETA #2592 (聖,文殊師利名等誦儀軌經會)
+  - Verdict: UNCERTAIN
+  - Reason: Identical to Pair 7 - same Tibetan entry (CBETA #2592) matched with same Chinese text T1191. The assessment remains the same: possible match given the comprehensive nature of T1191 and its Mañjuśrī focus, but the lack of explicit 'nāmasaṃgīti' reference in the Chinese title creates uncertainty. The 'piṇḍita' (會/compiled) in the Sanskrit title suggests this is a composite text, which could fit T1191's comprehensive character.
+- T24n1459 (根本說一切有部毘奈耶頌) <-> CBETA #4127 (聖根本說一切有部沙彌頌)
+  - Verdict: UNCERTAIN
+  - Reason: Tibetan entry is śrāmaṇera verses (沙彌頌/śrāmaṇerakārikā), and T24n1459 is a vinaya verse collection (毘奈耶頌) that includes śrāmaṇera material. However, T24n1459 appears broader in scope. Could be a partial match if the śrāmaṇera verses are embedded within the larger collection.
