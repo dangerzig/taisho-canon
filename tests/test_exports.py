@@ -426,27 +426,27 @@ class TestHeartSutra:
 # ---- 11. Maharatnakuta (T11n0310) spot check ----
 
 class TestMaharatnakuta:
-    def test_json_has_54_tohoku(self, json_data):
-        """T11n0310 should have 54 Tohoku numbers in JSON."""
+    def test_json_has_at_least_54_tohoku(self, json_data):
+        """T11n0310 should have at least 54 Tohoku numbers in JSON (base catalog sources)."""
         parallels = json_data["tibetan_parallels"]["T11n0310"]
         tohs = [p for p in parallels if p.startswith("Toh ")]
-        assert len(tohs) == 54
+        assert len(tohs) >= 54
 
-    def test_csv_has_54_tohoku(self, csv_rows_by_taisho):
-        """T11n0310 should have 54 Tohoku rows in CSV."""
+    def test_csv_has_at_least_54_tohoku(self, csv_rows_by_taisho):
+        """T11n0310 should have at least 54 Tohoku rows in CSV."""
         rows = csv_rows_by_taisho["T11n0310"]
         tohs = {r["tohoku"] for r in rows if r["tohoku"]}
-        assert len(tohs) == 54
+        assert len(tohs) >= 54
 
-    def test_tei_has_54_tohoku(self, tei_entry_map):
-        """T11n0310 should have 54 Tohoku links in TEI."""
+    def test_tei_has_at_least_54_tohoku(self, tei_entry_map):
+        """T11n0310 should have at least 54 Tohoku links in TEI."""
         entry = tei_entry_map["T11n0310"]
         tei_tohs = set()
         for link in entry.findall(f"{{{TEI_NS}}}link[@type='tibetan']"):
             target = link.get("target", "")
             if target.startswith("Toh_"):
                 tei_tohs.add(target)
-        assert len(tei_tohs) == 54
+        assert len(tei_tohs) >= 54
 
     def test_all_three_formats_agree(self, json_data, csv_rows_by_taisho, tei_entry_map):
         """T11n0310 Tohoku sets should be identical across JSON, CSV, and TEI."""

@@ -1,0 +1,69 @@
+{
+  "description": "Known catalog errors identified during concordance construction (Appendix A of the paper). Each error records an erroneous Taisho-to-Tohoku link that appears in one or more sources due to catalog error propagation. The originating_source identifies where the error originated; downstream sources that copied it are flagged automatically during concordance building.",
+  "errors": [
+    {
+      "taisho_id": "T15n0586",
+      "erroneous_toh": "Toh 16",
+      "correct_toh": "Toh 160",
+      "originating_source": "lancaster",
+      "error_type": "trailing_zero",
+      "note": "Lancaster drops trailing zero: Toh 160 → Toh 16. Propagated to Muller, CBETA Skt, existing."
+    },
+    {
+      "taisho_id": "T15n0650",
+      "erroneous_toh": "Toh 18",
+      "correct_toh": "Toh 180",
+      "originating_source": "lancaster",
+      "error_type": "trailing_zero",
+      "note": "Lancaster drops trailing zero: Toh 180 → Toh 18. Propagated to Muller, CBETA Skt."
+    },
+    {
+      "taisho_id": "T25n1518",
+      "erroneous_toh": "Toh 3908",
+      "correct_toh": "Toh 3809",
+      "originating_source": "lancaster",
+      "error_type": "transposition",
+      "note": "Lancaster transposes digits: Toh 3809 → Toh 3908. Propagated to Muller."
+    },
+    {
+      "taisho_id": "T09n0278",
+      "erroneous_toh": "Toh 0",
+      "correct_toh": null,
+      "originating_source": "lancaster",
+      "error_type": "spurious_zero",
+      "note": "Lancaster records Toh 0, which is not a valid Tohoku number. No correct Tohoku assignment is known."
+    },
+    {
+      "taisho_id": "T13n0397",
+      "erroneous_toh": "Toh 0",
+      "correct_toh": null,
+      "originating_source": "lancaster",
+      "error_type": "spurious_zero",
+      "note": "Lancaster records Toh 0, which is not a valid Tohoku number. No correct Tohoku assignment is known."
+    },
+    {
+      "taisho_id": "T31n1612",
+      "erroneous_toh": "Toh 4066",
+      "correct_toh": "Toh 4059",
+      "originating_source": "cbeta_sanskrit",
+      "error_type": "swap",
+      "note": "CBETA Jinglu Sanskrit swaps Toh 4059 and Toh 4066 between T31n1612 and T31n1613."
+    },
+    {
+      "taisho_id": "T31n1613",
+      "erroneous_toh": "Toh 4059",
+      "correct_toh": "Toh 4066",
+      "originating_source": "cbeta_sanskrit",
+      "error_type": "swap",
+      "note": "CBETA Jinglu Sanskrit swaps Toh 4059 and Toh 4066 between T31n1612 and T31n1613."
+    },
+    {
+      "taisho_id": "T19n0945",
+      "erroneous_toh": "Toh 237",
+      "correct_toh": "Toh 236",
+      "originating_source": "rkts",
+      "error_type": "adjacent_entry",
+      "note": "rKTs assigns Toh 237 instead of the correct Toh 236, an adjacent catalog entry error."
+    }
+  ]
+}

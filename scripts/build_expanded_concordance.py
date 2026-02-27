@@ -67,6 +67,8 @@ SANSKRIT_MATCHES_PATH = RESULTS_DIR / "sanskrit_title_matches.json"
 TAISHO_84000_REFS_PATH = RESULTS_DIR / "84000_taisho_refs.json"
 SCHOLARLY_DIR = BASE_DIR / "data" / "scholarly_citations"
 OTANI_CONCORDANCE_PATH = RESULTS_DIR / "tohoku_otani_concordance.json"
+MITRA_PATH = RESULTS_DIR / "mitra_taisho_tohoku.json"
+KNOWN_ERRORS_PATH = BASE_DIR / "data" / "known_errors.json"
 
 # Output
 OUTPUT_PATH = RESULTS_DIR / "cross_reference_expanded.json"
@@ -635,6 +637,49 @@ def merge_sources():
     else:
         print(f"  No scholarly citations directory found at {SCHOLARLY_DIR}")
 
+    # --- Source 11: MITRA parallel corpus (Nehrdich & Keutzer 2025) ---
+    # For high precision, only add MITRA links to the active concordance
+    # when they are "strong" (>=100 aligned sentences, confidence 0.9).
+    # Moderate links (20-99 sentences) are recorded in provenance for
+    # documentation but only appear in the active tibetan set if a catalog
+    # source has independently added the same link.
+    MITRA_STRONG_THRESHOLD = 0.9
+    print("\n11. Loading MITRA parallel corpus...")
+    mitra_data = load_json(MITRA_PATH)
+    if mitra_data:
+        new_from_mitra = 0
+        mitra_strong = 0
+        mitra_moderate = 0
+        mitra_entries = mitra_data.get("entries", {})
+        for entry_id, entry in mitra_entries.items():
+            text_id = resolve_taisho_id(entry["taisho"])
+            if not text_id or text_id not in corpus_ids:
+                continue
+            toh_id = entry["tohoku"]
+            confidence = entry.get("confidence", 0)
+            # Always record in provenance
+            provenance.add(
+                text_id, toh_id, "mitra",
+                confidence=confidence,
+                note=entry.get("note"),
+            )
+            concordance[text_id]["sources"].add("mitra")
+            # Only add to active tibetan set if strong
+            if confidence >= MITRA_STRONG_THRESHOLD:
+                mitra_strong += 1
+                if toh_id not in concordance[text_id]["tibetan"]:
+                    new_from_mitra += 1
+                concordance[text_id]["tibetan"].add(toh_id)
+            else:
+                mitra_moderate += 1
+                # Moderate links: don't add to tibetan set (but if a
+                # catalog source already added this toh_id, it stays)
+        print(f"  Loaded {len(mitra_entries)} MITRA pairs: "
+              f"{mitra_strong} strong, {mitra_moderate} moderate "
+              f"({new_from_mitra} new Toh mappings from strong links)")
+    else:
+        print(f"  No MITRA data found at {MITRA_PATH}")
+
     # --- Post-processing: Tohoku-to-Otani concordance ---
     # After all Tohoku numbers have been collected from all sources,
     # look up corresponding Otani (Peking edition) numbers from the
@@ -816,12 +861,91 @@ def print_provenance_stats(provenance):
         print(f"    {source}: {count} links")
 
 
+def flag_known_errors(concordance, provenance):
+    """Flag known catalog errors in provenance and remove from tibetan_parallels.
+
+    Loads data/known_errors.json. For each error:
+    - Marks all attestations on the erroneous (taisho_id, toh) link with
+      "flagged_error": true and optionally "correct_toh".
+    - Removes the erroneous Toh from the text's tibetan_parallels set.
+
+    Returns a list of error summary dicts for inclusion in the output JSON.
+    """
+    errors_data = load_json(KNOWN_ERRORS_PATH)
+    if not errors_data:
+        print("  No known_errors.json found, skipping error flagging.")
+        return []
+
+    errors = errors_data.get("errors", [])
+    summary = []
+
+    for err in errors:
+        taisho_id = err["taisho_id"]
+        erroneous_toh = err["erroneous_toh"]
+        correct_toh = err.get("correct_toh")
+        note = err.get("note", "")
+
+        # Flag attestations in provenance
+        attestations = provenance.get(taisho_id, erroneous_toh)
+        flagged_count = 0
+        for att in attestations:
+            att["flagged_error"] = True
+            if correct_toh:
+                att["correct_toh"] = correct_toh
+            flagged_count += 1
+
+        # Remove erroneous Toh from the concordance's tibetan set
+        removed = False
+        if taisho_id in concordance:
+            tib = concordance[taisho_id]["tibetan"]
+            if erroneous_toh in tib:
+                tib.discard(erroneous_toh)
+                removed = True
+
+        # Check that correct Toh is present (if applicable)
+        correct_present = False
+        if correct_toh and taisho_id in concordance:
+            correct_present = correct_toh in concordance[taisho_id]["tibetan"]
+
+        entry = {
+            "taisho_id": taisho_id,
+            "erroneous_toh": erroneous_toh,
+            "correct_toh": correct_toh,
+            "error_type": err.get("error_type", "unknown"),
+            "flagged_attestations": flagged_count,
+            "removed_from_parallels": removed,
+            "correct_toh_present": correct_present,
+            "note": note,
+        }
+        summary.append(entry)
+
+        status = "FLAGGED" if flagged_count > 0 else "NO ATTESTATIONS"
+        correct_str = f" (correct {correct_toh} "
+        correct_str += "present)" if correct_present else "MISSING)"
+        if not correct_toh:
+            correct_str = " (no correct Toh known)"
+        print(f"  {status}: {taisho_id} {erroneous_toh} -> "
+              f"{flagged_count} attestations flagged, "
+              f"removed={removed}{correct_str}")
+
+    return summary
+
+
 def main():
     print("Building expanded cross-canon concordance (schema v2)")
     print("=" * 50)
 
     concordance, corpus_ids, provenance = merge_sources()
+
+    # Flag known catalog errors before building output
+    print("\n  Post-processing: Flagging known catalog errors...")
+    error_summary = flag_known_errors(concordance, provenance)
+
     output = build_output(concordance, corpus_ids, provenance)
+
+    # Add known_errors summary to output
+    if error_summary:
+        output["known_errors"] = error_summary
 
     print(f"\n{'='*50}")
     print("EXPANDED CONCORDANCE SUMMARY")
@@ -842,6 +966,8 @@ def main():
     print(f"  Schema version: {SCHEMA_VERSION}")
     print(f"  link_provenance entries: "
           f"{len(output['link_provenance'])} texts")
+    if error_summary:
+        print(f"  known_errors flagged: {len(error_summary)}")
 
 
 if __name__ == "__main__":

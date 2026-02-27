@@ -1,0 +1,712 @@
+{
+  "source": "li2021",
+  "citation": "Li Channa, 'A Survey of Tibetan S\u016btras Translated from Chinese, as Recorded in Early Tibetan Catalogues,' Revue d'Etudes Tib\u00e9taines 60 (2021): 174-219.",
+  "url": "https://d1i1jdw69xsqx0.cloudfront.net/digitalhimalaya/collections/journals/ret/pdf/ret_60_07.pdf",
+  "notes": "Identifications extracted from Table 1 (36 entries), Appendix I (21 entries), Appendix II (29 entries), and footnotes. Taisho numbers given as bare T### where the paper does not specify volume numbers; CBETA-format T##n#### used where volume is determinable. Chinese source identifications marked with '?' by Li are flagged in notes.",
+  "identifications": [
+    {
+      "taisho": "T07n0374",
+      "tohoku": "D.119",
+      "chinese_title": "Da banniepan jing \u5927\u822c\u6d85\u69c3\u7d93",
+      "tibetan_title": "Yong su mya ngan las 'das pa chen po",
+      "sanskrit_title": "Mah\u0101parinirv\u0101\u1e47as\u016btra",
+      "notes": "Table 1 no. 1. 56 bp (Tibetan calculation) or 42 bp (Chinese fascicle count). Also in Stog, D.120 (13 bp) is the parallel translation from Sanskrit. Chin. no. 374 confirmed in Silk 2019:233. Translator: Wang Phab Zhun, Dge ba'i bho."
+    },
+    {
+      "taisho": "T04n0202",
+      "tohoku": "D.341",
+      "chinese_title": "Xianyu jing \u8ce2\u611a\u7d93",
+      "tibetan_title": "'Dzangs blun",
+      "sanskrit_title": "Damamukanid\u0101nas\u016btra",
+      "notes": "Table 1 no. 2. 12-13 bp depending on catalogue. Translator: Chos grub. Silk 2019:232."
+    },
+    {
+      "taisho": "T16n0665",
+      "tohoku": "D.555",
+      "chinese_title": "Jin'guangming zuishengwang jing \u91d1\u5149\u660e\u6700\u52dd\u738b\u7d93",
+      "tibetan_title": "Gser 'od dam pa",
+      "sanskrit_title": "Suvar\u1e47aprabh\u0101sas\u016btra",
+      "notes": "Table 1 no. 3. Nobel Tib III. 10 bp. Translated from Yijing's Chinese version. Also cp. D.556 (10bp, Nobel Tib II, hybrid source incl. Chinese per Radich 2015) and D.557 (5bp, Nobel Tib I, from Sanskrit). Translator: Chos grub. Silk 2019:234."
+    },
+    {
+      "taisho": "T16n0670",
+      "tohoku": "D.108",
+      "chinese_title": "Lengqie abaduoluo baojing \u695e\u4f3d\u963f\u8dcb\u591a\u7f85\u5bf6\u7d93",
+      "tibetan_title": "Lang kar gshegs pa",
+      "sanskrit_title": "La\u1e45k\u0101vat\u0101ras\u016btra",
+      "notes": "Table 1 no. 4 (cp. 33). 8 bp. Translated from T.670 by Chos grub. Also cp. D.107 (9bp, PTK49, debated whether from Sanskrit or Chinese; colophons say Chinese by Chos grub but DKK says Sanskrit). Silk 2019:234-35."
+    },
+    {
+      "taisho": "T03n0156",
+      "tohoku": "D.353",
+      "chinese_title": "Dafangbian Fo baoen jing \u5927\u65b9\u4fbf\u4f5b\u5831\u6069\u7d93",
+      "tibetan_title": "Thabs la mkhas pa chen po sangs rgyas kyis drin la lan blan pa pa'i chos kyi yi ge",
+      "sanskrit_title": "",
+      "notes": "Table 1 no. 5. 7-7.5 bp depending on catalogue. Silk 2019:231."
+    },
+    {
+      "taisho": "T09n0273",
+      "tohoku": "D.135",
+      "chinese_title": "Jingang sanmei jing \u91d1\u525b\u4e09\u6627\u7d93",
+      "tibetan_title": "Rdo rje ting nge 'dzin kyi yi ge",
+      "sanskrit_title": "Vajrasam\u0101dhis\u016btra",
+      "notes": "Table 1 no. 6. Table Chin column shows 273. Catalogues say 6 bp but Kanjurs have only 2 bp. Silk 2019:232. Note: T.273 is the standard Taisho number for the Jingang sanmei jing (Kumrajiva trans.) in vol. 9. Needs verification."
+    },
+    {
+      "taisho": "T17n0653",
+      "tohoku": "D.123",
+      "chinese_title": "Foshuo Rulai xinmi cang jing \u4f5b\u8aaa\u5982\u4f86\u5fc3\u5bc6\u85cf\u7d93",
+      "tibetan_title": "Sangs rgyas kyi mdzod",
+      "sanskrit_title": "Tath\u0101gatagarbhas\u016btra",
+      "notes": "Table 1 no. 7. Catalogues say 5 bp but Kanjurs only 4 bp. Also cp. D.220 (7bp, from Sanskrit). Silk 2019:234."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.557",
+      "chinese_title": "",
+      "tibetan_title": "Gser 'od dam pa mdo sde'i dbang po",
+      "sanskrit_title": "Suvar\u1e47aprabh\u0101sottamas\u016btra",
+      "notes": "Table 1 no. 8 (LKK256). A LOST 5-bp translation from Chinese. The extant D.557 (Nobel Tib I) is the replacement translation from Sanskrit by M\u016bl\u0101\u015boka and J\u00f1\u0101nakum\u0101ra. The Chinese original (LKK256) was replaced when PTK was compiled. Silk \u00d8."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.216",
+      "chinese_title": "",
+      "tibetan_title": "Ma skyes dgra'i 'gyod pa bsal pa",
+      "sanskrit_title": "Aj\u0101ta\u015batrukaukr\u0325tyavinodana",
+      "notes": "Table 1 no. 9 (LKK257). A LOST translation from Chinese. The extant D.216 is the replacement translation from Sanskrit by Ma\u00f1ju\u015br\u012b garbha and Ratnarakshita. Silk 2019:240."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.264",
+      "chinese_title": "",
+      "tibetan_title": "Thur pa chen po po'i phyogs su rgyas pa'i mdo",
+      "sanskrit_title": "",
+      "notes": "Table 1 no. 10. 1 bp. Also H.266. Silk 2019:230. Table Chin column number unclear from rotated PDF image. Chinese source identification to be confirmed from Silk 2019."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.248",
+      "chinese_title": "",
+      "tibetan_title": "Byang chub sems dpa'i so sor thar pa chos bzhi bsgrub pa",
+      "sanskrit_title": "Bodhisattvapr\u0101timok\u1e63acatu\u1e63kanirh\u0101ra",
+      "notes": "Table 1 no. 11 (LKK259). A LOST translation from Chinese; Chinese source also lost. The extant D.248 is the replacement from Sanskrit by D\u012bpa\u1e41kara\u015br\u012bj\u00f1\u0101na. Silk 2019:240."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.237",
+      "chinese_title": "",
+      "tibetan_title": "Gsang pa bka' mtha'i las chen po las 'khor lo bcu pa'i mdo",
+      "sanskrit_title": "",
+      "notes": "Table 1 no. 12. 2 bp. Silk 2019:235. Chinese source identification to be confirmed from Silk 2019. Note: D.239 (a different text) is from T.411."
+    },
+    {
+      "taisho": "T01n0021",
+      "tohoku": "D.352",
+      "chinese_title": "Fanwang liushier jian jing \u68b5\u7db2\u516d\u5341\u4e8c\u898b\u7d93",
+      "tibetan_title": "Tshangs pa'i dra pa",
+      "sanskrit_title": "*Brahmaj\u0101las\u016btra",
+      "notes": "Table 1 no. 13 (LKK261A). A LOST 2-bp translation from Chinese (possibly from T.21). The extant D.352 is the replacement translation from Sanskrit by Ye shes sde. PT 1257 attests the Chinese title side by side with the Tibetan. Silk 2019:239."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.256",
+      "chinese_title": "",
+      "tibetan_title": "Chos gyi rgya mo",
+      "sanskrit_title": "",
+      "notes": "Table 1 no. 14. 2 bp. Silk 2019:236. Chinese source identification to be confirmed from Silk 2019."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.242",
+      "chinese_title": "",
+      "tibetan_title": "Yongs su bsngo ba'i 'khor lo",
+      "sanskrit_title": "Pari\u1e47\u0101macakra (or Pari\u1e47atacakra)",
+      "notes": "Table 1 no. 15. 2 bp (from Chinese), cp. D.810 (1bp 200sl, from Sanskrit). Silk 2019:235-36. Translator: Rnam par mi rtog. Chinese source identification to be confirmed from Silk 2019."
+    },
+    {
+      "taisho": "T85n2887",
+      "tohoku": "",
+      "chinese_title": "Fumu enzhong jing \u7236\u6bcd\u6069\u91cd\u7d93",
+      "tibetan_title": "Pha ma'i drin lan bstan pa",
+      "sanskrit_title": "",
+      "notes": "Table 1 no. 16 (LKK263). LOST or possibly partially preserved in Phug brag Kanjur F.218. Chinese source possibly T.2887 Fumu enzhong jing (per Stein 2010:89), but identification uncertain; Berounsky (2012:89-99) notes F.218 second part is NOT from T.2887. Silk 2019:240."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.351",
+      "chinese_title": "",
+      "tibetan_title": "Rgyal bu don grub kyi mdo",
+      "sanskrit_title": "",
+      "notes": "Table 1 no. 17. 1 bp. Also IOL Tib J 76.1. Silk 2019:234. Chinese source identification to be confirmed from Silk 2019."
+    },
+    {
+      "taisho": "T16n0708",
+      "tohoku": "",
+      "chinese_title": "Liaoben shengsi jing \u4e86\u672c\u751f\u6b7b\u7d93",
+      "tibetan_title": "Sems can gyi skye shi'i rtsa ba bstan pa",
+      "sanskrit_title": "\u015a\u0101listambas\u016btra",
+      "notes": "Table 1 no. 18 (LKK265A). LOST. Listed as lost by Bu ston. 1 bp. Chinese source tentatively identified as T.708 (a translation of the Shalistambasutra). Cp. D.210 (from Sanskrit by Ye shes sde). Silk \u00d8."
+    },
+    {
+      "taisho": "",
+      "tohoku": "",
+      "chinese_title": "Xiasheng jing \u4e0b\u751f\u7d93 (?)",
+      "tibetan_title": "Byams pas lung bstan pa",
+      "sanskrit_title": "Maitreyavy\u0101kara\u1e47a",
+      "notes": "Table 1 no. 19 (LKK265B). LOST. 110 sl. Possibly from a Chinese 'descent sutra'. Cp. P.1011/N.329 (100sl, from Sanskrit by Jinamitra and Dpal brtsegs Rakshita). Silk 2019:241."
+    },
+    {
+      "taisho": "T24n1486",
+      "tohoku": "",
+      "chinese_title": "Shou shishan jie jing \u53d7\u5341\u5584\u6212\u7d93",
+      "tibetan_title": "Dge bcu dang du blang pa'i mdo",
+      "sanskrit_title": "",
+      "notes": "Table 1 no. 20 (LKK266). Possibly LOST from Kanjurs despite being recorded in TGGNO and BC. 100 sl. Chinese source possibly T.1486. Also cp. IOL Tib J 606. Silk 2019:239."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.128",
+      "chinese_title": "",
+      "tibetan_title": "Chos nyid rang gi ngo bo nyid las mi g.yo bar snang ba bstan pa",
+      "sanskrit_title": "Dharmat\u0101svabh\u0101v\u0101calas\u016btra",
+      "notes": "Table 1 no. 21 (LKK267). LOST translation from Chinese (90 sl). Chinese original also lost. The extant D.128 is from Sanskrit by D\u0101na\u015b\u012bla and Ye shes sde. Herrmann-Pfandt identifies LKK267 with D.128 and denies Chinese origin. Silk \u00d8."
+    },
+    {
+      "taisho": "",
+      "tohoku": "",
+      "chinese_title": "",
+      "tibetan_title": "Yang dag pa'i legs pa'i yon tan bshad pa",
+      "sanskrit_title": "",
+      "notes": "Table 1 no. 22 (LKK268). LOST. Chinese source also lost. Listed as lost by Bu ston (BC431). 89 sl. Silk \u00d8."
+    },
+    {
+      "taisho": "",
+      "tohoku": "Stog268",
+      "chinese_title": "",
+      "tibetan_title": "Rgyal bu kun tu dge ba'i mdo",
+      "sanskrit_title": "",
+      "notes": "Table 1 no. 23 (LKK269). Also F.111. Silk 2019:241. Needs Taisho identification."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.122",
+      "chinese_title": "",
+      "tibetan_title": "'Da' ka ye shes kyi mdo",
+      "sanskrit_title": "",
+      "notes": "Table 1 no. 24. Also Stog201. Chinese origin recognized in LKK, TGGNO, BC, and Kanjur colophons, but not PTK. Chinese source needs identification. Silk 2019:238."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.263",
+      "chinese_title": "",
+      "tibetan_title": "Nam mkha'i mdog gis 'dul ba'i bzod pa",
+      "sanskrit_title": "",
+      "notes": "Table 1 no. 25 (TGGNO11.2). Chinese origin confirmed in BC342 and colophons of Them spangs ma lineage (e.g. Stog111, V.161, Z.142). 11 bp. Also Stog111, V.161, Z.142. Silk 2019:239."
+    },
+    {
+      "taisho": "T01n0097",
+      "tohoku": "D.318",
+      "chinese_title": "Guangyi famen jing \u5ee3\u7fa9\u6cd5\u9580\u7d93",
+      "tibetan_title": "Don rgyas pa'i chos kyi rnam grangs",
+      "sanskrit_title": "",
+      "notes": "Table 1 no. 26. Part of Zhong ahan jing (Madhyamagama). Chinese origin confirmed only in TGGNO11.15. Silk 2019:240."
+    },
+    {
+      "taisho": "T85n2897",
+      "tohoku": "D.1067",
+      "chinese_title": "Tiandi bayang shenzhou jing \u5929\u5730\u516b\u967d\u795e\u5492\u7d93",
+      "tibetan_title": "Snang brgyad ces bya ba'i rig sngags",
+      "sanskrit_title": "",
+      "notes": "Table 1 no. 27 (TGGNO11.16). Chinese apocrypha. Only in Tshal pa lineage Kanjurs. BC1287 says from Khotanese but Li argues this is a misreading. Kanjur version is abbreviated, not word-for-word. Silk 2019:238. Oda 2015."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.692",
+      "chinese_title": "",
+      "tibetan_title": "Spyan ras gzigs dbang phyug yid bzhin 'khor lo sgyur ba'i gzungs",
+      "sanskrit_title": "",
+      "notes": "Table 1 no. 28 (TGGNO11.17). Translated by Chos grub. Chinese origin easily confirmed. Also Stog647. Silk 2019:236."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.542/D.872",
+      "chinese_title": "",
+      "tibetan_title": "Khyad par can gyi gzungs",
+      "sanskrit_title": "",
+      "notes": "Table 1 no. 29 (TGGNO11.18). TGGNO alone records it as from Chinese; LKK, PTK, BC all identify D.542/872 as from Sanskrit by Jinamitra, Danashila, and Ye shes sde. Possibly a TGGNO mistake. Silk \u00d8."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.335",
+      "chinese_title": "",
+      "tibetan_title": "'Kha sil 'gyun mdo che",
+      "sanskrit_title": "",
+      "notes": "Table 1 no. 30. Also D.336, IOL Tib J 205. Translated by Chos grub. Silk 2019:235."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.137",
+      "chinese_title": "",
+      "tibetan_title": "Thog mchog gi dam pa'i mdo",
+      "sanskrit_title": "",
+      "notes": "Table 1 no. 31. Also ZW 10. Silk 2019:238."
+    },
+    {
+      "taisho": "T85n2881",
+      "tohoku": "D.355",
+      "chinese_title": "Shan'e yinguo jing \u5584\u60e1\u56e0\u679c\u7d93",
+      "tibetan_title": "Dge ba dang mi dge ba'i las kyi rnam par smin pa bstan pa",
+      "sanskrit_title": "",
+      "notes": "Table 1 no. 32. Silk 2019:237."
+    },
+    {
+      "taisho": "T20n1060",
+      "tohoku": "D.691",
+      "chinese_title": "Qianshou qianyan Guanshiyin pusa guangda yuanman wuai dabeixin tuoluoni jing \u5343\u624b\u5343\u773c\u89c0\u4e16\u97f3\u83e9\u85a9\u5ee3\u5927\u5713\u6eff\u7121\u7919\u5927\u60b2\u5fc3\u964e\u7f85\u5c3c\u7d93",
+      "tibetan_title": "Spyan ras gzigs phyag stong spyan stong thogs pa mi mnga' ba'i gzungs",
+      "sanskrit_title": "Mah\u0101k\u0101ru\u1e47ikacittadh\u0101ra\u1e47\u012b",
+      "notes": "Table 1 no. 33. D.691=D.897, 240 sl. Also Stog645, Cp.D.690 (250sl, from Sanskrit). Translated by Chos grub. Silk 2019:236. Taisho number T.1060 needs volume verification."
+    },
+    {
+      "taisho": "T20n1071",
+      "tohoku": "D.694",
+      "chinese_title": "",
+      "tibetan_title": "Zhal bcu gcig pa'i rig ngags kyi snying po",
+      "sanskrit_title": "",
+      "notes": "Table 1 no. 34. Also Stog643. Translated by Chos grub. Silk 2019:236. Taisho number needs volume verification."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.557",
+      "chinese_title": "",
+      "tibetan_title": "'Phags pa gser 'od dam pa mdo sde'i dbang po",
+      "sanskrit_title": "Suvar\u1e47aprabh\u0101sottamas\u016btra",
+      "notes": "Table 1 no. 35 (LKK87). BC208 considers this a translation from Chinese by Rnam par mi rtog. But LKK does not confirm Chinese origin. 8 bp. Silk \u00d8."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.107",
+      "chinese_title": "",
+      "tibetan_title": "Lang kar gshegs pa",
+      "sanskrit_title": "La\u1e45k\u0101vat\u0101ras\u016btra",
+      "notes": "Table 1 no. 36 (cp. 4). 9 bp (PTK49). Colophons attribute to Chos grub from Chinese, but DKK says from Sanskrit. Ueyama argues D.107 corresponds better to Sanskrit. BC190 in Lhasa edition says 'rgya' (Chinese) but other editions say 'rgya gar' (Sanskrit). Possibly a typo. Silk \u00d8."
+    },
+    {
+      "taisho": "T11n0310(7)",
+      "tohoku": "D.51",
+      "chinese_title": "Pijia zhuangyan hui \u88ab\u7532\u8389\u56b4\u6703",
+      "tibetan_title": "Go cha'i bkod pa bstan pa",
+      "sanskrit_title": "",
+      "notes": "Appendix I no. 1. Ratnakuta chapter 7. None of the four early catalogues recognize its Chinese origin. LKK31/PTK685."
+    },
+    {
+      "taisho": "T11n0310(14)",
+      "tohoku": "D.57",
+      "chinese_title": "Foshuo ru taizang hui \u4f5b\u8aaa\u5165\u80ce\u85cf\u6703",
+      "tibetan_title": "Dga' bo mngal na gnas pa bstan pa",
+      "sanskrit_title": "",
+      "notes": "Appendix I no. 2. Ratnakuta chapter 14. Same scenario as D.51. LKK37/PTK684."
+    },
+    {
+      "taisho": "T11n0310(13)",
+      "tohoku": "D.58",
+      "chinese_title": "Fo wei A'nan shuo chu taizang hui \u4f5b\u70ba\u963f\u96e3\u8aaa\u8655\u80ce\u6703",
+      "tibetan_title": "Tshe dang ldan pa dga' bo mngal du 'jug pa bstan pa",
+      "sanskrit_title": "",
+      "notes": "Appendix I no. 3. Ratnakuta chapter 13. Same scenario as D.51. LKK38/PTK683."
+    },
+    {
+      "taisho": "T11n0310(17)",
+      "tohoku": "D.61",
+      "chinese_title": "Fulouna hui \u5bcc\u6a13\u90a3\u6703",
+      "tibetan_title": "Gang pos zhus pa",
+      "sanskrit_title": "",
+      "notes": "Appendix I no. 4. Ratnakuta chapter 17. 6 bp. LKK41. PTK713 stated to be from Sanskrit."
+    },
+    {
+      "taisho": "T11n0310(20)",
+      "tohoku": "D.64",
+      "chinese_title": "Wujin fuzang hui \u7121\u76e1\u4f0f\u85cf\u6703",
+      "tibetan_title": "Glog thob kyis zhus pa",
+      "sanskrit_title": "",
+      "notes": "Appendix I no. 5. Ratnakuta chapter 20. 2 bp. LKK44/BC147. PTK714 stated to be from Sanskrit."
+    },
+    {
+      "taisho": "T11n0310(40)",
+      "tohoku": "D.84",
+      "chinese_title": "Jingxin tongnue hui \u6de8\u4fe1\u7ae5\u5973\u6703",
+      "tibetan_title": "Bu mo rnam dag dad pas zhus pa",
+      "sanskrit_title": "",
+      "notes": "Appendix I no. 6. Ratnakuta chapter 40. LKK64/PTK185."
+    },
+    {
+      "taisho": "T14n0482",
+      "tohoku": "D.174",
+      "chinese_title": "Chishi jing \u6301\u4e16\u7d93",
+      "tibetan_title": "'Phags pa 'jig rten 'dzin gyis yongs su dris pa zhes bya ba'i mdo",
+      "sanskrit_title": "",
+      "notes": "Appendix I no. 7. BC257. T.482 Chishi jing (vol. 14). Identification from Silk 2019."
+    },
+    {
+      "taisho": "T12n0452",
+      "tohoku": "D.199",
+      "chinese_title": "Foshuo guan Mile pusa shangsheng doushuaitian jing \u4f5b\u8aaa\u89c0\u5f4c\u52d2\u83e9\u85a9\u4e0a\u751f\u515c\u7387\u5929\u7d93",
+      "tibetan_title": "Byang chub sems dpa' byams pa dga' ldan gnam du skye ba blangs pa'i mdo",
+      "sanskrit_title": "",
+      "notes": "Appendix I no. 8. Not recorded in any of the four early catalogues as from Chinese."
+    },
+    {
+      "taisho": "T13n0411",
+      "tohoku": "D.239",
+      "chinese_title": "Dasheng daji dizang shilun jing \u5927\u4e58\u5927\u96c6\u5730\u85cf\u5341\u8f2a\u7d93",
+      "tibetan_title": "'Dus pa chen po las sa'i snying po'i 'khor lo bcu pa zhes bya ba theg pa chen po'i mdo",
+      "sanskrit_title": "",
+      "notes": "Appendix I no. 9. LKK82/PTK40. Translator: Rnam par mi rtog."
+    },
+    {
+      "taisho": "T12n0356",
+      "tohoku": "D.241",
+      "chinese_title": "Foshuo baoji sanmei Wenshushili pusa wen fashen jing \u4f5b\u8aaa\u5bf6\u7a4d\u4e09\u6627\u6587\u6b8a\u5e2b\u5229\u83e9\u85a9\u554f\u6cd5\u8eab\u7d93 (?)",
+      "tibetan_title": "Ting nge 'dzin gyi 'khor lo zhes bya ba theg pa chen po'i mdo",
+      "sanskrit_title": "",
+      "notes": "Appendix I no. 10. Chinese identification uncertain (marked with ? by Saerji 2011:190). Chinese source not identified by four catalogues."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.255",
+      "chinese_title": "",
+      "tibetan_title": "Theg pa chen po'i mdo chos rgya mtsho zhes bya ba",
+      "sanskrit_title": "",
+      "notes": "Appendix I no. 11. Chinese source not identified."
+    },
+    {
+      "taisho": "T85n2881",
+      "tohoku": "D.354",
+      "chinese_title": "Shan'e yinguo jing \u5584\u60e1\u56e0\u679c\u7d93",
+      "tibetan_title": "Legs nyes kyi rgyu dang 'bras bu bstan pa zhes bya ba theg pa chen po'i mdo",
+      "sanskrit_title": "",
+      "notes": "Appendix I no. 12. Also IOL Tib J 220, 221, 298, 335.2-3. Note: Same T.2881 as Table 1 no. 32 (D.355), but this is a different Derge text."
+    },
+    {
+      "taisho": "T17n0784",
+      "tohoku": "D.359a",
+      "chinese_title": "Sishier zhang jing \u56db\u5341\u4e8c\u7ae0\u7d93",
+      "tibetan_title": "'Spho bsho zi sh\u012b il \u1e6d\u0101ng kying / Dum bu zhe gnyis pa zhes bya ba'i mdo",
+      "sanskrit_title": "",
+      "notes": "Appendix I no. 13. Chinese apocrypha. Translated during the Qianlong era (Qing Dynasty). Only in Derge Kanjur."
+    },
+    {
+      "taisho": "T16n0685",
+      "tohoku": "Stog266",
+      "chinese_title": "Foshuo yulanpen jing \u4f5b\u8aaa\u76c2\u862d\u76c6\u7d93",
+      "tibetan_title": "Yongs su skyob pa'i snod ces bya ba'i mdo",
+      "sanskrit_title": "",
+      "notes": "Appendix I no. 14. Only in Them spangs ma lineage (Stog). Not in Derge."
+    },
+    {
+      "taisho": "",
+      "tohoku": "Stog130",
+      "chinese_title": "",
+      "tibetan_title": "Sangs rgyas rjes su dran pa'i ting nge 'dzin gyi rgya mtsho",
+      "sanskrit_title": "",
+      "notes": "Appendix I no. 15. Also Gondhla 30.09. Unidentified Chinese source. Only in Them spangs ma lineage."
+    },
+    {
+      "taisho": "T11n0310(31)",
+      "tohoku": "",
+      "chinese_title": "Hengheshang youpoyi hui \u6046\u6cb3\u4e0a\u512a\u5a46\u5937\u6703",
+      "tibetan_title": "Dge bsnyen ma gang ga'i mchog gi 'dus pa",
+      "sanskrit_title": "",
+      "notes": "Appendix I no. 16. Ratnakuta chapter 31. Dunhuang PT 89. Not in any Kanjur."
+    },
+    {
+      "taisho": "T11n0310(42)",
+      "tohoku": "",
+      "chinese_title": "Mile pusa suowen hui \u5f4c\u52d2\u83e9\u85a9\u6240\u554f\u6703",
+      "tibetan_title": "Byang chub sems dpa' byams pas zhus pa'i 'dul pa",
+      "sanskrit_title": "",
+      "notes": "Appendix I no. 17. Ratnakuta chapter 42. Dunhuang PT 89. Not in any Kanjur."
+    },
+    {
+      "taisho": "T11n0310(5)",
+      "tohoku": "",
+      "chinese_title": "Wuliangshou rulai hui \u7121\u91cf\u58fd\u5982\u4f86\u6703",
+      "tibetan_title": "'Od dpag med kyi bkod pa",
+      "sanskrit_title": "",
+      "notes": "Appendix I no. 18. Ratnakuta chapter 5. Dunhuang PT 557, 563, 562, 561, 556, 96, 564. Not in any Kanjur."
+    },
+    {
+      "taisho": "T12n0366",
+      "tohoku": "",
+      "chinese_title": "Amituo jing \u963f\u5f4c\u9640\u7d93",
+      "tibetan_title": "Snang ba mtha' yas kyi mdo",
+      "sanskrit_title": "",
+      "notes": "Appendix I no. 19. Dunhuang PT 758. Not in any Kanjur."
+    },
+    {
+      "taisho": "T17n0794",
+      "tohoku": "",
+      "chinese_title": "Shi feishi jing \u6642\u975e\u6642\u7d93",
+      "tibetan_title": "'Phags pa dus dang dus ma yin pa bstan pa zhes bya ba'i mdo",
+      "sanskrit_title": "",
+      "notes": "Appendix I no. 20. T.794a&b. IOL Tib J 213. Not in any Kanjur."
+    },
+    {
+      "taisho": "",
+      "tohoku": "",
+      "chinese_title": "Shiwang jing \u5341\u738b\u7d93",
+      "tibetan_title": "Bcom ldan 'das kyi gzhin rje la lung bstan pa...",
+      "sanskrit_title": "",
+      "notes": "Appendix I no. 21. Translation date unclear. Berounsky 2012:141ff. Not a standard Taisho text (Chinese apocryphon)."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.4016",
+      "chinese_title": "",
+      "tibetan_title": "Dgongs 'grel gyi 'grel pa",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 1. Commentary. 74 bp. Translated by Chos grub based on Wen tsheg's commentary. LKK565/PTK773/TGGNO11.19/BC676."
+    },
+    {
+      "taisho": "",
+      "tohoku": "",
+      "chinese_title": "",
+      "tibetan_title": "Dgongs pa nyes par 'grel pa'i \u1e6d\u012bk\u0101",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 2. Commentary. 9 bp. LKK566/PTK521/TGGNO11.20/BC671. No Derge number given."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.4358",
+      "chinese_title": "",
+      "tibetan_title": "Dgongs pa nges par 'grel pa'i rgya cher bshad pa",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 3. Commentary. 40 bp. Translated by Klu'i rgyal mtshan. PTK alone lists it as from Chinese. LKK531/PTK522/BC654."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.4017",
+      "chinese_title": "",
+      "tibetan_title": "Pu\u1e47\u1e0dar\u012bka'i 'grel pa (Dam pa'i chos pad ma dkar po'i 'grel pa)",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 4. Commentary on Saddharmapundarika. 20 bp. Based on commentary by Sa'i rtsa lag from Sri Lanka. LKK567/PTK520/TGGNO11.21/BC656."
+    },
+    {
+      "taisho": "",
+      "tohoku": "",
+      "chinese_title": "",
+      "tibetan_title": "Lang gshegs kyi 'grel pa chen po",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 5. Commentary on Lankavatara. 40 bp. LKK568/PTK517/TGGNO11.24/BC672. No Derge number given."
+    },
+    {
+      "taisho": "",
+      "tohoku": "",
+      "chinese_title": "",
+      "tibetan_title": "Lang dkar gshegs pa'i 'grel pa",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 6. Commentary on Lankavatara. 760 sl. LKK569/BC673. Possibly = TGGNO11.54 (3bp). No Derge number given."
+    },
+    {
+      "taisho": "",
+      "tohoku": "",
+      "chinese_title": "",
+      "tibetan_title": "Lang dkar gshegs pa'i bsdus don",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 7. Summary of Lankavatara. 3 bp. Composed by Bin tar ta li la (Rathalila). LKK570/PTK519/TGGNO11.23/BC674. No Derge number given."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.4018",
+      "chinese_title": "",
+      "tibetan_title": "Lang kar gshegs pa'i 'grel pa",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 8. Commentary on Lankavatara. Composed by Ye shes dpal bzang po. 240 'arrow-size' (mda' tshal), ~262 folios in Derge Tanjur. TGGNO11.25/BC657."
+    },
+    {
+      "taisho": "",
+      "tohoku": "",
+      "chinese_title": "",
+      "tibetan_title": "Rdo rje gcod pa'i 'grel pa",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 9. Commentary on Vajracchedika. 5 bp. LKK571/PTK518/TGGNO11.22/BC534. Also PT 606. No Derge number given."
+    },
+    {
+      "taisho": "",
+      "tohoku": "",
+      "chinese_title": "",
+      "tibetan_title": "Chos kyi rgyal mo'i bshad pa",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 10. Commentary. 4 bp. LKK572/PTK523/TGGNO11.26/BC675. No Derge number given."
+    },
+    {
+      "taisho": "",
+      "tohoku": "",
+      "chinese_title": "",
+      "tibetan_title": "Chos dkon mchog la gcig bar dun 'jug pa'i sgo mkhan po bdun rgyud kyi mdo'",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 11. Commentary. 2 bp. TGGNO11.27 only. No Derge number given."
+    },
+    {
+      "taisho": "",
+      "tohoku": "",
+      "chinese_title": "",
+      "tibetan_title": "Bsam gtan gyi yi ge",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 12. Chan text. 3 bp. Composed by Dharmadhara. LKK613/PTK657/TGGNO11.28/BC876. No Derge number given."
+    },
+    {
+      "taisho": "",
+      "tohoku": "",
+      "chinese_title": "",
+      "tibetan_title": "Bsam gtan nyal ba'i 'khor sems la lta ba'i chos",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 13. Chan text. Composed by Ha shang Ma ha ya na. TGGNO11.29 only. No Derge number given."
+    },
+    {
+      "taisho": "",
+      "tohoku": "",
+      "chinese_title": "",
+      "tibetan_title": "Bsam gtan chu'i sems bde' bar zhag pa'i chos",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 14. Chan text. TGGNO11.30 only. No Derge number given."
+    },
+    {
+      "taisho": "",
+      "tohoku": "",
+      "chinese_title": "",
+      "tibetan_title": "Bsam gtan bdud 'dul ba'i snying po",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 15. Chan text. TGGNO11.31 only. No Derge number given."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.3932/D.4934",
+      "chinese_title": "",
+      "tibetan_title": "Ting nge 'dzin gyi mthun phyogs bzhag pa",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 16. TGGNO11.32/BC858. Possibly D.3932 or D.4934."
+    },
+    {
+      "taisho": "",
+      "tohoku": "",
+      "chinese_title": "",
+      "tibetan_title": "Mdo sde brgya bcu'i khungs",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 17. 4 bp. PTK831/TGGNO11.33. Also PT 818, IOL Tib J 705, Go 17.2. Perhaps not a translation from Chinese but a Tibetan composition containing Chinese material (Tauscher 2021). 88 chapters of questions and citations from 80 treatises."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.168",
+      "chinese_title": "",
+      "tibetan_title": "Ma skyes dgra'i bu mo dri ma med pa'i 'od kyis zhus pa'i lung bstan",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 18. Listed under TGGNO 'translations from Khotanese' but likely from Chinese. PTK722/TGGNO11.34. 4 bp. Cp. LKK107/BC252/D.168 (6bp)."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.357",
+      "chinese_title": "",
+      "tibetan_title": "Ri glang ru lung bstan pa",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 19. TGGNO11.35. 4 bp. Cp. LKK281/BC79/D.357 (1bp)."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.306",
+      "chinese_title": "",
+      "tibetan_title": "Sbyangs pa'i yon tan bshad pa",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 20. PTK723/TGGNO11.36. 1 bp. Cp. BC98/D.306."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.206",
+      "chinese_title": "",
+      "tibetan_title": "Zas kyi 'tsho ba rnam dag gi mdo'",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 21. PTK724/TGGNO11.37/BC288. 38 sl."
+    },
+    {
+      "taisho": "",
+      "tohoku": "",
+      "chinese_title": "",
+      "tibetan_title": "Rta skad byang chub sems dpa'i mdo'",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 22. TGGNO11.42 only. No Derge number given."
+    },
+    {
+      "taisho": "",
+      "tohoku": "",
+      "chinese_title": "",
+      "tibetan_title": "Bsam gtan gyi mdo'",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 23. TGGNO11.43 only. Chan text. No Derge number given."
+    },
+    {
+      "taisho": "",
+      "tohoku": "",
+      "chinese_title": "",
+      "tibetan_title": "Smon lam gyi mdo'",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 24. TGGNO11.44/BC99. No Derge number given."
+    },
+    {
+      "taisho": "",
+      "tohoku": "",
+      "chinese_title": "",
+      "tibetan_title": "Le'u [>Me'u] gal ma mtshol ba'i mdo'",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 25. Possibly = LKK263 (see Table 1 no. 16). PTK729/TGGNO11.45. No Derge number given."
+    },
+    {
+      "taisho": "",
+      "tohoku": "",
+      "chinese_title": "",
+      "tibetan_title": "Rta 'grin gnam sa bkod pa'i mdo'",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 26. PTK730/TGGNO11.46. No Derge number given."
+    },
+    {
+      "taisho": "",
+      "tohoku": "",
+      "chinese_title": "",
+      "tibetan_title": "Snang brgyad rigs bzhi",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 27. TGGNO11.51. Perhaps from Khotanese? Cp. TGGNO11.16 (Table 1 no. 27) which is from Chinese. No Derge number given."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.395",
+      "chinese_title": "",
+      "tibetan_title": "Dbyig gnyen gyi rten 'brel",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 28. TGGNO11.52/BC649. 4 bp."
+    },
+    {
+      "taisho": "",
+      "tohoku": "D.396",
+      "chinese_title": "",
+      "tibetan_title": "de'i (=Dbyig gnyen gyi rten 'brel) ti ka",
+      "sanskrit_title": "",
+      "notes": "Appendix II no. 29. TGGNO11.53/BC650. Commentary. 11 bp. Composed by Yon tan blo gro."
+    },
+    {
+      "taisho": "T49n2035",
+      "tohoku": "",
+      "chinese_title": "Fozu tongji \u4f5b\u7956\u7d71\u7d00",
+      "tibetan_title": "",
+      "sanskrit_title": "",
+      "notes": "Footnote reference only. Cited in fn. 14 (p. 177) regarding records of Chinese monks sent to Tibet in 781 CE. Not a Tibetan translation; included for completeness as a cross-reference source."
+    },
+    {
+      "taisho": "T16n0672",
+      "tohoku": "",
+      "chinese_title": "Ru Lengqie jing \u5165\u695e\u4f3d\u7d93",
+      "tibetan_title": "",
+      "sanskrit_title": "La\u1e45k\u0101vat\u0101ras\u016btra",
+      "notes": "Mentioned in discussion of D.107 (section 2.4). Shikshananda's 7-fascicle Chinese translation of the Lankavatara. D.107 shows close similarity with both T.672 and the Sanskrit. Not itself a direct source of a Tibetan translation in the Kanjur."
+    }
+  ]
+}

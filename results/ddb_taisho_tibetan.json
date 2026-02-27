@@ -1,0 +1,2375 @@
+{
+  "source": "ddb",
+  "source_name": "Digital Dictionary of Buddhism",
+  "source_url": "http://www.buddhism-dict.net/ddb/",
+  "description": "Cross-references extracted from DDB public index pages: the Taisho/SAT Availability Table (mapping Chinese titles to T numbers) and the Tibetan Texts Index (mapping Tibetan titles to Chinese titles). Cross-referenced via shared Chinese titles and DDB entry IDs.",
+  "limitations": "Individual DDB entries contain Tohoku numbers (To.####) in their metadata, but accessing entries requires authentication (guest: 20 lookups/day; unlimited requires contribution or paid subscription). This extraction uses only publicly available index pages, which do not contain Tohoku numbers. To get Tohoku cross-references, one would need to scrape individual DDB entries with credentials.",
+  "data_dates": {
+    "taisho_table": "2018-10-11 (per page header)",
+    "tibetan_index": "2019-01-03 (per page header)"
+  },
+  "summary": {
+    "taisho_texts_in_ddb": 2876,
+    "tibetan_texts_in_ddb": 199,
+    "sanskrit_texts_in_ddb": 742,
+    "cross_referenced_pairs": 158,
+    "unique_taisho_matched": 154,
+    "unmatched_tibetan": 47
+  },
+  "total_pairs": 158,
+  "entries": {
+    "T410": {
+      "taisho": "T410",
+      "taisho_num": 410,
+      "chinese_titles": [
+        "大方廣十輪經"
+      ],
+      "tibetan_titles": [
+        "(Ḥdus-pa chen-po-las) sa'i-snyin-poḥi  'khor-lo bcu-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1392": {
+      "taisho": "T1392",
+      "taisho_num": 1392,
+      "chinese_titles": [
+        "大寒林聖難拏陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "['phags pa] be con chen po zhes bya ba'i gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1143": {
+      "taisho": "T1143",
+      "taisho_num": 1143,
+      "chinese_titles": [
+        "佛說慈氏菩薩誓願陀羅尼經",
+        "慈氏菩薩誓願陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "[phags pa] byams pas dam bcas pa shes bya bai gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1375": {
+      "taisho": "T1375",
+      "taisho_num": 1375,
+      "chinese_titles": [
+        "佛說莊嚴王陀羅尼呪經",
+        "莊嚴王陀羅尼呪經"
+      ],
+      "tibetan_titles": [
+        "[phags pa] de bzhin gshegs pa thams cad kyi byin gyis rlabs sems can la gzigs shing sangs rgyas kyi shing gi bkod pa kun tu ston pa shes bya ba theg pa chen poi mdo"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1167": {
+      "taisho": "T1167",
+      "taisho_num": 1167,
+      "chinese_titles": [
+        "八大菩薩曼荼羅經"
+      ],
+      "tibetan_titles": [
+        "['phags pa] dKyil 'khor brgyad pa shes bya ba theg pa chen po'i mdo"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1303": {
+      "taisho": "T1303",
+      "taisho_num": 1303,
+      "chinese_titles": [
+        "佛說聖曜母陀羅尼經",
+        "聖曜母陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "[phags pa] gza rnams kyi yum shes bya bai gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1197": {
+      "taisho": "T1197",
+      "taisho_num": 1197,
+      "chinese_titles": [
+        "佛說文殊師利一百八名梵讚",
+        "文殊師利一百八名梵讚"
+      ],
+      "tibetan_titles": [
+        "['phags pa] 'jam dpal gyi mtshan brgya rtsa brgyad pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1253": {
+      "taisho": "T1253",
+      "taisho_num": 1253,
+      "chinese_titles": [
+        "大吉祥天女十二契一百八名無垢大乘經"
+      ],
+      "tibetan_titles": [
+        "['phags pa] lha mo chen mo dpal lung bstan pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1285": {
+      "taisho": "T1285",
+      "taisho_num": 1285,
+      "chinese_titles": [
+        "佛說寶賢陀羅尼經",
+        "寶賢陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "['phags pa] nor bu bzag po'i gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1257": {
+      "taisho": "T1257",
+      "taisho_num": 1257,
+      "chinese_titles": [
+        "佛說大摩里支菩薩經",
+        "大摩里支菩薩經"
+      ],
+      "tibetan_titles": [
+        "['phags pa] 'od zer can shes bya ba'i gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T943": {
+      "taisho": "T943",
+      "taisho_num": 943,
+      "chinese_titles": [
+        "佛說無能勝幡王如來莊嚴陀羅尼經",
+        "無能勝幡王如來莊嚴陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "[phags pa] rgyal mtshan gyi rtse moi dpung rgyan shes bya bai gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1360": {
+      "taisho": "T1360",
+      "taisho_num": 1360,
+      "chinese_titles": [
+        "六門陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "['phags pa] sgo drug shes bya ba'i gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1117": {
+      "taisho": "T1117",
+      "taisho_num": 1117,
+      "chinese_titles": [
+        "佛說觀自在菩薩母陀羅尼經",
+        "觀自在菩薩母陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "[phags pa] spyan ras gzigs dbang phyug gi gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1070": {
+      "taisho": "T1070",
+      "taisho_num": 1070,
+      "chinese_titles": [
+        "佛說十一面觀世音神呪經",
+        "十一面觀世音神呪經"
+      ],
+      "tibetan_titles": [
+        "['phags pa] spyang ras gzigs dbang phyug shal bcu gcig pa shes bya ba'i gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1050": {
+      "taisho": "T1050",
+      "taisho_num": 1050,
+      "chinese_titles": [
+        "佛說大乘莊嚴寶王經",
+        "大乘莊嚴寶王經"
+      ],
+      "tibetan_titles": [
+        "['phags pa] za ma tog bkod bkod pa shes bya ba heg pa chen po'i mdo"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T676": {
+      "taisho": "T676",
+      "taisho_num": 676,
+      "chinese_titles": [
+        "解深密經"
+      ],
+      "tibetan_titles": [
+        "‘Phags pa dgongs pa zab mo nges par 'grel pa'i mdo'i rgya cher 'grel pa",
+        "dgongs pa nges par 'grel pa"
+      ],
+      "match_methods": [
+        "substring",
+        "title"
+      ]
+    },
+    "T257": {
+      "taisho": "T257",
+      "taisho_num": 257,
+      "chinese_titles": [
+        "佛說聖佛母般若波羅蜜多經",
+        "聖佛母般若波羅蜜多經"
+      ],
+      "tibetan_titles": [
+        "bcom ldan das ma nor rgyun mai gzungs kyi rtog pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T450": {
+      "taisho": "T450",
+      "taisho_num": 450,
+      "chinese_titles": [
+        "藥師琉璃光如來本願功德經"
+      ],
+      "tibetan_titles": [
+        "bcom ldan das sman gyi bla bai ḍūryai od kyi sngon gyi smon lam gyi khyad par rgyas par"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1643": {
+      "taisho": "T1643",
+      "taisho_num": 1643,
+      "chinese_titles": [
+        "尼乾子問無我義經"
+      ],
+      "tibetan_titles": [
+        "Bdag-med-pa dris-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1687": {
+      "taisho": "T1687",
+      "taisho_num": 1687,
+      "chinese_titles": [
+        "事師法五十頌"
+      ],
+      "tibetan_titles": [
+        "bla ma lnga bcu pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1664": {
+      "taisho": "T1664",
+      "taisho_num": 1664,
+      "chinese_titles": [
+        "廣釋菩提心論"
+      ],
+      "tibetan_titles": [
+        "bsgom pa'i rim pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1636": {
+      "taisho": "T1636",
+      "taisho_num": 1636,
+      "chinese_titles": [
+        "大乘集菩薩學論"
+      ],
+      "tibetan_titles": [
+        "Bslab pa kun-las-buts pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T316": {
+      "taisho": "T316",
+      "taisho_num": 316,
+      "chinese_titles": [
+        "佛說大乘菩薩藏正法經",
+        "大乘菩薩藏正法經"
+      ],
+      "tibetan_titles": [
+        "Byaṅ-chub-sems-dpa'i-sde-snod"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1008": {
+      "taisho": "T1008",
+      "taisho_num": 1008,
+      "chinese_titles": [
+        "菩提場莊嚴陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "byang chub snying poi rgyan bum"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1129": {
+      "taisho": "T1129",
+      "taisho_num": 1129,
+      "chinese_titles": [
+        "佛說金剛手菩薩降伏一切部多大教王經",
+        "金剛手菩薩降伏一切部多大教王經"
+      ],
+      "tibetan_titles": [
+        "byung po dul ba shes bya bai rgyud kyi rgyal po chen po"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1621": {
+      "taisho": "T1621",
+      "taisho_num": 1621,
+      "chinese_titles": [
+        "掌中論"
+      ],
+      "tibetan_titles": [
+        "Cha-śas-kyi yan-lag ces-bya-ba'i rab-tu-byed-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T211": {
+      "taisho": "T211",
+      "taisho_num": 211,
+      "chinese_titles": [
+        "法句譬喩經"
+      ],
+      "tibetan_titles": [
+        "Ched-du brjod-pa'i tshoms"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T639": {
+      "taisho": "T639",
+      "taisho_num": 639,
+      "chinese_titles": [
+        "月燈三昧經"
+      ],
+      "tibetan_titles": [
+        "chos thams cad kyi rang bzhin mnyam pa nyid rnam par spros pa ting nge dzin gyi rgyal pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T640": {
+      "taisho": "T640",
+      "taisho_num": 640,
+      "chinese_titles": [
+        "佛說月燈三昧經",
+        "月燈三昧經"
+      ],
+      "tibetan_titles": [
+        "chos thams cad kyi rang bzhin mnyam pa nyid rnam par spros pa ting nge dzin gyi rgyal pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T641": {
+      "taisho": "T641",
+      "taisho_num": 641,
+      "chinese_titles": [
+        "佛說月燈三昧經",
+        "月燈三昧經"
+      ],
+      "tibetan_titles": [
+        "chos thams cad kyi rang bzhin mnyam pa nyid rnam par spros pa ting nge dzin gyi rgyal pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1374": {
+      "taisho": "T1374",
+      "taisho_num": 1374,
+      "chinese_titles": [
+        "一切功德莊嚴王經",
+        "佛說一切功德莊嚴王經"
+      ],
+      "tibetan_titles": [
+        "chos thams cad kyi yon tan bkod pa'i rgyal po"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T650": {
+      "taisho": "T650",
+      "taisho_num": 650,
+      "chinese_titles": [
+        "諸法無行經"
+      ],
+      "tibetan_titles": [
+        "Chos thams-cad  'byuṅ-ba med-par bstan-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T264": {
+      "taisho": "T264",
+      "taisho_num": 264,
+      "chinese_titles": [
+        "添品妙法蓮華經"
+      ],
+      "tibetan_titles": [
+        "Dam-pa'i chos pad-ma dkar-po"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T882": {
+      "taisho": "T882",
+      "taisho_num": 882,
+      "chinese_titles": [
+        "一切如來眞實攝大乘現證三昧大教王經",
+        "佛說一切如來眞實攝大乘現證三昧大教王經"
+      ],
+      "tibetan_titles": [
+        "De bshin-gśegs-pa thams-cad-kyi de kho-na-nyid bsdus-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T967": {
+      "taisho": "T967",
+      "taisho_num": 967,
+      "chinese_titles": [
+        "佛頂尊勝陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "de bzhin ghegs pa thams cad kyi gtsug tor rnam par rgyal ba shes bya ba'i gzungs rtog pa dang bcas pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T968": {
+      "taisho": "T968",
+      "taisho_num": 968,
+      "chinese_titles": [
+        "佛頂尊勝陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "de bzhin ghegs pa thams cad kyi gtsug tor rnam par rgyal ba shes bya ba'i gzungs rtog pa dang bcas pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T971": {
+      "taisho": "T971",
+      "taisho_num": 971,
+      "chinese_titles": [
+        "佛說佛頂尊勝陀羅尼經",
+        "佛頂尊勝陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "de bzhin ghegs pa thams cad kyi gtsug tor rnam par rgyal ba shes bya ba'i gzungs rtog pa dang bcas pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T451": {
+      "taisho": "T451",
+      "taisho_num": 451,
+      "chinese_titles": [
+        "藥師瑠璃光七佛本願功德經"
+      ],
+      "tibetan_titles": [
+        "de bzhin gshegs pa bdun gyi sngon gyi smon lam gyi khyad par rgyas pai mdo sdei man nag"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T939": {
+      "taisho": "T939",
+      "taisho_num": 939,
+      "chinese_titles": [
+        "佛說大乘觀想曼拏羅淨諸惡趣經",
+        "大乘觀想曼拏羅淨諸惡趣經"
+      ],
+      "tibetan_titles": [
+        "de bzhin gshegs pa dgra bcom pa yang dag par dzogs pa'i sangs rgyas ngan song thams cad yongs su sbyong ba gzi brjid kyi rgyal po'i brtag pa phyogs gcig pa shes bya ba",
+        "gtsug dgu'i rgyud"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T997": {
+      "taisho": "T997",
+      "taisho_num": 997,
+      "chinese_titles": [
+        "守護國界主陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "de bzhin gshegs pa'i snying po"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T310": {
+      "taisho": "T310",
+      "taisho_num": 310,
+      "chinese_titles": [
+        "廣傳仙人會"
+      ],
+      "tibetan_titles": [
+        "De-bshin-gśegs-pa'i gsaṅ-ba bsam-gyis-mi-khyab bstan-pa",
+        "Dgaḥ-bo-la mṇal-na-gnas-pa bstan-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T674": {
+      "taisho": "T674",
+      "taisho_num": 674,
+      "chinese_titles": [
+        "證契大乘經"
+      ],
+      "tibetan_titles": [
+        "Dgongs-pa nges-par 'grel-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T299": {
+      "taisho": "T299",
+      "taisho_num": 299,
+      "chinese_titles": [
+        "大方廣總持寶光明經"
+      ],
+      "tibetan_titles": [
+        "dkon mchog ta la la'i gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T97": {
+      "taisho": "T97",
+      "taisho_num": 97,
+      "chinese_titles": [
+        "廣義法門經"
+      ],
+      "tibetan_titles": [
+        "Don rgyas-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1021": {
+      "taisho": "T1021",
+      "taisho_num": 1021,
+      "chinese_titles": [
+        "華嚴經心陀羅尼"
+      ],
+      "tibetan_titles": [
+        "dong po bkod pai snying po"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1252": {
+      "taisho": "T1252",
+      "taisho_num": 1252,
+      "chinese_titles": [
+        "佛說大吉祥天女十二名號經",
+        "大吉祥天女十二名號經"
+      ],
+      "tibetan_titles": [
+        "dpal chen mo'i mdo"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1": {
+      "taisho": "T1",
+      "taisho_num": 1,
+      "chinese_titles": [
+        "長阿含經"
+      ],
+      "tibetan_titles": [
+        "'dus pa chen po'i mdo"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T814": {
+      "taisho": "T814",
+      "taisho_num": 814,
+      "chinese_titles": [
+        "佛說象腋經",
+        "象腋經"
+      ],
+      "tibetan_titles": [
+        "Glaṅ-poḥi rtsal"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1684": {
+      "taisho": "T1684",
+      "taisho_num": 1684,
+      "chinese_titles": [
+        "八大靈塔梵讚"
+      ],
+      "tibetan_titles": [
+        "Gnas chen-po brgyad-kyi mchod rten-la phyag-ḥtshal-ba'i bstod-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1283": {
+      "taisho": "T1283",
+      "taisho_num": 1283,
+      "chinese_titles": [
+        "佛說寶藏神大明曼拏羅儀軌經",
+        "寶藏神大明曼拏羅儀軌經"
+      ],
+      "tibetan_titles": [
+        "gnod gnas dbang po ci ltar 'byung ba'i rtog pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1324": {
+      "taisho": "T1324",
+      "taisho_num": 1324,
+      "chinese_titles": [
+        "能淨一切眼疾病陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "gro ldin bai rig sngags kyi rgyal po"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T884": {
+      "taisho": "T884",
+      "taisho_num": 884,
+      "chinese_titles": [
+        "佛說祕密相經",
+        "祕密相經"
+      ],
+      "tibetan_titles": [
+        "gsang ba nor bu thig le"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1325": {
+      "taisho": "T1325",
+      "taisho_num": 1325,
+      "chinese_titles": [
+        "佛說療痔病經",
+        "療痔病經"
+      ],
+      "tibetan_titles": [
+        "gshan brum rab tu shi bar byed pai mdo"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T2032": {
+      "taisho": "T2032",
+      "taisho_num": 2032,
+      "chinese_titles": [
+        "十八部論"
+      ],
+      "tibetan_titles": [
+        "gShung lugs kyi bye brag bkod pa'i 'khor lo"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1371": {
+      "taisho": "T1371",
+      "taisho_num": 1371,
+      "chinese_titles": [
+        "佛說聖大總持王經",
+        "聖大總持王經"
+      ],
+      "tibetan_titles": [
+        "gzungs chen po"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T888": {
+      "taisho": "T888",
+      "taisho_num": 888,
+      "chinese_titles": [
+        "一切祕密最上名義大教王儀軌"
+      ],
+      "tibetan_titles": [
+        "hams cad gsang ba shes bya ba rgyud kyi gyal po"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1451": {
+      "taisho": "T1451",
+      "taisho_num": 1451,
+      "chinese_titles": [
+        "根本說一切有部毘奈耶雜事"
+      ],
+      "tibetan_titles": [
+        "Ḥdul-ba phran-tshegs-kyi-gshi"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T325": {
+      "taisho": "T325",
+      "taisho_num": 325,
+      "chinese_titles": [
+        "佛說決定毘尼經",
+        "決定毘尼經"
+      ],
+      "tibetan_titles": [
+        "Ḥdul-ba rnam-par-gtan-la-dbab-pa ñe-bar-ḥkhor gyis shus-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T363": {
+      "taisho": "T363",
+      "taisho_num": 363,
+      "chinese_titles": [
+        "佛說大乘無量壽莊嚴經",
+        "大乘無量壽莊嚴經"
+      ],
+      "tibetan_titles": [
+        "Ḥod-dpag-med-kyi bkod-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1215": {
+      "taisho": "T1215",
+      "taisho_num": 1215,
+      "chinese_titles": [
+        "大乘方廣曼殊室利菩薩華嚴本教閻曼德迦忿怒王眞言大威德儀軌品"
+      ],
+      "tibetan_titles": [
+        "jam dpal gyi rtsa ba'i rgyud"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T776": {
+      "taisho": "T776",
+      "taisho_num": 776,
+      "chinese_titles": [
+        "佛說四品法門經",
+        "四品法門經"
+      ],
+      "tibetan_titles": [
+        "Khams maṅ-poḥi-mdo"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1217": {
+      "taisho": "T1217",
+      "taisho_num": 1217,
+      "chinese_titles": [
+        "佛說妙吉祥最勝根本大教經",
+        "妙吉祥最勝根本大教經"
+      ],
+      "tibetan_titles": [
+        "khro bo rnam par rgyal ba'i rtog pa gsang ba'i rgyud [To.604, P.291]"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1222": {
+      "taisho": "T1222",
+      "taisho_num": 1222,
+      "chinese_titles": [
+        "佛說妙吉祥最勝根本大教經",
+        "妙吉祥最勝根本大教經"
+      ],
+      "tibetan_titles": [
+        "khro bo rnam par rgyal ba'i rtog pa gsang ba'i rgyud [To.604, P.291]"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1409": {
+      "taisho": "T1409",
+      "taisho_num": 1409,
+      "chinese_titles": [
+        "佛說聖最勝陀羅尼經",
+        "聖最勝陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "khyad par can"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T379": {
+      "taisho": "T379",
+      "taisho_num": 379,
+      "chinese_titles": [
+        "四童子三昧經"
+      ],
+      "tibetan_titles": [
+        "Khyeḥu bshiḥi tiṅ-ṅe-ḥdsin"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T322": {
+      "taisho": "T322",
+      "taisho_num": 322,
+      "chinese_titles": [
+        "法鏡經"
+      ],
+      "tibetan_titles": [
+        "Khyim-bdag-drag-śul-can-gyis shus-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1025": {
+      "taisho": "T1025",
+      "taisho_num": 1025,
+      "chinese_titles": [
+        "佛頂放無垢光明入普門觀察一切如來心陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "kun nas sgor 'jug pa'i 'od zergtsug tor dri ma med par snang ba de bzhin gshegs pa tham cad kyisnying po dang dam tshig la rnam par lta ba shes bya ba'i gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1127": {
+      "taisho": "T1127",
+      "taisho_num": 1127,
+      "chinese_titles": [
+        "佛說普賢菩薩陀羅尼經",
+        "普賢菩薩陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "kun tu bzang poi mtshan brgya rtsa brgyad pa gzungs sngags dang bcas pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T315": {
+      "taisho": "T315",
+      "taisho_num": 315,
+      "chinese_titles": [
+        "佛說普門品經",
+        "普門品經"
+      ],
+      "tibetan_titles": [
+        "Kun-nas-sgoḥi leḥu"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1248": {
+      "taisho": "T1248",
+      "taisho_num": 1248,
+      "chinese_titles": [
+        "北方毘沙門天王隨軍護法眞言"
+      ],
+      "tibetan_titles": [
+        "lag na rdo rje bcu'i snying po"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T588": {
+      "taisho": "T588",
+      "taisho_num": 588,
+      "chinese_titles": [
+        "佛說須眞天子經",
+        "須眞天子經"
+      ],
+      "tibetan_titles": [
+        "La'i-bu rab-rtsal-sems-kyis shus pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1608": {
+      "taisho": "T1608",
+      "taisho_num": 1608,
+      "chinese_titles": [
+        "業成就論"
+      ],
+      "tibetan_titles": [
+        "Las grub-pa'i rab-tu-byed-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T80": {
+      "taisho": "T80",
+      "taisho_num": 80,
+      "chinese_titles": [
+        "佛爲首迦長者說業報差別經"
+      ],
+      "tibetan_titles": [
+        "Las rnam-par-ḥbyed-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T79": {
+      "taisho": "T79",
+      "taisho_num": 79,
+      "chinese_titles": [
+        "佛說鸚鵡經",
+        "鸚鵡經"
+      ],
+      "tibetan_titles": [
+        "Las-kyi rnam- par  'gyur-ba shes-bya-ba'i chos-kyi-gshuṅ"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T78": {
+      "taisho": "T78",
+      "taisho_num": 78,
+      "chinese_titles": [
+        "佛說兜調經",
+        "兜調經"
+      ],
+      "tibetan_titles": [
+        "Las-kyi rnam-par  'gyur-ba shes-bya-ba chos-kyi-gshuṅ"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T81": {
+      "taisho": "T81",
+      "taisho_num": 81,
+      "chinese_titles": [
+        "分別善惡報應經"
+      ],
+      "tibetan_titles": [
+        "Las-kyi rnam-par  'gyur-ba shes-bya-ba'i chos-kyi-gshuṅ"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1493": {
+      "taisho": "T1493",
+      "taisho_num": 1493,
+      "chinese_titles": [
+        "大乘三聚懺悔經"
+      ],
+      "tibetan_titles": [
+        "Las-kyi sgrib-pa rgyun gcod-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T2227": {
+      "taisho": "T2227",
+      "taisho_num": 2227,
+      "chinese_titles": [
+        "蘇悉地羯羅經略疏"
+      ],
+      "tibetan_titles": [
+        "legs par grub par byed pai rgyud chen po las sgrub pai thabs rim par phye ba [To.807, P.431]"
+      ],
+      "match_methods": [
+        "substring"
+      ]
+    },
+    "T1076": {
+      "taisho": "T1076",
+      "taisho_num": 1076,
+      "chinese_titles": [
+        "七倶胝佛母所說准提陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "lha mo skul byed ma"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T342": {
+      "taisho": "T342",
+      "taisho_num": 342,
+      "chinese_titles": [
+        "佛說如幻三昧經",
+        "如幻三昧經"
+      ],
+      "tibetan_titles": [
+        "Lha'i-bu blo-gros-rab-gnas-kyis shus-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T626": {
+      "taisho": "T626",
+      "taisho_num": 626,
+      "chinese_titles": [
+        "佛說阿闍世王經",
+        "阿闍世王經"
+      ],
+      "tibetan_titles": [
+        "Ma-skyes-dgra'i  'gyod-pa bsal-ba"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1635": {
+      "taisho": "T1635",
+      "taisho_num": 1635,
+      "chinese_titles": [
+        "大乘寶要義論"
+      ],
+      "tibetan_titles": [
+        "Mdo kun-las btus-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1377": {
+      "taisho": "T1377",
+      "taisho_num": 1377,
+      "chinese_titles": [
+        "佛說寶帶陀羅尼經",
+        "寶帶陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "me kha la"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1356": {
+      "taisho": "T1356",
+      "taisho_num": 1356,
+      "chinese_titles": [
+        "佛說華積陀羅尼神呪經",
+        "華積陀羅尼神呪經"
+      ],
+      "tibetan_titles": [
+        "me tog brtsegs pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1362": {
+      "taisho": "T1362",
+      "taisho_num": 1362,
+      "chinese_titles": [
+        "佛說善夜經",
+        "善夜經"
+      ],
+      "tibetan_titles": [
+        "mtshan mo bzang po"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1323": {
+      "taisho": "T1323",
+      "taisho_num": 1323,
+      "chinese_titles": [
+        "除一切疾病陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "nad thams cad rab tu shi bar byed pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T408": {
+      "taisho": "T408",
+      "taisho_num": 408,
+      "chinese_titles": [
+        "虛空孕菩薩經"
+      ],
+      "tibetan_titles": [
+        "Nam-mkha'i sñiṅ-po"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1165": {
+      "taisho": "T1165",
+      "taisho_num": 1165,
+      "chinese_titles": [
+        "聖持世陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "nor rgyun mai sgrub thabs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1024": {
+      "taisho": "T1024",
+      "taisho_num": 1024,
+      "chinese_titles": [
+        "無垢淨光大陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "od zer dri ma med pa rnam par dag pai od"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T886": {
+      "taisho": "T886",
+      "taisho_num": 886,
+      "chinese_titles": [
+        "佛說金剛場莊嚴般若波羅蜜多教中一分",
+        "金剛場莊嚴般若波羅蜜多教中一分"
+      ],
+      "tibetan_titles": [
+        "pal rdo rje snying po rgyan shes bya bai rgyud kyi rgyal po chen po"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1111": {
+      "taisho": "T1111",
+      "taisho_num": 1111,
+      "chinese_titles": [
+        "靑頸觀自在菩薩心陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "phags pa Nī la kang ttha shes bya bai gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1162": {
+      "taisho": "T1162",
+      "taisho_num": 1162,
+      "chinese_titles": [
+        "持世陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "'phags pa nor gyi rgyun shes bya ba'i gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1153": {
+      "taisho": "T1153",
+      "taisho_num": 1153,
+      "chinese_titles": [
+        "普遍光明淸淨熾盛如意寶印心無能勝大明王大隨求陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "phags pa rig pai rgyal mo so sor brang ba chen mo"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1054": {
+      "taisho": "T1054",
+      "taisho_num": 1054,
+      "chinese_titles": [
+        "聖觀自在菩薩一百八名經"
+      ],
+      "tibetan_titles": [
+        "phags pa spyan ras gzigs dbang phyug gi mtshan brgya rtsa brgyad pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1061": {
+      "taisho": "T1061",
+      "taisho_num": 1061,
+      "chinese_titles": [
+        "千手千眼觀世音菩薩廣大圓滿無礙大悲心陀羅尼呪本"
+      ],
+      "tibetan_titles": [
+        "'phags pa spyan ras gzigs dbang phyug thugs rje chen po'i gzungs phan yon mdor bsdus pa shes bya ba"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1613": {
+      "taisho": "T1613",
+      "taisho_num": 1613,
+      "chinese_titles": [
+        "大乘廣五蘊論"
+      ],
+      "tibetan_titles": [
+        "Phuṅ-po lṅa'i rab-tu-byed-pa bye-brag-tu bśad-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1411": {
+      "taisho": "T1411",
+      "taisho_num": 1411,
+      "chinese_titles": [
+        "佛說蓮華眼陀羅尼經",
+        "蓮華眼陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "phyag dang bstod pa dang byin rlabs dang mchod pai sprin byung pa dang mchod pa dang bsnyen gnas dang phyag byas par gyur ba dan ring po che brdar bai gzungs padmai spyan pai gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T231": {
+      "taisho": "T231",
+      "taisho_num": 231,
+      "chinese_titles": [
+        "勝天王般若波羅蜜經"
+      ],
+      "tibetan_titles": [
+        "Rab-kyi-rtsal-gyis rnam-par-gnon-pas shus-pa shes-rab-kyi-pha-rol-tu phyin-pa bstan-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T830": {
+      "taisho": "T830",
+      "taisho_num": 830,
+      "chinese_titles": [
+        "大乘遍照光明藏無字法門經"
+      ],
+      "tibetan_titles": [
+        "rdo 'phangs pa'i mdo"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1417": {
+      "taisho": "T1417",
+      "taisho_num": 1417,
+      "chinese_titles": [
+        "佛說壤相金剛陀羅尼經",
+        "壤相金剛陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "rdo rje rnam par 'joms pa shes bya ba'i gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1416": {
+      "taisho": "T1416",
+      "taisho_num": 1416,
+      "chinese_titles": [
+        "金剛摧碎陀羅尼"
+      ],
+      "tibetan_titles": [
+        "rdo rje rnam par joms pa shes bya bai gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1344": {
+      "taisho": "T1344",
+      "taisho_num": 1344,
+      "chinese_titles": [
+        "金剛上味陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "rdo rje snying poi gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1415": {
+      "taisho": "T1415",
+      "taisho_num": 1415,
+      "chinese_titles": [
+        "大金剛妙高山樓閣陀羅尼"
+      ],
+      "tibetan_titles": [
+        "rdo rje'i ri rab chen po'i rtse mo'i khang pa brtsegs pa'i gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1419": {
+      "taisho": "T1419",
+      "taisho_num": 1419,
+      "chinese_titles": [
+        "佛說造像量度經解",
+        "造像量度經解"
+      ],
+      "tibetan_titles": [
+        "rdzogs pai sangs rgyas kyis gzungs pai sky gzugs kyi mtshan nyid kyi rnam grel shes bya ba"
+      ],
+      "match_methods": [
+        "substring"
+      ]
+    },
+    "T187": {
+      "taisho": "T187",
+      "taisho_num": 187,
+      "chinese_titles": [
+        "方廣大莊嚴經"
+      ],
+      "tibetan_titles": [
+        "rgya cher rol pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1100": {
+      "taisho": "T1100",
+      "taisho_num": 1100,
+      "chinese_titles": [
+        "葉衣觀自在菩薩經"
+      ],
+      "tibetan_titles": [
+        "ri khrod lo ma gyon ma shes bya bai gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1353": {
+      "taisho": "T1353",
+      "taisho_num": 1353,
+      "chinese_titles": [
+        "東方最勝燈王陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "rig sngags kyi rgyal po sgron ma mchog gi gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1105": {
+      "taisho": "T1105",
+      "taisho_num": 1105,
+      "chinese_titles": [
+        "聖多羅菩薩一百八名陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "rje btsun ma phags ma sgrol mai mtshan brgya rtsa brgyad pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T270": {
+      "taisho": "T270",
+      "taisho_num": 270,
+      "chinese_titles": [
+        "大法鼓經"
+      ],
+      "tibetan_titles": [
+        "Rṅa-bo-che chen-poḥi leḥu"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T2211": {
+      "taisho": "T2211",
+      "taisho_num": 2211,
+      "chinese_titles": [
+        "大日經解題"
+      ],
+      "tibetan_titles": [
+        "rNam par snang mdzad chen po mngon par rdzogs par byang chub pa rnam par sprul ba byin gyis rlob pa shin tu rgyas pa mdo sd'i dbang po rgyal po zhes bya ba'i chos gyi rnam grangs"
+      ],
+      "match_methods": [
+        "substring"
+      ]
+    },
+    "T2218": {
+      "taisho": "T2218",
+      "taisho_num": 2218,
+      "chinese_titles": [
+        "大日經疏鈔"
+      ],
+      "tibetan_titles": [
+        "rNam par snang mdzad chen po mngon par rdzogs par byang chub pa rnam par sprul ba byin gyis rlob pa shin tu rgyas pa mdo sd'i dbang po rgyal po zhes bya ba'i chos gyi rnam grangs"
+      ],
+      "match_methods": [
+        "substring"
+      ]
+    },
+    "T849": {
+      "taisho": "T849",
+      "taisho_num": 849,
+      "chinese_titles": [
+        "大毘盧遮那佛說要略念誦經"
+      ],
+      "tibetan_titles": [
+        "rnam par snang mdzad mngon par byang chub par gtogs pa'i mchod pa'i cho ga"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T708": {
+      "taisho": "T708",
+      "taisho_num": 708,
+      "chinese_titles": [
+        "了本生死經"
+      ],
+      "tibetan_titles": [
+        "Sā-lu'i ljang pa shes by aba theg pa chen po'i mdo"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1348": {
+      "taisho": "T1348",
+      "taisho_num": 1348,
+      "chinese_titles": [
+        "佛說十二佛名神呪校量功德除障滅罪經",
+        "十二佛名神呪校量功德除障滅罪經"
+      ],
+      "tibetan_titles": [
+        "sangs rgyas bcu gnyis pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1333": {
+      "taisho": "T1333",
+      "taisho_num": 1333,
+      "chinese_titles": [
+        "虛空藏菩薩問七佛陀羅尼呪經"
+      ],
+      "tibetan_titles": [
+        "sangs rgyas bdung pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T918": {
+      "taisho": "T918",
+      "taisho_num": 918,
+      "chinese_titles": [
+        "諸佛心陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "sangs rgyas kyi snying po"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1346": {
+      "taisho": "T1346",
+      "taisho_num": 1346,
+      "chinese_titles": [
+        "諸佛集會陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "sangs rgyas thams cad kyi yan lag dang ldan pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T358": {
+      "taisho": "T358",
+      "taisho_num": 358,
+      "chinese_titles": [
+        "度一切諸佛境界智嚴經"
+      ],
+      "tibetan_titles": [
+        "Saṅs-rgyas thams-cad-kyi yul-la  'jug-pa'i ye-shes snaṅ-ba'i rgyan"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T340": {
+      "taisho": "T340",
+      "taisho_num": 340,
+      "chinese_titles": [
+        "文殊師利所說不思議佛境界經"
+      ],
+      "tibetan_titles": [
+        "Saṅs-rgyas-kyi yul bsam-kyis-mi-khyab-pa bstan-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T225": {
+      "taisho": "T225",
+      "taisho_num": 225,
+      "chinese_titles": [
+        "大明度經"
+      ],
+      "tibetan_titles": [
+        "Śes-rab-kyi-pha-rol-tu-phyin-pa brgyad-stoṅ-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1137": {
+      "taisho": "T1137",
+      "taisho_num": 1137,
+      "chinese_titles": [
+        "佛說善法方便陀羅尼經",
+        "善法方便陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "sgo bzang po shes bya ba'i gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1361": {
+      "taisho": "T1361",
+      "taisho_num": 1361,
+      "chinese_titles": [
+        "六門陀羅尼經論"
+      ],
+      "tibetan_titles": [
+        "sgo drug pa'i gzungs kyi rnam par bshad pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1645": {
+      "taisho": "T1645",
+      "taisho_num": 1645,
+      "chinese_titles": [
+        "彰所知論"
+      ],
+      "tibetan_titles": [
+        "shes bya rab gsal"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T220": {
+      "taisho": "T220",
+      "taisho_num": 220,
+      "chinese_titles": [
+        "大般若波羅蜜多經"
+      ],
+      "tibetan_titles": [
+        "Shes Rab Kyi Pha Rol Tu Phyin Pa’i Mdo"
+      ],
+      "match_methods": [
+        "substring"
+      ]
+    },
+    "T118": {
+      "taisho": "T118",
+      "taisho_num": 118,
+      "chinese_titles": [
+        "佛說鴦掘摩經",
+        "鴦掘摩經"
+      ],
+      "tibetan_titles": [
+        "Sor-moḥi phreṅ-ba-la phan-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T544": {
+      "taisho": "T544",
+      "taisho_num": 544,
+      "chinese_titles": [
+        "辯意長者子經"
+      ],
+      "tibetan_titles": [
+        "Spobs-pa'i blo-gros-kyis shus-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T387": {
+      "taisho": "T387",
+      "taisho_num": 387,
+      "chinese_titles": [
+        "大方等無想經"
+      ],
+      "tibetan_titles": [
+        "Sprin chen-po"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1080": {
+      "taisho": "T1080",
+      "taisho_num": 1080,
+      "chinese_titles": [
+        "如意輪陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "spyan rgyas gzigs dbang phyug gi gsang ba'i mdsod thogs pa med pa'i yid bshin gyi 'khor lo'i snying po"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1574": {
+      "taisho": "T1574",
+      "taisho_num": 1574,
+      "chinese_titles": [
+        "大乘破有論"
+      ],
+      "tibetan_titles": [
+        "Srid-pa-las  'das-pa'i gtam"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T780": {
+      "taisho": "T780",
+      "taisho_num": 780,
+      "chinese_titles": [
+        "佛說十力經",
+        "十力經"
+      ],
+      "tibetan_titles": [
+        "Stobs bcu'i mdo"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T999": {
+      "taisho": "T999",
+      "taisho_num": 999,
+      "chinese_titles": [
+        "佛說守護大千國土經",
+        "守護大千國土經"
+      ],
+      "tibetan_titles": [
+        "stong chen mo rab tu 'joms pa zhes bya ba'i mdo"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1035": {
+      "taisho": "T1035",
+      "taisho_num": 1035,
+      "chinese_titles": [
+        "千轉陀羅尼觀世音菩薩呪"
+      ],
+      "tibetan_titles": [
+        "stong 'gur shes bya ba'i gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1386": {
+      "taisho": "T1386",
+      "taisho_num": 1386,
+      "chinese_titles": [
+        "佛說妙色陀羅尼經",
+        "妙色陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "su rū pa shes bya ba'i gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1373": {
+      "taisho": "T1373",
+      "taisho_num": 1373,
+      "chinese_titles": [
+        "佛說施一切無畏陀羅尼經",
+        "施一切無畏陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "thams cad la mi jigs pa rab tu sbyin pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1576": {
+      "taisho": "T1576",
+      "taisho_num": 1576,
+      "chinese_titles": [
+        "大乘二十頌論"
+      ],
+      "tibetan_titles": [
+        "Theg-pa chen-po nyi-śu-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T998": {
+      "taisho": "T998",
+      "taisho_num": 998,
+      "chinese_titles": [
+        "佛說迴向輪經",
+        "迴向輪經"
+      ],
+      "tibetan_titles": [
+        "tongs su mya ngan las das pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1387": {
+      "taisho": "T1387",
+      "taisho_num": 1387,
+      "chinese_titles": [
+        "佛說栴檀香身陀羅尼經",
+        "栴檀香身陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "tsandan gyi yan lag"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T587": {
+      "taisho": "T587",
+      "taisho_num": 587,
+      "chinese_titles": [
+        "勝思惟梵天所問經"
+      ],
+      "tibetan_titles": [
+        "Tshangs-pa khyad-par-sems-kyi zhus-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T586": {
+      "taisho": "T586",
+      "taisho_num": 586,
+      "chinese_titles": [
+        "思益梵天所問經"
+      ],
+      "tibetan_titles": [
+        "Tshaṅs-pa khyad-par-sems-kyi shus-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T21": {
+      "taisho": "T21",
+      "taisho_num": 21,
+      "chinese_titles": [
+        "佛說梵網六十二見經",
+        "梵網六十二見經"
+      ],
+      "tibetan_titles": [
+        "Tshaṅs-pa'i dra-ba'i mdo"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T936": {
+      "taisho": "T936",
+      "taisho_num": 936,
+      "chinese_titles": [
+        "大乘無量壽經"
+      ],
+      "tibetan_titles": [
+        "Tshe dang ye shes dpag tu med pa shes bya ba theg pa chen po'i mdo"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T370": {
+      "taisho": "T370",
+      "taisho_num": 370,
+      "chinese_titles": [
+        "阿彌陀鼓音聲王陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "tshe dang ye shes dpag tu med pa'i snying po"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T317": {
+      "taisho": "T317",
+      "taisho_num": 317,
+      "chinese_titles": [
+        "佛說胞胎經",
+        "胞胎經"
+      ],
+      "tibetan_titles": [
+        "Tshe-daṅ-ldan-pa dgaḥ-bo-la mṅal du  'jug-pa bstan-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T759": {
+      "taisho": "T759",
+      "taisho_num": 759,
+      "chinese_titles": [
+        "佛說較量壽命經",
+        "較量壽命經"
+      ],
+      "tibetan_titles": [
+        "Tsheḥi mtha'i mdo"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T347": {
+      "taisho": "T347",
+      "taisho_num": 347,
+      "chinese_titles": [
+        "大乘顯識經"
+      ],
+      "tibetan_titles": [
+        "Tshong-dpon bzang-skyong-gis shus-pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1037": {
+      "taisho": "T1037",
+      "taisho_num": 1037,
+      "chinese_titles": [
+        "觀自在菩薩說普賢陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "un tu bzang po shes bya bai gzungs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1144": {
+      "taisho": "T1144",
+      "taisho_num": 1144,
+      "chinese_titles": [
+        "佛說彌勒菩薩發願王偈",
+        "彌勒菩薩發願王偈"
+      ],
+      "tibetan_titles": [
+        "yams pa'i smon lam"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1397": {
+      "taisho": "T1397",
+      "taisho_num": 1397,
+      "chinese_titles": [
+        "智炬陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "ye shes ta la la shes bya bai gzungs gro ba thams cad yongs su sbyong ba"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1313": {
+      "taisho": "T1313",
+      "taisho_num": 1313,
+      "chinese_titles": [
+        "佛說救拔焰口餓鬼陀羅尼經",
+        "救拔焰口餓鬼陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "yi dwags kha nas me 'bar ba la skyabs mdzad pa",
+        "yi dwags mo kha 'bar ma dbugs dbyung ba'i gtor ma'i cho ga"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1045": {
+      "taisho": "T1045",
+      "taisho_num": 1045,
+      "chinese_titles": [
+        "佛說六字神呪王經",
+        "六字神呪王經"
+      ],
+      "tibetan_titles": [
+        "yi ge drug pa'i rig sngags"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T1316": {
+      "taisho": "T1316",
+      "taisho_num": 1316,
+      "chinese_titles": [
+        "佛說甘露經陀羅尼呪",
+        "甘露經陀羅尼呪"
+      ],
+      "tibetan_titles": [
+        "yon tan bsngags pa dpag tu med pa [To.679/851]"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T934": {
+      "taisho": "T934",
+      "taisho_num": 934,
+      "chinese_titles": [
+        "佛說無量功德陀羅尼經",
+        "無量功德陀羅尼經"
+      ],
+      "tibetan_titles": [
+        "yon tan bsngags pa dpag tu med pa"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T377": {
+      "taisho": "T377",
+      "taisho_num": 377,
+      "chinese_titles": [
+        "大般涅槃經後分"
+      ],
+      "tibetan_titles": [
+        "Yoṅs-su-mya-ṅan-las-ḥdas-pa chen-po"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    },
+    "T423": {
+      "taisho": "T423",
+      "taisho_num": 423,
+      "chinese_titles": [
+        "僧伽吒經"
+      ],
+      "tibetan_titles": [
+        "Zung-gi mdo'i chos-kyi-rnam-grangs"
+      ],
+      "match_methods": [
+        "title"
+      ]
+    }
+  },
+  "unmatched_tibetan": [
+    {
+      "tibetan_title": "['phags pa] De bshin gshegs pa'i gtsug tor nas byung ba'i gdugs dkar po can gshan gyi mi thub pa phir bzlog pa chen mo mchog tu grub pa shes bya ba'i gzungs",
+      "chinese_titles": [
+        "大佛頂如來放光悉憺多鉢憺陀羅尼"
+      ]
+    },
+    {
+      "tibetan_title": "['phags pa] don yod pa'i shags pa'i cho ga shib mo'i rgyal po",
+      "chinese_titles": [
+        "不空羂索神變眞言經"
+      ]
+    },
+    {
+      "tibetan_title": "['phags pa] Don yod shags pa'i snying po shes bya ba theg pa chen po'i mdo",
+      "chinese_titles": [
+        "不空羂索呪心經"
+      ]
+    },
+    {
+      "tibetan_title": "['phags pa] nor chen po rgyas pa'i gshal med khang shin tu rab tu gnas pa",
+      "chinese_titles": [
+        "大寶廣博樓閣善住祕密陀羅尼經"
+      ]
+    },
+    {
+      "tibetan_title": "Bar do thos grol",
+      "chinese_titles": [
+        "中有聞解"
+      ]
+    },
+    {
+      "tibetan_title": "bcom ldan 'das ma nor rgyun ma'i rtog pa",
+      "chinese_titles": [
+        "聖佛母小字般若波羅蜜多經"
+      ]
+    },
+    {
+      "tibetan_title": "Bod chen po’i srid lugs dang ’brel ba’i rgyal rabs deb ther dkar po",
+      "chinese_titles": [
+        "白史"
+      ]
+    },
+    {
+      "tibetan_title": "Bu-mo blo-gros-bzaṅ-mor shus-pa",
+      "chinese_titles": [
+        "須摩提經"
+      ]
+    },
+    {
+      "tibetan_title": "Bu-mo blo-gros-bzaṅ-mos shus-pa",
+      "chinese_titles": [
+        "妙慧童女經"
+      ]
+    },
+    {
+      "tibetan_title": "byang chub sems dpa'I spyod pa la 'jug pa'I dka' 'grel",
+      "chinese_titles": [
+        "入菩提行論細疏"
+      ]
+    },
+    {
+      "tibetan_title": "Bye brag tu rtogs par byed pa chen po",
+      "chinese_titles": [
+        "翻譯名義大集"
+      ]
+    },
+    {
+      "tibetan_title": "bzang po spyod pai smon lam gyi rgyal poi rgya cher grel pa",
+      "chinese_titles": [
+        "普賢菩薩行願讚"
+      ]
+    },
+    {
+      "tibetan_title": "Chos yaṅ-dag-par sdud pa",
+      "chinese_titles": [
+        "法集經"
+      ]
+    },
+    {
+      "tibetan_title": "Dam pa`i chos rin po che `phags pa`i yul du ji ltar dar ba`i tshul gsal bar bston pa",
+      "chinese_titles": [
+        "多羅那他佛教史"
+      ]
+    },
+    {
+      "tibetan_title": "Dam-pahi chos-rin-po-che hphags-pahi yul-du ji-ltar dar-bahi tshulgsal-bar bston-pa",
+      "chinese_titles": [
+        "印度佛教史"
+      ]
+    },
+    {
+      "tibetan_title": "de kho na'i le'u",
+      "chinese_titles": [
+        "眞實義品"
+      ]
+    },
+    {
+      "tibetan_title": "Deb ther dkar po",
+      "chinese_titles": [
+        "白史"
+      ]
+    },
+    {
+      "tibetan_title": "Deb ther dmar po",
+      "chinese_titles": [
+        "得布特馬坡"
+      ]
+    },
+    {
+      "tibetan_title": "Deb ther dmar po rnams kyi dang po hu lan deb ther",
+      "chinese_titles": [
+        "得布特馬坡"
+      ]
+    },
+    {
+      "tibetan_title": "Deb ther sngon po",
+      "chinese_titles": [
+        "青史"
+      ]
+    },
+    {
+      "tibetan_title": "De-bshin-gśegs-pa bdun-gyi sṅon-gyi smon-lam-gyi khyad-par rgyas-pa",
+      "chinese_titles": [
+        "藥師琉璃光七佛本願功德經"
+      ]
+    },
+    {
+      "tibetan_title": "dgos `dod kun `byung",
+      "chinese_titles": [
+        "多羅那他佛教史"
+      ]
+    },
+    {
+      "tibetan_title": "Dgos-hdodkun-hbyuv",
+      "chinese_titles": [
+        "印度佛教史"
+      ]
+    },
+    {
+      "tibetan_title": "dpung bzang gis zhus pa zhes bya bai rgyud",
+      "chinese_titles": [
+        "蘇婆呼童子請問經"
+      ]
+    },
+    {
+      "tibetan_title": "dug sel",
+      "chinese_titles": [
+        "觀自在菩薩化身襄麌哩曳童女銷伏毒害陀羅尼經"
+      ]
+    },
+    {
+      "tibetan_title": "Dus kyi ’khor lo rgyud",
+      "chinese_titles": [
+        "時輪坦陀羅"
+      ]
+    },
+    {
+      "tibetan_title": "gSang ba 'dus pa’i rgyud",
+      "chinese_titles": [
+        "密集金剛"
+      ]
+    },
+    {
+      "tibetan_title": "Ḥjig-rten-ḥdsin-gyis yoṅs-su dris-pa",
+      "chinese_titles": [
+        "持世經"
+      ]
+    },
+    {
+      "tibetan_title": "jam dpal gyi rtsa ba'i rgyud",
+      "chinese_titles": [
+        "大方廣曼殊室利童眞菩薩華嚴本教讚閻曼德迦忿怒王眞言阿毘遮迦嚕儀軌品"
+      ]
+    },
+    {
+      "tibetan_title": "'khor lo sdom pa gsang ba bsam gyis mi khyab pa'i rgyud kyi rgyal po",
+      "chinese_titles": [
+        "妙輪上樂王祕密不思議大教王經"
+      ]
+    },
+    {
+      "tibetan_title": "mkhas pa chen po grags pa rgyal mtshan la btsod pa",
+      "chinese_titles": [
+        "金剛頂經瑜伽文殊師利菩薩法一品"
+      ]
+    },
+    {
+      "tibetan_title": "nyis su med pa mnyam pa nyid rnam par rgyal ba shes bya bai rtog pai rgyal po chen po",
+      "chinese_titles": [
+        "無二平等最上瑜伽大教王經"
+      ]
+    },
+    {
+      "tibetan_title": "rGyal rabs gsal ba’i me long",
+      "chinese_titles": [
+        "王統世係明鑒"
+      ]
+    },
+    {
+      "tibetan_title": "rig sngags kyi rgyal mo rma bya chen mo",
+      "chinese_titles": [
+        "孔雀明王經"
+      ]
+    },
+    {
+      "tibetan_title": "Rin-po-cheḥi-phuṅ-po",
+      "chinese_titles": [
+        "寶梁經"
+      ]
+    },
+    {
+      "tibetan_title": "sBa bzhed",
+      "chinese_titles": [
+        "巴協"
+      ]
+    },
+    {
+      "tibetan_title": "Śes-rab-kyi-pha-rol-tu-phyin-pa stoṅ-phrag-ñi-śu-lṅa-pa",
+      "chinese_titles": [
+        "放光般若波羅蜜經"
+      ]
+    },
+    {
+      "tibetan_title": "sGrol ma la phyag tshal nyi shu rtsa gcig gi bstod pa phan yon dang bcas pa",
+      "chinese_titles": [
+        "聖救度佛母二十一種禮讚經"
+      ]
+    },
+    {
+      "tibetan_title": "Shes rab kyi pha rol tu phyin pa stong phrag brgya pa",
+      "chinese_titles": [
+        "十萬頌"
+      ]
+    },
+    {
+      "tibetan_title": "stag rna'i rtogs pa brjod pa",
+      "chinese_titles": [
+        "摩鄧女經"
+      ]
+    },
+    {
+      "tibetan_title": "Tepder Garbo",
+      "chinese_titles": [
+        "白史"
+      ]
+    },
+    {
+      "tibetan_title": "Tepter Marbo;",
+      "chinese_titles": [
+        "得布特馬坡"
+      ]
+    },
+    {
+      "tibetan_title": "Tepter Ngönbo",
+      "chinese_titles": [
+        "青史"
+      ]
+    },
+    {
+      "tibetan_title": "Tshe dpag du myed pa'i mdo",
+      "chinese_titles": [
+        "大乘無量壽宗要經"
+      ]
+    },
+    {
+      "tibetan_title": "Tshe-daṅ-ldan-pa dgaḥ-bo-la mṇal du  'jug-pa bstan-pa",
+      "chinese_titles": [
+        "佛爲阿難說處胎會"
+      ]
+    },
+    {
+      "tibetan_title": "Vatsa'i-rgyal-po  'char-byed-kyis shus-pa",
+      "chinese_titles": [
+        "優填王經"
+      ]
+    },
+    {
+      "tibetan_title": "Yum 'bum pa",
+      "chinese_titles": [
+        "十萬頌"
+      ]
+    }
+  ]
+}

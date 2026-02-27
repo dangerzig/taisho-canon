@@ -19,6 +19,7 @@ RESULTS_DIR = BASE_DIR / "results"
 
 # Input: expanded concordance
 EXPANDED_PATH = RESULTS_DIR / "cross_reference_expanded.json"
+KNOWN_ERRORS_PATH = BASE_DIR / "data" / "known_errors.json"
 
 # Source files for provenance reconstruction
 LANCASTER_PATH = BASE_DIR / "lancaster_taisho_crossref.json"
@@ -288,12 +289,27 @@ def gather_titles_and_nanjio(expanded):
     return titles, nanjio, otani_map
 
 
+def load_known_error_pairs():
+    """Load known catalog errors and return a set of (taisho_id, toh) pairs to exclude."""
+    errors_data = load_json(KNOWN_ERRORS_PATH)
+    if not errors_data:
+        return set()
+    return {
+        (err["taisho_id"], err["erroneous_toh"])
+        for err in errors_data.get("errors", [])
+    }
+
+
 def export_csv():
     """Export the concordance as a flat CSV with one row per Taisho-Tohoku pair."""
     expanded = load_json(EXPANDED_PATH)
     if not expanded:
         print(f"ERROR: {EXPANDED_PATH} not found.")
         return
+
+    error_pairs = load_known_error_pairs()
+    if error_pairs:
+        print(f"Loaded {len(error_pairs)} known error pairs to exclude.")
 
     print("Reconstructing per-mapping provenance from source files...")
     provenance = build_provenance(expanded)
@@ -309,8 +325,11 @@ def export_csv():
     for taisho_id in sorted(tibetan.keys()):
         parallels = tibetan[taisho_id]
 
-        # Separate Toh and Otani entries
-        toh_entries = [p for p in parallels if p.startswith("Toh ")]
+        # Separate Toh and Otani entries, excluding known errors
+        toh_entries = [
+            p for p in parallels
+            if p.startswith("Toh ") and (taisho_id, p) not in error_pairs
+        ]
         otani_entries = [p for p in parallels if p.startswith("Otani ")]
         other_entries = [
             p for p in parallels

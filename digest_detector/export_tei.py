@@ -25,6 +25,7 @@ RESULTS_DIR = BASE_DIR / "results"
 
 # Input: expanded concordance
 EXPANDED_PATH = RESULTS_DIR / "cross_reference_expanded.json"
+KNOWN_ERRORS_PATH = BASE_DIR / "data" / "known_errors.json"
 
 # Source files for provenance reconstruction (same as export_csv)
 LANCASTER_PATH = BASE_DIR / "lancaster_taisho_crossref.json"
@@ -301,7 +302,8 @@ def toh_to_target(toh_str):
     return toh_str.replace(" ", "_")
 
 
-def build_tei(expanded, provenance, titles, nanjio_map, otani_map):
+def build_tei(expanded, provenance, titles, nanjio_map, otani_map,
+              error_pairs=None):
     """Build a TEI XML ElementTree from the concordance data."""
     # Register namespace so output uses the default namespace
     # (ElementTree will write xmlns on root)
@@ -360,6 +362,7 @@ def build_tei(expanded, provenance, titles, nanjio_map, otani_map):
         set(tibetan.keys()) | set(pali.keys()) | set(sanskrit.keys())
     )
 
+    _errors = error_pairs or set()
     entry_count = 0
     link_count = 0
 
@@ -367,9 +370,12 @@ def build_tei(expanded, provenance, titles, nanjio_map, otani_map):
         entry = SubElement(link_grp, "entry")
         entry.set(f"{{{XML_NS}}}id", taisho_id)
 
-        # Tibetan links (Tohoku)
+        # Tibetan links (Tohoku), excluding known errors
         tib_parallels = tibetan.get(taisho_id, [])
-        toh_entries = sorted(p for p in tib_parallels if p.startswith("Toh "))
+        toh_entries = sorted(
+            p for p in tib_parallels
+            if p.startswith("Toh ") and (taisho_id, p) not in _errors
+        )
         otani_entries = sorted(p for p in tib_parallels if p.startswith("Otani "))
         other_tib = sorted(
             p for p in tib_parallels
@@ -446,12 +452,27 @@ def build_tei(expanded, provenance, titles, nanjio_map, otani_map):
     return ElementTree(tei), entry_count, link_count
 
 
+def load_known_error_pairs():
+    """Load known catalog errors and return a set of (taisho_id, toh) pairs to exclude."""
+    errors_data = load_json(KNOWN_ERRORS_PATH)
+    if not errors_data:
+        return set()
+    return {
+        (err["taisho_id"], err["erroneous_toh"])
+        for err in errors_data.get("errors", [])
+    }
+
+
 def export_tei():
     """Export the concordance as a TEI XML file."""
     expanded = load_json(EXPANDED_PATH)
     if not expanded:
         print(f"ERROR: {EXPANDED_PATH} not found.")
         return
+
+    error_pairs = load_known_error_pairs()
+    if error_pairs:
+        print(f"Loaded {len(error_pairs)} known error pairs to exclude.")
 
     print("Reconstructing per-mapping provenance from source files...")
     provenance = build_provenance(expanded)
@@ -462,6 +483,7 @@ def export_tei():
     print("Building TEI XML document...")
     tree, entry_count, link_count = build_tei(
         expanded, provenance, titles, nanjio_map, otani_map,
+        error_pairs=error_pairs,
     )
 
     # Pretty-print with indentation

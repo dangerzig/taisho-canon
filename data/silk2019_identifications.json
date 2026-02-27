@@ -1,0 +1,310 @@
+{
+  "source": "silk2019",
+  "citation": "Silk, Jonathan A., 'Chinese Sūtras in Tibetan Translation: A Preliminary Survey,' Annual Report of the International Research Institute for Advanced Buddhology at Soka University 22 (2019): 227-246.",
+  "url": "https://www.academia.edu/40447816/Chinese_S%C5%ABtras_in_Tibetan_Translation_A_Preliminary_Survey",
+  "notes": "Silk 2019 identifies 31 Derge Kangyur sūtras translated from identified Chinese sources, plus 4 whose Chinese sources cannot be identified (D.122, 241, 255, 263). Taisho numbers derived from Silk's identifications as cited by Li Channa (2021), 84000.co, and the existing cross_reference.json concordance. CBETA-format Taisho IDs (T##n####) used where volume number is determinable; Ratnakūṭa sub-sections given as T11n0310(##). Some entries marked with '?' where identification is tentative.",
+  "identifications": [
+    {
+      "taisho": "T11n0310(7)",
+      "tohoku": "Toh 51",
+      "chinese_title": "被甲莊嚴會 Pǐjiǎ zhuāngyán huì",
+      "tibetan_title": "Go cha'i bkod pa bstan pa",
+      "sanskrit_title": "Āryavarmavyūhanirdeśanāmamahāyānasūtra",
+      "notes": "Ratnakūṭa chapter 7. Translated from Bodhiruci's Chinese (706-713) by Gö Chödrup (Chos grub). Not recognized as Chinese-origin by early Tibetan catalogues. Silk 2019 not paginated in Li Channa's table for this entry. 84000: 'translated from the Chinese rather than Sanskrit.'"
+    },
+    {
+      "taisho": "T11n0310(14)",
+      "tohoku": "Toh 57",
+      "chinese_title": "佛說入胎藏會 Fóshuō rù tāicáng huì",
+      "tibetan_title": "Dga' bo mngal na gnas pa bstan pa",
+      "sanskrit_title": "Āryananandagarbhāvakrāntinirdeśa",
+      "notes": "Ratnakūṭa chapter 14. Also corresponds to T24n1451 (Yijing's translation). 84000 says translated into Tibetan from Chinese in the ninth century."
+    },
+    {
+      "taisho": "T11n0310(13)",
+      "tohoku": "Toh 58",
+      "chinese_title": "佛為阿難說處胎會 Fó wéi Ānán shuō chǔtāi huì",
+      "tibetan_title": "Tshe dang ldan pa dga' bo la mngal du 'jug pa bstan pa",
+      "sanskrit_title": "Āyuṣmannandagarbhāvakrāntinirdeśa",
+      "notes": "Ratnakūṭa chapter 13. Chutai hui (處胎會). Translated from Bodhiruci's Chinese by Chödrup (Chos grub), 9th century. 84000 confirms Chinese source."
+    },
+    {
+      "taisho": "T11n0310(17)",
+      "tohoku": "Toh 61",
+      "chinese_title": "富樓那會 Fùlóunà huì",
+      "tibetan_title": "Gang pos zhus pa",
+      "sanskrit_title": "Āryapūrṇaparipṛcchānāmamahāyānasūtra",
+      "notes": "Ratnakūṭa chapter 17. The Questions of Pūrṇa. Kumārajīva's Chinese translation (405 CE) is the only known Chinese version. Silk 2019. 84000 confirms Tibetan derives from Chinese."
+    },
+    {
+      "taisho": "T11n0310(20)",
+      "tohoku": "Toh 64",
+      "chinese_title": "無盡伏藏會 Wújìn fúcáng huì",
+      "tibetan_title": "Glog thob kyis zhus pa",
+      "sanskrit_title": "Āryavidyutprāptaparipṛcchāsūtra",
+      "notes": "Ratnakūṭa chapter 20. Vidyutprāpta's Questions. Translated from Bodhiruci's Chinese (706-713), perhaps by Chödrup. 84000 confirms Chinese source."
+    },
+    {
+      "taisho": "T11n0310(40)",
+      "tohoku": "Toh 84",
+      "chinese_title": "淨信童女會 Jìngxìn tóngnǚ huì",
+      "tibetan_title": "Bu mo rnam dag dad pas zhus pa",
+      "sanskrit_title": "Āryadārikāvimalaśraddhāparipṛcchānāmamahāyānasūtra",
+      "notes": "Ratnakūṭa chapter 40. The Questions of the Girl Vimalaśraddhā. Translated from Chinese by Gö Chödrup, late 8th/early 9th century. 84000 confirms Chinese source."
+    },
+    {
+      "taisho": "T16n0670",
+      "tohoku": "Toh 108",
+      "chinese_title": "楞伽阿跋多羅寶經 Léngqié ābáduōluó bǎojīng",
+      "tibetan_title": "Lang kar gshegs pa'i mdo las sangs rgyas thams cad kyi gsung gi snying po'i le'u",
+      "sanskrit_title": "Laṅkāvatārasūtra",
+      "notes": "The Quintessence of the Speech of All the Buddhas, a Chapter from the Descent into Laṅka. Guṇabhadra's Chinese translation (T.670, 4 fascicles). Translated by Chos grub. Cp. D.107 (from Sanskrit). Silk 2019:234-35. Li Channa 2021, Table 1 no. 4."
+    },
+    {
+      "taisho": "T12n0374",
+      "tohoku": "Toh 119",
+      "chinese_title": "大般涅槃經 Dàbānniè pán jīng",
+      "tibetan_title": "Yongs su mya ngan las 'das pa chen po'i mdo",
+      "sanskrit_title": "Mahāparinirvāṇasūtra",
+      "notes": "The Sūtra of the Great Parinirvāṇa. Dharmakṣema's 40-fascicle 'Northern text' (421-430). D.119 combines T.374 and T.377 (Latter Portion). Translators: Wang Phab Zhun, Dge ba'i blo gros, Rgya mtsho'i sde. Silk 2019:233. Li Channa 2021, Table 1 no. 1."
+    },
+    {
+      "taisho": "T17n0653",
+      "tohoku": "Toh 123",
+      "chinese_title": "佛說如來心密藏經 Fóshuō rúlái xīn mìcáng jīng",
+      "tibetan_title": "Sangs rgyas kyi mdzod kyi chos yig",
+      "sanskrit_title": "Tathāgatagarbhasūtra",
+      "notes": "Words of the Dharma, 'The Treasury of the Buddhas'. Possibly translated from Chinese. Cp. D.220 (from Sanskrit). Silk 2019:234. Li Channa 2021, Table 1 no. 7."
+    },
+    {
+      "taisho": "T09n0273",
+      "tohoku": "Toh 135",
+      "chinese_title": "金剛三昧經 Jīngāng sānmèi jīng",
+      "tibetan_title": "Rdo rje ting nge 'dzin gyi chos kyi yi ge",
+      "sanskrit_title": "Vajrasamādhisūtra",
+      "notes": "The Words of the Dharma on the Vajra Samādhi. Chinese text likely composed in Korea c. 685 CE (apocryphal). Silk 2019:232. Li Channa 2021, Table 1 no. 6."
+    },
+    {
+      "taisho": "",
+      "tohoku": "Toh 137",
+      "chinese_title": "",
+      "tibetan_title": "Ting nge 'dzin mchog dam pa",
+      "sanskrit_title": "Samādhyagrottama",
+      "notes": "The Supreme Samādhi. Chinese source not identified. Taisho number unknown. Silk 2019:238. Li Channa 2021, Table 1 no. 31 (also ZW 10). Zorin (2020) discusses a Dunhuang Tibetan manuscript of this text."
+    },
+    {
+      "taisho": "T14n0482",
+      "tohoku": "Toh 174",
+      "chinese_title": "持世經 Chíshì jīng",
+      "tibetan_title": "'Phags pa 'jig rten 'dzin gyis yongs su dris pa zhes bya ba'i mdo",
+      "sanskrit_title": "Āryalokadharaparipṛcchānāmasūtra",
+      "notes": "The Inquiry of Lokadhara. Two Chinese translations exist: T.481 (Dharmarakṣa) and T.482 (Kumārajīva, 402-412). 84000 says no Sanskrit version remains; Tibetan derives from Chinese. Silk 2019. Li Channa 2021, Appendix I no. 7."
+    },
+    {
+      "taisho": "T14n0452",
+      "tohoku": "Toh 199",
+      "chinese_title": "佛說觀彌勒菩薩上生兜率天經 Fóshuō guān Mílè púsà shàngshēng Dōushuàitiān jīng",
+      "tibetan_title": "Byang chub sems dpa' byams pa dga' ldan gnam du skye ba blangs pa'i mdo",
+      "sanskrit_title": "",
+      "notes": "The Sūtra on Maitreya's Birth in the Heaven of Joy. Translated from Chinese by Pabtong and Sherab Sengé. Not recorded in any of the four early catalogues as from Chinese. 84000 confirms Chinese source. Li Channa 2021, Appendix I no. 8."
+    },
+    {
+      "taisho": "T12n0397",
+      "tohoku": "Toh 237",
+      "chinese_title": "",
+      "tibetan_title": "Bdud kyi le'u nyi tshe phyung ba",
+      "sanskrit_title": "",
+      "notes": "A Minor Chapter on Demons. Chinese source identification tentative. Li Channa 2021, Table 1 no. 12 identifies this with T.397 but notes this needs verification. Silk 2019:235."
+    },
+    {
+      "taisho": "T13n0411",
+      "tohoku": "Toh 239",
+      "chinese_title": "大乘大集地藏十輪經 Dàshèng dàjí dìzàng shílún jīng",
+      "tibetan_title": "Sa'i snying po 'khor lo bcu pa'i mdo",
+      "sanskrit_title": "Daśacakrakṣitigarbhasūtra",
+      "notes": "The Sūtra of the Ten Wheels of Kṣitigarbha. No extant Sanskrit edition; Tibetan is a translation of the Chinese. Translators: Hwa shang Zab mo, Rnam par mi rtog pa. Silk 2019. Li Channa 2021, Appendix I no. 9."
+    },
+    {
+      "taisho": "T13n0410",
+      "tohoku": "Toh 242",
+      "chinese_title": "大乘同性經 Dàshèng tóngxìng jīng",
+      "tibetan_title": "Yongs su bsngo ba'i 'khor lo",
+      "sanskrit_title": "Pariṇāmacakra",
+      "notes": "Also identified with T19n0998 in cross_reference.json. Translated from Chinese by Rnam par mi rtog. Cp. D.810 (from Sanskrit). Silk 2019:235-36. Li Channa 2021, Table 1 no. 15."
+    },
+    {
+      "taisho": "",
+      "tohoku": "Toh 243",
+      "chinese_title": "",
+      "tibetan_title": "Dam pa'i chos kyi rgyal po'i mdo",
+      "sanskrit_title": "Saddharmarājasūtra",
+      "notes": "The Sūtra of the King of the True Dharma. Chinese source not identified. Taisho number unknown. Silk 2019 lists this among the 31 but specific page reference needs verification."
+    },
+    {
+      "taisho": "T12n0354",
+      "tohoku": "Toh 256",
+      "chinese_title": "大乘善見經 Dàshèng shànjiàn jīng (?)",
+      "tibetan_title": "Chos kyi rgya mo",
+      "sanskrit_title": "",
+      "notes": "The Seal of the Dharma. Chinese identification tentative (marked with ? by Li Channa). Also T24n1484 in cross_reference.json. Silk 2019:236. Li Channa 2021, Table 1 no. 14."
+    },
+    {
+      "taisho": "",
+      "tohoku": "Toh 264",
+      "chinese_title": "",
+      "tibetan_title": "Thar pa chen po phyogs su rgyas pa'i mdo",
+      "sanskrit_title": "Mokṣasūtra",
+      "notes": "The Sūtra on Liberation (Sutra of Great Liberation). Translated from Chinese; original Sanskrit lost. Translator: Chos grub (Chödrup). Silk 2019:230. Li Channa 2021, Table 1 no. 10. Chinese Taisho number not clearly identified."
+    },
+    {
+      "taisho": "T17n0785",
+      "tohoku": "Toh 335",
+      "chinese_title": "得道梯橙錫杖經 Dédào tīchéng xīzhàng jīng",
+      "tibetan_title": "'Khar gsil gyi mdo",
+      "sanskrit_title": "",
+      "notes": "The Sūtra on the Ringing Staff. Also D.336. Translated from Chinese by Chödrup (confirmed by Dunhuang colophon). Some 13th-century sources say 'from Khotanese.' Corresponds to the relevant section of T.785. Silk 2019:235. Li Channa 2021, Table 1 no. 30."
+    },
+    {
+      "taisho": "T17n0785",
+      "tohoku": "Toh 336",
+      "chinese_title": "得道梯橙錫杖經 Dédào tīchéng xīzhàng jīng (appendix)",
+      "tibetan_title": "'Khar gsil 'chang ba'i kun spyod pa'i cho ga",
+      "sanskrit_title": "",
+      "notes": "The Rite for the Protocols Associated with Carrying the Ringing Staff. Companion text to Toh 335, also from T.785 (the appendix with 25 rules). Dunhuang colophon: 'translated from the Chinese by Bandé Chödrup.' Silk 2019:235. 84000 confirms Chinese source."
+    },
+    {
+      "taisho": "T04n0202",
+      "tohoku": "Toh 341",
+      "chinese_title": "賢愚經 Xiányú jīng",
+      "tibetan_title": "Mdzangs blun gyi mdo",
+      "sanskrit_title": "Damamūkanidānasūtra",
+      "notes": "The Sūtra of the Wise and Foolish. Chinese text rendered 445 CE. Translator: Chos grub. Silk 2019:232. Li Channa 2021, Table 1 no. 2."
+    },
+    {
+      "taisho": "T14n0559",
+      "tohoku": "Toh 351",
+      "chinese_title": "",
+      "tibetan_title": "Rgyal bu don grub kyi mdo",
+      "sanskrit_title": "Jinaputrārthasiddhisūtra",
+      "notes": "The Sūtra of Prince Arthasiddhi. Also IOL Tib J 76.1. Also identified with T03n0152 and T03n0171 in cross_reference.json. Silk 2019:234. Li Channa 2021, Table 1 no. 17."
+    },
+    {
+      "taisho": "T03n0156",
+      "tohoku": "Toh 353",
+      "chinese_title": "大方便佛報恩經 Dà fāngbiàn fó bàoēn jīng",
+      "tibetan_title": "Thabs la mkhas pa chen po sangs rgyas kyis drin la lan blan pa pa'i chos kyi yi ge",
+      "sanskrit_title": "",
+      "notes": "The Sūtra of Repaying the Kindness of the Buddha Who Has Great Skill in Means. Chinese apocryphal text (draft by compilers of the Tripitaka). Silk 2019:231. Li Channa 2021, Table 1 no. 5."
+    },
+    {
+      "taisho": "T85n2881",
+      "tohoku": "Toh 354",
+      "chinese_title": "善惡因果經 Shàn'è yīnguǒ jīng",
+      "tibetan_title": "Legs nyes kyi rgyu dang 'bras bu bstan pa",
+      "sanskrit_title": "",
+      "notes": "Teaching the Causes and Results of Good and Ill. Colophon says translated by Chödrup 'based on Indian and Chinese manuscripts,' but 84000 introduction notes uncertainty about whether an Indian manuscript actually existed. Silk 2019. Li Channa 2021, Appendix I no. 12."
+    },
+    {
+      "taisho": "T85n2881",
+      "tohoku": "Toh 355",
+      "chinese_title": "善惡因果經 Shàn'è yīnguǒ jīng",
+      "tibetan_title": "Dge ba dang mi dge ba'i las kyi rnam par smin pa bstan pa",
+      "sanskrit_title": "",
+      "notes": "Note: Same Chinese source (T.2881) as Toh 354 but a different Derge text. Silk 2019:237. Li Channa 2021, Table 1 no. 32. Not in the canonical Silk list of 31 (D.355 is not in Silk's list; D.354 is). Included here because Silk discusses it on p. 237."
+    },
+    {
+      "taisho": "T17n0784",
+      "tohoku": "Toh 359",
+      "chinese_title": "四十二章經 Sìshí'èr zhāng jīng",
+      "tibetan_title": "Mig bcu gnyis pa'i mdo",
+      "sanskrit_title": "Dvādaśalocanasūtra",
+      "notes": "The Sūtra of the Twelve Eyes. Chinese apocrypha (Sutra in Forty-Two Sections, T.784). Translated during the Qianlong era (Qing Dynasty). Only in Derge Kanjur. Li Channa 2021, Appendix I no. 13. NOTE: The identification as D.359a (Sishi'er zhang jing) is per Li Channa; Silk's list gives D.359 without the 'a' suffix."
+    },
+    {
+      "taisho": "T16n0665",
+      "tohoku": "Toh 555",
+      "chinese_title": "金光明最勝王經 Jīn guāngmíng zuìshèng wáng jīng",
+      "tibetan_title": "Gser 'od dam pa",
+      "sanskrit_title": "Suvarṇaprabhāsottamasūtra",
+      "notes": "The Sūtra of the Sublime Golden Light. Translated from Yijing's Chinese version (T.665). Translator: Chos grub. Cp. D.556 (hybrid source), D.557 (from Sanskrit). Silk 2019:234. Li Channa 2021, Table 1 no. 3."
+    },
+    {
+      "taisho": "T20n1060",
+      "tohoku": "Toh 691",
+      "chinese_title": "千手千眼觀世音菩薩廣大圓滿無礙大悲心陀羅尼經 Qiānshǒu qiānyǎn Guānshìyīn púsà guǎngdà yuánmǎn wúài dàbēixīn tuóluóní jīng",
+      "tibetan_title": "Spyan ras gzigs phyag stong spyan stong gzungs",
+      "sanskrit_title": "Mahākāruṇikacittadhāraṇī",
+      "notes": "The Dhāraṇī of the Thousand-Armed, Thousand-Eyed Avalokiteśvara. D.691 = D.897 (duplicate). Bhagavaddharma's Chinese translation (T.1060, 650-660 CE). Translator: Chos grub. Also cp. T20n1057a, T20n1057b, T20n1058. Silk 2019:236. Li Channa 2021, Table 1 no. 33."
+    },
+    {
+      "taisho": "",
+      "tohoku": "Toh 692",
+      "chinese_title": "",
+      "tibetan_title": "Spyan ras gzigs yid bzhin 'khor lo'i gzungs",
+      "sanskrit_title": "",
+      "notes": "The Dhāraṇī, The Wish-Fulfilling Wheel of Avalokiteśvara. Translated by Chos grub. Chinese origin 'easily confirmed' per Li Channa. Also Stog647. Also identified with T20n1080-1083 in cross_reference.json. Silk 2019:236. Li Channa 2021, Table 1 no. 28."
+    },
+    {
+      "taisho": "T20n1071",
+      "tohoku": "Toh 694",
+      "chinese_title": "",
+      "tibetan_title": "Zhal bcu gcig pa'i rig ngags kyi snying po",
+      "sanskrit_title": "Mukhaikādaśavidyāmantrahṛdayadhāraṇī",
+      "notes": "The Dhāraṇī, The Essence of the Spell of Eleven-Faced Avalokiteśvara. T.1071 is Xuanzang's version (656 CE). Also T.1070 (Yaśogupta, 564-572). Translator: Chos grub. Also Stog643. Silk 2019:236. Li Channa 2021, Table 1 no. 34."
+    },
+    {
+      "taisho": "T85n2897",
+      "tohoku": "Toh 1067",
+      "chinese_title": "天地八陽神咒經 Tiāndì bāyáng shénzhòu jīng",
+      "tibetan_title": "Snang brgyad ces bya ba'i rig sngags",
+      "sanskrit_title": "",
+      "notes": "The Sūtra of the Eight Illuminations. Chinese apocrypha (Bayang jing). Only in Tshal pa lineage Kanjurs. Widely circulated in Dunhuang, Turfan, Khara-Khoto. Kanjur version is an abbreviated translation. Silk 2019:238. Li Channa 2021, Table 1 no. 27."
+    }
+  ],
+  "unidentified_chinese_source": [
+    {
+      "taisho": "",
+      "tohoku": "Toh 122",
+      "chinese_title": "",
+      "tibetan_title": "'Da' ka ye shes kyi mdo",
+      "sanskrit_title": "",
+      "notes": "Chinese source cannot be identified. Chinese origin recognized in LKK, TGGNO, BC, and Kanjur colophons. Also Stog201. Silk 2019:238. Li Channa 2021, Table 1 no. 24."
+    },
+    {
+      "taisho": "",
+      "tohoku": "Toh 241",
+      "chinese_title": "",
+      "tibetan_title": "Ting nge 'dzin gyi 'khor lo zhes bya ba theg pa chen po'i mdo",
+      "sanskrit_title": "",
+      "notes": "Chinese source cannot be identified. Saerji 2011:190 tentatively suggests T12n0356 but marks with ?. Li Channa 2021, Appendix I no. 10."
+    },
+    {
+      "taisho": "",
+      "tohoku": "Toh 255",
+      "chinese_title": "",
+      "tibetan_title": "Theg pa chen po'i mdo chos rgya mtsho zhes bya ba",
+      "sanskrit_title": "",
+      "notes": "Chinese source not identified. Li Channa 2021, Appendix I no. 11."
+    },
+    {
+      "taisho": "",
+      "tohoku": "Toh 263",
+      "chinese_title": "",
+      "tibetan_title": "Nam mkha'i mdog gis 'dul ba'i bzod pa",
+      "sanskrit_title": "",
+      "notes": "Chinese source cannot be identified. Chinese origin confirmed in BC342 and colophons of Them spangs ma lineage (Stog111, V.161, Z.142). Silk 2019:239. Li Channa 2021, Table 1 no. 25."
+    }
+  ],
+  "cross_reference_summary": {
+    "total_silk_31": 31,
+    "total_entries_in_file": 32,
+    "total_unidentified_source": 4,
+    "silk_31_with_taisho_number": 27,
+    "silk_31_without_taisho_number": 4,
+    "texts_without_taisho_in_silk_31": ["Toh 137 (Samādhyagrottama)", "Toh 243 (Saddharmarājasūtra)", "Toh 264 (Mokṣasūtra)", "Toh 692 (Avalokiteśvara dhāraṇī)"],
+    "extra_entry_note": "Toh 355 is an extra (32nd) entry not in Silk's original list of 31, but included because it shares the same Chinese source (T85n2881) as Toh 354 and is discussed by both Silk (p. 237) and Li Channa (Table 1 no. 32).",
+    "already_in_cross_reference": ["Toh 51", "Toh 57", "Toh 58", "Toh 61", "Toh 64", "Toh 84", "Toh 108", "Toh 119", "Toh 123", "Toh 135", "Toh 174", "Toh 199", "Toh 239", "Toh 242", "Toh 256", "Toh 335", "Toh 336", "Toh 341", "Toh 351", "Toh 353", "Toh 354", "Toh 555", "Toh 691", "Toh 692", "Toh 694", "Toh 897"],
+    "not_in_cross_reference": ["Toh 137", "Toh 237", "Toh 243", "Toh 264", "Toh 359", "Toh 1067"],
+    "note": "26 of the 31 Silk texts already appear in cross_reference.json with Tibetan parallel mappings. 6 texts (Toh 137, 237, 243, 264, 359, 1067) are not yet in cross_reference.json and represent new data from this source."
+  }
+}
