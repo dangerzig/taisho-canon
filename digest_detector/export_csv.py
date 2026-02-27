@@ -374,11 +374,16 @@ def export_csv():
 
         if not toh_entries:
             # Text has Otani or other Tibetan refs but no Tohoku numbers.
-            # Collect Otani provenance for source tracking.
-            otani_sources = set()
+            # Collect Otani and Pali provenance for source tracking.
+            all_sources = set()
             for ot in sorted(all_otani):
-                otani_sources.update(provenance.get((taisho_id, ot), set()))
-            sources_str = "; ".join(sorted(otani_sources))
+                all_sources.update(provenance.get((taisho_id, ot), set()))
+            pali_refs = expanded.get("pali_parallels", {}).get(taisho_id, [])
+            if isinstance(pali_refs, list):
+                for p_ref in pali_refs:
+                    all_sources.update(
+                        provenance.get((taisho_id, p_ref), set()))
+            sources_str = "; ".join(sorted(all_sources))
             rows.append({
                 "taisho_id": taisho_id,
                 "tohoku": "",
@@ -389,7 +394,7 @@ def export_csv():
                 "tibetan_title": tibetan_title,
                 "pali_parallel": pali_str,
                 "sources": sources_str,
-                "source_count": len(otani_sources),
+                "source_count": len(all_sources),
             })
             taisho_ids_with_rows.add(taisho_id)
         else:
@@ -418,6 +423,12 @@ def export_csv():
         pali = expanded["pali_parallels"][taisho_id]
         pali_str = "; ".join(sorted(pali)) if isinstance(pali, list) else str(pali)
         nj = nanjio_map.get(taisho_id, set())
+        # Collect Pali provenance sources
+        pali_sources = set()
+        pali_list = pali if isinstance(pali, list) else [pali]
+        for p_ref in pali_list:
+            pali_sources.update(provenance.get((taisho_id, p_ref), set()))
+        sources_str = "; ".join(sorted(pali_sources))
         rows.append({
             "taisho_id": taisho_id,
             "tohoku": "",
@@ -427,8 +438,8 @@ def export_csv():
             "chinese_title": t.get("chinese_title", ""),
             "tibetan_title": t.get("tibetan_title", ""),
             "pali_parallel": pali_str,
-            "sources": "",
-            "source_count": 0,
+            "sources": sources_str,
+            "source_count": len(pali_sources),
         })
         taisho_ids_with_rows.add(taisho_id)
 

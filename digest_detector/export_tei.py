@@ -469,16 +469,22 @@ def build_tei(expanded, provenance, titles, nanjio_map, otani_map,
             title_el = SubElement(entry, "title", type="tibetan")
             title_el.text = t["tibetan_title"]
 
-        # Pali parallels
+        # Pali parallels (with provenance from SuttaCentral)
         pali_refs = pali.get(taisho_id, [])
         if pali_refs:
             pali_list = pali_refs if isinstance(pali_refs, list) else [pali_refs]
             for p_ref in sorted(pali_list):
+                sources = provenance.get((taisho_id, p_ref), set())
+                cert = cert_from_count(len(sources)) if sources else "low"
                 link = SubElement(
                     entry, "link",
                     type="pali",
                     target=p_ref,
+                    cert=cert,
                 )
+                if sources:
+                    note = SubElement(link, "note", type="sources")
+                    note.text = "; ".join(sorted(sources))
                 link_count += 1
 
         entry_count += 1

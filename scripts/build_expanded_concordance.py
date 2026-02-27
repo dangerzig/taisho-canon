@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Build an expanded cross-canon concordance by merging ALL data sources.
 
-This script merges 10 catalog sources, Sanskrit title matches, scholarly
-citation files, and the rKTs Tohoku-to-Otani concordance into a unified
-concordance with per-link provenance tracking.
+This script merges 12 sources, Sanskrit title matches, scholarly citation
+files, and the rKTs Tohoku-to-Otani concordance into a unified concordance
+with per-link provenance tracking for Tibetan (Tohoku/Otani) and Pali parallels.
 
-Each Taisho-to-Tohoku link carries its own provenance: which source(s) attest
-it, with optional confidence scores and notes.
+Each link carries its own provenance: which source(s) attest it, with
+optional confidence scores and notes.
 
 Inputs:
   - lancaster_taisho_crossref.json (existing Lancaster data, 790 entries)
@@ -19,6 +19,8 @@ Inputs:
   - results/cross_reference.json (existing concordance, for comparison)
   - results/sanskrit_title_matches.json (Sanskrit title matching results)
   - data/scholarly_citations/*.json (scholarly citation files, e.g. silk2019.json)
+  - results/mitra_taisho_tohoku.json (MITRA Chinese-Tibetan sentence alignments)
+  - results/sc_pali_parallels.json (SuttaCentral Pali-Taisho parallels)
 
 Output:
   - results/cross_reference_expanded.json (new expanded concordance)
@@ -43,6 +45,10 @@ Output schema:
           {"source": "lancaster", "confidence": null},
           {"source": "nattier1992", "confidence": null,
            "note": "Heart Sutra analysis"}
+        ],
+        "dn1": [
+          {"source": "suttacentral_parallels", "confidence": 0.9,
+           "note": "via da1"}
         ]
       }
     }
@@ -72,6 +78,7 @@ TAISHO_84000_REFS_PATH = RESULTS_DIR / "84000_taisho_refs.json"
 SCHOLARLY_DIR = BASE_DIR / "data" / "scholarly_citations"
 OTANI_CONCORDANCE_PATH = RESULTS_DIR / "tohoku_otani_concordance.json"
 MITRA_PATH = RESULTS_DIR / "mitra_taisho_tohoku.json"
+SC_PALI_PATH = RESULTS_DIR / "sc_pali_parallels.json"
 KNOWN_ERRORS_PATH = BASE_DIR / "data" / "known_errors.json"
 
 # Output
@@ -691,6 +698,41 @@ def merge_sources():
               f"({new_from_mitra} new Toh mappings from strong links)")
     else:
         print(f"  No MITRA data found at {MITRA_PATH}")
+
+    # --- Source 12: SuttaCentral Pali parallels ---
+    print("\n12. Loading SuttaCentral Pali parallels...")
+    sc_pali = load_json(SC_PALI_PATH)
+    if sc_pali:
+        pali_parallels_data = sc_pali.get("pali_parallels", {})
+        link_details = sc_pali.get("link_details", {})
+        sc_added = 0
+        sc_new_texts = 0
+        for text_id, pali_refs in pali_parallels_data.items():
+            if text_id not in corpus_ids:
+                continue
+            had_pali = bool(concordance[text_id]["pali"])
+            for pali_ref in pali_refs:
+                concordance[text_id]["pali"].add(pali_ref)
+                # Get link type for confidence
+                detail = link_details.get(text_id, {}).get(pali_ref, {})
+                link_type = detail.get("type", "full")
+                confidence = 0.9 if link_type == "full" else 0.7
+                note = None
+                agama_refs = detail.get("agama_refs")
+                if agama_refs:
+                    note = f"via {', '.join(agama_refs)}"
+                provenance.add(text_id, pali_ref,
+                               "suttacentral_parallels",
+                               confidence=confidence, note=note)
+                sc_added += 1
+            concordance[text_id]["sources"].add("suttacentral_parallels")
+            if not had_pali:
+                sc_new_texts += 1
+        print(f"  Loaded {sc_added} Pali links for "
+              f"{len(pali_parallels_data)} texts "
+              f"({sc_new_texts} newly linked)")
+    else:
+        print(f"  No SC Pali data found at {SC_PALI_PATH}")
 
     # --- Post-processing: Tohoku-to-Otani concordance ---
     # After all Tohoku numbers have been collected from all sources,
