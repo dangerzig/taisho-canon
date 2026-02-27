@@ -11,18 +11,18 @@
     "pct_any": 42.0
   },
   "sources": {
+    "acmuller_tohoku": 560,
+    "lancaster": 790,
+    "mitra": 710,
+    "lancaster_full": 1478,
     "existing": 941,
     "cbeta_tibetan": 637,
-    "lancaster": 790,
-    "84000_tei_refs": 350,
-    "acmuller_tohoku": 560,
-    "lancaster_full": 1478,
     "cbeta_sanskrit": 703,
-    "mitra": 710,
+    "84000_tei_refs": 350,
     "sanskrit_title_match": 79,
     "li2021": 15,
-    "rkts": 23,
     "silk2019": 18,
+    "rkts": 23,
     "standard_parallels": 9
   },
   "tibetan_parallels": {
@@ -10292,12 +10292,12 @@
     "T19n0969": "(Sarvadurgatipariśodhana)-uṣṇīṣavijayadhāraṇī(sūtra)",
     "T19n0970": "(Sarvadurgatipariśodhana)-uṣṇīṣavijayadhāraṇī(sūtra)",
     "T19n0971": "(Sarvadurgatipariśodhana)-uṣṇīṣavijayadhāraṇī(sūtra)",
-    "T19n0974A": [
+    "T19n0974A": "Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī",
+    "T19n0974B": [
       "(Sarvadurgatipari&#347;odhana)u&#7779;&#7751;&#299;&#7779;avijayadh&#257;ra&#7751;i(s&#363;tra)",
       "(Sarvadurgatipariśodhana)uṣṇīṣavijayadhāraṇi(sūtra).",
       "Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī"
     ],
-    "T19n0974B": "Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī",
     "T19n0974C": "Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī",
     "T19n0974D": "Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī",
     "T19n0974E": "Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī",
@@ -10328,12 +10328,12 @@
       "Mahāmayūrī(vidyārājñī)(sūtra).",
       "Mahāmāyūrīvidyārājñī"
     ],
-    "T19n0983A": "Mahāmāyūrīvidyārājñī",
-    "T19n0983B": [
+    "T19n0983A": [
       "Mah&#257;m&#257;y&#363;r&#299;(vidy&#257;r&#257;j&ntilde;&#299;)",
       "Mahāmāyūrī(vidyārājñī).",
       "Mahāmāyūrīvidyārājñī"
     ],
+    "T19n0983B": "Mahāmāyūrīvidyārājñī",
     "T19n0984": [
       "Mahāmāyūri(vidyārāj&ntilde;ī)-(sūtra)",
       "Mahāmāyūri(vidyārājñī)-(sūtra)",
@@ -10647,11 +10647,11 @@
       "Sumukhanāmadhāraṇī(sūtra)",
       "Ārya-sumukha-nāma-dhāraṇī"
     ],
-    "T20n1138a": [
+    "T20n1138a": "Ārya-sumukha-nāma-dhāraṇī",
+    "T20n1138b": [
       "Sumukhanāmadhāraṇī(sūtra)",
       "Ārya-sumukha-nāma-dhāraṇī"
     ],
-    "T20n1138b": "Ārya-sumukha-nāma-dhāraṇī",
     "T20n1139": [
       "Sumukhanāmadhāraṇī(sūtra)",
       "Ārya-sumukha-nāma-dhāraṇī"
@@ -10760,11 +10760,11 @@
       "Krodhavijayakalpaguhyatantra",
       "Krodhavijayakalpaguhyatantra."
     ],
-    "T21n1222a": "Vajrakumāratantra.",
-    "T21n1222b": [
+    "T21n1222a": [
       "Vajrakum&#257;ratantra",
       "Vajrakumāratantra."
     ],
+    "T21n1222b": "Vajrakumāratantra.",
     "T21n1227": [
       "Mah&#257;balavajrakrodha(s&#363;tra)",
       "Mahābalavajrakrodha(sūtra)."
@@ -11264,11 +11264,11 @@
       "Ta ai tao pi ch'iu ni ching",
       "Ta ai tao pi ch'iu ni ching. (2 chüan)"
     ],
-    "T24n1483a": "Mu lien wen chieh lü chung wu po ching chung shih. (1 chüan)",
-    "T24n1483b": [
+    "T24n1483a": [
       "Mu lien wen chieh l&uuml; chung wu po ching chung shih",
       "Mu lien wen chieh lü chung wu po ching chung shih. (1 chüan)"
     ],
+    "T24n1483b": "Mu lien wen chieh lü chung wu po ching chung shih. (1 chüan)",
     "T24n1484": "Brahmajālasūtra",
     "T24n1488": "Upāsakāśīlasūtra",
     "T24n1489": [
@@ -48330,18 +48330,6 @@
       ],
       "Otani 198": [
         {
-          "source": "cbeta_sanskrit",
-          "confidence": null
-        },
-        {
-          "source": "lancaster",
-          "confidence": null
-        },
-        {
-          "source": "lancaster_full",
-          "confidence": null
-        },
-        {
           "source": "rkts_concordance",
           "confidence": null
         }
@@ -48365,14 +48353,6 @@
         }
       ],
       "Otani 609": [
-        {
-          "source": "cbeta_sanskrit",
-          "confidence": null
-        },
-        {
-          "source": "lancaster",
-          "confidence": null
-        },
         {
           "source": "rkts_concordance",
           "confidence": null
@@ -48410,23 +48390,11 @@
       ],
       "Toh 597": [
         {
-          "source": "cbeta_sanskrit",
-          "confidence": null
-        },
-        {
           "source": "cbeta_tibetan",
           "confidence": null
         },
         {
           "source": "existing",
-          "confidence": null
-        },
-        {
-          "source": "lancaster",
-          "confidence": null
-        },
-        {
-          "source": "lancaster_full",
           "confidence": null
         }
       ],
@@ -48442,23 +48410,11 @@
       ],
       "Toh 984": [
         {
-          "source": "cbeta_sanskrit",
-          "confidence": null
-        },
-        {
           "source": "cbeta_tibetan",
           "confidence": null
         },
         {
           "source": "existing",
-          "confidence": null
-        },
-        {
-          "source": "lancaster",
-          "confidence": null
-        },
-        {
-          "source": "lancaster_full",
           "confidence": null
         }
       ]
@@ -48472,6 +48428,18 @@
       ],
       "Otani 198": [
         {
+          "source": "cbeta_sanskrit",
+          "confidence": null
+        },
+        {
+          "source": "lancaster",
+          "confidence": null
+        },
+        {
+          "source": "lancaster_full",
+          "confidence": null
+        },
+        {
           "source": "rkts_concordance",
           "confidence": null
         }
@@ -48495,6 +48463,14 @@
         }
       ],
       "Otani 609": [
+        {
+          "source": "cbeta_sanskrit",
+          "confidence": null
+        },
+        {
+          "source": "lancaster",
+          "confidence": null
+        },
         {
           "source": "rkts_concordance",
           "confidence": null
@@ -48532,11 +48508,23 @@
       ],
       "Toh 597": [
         {
+          "source": "cbeta_sanskrit",
+          "confidence": null
+        },
+        {
           "source": "cbeta_tibetan",
           "confidence": null
         },
         {
           "source": "existing",
+          "confidence": null
+        },
+        {
+          "source": "lancaster",
+          "confidence": null
+        },
+        {
+          "source": "lancaster_full",
           "confidence": null
         }
       ],
@@ -48552,11 +48540,23 @@
       ],
       "Toh 984": [
         {
+          "source": "cbeta_sanskrit",
+          "confidence": null
+        },
+        {
           "source": "cbeta_tibetan",
           "confidence": null
         },
         {
           "source": "existing",
+          "confidence": null
+        },
+        {
+          "source": "lancaster",
+          "confidence": null
+        },
+        {
+          "source": "lancaster_full",
           "confidence": null
         }
       ]
@@ -49485,6 +49485,18 @@
     "T19n0983A": {
       "Otani 178": [
         {
+          "source": "cbeta_sanskrit",
+          "confidence": null
+        },
+        {
+          "source": "lancaster",
+          "confidence": null
+        },
+        {
+          "source": "lancaster_full",
+          "confidence": null
+        },
+        {
           "source": "rkts_concordance",
           "confidence": null
         }
@@ -49495,7 +49507,19 @@
           "confidence": null
         },
         {
+          "source": "cbeta_sanskrit",
+          "confidence": null
+        },
+        {
           "source": "cbeta_tibetan",
+          "confidence": null
+        },
+        {
+          "source": "lancaster",
+          "confidence": null
+        },
+        {
+          "source": "lancaster_full",
           "confidence": null
         }
       ]
@@ -49503,18 +49527,6 @@
     "T19n0983B": {
       "Otani 178": [
         {
-          "source": "cbeta_sanskrit",
-          "confidence": null
-        },
-        {
-          "source": "lancaster",
-          "confidence": null
-        },
-        {
-          "source": "lancaster_full",
-          "confidence": null
-        },
-        {
           "source": "rkts_concordance",
           "confidence": null
         }
@@ -49525,19 +49537,7 @@
           "confidence": null
         },
         {
-          "source": "cbeta_sanskrit",
-          "confidence": null
-        },
-        {
           "source": "cbeta_tibetan",
-          "confidence": null
-        },
-        {
-          "source": "lancaster",
-          "confidence": null
-        },
-        {
-          "source": "lancaster_full",
           "confidence": null
         }
       ]
@@ -56889,31 +56889,11 @@
     "T20n1138a": {
       "Otani 309": [
         {
-          "source": "cbeta_sanskrit",
-          "confidence": null
-        },
-        {
-          "source": "lancaster",
-          "confidence": null
-        },
-        {
-          "source": "lancaster_full",
-          "confidence": null
-        },
-        {
           "source": "rkts_concordance",
           "confidence": null
         }
       ],
       "Otani 540": [
-        {
-          "source": "cbeta_sanskrit",
-          "confidence": null
-        },
-        {
-          "source": "lancaster",
-          "confidence": null
-        },
         {
           "source": "rkts_concordance",
           "confidence": null
@@ -56921,45 +56901,21 @@
       ],
       "Toh 614": [
         {
-          "source": "cbeta_sanskrit",
-          "confidence": null
-        },
-        {
           "source": "cbeta_tibetan",
           "confidence": null
         },
         {
           "source": "existing",
-          "confidence": null
-        },
-        {
-          "source": "lancaster",
-          "confidence": null
-        },
-        {
-          "source": "lancaster_full",
           "confidence": null
         }
       ],
       "Toh 915": [
         {
-          "source": "cbeta_sanskrit",
-          "confidence": null
-        },
-        {
           "source": "cbeta_tibetan",
           "confidence": null
         },
         {
           "source": "existing",
-          "confidence": null
-        },
-        {
-          "source": "lancaster",
-          "confidence": null
-        },
-        {
-          "source": "lancaster_full",
           "confidence": null
         }
       ]
@@ -56967,11 +56923,31 @@
     "T20n1138b": {
       "Otani 309": [
         {
+          "source": "cbeta_sanskrit",
+          "confidence": null
+        },
+        {
+          "source": "lancaster",
+          "confidence": null
+        },
+        {
+          "source": "lancaster_full",
+          "confidence": null
+        },
+        {
           "source": "rkts_concordance",
           "confidence": null
         }
       ],
       "Otani 540": [
+        {
+          "source": "cbeta_sanskrit",
+          "confidence": null
+        },
+        {
+          "source": "lancaster",
+          "confidence": null
+        },
         {
           "source": "rkts_concordance",
           "confidence": null
@@ -56979,21 +56955,45 @@
       ],
       "Toh 614": [
         {
+          "source": "cbeta_sanskrit",
+          "confidence": null
+        },
+        {
           "source": "cbeta_tibetan",
           "confidence": null
         },
         {
           "source": "existing",
+          "confidence": null
+        },
+        {
+          "source": "lancaster",
+          "confidence": null
+        },
+        {
+          "source": "lancaster_full",
           "confidence": null
         }
       ],
       "Toh 915": [
         {
+          "source": "cbeta_sanskrit",
+          "confidence": null
+        },
+        {
           "source": "cbeta_tibetan",
           "confidence": null
         },
         {
           "source": "existing",
+          "confidence": null
+        },
+        {
+          "source": "lancaster",
+          "confidence": null
+        },
+        {
+          "source": "lancaster_full",
           "confidence": null
         }
       ]

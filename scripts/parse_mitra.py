@@ -36,7 +36,6 @@ MIN_SENTENCES = 20
 # Confidence tiers
 CONFIDENCE_STRONG = 0.9   # >=100 sentences
 CONFIDENCE_MODERATE = 0.7  # 20-99 sentences
-CONFIDENCE_WEAK = 0.5      # <20 sentences (unused with MIN_SENTENCES=20)
 
 # Patterns
 TAISHO_PATTERN = re.compile(r'T(\d{2})n(\d{4}[A-Z]?)')

@@ -83,6 +83,10 @@ CORPUS_IDS_PATH = RESULTS_DIR / "digest_relationships.json"
 # Current schema version for the output format
 SCHEMA_VERSION = 2
 
+# MITRA: only add links with confidence >= this threshold to the active
+# tibetan_parallels set. Lower-confidence links are provenance-only.
+MITRA_STRONG_THRESHOLD = 0.9
+
 
 def load_json(path):
     """Load a JSON file if it exists, else return None."""
@@ -648,11 +652,10 @@ def merge_sources():
 
     # --- Source 11: MITRA parallel corpus (Nehrdich & Keutzer 2025) ---
     # For high precision, only add MITRA links to the active concordance
-    # when they are "strong" (>=100 aligned sentences, confidence 0.9).
-    # Moderate links (20-99 sentences) are recorded in provenance for
-    # documentation but only appear in the active tibetan set if a catalog
-    # source has independently added the same link.
-    MITRA_STRONG_THRESHOLD = 0.9
+    # when they are "strong" (>=100 aligned sentences, confidence >=
+    # MITRA_STRONG_THRESHOLD). Moderate links (20-99 sentences) are recorded
+    # in provenance for documentation but only appear in the active tibetan
+    # set if a catalog source has independently added the same link.
     print("\n11. Loading MITRA parallel corpus...")
     mitra_data = load_json(MITRA_PATH)
     if mitra_data:
@@ -856,13 +859,13 @@ def compare_with_existing(output, existing_path):
     print(f"{'Category':<25} {'Old':>8} {'New':>8} {'Delta':>8}")
     print(f"{'-'*50}")
     print(f"{'Tibetan parallels':<25} {old_tib:>8} {new_tib:>8} "
-          f"{'+' + str(new_tib - old_tib):>8}")
+          f"{new_tib - old_tib:>+8}")
     print(f"{'Pali parallels':<25} {old_pali:>8} {new_pali:>8} "
-          f"{'+' + str(new_pali - old_pali):>8}")
+          f"{new_pali - old_pali:>+8}")
     print(f"{'Sanskrit parallels':<25} {old_skt:>8} {new_skt:>8} "
-          f"{'+' + str(new_skt - old_skt):>8}")
+          f"{new_skt - old_skt:>+8}")
     print(f"{'Any parallel':<25} {old_any:>8} {new_any:>8} "
-          f"{'+' + str(new_any - old_any):>8}")
+          f"{new_any - old_any:>+8}")
     print(f"{'No parallel':<25} "
           f"{len(existing.get('no_parallel_found', [])):>8} "
           f"{len(output['no_parallel_found']):>8}")
@@ -922,8 +925,12 @@ def flag_known_errors(concordance, provenance):
     summary = []
 
     for err in errors:
-        taisho_id = err["taisho_id"]
-        erroneous_toh = err["erroneous_toh"]
+        taisho_id = err.get("taisho_id")
+        erroneous_toh = err.get("erroneous_toh")
+        if not taisho_id or not erroneous_toh:
+            print(f"  WARNING: Malformed error entry (missing taisho_id or "
+                  f"erroneous_toh): {err}")
+            continue
         correct_toh = err.get("correct_toh")
         note = err.get("note", "")
 

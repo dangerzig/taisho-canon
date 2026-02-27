@@ -98,7 +98,11 @@ def build_provenance(expanded):
                     provenance[(taisho_id, ref_id)].add(source)
         return provenance
 
-    # Fallback: reconstruct from source files (no link_provenance available)
+    # Fallback: reconstruct from source files (no link_provenance available).
+    # WARNING: This path only covers 7 of 11+ sources (missing MITRA,
+    # Sanskrit title matches, scholarly citations, 84000 TEI refs, Otani).
+    print("  WARNING: No link_provenance in expanded JSON; using fallback "
+          "provenance reconstruction (incomplete source coverage).")
     all_ids = set()
     for section in ("tibetan_parallels", "pali_parallels", "sanskrit_parallels"):
         all_ids.update(expanded.get(section, {}).keys())
