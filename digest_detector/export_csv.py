@@ -71,21 +71,34 @@ def resolve_taisho(raw, num_to_id, valid_ids):
 
 
 def build_provenance(expanded):
-    """Reconstruct per-mapping provenance: (taisho_id, toh_number) -> set of sources.
+    """Build per-mapping provenance: (taisho_id, ref_str) -> set of sources.
 
-    Scans all original source files to determine which sources assert each
-    specific Taisho-to-Tohoku mapping.
+    Uses link_provenance from the expanded JSON for both Toh and Otani links.
+    Falls back to re-scanning source files for Toh provenance when
+    link_provenance is absent (backward compatibility).
     """
-    # Collect all taisho IDs that have tibetan parallels
+    provenance = defaultdict(set)
+
+    # Use link_provenance from expanded JSON (covers both Toh and Otani)
+    link_prov = expanded.get("link_provenance", {})
+    if link_prov:
+        for taisho_id, refs in link_prov.items():
+            for ref_id, attestations in refs.items():
+                for att in attestations:
+                    source = att.get("source", "")
+                    # Skip error-flagged attestations
+                    if att.get("flagged_error"):
+                        continue
+                    provenance[(taisho_id, ref_id)].add(source)
+        return provenance
+
+    # Fallback: reconstruct from source files (no link_provenance available)
     all_ids = set()
     for section in ("tibetan_parallels", "pali_parallels", "sanskrit_parallels"):
         all_ids.update(expanded.get(section, {}).keys())
     all_ids.update(expanded.get("no_parallel_found", []))
 
     num_to_id = build_number_to_id(all_ids)
-
-    # provenance[(taisho_id, "Toh NNN")] = set of source names
-    provenance = defaultdict(set)
 
     # --- Source: existing cross_reference.json ---
     xref = load_json(EXISTING_XREF_PATH)
@@ -119,7 +132,6 @@ def build_provenance(expanded):
                 if not text_id:
                     continue
                 for toh in entry.get("tohoku", []):
-                    # Lancaster full tohoku may be "Toh NNN" or bare number
                     toh_str = toh if toh.startswith("Toh ") else f"Toh {toh}"
                     provenance[(text_id, toh_str)].add("lancaster_full")
 
@@ -358,8 +370,11 @@ def export_csv():
 
         if not toh_entries:
             # Text has Otani or other Tibetan refs but no Tohoku numbers.
-            # Include one row with empty tohoku.
-            sources = provenance.get((taisho_id, ""), set())
+            # Collect Otani provenance for source tracking.
+            otani_sources = set()
+            for ot in sorted(all_otani):
+                otani_sources.update(provenance.get((taisho_id, ot), set()))
+            sources_str = "; ".join(sorted(otani_sources))
             rows.append({
                 "taisho_id": taisho_id,
                 "tohoku": "",
@@ -369,8 +384,8 @@ def export_csv():
                 "chinese_title": chinese_title,
                 "tibetan_title": tibetan_title,
                 "pali_parallel": pali_str,
-                "sources": "",
-                "source_count": 0,
+                "sources": sources_str,
+                "source_count": len(otani_sources),
             })
             taisho_ids_with_rows.add(taisho_id)
         else:

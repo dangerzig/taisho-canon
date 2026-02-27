@@ -77,14 +77,34 @@ def resolve_taisho(raw, num_to_id, valid_ids):
 
 
 def build_provenance(expanded):
-    """Reconstruct per-mapping provenance: (taisho_id, toh_str) -> set of sources."""
+    """Build per-mapping provenance: (taisho_id, ref_str) -> set of sources.
+
+    Uses link_provenance from the expanded JSON for both Toh and Otani links.
+    Falls back to re-scanning source files for Toh provenance when
+    link_provenance is absent (backward compatibility).
+    """
+    provenance = defaultdict(set)
+
+    # Use link_provenance from expanded JSON (covers both Toh and Otani)
+    link_prov = expanded.get("link_provenance", {})
+    if link_prov:
+        for taisho_id, refs in link_prov.items():
+            for ref_id, attestations in refs.items():
+                for att in attestations:
+                    source = att.get("source", "")
+                    # Skip error-flagged attestations
+                    if att.get("flagged_error"):
+                        continue
+                    provenance[(taisho_id, ref_id)].add(source)
+        return provenance
+
+    # Fallback: reconstruct from source files (no link_provenance available)
     all_ids = set()
     for section in ("tibetan_parallels", "pali_parallels", "sanskrit_parallels"):
         all_ids.update(expanded.get(section, {}).keys())
     all_ids.update(expanded.get("no_parallel_found", []))
 
     num_to_id = build_number_to_id(all_ids)
-    provenance = defaultdict(set)
 
     # existing cross_reference.json
     xref = load_json(EXISTING_XREF_PATH)
@@ -406,11 +426,21 @@ def build_tei(expanded, provenance, titles, nanjio_map, otani_map,
             )
             link_count += 1
 
-        # Otani numbers as idno elements
+        # Otani numbers as link elements with provenance
         all_otani = sorted(set(otani_entries) | otani_map.get(taisho_id, set()))
         for ot in all_otani:
-            idno = SubElement(entry, "idno", type="otani")
-            idno.text = ot
+            sources = provenance.get((taisho_id, ot), set())
+            cert = cert_from_count(len(sources)) if sources else "low"
+            link = SubElement(
+                entry, "link",
+                type="otani",
+                target=ot.replace(" ", "_"),
+                cert=cert,
+            )
+            if sources:
+                note = SubElement(link, "note", type="sources")
+                note.text = "; ".join(sorted(sources))
+            link_count += 1
 
         # Nanjio numbers
         nj_set = nanjio_map.get(taisho_id, set())

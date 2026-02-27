@@ -29,12 +29,16 @@ Output schema:
     "schema_version": 2,
     "summary": { ... },
     "sources": { ... },
-    "tibetan_parallels": { "T08n0251": ["Toh 21", ...] },
+    "tibetan_parallels": { "T08n0251": ["Otani 993", "Toh 21", ...] },
     "pali_parallels": { ... },
     "sanskrit_parallels": { ... },
     "no_parallel_found": [ ... ],
     "link_provenance": {
       "T08n0251": {
+        "Otani 993": [
+          {"source": "acmuller_tohoku", "confidence": null},
+          {"source": "rkts_concordance", "confidence": null}
+        ],
         "Toh 21": [
           {"source": "lancaster", "confidence": null},
           {"source": "nattier1992", "confidence": null,
@@ -315,7 +319,9 @@ def merge_sources():
                 added += 1
             # Otani
             for ot in (data.get("otani") or []):
-                concordance[text_id]["tibetan"].add(f"Otani {ot}")
+                otani_id = f"Otani {ot}"
+                concordance[text_id]["tibetan"].add(otani_id)
+                provenance.add(text_id, otani_id, "lancaster")
             # Sanskrit
             if data.get("sanskrit_title"):
                 concordance[text_id]["sanskrit"].add(data["sanskrit_title"])
@@ -342,9 +348,10 @@ def merge_sources():
                     new_toh_mappings += 1
                 concordance[text_id]["tibetan"].add(toh_id)
                 provenance.add(text_id, toh_id, "acmuller_tohoku")
-                # Otani
+                # Otani (already has "Otani " prefix)
                 for ot in entry.get("otani", []):
                     concordance[text_id]["tibetan"].add(ot)
+                    provenance.add(text_id, ot, "acmuller_tohoku")
                 # Nanjio
                 for nj in entry.get("nanjio", []):
                     concordance[text_id]["nanjio"].add(nj)
@@ -371,9 +378,10 @@ def merge_sources():
                         new_from_cbeta += 1
                     concordance[text_id]["tibetan"].add(toh_id)
                     provenance.add(text_id, toh_id, "cbeta_sanskrit")
-                # Otani
+                # Otani (already has "Otani " prefix)
                 for ot in entry.get("otani", []):
                     concordance[text_id]["tibetan"].add(ot)
+                    provenance.add(text_id, ot, "cbeta_sanskrit")
                 concordance[text_id]["sources"].add("cbeta_sanskrit")
         print(f"  Added {new_from_cbeta} new Toh mappings from CBETA Sanskrit")
 
@@ -394,9 +402,10 @@ def merge_sources():
                         new_from_lanc_full += 1
                     concordance[text_id]["tibetan"].add(toh_id)
                     provenance.add(text_id, toh_id, "lancaster_full")
-                # Otani
+                # Otani (already has "Otani " prefix)
                 for ot in entry.get("otani", []):
                     concordance[text_id]["tibetan"].add(ot)
+                    provenance.add(text_id, ot, "lancaster_full")
                 # Nanjio
                 for nj in entry.get("nanjio", []):
                     concordance[text_id]["nanjio"].add(nj)
@@ -698,9 +707,42 @@ def merge_sources():
                     if otani_id not in data["tibetan"]:
                         otani_added += 1
                     data["tibetan"].add(otani_id)
+                    provenance.add(text_id, otani_id, "rkts_concordance")
         print(f"  Added {otani_added} Otani numbers from Tohoku-Otani concordance")
     else:
         print("  No Tohoku-Otani concordance found, skipping.")
+
+    # --- Post-processing: Peking-only texts with Taisho parallels ---
+    # Some texts exist only in the Peking (Q) edition with no Derge counterpart,
+    # so they have Otani numbers but no Tohoku numbers. Add Otani-only entries
+    # for those with known Taisho parallels.
+    PEKING_ONLY_PATH = RESULTS_DIR / "peking_only_texts.json"
+    peking_data = load_json(PEKING_ONLY_PATH)
+    if peking_data:
+        peking_added = 0
+        for entry in peking_data.get("texts_with_taisho_parallels", []):
+            otani_id = entry.get("otani")
+            if not otani_id:
+                continue
+            # Resolve Taisho IDs from Lancaster references
+            for lanc in entry.get("taisho_parallels", {}).get("from_lancaster", []):
+                t_raw = lanc.get("taisho", "")
+                text_id = resolve_taisho_id(t_raw)
+                if not text_id or text_id not in corpus_ids:
+                    continue
+                concordance[text_id]["tibetan"].add(otani_id)
+                provenance.add(text_id, otani_id, "lancaster")
+                concordance[text_id]["sources"].add("lancaster")
+                peking_added += 1
+            # Also try the from_concordance references
+            for t_id in entry.get("taisho_parallels", {}).get("from_concordance", []):
+                if t_id in corpus_ids:
+                    concordance[t_id]["tibetan"].add(otani_id)
+                    provenance.add(t_id, otani_id, "peking_only")
+                    peking_added += 1
+        print(f"\n  Post-processing: Added {peking_added} Peking-only Otani links")
+    else:
+        print("\n  No Peking-only texts data found, skipping.")
 
     return concordance, corpus_ids, provenance
 
