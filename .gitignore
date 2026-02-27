@@ -41,3 +41,10 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+
+# Emacs temp/lock files
+\#*\#
+.\#*
+
+# Google Drive sync
+.tmp.driveupload/
