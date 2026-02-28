@@ -185,3 +185,13 @@ class TestPhoneticMapping:
         assert len(mapping) == 1
         assert mapping[0][0] == "波"
         assert mapping[0][2] == "波"
+
+    def test_unequal_length_raises_value_error(self, table):
+        """Unequal-length strings should raise ValueError."""
+        with pytest.raises(ValueError, match="equal-length"):
+            phonetic_mapping_for_pair("揭諦", "竭", table)
+
+    def test_unequal_length_reversed_raises_value_error(self, table):
+        """Unequal-length strings (reversed) should raise ValueError."""
+        with pytest.raises(ValueError, match="equal-length"):
+            phonetic_mapping_for_pair("揭", "竭帝", table)

@@ -22,5 +22,6 @@ except ImportError:
 
 setup(
     name="digest_detector",
+    python_requires=">=3.10",
     ext_modules=extensions,
 )

@@ -11,6 +11,7 @@ from digest_detector.extract import (
     _decode_unicode_hex,
     _extract_text_recursive,
     _group_files_by_text,
+    _process_text_group,
 )
 from digest_detector.models import TextMetadata
 
@@ -184,3 +185,59 @@ class TestGroupFiles:
         # T250 and T251 have 1 fascicle each
         assert len(groups["T08n0250"]) == 1
         assert len(groups["T08n0251"]) == 1
+
+
+class TestDharaniRangeTracking:
+    """Tests for _flush_segment closure's dharani range tracking."""
+
+    def test_t250_has_dharani_ranges(self):
+        """T250 should have dharani ranges tracked via _flush_segment."""
+        t250_file = XML_DIR / "T08" / "T08n0250_001.xml"
+        if not t250_file.exists():
+            pytest.skip("T250 XML file not found")
+
+        char_map = build_char_map([t250_file])
+        result = _process_text_group(("T08n0250", [t250_file], char_map))
+
+        assert result is not None
+        assert len(result.dharani_ranges) > 0, (
+            "T250 should have dharani ranges (contains dharani passage)")
+
+        # Dharani ranges should be within the text bounds
+        for start, end in result.dharani_ranges:
+            assert start >= 0
+            assert end <= len(result.full_text)
+            assert start < end
+
+    def test_no_dharani_in_plain_text(self):
+        """A text without dharani should have empty dharani_ranges."""
+        # T223 is a large sutra without specific dharani markup
+        t223_file = XML_DIR / "T08" / "T08n0223_001.xml"
+        if not t223_file.exists():
+            pytest.skip("T223 XML file not found")
+
+        char_map = build_char_map([t223_file])
+        result = _process_text_group(("T08n0223", [t223_file], char_map))
+
+        assert result is not None
+        # T223 fascicle 1 should not have dharani markup
+        assert result.dharani_ranges == []
+
+    def test_dharani_ranges_are_merged(self):
+        """Adjacent dharani ranges should be merged."""
+        t250_file = XML_DIR / "T08" / "T08n0250_001.xml"
+        if not t250_file.exists():
+            pytest.skip("T250 XML file not found")
+
+        char_map = build_char_map([t250_file])
+        result = _process_text_group(("T08n0250", [t250_file], char_map))
+
+        if not result or not result.dharani_ranges:
+            pytest.skip("No dharani ranges found in T250")
+
+        # Verify no overlapping ranges (they should be merged)
+        for i in range(len(result.dharani_ranges) - 1):
+            assert result.dharani_ranges[i][1] <= result.dharani_ranges[i + 1][0], (
+                f"Dharani ranges overlap: {result.dharani_ranges[i]} and "
+                f"{result.dharani_ranges[i + 1]}"
+            )

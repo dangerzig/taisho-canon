@@ -114,6 +114,11 @@ def _chain_seeds(
 
     Seeds do NOT need to be monotonic in source coordinates (digests can
     rearrange material).
+
+    The adjacent-pair pre-filter (lines below) removes seeds fully contained
+    within their neighbor. This is a performance optimization that does not
+    affect correctness: any chain using a contained seed could use the
+    containing seed instead for equal or better coverage.
     """
     if not seeds:
         return []
@@ -281,8 +286,11 @@ def _find_phonetic_seeds(
 
         if best_match:
             seeds.append(best_match)
-
-        d_pos += 1
+            # Advance past the match: overlapping seeds from the same region
+            # add no value after chaining, so skip ahead by match length.
+            d_pos += best_match[2]
+        else:
+            d_pos += 1
 
     return seeds
 
@@ -297,7 +305,11 @@ def _phonetic_rescan(
 
     For each novel segment containing transliteration characters, searches
     the source for phonetically equivalent sequences using seed-and-extend
-    with are_phonetically_equivalent() instead of ==.
+    with phonetic equivalence instead of ==.
+
+    Phonetic matches are restricted to 1:1 character alignment (no gaps),
+    so digest and source spans are always equal length. This invariant is
+    required by phonetic_mapping_for_pair().
 
     Returns a new list of segments with phonetic matches split out of
     novel segments.
@@ -347,7 +359,8 @@ def _phonetic_rescan(
                     source_text="",
                 ))
 
-            # Phonetic match
+            # Phonetic match: d_text and s_text are guaranteed equal length
+            # because _find_phonetic_seeds uses 1:1 character matching (no gaps).
             d_text = novel_text[d_start:d_end]
             s_text = source_text[s_start:s_end]
             mapping = phonetic_mapping_for_pair(d_text, s_text, table)
@@ -562,13 +575,15 @@ def align_pair(
 
 def _count_source_regions(
     matched_segments: list[AlignmentSegment],
-    gap_threshold: int = 100,
+    gap_threshold: int = None,
 ) -> int:
     """Count disjoint regions in the source that contribute to the alignment.
 
     Two segments are in the same region if their source positions are within
     gap_threshold characters of each other.
     """
+    if gap_threshold is None:
+        gap_threshold = config.SOURCE_REGION_GAP_THRESHOLD
     if not matched_segments:
         return 0
 
@@ -656,7 +671,10 @@ def align_candidates(
             continue
 
         # Skip phonetic rescan for phonetic-origin pairs (already
-        # discovered via phonetic candidate generation in Stage 2b)
+        # discovered via phonetic candidate generation in Stage 2b).
+        # Note: phonetic-origin pairs with sparse character-level overlap
+        # may produce zero-coverage results after early termination, since
+        # the phonetic coverage from Stage 2b is not re-measured here.
         skip_phonetic = cand.from_phonetic
 
         args_list.append((

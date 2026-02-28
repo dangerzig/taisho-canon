@@ -44,13 +44,16 @@ def classify_relationship(
 ) -> DigestScore:
     """Classify an alignment result into a relationship category.
 
-    Categories (checked in priority order):
-    - no_relationship: coverage < 0.10
-    - shared_tradition: coverage 0.10-0.30
-    - retranslation: coverage >= 0.30, size ratio < 3.0 (similar length texts)
-    - excerpt: coverage >= 0.80, avg segment >= 15 chars (verbatim extraction)
-    - digest: coverage >= 0.30, avg segment >= 10 chars (condensed derivation)
-    - commentary: coverage >= 0.30, avg segment < 10 chars (scattered small matches)
+    Categories (checked in this priority order; first match wins):
+    1. no_relationship: coverage < 0.10
+    2. shared_tradition: coverage 0.10-0.30
+    3. retranslation: coverage >= 0.30, size ratio < 3.0 (similar length texts)
+    4. excerpt: coverage >= 0.80, avg segment >= 15 chars (verbatim extraction)
+    5. digest: coverage >= 0.30, avg segment >= 10 chars (condensed derivation)
+    6. commentary: coverage >= 0.30, avg segment < 10 chars (scattered small matches)
+
+    Note: retranslation is checked before excerpt/digest, so a pair with 95%
+    coverage and size_ratio < 3.0 is classified as retranslation, not excerpt.
     """
     # Compute phonetic coverage fraction from segments
     matched_chars = sum(
@@ -106,6 +109,9 @@ def classify_relationship(
         digest_length=digest_jing_length if digest_jing_length is not None else digest_length,
     )
 
+    num_phon_segs = sum(
+        1 for s in alignment.segments if s.match_type == "phonetic")
+
     return DigestScore(
         digest_id=alignment.digest_id,
         source_id=alignment.source_id,
@@ -120,6 +126,7 @@ def classify_relationship(
         source_span=alignment.source_span,
         has_docnumber_xref=has_docnumber_xref,
         phonetic_coverage=phonetic_cov,
+        num_phonetic_segments=num_phon_segs,
     )
 
 

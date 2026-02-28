@@ -222,8 +222,8 @@ class TestOtaniNanjio:
         entry = tei_entry_map.get("T01n0001")
         assert entry is not None
         tei_otani = set()
-        for idno in entry.findall(f"{{{TEI_NS}}}idno[@type='otani']"):
-            tei_otani.add(idno.text)
+        for link in entry.findall(f"{{{TEI_NS}}}link[@type='otani']"):
+            tei_otani.add(link.get("target", "").replace("_", " "))
         for ot in ("Otani 750", "Otani 879", "Otani 962", "Otani 997", "Otani 1021"):
             assert ot in tei_otani, f"Missing {ot} for T01n0001 in TEI"
 
@@ -406,11 +406,11 @@ class TestHeartSutra:
         assert "Toh 21" in tei_tohs
 
     def test_csv_toh_21_source_count(self, csv_rows_by_taisho):
-        """T08n0251 Toh 21 should have 6 sources in CSV."""
+        """T08n0251 Toh 21 should have 8 sources in CSV."""
         rows = csv_rows_by_taisho["T08n0251"]
         toh21_rows = [r for r in rows if r["tohoku"] == "Toh 21"]
         assert len(toh21_rows) == 1
-        assert int(toh21_rows[0]["source_count"]) == 6
+        assert int(toh21_rows[0]["source_count"]) == 8
 
     def test_tei_toh_21_cert_high(self, tei_entry_map):
         """T08n0251 Toh 21 should have cert='high' in TEI (6 sources)."""

@@ -374,12 +374,10 @@ def _parse_84000_tei(filepath: Path) -> list[tuple[int, str, str]]:
     return results
 
 
-def load_kangyur_sanskrit_titles() -> dict[str, list[tuple[int, str, str]]]:
+def load_kangyur_sanskrit_titles() -> list[tuple[int, str, str]]:
     """Load Sanskrit titles for Kangyur/Tengyur texts.
 
-    Returns: {normalized_title: [(tohoku_number, original_title, source), ...]}
-
-    Also returns a flat mapping for iteration.
+    Returns: list of (tohoku_number, original_title, source) tuples.
     """
     root = _project_root()
     # Collect (tohoku_number, original_title, source)

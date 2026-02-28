@@ -262,18 +262,26 @@ def find_transliteration_regions(
     if dharani_ranges:
         regions.extend(dharani_ranges)
 
-    # Source 2: Density-based detection
+    # Source 2: Density-based detection using incremental sliding window.
+    # Maintains a running count of table chars, incrementing/decrementing as
+    # characters enter/leave the window, for O(n) instead of O(n*w).
     if len(text) >= window:
-        # Count table chars in sliding window
         in_region = False
         region_start = 0
+        min_count = int(density_threshold * window)
+
+        # Initialize count for first window
+        table_count = sum(1 for ch in text[:window] if ch in table)
 
         for i in range(len(text) - window + 1):
-            win_text = text[i:i + window]
-            table_count = sum(1 for ch in win_text if ch in table)
-            density = table_count / window
+            if i > 0:
+                # Remove char leaving the window, add char entering
+                if text[i - 1] in table:
+                    table_count -= 1
+                if text[i + window - 1] in table:
+                    table_count += 1
 
-            if density >= density_threshold:
+            if table_count >= min_count:
                 if not in_region:
                     region_start = i
                     in_region = True

@@ -5,7 +5,9 @@ import pytest
 from pathlib import Path
 from unittest.mock import patch
 
-from digest_detector.cache import PipelineCache, CACHE_VERSION, _config_snapshot
+from digest_detector.cache import (
+    PipelineCache, CacheCorruptionError, CACHE_VERSION, _config_snapshot,
+)
 # CACHE_VERSION is checked dynamically from import, so this test stays current
 from digest_detector.models import (
     ExtractedText, TextMetadata, CandidatePair,
@@ -231,3 +233,42 @@ class TestCorpusHash:
         cache2.save(texts, candidates, xml_dir)
         manifest = json.loads(cache2.manifest_path.read_text())
         assert manifest["corpus_hash"] == cached_hash
+
+
+class TestCacheCorruption:
+    def test_truncated_pickle(self, cache_dir, xml_dir, sample_data):
+        """Loading a truncated pickle should raise CacheCorruptionError."""
+        cache = PipelineCache(cache_dir)
+        texts, candidates = sample_data
+        cache.save(texts, candidates, xml_dir)
+
+        # Truncate the texts pickle
+        with open(cache.texts_path, "wb") as f:
+            f.write(b"\x80\x05\x95\x00\x00")  # partial pickle header
+
+        with pytest.raises(CacheCorruptionError):
+            cache.load()
+
+    def test_empty_pickle(self, cache_dir, xml_dir, sample_data):
+        """Loading an empty pickle should raise CacheCorruptionError."""
+        cache = PipelineCache(cache_dir)
+        texts, candidates = sample_data
+        cache.save(texts, candidates, xml_dir)
+
+        # Write empty file
+        cache.texts_path.write_bytes(b"")
+
+        with pytest.raises(CacheCorruptionError):
+            cache.load()
+
+    def test_garbage_pickle(self, cache_dir, xml_dir, sample_data):
+        """Loading garbage data should raise CacheCorruptionError."""
+        cache = PipelineCache(cache_dir)
+        texts, candidates = sample_data
+        cache.save(texts, candidates, xml_dir)
+
+        # Write garbage
+        cache.texts_path.write_bytes(b"this is not a pickle file")
+
+        with pytest.raises(CacheCorruptionError):
+            cache.load()

@@ -356,10 +356,14 @@ def _process_text_group(args: tuple) -> ExtractedText | None:
     current_raw = []
     current_dharani_flags = []  # parallel list: is_dharani per raw_text chunk
     offset = 0
+    # Mutated by _flush_segment closure below to track dharani character ranges
     dharani_ranges = []
 
     def _flush_segment(raw_chunks, dharani_flags, div_type, seg_offset):
-        """Normalize a segment and record dharani char ranges."""
+        """Normalize a segment and record dharani char ranges.
+
+        Side effect: appends to the enclosing dharani_ranges list.
+        """
         # Normalize each chunk individually to track dharani boundaries
         chunk_texts = []
         for raw, is_dh in zip(raw_chunks, dharani_flags):

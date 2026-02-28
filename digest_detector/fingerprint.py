@@ -83,6 +83,9 @@ def compute_document_frequencies(
 
     doc_freq: Counter[int] = Counter()
     if num_workers <= 1 or len(texts) < 10:
+        # Side effect: sets module-level _worker_n so _doc_freq_worker can
+        # read it. Safe for single-pipeline-run processes; the global retains
+        # the last value if called again with a different n.
         global _worker_n
         _worker_n = n
         for full_text in tqdm(text_list, desc="Doc freq", unit="text"):

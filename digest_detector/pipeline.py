@@ -17,7 +17,7 @@ from .fingerprint import (
     identify_stopgrams,
     build_ngram_sets,
 )
-from .cache import PipelineCache
+from .cache import PipelineCache, CacheCorruptionError
 from .candidates import generate_candidates
 from .align import align_candidates
 from .score import score_all, detect_multi_source_digests
@@ -107,16 +107,21 @@ def run_pipeline(
         logger.info("LOADING FROM CACHE")
         logger.info("=" * 60)
         t0 = time.time()
-        texts, candidates = cache.load()
-        text_map = {t.text_id: t for t in texts}
-        metadata_map = {t.text_id: t.metadata for t in texts}
-        elapsed = round(time.time() - t0, 1)
-        stage_times["cache_load"] = elapsed
-        counts["texts"] = len(texts)
-        counts["candidates"] = len(candidates)
-        logger.info("Loaded %d texts, %d candidates from cache in %.1f seconds",
-                     len(texts), len(candidates), elapsed)
-    else:
+        try:
+            texts, candidates = cache.load()
+        except CacheCorruptionError as e:
+            logger.warning("Cache corrupted, falling back to recomputation: %s", e)
+            used_cache = False
+        else:
+            text_map = {t.text_id: t for t in texts}
+            metadata_map = {t.text_id: t.metadata for t in texts}
+            elapsed = round(time.time() - t0, 1)
+            stage_times["cache_load"] = elapsed
+            counts["texts"] = len(texts)
+            counts["candidates"] = len(candidates)
+            logger.info("Loaded %d texts, %d candidates from cache in %.1f seconds",
+                         len(texts), len(candidates), elapsed)
+    if not used_cache:
         # ---- Stage 1: Extract ----
         logger.info("=" * 60)
         logger.info("STAGE 1: Text Extraction")
@@ -145,10 +150,12 @@ def run_pipeline(
 
         doc_freq = compute_document_frequencies(texts, num_workers=num_workers)
         stopgrams = identify_stopgrams(doc_freq, len(texts))
+        counts["stopgrams"] = len(stopgrams)
         del doc_freq  # millions of n-gram→count entries, only needed for stopgrams
         ngram_sets = build_ngram_sets(texts, stopgrams, num_workers=num_workers)
         candidates = generate_candidates(texts, ngram_sets, stopgrams,
                                          num_workers=num_workers)
+        counts["char_candidates"] = len(candidates)
         del ngram_sets, stopgrams  # ~8,982 frozensets, only needed for candidates
         gc.collect()
 
@@ -241,9 +248,17 @@ def run_pipeline(
     t0 = time.time()
 
     validation = validate_ground_truth(scores, alignments, metadata_map)
+    pipeline_stats = {
+        'num_texts': counts.get('texts', 0),
+        'num_stopgrams': counts.get('stopgrams', 0),
+        'num_candidates': counts.get('char_candidates', 0),
+        'num_phonetic_candidates': counts.get('phonetic_new', 0),
+        'total_candidates': counts.get('candidates', 0),
+    }
     generate_reports(
         scores, alignments, multi_source, metadata_map, validation,
         results_dir=results_dir,
+        pipeline_stats=pipeline_stats,
     )
 
     elapsed = round(time.time() - t0, 1)

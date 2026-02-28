@@ -35,6 +35,7 @@ COMMENTARY_AVG_SEG_LEN = 10  # Below this avg segment length → commentary
 EXCERPT_AVG_SEG_LEN = 15  # Excerpt requires avg segment >= this
 SHARED_TRADITION_THRESHOLD = 0.10  # Below digest, above this → shared tradition
 RETRANSLATION_SIZE_RATIO = 3.0  # Texts within this ratio may be retranslations
+SOURCE_REGION_GAP_THRESHOLD = 100  # Characters gap to start a new source region
 
 # Confidence score weights (must sum to 1.0)
 WEIGHT_CONTAINMENT = 0.35
