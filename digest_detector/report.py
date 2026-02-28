@@ -223,10 +223,18 @@ def generate_reports(
     metadata_map: dict[str, TextMetadata],
     validation: dict,
     results_dir: Path = None,
+    pipeline_stats: dict = None,
 ):
-    """Generate all output reports."""
+    """Generate all output reports.
+
+    Args:
+        pipeline_stats: Optional dict with runtime statistics
+            (e.g. num_stopgrams, num_candidates, num_phonetic_candidates).
+    """
     if results_dir is None:
         results_dir = config.RESULTS_DIR
+    if pipeline_stats is None:
+        pipeline_stats = {}
     results_dir.mkdir(parents=True, exist_ok=True)
     alignments_dir = results_dir / "alignments"
     alignments_dir.mkdir(parents=True, exist_ok=True)
@@ -250,8 +258,8 @@ def generate_reports(
             'source_span': round(s.source_span, 6),
             'has_docnumber_xref': s.has_docnumber_xref,
         }
-        if s.phonetic_coverage > 0:
-            rel['phonetic_coverage'] = round(s.phonetic_coverage, 4)
+        rel['phonetic_coverage'] = round(s.phonetic_coverage, 4)
+        rel['num_phonetic_segments'] = s.num_phonetic_segments
         relationships.append(rel)
 
     _write_json(results_dir / "digest_relationships.json", relationships)
@@ -277,7 +285,8 @@ def generate_reports(
             _write_json(alignments_dir / fname, data)
 
     # 3. summary.md
-    _generate_summary(scores, alignments, multi_source, metadata_map, results_dir)
+    _generate_summary(scores, alignments, multi_source, metadata_map, results_dir,
+                      pipeline_stats)
 
     # 4. validation.md
     _generate_validation_report(validation, results_dir)
@@ -291,8 +300,11 @@ def _generate_summary(
     multi_source: list[MultiSourceDigest],
     metadata_map: dict[str, TextMetadata],
     results_dir: Path,
+    pipeline_stats: dict = None,
 ):
     """Generate human-readable summary.md."""
+    if pipeline_stats is None:
+        pipeline_stats = {}
     score_map = {(s.digest_id, s.source_id): s for s in scores}
     alignment_map = {(a.digest_id, a.source_id): a for a in alignments}
 
@@ -312,7 +324,33 @@ def _generate_summary(
         if count > 0:
             lines.append(f"- {cls}: {count}")
     lines.append(f"- Multi-source digests: {len(multi_source)}")
+
+    # Phonetic statistics
+    phonetic_pairs = sum(1 for s in scores if s.phonetic_coverage > 0)
+    phonetic_segs = sum(s.num_phonetic_segments for s in scores)
+    if phonetic_pairs > 0:
+        lines.append(f"- Pairs with phonetic matches: {phonetic_pairs}")
+        lines.append(f"- Total phonetic match segments: {phonetic_segs}")
+
     lines.append("")
+
+    # Pipeline statistics (if provided)
+    if pipeline_stats:
+        stat_lines = []
+        if pipeline_stats.get('num_texts'):
+            stat_lines.append(f"- Texts extracted: {pipeline_stats['num_texts']}")
+        if pipeline_stats.get('num_stopgrams'):
+            stat_lines.append(f"- Stop-grams removed: {pipeline_stats['num_stopgrams']}")
+        if pipeline_stats.get('num_candidates'):
+            stat_lines.append(f"- Candidate pairs (character-level): {pipeline_stats['num_candidates']}")
+        if pipeline_stats.get('num_phonetic_candidates'):
+            stat_lines.append(f"- Candidate pairs (phonetic): {pipeline_stats['num_phonetic_candidates']}")
+        if pipeline_stats.get('total_candidates'):
+            stat_lines.append(f"- Total candidate pairs: {pipeline_stats['total_candidates']}")
+        if stat_lines:
+            lines.append("## Pipeline Statistics\n")
+            lines.extend(stat_lines)
+            lines.append("")
 
     # Top results ranked by confidence
     lines.append("## Top Digest Relationships (by confidence)\n")

@@ -98,6 +98,7 @@ class DigestScore:
     source_span: float
     has_docnumber_xref: bool = False
     phonetic_coverage: float = 0.0  # fraction of digest matched phonetically
+    num_phonetic_segments: int = 0  # number of phonetic match segments
 
 
 @dataclass(slots=True)
