@@ -8680,6 +8680,7 @@
             <note type="sources">rkts_concordance</note>
           </link>
           <idno type="nanjio">Nj 615</idno>
+          <idno type="sanskrit">Sumāgadhāvadānasūtra</idno>
           <idno type="sanskrit">Sumāgadhāvadānasūtra.</idno>
           <title type="chinese">須摩提女經</title>
         </entry>
@@ -8690,7 +8691,6 @@
           <link type="otani" target="Otani_1015" cert="low">
             <note type="sources">rkts_concordance</note>
           </link>
-          <idno type="sanskrit">Sumāgadhāvadānasūtra</idno>
           <idno type="sanskrit">Sumāgadhāvadānasūtra.</idno>
         </entry>
         <entry xml:id="T02n0129">
@@ -8792,6 +8792,8 @@
           </link>
         </entry>
         <entry xml:id="T02n0150A">
+          <idno type="nanjio">Nj 648</idno>
+          <title type="chinese">Ch'i ch'u san kuan ching</title>
           <link type="pali" target="an10.108" cert="low">
             <note type="sources">suttacentral_parallels</note>
           </link>
@@ -15886,7 +15888,6 @@
           <link type="otani" target="Otani_848" cert="low">
             <note type="sources">rkts_concordance</note>
           </link>
-          <idno type="nanjio">Nj 1</idno>
           <idno type="sanskrit">Mahāpraj&amp;ntilde;āpāramitāsūtra</idno>
           <idno type="sanskrit">Mahāprajñāpāramitāsūtra</idno>
           <idno type="sanskrit">Pañcaviṃśatisāhasrikā-prajñāpāramitā</idno>
@@ -15901,8 +15902,6 @@
           <idno type="sanskrit">Ārya-vajracchedikā-nāma-prajñāpāramitā-mahāyānasūtra</idno>
           <idno type="sanskrit">Śatasāhasrikā-prajñāpāramitā</idno>
           <idno type="sanskrit">Śrī-paramādya-nāma-mahāyānakalparāja</idno>
-          <title type="chinese">般若波羅蜜多經</title>
-          <title type="tibetan">ཤེས་རབ་ཀྱི་ཕ་རོལ་ཏུ་ཕྱིན་པ་སྟོང་ཕྲག་བརྒྱ་བ</title>
         </entry>
         <entry xml:id="T07n0220">
           <link type="tibetan" target="Toh_10" cert="high">
@@ -16010,6 +16009,7 @@
           <link type="otani" target="Otani_897" cert="low">
             <note type="sources">rkts_concordance</note>
           </link>
+          <idno type="nanjio">Nj 1</idno>
           <idno type="sanskrit">Mahāprajñāpāramitāsūtra</idno>
           <idno type="sanskrit">Pañcaviṃśatisāhasrikā-prajñāpāramitā</idno>
           <idno type="sanskrit">Ārya- prajñāpāramitā-sañcayagāthā</idno>
@@ -16023,6 +16023,8 @@
           <idno type="sanskrit">Ārya-vajracchedikā-nāma-prajñāpāramitā-mahāyānasūtra</idno>
           <idno type="sanskrit">Śatasāhasrikā-prajñāpāramitā</idno>
           <idno type="sanskrit">Śrī-paramādya-nāma-mahāyānakalparāja</idno>
+          <title type="chinese">般若波羅蜜多經</title>
+          <title type="tibetan">ཤེས་རབ་ཀྱི་ཕ་རོལ་ཏུ་ཕྱིན་པ་སྟོང་ཕྲག་བརྒྱ་བ</title>
         </entry>
         <entry xml:id="T08n0221">
           <link type="tibetan" target="Toh_10" cert="low">
@@ -16542,18 +16544,9 @@
           <link type="otani" target="Otani_827" cert="low">
             <note type="sources">acmuller_tohoku</note>
           </link>
-          <idno type="nanjio">Nj 1</idno>
-          <idno type="nanjio">Nj 10</idno>
-          <idno type="nanjio">Nj 11</idno>
-          <idno type="nanjio">Nj 12</idno>
-          <idno type="nanjio">Nj 13</idno>
-          <idno type="nanjio">Nj 14</idno>
-          <idno type="nanjio">Nj 190</idno>
           <idno type="sanskrit">Vajracchedikāpraj&amp;ntilde;āpāramitāsūtra</idno>
           <idno type="sanskrit">Vajracchedikāprajñāpāramitāsūtra</idno>
           <idno type="sanskrit">Ārya-vajracchedikā-nāma-prajñāpāramitā-mahāyānasūtra</idno>
-          <title type="chinese">金剛般若波羅蜜經</title>
-          <title type="tibetan">Śes-rab-kyi-pha-rol-tu-phyin-pa rdo-rje gcod-pa</title>
         </entry>
         <entry xml:id="T08n0236b">
           <link type="tibetan" target="Toh_16" cert="medium">
@@ -16562,8 +16555,18 @@
           <link type="otani" target="Otani_739" cert="low">
             <note type="sources">rkts_concordance</note>
           </link>
+          <link type="otani" target="Otani_827" cert="low" />
+          <idno type="nanjio">Nj 1</idno>
+          <idno type="nanjio">Nj 10</idno>
+          <idno type="nanjio">Nj 11</idno>
+          <idno type="nanjio">Nj 12</idno>
+          <idno type="nanjio">Nj 13</idno>
+          <idno type="nanjio">Nj 14</idno>
+          <idno type="nanjio">Nj 190</idno>
           <idno type="sanskrit">Vajracchedikāprajñāpāramitāsūtra</idno>
           <idno type="sanskrit">Ārya-vajracchedikā-nāma-prajñāpāramitā-mahāyānasūtra</idno>
+          <title type="chinese">金剛般若波羅蜜經</title>
+          <title type="tibetan">Śes-rab-kyi-pha-rol-tu-phyin-pa rdo-rje gcod-pa</title>
         </entry>
         <entry xml:id="T08n0237">
           <link type="tibetan" target="Toh_16" cert="high">
@@ -18579,8 +18582,12 @@
           <link type="otani" target="Otani_760,10" cert="low">
             <note type="sources">rkts_concordance</note>
           </link>
+          <idno type="nanjio">Nj 23</idno>
+          <idno type="nanjio">Nj 30</idno>
           <idno type="sanskrit">Samantamukhaparivarta(sūtra)</idno>
           <idno type="sanskrit">Ārya-samantamukhaparivarta-nāma-mahāyānasūtra</idno>
+          <title type="chinese">普門品經</title>
+          <title type="tibetan">Kun-nas-sgoḥi leḥu</title>
         </entry>
         <entry xml:id="T11n0315b">
           <link type="tibetan" target="Toh_54" cert="high">
@@ -18590,12 +18597,8 @@
           <link type="otani" target="Otani_760,10" cert="low">
             <note type="sources">rkts_concordance</note>
           </link>
-          <idno type="nanjio">Nj 23</idno>
-          <idno type="nanjio">Nj 30</idno>
           <idno type="sanskrit">Samantamukhaparivarta(sūtra)</idno>
           <idno type="sanskrit">Ārya-samantamukhaparivarta-nāma-mahāyānasūtra</idno>
-          <title type="chinese">普門品經</title>
-          <title type="tibetan">Kun-nas-sgoḥi leḥu</title>
         </entry>
         <entry xml:id="T11n0316">
           <link type="tibetan" target="Toh_147" cert="low">
@@ -24128,12 +24131,12 @@
           <title type="tibetan">Legs par-grub par-byed-paḥi rgyud chen-po-las sgrub-paḥi thabs rim-par-phye-ba</title>
         </entry>
         <entry xml:id="T18n0894a">
-          <idno type="sanskrit">Susiddhikarapūjāvidhi</idno>
-        </entry>
-        <entry xml:id="T18n0894b">
           <idno type="nanjio">Nj 1425</idno>
           <idno type="sanskrit">Susiddhikarapūjāvidhi</idno>
           <title type="chinese">蘇悉地羯羅供養法</title>
+        </entry>
+        <entry xml:id="T18n0894b">
+          <idno type="sanskrit">Susiddhikarapūjāvidhi</idno>
         </entry>
         <entry xml:id="T18n0895a">
           <link type="tibetan" target="Toh_805" cert="high">
@@ -24142,8 +24145,12 @@
           <link type="otani" target="Otani_428" cert="low">
             <note type="sources">rkts_concordance</note>
           </link>
+          <idno type="nanjio">Nj 531</idno>
+          <idno type="nanjio">Nj 822</idno>
           <idno type="sanskrit">Subāhuparipṛcchā(sūtra)</idno>
           <idno type="sanskrit">Ārya-subāhuparīpṛcchā-nāma-tantra</idno>
+          <title type="chinese">蘇婆呼童子請問經</title>
+          <title type="tibetan">Dpuṅ-bzaṅ-gis shus-pa</title>
         </entry>
         <entry xml:id="T18n0895b">
           <link type="tibetan" target="Toh_805" cert="high">
@@ -24152,12 +24159,8 @@
           <link type="otani" target="Otani_428" cert="high">
             <note type="sources">acmuller_tohoku; cbeta_sanskrit; lancaster; lancaster_full; rkts_concordance</note>
           </link>
-          <idno type="nanjio">Nj 531</idno>
-          <idno type="nanjio">Nj 822</idno>
           <idno type="sanskrit">Subāhuparipṛcchā(sūtra)</idno>
           <idno type="sanskrit">Ārya-subāhuparīpṛcchā-nāma-tantra</idno>
-          <title type="chinese">蘇婆呼童子請問經</title>
-          <title type="tibetan">Dpuṅ-bzaṅ-gis shus-pa</title>
         </entry>
         <entry xml:id="T18n0896">
           <link type="tibetan" target="Toh_805" cert="high">
@@ -24647,6 +24650,45 @@
           <link type="tibetan" target="Toh_596" cert="medium">
             <note type="sources">84000_tei_refs; existing</note>
           </link>
+          <link type="tibetan" target="Toh_597" cert="medium">
+            <note type="sources">cbeta_tibetan; existing</note>
+          </link>
+          <link type="tibetan" target="Toh_598" cert="medium">
+            <note type="sources">84000_tei_refs; existing</note>
+          </link>
+          <link type="tibetan" target="Toh_984" cert="medium">
+            <note type="sources">cbeta_tibetan; existing</note>
+          </link>
+          <link type="otani" target="Otani_197" cert="low">
+            <note type="sources">rkts_concordance</note>
+          </link>
+          <link type="otani" target="Otani_198" cert="low">
+            <note type="sources">rkts_concordance</note>
+          </link>
+          <link type="otani" target="Otani_199" cert="low">
+            <note type="sources">rkts_concordance</note>
+          </link>
+          <link type="otani" target="Otani_200" cert="low">
+            <note type="sources">rkts_concordance</note>
+          </link>
+          <link type="otani" target="Otani_201" cert="low">
+            <note type="sources">rkts_concordance</note>
+          </link>
+          <link type="otani" target="Otani_609" cert="low">
+            <note type="sources">rkts_concordance</note>
+          </link>
+          <idno type="sanskrit">Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī</idno>
+        </entry>
+        <entry xml:id="T19n0974B">
+          <link type="tibetan" target="Toh_594" cert="medium">
+            <note type="sources">84000_tei_refs; existing</note>
+          </link>
+          <link type="tibetan" target="Toh_595" cert="medium">
+            <note type="sources">84000_tei_refs; existing</note>
+          </link>
+          <link type="tibetan" target="Toh_596" cert="medium">
+            <note type="sources">84000_tei_refs; existing</note>
+          </link>
           <link type="tibetan" target="Toh_597" cert="high">
             <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
@@ -24676,45 +24718,6 @@
           </link>
           <idno type="sanskrit">(Sarvadurgatipari&amp;#347;odhana)u&amp;#7779;&amp;#7751;&amp;#299;&amp;#7779;avijayadh&amp;#257;ra&amp;#7751;i(s&amp;#363;tra)</idno>
           <idno type="sanskrit">(Sarvadurgatipariśodhana)uṣṇīṣavijayadhāraṇi(sūtra).</idno>
-          <idno type="sanskrit">Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī</idno>
-        </entry>
-        <entry xml:id="T19n0974B">
-          <link type="tibetan" target="Toh_594" cert="medium">
-            <note type="sources">84000_tei_refs; existing</note>
-          </link>
-          <link type="tibetan" target="Toh_595" cert="medium">
-            <note type="sources">84000_tei_refs; existing</note>
-          </link>
-          <link type="tibetan" target="Toh_596" cert="medium">
-            <note type="sources">84000_tei_refs; existing</note>
-          </link>
-          <link type="tibetan" target="Toh_597" cert="medium">
-            <note type="sources">cbeta_tibetan; existing</note>
-          </link>
-          <link type="tibetan" target="Toh_598" cert="medium">
-            <note type="sources">84000_tei_refs; existing</note>
-          </link>
-          <link type="tibetan" target="Toh_984" cert="medium">
-            <note type="sources">cbeta_tibetan; existing</note>
-          </link>
-          <link type="otani" target="Otani_197" cert="low">
-            <note type="sources">rkts_concordance</note>
-          </link>
-          <link type="otani" target="Otani_198" cert="low">
-            <note type="sources">rkts_concordance</note>
-          </link>
-          <link type="otani" target="Otani_199" cert="low">
-            <note type="sources">rkts_concordance</note>
-          </link>
-          <link type="otani" target="Otani_200" cert="low">
-            <note type="sources">rkts_concordance</note>
-          </link>
-          <link type="otani" target="Otani_201" cert="low">
-            <note type="sources">rkts_concordance</note>
-          </link>
-          <link type="otani" target="Otani_609" cert="low">
-            <note type="sources">rkts_concordance</note>
-          </link>
           <idno type="sanskrit">Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī</idno>
         </entry>
         <entry xml:id="T19n0974C">
@@ -24793,10 +24796,7 @@
           <link type="otani" target="Otani_609" cert="low">
             <note type="sources">rkts_concordance</note>
           </link>
-          <idno type="nanjio">Nj 796</idno>
           <idno type="sanskrit">Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī</idno>
-          <title type="chinese">最勝佛頂陀羅尼經</title>
-          <title type="tibetan">Ṅan-ḥgro thams-cad yoṅs-su sbyoṅ-ba gtsug-tor rnam-par rgyal-ba.</title>
         </entry>
         <entry xml:id="T19n0974E">
           <link type="tibetan" target="Toh_594" cert="medium">
@@ -24835,7 +24835,10 @@
           <link type="otani" target="Otani_609" cert="low">
             <note type="sources">rkts_concordance</note>
           </link>
+          <idno type="nanjio">Nj 796</idno>
           <idno type="sanskrit">Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī</idno>
+          <title type="chinese">最勝佛頂陀羅尼經</title>
+          <title type="tibetan">Ṅan-ḥgro thams-cad yoṅs-su sbyoṅ-ba gtsug-tor rnam-par rgyal-ba.</title>
         </entry>
         <entry xml:id="T19n0974F">
           <link type="tibetan" target="Toh_594" cert="medium">
@@ -25041,27 +25044,27 @@
           <title type="tibetan">Rig-sṅags-kyi rgyal-mo rma-bya chen-mo.</title>
         </entry>
         <entry xml:id="T19n0983A">
-          <link type="tibetan" target="Toh_559" cert="high">
-            <note type="sources">84000_tei_refs; cbeta_sanskrit; cbeta_tibetan; lancaster; lancaster_full</note>
-          </link>
-          <link type="otani" target="Otani_178" cert="high">
-            <note type="sources">cbeta_sanskrit; lancaster; lancaster_full; rkts_concordance</note>
-          </link>
-          <idno type="nanjio">Nj 1499</idno>
-          <idno type="nanjio">Nj 307</idno>
-          <idno type="sanskrit">Mah&amp;#257;m&amp;#257;y&amp;#363;r&amp;#299;(vidy&amp;#257;r&amp;#257;j&amp;ntilde;&amp;#299;)</idno>
-          <idno type="sanskrit">Mahāmāyūrī(vidyārājñī).</idno>
-          <idno type="sanskrit">Mahāmāyūrīvidyārājñī</idno>
-          <title type="chinese">大孔雀明王畫像壇場儀軌</title>
-          <title type="tibetan">Rig-sṅags-kyi rgyal-mo rma-bya chen-mo.</title>
-        </entry>
-        <entry xml:id="T19n0983B">
           <link type="tibetan" target="Toh_559" cert="medium">
             <note type="sources">84000_tei_refs; cbeta_tibetan</note>
           </link>
           <link type="otani" target="Otani_178" cert="low">
             <note type="sources">rkts_concordance</note>
           </link>
+          <idno type="nanjio">Nj 1499</idno>
+          <idno type="nanjio">Nj 307</idno>
+          <idno type="sanskrit">Mahāmāyūrīvidyārājñī</idno>
+          <title type="chinese">大孔雀明王畫像壇場儀軌</title>
+          <title type="tibetan">Rig-sṅags-kyi rgyal-mo rma-bya chen-mo.</title>
+        </entry>
+        <entry xml:id="T19n0983B">
+          <link type="tibetan" target="Toh_559" cert="high">
+            <note type="sources">84000_tei_refs; cbeta_sanskrit; cbeta_tibetan; lancaster; lancaster_full</note>
+          </link>
+          <link type="otani" target="Otani_178" cert="high">
+            <note type="sources">cbeta_sanskrit; lancaster; lancaster_full; rkts_concordance</note>
+          </link>
+          <idno type="sanskrit">Mah&amp;#257;m&amp;#257;y&amp;#363;r&amp;#299;(vidy&amp;#257;r&amp;#257;j&amp;ntilde;&amp;#299;)</idno>
+          <idno type="sanskrit">Mahāmāyūrī(vidyārājñī).</idno>
           <idno type="sanskrit">Mahāmāyūrīvidyārājñī</idno>
         </entry>
         <entry xml:id="T19n0984">
@@ -25400,33 +25403,11 @@
           <title type="chinese">不空羂索毗廬遮那佛大灌頂光眞言</title>
         </entry>
         <entry xml:id="T19n1005A">
-          <link type="tibetan" target="Toh_506" cert="high">
-            <note type="sources">cbeta_sanskrit; cbeta_tibetan; lancaster; lancaster_full; mitra</note>
+          <link type="tibetan" target="Toh_506" cert="medium">
+            <note type="sources">cbeta_tibetan; mitra</note>
           </link>
-          <link type="tibetan" target="Toh_885" cert="high">
-            <note type="sources">cbeta_sanskrit; cbeta_tibetan; lancaster; lancaster_full; mitra</note>
-          </link>
-          <link type="otani" target="Otani_138" cert="high">
-            <note type="sources">cbeta_sanskrit; lancaster; lancaster_full; rkts_concordance</note>
-          </link>
-          <link type="otani" target="Otani_510" cert="high">
-            <note type="sources">cbeta_sanskrit; lancaster; rkts_concordance</note>
-          </link>
-          <idno type="nanjio">Nj 1028</idno>
-          <idno type="nanjio">Nj 535</idno>
-          <idno type="sanskrit">Mah&amp;#257;ma&amp;#7751;ivipulavim&amp;#257;navi&amp;#347;vasuprati&amp;#7779;&amp;#7789;hitaguhyaparamarahasyakalpar&amp;#257;jadh&amp;#257;ra&amp;#7751;&amp;#299;(s&amp;#363;tra)</idno>
-          <idno type="sanskrit">Mahāmaṇivipulavimānaviśvasupratiṣṭhitaguhyaparamarahasyakalparājadhāraṇī(sūtra).</idno>
-          <idno type="sanskrit">Ārya-mahāmaṇivipulavimānasupratiṣṭhitaguhyaparamarahasyakalparāja-nāma-dhāraṇī</idno>
-          <idno type="sanskrit">Ārya-mahāmaṇivipulavimānasupratṣṭhitaguhyaparamarahasyakalparāja-nāma-dhāraṇī</idno>
-          <title type="chinese">大寶廣博樓閣善住祕密陀羅尼經</title>
-          <title type="tibetan">Nor-bu chen-po rgyas-paḥi gshal-med-khaṅ śin-tu rab-tu-gnas-pa gsaṅ-ba dam-paḥi gsaṅ-baḥi cho-ga shib-moḥi rgyal-po.</title>
-        </entry>
-        <entry xml:id="T19n1005B">
-          <link type="tibetan" target="Toh_506" cert="low">
-            <note type="sources">cbeta_tibetan</note>
-          </link>
-          <link type="tibetan" target="Toh_885" cert="low">
-            <note type="sources">cbeta_tibetan</note>
+          <link type="tibetan" target="Toh_885" cert="medium">
+            <note type="sources">cbeta_tibetan; mitra</note>
           </link>
           <link type="otani" target="Otani_138" cert="low">
             <note type="sources">rkts_concordance</note>
@@ -25434,6 +25415,28 @@
           <link type="otani" target="Otani_510" cert="low">
             <note type="sources">rkts_concordance</note>
           </link>
+          <idno type="nanjio">Nj 1028</idno>
+          <idno type="nanjio">Nj 535</idno>
+          <idno type="sanskrit">Ārya-mahāmaṇivipulavimānasupratiṣṭhitaguhyaparamarahasyakalparāja-nāma-dhāraṇī</idno>
+          <idno type="sanskrit">Ārya-mahāmaṇivipulavimānasupratṣṭhitaguhyaparamarahasyakalparāja-nāma-dhāraṇī</idno>
+          <title type="chinese">大寶廣博樓閣善住祕密陀羅尼經</title>
+          <title type="tibetan">Nor-bu chen-po rgyas-paḥi gshal-med-khaṅ śin-tu rab-tu-gnas-pa gsaṅ-ba dam-paḥi gsaṅ-baḥi cho-ga shib-moḥi rgyal-po.</title>
+        </entry>
+        <entry xml:id="T19n1005B">
+          <link type="tibetan" target="Toh_506" cert="high">
+            <note type="sources">cbeta_sanskrit; cbeta_tibetan; lancaster; lancaster_full</note>
+          </link>
+          <link type="tibetan" target="Toh_885" cert="high">
+            <note type="sources">cbeta_sanskrit; cbeta_tibetan; lancaster; lancaster_full</note>
+          </link>
+          <link type="otani" target="Otani_138" cert="high">
+            <note type="sources">cbeta_sanskrit; lancaster; lancaster_full; rkts_concordance</note>
+          </link>
+          <link type="otani" target="Otani_510" cert="high">
+            <note type="sources">cbeta_sanskrit; lancaster; rkts_concordance</note>
+          </link>
+          <idno type="sanskrit">Mah&amp;#257;ma&amp;#7751;ivipulavim&amp;#257;navi&amp;#347;vasuprati&amp;#7779;&amp;#7789;hitaguhyaparamarahasyakalpar&amp;#257;jadh&amp;#257;ra&amp;#7751;&amp;#299;(s&amp;#363;tra)</idno>
+          <idno type="sanskrit">Mahāmaṇivipulavimānaviśvasupratiṣṭhitaguhyaparamarahasyakalparājadhāraṇī(sūtra).</idno>
           <idno type="sanskrit">Ārya-mahāmaṇivipulavimānasupratiṣṭhitaguhyaparamarahasyakalparāja-nāma-dhāraṇī</idno>
           <idno type="sanskrit">Ārya-mahāmaṇivipulavimānasupratṣṭhitaguhyaparamarahasyakalparāja-nāma-dhāraṇī</idno>
         </entry>
@@ -25806,24 +25809,6 @@
         </entry>
         <entry xml:id="T19n1022A">
           <link type="tibetan" target="Toh_507" cert="high">
-            <note type="sources">84000_tei_refs; cbeta_tibetan; existing; mitra</note>
-          </link>
-          <link type="tibetan" target="Toh_883" cert="medium">
-            <note type="sources">cbeta_tibetan; mitra</note>
-          </link>
-          <link type="otani" target="Otani_141" cert="low">
-            <note type="sources">rkts_concordance</note>
-          </link>
-          <link type="otani" target="Otani_508" cert="low">
-            <note type="sources">rkts_concordance</note>
-          </link>
-          <idno type="nanjio">Nj 957</idno>
-          <idno type="sanskrit">Ārya-sarvatathāgatādhiṣṭhānahṛdayaguhyadhātukaraṇḍa-nāma-dhāraṇīmahāyānāsūtra</idno>
-          <title type="chinese">一切如來心祕密全身舍利寳篋印陀羅尼經</title>
-          <title type="tibetan">De bshin-gśegs-pa thams-cad-kyi byin-gyis-brlabs-kyi sñiṅ-po gsaṅ-ba riṅ-bsrel-gyi za-ma-tog.</title>
-        </entry>
-        <entry xml:id="T19n1022B">
-          <link type="tibetan" target="Toh_507" cert="high">
             <note type="sources">84000_tei_refs; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full; mitra</note>
           </link>
           <link type="tibetan" target="Toh_883" cert="high">
@@ -25835,8 +25820,26 @@
           <link type="otani" target="Otani_508" cert="high">
             <note type="sources">cbeta_sanskrit; lancaster; rkts_concordance</note>
           </link>
+          <idno type="nanjio">Nj 957</idno>
           <idno type="sanskrit">Sarvatath&amp;#257;gat&amp;#257;dhi&amp;#7779;&amp;#7789;h&amp;#257;nah&amp;#7771;dayaguhyadh&amp;#257;tukara&amp;#7751;&amp;#7693;amudr&amp;#257;dh&amp;#257;ra&amp;#7751;&amp;#299;(s&amp;#363;tra)</idno>
           <idno type="sanskrit">Sarvatathāgatādhiṣṭhānahṛdayaguhyadhātukaraṇḍamudrādhāraṇī(sūtra).</idno>
+          <idno type="sanskrit">Ārya-sarvatathāgatādhiṣṭhānahṛdayaguhyadhātukaraṇḍa-nāma-dhāraṇīmahāyānāsūtra</idno>
+          <title type="chinese">一切如來心祕密全身舍利寳篋印陀羅尼經</title>
+          <title type="tibetan">De bshin-gśegs-pa thams-cad-kyi byin-gyis-brlabs-kyi sñiṅ-po gsaṅ-ba riṅ-bsrel-gyi za-ma-tog.</title>
+        </entry>
+        <entry xml:id="T19n1022B">
+          <link type="tibetan" target="Toh_507" cert="high">
+            <note type="sources">84000_tei_refs; cbeta_tibetan; existing; mitra</note>
+          </link>
+          <link type="tibetan" target="Toh_883" cert="medium">
+            <note type="sources">cbeta_tibetan; mitra</note>
+          </link>
+          <link type="otani" target="Otani_141" cert="low">
+            <note type="sources">rkts_concordance</note>
+          </link>
+          <link type="otani" target="Otani_508" cert="low">
+            <note type="sources">rkts_concordance</note>
+          </link>
           <idno type="sanskrit">Ārya-sarvatathāgatādhiṣṭhānahṛdayaguhyadhātukaraṇḍa-nāma-dhāraṇīmahāyānāsūtra</idno>
         </entry>
         <entry xml:id="T19n1023">
@@ -26051,6 +26054,9 @@
           <link type="otani" target="Otani_1030" cert="low">
             <note type="sources">rkts_concordance</note>
           </link>
+          <idno type="nanjio">Nj 341</idno>
+          <idno type="sanskrit">Saḍakṣaravidyāmantra(sūtra)</idno>
+          <title type="chinese">六字神咒王經</title>
         </entry>
         <entry xml:id="T20n1045b">
           <link type="tibetan" target="Toh_1" cert="medium">
@@ -26059,9 +26065,6 @@
           <link type="otani" target="Otani_1030" cert="low">
             <note type="sources">rkts_concordance</note>
           </link>
-          <idno type="nanjio">Nj 341</idno>
-          <idno type="sanskrit">Saḍakṣaravidyāmantra(sūtra)</idno>
-          <title type="chinese">六字神咒王經</title>
         </entry>
         <entry xml:id="T20n1047">
           <link type="tibetan" target="Toh_575" cert="high">
@@ -26892,7 +26895,10 @@
           <link type="otani" target="Otani_77" cert="low">
             <note type="sources">rkts_concordance</note>
           </link>
+          <idno type="nanjio">Nj 1068</idno>
           <idno type="sanskrit">Namastāre-ekaviṁśatistotraguṇahitasahita</idno>
+          <title type="chinese">多羅母二十一拜禮讚利益</title>
+          <title type="tibetan">སྒྲོལ་མ་ལ་ཕྱག་འཚལ་ཉི་ཤུ་རྩ་གཅིག་གིས་བསྟོད་པ་ཕན་ཡོན་དང་བཅས་པ</title>
         </entry>
         <entry xml:id="T20n1108B">
           <link type="tibetan" target="Toh_438" cert="medium">
@@ -26901,10 +26907,7 @@
           <link type="otani" target="Otani_77" cert="low">
             <note type="sources">rkts_concordance</note>
           </link>
-          <idno type="nanjio">Nj 1068</idno>
           <idno type="sanskrit">Namastāre-ekaviṁśatistotraguṇahitasahita</idno>
-          <title type="chinese">多羅母二十一拜禮讚利益</title>
-          <title type="tibetan">སྒྲོལ་མ་ལ་ཕྱག་འཚལ་ཉི་ཤུ་རྩ་གཅིག་གིས་བསྟོད་པ་ཕན་ཡོན་དང་བཅས་པ</title>
         </entry>
         <entry xml:id="T20n1111">
           <link type="tibetan" target="Toh_697" cert="medium">
@@ -27063,26 +27066,6 @@
           <title type="tibetan">Sgo bzaṅ po</title>
         </entry>
         <entry xml:id="T20n1138a">
-          <link type="tibetan" target="Toh_614" cert="high">
-            <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
-          </link>
-          <link type="tibetan" target="Toh_915" cert="high">
-            <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
-          </link>
-          <link type="otani" target="Otani_309" cert="high">
-            <note type="sources">cbeta_sanskrit; lancaster; lancaster_full; rkts_concordance</note>
-          </link>
-          <link type="otani" target="Otani_540" cert="high">
-            <note type="sources">cbeta_sanskrit; lancaster; rkts_concordance</note>
-          </link>
-          <idno type="nanjio">Nj 369</idno>
-          <idno type="nanjio">Nj 370</idno>
-          <idno type="sanskrit">Sumukhanāmadhāraṇī(sūtra)</idno>
-          <idno type="sanskrit">Ārya-sumukha-nāma-dhāraṇī</idno>
-          <title type="chinese">金剛祕密善門陀羅尼呪經</title>
-          <title type="tibetan">Sgo bzaṅ po</title>
-        </entry>
-        <entry xml:id="T20n1138b">
           <link type="tibetan" target="Toh_614" cert="medium">
             <note type="sources">cbeta_tibetan; existing</note>
           </link>
@@ -27095,6 +27078,26 @@
           <link type="otani" target="Otani_540" cert="low">
             <note type="sources">rkts_concordance</note>
           </link>
+          <idno type="nanjio">Nj 369</idno>
+          <idno type="nanjio">Nj 370</idno>
+          <idno type="sanskrit">Ārya-sumukha-nāma-dhāraṇī</idno>
+          <title type="chinese">金剛祕密善門陀羅尼呪經</title>
+          <title type="tibetan">Sgo bzaṅ po</title>
+        </entry>
+        <entry xml:id="T20n1138b">
+          <link type="tibetan" target="Toh_614" cert="high">
+            <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
+          </link>
+          <link type="tibetan" target="Toh_915" cert="high">
+            <note type="sources">cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
+          </link>
+          <link type="otani" target="Otani_309" cert="high">
+            <note type="sources">cbeta_sanskrit; lancaster; lancaster_full; rkts_concordance</note>
+          </link>
+          <link type="otani" target="Otani_540" cert="high">
+            <note type="sources">cbeta_sanskrit; lancaster; rkts_concordance</note>
+          </link>
+          <idno type="sanskrit">Sumukhanāmadhāraṇī(sūtra)</idno>
           <idno type="sanskrit">Ārya-sumukha-nāma-dhāraṇī</idno>
         </entry>
         <entry xml:id="T20n1139">
@@ -27377,11 +27380,7 @@
           <link type="otani" target="Otani_507" cert="low">
             <note type="sources">rkts_concordance</note>
           </link>
-          <idno type="nanjio">Nj 880</idno>
-          <idno type="nanjio">Nj 981</idno>
           <idno type="sanskrit">Ārya-aṣṭamaṇḍalaka-nāma-mahāyāna-sūtra</idno>
-          <title type="chinese">大乘八大曼拏羅經</title>
-          <title type="tibetan">Dkyil-ḥkhor brgyad-pa.</title>
         </entry>
         <entry xml:id="T20n1168B">
           <link type="tibetan" target="Toh_644" cert="high">
@@ -27396,9 +27395,13 @@
           <link type="otani" target="Otani_507" cert="high">
             <note type="sources">cbeta_sanskrit; lancaster; rkts_concordance</note>
           </link>
+          <idno type="nanjio">Nj 880</idno>
+          <idno type="nanjio">Nj 981</idno>
           <idno type="sanskrit">A&amp;#7779;&amp;#7789;ama&amp;#7751;&amp;#7693;alaka(s&amp;#363;tra)</idno>
           <idno type="sanskrit">Aṣṭamaṇḍalaka(sūtra).</idno>
           <idno type="sanskrit">Ārya-aṣṭamaṇḍalaka-nāma-mahāyāna-sūtra</idno>
+          <title type="chinese">大乘八大曼拏羅經</title>
+          <title type="tibetan">Dkyil-ḥkhor brgyad-pa.</title>
         </entry>
         <entry xml:id="T20n1171">
           <link type="tibetan" target="Toh_482" cert="high">
@@ -27618,13 +27621,13 @@
           <title type="tibetan">Khro-bo rnam-par rgyal-baḥi rtog-pa gsaṅ-baḥi rgyud.</title>
         </entry>
         <entry xml:id="T21n1222a">
+          <idno type="sanskrit">Vajrakum&amp;#257;ratantra</idno>
+          <idno type="sanskrit">Vajrakumāratantra.</idno>
+        </entry>
+        <entry xml:id="T21n1222b">
           <idno type="nanjio">Nj 1064</idno>
           <idno type="sanskrit">Vajrakumāratantra.</idno>
           <title type="chinese">聖迦尼忿怒金剛童子菩薩成就儀軌經</title>
-        </entry>
-        <entry xml:id="T21n1222b">
-          <idno type="sanskrit">Vajrakum&amp;#257;ratantra</idno>
-          <idno type="sanskrit">Vajrakumāratantra.</idno>
         </entry>
         <entry xml:id="T21n1227">
           <idno type="nanjio">Nj 1048</idno>
@@ -27742,8 +27745,11 @@
           <link type="otani" target="Otani_631" cert="low">
             <note type="sources">rkts_concordance</note>
           </link>
+          <idno type="nanjio">Nj 958</idno>
           <idno type="sanskrit">Mahāśrīsūtra.</idno>
           <idno type="sanskrit">Ārya-mahālakṣmī-sūtra</idno>
+          <title type="chinese">大吉祥天女十二名號經</title>
+          <title type="tibetan">Dpal chen-moḥi mdo.</title>
         </entry>
         <entry xml:id="T21n1252b">
           <link type="tibetan" target="Toh_1005" cert="high">
@@ -27770,12 +27776,9 @@
           <link type="otani" target="Otani_631" cert="high">
             <note type="sources">cbeta_sanskrit; lancaster; rkts_concordance</note>
           </link>
-          <idno type="nanjio">Nj 958</idno>
           <idno type="sanskrit">Mah&amp;#257;&amp;#347;r&amp;#299;s&amp;#363;tra</idno>
           <idno type="sanskrit">Mahāśrīsūtra.</idno>
           <idno type="sanskrit">Ārya-mahālakṣmī-sūtra</idno>
-          <title type="chinese">大吉祥天女十二名號經</title>
-          <title type="tibetan">Dpal chen-moḥi mdo.</title>
         </entry>
         <entry xml:id="T21n1253">
           <link type="tibetan" target="Toh_193" cert="low">
@@ -27931,8 +27934,11 @@
           <link type="otani" target="Otani_615" cert="low">
             <note type="sources">rkts_concordance</note>
           </link>
+          <idno type="nanjio">Nj 961</idno>
           <idno type="sanskrit">Jāṅgulīnāmavidyā.</idno>
           <idno type="sanskrit">Ārya-jāṅguli-nāma-vidyā</idno>
+          <title type="chinese">觀自在菩薩化身蘘麌哩曳童女銷伏毒害陀羅尼經</title>
+          <title type="tibetan">Du gsel shes-bya-baḥi rig-sṅags.</title>
         </entry>
         <entry xml:id="T21n1264b">
           <link type="tibetan" target="Toh_571" cert="high">
@@ -27947,12 +27953,9 @@
           <link type="otani" target="Otani_615" cert="high">
             <note type="sources">cbeta_sanskrit; lancaster; rkts_concordance</note>
           </link>
-          <idno type="nanjio">Nj 961</idno>
           <idno type="sanskrit">J&amp;#257;&amp;#7749;gul&amp;#299;n&amp;#257;mavidy&amp;#257;</idno>
           <idno type="sanskrit">Jāṅgulīnāmavidyā.</idno>
           <idno type="sanskrit">Ārya-jāṅguli-nāma-vidyā</idno>
-          <title type="chinese">觀自在菩薩化身蘘麌哩曳童女銷伏毒害陀羅尼經</title>
-          <title type="tibetan">Du gsel shes-bya-baḥi rig-sṅags.</title>
         </entry>
         <entry xml:id="T21n1266">
           <link type="tibetan" target="Toh_665" cert="medium">
@@ -29978,13 +29981,13 @@
           <title type="chinese">Fo a p'i t'an ching (ch'u chia hsiang p'in ti i)</title>
         </entry>
         <entry xml:id="T24n1483a">
+          <idno type="sanskrit">Mu lien wen chieh lü chung wu po ching chung shih. (1 chüan)</idno>
+        </entry>
+        <entry xml:id="T24n1483b">
           <idno type="nanjio">Nj 1148</idno>
           <idno type="sanskrit">Mu lien wen chieh l&amp;uuml; chung wu po ching chung shih</idno>
           <idno type="sanskrit">Mu lien wen chieh lü chung wu po ching chung shih. (1 chüan)</idno>
           <title type="chinese">目連問戒律中五百輕重事</title>
-        </entry>
-        <entry xml:id="T24n1483b">
-          <idno type="sanskrit">Mu lien wen chieh lü chung wu po ching chung shih. (1 chüan)</idno>
         </entry>
         <entry xml:id="T24n1484">
           <link type="tibetan" target="Toh_256" cert="high">
@@ -30257,20 +30260,20 @@
           </link>
         </entry>
         <entry xml:id="T25n1510a">
-          <link type="tibetan" target="Toh_3816" cert="high">
-            <note type="sources">acmuller_tohoku; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
+          <link type="tibetan" target="Toh_3816" cert="medium">
+            <note type="sources">cbeta_tibetan; existing</note>
           </link>
           <idno type="nanjio">Nj 1167</idno>
-          <idno type="sanskrit">Vajracchedikāpraj&amp;ntilde;āpāramitāsūtraśāstra</idno>
           <idno type="sanskrit">Vajracchedikāprajñāpāramitāsūtraśāstra</idno>
           <idno type="sanskrit">Ārya-bhagavatīprajñāpāramitāvajraccheditāsaptārthaṭīkā</idno>
           <title type="chinese">金剛般若論</title>
           <title type="tibetan">Bcom-ldan-ḥdas-ma śes-rab-kyi-pha-rol-tu phyin-pa rdo-rje gcod-paḥi don bdun-gyi rgya-cher-ḥgrel-pa</title>
         </entry>
         <entry xml:id="T25n1510b">
-          <link type="tibetan" target="Toh_3816" cert="medium">
-            <note type="sources">cbeta_tibetan; existing</note>
+          <link type="tibetan" target="Toh_3816" cert="high">
+            <note type="sources">acmuller_tohoku; cbeta_sanskrit; cbeta_tibetan; existing; lancaster; lancaster_full</note>
           </link>
+          <idno type="sanskrit">Vajracchedikāpraj&amp;ntilde;āpāramitāsūtraśāstra</idno>
           <idno type="sanskrit">Vajracchedikāprajñāpāramitāsūtraśāstra</idno>
           <idno type="sanskrit">Ārya-bhagavatīprajñāpāramitāvajraccheditāsaptārthaṭīkā</idno>
         </entry>

@@ -28,31 +28,29 @@ Output:
 
 Output schema:
   {
-    "schema_version": 2,
-    "summary": { ... },
+    "schema_version": 3,
+    "summary": { ..., "classification": { counts per type } },
     "sources": { ... },
     "tibetan_parallels": { "T08n0251": ["Otani 993", "Toh 21", ...] },
     "pali_parallels": { ... },
     "sanskrit_parallels": { ... },
     "no_parallel_found": [ ... ],
-    "link_provenance": {
+    "link_provenance": { ... },
+    "link_classifications": {
       "T08n0251": {
-        "Otani 993": [
-          {"source": "acmuller_tohoku", "confidence": null},
-          {"source": "rkts_concordance", "confidence": null}
-        ],
-        "Toh 21": [
-          {"source": "lancaster", "confidence": null},
-          {"source": "nattier1992", "confidence": null,
-           "note": "Heart Sutra analysis"}
-        ],
-        "dn1": [
-          {"source": "suttacentral_parallels", "confidence": 0.9,
-           "note": "via da1"}
-        ]
+        "Toh 21": {"type": "parallel", "basis": "catalog-attested"},
+        "Otani 993": {"type": "parallel", "basis": "inherited from Toh 21"}
       }
     }
   }
+
+Classification types:
+  - parallel: Catalog-attested cross-canon parallel
+  - parallel:computational: Computationally discovered, likely genuine
+  - chinese_to_tibetan: Chinese text translated into Tibetan (rKTs-flagged)
+  - indirect:quotation: Encyclopedic text quoting Indian sources
+  - indirect:inherited: Parallel inherited via digest/excerpt chain
+  - uncertain: Insufficient evidence to classify
 """
 
 import json
@@ -88,11 +86,38 @@ OUTPUT_PATH = RESULTS_DIR / "cross_reference_expanded.json"
 CORPUS_IDS_PATH = RESULTS_DIR / "digest_relationships.json"
 
 # Current schema version for the output format
-SCHEMA_VERSION = 2
+SCHEMA_VERSION = 3
 
 # MITRA: only add links with confidence >= this threshold to the active
 # tibetan_parallels set. Lower-confidence links are provenance-only.
 MITRA_STRONG_THRESHOLD = 0.9
+
+# --- Link classification constants ---
+
+# Catalog sources: trusted, can independently establish "parallel".
+CATALOG_SOURCES = {
+    "lancaster", "lancaster_full", "acmuller_tohoku", "cbeta_tibetan",
+    "cbeta_sanskrit", "84000_tei_refs", "rkts", "existing",
+    # Scholarly citations are catalog-grade assertions
+    "silk2019", "li2021", "standard_parallels",
+    # Peking-only entries derived from Lancaster
+    "peking_only",
+    # SuttaCentral (currently Pali-only, but a curated scholarly source)
+    "suttacentral_parallels",
+}
+
+# Computational sources: cannot independently establish "parallel".
+# Add new computational methods here as they are integrated
+# (e.g., "llm_matching", "embedding_similarity", etc.).
+COMPUTATIONAL_SOURCES = {"mitra", "sanskrit_title_match"}
+
+# A text with this many or more computational-only Toh links is considered
+# encyclopedic (likely quotation rather than genuine parallel).
+ENCYCLOPEDIC_THRESHOLD = 5
+
+# Minimum computational confidence to classify as parallel:computational
+# (rather than uncertain).
+COMPUTATIONAL_CONFIDENCE_THRESHOLD = 0.9
 
 
 def load_json(path):
@@ -1022,8 +1047,191 @@ def flag_known_errors(concordance, provenance):
     return summary
 
 
+def _is_scholarly_source(source):
+    """Check if a source name is a scholarly citation (not a fixed catalog name).
+
+    Scholarly citations (e.g., "silk2019", "nattier1992") are catalog-grade
+    assertions. They are identified by not being in COMPUTATIONAL_SOURCES and
+    not being a known infrastructure source like "rkts_concordance" or error
+    sources.
+    """
+    if source in CATALOG_SOURCES or source in COMPUTATIONAL_SOURCES:
+        return source in CATALOG_SOURCES
+    # rkts_concordance is an infrastructure source (Otani derivation), not
+    # a catalog or computational source.
+    if source == "rkts_concordance":
+        return False
+    # Error sources (e.g., "silk2019:error") are not positive attestations.
+    if source.endswith(":error"):
+        return False
+    # Remaining sources (e.g., "nattier1992", "buswell1989") are scholarly.
+    return True
+
+
+def classify_links(concordance, provenance):
+    """Classify each (taisho_id, toh_id) link by relationship type.
+
+    Returns:
+        link_classifications: dict {taisho_id: {toh_id: {type, basis}}}
+        classification_summary: dict with counts per type
+    """
+    # --- Step 0: Build helpers ---
+
+    # Load digest relationships for inherited-parallel detection.
+    digest_rels = load_json(CORPUS_IDS_PATH) or []
+    # derivative_of: maps digest_id -> [(source_id, classification, coverage)]
+    derivative_of = defaultdict(list)
+    for rel in digest_rels:
+        derivative_of[rel["digest_id"]].append((
+            rel["source_id"],
+            rel["classification"],
+            rel.get("coverage", 0),
+        ))
+
+    # Identify rKTs (Chinese-to-Tibetan) texts: texts whose ONLY non-Otani
+    # source is "rkts". These are Chinese-origin texts translated into Tibetan.
+    rkts_texts = set()
+    for text_id, data in concordance.items():
+        sources = data.get("sources", set())
+        if "rkts" in sources:
+            rkts_texts.add(text_id)
+
+    # Count per-text computational-only Toh links.
+    # A Toh link is "computational-only" if it is attested ONLY by sources
+    # in COMPUTATIONAL_SOURCES (zero catalog backing).
+    comp_only_count = defaultdict(int)  # taisho_id -> count
+    for taisho_id, toh_id, atts in provenance.all_links():
+        if not toh_id.startswith("Toh "):
+            continue
+        sources = {att["source"] for att in atts}
+        has_catalog = any(_is_scholarly_source(s) for s in sources)
+        if not has_catalog and bool(sources & COMPUTATIONAL_SOURCES):
+            comp_only_count[taisho_id] += 1
+
+    # --- Step 1: Classify each link ---
+    link_classifications = {}
+    type_counts = defaultdict(int)
+
+    for taisho_id, toh_id, atts in provenance.all_links():
+        # Only classify Toh links (not Otani, not Pali, not Sanskrit)
+        if not toh_id.startswith("Toh "):
+            continue
+
+        sources = {att["source"] for att in atts}
+        has_catalog = any(_is_scholarly_source(s) for s in sources)
+        computational_sources = sources & COMPUTATIONAL_SOURCES
+        is_computational_only = bool(computational_sources) and not has_catalog
+
+        # Best confidence across all computational sources for this link
+        best_comp_conf = 0.0
+        for att in atts:
+            if att["source"] in COMPUTATIONAL_SOURCES:
+                conf = att.get("confidence")
+                if conf is not None and conf > best_comp_conf:
+                    best_comp_conf = conf
+
+        # Check if this is a Chinese-to-Tibetan text (rKTs-flagged)
+        is_chinese_origin = False
+        if "rkts" in sources:
+            # rKTs entries are Chinese-to-Tibetan translations
+            is_chinese_origin = True
+
+        # Check for inherited parallel (text A is excerpt/digest of B,
+        # and B has catalog backing for the same Toh)
+        is_inherited = False
+        inherited_source = None
+        if taisho_id in derivative_of:
+            for source_id, classification, coverage in derivative_of[taisho_id]:
+                if classification in ("excerpt", "digest"):
+                    # Check if source_id has catalog-backed link to same Toh
+                    source_sources = provenance.get_sources(source_id, toh_id)
+                    if any(_is_scholarly_source(s) for s in source_sources):
+                        is_inherited = True
+                        inherited_source = source_id
+                        break
+
+        # Classification logic
+        if has_catalog and is_chinese_origin:
+            link_type = "chinese_to_tibetan"
+            basis = "rKTs Chinese-origin flag with catalog confirmation"
+        elif is_chinese_origin and not has_catalog:
+            link_type = "chinese_to_tibetan"
+            basis = "rKTs Chinese-origin flag"
+        elif has_catalog:
+            link_type = "parallel"
+            basis = "catalog-attested"
+        elif is_inherited:
+            link_type = "indirect:inherited"
+            basis = (f"inherited from {inherited_source} "
+                     f"(digest/excerpt relationship)")
+        elif is_computational_only and comp_only_count[taisho_id] >= ENCYCLOPEDIC_THRESHOLD:
+            link_type = "indirect:quotation"
+            basis = (f"encyclopedic pattern: {comp_only_count[taisho_id]} "
+                     f"computational-only Toh links")
+        elif is_computational_only and best_comp_conf >= COMPUTATIONAL_CONFIDENCE_THRESHOLD:
+            link_type = "parallel:computational"
+            basis = f"computationally discovered (confidence {best_comp_conf:.2f})"
+        else:
+            link_type = "uncertain"
+            basis = "computational-only, low confidence or insufficient evidence"
+
+        # Store classification
+        if taisho_id not in link_classifications:
+            link_classifications[taisho_id] = {}
+        link_classifications[taisho_id][toh_id] = {
+            "type": link_type,
+            "basis": basis,
+        }
+        type_counts[link_type] += 1
+
+    # --- Step 2: Otani numbers inherit parent Toh classification ---
+    otani_inherited = 0
+    otani_data = load_json(OTANI_CONCORDANCE_PATH)
+    otani_conc = otani_data.get("concordance", {}) if otani_data else {}
+
+    # Build inverted index: Otani ID -> parent Toh ID.
+    # When an Otani appears under multiple Toh entries (duplicate kernel
+    # IDs), keep the first parent found (matching iteration order).
+    otani_to_toh = {}
+    for toh_key, otani_list in otani_conc.items():
+        for otani_id in otani_list:
+            if otani_id not in otani_to_toh:
+                otani_to_toh[otani_id] = toh_key
+
+    for taisho_id, toh_id, atts in provenance.all_links():
+        if not toh_id.startswith("Otani "):
+            continue
+        parent_toh = otani_to_toh.get(toh_id)
+        if not parent_toh:
+            continue
+        # Look up parent classification
+        parent_class = (link_classifications.get(taisho_id, {})
+                        .get(parent_toh, {}))
+        if parent_class:
+            if taisho_id not in link_classifications:
+                link_classifications[taisho_id] = {}
+            link_classifications[taisho_id][toh_id] = {
+                "type": parent_class["type"],
+                "basis": f"inherited from {parent_toh}",
+            }
+            type_counts[parent_class["type"]] += 1
+            otani_inherited += 1
+
+    # Build summary
+    classification_summary = dict(sorted(type_counts.items()))
+    classification_summary["total_classified"] = sum(type_counts.values())
+
+    print(f"\n  Link classification results:")
+    for link_type, count in sorted(type_counts.items()):
+        print(f"    {link_type}: {count}")
+    print(f"    total classified: {classification_summary['total_classified']}")
+    print(f"    Otani numbers inheriting parent type: {otani_inherited}")
+
+    return link_classifications, classification_summary
+
+
 def main():
-    print("Building expanded cross-canon concordance (schema v2)")
+    print("Building expanded cross-canon concordance (schema v3)")
     print("=" * 50)
 
     concordance, corpus_ids, provenance = merge_sources()
@@ -1032,17 +1240,39 @@ def main():
     print("\n  Post-processing: Flagging known catalog errors...")
     error_summary = flag_known_errors(concordance, provenance)
 
+    # Classify links before building output
+    print("\n  Post-processing: Classifying links...")
+    link_classifications, classification_summary = classify_links(
+        concordance, provenance
+    )
+
     output = build_output(concordance, corpus_ids, provenance)
 
     # Add known_errors summary to output
     if error_summary:
         output["known_errors"] = error_summary
 
+    # Add link classifications to output
+    sorted_classifications = {}
+    for taisho_id in sorted(link_classifications.keys()):
+        sorted_classifications[taisho_id] = {}
+        for toh_id in sorted(link_classifications[taisho_id].keys()):
+            sorted_classifications[taisho_id][toh_id] = (
+                link_classifications[taisho_id][toh_id]
+            )
+    output["link_classifications"] = sorted_classifications
+    output["summary"]["classification"] = classification_summary
+
     print(f"\n{'='*50}")
     print("EXPANDED CONCORDANCE SUMMARY")
     print(f"{'='*50}")
     for k, v in output["summary"].items():
-        print(f"  {k}: {v}")
+        if isinstance(v, dict):
+            print(f"  {k}:")
+            for k2, v2 in v.items():
+                print(f"    {k2}: {v2}")
+        else:
+            print(f"  {k}: {v}")
     print(f"\nSources contributing (per-text):")
     for source, count in sorted(output["sources"].items()):
         print(f"  {source}: {count} texts")
@@ -1057,6 +1287,8 @@ def main():
     print(f"  Schema version: {SCHEMA_VERSION}")
     print(f"  link_provenance entries: "
           f"{len(output['link_provenance'])} texts")
+    print(f"  link_classifications entries: "
+          f"{len(output['link_classifications'])} texts")
     if error_summary:
         print(f"  known_errors flagged: {len(error_summary)}")
 
