@@ -51,6 +51,7 @@ Classification types:
   - indirect:quotation: Encyclopedic text quoting Indian sources
   - indirect:inherited: Parallel inherited via digest/excerpt chain
   - uncertain: Insufficient evidence to classify
+  - error:flagged: Known catalog error (all attestations flagged)
 """
 
 import json
@@ -81,6 +82,7 @@ KNOWN_ERRORS_PATH = BASE_DIR / "data" / "known_errors.json"
 
 # Output
 OUTPUT_PATH = RESULTS_DIR / "cross_reference_expanded.json"
+VERIFIED_OUTPUT_PATH = RESULTS_DIR / "cross_reference_verified.json"
 
 # All valid Taisho text IDs from our corpus
 CORPUS_IDS_PATH = RESULTS_DIR / "digest_relationships.json"
@@ -133,7 +135,8 @@ def normalize_taisho_id(raw_id):
     """Normalize various Taisho ID formats to T##n#### format.
 
     Handles: T250, T0250, T1, T08n0250, etc.
-    Returns the canonical CBETA format like T08n0250.
+    Returns the canonical CBETA format string (e.g., T08n0250) if already
+    in that format, or int (bare number) for lookup via resolve_taisho_id.
     """
     # Already in T##n#### format
     m = re.match(r'^T(\d{2})n(\d{4}[A-Za-z]?)$', raw_id)
@@ -213,7 +216,9 @@ def _make_attestation(source, confidence=None, note=None):
     Returns:
         Dict with "source", "confidence", and optionally "note" keys.
     """
-    att = {"source": source, "confidence": confidence}
+    att = {"source": source}
+    if confidence is not None:
+        att["confidence"] = confidence
     if note:
         att["note"] = note
     return att
@@ -241,8 +246,8 @@ class ProvenanceTracker:
             if att["source"] == source:
                 # Keep the one with higher confidence (or the one with a note)
                 if confidence is not None and (
-                    att["confidence"] is None
-                    or confidence > att["confidence"]
+                    att.get("confidence") is None
+                    or confidence > att.get("confidence", 0)
                 ):
                     att["confidence"] = confidence
                 if note and not att.get("note"):
@@ -915,9 +920,10 @@ def compare_with_existing(output, existing_path):
     old_skt = len(existing.get("sanskrit_parallels", {}))
     new_skt = len(output["sanskrit_parallels"])
 
-    old_any = output["summary"]["total_texts"] - len(
-        existing.get("no_parallel_found", [])
+    old_total = existing.get("summary", {}).get(
+        "total_texts", output["summary"]["total_texts"]
     )
+    old_any = old_total - len(existing.get("no_parallel_found", []))
     new_any = output["summary"]["with_any_parallel"]
 
     print(f"\n{'='*50}")
@@ -959,7 +965,7 @@ def print_provenance_stats(provenance):
     for _, _, atts in provenance.all_links():
         for att in atts:
             source_counts[att["source"]] += 1
-            if att["confidence"] is not None:
+            if att.get("confidence") is not None:
                 with_confidence += 1
         if len(atts) >= 2:
             multi_source += 1
@@ -1047,13 +1053,13 @@ def flag_known_errors(concordance, provenance):
     return summary
 
 
-def _is_scholarly_source(source):
-    """Check if a source name is a scholarly citation (not a fixed catalog name).
+def _is_catalog_or_scholarly_source(source):
+    """Check if a source is a catalog database or scholarly citation.
 
-    Scholarly citations (e.g., "silk2019", "nattier1992") are catalog-grade
-    assertions. They are identified by not being in COMPUTATIONAL_SOURCES and
-    not being a known infrastructure source like "rkts_concordance" or error
-    sources.
+    Returns True for authoritative sources that can independently establish
+    a parallel: catalog databases (e.g., "lancaster", "cbeta_tibetan") and
+    scholarly citations (e.g., "silk2019", "nattier1992"). Returns False for
+    computational sources, infrastructure sources, and error sources.
     """
     if source in CATALOG_SOURCES or source in COMPUTATIONAL_SOURCES:
         return source in CATALOG_SOURCES
@@ -1088,14 +1094,6 @@ def classify_links(concordance, provenance):
             rel.get("coverage", 0),
         ))
 
-    # Identify rKTs (Chinese-to-Tibetan) texts: texts whose ONLY non-Otani
-    # source is "rkts". These are Chinese-origin texts translated into Tibetan.
-    rkts_texts = set()
-    for text_id, data in concordance.items():
-        sources = data.get("sources", set())
-        if "rkts" in sources:
-            rkts_texts.add(text_id)
-
     # Count per-text computational-only Toh links.
     # A Toh link is "computational-only" if it is attested ONLY by sources
     # in COMPUTATIONAL_SOURCES (zero catalog backing).
@@ -1104,7 +1102,7 @@ def classify_links(concordance, provenance):
         if not toh_id.startswith("Toh "):
             continue
         sources = {att["source"] for att in atts}
-        has_catalog = any(_is_scholarly_source(s) for s in sources)
+        has_catalog = any(_is_catalog_or_scholarly_source(s) for s in sources)
         if not has_catalog and bool(sources & COMPUTATIONAL_SOURCES):
             comp_only_count[taisho_id] += 1
 
@@ -1117,8 +1115,19 @@ def classify_links(concordance, provenance):
         if not toh_id.startswith("Toh "):
             continue
 
+        # Skip links where ALL attestations have been flagged as errors
+        if all(att.get("flagged_error") for att in atts):
+            if taisho_id not in link_classifications:
+                link_classifications[taisho_id] = {}
+            link_classifications[taisho_id][toh_id] = {
+                "type": "error:flagged",
+                "basis": "all attestations flagged as known catalog errors",
+            }
+            type_counts["error:flagged"] += 1
+            continue
+
         sources = {att["source"] for att in atts}
-        has_catalog = any(_is_scholarly_source(s) for s in sources)
+        has_catalog = any(_is_catalog_or_scholarly_source(s) for s in sources)
         computational_sources = sources & COMPUTATIONAL_SOURCES
         is_computational_only = bool(computational_sources) and not has_catalog
 
@@ -1145,7 +1154,7 @@ def classify_links(concordance, provenance):
                 if classification in ("excerpt", "digest"):
                     # Check if source_id has catalog-backed link to same Toh
                     source_sources = provenance.get_sources(source_id, toh_id)
-                    if any(_is_scholarly_source(s) for s in source_sources):
+                    if any(_is_catalog_or_scholarly_source(s) for s in source_sources):
                         is_inherited = True
                         inherited_source = source_id
                         break
@@ -1230,6 +1239,227 @@ def classify_links(concordance, provenance):
     return link_classifications, classification_summary
 
 
+def build_verified_output(concordance, corpus_ids, provenance,
+                          link_classifications, error_summary):
+    """Build a verified-only concordance containing only catalog-attested links.
+
+    Includes links classified as 'parallel' or 'chinese_to_tibetan' (both
+    require at least one catalog source or rKTs attestation). Excludes all
+    computational-only links (parallel:computational, indirect:quotation,
+    indirect:inherited, uncertain).
+
+    Also filters provenance to include only catalog/scholarly sources.
+    """
+    VERIFIED_TYPES = {"parallel", "chinese_to_tibetan"}
+
+    tibetan_parallels = {}
+    pali_parallels = {}
+    sanskrit_parallels = {}
+    no_parallel = []
+
+    # Build set of verified (taisho_id, toh_id) pairs from classifications
+    verified_toh_links = set()
+    for taisho_id, toh_dict in link_classifications.items():
+        for toh_id, info in toh_dict.items():
+            if info["type"] in VERIFIED_TYPES:
+                verified_toh_links.add((taisho_id, toh_id))
+
+    for text_id in sorted(corpus_ids):
+        data = concordance.get(text_id)
+        has_any = False
+
+        if data and data["tibetan"]:
+            # Filter tibetan entries to only verified Toh/Otani links
+            verified_tib = set()
+            for tib_id in data["tibetan"]:
+                if tib_id.startswith("Toh "):
+                    if (text_id, tib_id) in verified_toh_links:
+                        verified_tib.add(tib_id)
+                elif tib_id.startswith("Otani "):
+                    # Include Otani if its parent Toh is verified
+                    if (text_id, tib_id) in verified_toh_links:
+                        verified_tib.add(tib_id)
+            if verified_tib:
+                tibetan_parallels[text_id] = sorted(verified_tib)
+                has_any = True
+
+        # Pali and Sanskrit are always catalog-derived, include as-is
+        if data and data["pali"]:
+            pali_parallels[text_id] = sorted(data["pali"])
+            has_any = True
+        if data and data["sanskrit"]:
+            skt = sorted(data["sanskrit"])
+            sanskrit_parallels[text_id] = skt[0] if len(skt) == 1 else skt
+            has_any = True
+
+        if not has_any:
+            no_parallel.append(text_id)
+
+    # Filter provenance to catalog sources only
+    verified_provenance = {}
+    for taisho_id, toh_id, attestations in provenance.all_links():
+        if (taisho_id, toh_id) not in verified_toh_links:
+            continue
+        catalog_atts = [
+            att for att in attestations
+            if att["source"] not in COMPUTATIONAL_SOURCES
+        ]
+        if catalog_atts:
+            if taisho_id not in verified_provenance:
+                verified_provenance[taisho_id] = {}
+            verified_provenance[taisho_id][toh_id] = sorted(
+                catalog_atts, key=lambda a: a["source"]
+            )
+
+    # Sort provenance
+    sorted_provenance = {}
+    for taisho_id in sorted(verified_provenance.keys()):
+        sorted_provenance[taisho_id] = {}
+        for toh_id in sorted(verified_provenance[taisho_id].keys()):
+            sorted_provenance[taisho_id][toh_id] = (
+                verified_provenance[taisho_id][toh_id]
+            )
+
+    # Verified classifications
+    verified_classifications = {}
+    for taisho_id in sorted(link_classifications.keys()):
+        text_cls = {}
+        for toh_id in sorted(link_classifications[taisho_id].keys()):
+            info = link_classifications[taisho_id][toh_id]
+            if info["type"] in VERIFIED_TYPES:
+                text_cls[toh_id] = info
+        if text_cls:
+            verified_classifications[taisho_id] = text_cls
+
+    # Count unique Toh numbers by range
+    def _toh_num(toh_str):
+        """Extract numeric part from Toh string, ignoring letter suffixes."""
+        num_str = re.sub(r'[a-zA-Z]+$', '', toh_str.split()[1])
+        try:
+            return int(num_str)
+        except ValueError:
+            return -1
+
+    all_toh = set()
+    for toh_list in tibetan_parallels.values():
+        for t in toh_list:
+            if t.startswith("Toh "):
+                all_toh.add(t)
+    kangyur_toh = {t for t in all_toh if 1 <= _toh_num(t) <= 1108}
+    tengyur_toh = {t for t in all_toh if 1109 <= _toh_num(t) <= 4569}
+    out_of_range = {t for t in all_toh
+                    if _toh_num(t) < 1 or _toh_num(t) > 4569}
+    if out_of_range:
+        print(f"  WARNING: {len(out_of_range)} Toh numbers outside "
+              f"Kangyur/Tengyur range: {sorted(out_of_range)}")
+
+    # Summary
+    total = len(corpus_ids)
+    with_tib = len(tibetan_parallels)
+    with_pali = len(pali_parallels)
+    with_skt = len(sanskrit_parallels)
+    with_any = total - len(no_parallel)
+
+    summary = {
+        "total_texts": total,
+        "with_tibetan": with_tib,
+        "with_pali": with_pali,
+        "with_sanskrit": with_skt,
+        "with_any_parallel": with_any,
+        "no_parallel": len(no_parallel),
+        "pct_tibetan": round(100 * with_tib / total, 1) if total else 0,
+        "pct_any": round(100 * with_any / total, 1) if total else 0,
+        "unique_toh": len(all_toh),
+        "kangyur_toh": len(kangyur_toh),
+        "tengyur_toh": len(tengyur_toh),
+        "pct_kangyur": round(100 * len(kangyur_toh) / 1108, 1),
+        "pct_tengyur": round(100 * len(tengyur_toh) / 3461, 1),
+    }
+
+    # Classification counts for verified types only
+    type_counts = {}
+    for taisho_id, toh_dict in verified_classifications.items():
+        for toh_id, info in toh_dict.items():
+            t = info["type"]
+            type_counts[t] = type_counts.get(t, 0) + 1
+    type_counts["total_classified"] = sum(type_counts.values())
+    summary["classification"] = type_counts
+
+    output = {
+        "schema_version": SCHEMA_VERSION,
+        "verified_only": True,
+        "summary": summary,
+        "tibetan_parallels": tibetan_parallels,
+        "pali_parallels": pali_parallels,
+        "sanskrit_parallels": sanskrit_parallels,
+        "no_parallel_found": no_parallel,
+        "link_provenance": sorted_provenance,
+        "link_classifications": verified_classifications,
+    }
+    if error_summary:
+        output["known_errors"] = error_summary
+
+    return output
+
+
+def print_verified_genre_coverage(verified_output, corpus_ids, concordance):
+    """Print genre-stratified coverage for the verified concordance.
+
+    Uses Taisho volume ranges as a proxy for genre.
+    """
+    # Genre definitions: (label, vol_start, vol_end)
+    genres = [
+        ("Prajnaparamita", 5, 8),
+        ("Agama", 1, 2),
+        ("Shastra", 25, 32),
+        ("Mahayana sutra", 9, 17),
+        ("Vinaya", 22, 24),
+        ("Jataka/Avadana", 3, 4),
+        ("Tantra/dharani", 18, 21),
+        ("Commentary", 33, 44),
+        ("Catalogs", 53, 55),
+        ("History/biography", 49, 52),
+        ("Dunhuang", 85, 85),
+        ("Schools (Chan etc.)", 45, 48),
+    ]
+
+    tib_set = set(verified_output["tibetan_parallels"].keys())
+    pali_set = set(verified_output["pali_parallels"].keys())
+    skt_set = set(verified_output["sanskrit_parallels"].keys())
+    any_set = tib_set | pali_set | skt_set
+
+    print(f"\n{'='*60}")
+    print("VERIFIED CONCORDANCE: GENRE-STRATIFIED COVERAGE")
+    print(f"{'='*60}")
+    print(f"{'Genre':<25} {'Vols':>6} {'Texts':>6} {'Link':>6} {'Cov':>7}")
+    print(f"{'-'*60}")
+
+    total_texts = 0
+    total_linked = 0
+
+    for label, v_start, v_end in genres:
+        # Find all corpus IDs in this volume range
+        genre_ids = set()
+        for text_id in corpus_ids:
+            m = re.match(r'^T(\d{2})n', text_id)
+            if m:
+                vol = int(m.group(1))
+                if v_start <= vol <= v_end:
+                    genre_ids.add(text_id)
+
+        n_texts = len(genre_ids)
+        n_linked = len(genre_ids & any_set)
+        pct = f"{100 * n_linked / n_texts:.1f}%" if n_texts else "---"
+        vol_str = f"{v_start}--{v_end}" if v_start != v_end else str(v_start)
+        print(f"  {label:<23} {vol_str:>6} {n_texts:>6} {n_linked:>6} {pct:>7}")
+        total_texts += n_texts
+        total_linked += n_linked
+
+    pct_total = f"{100 * total_linked / total_texts:.1f}%" if total_texts else "---"
+    print(f"{'-'*60}")
+    print(f"  {'Total':<23} {'':>6} {total_texts:>6} {total_linked:>6} {pct_total:>7}")
+
+
 def main():
     print("Building expanded cross-canon concordance (schema v3)")
     print("=" * 50)
@@ -1291,6 +1521,29 @@ def main():
           f"{len(output['link_classifications'])} texts")
     if error_summary:
         print(f"  known_errors flagged: {len(error_summary)}")
+
+    # Build and write verified-only concordance
+    print(f"\n{'='*50}")
+    print("BUILDING VERIFIED-ONLY CONCORDANCE")
+    print(f"{'='*50}")
+    verified = build_verified_output(
+        concordance, corpus_ids, provenance,
+        link_classifications, error_summary,
+    )
+    with open(VERIFIED_OUTPUT_PATH, "w") as f:
+        json.dump(verified, f, indent=2, ensure_ascii=False)
+    print(f"\nVerified concordance written to {VERIFIED_OUTPUT_PATH}")
+    v_summary = verified["summary"]
+    print(f"  Texts with Tibetan parallels: {v_summary['with_tibetan']}")
+    print(f"  Unique Toh numbers: {v_summary['unique_toh']}")
+    print(f"    Kangyur: {v_summary['kangyur_toh']} of 1,108 "
+          f"({v_summary['pct_kangyur']}%)")
+    print(f"    Tengyur: {v_summary['tengyur_toh']} of 3,461 "
+          f"({v_summary['pct_tengyur']}%)")
+    print(f"  Texts with any parallel: {v_summary['with_any_parallel']}")
+    print(f"  Classification: {v_summary.get('classification', {})}")
+
+    print_verified_genre_coverage(verified, corpus_ids, concordance)
 
 
 if __name__ == "__main__":

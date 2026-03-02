@@ -19,40 +19,41 @@ from build_expanded_concordance import (
     COMPUTATIONAL_SOURCES,
     ENCYCLOPEDIC_THRESHOLD,
     ProvenanceTracker,
-    _is_scholarly_source,
+    _is_catalog_or_scholarly_source,
+    build_verified_output,
     classify_links,
 )
 
 
-# -- Unit tests for _is_scholarly_source --------------------------------------
+# -- Unit tests for _is_catalog_or_scholarly_source --------------------------------------
 
 
-class TestIsScholarlySource:
-    """Tests for the _is_scholarly_source helper."""
+class TestIsCatalogOrScholarlySource:
+    """Tests for the _is_catalog_or_scholarly_source helper."""
 
     def test_catalog_sources_are_scholarly(self):
         """All defined CATALOG_SOURCES return True."""
         for source in CATALOG_SOURCES:
-            assert _is_scholarly_source(source) is True, f"{source} should be scholarly"
+            assert _is_catalog_or_scholarly_source(source) is True, f"{source} should be scholarly"
 
     def test_computational_sources_are_not_scholarly(self):
         """COMPUTATIONAL_SOURCES return False."""
         for source in COMPUTATIONAL_SOURCES:
-            assert _is_scholarly_source(source) is False, f"{source} should not be scholarly"
+            assert _is_catalog_or_scholarly_source(source) is False, f"{source} should not be scholarly"
 
     def test_rkts_concordance_not_scholarly(self):
         """rkts_concordance (Otani derivation) is not scholarly."""
-        assert _is_scholarly_source("rkts_concordance") is False
+        assert _is_catalog_or_scholarly_source("rkts_concordance") is False
 
     def test_error_sources_not_scholarly(self):
         """Error-tagged sources are not positive attestations."""
-        assert _is_scholarly_source("silk2019:error") is False
-        assert _is_scholarly_source("standard_parallels:error") is False
+        assert _is_catalog_or_scholarly_source("silk2019:error") is False
+        assert _is_catalog_or_scholarly_source("standard_parallels:error") is False
 
     def test_unknown_scholarly_citation(self):
         """Unknown source names are treated as scholarly citations."""
-        assert _is_scholarly_source("nattier1992") is True
-        assert _is_scholarly_source("buswell1989") is True
+        assert _is_catalog_or_scholarly_source("nattier1992") is True
+        assert _is_catalog_or_scholarly_source("buswell1989") is True
 
 
 # -- Unit tests for classify_links with synthetic data ------------------------
@@ -400,3 +401,209 @@ class TestRealConcordanceClassification:
                 f"'parallel' ({parallel_count}) should be >= "
                 f"'{type_name}' ({count})"
             )
+
+
+# -- Tests for flagged error handling in classify_links -----------------------
+
+
+class TestFlaggedErrors:
+    """Tests that flagged errors are classified as error:flagged."""
+
+    def _make_concordance(self, entries):
+        concordance = defaultdict(lambda: {
+            "tibetan": set(), "pali": set(), "sanskrit": set(),
+            "nanjio": set(), "sources": set(),
+        })
+        for text_id, tibetan, sources in entries:
+            concordance[text_id]["tibetan"] = set(tibetan)
+            concordance[text_id]["sources"] = set(sources)
+        return concordance
+
+    def _make_provenance(self, links):
+        prov = ProvenanceTracker()
+        for taisho_id, toh_id, source, confidence in links:
+            prov.add(taisho_id, toh_id, source, confidence=confidence)
+        return prov
+
+    def test_all_attestations_flagged_becomes_error(self):
+        """A link where all attestations are flagged is error:flagged."""
+        concordance = self._make_concordance([
+            ("T09n0278", [], {"lancaster"}),
+        ])
+        provenance = self._make_provenance([
+            ("T09n0278", "Toh 0", "lancaster", None),
+        ])
+        # Simulate flag_known_errors by marking attestations
+        for att in provenance.get("T09n0278", "Toh 0"):
+            att["flagged_error"] = True
+
+        classifications, summary = classify_links(concordance, provenance)
+        assert classifications["T09n0278"]["Toh 0"]["type"] == "error:flagged"
+
+    def test_partially_flagged_not_error(self):
+        """A link with some unflagged attestations is NOT error:flagged."""
+        concordance = self._make_concordance([
+            ("T09n0278", ["Toh 44"], {"lancaster", "cbeta_tibetan"}),
+        ])
+        provenance = self._make_provenance([
+            ("T09n0278", "Toh 44", "lancaster", None),
+            ("T09n0278", "Toh 44", "cbeta_tibetan", None),
+        ])
+        # Flag only one attestation
+        provenance.get("T09n0278", "Toh 44")[0]["flagged_error"] = True
+
+        classifications, summary = classify_links(concordance, provenance)
+        assert classifications["T09n0278"]["Toh 44"]["type"] != "error:flagged"
+
+    def test_flagged_error_excluded_from_verified_types(self):
+        """error:flagged links should not appear in verified output."""
+        concordance = self._make_concordance([
+            ("T09n0278", ["Toh 44"], {"lancaster"}),
+        ])
+        provenance = self._make_provenance([
+            ("T09n0278", "Toh 0", "lancaster", None),
+            ("T09n0278", "Toh 44", "lancaster", None),
+        ])
+        # Flag the erroneous link
+        for att in provenance.get("T09n0278", "Toh 0"):
+            att["flagged_error"] = True
+
+        classifications, summary = classify_links(concordance, provenance)
+
+        corpus_ids = {"T09n0278"}
+        verified = build_verified_output(
+            concordance, corpus_ids, provenance, classifications, []
+        )
+        # Toh 0 should NOT be in verified tibetan_parallels
+        tib = verified.get("tibetan_parallels", {}).get("T09n0278", [])
+        assert "Toh 0" not in tib
+        # Toh 0 should NOT be in verified link_classifications
+        vcls = verified.get("link_classifications", {}).get("T09n0278", {})
+        assert "Toh 0" not in vcls
+
+
+# -- Tests for build_verified_output ------------------------------------------
+
+
+class TestBuildVerifiedOutput:
+    """Tests for the verified concordance output builder."""
+
+    def _make_concordance(self, entries):
+        concordance = defaultdict(lambda: {
+            "tibetan": set(), "pali": set(), "sanskrit": set(),
+            "nanjio": set(), "sources": set(),
+        })
+        for text_id, tibetan, sources in entries:
+            concordance[text_id]["tibetan"] = set(tibetan)
+            concordance[text_id]["sources"] = set(sources)
+        return concordance
+
+    def _make_provenance(self, links):
+        prov = ProvenanceTracker()
+        for taisho_id, toh_id, source, confidence in links:
+            prov.add(taisho_id, toh_id, source, confidence=confidence)
+        return prov
+
+    def test_filters_computational_only_links(self):
+        """Computational-only links are excluded from verified output."""
+        concordance = self._make_concordance([
+            ("T01n0001", ["Toh 1", "Toh 500"], {"lancaster", "mitra"}),
+        ])
+        provenance = self._make_provenance([
+            ("T01n0001", "Toh 1", "lancaster", None),
+            ("T01n0001", "Toh 500", "mitra", 0.95),
+        ])
+        classifications, _ = classify_links(concordance, provenance)
+        corpus_ids = {"T01n0001"}
+        verified = build_verified_output(
+            concordance, corpus_ids, provenance, classifications, []
+        )
+        tib = verified["tibetan_parallels"].get("T01n0001", [])
+        assert "Toh 1" in tib
+        assert "Toh 500" not in tib
+
+    def test_kangyur_tengyur_split(self):
+        """Toh numbers are correctly split into Kangyur and Tengyur."""
+        concordance = self._make_concordance([
+            ("T01n0001", ["Toh 1"], {"lancaster"}),
+            ("T25n1509", ["Toh 3786"], {"lancaster"}),
+        ])
+        provenance = self._make_provenance([
+            ("T01n0001", "Toh 1", "lancaster", None),
+            ("T25n1509", "Toh 3786", "lancaster", None),
+        ])
+        classifications, _ = classify_links(concordance, provenance)
+        corpus_ids = {"T01n0001", "T25n1509"}
+        verified = build_verified_output(
+            concordance, corpus_ids, provenance, classifications, []
+        )
+        assert verified["summary"]["kangyur_toh"] == 1
+        assert verified["summary"]["tengyur_toh"] == 1
+
+    def test_out_of_range_toh_excluded_from_counts(self):
+        """Toh numbers outside 1-4569 are excluded from Kangyur/Tengyur counts."""
+        concordance = self._make_concordance([
+            ("T04n0192", ["Toh 5656"], {"lancaster"}),
+        ])
+        provenance = self._make_provenance([
+            ("T04n0192", "Toh 5656", "lancaster", None),
+        ])
+        classifications, _ = classify_links(concordance, provenance)
+        corpus_ids = {"T04n0192"}
+        verified = build_verified_output(
+            concordance, corpus_ids, provenance, classifications, []
+        )
+        assert verified["summary"]["kangyur_toh"] == 0
+        assert verified["summary"]["tengyur_toh"] == 0
+
+    def test_letter_suffix_toh_handled(self):
+        """Toh numbers with letter suffixes (e.g., 359a) are handled."""
+        concordance = self._make_concordance([
+            ("T12n0374", ["Toh 359a"], {"lancaster"}),
+        ])
+        provenance = self._make_provenance([
+            ("T12n0374", "Toh 359a", "lancaster", None),
+        ])
+        classifications, _ = classify_links(concordance, provenance)
+        corpus_ids = {"T12n0374"}
+        verified = build_verified_output(
+            concordance, corpus_ids, provenance, classifications, []
+        )
+        assert verified["summary"]["kangyur_toh"] == 1
+
+    def test_pali_only_text_in_verified(self):
+        """A text with only Pali parallels still appears in verified output."""
+        concordance = defaultdict(lambda: {
+            "tibetan": set(), "pali": set(), "sanskrit": set(),
+            "nanjio": set(), "sources": set(),
+        })
+        concordance["T01n0001"]["pali"] = {"dn1"}
+        concordance["T01n0001"]["sources"] = {"suttacentral_parallels"}
+        provenance = ProvenanceTracker()
+        provenance.add("T01n0001", "dn1", "suttacentral_parallels")
+        classifications = {}
+        corpus_ids = {"T01n0001"}
+        verified = build_verified_output(
+            concordance, corpus_ids, provenance, classifications, []
+        )
+        assert "T01n0001" in verified["pali_parallels"]
+        assert "T01n0001" not in verified["no_parallel_found"]
+
+    def test_verified_provenance_excludes_computational(self):
+        """Verified provenance filters out computational source attestations."""
+        concordance = self._make_concordance([
+            ("T01n0001", ["Toh 1"], {"lancaster", "mitra"}),
+        ])
+        provenance = self._make_provenance([
+            ("T01n0001", "Toh 1", "lancaster", None),
+            ("T01n0001", "Toh 1", "mitra", 0.95),
+        ])
+        classifications, _ = classify_links(concordance, provenance)
+        corpus_ids = {"T01n0001"}
+        verified = build_verified_output(
+            concordance, corpus_ids, provenance, classifications, []
+        )
+        vprov = verified["link_provenance"].get("T01n0001", {}).get("Toh 1", [])
+        sources = {att["source"] for att in vprov}
+        assert "lancaster" in sources
+        assert "mitra" not in sources
