@@ -1290,7 +1290,8 @@ def build_verified_output(concordance, corpus_ids, provenance,
         if data and data["sanskrit"]:
             skt = sorted(data["sanskrit"])
             sanskrit_parallels[text_id] = skt[0] if len(skt) == 1 else skt
-            has_any = True
+            # Sanskrit title identifications are metadata, not parallels;
+            # they do not count toward has_any or with_any_parallel.
 
         if not has_any:
             no_parallel.append(text_id)
@@ -1425,13 +1426,13 @@ def print_verified_genre_coverage(verified_output, corpus_ids, concordance):
 
     tib_set = set(verified_output["tibetan_parallels"].keys())
     pali_set = set(verified_output["pali_parallels"].keys())
-    skt_set = set(verified_output["sanskrit_parallels"].keys())
-    any_set = tib_set | pali_set | skt_set
+    # Sanskrit title identifications are metadata, not parallels
+    any_set = tib_set | pali_set
 
     print(f"\n{'='*60}")
     print("VERIFIED CONCORDANCE: GENRE-STRATIFIED COVERAGE")
     print(f"{'='*60}")
-    print(f"{'Genre':<25} {'Vols':>6} {'Texts':>6} {'Link':>6} {'Cov':>7}")
+    print(f"{'Genre':<25} {'Vols':>6} {'Texts':>6} {'Parallel':>8} {'Cov':>7}")
     print(f"{'-'*60}")
 
     total_texts = 0

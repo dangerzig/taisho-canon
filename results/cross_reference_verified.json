@@ -6,10 +6,10 @@
     "with_tibetan": 754,
     "with_pali": 171,
     "with_sanskrit": 865,
-    "with_any_parallel": 1027,
-    "no_parallel": 1428,
+    "with_any_parallel": 878,
+    "no_parallel": 1577,
     "pct_tibetan": 30.7,
-    "pct_any": 41.8,
+    "pct_any": 35.8,
     "unique_toh": 605,
     "kangyur_toh": 488,
     "tengyur_toh": 115,
@@ -9499,11 +9499,11 @@
       "Ārya-aṅgulimālīya-nāma-mahāyānasūtra",
       "Ārya-catuḥsatya-sūtra"
     ],
-    "T02n0128a": [
+    "T02n0128a": "Sumāgadhāvadānasūtra.",
+    "T02n0128b": [
       "Sumāgadhāvadānasūtra",
       "Sumāgadhāvadānasūtra."
     ],
-    "T02n0128b": "Sumāgadhāvadānasūtra.",
     "T02n0129": [
       "Sum&#257;gadh&#257;vad&#257;nas&#363;tra",
       "Sumāgadhāvadānasūtra."
@@ -10208,11 +10208,11 @@
       "Ārya-vajracchedikā-nāma-prajñāpāramitā-mahāyānasūtra"
     ],
     "T08n0236a": [
+      "Vajracchedikāpraj&ntilde;āpāramitāsūtra",
       "Vajracchedikāprajñāpāramitāsūtra",
       "Ārya-vajracchedikā-nāma-prajñāpāramitā-mahāyānasūtra"
     ],
     "T08n0236b": [
-      "Vajracchedikāpraj&ntilde;āpāramitāsūtra",
       "Vajracchedikāprajñāpāramitāsūtra",
       "Ārya-vajracchedikā-nāma-prajñāpāramitā-mahāyānasūtra"
     ],
@@ -11808,12 +11808,12 @@
     "T19n0970": "(Sarvadurgatipariśodhana)-uṣṇīṣavijayadhāraṇī(sūtra)",
     "T19n0971": "(Sarvadurgatipariśodhana)-uṣṇīṣavijayadhāraṇī(sūtra)",
     "T19n0974A": "Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī",
-    "T19n0974B": "Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī",
-    "T19n0974C": [
+    "T19n0974B": [
       "(Sarvadurgatipari&#347;odhana)u&#7779;&#7751;&#299;&#7779;avijayadh&#257;ra&#7751;i(s&#363;tra)",
       "(Sarvadurgatipariśodhana)uṣṇīṣavijayadhāraṇi(sūtra).",
       "Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī"
     ],
+    "T19n0974C": "Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī",
     "T19n0974D": "Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī",
     "T19n0974E": "Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī",
     "T19n0974F": "Ārya-sarvadurgatipariśodhanī-uṣṇīṣavijaya-nāma-dhāraṇī",
@@ -12001,7 +12001,7 @@
     ],
     "T20n1043": "Saḍakṣaravidyāmantra(sūtra)",
     "T20n1044": "Saḍakṣaravidyāmantra(sūtra)",
-    "T20n1045b": "Saḍakṣaravidyāmantra(sūtra)",
+    "T20n1045a": "Saḍakṣaravidyāmantra(sūtra)",
     "T20n1047": [
       "&#7778;a&#7693;ak&#7779;aravidy&#257;(s&#363;tra)",
       "Ārya-ṣaḍakṣara-vidyā",
@@ -12816,11 +12816,11 @@
       "sht-sutta49"
     ],
     "T25n1510a": [
+      "Vajracchedikāpraj&ntilde;āpāramitāsūtraśāstra",
       "Vajracchedikāprajñāpāramitāsūtraśāstra",
       "Ārya-bhagavatīprajñāpāramitāvajraccheditāsaptārthaṭīkā"
     ],
     "T25n1510b": [
-      "Vajracchedikāpraj&ntilde;āpāramitāsūtraśāstra",
       "Vajracchedikāprajñāpāramitāsūtraśāstra",
       "Ārya-bhagavatīprajñāpāramitāvajraccheditāsaptārthaṭīkā"
     ],
@@ -13413,13 +13413,19 @@
     "T03n0161",
     "T03n0163",
     "T03n0164",
+    "T03n0165",
+    "T03n0167",
     "T03n0168",
+    "T03n0169",
     "T03n0172",
+    "T03n0174",
     "T03n0175a",
     "T03n0175b",
     "T03n0175c",
     "T03n0176",
+    "T03n0177",
     "T03n0178",
+    "T03n0179",
     "T03n0180",
     "T03n0181a",
     "T03n0181b",
@@ -13428,11 +13434,13 @@
     "T03n0183",
     "T03n0184",
     "T03n0185",
+    "T03n0188",
     "T03n0189",
     "T03n0191",
     "T04n0193",
     "T04n0194",
     "T04n0195",
+    "T04n0201",
     "T04n0204",
     "T04n0205",
     "T04n0206",
@@ -13444,11 +13452,14 @@
     "T04n0216",
     "T04n0217",
     "T04n0218",
+    "T04n0219",
+    "T08n0234",
     "T08n0245",
     "T08n0246",
     "T08n0247",
     "T08n0259",
     "T08n0261",
+    "T09n0265",
     "T09n0269",
     "T09n0276",
     "T10n0282",
@@ -13460,7 +13471,9 @@
     "T12n0365",
     "T12n0368",
     "T12n0373",
+    "T12n0383",
     "T12n0384",
+    "T12n0385",
     "T12n0386",
     "T12n0388",
     "T12n0389",
@@ -13474,6 +13487,8 @@
     "T13n0409",
     "T13n0412",
     "T13n0413",
+    "T13n0414",
+    "T13n0415",
     "T13n0422",
     "T14n0426",
     "T14n0432",
@@ -13489,10 +13504,14 @@
     "T14n0447b",
     "T14n0448a",
     "T14n0448b",
+    "T14n0455",
+    "T14n0457",
     "T14n0458",
     "T14n0459",
     "T14n0463",
     "T14n0469",
+    "T14n0478",
+    "T14n0479",
     "T14n0483",
     "T14n0485",
     "T14n0487",
@@ -13534,27 +13553,37 @@
     "T14n0530",
     "T14n0531",
     "T14n0532",
+    "T14n0534",
+    "T14n0535",
+    "T14n0536",
     "T14n0537",
     "T14n0538",
     "T14n0539",
+    "T14n0540a",
+    "T14n0540b",
     "T14n0541",
     "T14n0542",
     "T14n0543",
     "T14n0546",
     "T14n0547",
     "T14n0548",
+    "T14n0549",
+    "T14n0552",
     "T14n0553",
     "T14n0554",
     "T14n0555a",
     "T14n0555b",
     "T14n0556",
     "T14n0558",
+    "T14n0563",
+    "T14n0564",
     "T14n0569",
     "T14n0570",
     "T14n0571",
     "T14n0572",
     "T14n0574",
     "T14n0578",
+    "T14n0579",
     "T14n0580",
     "T14n0581",
     "T14n0582",
@@ -13565,6 +13594,7 @@
     "T15n0602",
     "T15n0603",
     "T15n0604",
+    "T15n0606",
     "T15n0607",
     "T15n0608",
     "T15n0609",
@@ -13576,6 +13606,7 @@
     "T15n0615",
     "T15n0616",
     "T15n0617",
+    "T15n0618",
     "T15n0619",
     "T15n0620",
     "T15n0621",
@@ -13592,11 +13623,16 @@
     "T16n0656",
     "T16n0668",
     "T16n0669",
+    "T16n0673",
+    "T16n0674",
     "T16n0683",
     "T16n0684",
     "T16n0687",
     "T16n0690",
     "T16n0691",
+    "T16n0692",
+    "T16n0693",
+    "T16n0694",
     "T16n0695",
     "T16n0696",
     "T16n0697",
@@ -13610,7 +13646,9 @@
     "T16n0718",
     "T16n0719",
     "T16n0720",
+    "T17n0722",
     "T17n0724",
+    "T17n0728",
     "T17n0729",
     "T17n0730",
     "T17n0731",
@@ -13630,13 +13668,17 @@
     "T17n0747a",
     "T17n0747b",
     "T17n0748",
+    "T17n0749",
     "T17n0750",
     "T17n0751a",
     "T17n0751b",
     "T17n0752",
     "T17n0753",
+    "T17n0754",
     "T17n0756",
     "T17n0760",
+    "T17n0764",
+    "T17n0766",
     "T17n0767",
     "T17n0768",
     "T17n0769",
@@ -13667,11 +13709,14 @@
     "T17n0804",
     "T17n0805",
     "T17n0806",
+    "T17n0808",
+    "T17n0809",
     "T17n0812",
     "T17n0815",
     "T17n0816",
     "T17n0819",
     "T17n0820",
+    "T17n0821",
     "T17n0822",
     "T17n0823",
     "T17n0824",
@@ -13721,8 +13766,12 @@
     "T18n0879",
     "T18n0880",
     "T18n0881",
+    "T18n0883",
+    "T18n0884",
     "T18n0889",
     "T18n0891",
+    "T18n0894a",
+    "T18n0894b",
     "T18n0898",
     "T18n0899",
     "T18n0900",
@@ -13769,10 +13818,13 @@
     "T19n0947",
     "T19n0948",
     "T19n0949",
+    "T19n0950",
     "T19n0951",
     "T19n0952",
+    "T19n0953",
     "T19n0954A",
     "T19n0954B",
+    "T19n0955",
     "T19n0956",
     "T19n0957",
     "T19n0958",
@@ -13784,6 +13836,8 @@
     "T19n0964",
     "T19n0965",
     "T19n0966",
+    "T19n0969",
+    "T19n0970",
     "T19n0973",
     "T19n0975",
     "T19n0980",
@@ -13795,6 +13849,7 @@
     "T19n0997",
     "T19n1000",
     "T19n1001",
+    "T19n1002",
     "T19n1003",
     "T19n1004",
     "T19n1010",
@@ -13811,6 +13866,7 @@
     "T20n1039",
     "T20n1040",
     "T20n1042",
+    "T20n1043",
     "T20n1046",
     "T20n1049",
     "T20n1051",
@@ -13857,6 +13913,7 @@
     "T20n1124",
     "T20n1125",
     "T20n1126",
+    "T20n1128",
     "T20n1130",
     "T20n1131",
     "T20n1132",
@@ -13869,6 +13926,7 @@
     "T20n1142",
     "T20n1145",
     "T20n1146",
+    "T20n1148",
     "T20n1149",
     "T20n1150",
     "T20n1151",
@@ -13881,14 +13939,17 @@
     "T20n1159A",
     "T20n1159B",
     "T20n1160",
+    "T20n1161",
     "T20n1166",
     "T20n1169",
     "T20n1170",
     "T20n1173",
+    "T20n1174",
     "T20n1175",
     "T20n1176",
     "T20n1178",
     "T20n1179",
+    "T20n1180",
     "T20n1181",
     "T20n1182",
     "T20n1183",
@@ -13901,6 +13962,7 @@
     "T20n1196",
     "T20n1198",
     "T21n1199",
+    "T21n1200",
     "T21n1201",
     "T21n1202",
     "T21n1203",
@@ -13919,9 +13981,12 @@
     "T21n1219",
     "T21n1220",
     "T21n1221",
+    "T21n1222a",
+    "T21n1222b",
     "T21n1223",
     "T21n1224",
     "T21n1225",
+    "T21n1227",
     "T21n1228",
     "T21n1229",
     "T21n1230",
@@ -13936,6 +14001,7 @@
     "T21n1239",
     "T21n1240",
     "T21n1241",
+    "T21n1242",
     "T21n1246",
     "T21n1247",
     "T21n1248",
@@ -13958,14 +14024,17 @@
     "T21n1273",
     "T21n1274",
     "T21n1275",
+    "T21n1276",
     "T21n1277",
     "T21n1278",
     "T21n1279",
     "T21n1280",
     "T21n1281",
     "T21n1282",
+    "T21n1284",
     "T21n1286",
     "T21n1287",
+    "T21n1288",
     "T21n1289",
     "T21n1290",
     "T21n1291",
@@ -13991,6 +14060,7 @@
     "T21n1322",
     "T21n1326",
     "T21n1327",
+    "T21n1328",
     "T21n1329",
     "T21n1330",
     "T21n1332",
@@ -13998,6 +14068,7 @@
     "T21n1336",
     "T21n1337",
     "T21n1338",
+    "T21n1339",
     "T21n1340",
     "T21n1341",
     "T21n1342",
@@ -14012,6 +14083,7 @@
     "T21n1369b",
     "T21n1370",
     "T21n1372",
+    "T21n1376",
     "T21n1378a",
     "T21n1378b",
     "T21n1379",
@@ -14032,9 +14104,11 @@
     "T21n1400",
     "T21n1401",
     "T21n1402",
+    "T21n1403",
     "T21n1405",
     "T21n1406",
     "T21n1407",
+    "T21n1410",
     "T21n1412",
     "T21n1413",
     "T21n1414",
@@ -14044,17 +14118,32 @@
     "T22n1422a",
     "T22n1422b",
     "T22n1423",
+    "T22n1424",
+    "T22n1425",
     "T22n1426",
+    "T22n1427",
     "T22n1429",
     "T22n1430",
     "T22n1431",
     "T22n1432",
     "T22n1433",
+    "T22n1434",
+    "T23n1435",
+    "T23n1436",
+    "T23n1437",
     "T23n1438",
     "T23n1439",
+    "T23n1440",
+    "T23n1441",
+    "T24n1452",
+    "T24n1456",
     "T24n1457",
+    "T24n1460",
     "T24n1461",
+    "T24n1462",
     "T24n1464",
+    "T24n1465",
+    "T24n1466",
     "T24n1467a",
     "T24n1467b",
     "T24n1468",
@@ -14071,9 +14160,13 @@
     "T24n1480",
     "T24n1481",
     "T24n1482",
+    "T24n1483a",
+    "T24n1483b",
     "T24n1485",
     "T24n1486",
     "T24n1487",
+    "T24n1488",
+    "T24n1492",
     "T24n1495",
     "T24n1496",
     "T24n1498",
@@ -14086,55 +14179,105 @@
     "T25n1505",
     "T25n1506",
     "T25n1508",
+    "T25n1511",
+    "T25n1513",
+    "T25n1514",
     "T25n1515",
+    "T26n1519",
+    "T26n1520",
+    "T26n1524",
+    "T26n1525",
     "T26n1526",
+    "T26n1527",
     "T26n1528",
     "T26n1529",
+    "T26n1530",
+    "T26n1532",
     "T26n1533",
     "T26n1534",
     "T26n1535",
+    "T26n1539",
+    "T26n1540",
+    "T26n1541",
+    "T26n1542",
+    "T26n1543",
+    "T26n1544",
+    "T28n1546",
+    "T28n1547",
     "T28n1549",
+    "T28n1550",
+    "T28n1551",
+    "T28n1552",
+    "T28n1553",
+    "T28n1555",
     "T28n1556",
     "T28n1557",
     "T29n1561",
+    "T29n1562",
     "T30n1565",
     "T30n1567",
+    "T30n1568",
+    "T30n1569",
     "T30n1571",
+    "T30n1573",
+    "T30n1577",
+    "T30n1578",
+    "T30n1580",
+    "T30n1583",
     "T30n1584",
+    "T31n1585",
     "T31n1591",
     "T31n1602",
     "T31n1603",
     "T31n1607",
     "T31n1610",
     "T31n1615",
+    "T31n1616",
     "T31n1617",
     "T31n1618",
     "T31n1622",
     "T31n1623",
+    "T31n1625",
     "T31n1626",
     "T31n1627",
+    "T32n1628",
+    "T32n1629",
+    "T32n1632",
+    "T32n1633",
+    "T32n1634",
     "T32n1638",
     "T32n1639",
     "T32n1640",
+    "T32n1641",
+    "T32n1642",
     "T32n1644",
     "T32n1645",
+    "T32n1646",
+    "T32n1647",
     "T32n1648",
     "T32n1649",
     "T32n1650",
+    "T32n1651",
     "T32n1652",
     "T32n1653",
     "T32n1655",
     "T32n1657",
     "T32n1658",
     "T32n1659",
+    "T32n1660",
     "T32n1661",
     "T32n1665",
+    "T32n1666",
+    "T32n1667",
     "T32n1668",
     "T32n1669",
+    "T32n1670B",
     "T32n1671",
     "T32n1676",
+    "T32n1677",
     "T32n1679",
     "T32n1681",
+    "T32n1682",
     "T32n1686",
     "T32n1688",
     "T32n1689",
@@ -14254,6 +14397,8 @@
     "T40n1806",
     "T40n1807",
     "T40n1808",
+    "T40n1809",
+    "T40n1810",
     "T40n1811",
     "T40n1812",
     "T40n1813",
@@ -14412,6 +14557,7 @@
     "T47n1964",
     "T47n1965",
     "T47n1966",
+    "T47n1967",
     "T47n1968",
     "T47n1969A",
     "T47n1969B",
@@ -14488,6 +14634,7 @@
     "T49n2039",
     "T50n2040",
     "T50n2041",
+    "T50n2042",
     "T50n2044",
     "T50n2045",
     "T50n2046",
@@ -14579,6 +14726,8 @@
     "T54n2134",
     "T54n2135",
     "T54n2136",
+    "T54n2137",
+    "T54n2138",
     "T54n2139",
     "T54n2140",
     "T54n2141A",
@@ -19035,54 +19184,54 @@
     "T08n0236a": {
       "Otani 739": [
         {
+          "source": "acmuller_tohoku"
+        },
+        {
+          "source": "cbeta_sanskrit"
+        },
+        {
+          "source": "lancaster"
+        },
+        {
+          "source": "lancaster_full"
+        },
+        {
           "source": "rkts_concordance"
         }
       ],
       "Toh 16": [
         {
+          "source": "acmuller_tohoku"
+        },
+        {
+          "source": "cbeta_sanskrit"
+        },
+        {
           "source": "cbeta_tibetan"
         },
         {
           "source": "existing"
+        },
+        {
+          "source": "lancaster"
+        },
+        {
+          "source": "lancaster_full"
         }
       ]
     },
     "T08n0236b": {
       "Otani 739": [
         {
-          "source": "acmuller_tohoku"
-        },
-        {
-          "source": "cbeta_sanskrit"
-        },
-        {
-          "source": "lancaster"
-        },
-        {
-          "source": "lancaster_full"
-        },
-        {
           "source": "rkts_concordance"
         }
       ],
       "Toh 16": [
         {
-          "source": "acmuller_tohoku"
-        },
-        {
-          "source": "cbeta_sanskrit"
-        },
-        {
           "source": "cbeta_tibetan"
         },
         {
           "source": "existing"
-        },
-        {
-          "source": "lancaster"
-        },
-        {
-          "source": "lancaster_full"
         }
       ]
     },
@@ -33721,18 +33870,6 @@
     "T18n0893b": {
       "Otani 431": [
         {
-          "source": "acmuller_tohoku"
-        },
-        {
-          "source": "cbeta_sanskrit"
-        },
-        {
-          "source": "lancaster"
-        },
-        {
-          "source": "lancaster_full"
-        },
-        {
           "source": "rkts_concordance"
         }
       ],
@@ -33743,48 +33880,36 @@
       ],
       "Toh 4394": [
         {
-          "source": "acmuller_tohoku"
-        },
-        {
-          "source": "cbeta_sanskrit"
-        },
-        {
           "source": "cbeta_tibetan"
         },
         {
           "source": "existing"
-        },
-        {
-          "source": "lancaster"
-        },
-        {
-          "source": "lancaster_full"
         }
       ],
       "Toh 807": [
         {
-          "source": "acmuller_tohoku"
-        },
-        {
-          "source": "cbeta_sanskrit"
-        },
-        {
           "source": "cbeta_tibetan"
         },
         {
           "source": "existing"
-        },
-        {
-          "source": "lancaster"
-        },
-        {
-          "source": "lancaster_full"
         }
       ]
     },
     "T18n0893c": {
       "Otani 431": [
         {
+          "source": "acmuller_tohoku"
+        },
+        {
+          "source": "cbeta_sanskrit"
+        },
+        {
+          "source": "lancaster"
+        },
+        {
+          "source": "lancaster_full"
+        },
+        {
           "source": "rkts_concordance"
         }
       ],
@@ -33795,18 +33920,42 @@
       ],
       "Toh 4394": [
         {
+          "source": "acmuller_tohoku"
+        },
+        {
+          "source": "cbeta_sanskrit"
+        },
+        {
           "source": "cbeta_tibetan"
         },
         {
           "source": "existing"
+        },
+        {
+          "source": "lancaster"
+        },
+        {
+          "source": "lancaster_full"
         }
       ],
       "Toh 807": [
         {
+          "source": "acmuller_tohoku"
+        },
+        {
+          "source": "cbeta_sanskrit"
+        },
+        {
           "source": "cbeta_tibetan"
         },
         {
           "source": "existing"
+        },
+        {
+          "source": "lancaster"
+        },
+        {
+          "source": "lancaster_full"
         }
       ]
     },
@@ -34965,6 +35114,15 @@
       ],
       "Otani 198": [
         {
+          "source": "cbeta_sanskrit"
+        },
+        {
+          "source": "lancaster"
+        },
+        {
+          "source": "lancaster_full"
+        },
+        {
           "source": "rkts_concordance"
         }
       ],
@@ -34984,6 +35142,12 @@
         }
       ],
       "Otani 609": [
+        {
+          "source": "cbeta_sanskrit"
+        },
+        {
+          "source": "lancaster"
+        },
         {
           "source": "rkts_concordance"
         }
@@ -35014,10 +35178,19 @@
       ],
       "Toh 597": [
         {
+          "source": "cbeta_sanskrit"
+        },
+        {
           "source": "cbeta_tibetan"
         },
         {
           "source": "existing"
+        },
+        {
+          "source": "lancaster"
+        },
+        {
+          "source": "lancaster_full"
         }
       ],
       "Toh 598": [
@@ -35030,10 +35203,19 @@
       ],
       "Toh 984": [
         {
+          "source": "cbeta_sanskrit"
+        },
+        {
           "source": "cbeta_tibetan"
         },
         {
           "source": "existing"
+        },
+        {
+          "source": "lancaster"
+        },
+        {
+          "source": "lancaster_full"
         }
       ]
     },
@@ -35045,15 +35227,6 @@
       ],
       "Otani 198": [
         {
-          "source": "cbeta_sanskrit"
-        },
-        {
-          "source": "lancaster"
-        },
-        {
-          "source": "lancaster_full"
-        },
-        {
           "source": "rkts_concordance"
         }
       ],
@@ -35073,12 +35246,6 @@
         }
       ],
       "Otani 609": [
-        {
-          "source": "cbeta_sanskrit"
-        },
-        {
-          "source": "lancaster"
-        },
         {
           "source": "rkts_concordance"
         }
@@ -35109,19 +35276,10 @@
       ],
       "Toh 597": [
         {
-          "source": "cbeta_sanskrit"
-        },
-        {
           "source": "cbeta_tibetan"
         },
         {
           "source": "existing"
-        },
-        {
-          "source": "lancaster"
-        },
-        {
-          "source": "lancaster_full"
         }
       ],
       "Toh 598": [
@@ -35134,19 +35292,10 @@
       ],
       "Toh 984": [
         {
-          "source": "cbeta_sanskrit"
-        },
-        {
           "source": "cbeta_tibetan"
         },
         {
           "source": "existing"
-        },
-        {
-          "source": "lancaster"
-        },
-        {
-          "source": "lancaster_full"
         }
       ]
     },
@@ -47495,16 +47644,6 @@
     "T25n1510a": {
       "Toh 3816": [
         {
-          "source": "cbeta_tibetan"
-        },
-        {
-          "source": "existing"
-        }
-      ]
-    },
-    "T25n1510b": {
-      "Toh 3816": [
-        {
           "source": "acmuller_tohoku"
         },
         {
@@ -47521,6 +47660,16 @@
         },
         {
           "source": "lancaster_full"
+        }
+      ]
+    },
+    "T25n1510b": {
+      "Toh 3816": [
+        {
+          "source": "cbeta_tibetan"
+        },
+        {
+          "source": "existing"
         }
       ]
     },
