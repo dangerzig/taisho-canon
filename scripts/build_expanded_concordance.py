@@ -101,7 +101,7 @@ CATALOG_SOURCES = {
     "lancaster", "lancaster_full", "acmuller_tohoku", "cbeta_tibetan",
     "cbeta_sanskrit", "84000_tei_refs", "rkts", "existing",
     # Scholarly citations are catalog-grade assertions
-    "silk2019", "li2021", "standard_parallels",
+    "silk2019", "li2021",
     # Peking-only entries derived from Lancaster
     "peking_only",
     # SuttaCentral (currently Pali-only, but a curated scholarly source)
@@ -648,12 +648,13 @@ def merge_sources():
                 if toh_id not in concordance[text_id]["tibetan"]:
                     new_from_scholarly += 1
                 concordance[text_id]["tibetan"].add(toh_id)
-                # Scholarly citations are assertions, confidence=null
+                # Use per-link source_key if provided, else file-level key
+                link_key = link.get("source_key", citation_key)
                 provenance.add(
-                    text_id, toh_id, citation_key,
+                    text_id, toh_id, link_key,
                     confidence=None, note=note,
                 )
-                concordance[text_id]["sources"].add(citation_key)
+                concordance[text_id]["sources"].add(link_key)
                 scholarly_count += 1
 
             # Record errors as provenance entries with status="error"
