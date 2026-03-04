@@ -1,0 +1,29 @@
+{
+  "_comment": "Example scholarly citation file. Copy and adapt for real data.",
+  "_format_notes": [
+    "citation_key: Short key used in provenance (e.g. 'silk2019', 'nattier1992')",
+    "full_citation: Full bibliographic citation string",
+    "links: Array of confirmed Taisho-to-Tohoku mappings from this source",
+    "errors: Array of known errors or corrections (not added to concordance)",
+    "taisho: Can be bare 'T250' or canonical 'T08n0250' format",
+    "tohoku: Can be bare number 21 or string 'Toh 21'",
+    "note: Optional annotation for each link or error"
+  ],
+  "citation_key": "example2025",
+  "full_citation": "Author, A. \"Title of Article.\" Journal Name 1.1 (2025): 1-10.",
+  "links": [
+    {
+      "taisho": "T08n0251",
+      "tohoku": "Toh 21",
+      "note": "Heart Sutra; well-established correspondence"
+    }
+  ],
+  "errors": [
+    {
+      "taisho": "T12n0374",
+      "tohoku": "Toh 121",
+      "status": "error",
+      "note": "Incorrect Tohoku assignment in source; should be Toh 119"
+    }
+  ]
+}

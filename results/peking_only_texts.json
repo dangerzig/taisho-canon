@@ -1,0 +1,4215 @@
+{
+  "description": "Peking-only texts: entries in the Peking (Q) edition with no Derge (D) counterpart, meaning they have Otani numbers but no Tohoku numbers.",
+  "stats": {
+    "peking_only_kanjur": 16,
+    "peking_only_tanjur": 573,
+    "total_peking_only": 589,
+    "with_taisho_parallels": 2,
+    "without_taisho_parallels": 587
+  },
+  "peking_only_texts": [
+    {
+      "kernel_id": "519",
+      "otani": "Otani 359",
+      "tibetan_title": "'chi med rnga sgra'i gzungs",
+      "sanskrit_title": "",
+      "edition": "Kanjur"
+    },
+    {
+      "kernel_id": "622",
+      "otani": "Otani 424",
+      "tibetan_title": "gnod sbyin gyi sde dpon gar mkhan mchog gi brtag pa",
+      "sanskrit_title": "",
+      "edition": "Kanjur"
+    },
+    {
+      "kernel_id": "652",
+      "otani": "Otani 1",
+      "tibetan_title": "gsang sngags rgyud sde bzhi'i gzungs sngags dang snying po byin brlabs can rnams phyogs gcig tu rin po che bu ston pas bkod pa stod na bla ma rgyud pa'i mtshan 'bum mang po dang bcas pa",
+      "sanskrit_title": "",
+      "edition": "Kanjur"
+    },
+    {
+      "kernel_id": "712",
+      "otani": "Otani 471",
+      "tibetan_title": "",
+      "sanskrit_title": "",
+      "edition": "Kanjur"
+    },
+    {
+      "kernel_id": "733",
+      "otani": "Otani 398",
+      "tibetan_title": "'phags ma lha mo chen mo dpal lung bstan pa",
+      "sanskrit_title": "ārya-śrīmahādevī-vyākaraNa",
+      "edition": "Kanjur",
+      "taisho_parallels": {
+        "from_lancaster": [
+          {
+            "taisho": "T1253",
+            "k_number": "T1253",
+            "has_tohoku": true,
+            "tohoku": [
+              "739"
+            ]
+          }
+        ],
+        "from_concordance": [
+          "T21n1253"
+        ]
+      }
+    },
+    {
+      "kernel_id": "806",
+      "otani": "Otani 1042",
+      "tibetan_title": "'phags pa gser 'od dam pa mdo sde'i dbang po'i rgyal po las gsungs pa'i smon lam",
+      "sanskrit_title": "",
+      "edition": "Kanjur"
+    },
+    {
+      "kernel_id": "848",
+      "otani": "Otani 1050",
+      "tibetan_title": "bcom ldan 'das la lha'i dbang po brgya byin gyis bkra shis tshigs su bcad pa",
+      "sanskrit_title": "",
+      "edition": "Kanjur"
+    },
+    {
+      "kernel_id": "849",
+      "otani": "Otani 1051",
+      "tibetan_title": "bcom ldan 'das la lha'i rgyal po rab mtshe mas bkra shis tshigs su bcad pa",
+      "sanskrit_title": "",
+      "edition": "Kanjur"
+    },
+    {
+      "kernel_id": "850",
+      "otani": "Otani 1052",
+      "tibetan_title": "bcom ldan 'das la lha'i rgyal po rab dga' ldan gyis bkra shis tshigs su bcad pa",
+      "sanskrit_title": "",
+      "edition": "Kanjur"
+    },
+    {
+      "kernel_id": "892",
+      "otani": "Otani 1004",
+      "tibetan_title": "las kyi rnam smin gyi bras bu bstan pa'i mdo",
+      "sanskrit_title": "",
+      "edition": "Kanjur"
+    },
+    {
+      "kernel_id": "895",
+      "otani": "Otani 1011",
+      "tibetan_title": "byams pa lung bstan pa",
+      "sanskrit_title": "ārya-maitriyavyākaraNa",
+      "edition": "Kanjur"
+    },
+    {
+      "kernel_id": "905",
+      "otani": "Otani 1041",
+      "tibetan_title": "rgyal po gser gyi lag pa'i mar me'i lo rgyus dang smon lam gyi mdo",
+      "sanskrit_title": "",
+      "edition": "Kanjur"
+    },
+    {
+      "kernel_id": "910",
+      "otani": "Otani 368",
+      "tibetan_title": "'phags pa spyan ras gzigs dbang phyug phyag stong du sprul pa rgya chen po yong su rdzogs pa thogs pa med par thug rje chen po dang ldan pa'i gzungs",
+      "sanskrit_title": "ārya-avalokiteśvarasahasrikabhujalocananirmāNavistāraparipūrNāsaṅgamahākāruNika-dhāraNī",
+      "edition": "Kanjur",
+      "taisho_parallels": {
+        "from_lancaster": [
+          {
+            "taisho": "T1060",
+            "k_number": "T1060",
+            "has_tohoku": true,
+            "tohoku": [
+              "690",
+              "691",
+              "897"
+            ]
+          }
+        ],
+        "from_concordance": [
+          "T20n1060"
+        ]
+      }
+    },
+    {
+      "kernel_id": "911",
+      "otani": "Otani 1028",
+      "tibetan_title": "sme bdun zhes bya ba skar ma'i mdo",
+      "sanskrit_title": "",
+      "edition": "Kanjur"
+    },
+    {
+      "kernel_id": "913",
+      "otani": "Otani 1045",
+      "tibetan_title": "'dul ba lung gi cha shas yangs pa'i grong khyer du 'jug pa'i bde legs kyi tshigs su bcad pa",
+      "sanskrit_title": "",
+      "edition": "Kanjur"
+    },
+    {
+      "kernel_id": "1039",
+      "otani": "Otani 664",
+      "tibetan_title": "shes rab bskyed pa zhes bya ba'i gzungs",
+      "sanskrit_title": "prajñāvardhanī-nāma-dhāraNī",
+      "edition": "Kanjur"
+    },
+    {
+      "kernel_id": "61",
+      "otani": "Otani 2061",
+      "tibetan_title": "dus mchod chen po bzhi'i tshig le'ur byas pa",
+      "sanskrit_title": "kA la su tsa ma ha tsa turkA ri ka",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "62",
+      "otani": "Otani 2062",
+      "tibetan_title": "dpal shAkya thub pa'i bstod pa bcu pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "63",
+      "otani": "Otani 2063",
+      "tibetan_title": "e ka nA tha'i don 'grel",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "105",
+      "otani": "Otani 2105",
+      "tibetan_title": "rje btsun 'phags ma sgrol ma'i sgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "135",
+      "otani": "Otani 2135",
+      "tibetan_title": "rdo rje mkha' 'gro'i rnam par 'grel pa'i bshad sbyar zhes bya ba",
+      "sanskrit_title": "badzra DA ki bi brit+ti ni ban+d+ha nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "287",
+      "otani": "Otani 2287",
+      "tibetan_title": "rdo rje phag mo sgrub thabs",
+      "sanskrit_title": "badzra nA rA hI sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "288",
+      "otani": "Otani 2288",
+      "tibetan_title": "rdo rje rnal byor ma'i mchod pa la sogs pa mdor bsdus pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "308",
+      "otani": "Otani 2308",
+      "tibetan_title": "dpal rdo rje snal 'byor ma'i gsang ba'i sbyin sreg gi cho ga",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "309",
+      "otani": "Otani 2309",
+      "tibetan_title": "rdo rje phag mo'i pra brtag pa gtor ma'i cho ga lag pa'i mchod pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "407",
+      "otani": "Otani 2407",
+      "tibetan_title": "sA ts+tsha bya ba'i rim pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "607",
+      "otani": "Otani 2607",
+      "tibetan_title": "dus mtshams srang mda'i las",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "619",
+      "otani": "Otani 2619",
+      "tibetan_title": "byang chub kyi sems bde ba chen po'i man ngag",
+      "sanskrit_title": "bo d+hi tsit+ta ma hA su kha A na ya",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "743",
+      "otani": "Otani 2744",
+      "tibetan_title": "kun tu bzang po'i bsdus don",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "796",
+      "otani": "Otani 5087",
+      "tibetan_title": "maN+Dala gyi cho ga zhes bya ba",
+      "sanskrit_title": "ma d+ha la bi ti",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "832",
+      "otani": "Otani 2833",
+      "tibetan_title": "gtor ma nye bar sbyang ba",
+      "sanskrit_title": "ba liM pu la dU ra",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "855",
+      "otani": "Otani 2856",
+      "tibetan_title": "dpal gshin rje gshed nag po'i 'khor lo'i cho ga",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "871",
+      "otani": "Otani 2872",
+      "tibetan_title": "'jam dpal gyi rtog pa dam rdzas gsang ba rmad du bsgyur te bsten pa'i cho ga",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "901",
+      "otani": "Otani 2902",
+      "tibetan_title": "las kyi gshin rje chos kyi rgyal po'i bsgrub thabs zhes bya ba",
+      "sanskrit_title": "ya ma karma ra dza d+harma sa d+ha na maH",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "947",
+      "otani": "Otani 5415",
+      "tibetan_title": "dam pa'i chos dran pa nye bar bzhag pa'i tshig le'ur byas pa",
+      "sanskrit_title": "sad+d+harma smri t+yu pas+thA na kA ri kA",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "948",
+      "otani": "Otani 2949",
+      "tibetan_title": "'jam dpal ye shes sems dpa'i rinpo che'i phyag rgya dri ma med pa'i cho ga zhes bya ba",
+      "sanskrit_title": "dz+nyA na sa tra many+dzu shrI na ba la rat+na mu dra bi d+hi nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "1034",
+      "otani": "Otani 3035",
+      "tibetan_title": "gsang ba'i bdag po rdo rje'i sgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "1104",
+      "otani": "Otani 3105",
+      "tibetan_title": "grub mtha' 'dun pa zhes bya ba",
+      "sanskrit_title": "sap+ta mi sid+d+hAn+ta nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "1146",
+      "otani": "Otani 3147",
+      "tibetan_title": "sangs rgyas 'char ba",
+      "sanskrit_title": "bud+d+ho da ya",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "1307",
+      "otani": "Otani 3308",
+      "tibetan_title": "rdo rje theg pa'i rtsa ba'i ltung ba",
+      "sanskrit_title": "badzra yA na mU la pa ti",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "1349",
+      "otani": "Otani 3350",
+      "tibetan_title": "kun tu bzang po zhes bya ba'i spyin sreg gi cho ga",
+      "sanskrit_title": "sa man+ta b+ha dra nA ma ho ma lo pi ka",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "1362",
+      "otani": "Otani 3363",
+      "tibetan_title": "'phags pa 'jam dpal gyi mtshan yang dag par brjod pa'i rgya cher 'grel pa",
+      "sanskrit_title": "Ar+ya many+dzu shrI nA ma sang gI ti nA ma ma hA TI kA",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "1452",
+      "otani": "Otani 3453",
+      "tibetan_title": "bcom ldan 'das de bzhin gshegs pa dgra bcom pa yang dag par rdzogs pa'i sang rgyas ngan song thams cad yongs su sbyong ba gzi brid kyi rgyal po rgyud kyi rgyal po chen po'i rnam par bshad pa mdzes pa'i rgyan zhes bya ba",
+      "sanskrit_title": "b+ha ga ba ti sarba durga ti pa ri sho d+ha ni te dzo rA dza ta thA ga ta ar+ha te samyak+saM bud+d+hA ya ma ha tan+t+ra rA dza bi byA khyA sun+da rA laM kA ra nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "1483",
+      "otani": "Otani 3484",
+      "tibetan_title": "'phags pa rdo rje chos kyi rnal 'byor gcig pa'i sgrub thabs zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "1484",
+      "otani": "Otani 3485",
+      "tibetan_title": "rgyan dam pa sna tshogs pa rim par phye ba bkod pa zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "1525",
+      "otani": "Otani 3526",
+      "tibetan_title": "bcom ldan 'das 'jam pa'i dbyangs kyi dpyad",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "1646",
+      "otani": "Otani 3647",
+      "tibetan_title": "pha rol gyi gnod pa bsrung ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "1674",
+      "otani": "Otani 3675",
+      "tibetan_title": "'phags pa spyan ras gzigs dbang phyug gi sgrub thabs",
+      "sanskrit_title": "Ar+yA ba lo ki te sh+wa ra sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "1685",
+      "otani": "Otani 3686",
+      "tibetan_title": "dpal 'jig rten dbang phyug mkha' la gshegs pa'i sgrub thabs",
+      "sanskrit_title": "shrI ba sa ra pa Na lo ke sh+wa ra sA d+ha na ba sti raM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "1693",
+      "otani": "Otani 3694",
+      "tibetan_title": "gnod sbyin gyi sde dpon chen po lag na rdo rje zhes bya ba'i sgrub pa'i thabs",
+      "sanskrit_title": "ma hA yak+Sha se nA pa ta ya badzra pA Ni sA d+ha nAM nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "1715",
+      "otani": "Otani 3716",
+      "tibetan_title": "bcom ldan 'das phyag na rdo rje gos sngon po can gyi sgrub pa'i thabs zhes bya ba",
+      "sanskrit_title": "b+ha ga bAn ni lAM ba ra d+ha ra badzra pA Ni sa d+ha nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "1901",
+      "otani": "Otani 3902",
+      "tibetan_title": "mchod rten gyi cha rnam par dbye ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "1915",
+      "otani": "Otani 3916",
+      "tibetan_title": "'phags pa de bzhin gshegs pa'i gtsug tor nas byung ba'i gdugs dkar mo can gzhan gyis mi thub ma phyir bzlog pa zhes bya ba'i gzungs kyi sgrub thabs",
+      "sanskrit_title": "Ar+ya ta thA ga toSh+NI Sha si tA ta pa tre nA ma/ a pa rA dzi ta d+ha ra Ni sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2504",
+      "otani": "Otani 4505",
+      "tibetan_title": "sgrol ma yid bzhin nor bu'i sgrub thabs zhes bya ba",
+      "sanskrit_title": "tA ra tsin+ta ma ni sA d+ha naM nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2525",
+      "otani": "Otani 4526",
+      "tibetan_title": "dpal nor rgyun ma'i bstod pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2603",
+      "otani": "Otani 4604",
+      "tibetan_title": "sangs rgyas rje btsun la rgyun chags kyi tshigs su bcad las bstod pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2604",
+      "otani": "Otani 4605",
+      "tibetan_title": "mi pham mgon po la bstod pa'i 'chi slu ma zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2605",
+      "otani": "Otani 4606",
+      "tibetan_title": "de bzhin gshegs pa thams cad la bstod pa zhes bya ba",
+      "sanskrit_title": "sarba ta thA ga sta ba nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2606",
+      "otani": "Otani 4607",
+      "tibetan_title": "bla ma'i bris thang rgyab yig",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2607",
+      "otani": "Otani 4608",
+      "tibetan_title": "dus kyi 'khor lo'i rgyud kyi snying po'i 'grel pa dri ma med pa'i 'od ces bya ba",
+      "sanskrit_title": "ka la tsag kra tan tra/ bri ti bi  ma la pra b+ha na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2609",
+      "otani": "Otani 4610",
+      "tibetan_title": "rang gi lta ba'i 'dod pa mdor bstan pa yongs su brtag pa zhes bya ba",
+      "sanskrit_title": "pradar+sha nA nu ma tod de sha pa rIk+Sha nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2610",
+      "otani": "Otani 4611",
+      "tibetan_title": "rdo rje'i tshig gi rnam par dbye ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2611",
+      "otani": "Otani 4612",
+      "tibetan_title": "gnyis su med pa'i rnal 'byor zhes bya ba dang po'i sangs rgyas kyi bsgrub pa",
+      "sanskrit_title": "a wa d+hu ti yo ka na ma a t+yi bud d+h+wo s+wA hO",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2612",
+      "otani": "Otani 4613",
+      "tibetan_title": "tshigs bcad bcu pa zhes bya ba lam gyi rim pa",
+      "sanskrit_title": "dA shag thA nA ma mArga kra ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2613",
+      "otani": "Otani 4614",
+      "tibetan_title": "bcom ldan 'das dpal 'khol lo sdom pa'i sgrub thabs zhes bya ba",
+      "sanskrit_title": "b+hA ga wan shrI tsakra saM b+hA ra sa d+ha naM nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2614",
+      "otani": "Otani 4615",
+      "tibetan_title": "bcom ldan 'das dpal bde mchog rdo rje nam mkha' lding gi bsgrub thabs",
+      "sanskrit_title": "ba ga ban shrI sbaM ba ra badzra ga ru d+ha sa d+ha na",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2616",
+      "otani": "Otani 4617",
+      "tibetan_title": "dpa' bo gcig pa'i sbyin sreg gi cho ga",
+      "sanskrit_title": "e ka bi ra ma ho ma bi d+hi",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2617",
+      "otani": "Otani 4618",
+      "tibetan_title": "dpa' bo gcig pa'i sbyin sreg gi cho ga",
+      "sanskrit_title": "e ka bi ra ba la ba d+ha",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2618",
+      "otani": "Otani 4619",
+      "tibetan_title": "dpal 'khor lo sdom pa'i rab tu gnas pa'i cho ga",
+      "sanskrit_title": "shrI tsakra saM bA ra pra tiSh+tha brirti",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2619",
+      "otani": "Otani 4620",
+      "tibetan_title": "dpal 'khor lo sdom pa'i sbyin srag gi cho ga",
+      "sanskrit_title": "shrI tsakra saM ba ra ho ma bI d+hi",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2620",
+      "otani": "Otani 4621",
+      "tibetan_title": "'khor lo bde mchog lhan cig skyes pa'i bsgrub thabs bla ma brgyud pa'i man ngag gis brgyan pa yan lag bcu pa zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2621",
+      "otani": "Otani 4622",
+      "tibetan_title": "dpa' bo gcig pa'i sgrab thabs zhes bya ba",
+      "sanskrit_title": "e ka bi ra sa da na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2623",
+      "otani": "Otani 4624",
+      "tibetan_title": "dpal 'khor lo bde mchog gi rim pa lnga pa",
+      "sanskrit_title": "shrI tsakra sam+ba ra pany+tsa kra ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2625",
+      "otani": "Otani 4626",
+      "tibetan_title": "rdo rje theg pa'i rtsa ba dang yan lag gi ltung ba'i bshags pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2626",
+      "otani": "Otani 4627",
+      "tibetan_title": "bcom ldan 'das bde mchog la bstod pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2627",
+      "otani": "Otani 4628",
+      "tibetan_title": "dpal 'khor lo bde mchog gi rnam par 'phrul pa dang yul nyi shu rtsa bzhi'i rgyu mtshan bstan pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2628",
+      "otani": "Otani 4629",
+      "tibetan_title": "spra khrid lung bstan",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2630",
+      "otani": "Otani 4631",
+      "tibetan_title": "gtor mas mchod pa'i cho ga",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2632",
+      "otani": "Otani 4633",
+      "tibetan_title": "chos drug rdo rje'i tshig rkang zhes bya ba",
+      "sanskrit_title": "d+harma Sha Ta badzra yo ga tha nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2633",
+      "otani": "Otani 4634",
+      "tibetan_title": "phyag rgya chen po",
+      "sanskrit_title": "ma hA mu dra",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2633",
+      "otani": "Otani 4640",
+      "tibetan_title": "phyag rgya chen po",
+      "sanskrit_title": "ma hA mu dra",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2635",
+      "otani": "Otani 4636",
+      "tibetan_title": "chos spyod mi dge rang grol zhes bya ba",
+      "sanskrit_title": "d+harmA tra ta ka ri sa ta na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2636",
+      "otani": "Otani 4637",
+      "tibetan_title": "dpal 'khor lo sdom pa myur du sgrub pa zhes bya ba'i thabs",
+      "sanskrit_title": "shrI tsakra saM b+ha ra sA d+ha naM nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2637",
+      "otani": "Otani 4638",
+      "tibetan_title": "dpal 'khor lo sdom pa'i dkyil 'khor gyi cho ga zhes bya ba",
+      "sanskrit_title": "shrI tsakra saM ba ra maN+Da la bi ti na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2638",
+      "otani": "Otani 4639",
+      "tibetan_title": "dpal 'chi med ye shes chen po zhes bya ba",
+      "sanskrit_title": "shri a ,a ra dz+nyA na ma hA na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2640",
+      "otani": "Otani 4641",
+      "tibetan_title": "rang grol phyag rgya chen po zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2641",
+      "otani": "Otani 4642",
+      "tibetan_title": "lam khyer gyi chos gsum zhes bya ba",
+      "sanskrit_title": "d+ha na d+harma trai ya nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2642",
+      "otani": "Otani 4643",
+      "tibetan_title": "sgyu ma lam gyi rim pa zhes bya ba",
+      "sanskrit_title": "ma ya d+ha na kra ma nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2643",
+      "otani": "Otani 4644",
+      "tibetan_title": "sgyu ma lam gyi rim pa'i 'grel pa zhes bya ba",
+      "sanskrit_title": "ma ya d+ha na kra ma brid ti nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2644",
+      "otani": "Otani 4645",
+      "tibetan_title": "rtsa kha 'byed pa'i man ngag",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2645",
+      "otani": "Otani 4646",
+      "tibetan_title": "rtsa rlung la sogs sgom pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2646",
+      "otani": "Otani 4647",
+      "tibetan_title": "thabs lam gtum mo sgom pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2647",
+      "otani": "Otani 4648",
+      "tibetan_title": "thabs lam sgom pa'i rnal 'byor",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2648",
+      "otani": "Otani 4649",
+      "tibetan_title": "rang lus rtsa yi 'khor lo",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2649",
+      "otani": "Otani 4650",
+      "tibetan_title": "'phags pa smon lam gyi rgyal po zhes bya ba",
+      "sanskrit_title": "Ar+ya pra ni d+ha na rA dza nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2651",
+      "otani": "Otani 4652",
+      "tibetan_title": "rnam par grol ba'i snye ma zhes bya ba'i glu",
+      "sanskrit_title": "bi muk+ta man+dza ri nA ma gi ta",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2652",
+      "otani": "Otani 4653",
+      "tibetan_title": "de nyid bdun gyi 'grel pa",
+      "sanskrit_title": "sap+ta ta t+wa br-it+ti",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2653",
+      "otani": "Otani 4654",
+      "tibetan_title": "dpal 'khol lo sdom pa'i man ngag",
+      "sanskrit_title": "shrI sam+ba ro pa de sha",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2654",
+      "otani": "Otani 4655",
+      "tibetan_title": "dpal sdom pa bcu gsum gyi bdag nyid can la mchod pa'i cho ga",
+      "sanskrit_title": "shrI sam+ba ra tra yo da shAt+ma ka ar+tsa na bi d+hi",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2655",
+      "otani": "Otani 4656",
+      "tibetan_title": "dpal 'khor lo sdom pa la bstod pa",
+      "sanskrit_title": "shri tskara paM b+ha ra stod traM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2656",
+      "otani": "Otani 4657",
+      "tibetan_title": "dpal 'khor lo sdom pa'i dbang gi bya ba",
+      "sanskrit_title": "shrI tsakra paM b+ha ra she ka pra kri ya",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2657",
+      "otani": "Otani 4658",
+      "tibetan_title": "bcom ldan 'das bde mchog 'khor lo'i bstod pa dan da ka zhes bya ba",
+      "sanskrit_title": "su no da na d+ha ka",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2658",
+      "otani": "Otani 4659",
+      "tibetan_title": "mngon par rtogs pa'i snying po",
+      "sanskrit_title": "a b+hi sA ma ye h+ri ta ya",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2659",
+      "otani": "Otani 4660",
+      "tibetan_title": "mngon par rtogs pa'i 'grel pa",
+      "sanskrit_title": "a 'bi sa ma ya 'bri ti",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2660",
+      "otani": "Otani 4661",
+      "tibetan_title": "dpal 'khor lo bde mchog gi mngon par rtogs pa'i 'grel pa",
+      "sanskrit_title": "shrI tsakra saM ba ra a b+hi sa ma ya TI kA",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2661",
+      "otani": "Otani 4662",
+      "tibetan_title": "bde mchog 'khor lo'i Ti ka",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2662",
+      "otani": "Otani 4663",
+      "tibetan_title": "bde gshegs 'khor lo'i sgrub pa'i thabs zhes bya ba",
+      "sanskrit_title": "tsakra shaM b+ha ra sa d+ha na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2663",
+      "otani": "Otani 4664",
+      "tibetan_title": "'chi bdag gzhom pa zhes bya ba'i sgrub thabs",
+      "sanskrit_title": "a 'bri tu ad ma bi na ma sa ta no pi ka",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2664",
+      "otani": "Otani 4665",
+      "tibetan_title": "sangs rgyas 'byung ba zhes bya ba",
+      "sanskrit_title": "bud da yA na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2665",
+      "otani": "Otani 4666",
+      "tibetan_title": "dbang bzhi pa'i rnam par bzhag pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2666",
+      "otani": "Otani 4667",
+      "tibetan_title": "shrI ba san ta ti la ka zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2667",
+      "otani": "Otani 4668",
+      "tibetan_title": "dpal rdo rje rnal 'byor ma'i gsang ba'i sgrub thabs zhes bya ba",
+      "sanskrit_title": "shrI badzra dz+wo gi g+hu ya sa d+ha na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2668",
+      "otani": "Otani 4669",
+      "tibetan_title": "rdo rje rnal 'byor ma dbu bcad ma'i sgrub thabs zhes bya ba",
+      "sanskrit_title": "tshin+d+ha ma d+h+ya badzra yo gi ni sA d+ha na nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2669",
+      "otani": "Otani 4670",
+      "tibetan_title": "shes rab snang ba'i sgrub pa'i thabs",
+      "sanskrit_title": "pradz+nyA A lo ka sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2670",
+      "otani": "Otani 4671",
+      "tibetan_title": "rdo rje rnal 'byor ma'i sgrub thabs",
+      "sanskrit_title": "badzra yo gi ni sa da na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2671",
+      "otani": "Otani 4672",
+      "tibetan_title": "dpal rdo rje phag mo shes rab gsal byed ces bya ba'i sgrub thabs",
+      "sanskrit_title": "shrI badzra bA ra hi pradz+nyA A lo ke kri t+ya sA d+ha naM nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2674",
+      "otani": "Otani 4675",
+      "tibetan_title": "rnal 'byor ma drug gi sgrub pa'i thabs",
+      "sanskrit_title": "Sha Da yo gi ni sa d+ha na",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2675",
+      "otani": "Otani 4676",
+      "tibetan_title": "las kyi cho ga",
+      "sanskrit_title": "kar ma bi ti",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2676",
+      "otani": "Otani 4677",
+      "tibetan_title": "rnal 'byor ma'i bsgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2677",
+      "otani": "Otani 4678",
+      "tibetan_title": "rig pa 'dzin ma'i rdo rje rnal 'byor ma'i sgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2678",
+      "otani": "Otani 4679",
+      "tibetan_title": "rdo rje phag mo rig pa 'dzin ma rtsen ma'i sgrub thabs",
+      "sanskrit_title": "mi d+ha ri ki shri badzra ba ra hi sa da na",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2682",
+      "otani": "Otani 4683",
+      "tibetan_title": "rdo rje phag mo mchod pa'i sgrub thabs",
+      "sanskrit_title": "badzra bA ra hi ar+ts+tsa naM sa d+ha na",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2683",
+      "otani": "Otani 4684",
+      "tibetan_title": "rngon pa'i man ngag",
+      "sanskrit_title": "lub+d+ha ko pa de sha",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2684",
+      "otani": "Otani 4685",
+      "tibetan_title": "rdo rje rnal 'byor ma sbas pa'i sgom pa",
+      "sanskrit_title": "badzra yo gi nI lu ga b+ha ba",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2686",
+      "otani": "Otani 4687",
+      "tibetan_title": "dpal dgyes pa'i rdo rje'i dka' 'grel rin po che sbyor ba'i 'phreng ba zhes bya ba",
+      "sanskrit_title": "shri hi badzra phan tsi ka yo ga rad+na na ma ma la",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2687",
+      "otani": "Otani 4688",
+      "tibetan_title": "sngags kyi bstan bcos gsang ba'i mdzod ces bya ba",
+      "sanskrit_title": "'gu' ya ma ha ko sha na ma sha sra",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2688",
+      "otani": "Otani 4689",
+      "tibetan_title": "dpal dgyes pa'i rdo rje'i gtor ma'i cho ga",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2689",
+      "otani": "Otani 4690",
+      "tibetan_title": "phyag rgya bzhi'i sgrub thabs zhes bya ba",
+      "sanskrit_title": "tsa tur mu dra nA ma sa d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2691",
+      "otani": "Otani 4692",
+      "tibetan_title": "he ru ka dran pa gcig pa'i sgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2692",
+      "otani": "Otani 4693",
+      "tibetan_title": "dpal mchog tu gyur pa'i ngo bo nyid bde ba chen po'i go 'phang rdo rje zhes bya ba'i ting nge 'dzin",
+      "sanskrit_title": "shri pa ra ma s+wa du pa ma ha su kha pa da badzro' na ma sa ma di",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2693",
+      "otani": "Otani 4694",
+      "tibetan_title": "lhan cig skyes pa grub pa",
+      "sanskrit_title": "sa hA dza sid tI",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2696",
+      "otani": "Otani 4697",
+      "tibetan_title": "dgyes pa rdo rje'i lus kyi don rab tu gsal ba zhes bya ba",
+      "sanskrit_title": "he badzra piN+DA ra tha pra kA sa nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2697",
+      "otani": "Otani 4698",
+      "tibetan_title": "cung zad dran pa zhes bya ba",
+      "sanskrit_title": "kiny+tsi t+s-I ti",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2698",
+      "otani": "Otani 4699",
+      "tibetan_title": "sbyor ba mdor bsdus zhes bya ba",
+      "sanskrit_title": "yuk+ta saMk+Shib+ta",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2699",
+      "otani": "Otani 4700",
+      "tibetan_title": "sgron me gcig pa'i man ngag",
+      "sanskrit_title": "pra dI pai ko pa de sha",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2700",
+      "otani": "Otani 4701",
+      "tibetan_title": "dges pa rdo rje'i man ngag",
+      "sanskrit_title": "he badzro pa de sha",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2701",
+      "otani": "Otani 4702",
+      "tibetan_title": "man ngag",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2702",
+      "otani": "Otani 4703",
+      "tibetan_title": "rnal 'byor yan lag drug pa man ngag gsal ba",
+      "sanskrit_title": "u pa de sha pra kA sa Sha Ta ga yo ga",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2703",
+      "otani": "Otani 4704",
+      "tibetan_title": "rnal 'byor mdor bstan",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2704",
+      "otani": "Otani 4705",
+      "tibetan_title": "de kho na nyid bzhi pa",
+      "sanskrit_title": "tsa tur tar+t+wa",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2705",
+      "otani": "Otani 4706",
+      "tibetan_title": "bdag med ma'i byin rlabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2707",
+      "otani": "Otani 4708",
+      "tibetan_title": "bdag med ma'i stobs kyi 'khor lo sgrub pa'i thabs",
+      "sanskrit_title": "nai rAt+ma ba la tsakra sA d+ha na",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2708",
+      "otani": "Otani 4709",
+      "tibetan_title": "ku ru ku le'i bsgrub thabs",
+      "sanskrit_title": "ku ru ku le sa d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2709",
+      "otani": "Otani 4710",
+      "tibetan_title": "'jig rten gsum las rnam par rgyal ba 'phags ma sgrol ma bsgrub pa'i thabs zhes bya ba",
+      "sanskrit_title": "ar+ya bi dza ya trai lo kya tA ra sa da na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2710",
+      "otani": "Otani 4711",
+      "tibetan_title": "ku ru ku l+le'i las sbyor gyi man ngag",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2711",
+      "otani": "Otani 4712",
+      "tibetan_title": "rigs ldan ma'i sgrub thabs",
+      "sanskrit_title": "ku ru kul+le sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2712",
+      "otani": "Otani 4713",
+      "tibetan_title": "ku ru ku l+le'i man ngag",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2713",
+      "otani": "Otani 4714",
+      "tibetan_title": "rje btsun ma ku ru ku l+le la bstod pa phrin las nye bar bskul ba zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2714",
+      "otani": "Otani 4715",
+      "tibetan_title": "rnal 'byor mdor bsdus pa",
+      "sanskrit_title": "yo ga sa k+Ship+ta",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2715",
+      "otani": "Otani 4716",
+      "tibetan_title": "bdud rtsi thigs pa zhes bya ba",
+      "sanskrit_title": "a mr-i ta sta tha nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2716",
+      "otani": "Otani 4717",
+      "tibetan_title": "'phags pa thabs kyi zhags padmo 'phreng gi don bsdus pa'i 'grel pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2717",
+      "otani": "Otani 4718",
+      "tibetan_title": "rgyud kyi rgyal po chen po dpal gsang ba'i snying po'i 'grel pa zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2718",
+      "otani": "Otani 4719",
+      "tibetan_title": "dpal gsang ba'i snying po de kho na nyid nges pa rgya cher bshad pa'i 'grel pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2719",
+      "otani": "Otani 4720",
+      "tibetan_title": "sgyu 'phrul dra ba rdo rje las kyi rim pa zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2720",
+      "otani": "Otani 4721",
+      "tibetan_title": "rdo rje sems dpa'i sgyu 'phrul dra ba'i dbang gi gal po",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2721",
+      "otani": "Otani 4722",
+      "tibetan_title": "dbang gi don nges par 'byed pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2722",
+      "otani": "Otani 4723",
+      "tibetan_title": "thugs kyi thigs pa zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2723",
+      "otani": "Otani 4724",
+      "tibetan_title": "gsang ba'i thags pa'i man ngag",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2724",
+      "otani": "Otani 4725",
+      "tibetan_title": "rnal 'byor chen po shes rab spyan 'byed kyi man ngag ces bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2725",
+      "otani": "Otani 4726",
+      "tibetan_title": "man ngag gi rgyal po lta ba'i 'phreng ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2726",
+      "otani": "Otani 4727",
+      "tibetan_title": "las shan lta ba'i sgron ma zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2727",
+      "otani": "Otani 4728",
+      "tibetan_title": "lta ba'i rim pa'i man ngag snang ba bcu bdun pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2728",
+      "otani": "Otani 4729",
+      "tibetan_title": "g.yu'i thang ma kras dgu",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2729",
+      "otani": "Otani 4730",
+      "tibetan_title": "sgyu 'phrul dra ba me long lta bu'i bsgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2730",
+      "otani": "Otani 4731",
+      "tibetan_title": "rdo rje sems dpa'i sgyu 'phrul dra ba'i 'od kyi rim pa zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2731",
+      "otani": "Otani 4732",
+      "tibetan_title": "sgyu 'phrul phyag rgya bsam gtan",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2732",
+      "otani": "Otani 4733",
+      "tibetan_title": "rin chen dra ba mngon rdzogs zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2733",
+      "otani": "Otani 4734",
+      "tibetan_title": "dra ba chung ngu",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2734",
+      "otani": "Otani 4735",
+      "tibetan_title": "de kho na nyid snang ba dam pa rgyan",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2735",
+      "otani": "Otani 4736",
+      "tibetan_title": "lam rnam par bkod pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2736",
+      "otani": "Otani 4737",
+      "tibetan_title": "man ngag rnam par bkod pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2737",
+      "otani": "Otani 4738",
+      "tibetan_title": "thugs kyi thigs pa zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2738",
+      "otani": "Otani 4739",
+      "tibetan_title": "sgyu 'phrul man ngag gsal ba'i sgron me zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2739",
+      "otani": "Otani 4740",
+      "tibetan_title": "sgyu 'phrul dra ba'i lam bshad pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2740",
+      "otani": "Otani 4741",
+      "tibetan_title": "rim pa drug pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2741",
+      "otani": "Otani 4742",
+      "tibetan_title": "sgyu 'phrul dra ba'i man ngag rim pa gsum pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2742",
+      "otani": "Otani 4743",
+      "tibetan_title": "sems bskyed pa'i cho ga mdor bshad pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2743",
+      "otani": "Otani 4744",
+      "tibetan_title": "dam tshig gsal bkra zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2744",
+      "otani": "Otani 4745",
+      "tibetan_title": "dam tshig phra rgyas bstan pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2745",
+      "otani": "Otani 4746",
+      "tibetan_title": "sgyu 'phrul sbyin sreg gi rim pa mdor bsdus pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2746",
+      "otani": "Otani 4747",
+      "tibetan_title": "sgyu 'phrul dra ba ro sreg las kyi phreng ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2747",
+      "otani": "Otani 4748",
+      "tibetan_title": "sgyu 'phrul dpe chung rang gnas kyi rim pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2748",
+      "otani": "Otani 4749",
+      "tibetan_title": "sku gdung las kyi 'phreng ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2749",
+      "otani": "Otani 4750",
+      "tibetan_title": "za tshogs gtor ma'i lung",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2750",
+      "otani": "Otani 4751",
+      "tibetan_title": "gsang ba'i mdo don bsdus pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2751",
+      "otani": "Otani 4752",
+      "tibetan_title": "skabs 'grel bye brag rnam par bshad pa zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2752",
+      "otani": "Otani 4753",
+      "tibetan_title": "byang chub sems kyi ljon shing",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2754",
+      "otani": "Otani 4755",
+      "tibetan_title": "dpal gsang ba snying po'i don bsdus 'grel piN+DAr+tha",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2755",
+      "otani": "Otani 4756",
+      "tibetan_title": "rdo rje sems dpa'i sgyu 'phrul dra ba'i rgyud dpal gsang ba'i snying po zhes bya ba'i spyan 'grel pa",
+      "sanskrit_title": "badzra s+wad ta ma ya dza la tan tra shri 'gu ha garba 'bri ta tsag k+shu ti ka",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2756",
+      "otani": "Otani 4757",
+      "tibetan_title": "sgyu 'phrul dra ba rin po che 'od kyi snang ba zhes bya ba",
+      "sanskrit_title": "mal a dz+wa la rad na pra ba ti sha na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2757",
+      "otani": "Otani 4758",
+      "tibetan_title": "thugs kyi sgo lcags",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2758",
+      "otani": "Otani 4759",
+      "tibetan_title": "bsre ba'i cho ga'i tho byang",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2759",
+      "otani": "Otani 4760",
+      "tibetan_title": "mtshan nyid sgron ma",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2760",
+      "otani": "Otani 4761",
+      "tibetan_title": "sgyu 'phrul khro bo'i dbang bskur ba dkyil 'khor rdo rje las kyi rim pa zhes bya ba",
+      "sanskrit_title": "a b+hi Shiny+tsa mA yA dzA la badzra gro d+ha maN+Da la/ karma prA la na maH",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2761",
+      "otani": "Otani 4762",
+      "tibetan_title": "sgyu 'phrul dbang gi gal po'i don 'grel",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2762",
+      "otani": "Otani 4763",
+      "tibetan_title": "sgyu 'phrul dra ba lhan cig skyes pa'i ye shes snang ba zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2763",
+      "otani": "Otani 4764",
+      "tibetan_title": "gsang ba'i man ngag 'jam pa'i thigs pa zhes bya ba",
+      "sanskrit_title": "'gu ya pa ta sha mu ka bA bin du na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2764",
+      "otani": "Otani 4765",
+      "tibetan_title": "gsang ba'i thigs pa'i man ngag gi 'grel pa",
+      "sanskrit_title": "gu ya bin du u pa de sha 'bri te",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2765",
+      "otani": "Otani 4766",
+      "tibetan_title": "dbang cig car 'jug pa'i man ngag",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2766",
+      "otani": "Otani 4767",
+      "tibetan_title": "bde ba chen po phyag rgya'i man ngag zhes bya ba",
+      "sanskrit_title": "ma hA su ka mu tra pa pre sha na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2767",
+      "otani": "Otani 4768",
+      "tibetan_title": "rgyun bshags",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2768",
+      "otani": "Otani 4769",
+      "tibetan_title": "tshigs rkang bcu dgu pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2769",
+      "otani": "Otani 4770",
+      "tibetan_title": "sgyu 'phrul dra ba rab tu gnas pa'i cho ga'i rim pa zhes bya ba",
+      "sanskrit_title": "mA ya dzA ka su pra tiSh+Tha bi d+hi kra ma nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2770",
+      "otani": "Otani 4771",
+      "tibetan_title": "dpal gsang ba'i snying po'i rim pa gnyis kyi don",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2771",
+      "otani": "Otani 4772",
+      "tibetan_title": "zhi ba'i lha rgyud zhes bya ba",
+      "sanskrit_title": "de ba shA na ti nA ma tan+t+ra",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2772",
+      "otani": "Otani 4773",
+      "tibetan_title": "sgyu 'phrul tshogs kyi 'khor lo thugs kyi sgrub pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2773",
+      "otani": "Otani 4774",
+      "tibetan_title": "rdo rje sems dpa' sgyu 'phrul dra ba 'od kyi phyag rgya zhes bya ba",
+      "sanskrit_title": "badzra sa t+wa ma ya dz+wa la pra ba mu dra na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2774",
+      "otani": "Otani 4775",
+      "tibetan_title": "khro bo las kyi 'phreng ba bsdus pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2775",
+      "otani": "Otani 4776",
+      "tibetan_title": "khro bo yan dag sgron ma",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2776",
+      "otani": "Otani 4777",
+      "tibetan_title": "lha'i sku sgom pa'i man ngag",
+      "sanskrit_title": "de ba ka ya mu tra sa mu ti pa tre na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2777",
+      "otani": "Otani 4778",
+      "tibetan_title": "phyag rgya bzhi pa'i bsam gtan",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2778",
+      "otani": "Otani 4779",
+      "tibetan_title": "khro bo phyag rgya gcig pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2779",
+      "otani": "Otani 4780",
+      "tibetan_title": "spyod yul sbyong ba'i bsam gtan zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2780",
+      "otani": "Otani 4781",
+      "tibetan_title": "mdo rgyud rtogs pa'i sgron ma zhes bya ba thugs rje spyan thag gi gnas mdzad pa lha'i cho 'phrul phrin las mthar phyin pa'i sgrub pa gsang sngags nges par byed pa'i don gsal bar byed pa'i sgron ma lung thams cad kyi rgyal po chen po",
+      "sanskrit_title": "su tra tan tra ka la sra na ma bra ti sma saH ka ru na sa ta na ma ka ra ma ra ya d+hr baH karma ku ru ma la sa da na ,a g+hu ha man tra ti sa to ka bra ti maMH g+hu ha u tod ta sarba ma hA ra tsaH",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2781",
+      "otani": "Otani 4782",
+      "tibetan_title": "dpal sgyu 'phrul chen ma'i gtor ma'i cho ga",
+      "sanskrit_title": "shri ma hA ma ya sa ma yA ba liM bi d+hi",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2782",
+      "otani": "Otani 4783",
+      "tibetan_title": "dran pa gcig pa",
+      "sanskrit_title": "e ka smri ta",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2783",
+      "otani": "Otani 4784",
+      "tibetan_title": "sgyu 'phrul chen mo'i man ngag",
+      "sanskrit_title": "ma hA ma yo pa de sha",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2784",
+      "otani": "Otani 4785",
+      "tibetan_title": "rdo rje bdud rtsi gsum gyi mngon par rtogs pa",
+      "sanskrit_title": "badzrA mI b+hi sa ma ya tri ta yaM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2785",
+      "otani": "Otani 4786",
+      "tibetan_title": "rdo rje dril thabs kyi mchod pa'i cho ga",
+      "sanskrit_title": "badzra g+han+de nO pi ka pu tsa bi d+hi",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2786",
+      "otani": "Otani 4787",
+      "tibetan_title": "rgyud kyi rgyal po chen po dpal gsang ba 'dus pa'i rgya cher 'grel pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2787",
+      "otani": "Otani 4788",
+      "tibetan_title": "bsdus pa'i rim pa'i bsgrub thabs",
+      "sanskrit_title": "piN DI kra ma sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2788",
+      "otani": "Otani 4789",
+      "tibetan_title": "dpal gsang ba 'dus pa'i man ngag rim pa lnga pa zhes bya ba",
+      "sanskrit_title": "h+ri sa ,a dzA g+hu hA u pa d+he sha paN+tsa kra ma na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2794",
+      "otani": "Otani 4795",
+      "tibetan_title": "gshin rje gshed nag po'i dkyil 'khor gyi cho ga",
+      "sanskrit_title": "kriSh+Na ya mA ri maN Da lo pA si ka",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2795",
+      "otani": "Otani 4796",
+      "tibetan_title": "gshin rje nag po'i mngon par rtogs pa'i rim pa",
+      "sanskrit_title": "krisna ya ma a ri a bI sa ma ya kra ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2796",
+      "otani": "Otani 4797",
+      "tibetan_title": "gshin rje gshed nag po'i 'khor lo'i gsal byed",
+      "sanskrit_title": "ya mA ri kriSh+Na tsakra ud t+ya ta",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2797",
+      "otani": "Otani 4798",
+      "tibetan_title": "gshin rje gshed nag po'i 'khrul 'khor zhes bya ba",
+      "sanskrit_title": "kriSh+Na ya ma a ri tsakra na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2798",
+      "otani": "Otani 4799",
+      "tibetan_title": "dam tshig bdud rtsi za ba zhes bya ba",
+      "sanskrit_title": "sa ma ya a mri ta khA hi na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2799",
+      "otani": "Otani 4800",
+      "tibetan_title": "'khor lo zhes bya ba",
+      "sanskrit_title": "tsakra na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2800",
+      "otani": "Otani 4801",
+      "tibetan_title": "dpal rdo rje 'jigs byed kyi rgyud kyi 'grel pa man ngag dang ldan pa'i rgyan zhes bya ba",
+      "sanskrit_title": "shri badzra b+hai ra ba tan tra bri ti a laM ka ra u pa d+he sha na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2801",
+      "otani": "Otani 4802",
+      "tibetan_title": "dpal rdo rje 'jigs byed kyi sgrub thabs pad+ma rgyas pa zhes bya ba",
+      "sanskrit_title": "shri badzra b+hai ra ba sA d+ha na",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2802",
+      "otani": "Otani 4803",
+      "tibetan_title": "dpal rdo rje 'jigs byed kyi bsgrub pa'i thabs zhes bya ba",
+      "sanskrit_title": "shrI badzra be ra ba na ma sa d+ha na no pI ka",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2804",
+      "otani": "Otani 4805",
+      "tibetan_title": "rdo rje 'jigs byed kyi sgrub thabs zhes bya ba",
+      "sanskrit_title": "badzra b+hE ra ba sA d+ha nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2805",
+      "otani": "Otani 4806",
+      "tibetan_title": "'chi ba blu ba'i bsdus don",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2806",
+      "otani": "Otani 4807",
+      "tibetan_title": "'chi blu'i bsdus don",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2812",
+      "otani": "Otani 4813",
+      "tibetan_title": "chos thams cad 'phags pa 'jam dpal gshin rje gshed por bsgrub pa'i thabs",
+      "sanskrit_title": "sarba d+harma Ar+ya many+dzu shri ya man+ta ka sa ta no pe ka",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2813",
+      "otani": "Otani 4814",
+      "tibetan_title": "gshin rje gshed dmar lha lnga'i mngon par rtogs pa",
+      "sanskrit_title": "ya man+ta ka rak+ta dE wa pany+tsa b+hi sa ma yA sid d+hi many+tsa ri nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2814",
+      "otani": "Otani 4815",
+      "tibetan_title": "gshin rje gshed dmar po'i 'khrul 'khor gyi de nyid bshad pa zhes bya ba'i bsgrub thabs",
+      "sanskrit_title": "rak+ta yA mA ri ya na tra tA nir ta sha ka na ma sa d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2816",
+      "otani": "Otani 4817",
+      "tibetan_title": "gshin rje mthar byed kyi 'khrul 'khor gyi cho ga",
+      "sanskrit_title": "ya mAn ta ka yan tra bi d+hi",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2822",
+      "otani": "Otani 4823",
+      "tibetan_title": "rgyud dang man ngag thams cad kyi don phyogs gcig tu bsdebs mtshan ma gyen 'greng thig la'i 'khrul 'khor gyi man ngag rdo rje'i tshig rnam par dbye ba zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2827",
+      "otani": "Otani 4828",
+      "tibetan_title": "sha za gnod sbyin mkha' 'gro kun nas 'khyil pa'i rtog pa las byung ba'i sgrub thabs zhes bya ba",
+      "sanskrit_title": "pa sha tsa ma k+Shi ta ki ni kal pa u ta kun ta li sa d+ha na maH",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2828",
+      "otani": "Otani 4829",
+      "tibetan_title": "gnod sbyin ma kun nas 'khyil pa'i sgrub thabs kyi don bsdus pa'i 'grel pa",
+      "sanskrit_title": "yak+Shi ni kun d+ha li sa d+ha na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2829",
+      "otani": "Otani 4830",
+      "tibetan_title": "gzhan gyis mi thub pa dang ri rab mchog ma rin po che bzang po'i bsgrub thabs",
+      "sanskrit_title": "a pa ra tsi ta me ru b+ho dad ka ra rad na b+ha la sa d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2832",
+      "otani": "Otani 4833",
+      "tibetan_title": "'jam dpal ngag gi rgyal po'i sgrub thabs",
+      "sanskrit_title": "bA d+hi rA dzA many+dzu sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2834",
+      "otani": "Otani 4835",
+      "tibetan_title": "'jam dpal gyi mtshan yang dag par brjod pa'i spyan dbye ba'i cho ga zhes bya ba",
+      "sanskrit_title": "many+dzu shri na ma saM g+hi ti tsak+Shu man ti bi ti",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2835",
+      "otani": "Otani 4836",
+      "tibetan_title": "'jam pa'i dbyangs dpa' bo gcig grub pa'i bstod pa gser gyi phreng ba zhes bya ba",
+      "sanskrit_title": "si d+d+hi e ka bi ra many+dzu g+ho Sha su bar+N+Na mA la stod ta nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2838",
+      "otani": "Otani 4839",
+      "tibetan_title": "'phags pa yi ge drug pa'i sgrub thabs",
+      "sanskrit_title": "Ar+ya Sha Ta k+Sha ra sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2839",
+      "otani": "Otani 4840",
+      "tibetan_title": "'phags pa don yod zhags pa'i sgrub thabs",
+      "sanskrit_title": "Ar+ya a mo g+ha pa sha sA d+ha nAM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2839",
+      "otani": "Otani 4841",
+      "tibetan_title": "'phags pa don yod zhags pa'i sgrub thabs",
+      "sanskrit_title": "Ar+ya a mo g+ha pa sha s+wa d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2839",
+      "otani": "Otani 4842",
+      "tibetan_title": "'phags pa don yod zhags pa'i sgrub thabs",
+      "sanskrit_title": "Ar+ya a mo g+ha pA sha sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2844",
+      "otani": "Otani 4845",
+      "tibetan_title": "sems dpa'i phyag rgya zhes bya ba",
+      "sanskrit_title": "sa t+wa mu dra nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2845",
+      "otani": "Otani 4846",
+      "tibetan_title": "yi ge bzhi pa'i man ngag",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2846",
+      "otani": "Otani 4847",
+      "tibetan_title": "phyag na rdo rje gtum po chen po khros pa zhes bya ba'i sgrub thabs",
+      "sanskrit_title": "badzra pA Ni tsaN+Da ma hA ro Sha Na sad ta na ba la",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2847",
+      "otani": "Otani 4848",
+      "tibetan_title": "gnod sbyin gyi sde dpon chen po lag na rdo rje gos sngon can gyi bsgrub thabs zhes bya ba",
+      "sanskrit_title": "ma hA yak+sha se na pa ti/ ni laM ba ra d+ha ra badzra paNi sad+ha na na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2848",
+      "otani": "Otani 4849",
+      "tibetan_title": "rdo rje 'dzin pa phyag na rdo rje'i las bsgrub pa'i thabs zhes bya ba",
+      "sanskrit_title": "badzra da ra badzra pa ni/ ka ma sa d+ha na na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2849",
+      "otani": "Otani 4850",
+      "tibetan_title": "rdo rje gtum po'i sgo nas phyir bzlog pa'i 'khor lo zhes bya ba",
+      "sanskrit_title": "badzra tsan d+ha na rka na po tsa kra na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2850",
+      "otani": "Otani 4851",
+      "tibetan_title": "U Ni sha sngags kyi man ngag gi bsgrub thabs zhes bya ba",
+      "sanskrit_title": "uSh+NI Sha man+t+ra u pa de sha sad da na nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2853",
+      "otani": "Otani 4854",
+      "tibetan_title": "sgrol ma u gra'i mchod pa'i cho ga zhes bya ba",
+      "sanskrit_title": "u gra tA ra bU dzA bi d+hi nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2854",
+      "otani": "Otani 4855",
+      "tibetan_title": "sgrol ma dmar mos 'gro ba dbang du bsdu pa'i 'khor lo'i cho ga zhes bya ba",
+      "sanskrit_title": "staM tA ra wa shaM bi d+hi na tsakra nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2855",
+      "otani": "Otani 4856",
+      "tibetan_title": "sngags kyi don 'jug pa",
+      "sanskrit_title": "man tra ya da ra",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2856",
+      "otani": "Otani 4857",
+      "tibetan_title": "dbang gi man ngag",
+      "sanskrit_title": "she ka u pa d+he sha",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2857",
+      "otani": "Otani 4858",
+      "tibetan_title": "dam tshig sbas pa",
+      "sanskrit_title": "sa ma d+ha pa ta",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2858",
+      "otani": "Otani 4859",
+      "tibetan_title": "gzhal yas khang sbyin pa",
+      "sanskrit_title": "sra dat ta",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2859",
+      "otani": "Otani 4860",
+      "tibetan_title": "chu gtor gyi cho ga",
+      "sanskrit_title": "pa yo k+Shi pa ti bi d+hi",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2861",
+      "otani": "Otani 4862",
+      "tibetan_title": "lha mchod pa'i rim pa",
+      "sanskrit_title": "de l+wa pu tsa kra ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2862",
+      "otani": "Otani 4863",
+      "tibetan_title": "tshe bsgrub pa'i thabs",
+      "sanskrit_title": "a yu sa d+ha na",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2863",
+      "otani": "Otani 4864",
+      "tibetan_title": "'chi ba slu ba",
+      "sanskrit_title": "mi thu ma sha na",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2864",
+      "otani": "Otani 4865",
+      "tibetan_title": "'chi ka ma'i bstan bcos",
+      "sanskrit_title": "a de sha sha na",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2865",
+      "otani": "Otani 4866",
+      "tibetan_title": "ro bsreg pa",
+      "sanskrit_title": "mu lha ma de la",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2867",
+      "otani": "Otani 4868",
+      "tibetan_title": "tsha tsha'i cho ga",
+      "sanskrit_title": "tsI ta ba ti",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2868",
+      "otani": "Otani 4869",
+      "tibetan_title": "'phags ma lha mo sgrol ma la bstod pa mu tig 'phreng ba zhes bya ba",
+      "sanskrit_title": "ar+ya tA ra de bi stod tra gu lu ta ma la sa d+ha na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2869",
+      "otani": "Otani 4870",
+      "tibetan_title": "'phags ma lha mo sgrol ma'i bstod pa",
+      "sanskrit_title": "ar+ya de bi ta ra stod tra",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2870",
+      "otani": "Otani 4871",
+      "tibetan_title": "'phags ma sgrol ma la bstod pa smon lam grub pa zhes bya ba",
+      "sanskrit_title": "Ar+ya ta ra stod tra pra ni d+ha na na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2871",
+      "otani": "Otani 4872",
+      "tibetan_title": "bcom ldan 'das 'phags ma sgrol ma la bstod pa zhes bya ba",
+      "sanskrit_title": "b+ha ga wa ti ar+ya ta ra sto tra na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2872",
+      "otani": "Otani 4873",
+      "tibetan_title": "'phags ma sgrol ma 'jigs pa chen po brgyad las sgrol ba'i bstod pa",
+      "sanskrit_title": "ar+ya ta ra ma hA aSh+Ta b+ha yod ta re sta ba",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2875",
+      "otani": "Otani 4876",
+      "tibetan_title": "dam tshig sgrol ma la bstod pa",
+      "sanskrit_title": "sa ma ya ta ra staM ba",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2876",
+      "otani": "Otani 4877",
+      "tibetan_title": "bde ba'i 'byung gnas dpal ldan rje btsun ma la bstod pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2877",
+      "otani": "Otani 4878",
+      "tibetan_title": "thams cad grub pa dpal 'phel lha mo ra bstod pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2878",
+      "otani": "Otani 4879",
+      "tibetan_title": "rje btsun ma 'phags ma sgrol ma la mtshan sum cu rtsa gnyis kyi bstod pa don thams cad grub par byed pa rin chen brgyan 'dra zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2879",
+      "otani": "Otani 4880",
+      "tibetan_title": "'phags ma sgrol ma'i bkra shis brjod pa",
+      "sanskrit_title": "ar+ya ta ra mang ga la gi ti",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2880",
+      "otani": "Otani 4881",
+      "tibetan_title": "seng ldeng nags kyi sgrol ma la bstod pa",
+      "sanskrit_title": "khad+hi ra d+ha ra sto tra",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2881",
+      "otani": "Otani 4882",
+      "tibetan_title": "'phags ma sgrol ma'i mtshan nges pa zhes bya ba stong phrag bcu gnyis pa las phyung ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2885",
+      "otani": "Otani 4886",
+      "tibetan_title": "tshe dpag tu med pa zhes bya ba'i sgrub thabs",
+      "sanskrit_title": "a yu a pa ra mi ta sa d+ha na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2888",
+      "otani": "Otani 4889",
+      "tibetan_title": "rta mgrin gyi bsgrub thabs",
+      "sanskrit_title": "ha ya g+h+ri ba sA d+ha na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2891",
+      "otani": "Otani 4892",
+      "tibetan_title": "khro po'i rgyal po mi g.yo ba'i bsgrub pa'i thabs",
+      "sanskrit_title": "ar+ya a tsa la khro dA sa d+ha ni",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2892",
+      "otani": "Otani 4893",
+      "tibetan_title": "mi g.yo ba'i 'khor lo",
+      "sanskrit_title": "a tsa la tsag gra",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2894",
+      "otani": "Otani 4895",
+      "tibetan_title": "khro bo mi g.yo mgon gyi sgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2895",
+      "otani": "Otani 4896",
+      "tibetan_title": "gtum po khro bo chen po'i sgrub pa don dam pa zhes bya ba",
+      "sanskrit_title": "tsaN+Da ma hA ro Sha Na sa ra mAr+tha sA d+ha nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2898",
+      "otani": "Otani 4899",
+      "tibetan_title": "nag po chen po'i 'phrin las gsang ba'i bsgrub thabs",
+      "sanskrit_title": "ma hA ka la ma ra na g+hu h+ya sa da na",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2900",
+      "otani": "Otani 4901",
+      "tibetan_title": "zhal bzhi pa'i dam tshig dngos grub bsgrub pa'i thabs zhes bya ba",
+      "sanskrit_title": "tsa turmu kha sa ma ya sid+d+hi sA d+ha nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2901",
+      "otani": "Otani 4902",
+      "tibetan_title": "dpal nag po chen po'i bsgrub thabs",
+      "sanskrit_title": "shrI ma hA kA la sa d+ha na maH",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2902",
+      "otani": "Otani 4903",
+      "tibetan_title": "dpal nag po chen po'i bsgrub pa'i thabs zhes bya ba",
+      "sanskrit_title": "shrI ma hA kA la sa d+ha na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2903",
+      "otani": "Otani 4904",
+      "tibetan_title": "nag po chen po'i gtor ma'i cho ga",
+      "sanskrit_title": "ma hA kA la ba liM bi d+hi",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2904",
+      "otani": "Otani 4905",
+      "tibetan_title": "nag po chen po la bstod pa",
+      "sanskrit_title": "ma hA kA la stod tra",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2904",
+      "otani": "Otani 4907",
+      "tibetan_title": "nag po chen po la bstod pa",
+      "sanskrit_title": "ma hA kA la stod tra",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2904",
+      "otani": "Otani 4908",
+      "tibetan_title": "nag po chen po la bstod pa",
+      "sanskrit_title": "ma hA kA la stod tra",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2904",
+      "otani": "Otani 4909",
+      "tibetan_title": "nag po chen po la bstod pa",
+      "sanskrit_title": "ma hA kA la stod tra",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2904",
+      "otani": "Otani 4911",
+      "tibetan_title": "nag po chen po la bstod pa",
+      "sanskrit_title": "ma hA kA la stod tra",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2904",
+      "otani": "Otani 4940",
+      "tibetan_title": "nag po chen po'i bstod pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2904",
+      "otani": "Otani 4941",
+      "tibetan_title": "nag po chen po'i bstod pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2905",
+      "otani": "Otani 4906",
+      "tibetan_title": "nag po chen po'i bstod pa'i phreng ba zhes bya ba",
+      "sanskrit_title": "ma hA kA la stod tra",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2911",
+      "otani": "Otani 4912",
+      "tibetan_title": "lha mo nag mo'i bstod pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2912",
+      "otani": "Otani 4913",
+      "tibetan_title": "dpal lha mo nag mo la bstod pa zhes bya ba",
+      "sanskrit_title": "shrI de wi ka li stod tra nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2912",
+      "otani": "Otani 4914",
+      "tibetan_title": "dpal lha mo nag mo la bstod pa zhes bya ba",
+      "sanskrit_title": "shrI kA li de wi stod tra nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2912",
+      "otani": "Otani 4915",
+      "tibetan_title": "dpal lha mo nag mo la bstod pa zhes bya ba",
+      "sanskrit_title": "shrI de wi kA li stod tra nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2912",
+      "otani": "Otani 4916",
+      "tibetan_title": "dpal lha mo nag mo la bstod pa zhes bya ba",
+      "sanskrit_title": "shrI de wi kA li stod tra nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2916",
+      "otani": "Otani 4917",
+      "tibetan_title": "dpal lha mo nag mo la bstod pa zhes bya ba",
+      "sanskrit_title": "shrI de wi kA li stod tra nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2917",
+      "otani": "Otani 4918",
+      "tibetan_title": "dpal ldan lha mo nag mo la bstod pa zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2918",
+      "otani": "Otani 4919",
+      "tibetan_title": "las mkhan gyi bstod pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2919",
+      "otani": "Otani 4920",
+      "tibetan_title": "gnod sbyin nag po'i bstod pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2920",
+      "otani": "Otani 4921",
+      "tibetan_title": "dpal ldan lha mo dud sol ma'i rjes gnang",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2921",
+      "otani": "Otani 4922",
+      "tibetan_title": "dmag dpon chen po zhal bzhi pa'i bstod pa sho lo ka nyi shu pa zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2922",
+      "otani": "Otani 4923",
+      "tibetan_title": "byin gyis brlabs pa nag po chen po'i sgrub thabs zhes bya ba",
+      "sanskrit_title": "a d+hiSh+Tha na ma hA ka la sa d+ha na nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2923",
+      "otani": "Otani 4924",
+      "tibetan_title": "byin gyis brlabs pa'i nag po chen po'i gsang ba'i sgrub thabs zhes bya ba",
+      "sanskrit_title": "a d+hiSh+Tha na ma ma hA kA la gu ya sa d+ha naM na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2924",
+      "otani": "Otani 4925",
+      "tibetan_title": "mi bskyod pa la brten nas mgon po'i gegs sel",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2925",
+      "otani": "Otani 4926",
+      "tibetan_title": "mgon po'i bkra shis yon tan rgya mtsho zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2926",
+      "otani": "Otani 4927",
+      "tibetan_title": "mgon po dmar po'i tshe bsgrub kyi zhal gdams",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2927",
+      "otani": "Otani 4928",
+      "tibetan_title": "dpal ldan lha mo'i srog sgrub",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2928",
+      "otani": "Otani 4929",
+      "tibetan_title": "dpal ldan lha mo chen mo'i gsang ba'i bsgrub thabs zhes bya ba",
+      "sanskrit_title": "ShI ya de bi ma hA ka li g+hu h+ya pA d+ha na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2929",
+      "otani": "Otani 4930",
+      "tibetan_title": "rdo rje mkha' spyod ma sgrub pa'i thabs",
+      "sanskrit_title": "badzra tsa ra na da sa ha na",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2930",
+      "otani": "Otani 4931",
+      "tibetan_title": "nag po chen po phur par sgrub pa zhes bya ba",
+      "sanskrit_title": "ma hA ka la ki la ya sa rda na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2932",
+      "otani": "Otani 4933",
+      "tibetan_title": "mgon po'i rgyu dus brtag pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2933",
+      "otani": "Otani 4934",
+      "tibetan_title": "byin gyis brlabs pa'i nag po'i sgrub thabs zhes bya ba",
+      "sanskrit_title": "sa thi s+tha na ma hA kA la s+wa da na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2934",
+      "otani": "Otani 4935",
+      "tibetan_title": "nag po chen po'i sgrub thabs zhes bya ba",
+      "sanskrit_title": "a thiSh+Tha na ma hA ka la sa d+ha na na maH",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2935",
+      "otani": "Otani 4936",
+      "tibetan_title": "dpal nag po chen po byin brlabs can gyi sgrub pa'i thabs zhes bya ba",
+      "sanskrit_title": "ma hA kA la shri a d+hiSh+Tha wa ti sa ta na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2936",
+      "otani": "Otani 4937",
+      "tibetan_title": "gsang ba'i sgrub thabs zhes bya ba",
+      "sanskrit_title": "gu h+ya s+wa d+ha na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2937",
+      "otani": "Otani 4938",
+      "tibetan_title": "nag po chen po'i bstod pa rngam pa sgra sgrogs zhes bya ba",
+      "sanskrit_title": "ma hA ka la a k+Sho pa stod tra na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2938",
+      "otani": "Otani 4939",
+      "tibetan_title": "mgon po'i gzhung bstod",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2941",
+      "otani": "Otani 4942",
+      "tibetan_title": "nag po chen po phyag bzhi pa'i sgrub thabs",
+      "sanskrit_title": "tsa tur+b+hu dza ma hA kA la sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2942",
+      "otani": "Otani 4943",
+      "tibetan_title": "ye shes mgon po gri gug can gyi bdag bskyed bzlas pa bstod pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2943",
+      "otani": "Otani 4944",
+      "tibetan_title": "nag po chen po phyag gnyis pa'i bstod pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2944",
+      "otani": "Otani 4945",
+      "tibetan_title": "mgon po drag gshed kyi dbang bsdus pa'i lag len",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2945",
+      "otani": "Otani 4946",
+      "tibetan_title": "dpal nag po chen po'i las tshogs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2946",
+      "otani": "Otani 4947",
+      "tibetan_title": "rdo rje nag po chen po'i las bskrad pa'i mngon spyod zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2947",
+      "otani": "Otani 4948",
+      "tibetan_title": "rdo rje nag po chen po'i las dbye ba'i mngon spyod zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2948",
+      "otani": "Otani 4949",
+      "tibetan_title": "rdo rje nag po chen po'i las lus rengs par byed pa'i mngon spyod zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2949",
+      "otani": "Otani 4950",
+      "tibetan_title": "rdo rje nag po chen po'i las ngag rengs par byed pa'i mngon spyod zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2950",
+      "otani": "Otani 4951",
+      "tibetan_title": "rdo rje nag po chen po'i las yid rengs par byed pa'i mngon spyod zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2951",
+      "otani": "Otani 4952",
+      "tibetan_title": "rdo rje nag po chen po'i las srid skem pa'i mngon brjod zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2952",
+      "otani": "Otani 4953",
+      "tibetan_title": "rdo rje nag po chen po'i las mngon spyod slar gso bar byed pa zhi ba'i las zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2953",
+      "otani": "Otani 4954",
+      "tibetan_title": "rdo rje nag po chen po'imngon spyod kyi sbyin sreg zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2954",
+      "otani": "Otani 4955",
+      "tibetan_title": "tsa N+Di ka'i tshig sgrub ces bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2955",
+      "otani": "Otani 4956",
+      "tibetan_title": "dbang bskur gyi cho ga rin chen phreng 'dra shes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2957",
+      "otani": "Otani 4958",
+      "tibetan_title": "dpal nag po chen po'i gsang ba'i man ngag ces bya ba",
+      "sanskrit_title": "shri na ma u pa d+he sha/ ma hA la sa ma ya",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2958",
+      "otani": "Otani 4959",
+      "tibetan_title": "dam tshig 'dus pa'i dbang",
+      "sanskrit_title": "sa ma yA/ a b+hi she ka ta/ ke duH",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2959",
+      "otani": "Otani 4960",
+      "tibetan_title": "dpal mgon po bya rog ma'i bskangs kyi cho ga'i rim pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2960",
+      "otani": "Otani 4961",
+      "tibetan_title": "dpal nag po chen po'i dngos grub dang bsrung ba dang bzlog pa'i sgrub thabs shes bya ba",
+      "sanskrit_title": "shrI ma hA ka la sid+d+h-i k+Sha r+ya gi ra dza d+ha na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2961",
+      "otani": "Otani 4962",
+      "tibetan_title": "mgon po bya rog gdong gi gtor mdos",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2962",
+      "otani": "Otani 4963",
+      "tibetan_title": "gnod sbyin nag po chen po'i sgrub thabs zhes bya ba",
+      "sanskrit_title": "ka la yak+Sha ma hA sa d+ha na na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2964",
+      "otani": "Otani 4965",
+      "tibetan_title": "gnod sbyin nag po chen po la rin po ches bstod pa zhes bya ba",
+      "sanskrit_title": "yag k+Sha ka la ma hA stud te rad na nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2965",
+      "otani": "Otani 4966",
+      "tibetan_title": "rang gnas pa nag po chen po'i sgrub thabs",
+      "sanskrit_title": "s+was+ThA na ma hA kA la sa d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2966",
+      "otani": "Otani 4967",
+      "tibetan_title": "rje btsun dpal nag po chen po'i sgrub thabs man ngag mdor bsdus pa",
+      "sanskrit_title": "b+haT+Ta rak shrI ma hA kA la sa d+hA no pa de shas sang+k+Ship+ta",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2968",
+      "otani": "Otani 4969",
+      "tibetan_title": "'jigs byed nag po chen po'i sgrub thabs",
+      "sanskrit_title": "b+hai ra ba ma hA kA la sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2969",
+      "otani": "Otani 4970",
+      "tibetan_title": "rnam thos sras rjes su 'brang ba'i gtor ma'i cho ga zhes bya ba",
+      "sanskrit_title": "b+hai shra ba a nu dzA pa b+hi ta b+hi li na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2970",
+      "otani": "Otani 4971",
+      "tibetan_title": "glang po rin po che la nor blang ba'i man ngag ces bya ba",
+      "sanskrit_title": "ha sti rad na d+ha naM e ti/ u pa d+ha sha na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2971",
+      "otani": "Otani 4972",
+      "tibetan_title": "tshogs kyi bdag po'i sgrub thabs 'khor lo chen po zhes bya ba",
+      "sanskrit_title": "ga Na pa ti pa tra ma hA sA d+ha nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2972",
+      "otani": "Otani 4973",
+      "tibetan_title": "bgegs kyi rgyal po'i sgrub thabs zhes bya ba",
+      "sanskrit_title": "bI na ya ka na rA dza sa d+ha nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2973",
+      "otani": "Otani 4974",
+      "tibetan_title": "sna tshogs nor bu bde mchog 'khor lo'i sgrub thabs shes bya ba",
+      "sanskrit_title": "karma ma Ni tsakra saM b+ha sa d+ha nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2974",
+      "otani": "Otani 4975",
+      "tibetan_title": "dpal rdo rje mkha' 'gro'i bsgrub thabs shes bya ba",
+      "sanskrit_title": "shrI badzra DA ki ni sA d+ha nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2975",
+      "otani": "Otani 4976",
+      "tibetan_title": "bgegs kyi rgyal po bsgrub pa'i thabs shes bya ba",
+      "sanskrit_title": "bi na ya ka rA dza sa d+ha nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2976",
+      "otani": "Otani 4977",
+      "tibetan_title": "'phags pa tshogs kyi bdag po la bstod pa",
+      "sanskrit_title": "Ar+ya gaH na pa ti stu ti",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2976",
+      "otani": "Otani 4989",
+      "tibetan_title": "'phags pa tshogs kyi bdag po la bstod pa",
+      "sanskrit_title": "ar+ya ga na pa ti stu ste",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2977",
+      "otani": "Otani 4978",
+      "tibetan_title": "bgegs bdag chen po'i sku bri ba'i man ngag yid bzhin nor bu zhes bya ba",
+      "sanskrit_title": "ma hA bi na ya ka rI pa u pa de sha rad na nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2978",
+      "otani": "Otani 4979",
+      "tibetan_title": "'phags pa tshogs kyi bdag po'i gtor ma'i cho ga",
+      "sanskrit_title": "Ar+ya gaH na pa ti ba li bi d+hi",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2979",
+      "otani": "Otani 4980",
+      "tibetan_title": "bgegs bdag gi sbyin sreg gi cho ga rab tu bshad pa",
+      "sanskrit_title": "ho ma g+hI bi di nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2980",
+      "otani": "Otani 4981",
+      "tibetan_title": "shin tu myur ba'i lha chen po bgegs kyi rgyal po'i sgrub thabs zhes bya ba",
+      "sanskrit_title": "bu Na de wa ma hA bi g+ha rA dzA sa d+ha nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2981",
+      "otani": "Otani 4982",
+      "tibetan_title": "shin tu myur ba'i lha bgegs chen po bgegs kyi rgyal po bsgrub pa'i thabs shes bya ba",
+      "sanskrit_title": "su bud d+ha ma hA bi g+ha big na na rA dza sa d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2982",
+      "otani": "Otani 4983",
+      "tibetan_title": "dpal tshogs kyi bdag po'i 'khor lo'i gsal byed",
+      "sanskrit_title": "shri ga Na pa ti tsakra sUr+ya",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2983",
+      "otani": "Otani 4984",
+      "tibetan_title": "sngags kyi rgyal po'i dam tshig dngos grub sgrub pa'i thabs shes bya ba",
+      "sanskrit_title": "man+t+ra rA dzA sa ma ya sid+d+ha sA d+ha nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2984",
+      "otani": "Otani 4985",
+      "tibetan_title": "gsal byed nyi ma'i 'khor los dbang du bya ba zhes bya ba",
+      "sanskrit_title": "ka li tsakra sUr+ya wa shaM nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2985",
+      "otani": "Otani 4986",
+      "tibetan_title": "dpal tshogs kyi bdag po zhi ba'i sgrub thabs",
+      "sanskrit_title": "shri ga na pa ti shan ta na sa d+ha na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2986",
+      "otani": "Otani 4987",
+      "tibetan_title": "'phags pa tshogs kyi bdag po yid bzhin nor bu'i sgrub thabs",
+      "sanskrit_title": "Ar+ya ga na pa ta tsin+ta rad na",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2987",
+      "otani": "Otani 4988",
+      "tibetan_title": "'phags pa tshogs kyi bdag po'i sbyin sreg gi cho ga",
+      "sanskrit_title": "ar+ya ga na pa ti/ ho ma bi d+hi",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2989",
+      "otani": "Otani 4990",
+      "tibetan_title": "tshogs kyi bdag po'i gsang ba'i sgrub thabs zhes bya ba",
+      "sanskrit_title": "g+ha na pa ti g+hu ha sa d+ha na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2990",
+      "otani": "Otani 4991",
+      "tibetan_title": "tshogs kyi bdag po la bstod pa",
+      "sanskrit_title": "ga na pa ti stod traM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2991",
+      "otani": "Otani 4992",
+      "tibetan_title": "tshogs kyi bdag po chen po khams gsum dbang sdud dmar po'i sgrub pa'i thabs",
+      "sanskrit_title": "ma hA ga na pa ti d+ha tu tri ka ra ta shi ku ru sa d+hA nAM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2992",
+      "otani": "Otani 4993",
+      "tibetan_title": "'dod pa'i dbang phyug gi bstod pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2993",
+      "otani": "Otani 4994",
+      "tibetan_title": "tshogs kyi bdag po khro bo'i sgrub thabs",
+      "sanskrit_title": "gaH Na pa ti krod+ha ya sa d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2994",
+      "otani": "Otani 4995",
+      "tibetan_title": "tshogs kyi bdag po dam tshig gsang ba'i bsgrub thabs zhes bya ba",
+      "sanskrit_title": "g+ha na pa ti sa ma ma nu sma ra g+ha ga sa d+ha na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2996",
+      "otani": "Otani 4997",
+      "tibetan_title": "a pa ra tsi ta rin chen bzang po'i sgrub thabs zhes bya ba",
+      "sanskrit_title": "a pa ra tsit+ta rad na pha sa da na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2997",
+      "otani": "Otani 4998",
+      "tibetan_title": "nor lha gsang ba'i sgrub thabs",
+      "sanskrit_title": "rad na de ba g+hu h+ya sa d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2998",
+      "otani": "Otani 4999",
+      "tibetan_title": "'phags pa dzam b+ha la la bstod pa zhes bya ba",
+      "sanskrit_title": "Ar+ya 'dzam b+ha la stod tra na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "2999",
+      "otani": "Otani 5000",
+      "tibetan_title": "nor bdag gtso 'khor lnga'i bstod pa dbyig gi char 'bebs zhes bya ba",
+      "sanskrit_title": "ba su pa ti u pa d+h+ya pany+tsa stot+t+ra ba su me g+ha a be sha nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3000",
+      "otani": "Otani 5001",
+      "tibetan_title": "gnod sbyin mo nag mos bsad pa'i sgrub thabs",
+      "sanskrit_title": "yak+Shi ka li ma ra na sa d+ha",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3001",
+      "otani": "Otani 5002",
+      "tibetan_title": "khro bo'i rgyal po khams gsum rnam par rgyal ba'i sgrub thabs zhes bya ba",
+      "sanskrit_title": "kro ta ra tsa tre log kya sa d+ha na na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3002",
+      "otani": "Otani 5003",
+      "tibetan_title": "khro bo chen po bdud rtsi 'khyil pa'i sgrub thabs",
+      "sanskrit_title": "a mr-i ta kro ta tsu la ma ha sa d+ha na",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3003",
+      "otani": "Otani 5004",
+      "tibetan_title": "bcom ldan 'das dpal rdo rje gnod mdzes khro bo'i rgyal po chen po sdang ba thams cad rnam par 'joms pa'i bsgrub thabs",
+      "sanskrit_title": "shri b+ha g+ha ban badzra sup+ta ma ha kro d+ha ra dzA sarba duSh+ta bi d+ha ra sa d+ha na",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3004",
+      "otani": "Otani 5005",
+      "tibetan_title": "khro bo reg tshig gi bsgrub pa'i thabs zhes bya ba",
+      "sanskrit_title": "b+ha ya na kro ta sa tsa na na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3005",
+      "otani": "Otani 5006",
+      "tibetan_title": "reg 'bigs ma'i bsgrub thabs",
+      "sanskrit_title": "b+ha ya shu la stam b+ha san tsa na",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3006",
+      "otani": "Otani 5007",
+      "tibetan_title": "skal 'jog dbang gi cho ga",
+      "sanskrit_title": "a wi shi na tsa tu maM b+hi ti",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3007",
+      "otani": "Otani 5008",
+      "tibetan_title": "khro bo reg tshig gi dam tshig gsang ba'i bsgrub thabs",
+      "sanskrit_title": "b+ha ya kro ta g+hu ya sa ma ya san tsan a",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3008",
+      "otani": "Otani 5009",
+      "tibetan_title": "khro bo reg tshig gi sbyin sreg gi cho ga zhes bya ba",
+      "sanskrit_title": "b+ha ya haM me b+hi ti na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3010",
+      "otani": "Otani 5011",
+      "tibetan_title": "lha chen po gsum gyi bsgrub thabs",
+      "sanskrit_title": "ma hA d+he ba tra san tsa na",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3013",
+      "otani": "Otani 5014",
+      "tibetan_title": "bla ma'i sgrub thabs",
+      "sanskrit_title": "gu ru na mo lo ka",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3014",
+      "otani": "Otani 5015",
+      "tibetan_title": "phyi sgrub kyi rten 'brel",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3015",
+      "otani": "Otani 5016",
+      "tibetan_title": "bla ma sgrubs pa",
+      "sanskrit_title": "gu ru mi ti na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3016",
+      "otani": "Otani 5017",
+      "tibetan_title": "bla ma gsang bar sgrub pa zhes bya ba",
+      "sanskrit_title": "gu h+ya si d+hi na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3018",
+      "otani": "Otani 5019",
+      "tibetan_title": "bla med rigs lnga'i sgrub thabs zhes bya ba",
+      "sanskrit_title": "he ru ka pany+tsa sA d+ha na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3019",
+      "otani": "Otani 5020",
+      "tibetan_title": "dpal rgyud sde lnga'i dkyil 'khor gyi cho ga de kho na nyid bsdus pa gsal ba zhes bya ba",
+      "sanskrit_title": "shrI ma ha tan+t+ra rA dzA phe na ta r+ya t+wa saM gra ha maN+Da la bri b+hi sra b+ha ba nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3020",
+      "otani": "Otani 5021",
+      "tibetan_title": "rkang grangs rin chen phreng ba zhes bya ba",
+      "sanskrit_title": "pa tra rad na ma le na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3021",
+      "otani": "Otani 5022",
+      "tibetan_title": "mngon par rtogs pa mu tig gi phreng ba zhes bya ba",
+      "sanskrit_title": "sa ma ti pa tra ma le",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3022",
+      "otani": "Otani 5023",
+      "tibetan_title": "dpal 'jam pa'i rdo rje la sogs pa'i mngon par rtogs pa kun las btus pa rdzogs pa'i rnal 'byor gyi phreng ba zhes bya ba",
+      "sanskrit_title": "shri many dzu badzra ma ti kra ma a b+hi sa ma ya sa mun tsa nis pan na yo ga a ba li na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3023",
+      "otani": "Otani 5024",
+      "tibetan_title": "man ngag gi snye ma zhes bya ba rgyud thams cad kyi skyed rdzogs thun mong du bstan pa",
+      "sanskrit_title": "u pa d+he sha man dza ri sar+tha tan tra u ta paN na u pa pan+na sa ma n+ya b+h+yak+Sha nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3024",
+      "otani": "Otani 5025",
+      "tibetan_title": "rten 'brel snying po'i sngags them zhib mor bkod pa zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3025",
+      "otani": "Otani 5026",
+      "tibetan_title": "g.yung drung grub pa zhes bya ba'i 'grel pa",
+      "sanskrit_title": "a sma ra si ti bri ti na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3026",
+      "otani": "Otani 5027",
+      "tibetan_title": "dkyil 'khor gyi rnam par dbye ba'i rab tu byed pa zhes bya ba",
+      "sanskrit_title": "maN+Da la bi ri sha ya pra ka ra na na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3027",
+      "otani": "Otani 5028",
+      "tibetan_title": "sems rin po che sbyong bar byed pa zhes bya pa",
+      "sanskrit_title": "tsi ta rad na bi sho da na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3028",
+      "otani": "Otani 5029",
+      "tibetan_title": "rgyal ba skyed ma'i rnam par dbye ba nges par bstan pa",
+      "sanskrit_title": "dzi na dza na ni bi b+ha ga nir de sha",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3029",
+      "otani": "Otani 5030",
+      "tibetan_title": "mkhar 'gro ma'i dkyil 'khor gyi sgrub thabs kyi rim pa zhes bya ba",
+      "sanskrit_title": "d+ha gi ni ma d+ha la no pi ka na ma kra ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3030",
+      "otani": "Otani 5031",
+      "tibetan_title": "'khor ba rtsad nas gcod pa gtan tshigs 'khor lo'i man ngag",
+      "sanskrit_title": "sam sa ra mu la tshe d+ha he du tsakra d+he sha",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3031",
+      "otani": "Otani 5032",
+      "tibetan_title": "'khor ba rtsad nas gcod pa bdud rtsi dri med kyi man ngag",
+      "sanskrit_title": "sam sa ra mu la tshe d+ha b+hi ma la arma ti d+hi sha",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3032",
+      "otani": "Otani 5033",
+      "tibetan_title": "'khor ba rtsad nas gcod pa rdo rje sems dpa'i man ngag",
+      "sanskrit_title": "saM sa ra mu la tshe d+ha badzra sa ta d+he sha",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3033",
+      "otani": "Otani 5034",
+      "tibetan_title": "'khor ba rtsad nas gcod pa gser gyi thigs pa'i gdams ngag",
+      "sanskrit_title": "sam sa ra mu la tshe d+ha kan tsa bin du d+he sha",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3034",
+      "otani": "Otani 5035",
+      "tibetan_title": "'khor ba rtsad nas gcod pa snyan rgyud yi ge med pa'i gdams ngag",
+      "sanskrit_title": "saM sa mu la tshe d+ha karna tan+t+ra Na k+sha ra de sha",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3035",
+      "otani": "Otani 5036",
+      "tibetan_title": "lta ba nam mkha' dang mnyam pa'i rgyud kyi dka' 'grel",
+      "sanskrit_title": "dri sha a kar sha ni san ta tan tra pan tsi ka",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3036",
+      "otani": "Otani 5037",
+      "tibetan_title": "bsgom pa rgya mtsho dang mnyam pa'i rgyud kyi dka' 'grel",
+      "sanskrit_title": "ba b+hi ba sa mun dra sa man ta tan+t+ra pan tsi ka",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3037",
+      "otani": "Otani 5038",
+      "tibetan_title": "spyod pa nyi zla dang mnyam pa'i rgyud kyi dka' 'grel",
+      "sanskrit_title": "tsar+ya sur+ya tsan+t+ra sa ma ta Ta na tre pan tsi ka",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3038",
+      "otani": "Otani 5039",
+      "tibetan_title": "'bras bu rin po che dang mnyam pa'i rgyud kyi dka' 'grel",
+      "sanskrit_title": "pha laM ma hA rat+na sa ma ta tan+t+re pan tsi ka",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3039",
+      "otani": "Otani 5040",
+      "tibetan_title": "lta ba ye shes mdzod chen chos kyi dbyings",
+      "sanskrit_title": "driSh+Ta dz+nyA na ma hA ko sha d+harma d+ha du",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3040",
+      "otani": "Otani 5041",
+      "tibetan_title": "bsgom pa ye shes gsal ba chos kyi dbyings",
+      "sanskrit_title": "b+ha bi ba dz+nya na pra ka sa d+harma d+ha du",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3041",
+      "otani": "Otani 5042",
+      "tibetan_title": "spyod pa ye shes 'bar ba chos kyi dbyings",
+      "sanskrit_title": "tsar+ya dz+nya nA dz+wa ka d+harma d+ha du",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3045",
+      "otani": "Otani 5046",
+      "tibetan_title": "dam tshig lnga bcu pa",
+      "sanskrit_title": "sa ma ya pany+tsa shi ka",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3046",
+      "otani": "Otani 5047",
+      "tibetan_title": "'bras bu ye shes sa gcig chos kyi dbyings",
+      "sanskrit_title": "pha la dz+nya nA d+harma d+ha d+hu",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3047",
+      "otani": "Otani 5048",
+      "tibetan_title": "dpal sa ra ha dang mnga' bdag mai tri pa'i zhu ba zhus lan",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3048",
+      "otani": "Otani 5049",
+      "tibetan_title": "dpal nag po rdo rje zhabs kyi mi zad pa'i mdzod kyi rgya cher 'grel pa",
+      "sanskrit_title": "shri kriSh+Na badzra pA da do ha ko Sh+Ti kA",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3050",
+      "otani": "Otani 5051",
+      "tibetan_title": "'chi med bsgrub pa zhes bya ba",
+      "sanskrit_title": "a mr-i ti sing ti na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3051",
+      "otani": "Otani 5052",
+      "tibetan_title": "'chi med kyi 'phrang sel",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3809",
+      "otani": "Otani 5053",
+      "tibetan_title": "'chi med grub pa'i sdom pa bzhi'i 'khrul 'khor gyi yig sna",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3810",
+      "otani": "Otani 5054",
+      "tibetan_title": "'chi med grub pa'i dngos gzhi bcu bdun gyi rnam par bzhag pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3811",
+      "otani": "Otani 5055",
+      "tibetan_title": "'chi med grub pa'i rtsa mdud brgyad 'grol ba'i 'khrul 'khor gyi yig sna",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3812",
+      "otani": "Otani 5056",
+      "tibetan_title": "rdo rje bzlas pa'i rnam gzhag",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3812",
+      "otani": "Otani 5057",
+      "tibetan_title": "rdo rje bzlas pa'i rnam gzhag",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3813",
+      "otani": "Otani 5058",
+      "tibetan_title": "'chi med grub pa'i 'grel pa zhes bya ba",
+      "sanskrit_title": "a mri ti si d+d+hi bri ti na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3814",
+      "otani": "Otani 5059",
+      "tibetan_title": "'chi med grub pa'i gsang ba rdo rje bzlas pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3815",
+      "otani": "Otani 5060",
+      "tibetan_title": "ngo sprod chen po'i rtsa ba zhes bya ba",
+      "sanskrit_title": "ma hA mu la Da Ta da na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3816",
+      "otani": "Otani 5061",
+      "tibetan_title": "ngo sprod chen po'i 'grel pa zhes bya ba",
+      "sanskrit_title": "ma hA Di Ta na da bri ti na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3817",
+      "otani": "Otani 5062",
+      "tibetan_title": "shing rta 'khor lo'i 'khrul 'khor bco lnga pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3818",
+      "otani": "Otani 5063",
+      "tibetan_title": "bum pa can gyi 'khrul 'khor bco lnga pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3819",
+      "otani": "Otani 5064",
+      "tibetan_title": "mgo 'thur dbyug pa'i 'khrul 'khor",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3820",
+      "otani": "Otani 5065",
+      "tibetan_title": "rtsa stong 'khyil pa'i 'khrul 'khor",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3821",
+      "otani": "Otani 5066",
+      "tibetan_title": "gang ba can gyi 'khrul 'khor",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3822",
+      "otani": "Otani 5067",
+      "tibetan_title": "tsan+d+ha li'i 'khrul 'khor",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3823",
+      "otani": "Otani 5068",
+      "tibetan_title": "'chi med grub pa'i dben pa brgyad las lus dben pa'i skyon bcos thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3824",
+      "otani": "Otani 5069",
+      "tibetan_title": "'chi med grub pa'i rtsa dben pa'i yig sna",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3825",
+      "otani": "Otani 5070",
+      "tibetan_title": "'chi med grub pa'i thig le dben pa'i skyon bcos thabs kyi man ngag",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3826",
+      "otani": "Otani 5071",
+      "tibetan_title": "'chi med grub pa'i rlung dben pa'i skyon bcos pa'i thabs kyi man ngag",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3827",
+      "otani": "Otani 5072",
+      "tibetan_title": "'chi med grub pa'i sems dben pa'i skyon bcos pa'i thabs kyi man ngag",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3828",
+      "otani": "Otani 5073",
+      "tibetan_title": "'chi med grub pa'i zla ba dben pa'i skyon bcos thabs kyi man ngag",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3829",
+      "otani": "Otani 5074",
+      "tibetan_title": "nyi ma dben skyon bcos pa'i thabs kyi man ngag",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3830",
+      "otani": "Otani 5075",
+      "tibetan_title": "'chi med grub pa'i dben pa brgyad kyi skyon bcos thabs kyi man ngag",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3831",
+      "otani": "Otani 5076",
+      "tibetan_title": "'chi med grub pa'i khams lnga'i man ngag",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3832",
+      "otani": "Otani 5077",
+      "tibetan_title": "'chi med grub pa'i sdom pa bzhi'i skyon bcos thabs kyi man ngag",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3833",
+      "otani": "Otani 5078",
+      "tibetan_title": "rlung skyon sel ba'i go rim",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3834",
+      "otani": "Otani 5079",
+      "tibetan_title": "'chi med grub pa'i dkyil 'khor zhes bya ba",
+      "sanskrit_title": "a mr-i ta si d+hi man+d+ha la b+hi ti na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3835",
+      "otani": "Otani 5080",
+      "tibetan_title": "maN+Dala dpe chung ltar bris",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3836",
+      "otani": "Otani 5081",
+      "tibetan_title": "phyag rgya chen po'i grub mtha'i man ngag lam du bslang ba'i rim pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3837",
+      "otani": "Otani 5082",
+      "tibetan_title": "rdo rje sems dpa'i zhus lan",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3838",
+      "otani": "Otani 5083",
+      "tibetan_title": "rdo rje theg pa'i rtsa ba'i ltang ba",
+      "sanskrit_title": "badzra ya na mu le pa ti",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3839",
+      "otani": "Otani 5084",
+      "tibetan_title": "yan lag gi nyes pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3840",
+      "otani": "Otani 5085",
+      "tibetan_title": "dam pa dang po'i rgyud las gsungs pa'i ltung ba bco lnga pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3841",
+      "otani": "Otani 5089",
+      "tibetan_title": "tshogs kyi 'khor lo'i mchod pa'i rim pa zhes bya ba",
+      "sanskrit_title": "g+ha gaha tsakra pid ti na ma kra maM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3842",
+      "otani": "Otani 5090",
+      "tibetan_title": "tsan dan gyi sku rgya nag na bzhugs pa'i byon tshul",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3843",
+      "otani": "Otani 5091",
+      "tibetan_title": "grub thob brgyad cu rtsa bzhi'i lo rgyus",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3844",
+      "otani": "Otani 5092",
+      "tibetan_title": "grub thob brgyad cu rtsa bzhi'i rtogs brjod do ha 'grel pa dang bcas pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3845",
+      "otani": "Otani 5093",
+      "tibetan_title": "rin chen 'phreng ba zhes bya ba",
+      "sanskrit_title": "rat+na mA la nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3846",
+      "otani": "Otani 5094",
+      "tibetan_title": "mkha' 'gro ma dma' nye dbang gi glu",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3847",
+      "otani": "Otani 5095",
+      "tibetan_title": "zab lam thun mong ma yin pa gcig rdzogs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3848",
+      "otani": "Otani 5096",
+      "tibetan_title": "grub pa'i dbang phyug paN+Di ta chen po shrI ba na ratna'i zhal lung rin po che'i snying po'i phreng ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3849",
+      "otani": "Otani 5099",
+      "tibetan_title": "zhal lung rin po che'i phreng ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3850",
+      "otani": "Otani 5101",
+      "tibetan_title": "bstod pa rin po che bdun pa",
+      "sanskrit_title": "sap+ta mi rat+na sto traM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3851",
+      "otani": "Otani 5102",
+      "tibetan_title": "dpal sha ba ra'i bstod pa rin po che",
+      "sanskrit_title": "shrI sha ba ra sto tra rat+naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3852",
+      "otani": "Otani 5103",
+      "tibetan_title": "dpal rak+sha bdag nyid chen po'i bstan bcos",
+      "sanskrit_title": "shrI ru d+h+rak+Sha ma hAt+mA na shA stra",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3853",
+      "otani": "Otani 5105",
+      "tibetan_title": "'jig rten mgon po zhal bcu gcig pa'i sgrub thabs",
+      "sanskrit_title": "e ka da sha bak+t+ra lo ka nA tha sA d+ha na",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3854",
+      "otani": "Otani 5106",
+      "tibetan_title": "'jig rten mgon po ri khrod pa'i sgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3855",
+      "otani": "Otani 5107",
+      "tibetan_title": "gso sbyong rang gi blang ba'i cho ga",
+      "sanskrit_title": "po Sha d+ha sbA yaM gra ha na bi d+hi",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3856",
+      "otani": "Otani 5109",
+      "tibetan_title": "o rgyan las 'byung ba'i 'jam pa'i rdo rje'i sgrub thabs",
+      "sanskrit_title": "o Di ya no da b+ha wa many+dzu badzra sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3857",
+      "otani": "Otani 5113",
+      "tibetan_title": "dpas o rgyan gyi rim pa sgrol ma'i mngon par rtogs pa zhes bya ba",
+      "sanskrit_title": "shrI o Di ya Na tA ra kra ma a b+hi sa ma ya nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3858",
+      "otani": "Otani 5114",
+      "tibetan_title": "byang phyogs nas 'byung ba rdo rje sgrol ma'i sgrub thabs",
+      "sanskrit_title": "ut+ta ro ta b+ha wa badzra tA ra sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3859",
+      "otani": "Otani 5115",
+      "tibetan_title": "ral pa gcig ma dkar mo'i sgrub thabs",
+      "sanskrit_title": "shukla e ka dza nA sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3860",
+      "otani": "Otani 5117",
+      "tibetan_title": "ral gcig ma'i kun tu spyod pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3861",
+      "otani": "Otani 5120",
+      "tibetan_title": "dpal rnam par snang mdzad kyi sgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3862",
+      "otani": "Otani 5121",
+      "tibetan_title": "dpal rdo rje snang byed gser zhes bya pa'i sgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3863",
+      "otani": "Otani 5122",
+      "tibetan_title": "bdud rtsi 'od kyi sgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3864",
+      "otani": "Otani 5125",
+      "tibetan_title": "zhi bar byed pa sna tshogs yum gyi sgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3865",
+      "otani": "Otani 5126",
+      "tibetan_title": "'phags ma skul byed ma'i sgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3866",
+      "otani": "Otani 5127",
+      "tibetan_title": "nor 'dzin ma'i rtog pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3867",
+      "otani": "Otani 5128",
+      "tibetan_title": "nor dpal mo'i rtog pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3868",
+      "otani": "Otani 5136",
+      "tibetan_title": "'dus pa las byung ba chu sbyin dbang po'i sgrub thabs",
+      "sanskrit_title": "sa mA dza nish+tsa ra dza ken+t+ra sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3869",
+      "otani": "Otani 5137",
+      "tibetan_title": "rnam thos kyi bu'i sgrub thabs",
+      "sanskrit_title": "bai shra ba Na sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3870",
+      "otani": "Otani 5138",
+      "tibetan_title": "lus ngan chen po'i sgrub thabs",
+      "sanskrit_title": "ma hA ku be ra sA d+ha na",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3871",
+      "otani": "Otani 5139",
+      "tibetan_title": "khro bo chen po rdo rje sa 'og gi sgrub thabs",
+      "sanskrit_title": "badzra pa tA la ma hA kro d+ha sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3872",
+      "otani": "Otani 5140",
+      "tibetan_title": "gtsug tor 'khor los bsgyur ba'i sgrab thabs",
+      "sanskrit_title": "uSh+NI Sha tsakra warti sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3873",
+      "otani": "Otani 5141",
+      "tibetan_title": "gtsug tor rnam par rgyal ba mchod thabs",
+      "sanskrit_title": "uSh+NI Sha bi dza ya artsa naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3874",
+      "otani": "Otani 5144",
+      "tibetan_title": "'dod pa'i rgyal po'i sgrub thabs",
+      "sanskrit_title": "Tak+ki rA dza sAd+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3874",
+      "otani": "Otani 5173",
+      "tibetan_title": "dpal 'dod pa'i rgyal po'i sgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3875",
+      "otani": "Otani 5145",
+      "tibetan_title": "rdo rje dbyug pa sngon po'i sgrub thabs",
+      "sanskrit_title": "badzra nI la daN+D+ya sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3876",
+      "otani": "Otani 5149",
+      "tibetan_title": "'khrul 'khor gyi sgrub thabs",
+      "sanskrit_title": "yan+t+ra sA d+ha na",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3877",
+      "otani": "Otani 5152",
+      "tibetan_title": "lha dbang bskur ba'i cho ga",
+      "sanskrit_title": "de ba se ka bi d+hi",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3878",
+      "otani": "Otani 5154",
+      "tibetan_title": "bya ba'i sbyor ba",
+      "sanskrit_title": "kri ya yo ga",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3879",
+      "otani": "Otani 5155",
+      "tibetan_title": "khro mo'i dbang phyug rnam par rgyal ma'i sgrub thabs",
+      "sanskrit_title": "bi dza ya kro d+he sh+wa rI s+wa d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3880",
+      "otani": "Otani 5156",
+      "tibetan_title": "dpal 'khor lo sdom pa lhan cig skyes pa'i sgrub thabs",
+      "sanskrit_title": "shri tsakra sam+ba ra sa ha dza sA d+ha na",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3881",
+      "otani": "Otani 5158",
+      "tibetan_title": "dpal 'khor lo sdom pa gnyis su med pa dpa' po'i sgrub thabs",
+      "sanskrit_title": "shri tsakra saM b+ha ra a d+wa ya bI ra sA d+ha na",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3882",
+      "otani": "Otani 5159",
+      "tibetan_title": "mdor bsdus pa'i he ru ka'i sgrub thabs",
+      "sanskrit_title": "saM k+Ship to he ru ka sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3883",
+      "otani": "Otani 5160",
+      "tibetan_title": "dgyes pa rde rje'i sgrub thabs man ngag gi gnas zhes bya ba",
+      "sanskrit_title": "su ba de sha s+thA he ba dzra sA s+ha na nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3884",
+      "otani": "Otani 5161",
+      "tibetan_title": "dpal he ru ka rje btsun gyi sgrub thabs mdor bsdus pa",
+      "sanskrit_title": "shrI he ru ka b+haT+TA rA ga saMk+Ship+ta sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3885",
+      "otani": "Otani 5162",
+      "tibetan_title": "dpal gtum po chen po phyag na rdo rje'i sgrub thabs",
+      "sanskrit_title": "ma hA su kha s+wa d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3886",
+      "otani": "Otani 5163",
+      "tibetan_title": "'phags pa gos sngon po can gyi sgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3887",
+      "otani": "Otani 5164",
+      "tibetan_title": "gnod sbyin gyi sde dpon chen po gos sngon po can gyi sgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3888",
+      "otani": "Otani 5165",
+      "tibetan_title": "rje btsun phyag na rdo rje'i sgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3889",
+      "otani": "Otani 5166",
+      "tibetan_title": "'phags pa lag na rdo rje gos sngon can gyi cho ga zhes bya ba'i gzungs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3890",
+      "otani": "Otani 5167",
+      "tibetan_title": "mkha' lding gi sgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3891",
+      "otani": "Otani 5168",
+      "tibetan_title": "rdo rje gtum mo'i sgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3892",
+      "otani": "Otani 5169",
+      "tibetan_title": "rgan byad ma'i sgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3893",
+      "otani": "Otani 5170",
+      "tibetan_title": "rang byin gyis brlab pa'i nag po chen sgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3894",
+      "otani": "Otani 5174",
+      "tibetan_title": "ma hA kA la dmar po'i sgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3895",
+      "otani": "Otani 5175",
+      "tibetan_title": "kA la chen po'i sgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3896",
+      "otani": "Otani 5176",
+      "tibetan_title": "tshogs kyi dbang ldan chen po sgrub pa'i thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3897",
+      "otani": "Otani 5177",
+      "tibetan_title": "sgrub thabs rgya mtsho'i kha skong gi chos tshan bdun cu rtsa gcig po'i dkar chag",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3898",
+      "otani": "Otani 5178",
+      "tibetan_title": "rdo rje'i lam bzang po zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3899",
+      "otani": "Otani 5179",
+      "tibetan_title": "rnal 'byor gyi glu",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3900",
+      "otani": "Otani 5180",
+      "tibetan_title": "bcom ldan 'das rdo rje sems dpa'i sgrub thabs rang byin rlab pa'i man ngag gi rim pa zhes bya ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3901",
+      "otani": "Otani 5181",
+      "tibetan_title": "yon po srong ba'i man ngag",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3902",
+      "otani": "Otani 5182",
+      "tibetan_title": "las sna tshogs spyod pa'i man ngag",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3903",
+      "otani": "Otani 5211",
+      "tibetan_title": "bcom ldan 'das ma shes rab kyi pha rol tu phyin pa 'phags ma tshigs su bcad pa bdun ma zhes bya ba'i mdo",
+      "sanskrit_title": "Ar+ya sap+ta sh+lo ki kA/ ba ga ba ti pradz+nyA pA ra mi tA sU tra",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3904",
+      "otani": "Otani 5221",
+      "tibetan_title": "shes rab kyi pha rol tu phyin pa'i snyin po zhes bya ba'i 'grel pa",
+      "sanskrit_title": "pradz+nyA pA ra mi tA h+r-i da ya nA ma TI kA",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3905",
+      "otani": "Otani 5261",
+      "tibetan_title": "dbu ma la 'jug pa zhes bya ba'i tshig le'ur byas pa",
+      "sanskrit_title": "ma d+h+ya mA ba tA ra kA ri kA nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3907",
+      "otani": "Otani 5382",
+      "tibetan_title": "snying po bsdu ba zhes bya ba",
+      "sanskrit_title": "saM gra ha gar+b+ha nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3908",
+      "otani": "Otani 5417",
+      "tibetan_title": "dge ba bcu'i las kyi lam bstan pa",
+      "sanskrit_title": "da sha ku sha pa karma pa thA ni rde sha",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3909",
+      "otani": "Otani 5428",
+      "tibetan_title": "yan lag bdun pa'i cho ga tshigs su bcad pa nyi shu pa rin po che'i phreng ba las 'byung ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3910",
+      "otani": "Otani 5429",
+      "tibetan_title": "sems can mgu bar bya ba'i tshigs su bcad pa",
+      "sanskrit_title": "sa t+wA d+ha d+ha rgya gA thA",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3911",
+      "otani": "Otani 5434",
+      "tibetan_title": "chos rjes su dran pa",
+      "sanskrit_title": "d+harmA nu smri ti",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3912",
+      "otani": "Otani 5435",
+      "tibetan_title": "dge 'dun rjes su dran pa",
+      "sanskrit_title": "sang g+ha a nu smr-i ti",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3913",
+      "otani": "Otani 5436",
+      "tibetan_title": "'dod pa'i yon tan rnam pa lnga'i nyes dmigs bshad pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3914",
+      "otani": "Otani 5437",
+      "tibetan_title": "'phags pa rtogs pa chen po yongs su rgyas pa'i mdo sde'i sdig pa bshags pa dang sgrub pa'i cho ga",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3915",
+      "otani": "Otani 5461",
+      "tibetan_title": "bde bar gshegs pa'i gzhung rnam par 'byed pa'i tshig le'ur byas pa",
+      "sanskrit_title": "su ga ta ma ho bi b+haM ga kA ri kA",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3916",
+      "otani": "Otani 5462",
+      "tibetan_title": "yon tan bdun bstan pa'i gtam",
+      "sanskrit_title": "sap+ta gu Na ba ra na nA kA thA",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3917",
+      "otani": "Otani 5467",
+      "tibetan_title": "rten cing 'brel par 'byung ba'i snying po'i tshig le'ur byas pa",
+      "sanskrit_title": "pra ti t+ya sa mut+pA da h+r-i da ya lA ri kA",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3919",
+      "otani": "Otani 5470",
+      "tibetan_title": "byang chub kyi sems kyi rnam par bshad pa",
+      "sanskrit_title": "bo d+hi tsit+ta bi bA ra NaM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3920",
+      "otani": "Otani 5472",
+      "tibetan_title": "srid pa las 'das pa",
+      "sanskrit_title": "b+ha ba saM kran+ta",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3921",
+      "otani": "Otani 5480",
+      "tibetan_title": "dri ma med pa'i rin po che'i phrin yig ces bya ba",
+      "sanskrit_title": "bi ma la rad+na le kha nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3923",
+      "otani": "Otani 5706",
+      "tibetan_title": "tshad ma rigs par 'jug pa'i sgo zhes bya ba'i rab tu byed pa",
+      "sanskrit_title": "n+yA ya pra be sha na ma pra mA Ni pra ka ra NaM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3924",
+      "otani": "Otani 5786",
+      "tibetan_title": "nye bsgyur gyi mtshan nyid kyi bshad pa",
+      "sanskrit_title": "u pa sarga lak+Sha Na b+hA sha taH",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3925",
+      "otani": "Otani 5804",
+      "tibetan_title": "sangs rgyas kyi sku'i gzugs brnyan gyi mtshan nyid mtho bcu pa shing nya gro dha ltar chu zheng gab zhes bya ba",
+      "sanskrit_title": "shasta la n+ya gro d+ha pa ri maN+Da ka bud+d+ha pra ti ma la ga sha na mA",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3926",
+      "otani": "Otani 5806",
+      "tibetan_title": "ri mo'i mtshan nyid",
+      "sanskrit_title": "tsit+ta lak+Sha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3927",
+      "otani": "Otani 5808",
+      "tibetan_title": "spos sbyor rin po che'i phreng ba zhes bya ba",
+      "sanskrit_title": "du pa yo ga rat+na ma la na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3928",
+      "otani": "Otani 5811",
+      "tibetan_title": "rten cing 'brel par 'byung ba'i 'khor lo zhes bya ba",
+      "sanskrit_title": "pra ti t+ya sa mut+pa dA nA ma tsakra",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3929",
+      "otani": "Otani 5812",
+      "tibetan_title": "shA ri'i bu'i brgyad pa",
+      "sanskrit_title": "shA ri pu trASh+Ta ka",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3930",
+      "otani": "Otani 5814",
+      "tibetan_title": "mo rtsis",
+      "sanskrit_title": "ke pa li",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3931",
+      "otani": "Otani 5816",
+      "tibetan_title": "A rya bya ka ra Na'i nang nas 'byung ba gza' dang rgyu skar gyi rang bzhin bshad pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3932",
+      "otani": "Otani 5831",
+      "tibetan_title": "bya rog gi skad brtag par bya ba",
+      "sanskrit_title": "kA ka dza ri taM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3933",
+      "otani": "Otani 5838",
+      "tibetan_title": "sgra'i rnam par dbye ba bstan pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3934",
+      "otani": "Otani 5864",
+      "tibetan_title": "shes rab kyi pha rol tu phyin pa rdo rje gcod pa bshad pa'i bshad sbyar gyi tshig le'ur byas pa",
+      "sanskrit_title": "badzra ts+tshe di kA yA/ pradz+nyA oA ra mi tA ya/ byA khyA no pa na bin+d+ha na kA ri kA",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3935",
+      "otani": "Otani 5871",
+      "tibetan_title": "'phags pa shes rab kyi pha rol tu phyin pa tshigs su bcad pa chen po zhes bya ba",
+      "sanskrit_title": "Ar+ya pradz+nya pa ra mi ta/ ma hA pa ri pri tsha nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3936",
+      "otani": "Otani 5872",
+      "tibetan_title": "byang chub sems dpa'i spyod pa la 'jug pa'i bshad pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3937",
+      "otani": "Otani 5874",
+      "tibetan_title": "las kyi sgrib pa thams cad rnam par 'thag par byed pa'i cho ga",
+      "sanskrit_title": "sarba karma A ba ra Na bi shud+dha ka ra bi d+hi",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3938",
+      "otani": "Otani 5894",
+      "tibetan_title": "su pa'i mtha' rin chen 'byung gnas zhes bya ba",
+      "sanskrit_title": "su pan+ta rat+na ka ra nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3939",
+      "otani": "Otani 5913",
+      "tibetan_title": "pA Ni ni'i byings kyi mdo",
+      "sanskrit_title": "pA Ni ni d+hA tu sU traH",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3941",
+      "otani": "Otani 5916",
+      "tibetan_title": "'phrul gyi me long dgu bskor",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3942",
+      "otani": "Otani 5942",
+      "tibetan_title": "chos kyi sbyin pa'i bsngo ba chung ba",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3944",
+      "otani": "Otani 5953",
+      "tibetan_title": "rig sngags kyi rgyal mo rma bya chen mo las gsungs pa'i smon lam dang bden tshigs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3953",
+      "otani": "Otani 5700",
+      "tibetan_title": "tshad ma kun las btus pa",
+      "sanskrit_title": "pra mA Na sa muts+tsha ya",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3954",
+      "otani": "Otani 5702",
+      "tibetan_title": "tshad ma kun las btus pa'i 'grel pa",
+      "sanskrit_title": "pra ma Ni sa muny+tsa ya br-it+ti",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3966",
+      "otani": "Otani 2178",
+      "tibetan_title": "yi ge bdun pa'i sgrub thabs",
+      "sanskrit_title": "sap+ta ak+Sha ra sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3983",
+      "otani": "Otani 3167",
+      "tibetan_title": "rdo rje phag mo'i sgrub thabs",
+      "sanskrit_title": "badzra bA rA hi s+wa d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3984",
+      "otani": "Otani 4118",
+      "tibetan_title": "rdo rje phag mo'i sgrub thabs",
+      "sanskrit_title": "badzra bA rA hi sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3985",
+      "otani": "Otani 4119",
+      "tibetan_title": "rdo rje phag mo'i sgrub thabs",
+      "sanskrit_title": "badzra bA rA hi sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3986",
+      "otani": "Otani 4121",
+      "tibetan_title": "rdo rje phag mo'i sgrub thabs",
+      "sanskrit_title": "badzra bA rA hi sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "3998",
+      "otani": "Otani 3413",
+      "tibetan_title": "spyan dbye ba'i cho ga",
+      "sanskrit_title": "praSh+Ta TiSh+Tha",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "4000",
+      "otani": "Otani 2418",
+      "tibetan_title": "gtor ma'i cho ga",
+      "sanskrit_title": "ba liM bi d+hi",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "4005",
+      "otani": "Otani 3915",
+      "tibetan_title": "gtor ma'i cho ga",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "4009",
+      "otani": "Otani 2678",
+      "tibetan_title": "rdo rje sems dpa'i sgrub thabs zhes bya ba",
+      "sanskrit_title": "badzra sat+wa sA d+ha nAM nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "4020",
+      "otani": "Otani 2630",
+      "tibetan_title": "dpal nag po chen po'i sgrub thabs zhes bya ba",
+      "sanskrit_title": "shrI ma hA kA la sA d+hA naM nA ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "4023",
+      "otani": "Otani 5357",
+      "tibetan_title": "spyod pa bsdus pa'i sgron ma",
+      "sanskrit_title": "tsar+ya sang gra hA pa dI pa",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "4024",
+      "otani": "Otani 2846",
+      "tibetan_title": "dkyil 'khor gyi cho ga",
+      "sanskrit_title": "maN+Da la bi d+hi",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "4040",
+      "otani": "Otani 4582",
+      "tibetan_title": "maN+Dala gyi cho ga",
+      "sanskrit_title": "maN+Da la bi d+hi",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "4041",
+      "otani": "Otani 4583",
+      "tibetan_title": "maN+Dala gyi cho ga",
+      "sanskrit_title": "maN+Da la bi d+hi",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "4045",
+      "otani": "Otani 3697",
+      "tibetan_title": "dpal phyag na rdo rje gos sngon po can gyi gzungs kyi gtor ma'i cho ga zhes bya ba",
+      "sanskrit_title": "shrI badzra pA Ni nI laM ba ra d+ha ra kal paM pa li ta bi d+hi na ma",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "4079",
+      "otani": "Otani 3560",
+      "tibetan_title": "'phags pa spyan ras gzigs dbang phyug la bstod pa",
+      "sanskrit_title": "Ar+ya ba lo ki te sh+wa rA ya sto tra",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "4080",
+      "otani": "Otani 3561",
+      "tibetan_title": "'phags pa spyan ras gzigs dbang phyug gi bstod pa",
+      "sanskrit_title": "Ar+ya a ba lo ki te sh+wa ra sto tra",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "4081",
+      "otani": "Otani 3906",
+      "tibetan_title": "bsrung ba'i 'khor lo",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "4236",
+      "otani": "Otani 5629",
+      "tibetan_title": "'phags pa gzhi thams cad yod par smra ba'i dge tshul gyi tshig le'ur byas pa",
+      "sanskrit_title": "Ar+ya mU la sarbA sti bA di shra ma Ne ra kA ri kA",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "4251",
+      "otani": "Otani 4116",
+      "tibetan_title": "bdag med ma'i sgrub thabs",
+      "sanskrit_title": "nai rAd+ma sA d+ha naMs",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "4252",
+      "otani": "Otani 4117",
+      "tibetan_title": "bdag med ma'i sgrub thabs",
+      "sanskrit_title": "nai rAd+mA sA d+ha naM",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "4269",
+      "otani": "Otani 2520",
+      "tibetan_title": "sgyu 'phrul chen mo'i sgrub thabs",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "4292",
+      "otani": "Otani 2864",
+      "tibetan_title": "'jigs byed kyi bstod pa",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "4293",
+      "otani": "Otani 2865",
+      "tibetan_title": "dpal rdo rje 'jigs byed kyi bstod pa",
+      "sanskrit_title": "shrI badzra b+hai ra ba stu ti",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "4317",
+      "otani": "Otani 3901",
+      "tibetan_title": "gtsug tor dri ma med pa'i gzungs kyi cho ga",
+      "sanskrit_title": "",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "4332",
+      "otani": "Otani 5678",
+      "tibetan_title": "mi dge ba bcu'i las kyi lam bstan pa",
+      "sanskrit_title": "da sha ku sha la karma pa thA nir de sha",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "4343",
+      "otani": "Otani 4874",
+      "tibetan_title": "'phags ma sgrol ma la bstod pa",
+      "sanskrit_title": "ar+ya ta ra stod tra",
+      "edition": "Tanjur"
+    },
+    {
+      "kernel_id": "4344",
+      "otani": "Otani 4875",
+      "tibetan_title": "'phags ma sgrol ma la bstod pa",
+      "sanskrit_title": "ar+ya ta ra stod tra",
+      "edition": "Tanjur"
+    }
+  ],
+  "texts_with_taisho_parallels": [
+    {
+      "kernel_id": "733",
+      "otani": "Otani 398",
+      "tibetan_title": "'phags ma lha mo chen mo dpal lung bstan pa",
+      "sanskrit_title": "ārya-śrīmahādevī-vyākaraNa",
+      "edition": "Kanjur",
+      "taisho_parallels": {
+        "from_lancaster": [
+          {
+            "taisho": "T1253",
+            "k_number": "T1253",
+            "has_tohoku": true,
+            "tohoku": [
+              "739"
+            ]
+          }
+        ],
+        "from_concordance": [
+          "T21n1253"
+        ]
+      }
+    },
+    {
+      "kernel_id": "910",
+      "otani": "Otani 368",
+      "tibetan_title": "'phags pa spyan ras gzigs dbang phyug phyag stong du sprul pa rgya chen po yong su rdzogs pa thogs pa med par thug rje chen po dang ldan pa'i gzungs",
+      "sanskrit_title": "ārya-avalokiteśvarasahasrikabhujalocananirmāNavistāraparipūrNāsaṅgamahākāruNika-dhāraNī",
+      "edition": "Kanjur",
+      "taisho_parallels": {
+        "from_lancaster": [
+          {
+            "taisho": "T1060",
+            "k_number": "T1060",
+            "has_tohoku": true,
+            "tohoku": [
+              "690",
+              "691",
+              "897"
+            ]
+          }
+        ],
+        "from_concordance": [
+          "T20n1060"
+        ]
+      }
+    }
+  ]
+}
