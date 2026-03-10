@@ -272,12 +272,11 @@ def load_taisho_sanskrit_titles() -> dict[str, list[str]]:
     # --- Lancaster ---
     lancaster_path = root / "lancaster_taisho_crossref.json"
     if lancaster_path.exists():
-        with open(lancaster_path) as f:
+        with open(lancaster_path, encoding='utf-8') as f:
             data = json.load(f)
         for key, entry in data.items():
             skt = entry.get("sanskrit_title", "")
             if skt:
-                tnum = entry.get("taisho", "")
                 tid = _normalize_taisho_id(key)
                 if tid:
                     titles[tid].append(skt)
@@ -285,7 +284,7 @@ def load_taisho_sanskrit_titles() -> dict[str, list[str]]:
     # --- CBETA Jinglu Sanskrit ---
     cbeta_skt_path = root / "results" / "cbeta_jinglu_sanskrit.json"
     if cbeta_skt_path.exists():
-        with open(cbeta_skt_path) as f:
+        with open(cbeta_skt_path, encoding='utf-8') as f:
             data = json.load(f)
         for eid, entry in data.get("entries", {}).items():
             skt = entry.get("sanskrit_title", "")
@@ -412,7 +411,7 @@ def load_kangyur_sanskrit_titles() -> list[tuple[int, str, str]]:
     # source since they represent the Tibetan canon's view.
     cbeta_tib_path = root / "results" / "cbeta_jinglu_tibetan.json"
     if cbeta_tib_path.exists():
-        with open(cbeta_tib_path) as f:
+        with open(cbeta_tib_path, encoding='utf-8') as f:
             data = json.load(f)
         for eid, entry in data.get("entries", {}).items():
             skt = entry.get("sanskrit_title", "")
@@ -680,7 +679,7 @@ def load_concordance() -> dict[str, set[int]]:
     conc_path = root / "results" / "cross_reference_expanded.json"
     if not conc_path.exists():
         return {}
-    with open(conc_path) as f:
+    with open(conc_path, encoding='utf-8') as f:
         data = json.load(f)
     result: dict[str, set[int]] = {}
     for tid, parallels in data.get("tibetan_parallels", {}).items():
@@ -923,7 +922,7 @@ def save_results(
     }
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(output_path, "w") as f:
+    with open(output_path, "w", encoding='utf-8') as f:
         json.dump(result, f, indent=2, ensure_ascii=False)
     print(f"\nDetailed results written to: {output_path}")
 

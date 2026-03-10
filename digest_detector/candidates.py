@@ -469,30 +469,19 @@ def generate_phonetic_candidates(
             if containment < min_containment:
                 continue
 
-            # Ensure consistent pair ordering (shorter text = digest)
-            if d_len <= s_len:
-                pair_key = (d_id, source_id)
-                final_containment = containment
-                final_matching = matching
-                final_digest_ngrams = len(digest_set)
-            else:
-                pair_key = (source_id, d_id)
-                # Recompute containment from the actual digest's perspective
-                final_matching = len(source_set & digest_set)
-                final_digest_ngrams = len(source_set)
-                final_containment = (final_matching / final_digest_ngrams
-                                     if final_digest_ngrams > 0 else 0.0)
-
+            # Pair ordering: d_id is always the digest (outer loop already
+            # enforces s_len >= d_len * min_size_ratio, so d_len <= s_len).
+            pair_key = (d_id, source_id)
             if pair_key in seen_pairs:
                 continue
             seen_pairs.add(pair_key)
 
             candidates.append(CandidatePair(
-                digest_id=pair_key[0],
-                source_id=pair_key[1],
-                containment_score=final_containment,
-                matching_ngrams=final_matching,
-                total_digest_ngrams=final_digest_ngrams,
+                digest_id=d_id,
+                source_id=source_id,
+                containment_score=containment,
+                matching_ngrams=matching,
+                total_digest_ngrams=len(digest_set),
                 from_phonetic=True,
             ))
 

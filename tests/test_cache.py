@@ -90,7 +90,7 @@ class TestCacheRoundtrip:
             "MIN_PHONETIC_CONTAINMENT", "PHONETIC_STOPGRAM_DOC_FREQ",
             "PHONETIC_NGRAM_SIZE", "TRANSLITERATION_DENSITY",
             "TRANSLITERATION_WINDOW", "MIN_TRANSLITERATION_LENGTH",
-            "MIN_TEXT_LENGTH",
+            "MIN_TEXT_LENGTH", "PHONETIC_MAX_SYLLABLES",
         }
         assert set(snapshot.keys()) == expected_keys
 

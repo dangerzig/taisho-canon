@@ -714,9 +714,10 @@ def align_candidates(
     # Canonicalize order so results are deterministic regardless of worker scheduling
     results.sort(key=lambda r: (r.digest_id, r.source_id))
 
-    # Free the cached phonetic table — it's no longer needed after alignment
-    global _phonetic_table
+    # Free the cached phonetic table and source table — no longer needed
+    global _phonetic_table, _cached_source_table
     _phonetic_table = None
+    _cached_source_table = None
 
     logger.info("Completed alignment for %d pairs", len(results))
     return results

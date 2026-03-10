@@ -211,8 +211,8 @@ class TestGenerateCandidates:
                 if c.digest_id == "T01n0001" and c.source_id == "T01n0002"]
         assert len(pair) == 1
         # Containment should be based on jing_text, not full_text
-        # jing shares ~25 of ~33 chars → high containment
-        assert pair[0].containment_score > 0.3
+        # jing shares 21 of 29 n-grams → ~0.72 containment
+        assert pair[0].containment_score > 0.6
 
 
 class TestGenerateCandidatesParallel:

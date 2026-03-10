@@ -147,7 +147,7 @@ def _compute_confidence(
     c_longest = min(longest_seg / max(digest_length, 1), 1.0)
 
     # Number of source regions — more scattered excerpts are more meaningful
-    # Normalize: 1 region → 0.2, 5+ regions → 1.0
+    # Normalize: 1 region → 0.0, 2 regions → 0.25, 5+ regions → 1.0
     c_regions = min((num_regions - 1) / 4.0, 1.0) if num_regions > 0 else 0.0
 
     # Length asymmetry: extreme size ratio is more suggestive of digest
@@ -225,6 +225,7 @@ def detect_multi_source_digests(
     scores: list[DigestScore],
     alignments: list[AlignmentResult],
     metadata_map: dict[str, TextMetadata],
+    text_map: dict[str, ExtractedText] = None,
 ) -> list[MultiSourceDigest]:
     """Detect texts that are digests of multiple sources.
 
@@ -260,9 +261,11 @@ def detect_multi_source_digests(
                     if seg.match_type != "novel":
                         intervals.append((seg.digest_start, seg.digest_end))
 
-        # Use actual digest length from metadata
+        # Use jing text length (consistent with alignment offset coordinates)
         d_meta = metadata_map.get(digest_id)
-        d_len = d_meta.char_count if d_meta else 0
+        d_extracted = text_map.get(digest_id) if text_map else None
+        d_len = len(d_extracted.jing_text) if d_extracted else (
+            d_meta.char_count if d_meta else 0)
 
         if intervals and d_len > 0:
             # Merge overlapping intervals to compute union coverage

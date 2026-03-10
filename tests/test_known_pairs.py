@@ -4,10 +4,15 @@ These tests extract the actual texts from XML and run alignment to verify
 the pipeline can detect the known Heart Sutra digest relationships.
 """
 
+import re
+
 import pytest
 from pathlib import Path
 
-from digest_detector.extract import build_char_map, extract_file, normalize_text
+from digest_detector.extract import (
+    build_char_map,
+    _process_text_group,
+)
 from digest_detector.align import align_pair
 from digest_detector.score import classify_relationship, score_all
 from digest_detector.fingerprint import (
@@ -23,14 +28,11 @@ XML_DIR = Path(__file__).resolve().parent.parent / "xml" / "T"
 
 
 def _extract_full_text(text_id: str, xml_dir: Path = XML_DIR) -> ExtractedText | None:
-    """Helper: extract and assemble a complete text from its XML files."""
-    import re
-
+    """Helper: extract a complete text from its XML files using production code."""
     vol_dir = xml_dir / text_id[:3]  # e.g., T08
     if not vol_dir.exists():
         return None
 
-    # Find all files for this text
     pattern = re.compile(rf'{re.escape(text_id)}_(\d+)\.xml$')
     files = []
     for f in sorted(vol_dir.iterdir()):
@@ -42,95 +44,9 @@ def _extract_full_text(text_id: str, xml_dir: Path = XML_DIR) -> ExtractedText |
     if not files:
         return None
 
-    # Build char map
-    char_map = build_char_map([f for _, f in files])
-
-    # Extract each file
-    all_parts = []
-    meta = {}
-    for _, fpath in files:
-        _, parts, file_meta = extract_file(fpath, char_map)
-        all_parts.extend(parts)
-        if not meta:
-            meta = file_meta
-
-    # Build segments, tracking dharani ranges
-    segments = []
-    current_div = None
-    current_raw = []
-    current_dharani_flags = []
-    offset = 0
-    dharani_ranges = []
-
-    def _flush(raw_chunks, dharani_flags, div_type, seg_offset):
-        chunk_texts = []
-        for raw, is_dh in zip(raw_chunks, dharani_flags):
-            normalized = normalize_text(raw)
-            if normalized:
-                chunk_texts.append((normalized, is_dh))
-        if not chunk_texts:
-            return None, seg_offset
-        joined = ''.join(ct for ct, _ in chunk_texts)
-        if not joined:
-            return None, seg_offset
-        pos = seg_offset
-        for chunk_text, is_dh in chunk_texts:
-            if is_dh and chunk_text:
-                dharani_ranges.append((pos, pos + len(chunk_text)))
-            pos += len(chunk_text)
-        seg = DivSegment(
-            div_type=div_type, text=joined,
-            start=seg_offset, end=seg_offset + len(joined),
-        )
-        return seg, seg_offset + len(joined)
-
-    for raw_text, div_type, is_dharani in all_parts:
-        if div_type != current_div:
-            if current_raw and current_div is not None:
-                seg, offset = _flush(
-                    current_raw, current_dharani_flags, current_div, offset)
-                if seg:
-                    segments.append(seg)
-            current_div = div_type
-            current_raw = [raw_text]
-            current_dharani_flags = [is_dharani]
-        else:
-            current_raw.append(raw_text)
-            current_dharani_flags.append(is_dharani)
-
-    if current_raw and current_div is not None:
-        seg, offset = _flush(
-            current_raw, current_dharani_flags, current_div, offset)
-        if seg:
-            segments.append(seg)
-
-    full_text = ''.join(seg.text for seg in segments)
-
-    # Merge adjacent dharani ranges
-    merged_dharani = []
-    for start, end in dharani_ranges:
-        if merged_dharani and start <= merged_dharani[-1][1]:
-            merged_dharani[-1] = (merged_dharani[-1][0], max(merged_dharani[-1][1], end))
-        else:
-            merged_dharani.append((start, end))
-
-    return ExtractedText(
-        text_id=text_id,
-        full_text=full_text,
-        segments=segments,
-        metadata=TextMetadata(
-            text_id=text_id,
-            title=meta.get('title', ''),
-            author=meta.get('author', ''),
-            extent_juan=meta.get('extent_juan', 1),
-            char_count=len(full_text),
-            file_count=len(files),
-            docnumber_refs=meta.get('docnumber_refs', []),
-            div_types=meta.get('div_types', []),
-            has_dharani=meta.get('has_dharani', False),
-        ),
-        dharani_ranges=merged_dharani,
-    )
+    file_paths = [f for _, f in files]
+    char_map = build_char_map(file_paths)
+    return _process_text_group((text_id, file_paths, char_map))
 
 
 @pytest.fixture(scope="module")
@@ -414,6 +330,9 @@ class TestScoreAll:
             s for s in scores
             if s.digest_id == "T08n0250" and s.source_id == "T08n0251"
         ]
+        assert len(t250_t251_scores) == 1, (
+            "Expected exactly 1 T250→T251 score from score_all"
+        )
         if t250_t251_scores:
             assert t250_t251_scores[0].classification == "retranslation", (
                 f"T250→T251 via score_all classified as "

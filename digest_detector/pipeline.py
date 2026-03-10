@@ -232,7 +232,8 @@ def run_pipeline(
         (c.digest_id, c.source_id) for c in candidates if c.from_docnumber
     }
     scores = score_all(alignments, metadata_map, docnum_pair_set, text_map=text_map)
-    multi_source = detect_multi_source_digests(scores, alignments, metadata_map)
+    multi_source = detect_multi_source_digests(scores, alignments, metadata_map,
+                                                  text_map=text_map)
 
     elapsed = round(time.time() - t0, 1)
     stage_times["stage4_score"] = elapsed

@@ -35,7 +35,7 @@ EXISTING_XREF_PATH = RESULTS_DIR / "cross_reference.json"
 def load_json(path):
     """Load a JSON file if it exists."""
     if path.exists():
-        with open(path) as f:
+        with open(path, encoding='utf-8') as f:
             return json.load(f)
     return None
 

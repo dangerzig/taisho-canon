@@ -975,6 +975,21 @@
     "num_phonetic_segments": 0
   },
   {
+    "digest_id": "T20n1098",
+    "source_id": "T20n1092",
+    "classification": "digest",
+    "confidence": 0.6508,
+    "coverage": 0.6015,
+    "novel_fraction": 0.3949,
+    "avg_segment_length": 39.1,
+    "longest_segment": 1213,
+    "num_source_regions": 32,
+    "source_span": 0.017303,
+    "has_docnumber_xref": true,
+    "phonetic_coverage": 0.0179,
+    "num_phonetic_segments": 16
+  },
+  {
     "digest_id": "T20n1057b",
     "source_id": "T20n1057a",
     "classification": "excerpt",
@@ -988,21 +1003,6 @@
     "has_docnumber_xref": true,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
-  },
-  {
-    "digest_id": "T20n1098",
-    "source_id": "T20n1092",
-    "classification": "digest",
-    "confidence": 0.6506,
-    "coverage": 0.6009,
-    "novel_fraction": 0.3957,
-    "avg_segment_length": 39.46,
-    "longest_segment": 1213,
-    "num_source_regions": 31,
-    "source_span": 0.017298,
-    "has_docnumber_xref": true,
-    "phonetic_coverage": 0.0171,
-    "num_phonetic_segments": 15
   },
   {
     "digest_id": "T32n1689",
@@ -1920,6 +1920,21 @@
     "num_phonetic_segments": 0
   },
   {
+    "digest_id": "T14n0453",
+    "source_id": "T02n0125",
+    "classification": "digest",
+    "confidence": 0.6027,
+    "coverage": 0.7707,
+    "novel_fraction": 0.2192,
+    "avg_segment_length": 187.15,
+    "longest_segment": 1003,
+    "num_source_regions": 10,
+    "source_span": 0.006625,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0504,
+    "num_phonetic_segments": 2
+  },
+  {
     "digest_id": "T20n1073",
     "source_id": "T20n1072A",
     "classification": "digest",
@@ -1963,21 +1978,6 @@
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
-  },
-  {
-    "digest_id": "T14n0453",
-    "source_id": "T02n0125",
-    "classification": "digest",
-    "confidence": 0.5999,
-    "coverage": 0.7628,
-    "novel_fraction": 0.2291,
-    "avg_segment_length": 184.77,
-    "longest_segment": 1003,
-    "num_source_regions": 10,
-    "source_span": 0.00654,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0404,
-    "num_phonetic_segments": 2
   },
   {
     "digest_id": "T03n0182a",
@@ -2460,21 +2460,6 @@
     "num_phonetic_segments": 0
   },
   {
-    "digest_id": "T19n1029",
-    "source_id": "T21n1336",
-    "classification": "excerpt",
-    "confidence": 0.5769,
-    "coverage": 0.8043,
-    "novel_fraction": 0.1939,
-    "avg_segment_length": 40.82,
-    "longest_segment": 211,
-    "num_source_regions": 3,
-    "source_span": 0.006338,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.009,
-    "num_phonetic_segments": 1
-  },
-  {
     "digest_id": "T16n0703",
     "source_id": "T53n2122",
     "classification": "digest",
@@ -2561,6 +2546,21 @@
     "num_source_regions": 2,
     "source_span": 0.268906,
     "has_docnumber_xref": true,
+    "phonetic_coverage": 0.0,
+    "num_phonetic_segments": 0
+  },
+  {
+    "digest_id": "T19n1029",
+    "source_id": "T21n1336",
+    "classification": "digest",
+    "confidence": 0.5743,
+    "coverage": 0.7971,
+    "novel_fraction": 0.2029,
+    "avg_segment_length": 44.4,
+    "longest_segment": 211,
+    "num_source_regions": 3,
+    "source_span": 0.006266,
+    "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
   },
@@ -3708,13 +3708,13 @@
     "digest_id": "T03n0189",
     "source_id": "T50n2040",
     "classification": "retranslation",
-    "confidence": 0.5311,
+    "confidence": 0.531,
     "coverage": 0.8612,
-    "novel_fraction": 0.1344,
-    "avg_segment_length": 276.97,
+    "novel_fraction": 0.1345,
+    "avg_segment_length": 276.96,
     "longest_segment": 3487,
     "num_source_regions": 46,
-    "source_span": 0.333268,
+    "source_span": 0.333259,
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0217,
     "num_phonetic_segments": 3
@@ -3930,21 +3930,6 @@
     "num_phonetic_segments": 0
   },
   {
-    "digest_id": "T21n1332",
-    "source_id": "T21n1336",
-    "classification": "retranslation",
-    "confidence": 0.5263,
-    "coverage": 0.8504,
-    "novel_fraction": 0.1495,
-    "avg_segment_length": 125.38,
-    "longest_segment": 2564,
-    "num_source_regions": 33,
-    "source_span": 0.369876,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0004,
-    "num_phonetic_segments": 2
-  },
-  {
     "digest_id": "T02n0136",
     "source_id": "T02n0125",
     "classification": "commentary",
@@ -3960,19 +3945,34 @@
     "num_phonetic_segments": 0
   },
   {
+    "digest_id": "T21n1332",
+    "source_id": "T21n1336",
+    "classification": "retranslation",
+    "confidence": 0.5262,
+    "coverage": 0.8503,
+    "novel_fraction": 0.1497,
+    "avg_segment_length": 125.96,
+    "longest_segment": 2564,
+    "num_source_regions": 32,
+    "source_span": 0.369804,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0002,
+    "num_phonetic_segments": 1
+  },
+  {
     "digest_id": "T19n0967",
     "source_id": "T39n1803",
     "classification": "excerpt",
-    "confidence": 0.5258,
-    "coverage": 0.8283,
-    "novel_fraction": 0.1713,
-    "avg_segment_length": 18.54,
+    "confidence": 0.5256,
+    "coverage": 0.8264,
+    "novel_fraction": 0.1736,
+    "avg_segment_length": 18.62,
     "longest_segment": 90,
-    "num_source_regions": 56,
-    "source_span": 0.0616,
+    "num_source_regions": 55,
+    "source_span": 0.061428,
     "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0023,
-    "num_phonetic_segments": 1
+    "phonetic_coverage": 0.0,
+    "num_phonetic_segments": 0
   },
   {
     "digest_id": "T85n2747",
@@ -5343,15 +5343,15 @@
     "digest_id": "T17n0749",
     "source_id": "T53n2122",
     "classification": "digest",
-    "confidence": 0.4931,
-    "coverage": 0.6262,
-    "novel_fraction": 0.3728,
-    "avg_segment_length": 22.08,
+    "confidence": 0.4932,
+    "coverage": 0.6265,
+    "novel_fraction": 0.3724,
+    "avg_segment_length": 22.1,
     "longest_segment": 289,
     "num_source_regions": 57,
-    "source_span": 0.005133,
+    "source_span": 0.005137,
     "has_docnumber_xref": false,
-    "phonetic_coverage": 0.005,
+    "phonetic_coverage": 0.0055,
     "num_phonetic_segments": 1
   },
   {
@@ -5365,6 +5365,21 @@
     "longest_segment": 1187,
     "num_source_regions": 19,
     "source_span": 0.018807,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0,
+    "num_phonetic_segments": 0
+  },
+  {
+    "digest_id": "T20n1180",
+    "source_id": "T18n0901",
+    "classification": "digest",
+    "confidence": 0.4927,
+    "coverage": 0.5838,
+    "novel_fraction": 0.4162,
+    "avg_segment_length": 19.96,
+    "longest_segment": 71,
+    "num_source_regions": 5,
+    "source_span": 0.003935,
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
@@ -5397,21 +5412,6 @@
     "source_span": 0.082211,
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0002,
-    "num_phonetic_segments": 1
-  },
-  {
-    "digest_id": "T20n1180",
-    "source_id": "T18n0901",
-    "classification": "digest",
-    "confidence": 0.4915,
-    "coverage": 0.5883,
-    "novel_fraction": 0.4106,
-    "avg_segment_length": 19.41,
-    "longest_segment": 71,
-    "num_source_regions": 5,
-    "source_span": 0.003972,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0056,
     "num_phonetic_segments": 1
   },
   {
@@ -6153,15 +6153,15 @@
     "digest_id": "T14n0447b",
     "source_id": "T45n1909",
     "classification": "digest",
-    "confidence": 0.4773,
-    "coverage": 0.6833,
-    "novel_fraction": 0.3132,
-    "avg_segment_length": 28.55,
+    "confidence": 0.4774,
+    "coverage": 0.6837,
+    "novel_fraction": 0.3127,
+    "avg_segment_length": 28.57,
     "longest_segment": 142,
     "num_source_regions": 62,
-    "source_span": 0.063699,
+    "source_span": 0.063632,
     "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0174,
+    "phonetic_coverage": 0.018,
     "num_phonetic_segments": 2
   },
   {
@@ -7778,8 +7778,8 @@
     "novel_fraction": 0.3142,
     "avg_segment_length": 10.9,
     "longest_segment": 422,
-    "num_source_regions": 178,
-    "source_span": 0.026128,
+    "num_source_regions": 179,
+    "source_span": 0.026158,
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0033,
     "num_phonetic_segments": 5
@@ -7980,6 +7980,21 @@
     "num_phonetic_segments": 0
   },
   {
+    "digest_id": "T19n0974D",
+    "source_id": "T19n0974C",
+    "classification": "digest",
+    "confidence": 0.4448,
+    "coverage": 0.4391,
+    "novel_fraction": 0.5432,
+    "avg_segment_length": 14.36,
+    "longest_segment": 62,
+    "num_source_regions": 2,
+    "source_span": 0.069908,
+    "has_docnumber_xref": true,
+    "phonetic_coverage": 0.0886,
+    "num_phonetic_segments": 4
+  },
+  {
     "digest_id": "T47n1991",
     "source_id": "T51n2076",
     "classification": "digest",
@@ -8059,15 +8074,15 @@
     "source_id": "T55n2157",
     "classification": "digest",
     "confidence": 0.444,
-    "coverage": 0.6902,
-    "novel_fraction": 0.3096,
-    "avg_segment_length": 13.11,
+    "coverage": 0.6906,
+    "novel_fraction": 0.3092,
+    "avg_segment_length": 13.09,
     "longest_segment": 465,
     "num_source_regions": 268,
-    "source_span": 0.059063,
+    "source_span": 0.059105,
     "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0009,
-    "num_phonetic_segments": 1
+    "phonetic_coverage": 0.0013,
+    "num_phonetic_segments": 3
   },
   {
     "digest_id": "T08n0255",
@@ -9000,21 +9015,6 @@
     "num_phonetic_segments": 0
   },
   {
-    "digest_id": "T19n0974D",
-    "source_id": "T19n0974C",
-    "classification": "digest",
-    "confidence": 0.4248,
-    "coverage": 0.4482,
-    "novel_fraction": 0.5318,
-    "avg_segment_length": 14.71,
-    "longest_segment": 62,
-    "num_source_regions": 1,
-    "source_span": 0.071682,
-    "has_docnumber_xref": true,
-    "phonetic_coverage": 0.1,
-    "num_phonetic_segments": 4
-  },
-  {
     "digest_id": "T28n1550",
     "source_id": "T28n1552",
     "classification": "commentary",
@@ -9660,6 +9660,21 @@
     "num_phonetic_segments": 0
   },
   {
+    "digest_id": "T20n1095",
+    "source_id": "T20n1092",
+    "classification": "shared_tradition",
+    "confidence": 0.4162,
+    "coverage": 0.1991,
+    "novel_fraction": 0.7993,
+    "avg_segment_length": 7.2,
+    "longest_segment": 54,
+    "num_source_regions": 65,
+    "source_span": 0.003247,
+    "has_docnumber_xref": true,
+    "phonetic_coverage": 0.0079,
+    "num_phonetic_segments": 5
+  },
+  {
     "digest_id": "T03n0175b",
     "source_id": "T53n2122",
     "classification": "digest",
@@ -9688,21 +9703,6 @@
     "has_docnumber_xref": true,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
-  },
-  {
-    "digest_id": "T20n1095",
-    "source_id": "T20n1092",
-    "classification": "shared_tradition",
-    "confidence": 0.4159,
-    "coverage": 0.1981,
-    "novel_fraction": 0.8006,
-    "avg_segment_length": 7.22,
-    "longest_segment": 54,
-    "num_source_regions": 65,
-    "source_span": 0.003242,
-    "has_docnumber_xref": true,
-    "phonetic_coverage": 0.0066,
-    "num_phonetic_segments": 4
   },
   {
     "digest_id": "T85n2785",
@@ -10080,21 +10080,6 @@
     "num_phonetic_segments": 0
   },
   {
-    "digest_id": "T08n0252",
-    "source_id": "T07n0220",
-    "classification": "commentary",
-    "confidence": 0.4112,
-    "coverage": 0.4537,
-    "novel_fraction": 0.5448,
-    "avg_segment_length": 8.94,
-    "longest_segment": 25,
-    "num_source_regions": 30,
-    "source_span": 0.000181,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0077,
-    "num_phonetic_segments": 1
-  },
-  {
     "digest_id": "T36n1742",
     "source_id": "T10n0279",
     "classification": "digest",
@@ -10225,6 +10210,21 @@
     "longest_segment": 128,
     "num_source_regions": 7,
     "source_span": 0.001191,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0,
+    "num_phonetic_segments": 0
+  },
+  {
+    "digest_id": "T08n0252",
+    "source_id": "T07n0220",
+    "classification": "commentary",
+    "confidence": 0.4097,
+    "coverage": 0.4475,
+    "novel_fraction": 0.5525,
+    "avg_segment_length": 9.06,
+    "longest_segment": 25,
+    "num_source_regions": 29,
+    "source_span": 0.000178,
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
@@ -11475,6 +11475,21 @@
     "num_phonetic_segments": 0
   },
   {
+    "digest_id": "T08n0233",
+    "source_id": "T11n0310",
+    "classification": "commentary",
+    "confidence": 0.3956,
+    "coverage": 0.5186,
+    "novel_fraction": 0.4813,
+    "avg_segment_length": 8.23,
+    "longest_segment": 332,
+    "num_source_regions": 353,
+    "source_span": 0.004328,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0005,
+    "num_phonetic_segments": 1
+  },
+  {
     "digest_id": "T14n0547",
     "source_id": "T27n1545",
     "classification": "digest",
@@ -11515,21 +11530,6 @@
     "longest_segment": 60,
     "num_source_regions": 3,
     "source_span": 0.002729,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0,
-    "num_phonetic_segments": 0
-  },
-  {
-    "digest_id": "T08n0233",
-    "source_id": "T11n0310",
-    "classification": "commentary",
-    "confidence": 0.3955,
-    "coverage": 0.5182,
-    "novel_fraction": 0.4818,
-    "avg_segment_length": 8.24,
-    "longest_segment": 332,
-    "num_source_regions": 352,
-    "source_span": 0.004323,
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
@@ -11583,15 +11583,15 @@
     "digest_id": "T18n0850",
     "source_id": "T18n0848",
     "classification": "digest",
-    "confidence": 0.3951,
-    "coverage": 0.5043,
-    "novel_fraction": 0.4799,
-    "avg_segment_length": 19.67,
+    "confidence": 0.3953,
+    "coverage": 0.5046,
+    "novel_fraction": 0.4795,
+    "avg_segment_length": 19.69,
     "longest_segment": 341,
     "num_source_regions": 69,
-    "source_span": 0.14941,
+    "source_span": 0.149428,
     "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0789,
+    "phonetic_coverage": 0.0793,
     "num_phonetic_segments": 177
   },
   {
@@ -11963,7 +11963,7 @@
     "novel_fraction": 0.8501,
     "avg_segment_length": 6.06,
     "longest_segment": 14,
-    "num_source_regions": 63,
+    "num_source_regions": 64,
     "source_span": 0.0022,
     "has_docnumber_xref": true,
     "phonetic_coverage": 0.0118,
@@ -12488,8 +12488,8 @@
     "novel_fraction": 0.4133,
     "avg_segment_length": 6.96,
     "longest_segment": 38,
-    "num_source_regions": 220,
-    "source_span": 0.020994,
+    "num_source_regions": 221,
+    "source_span": 0.021023,
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0021,
     "num_phonetic_segments": 3
@@ -13253,8 +13253,8 @@
     "novel_fraction": 0.4156,
     "avg_segment_length": 5.82,
     "longest_segment": 18,
-    "num_source_regions": 192,
-    "source_span": 0.015527,
+    "num_source_regions": 190,
+    "source_span": 0.015498,
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0035,
     "num_phonetic_segments": 5
@@ -13564,15 +13564,15 @@
     "source_id": "T55n2157",
     "classification": "commentary",
     "confidence": 0.3771,
-    "coverage": 0.5737,
-    "novel_fraction": 0.4262,
+    "coverage": 0.5735,
+    "novel_fraction": 0.4265,
     "avg_segment_length": 8.27,
     "longest_segment": 111,
     "num_source_regions": 337,
-    "source_span": 0.044833,
+    "source_span": 0.044812,
     "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0004,
-    "num_phonetic_segments": 2
+    "phonetic_coverage": 0.0002,
+    "num_phonetic_segments": 1
   },
   {
     "digest_id": "T08n0252",
@@ -14089,15 +14089,15 @@
     "source_id": "T55n2157",
     "classification": "commentary",
     "confidence": 0.3729,
-    "coverage": 0.5653,
-    "novel_fraction": 0.4344,
-    "avg_segment_length": 8.08,
+    "coverage": 0.5655,
+    "novel_fraction": 0.4343,
+    "avg_segment_length": 8.07,
     "longest_segment": 111,
     "num_source_regions": 311,
-    "source_span": 0.042633,
+    "source_span": 0.042675,
     "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0011,
-    "num_phonetic_segments": 5
+    "phonetic_coverage": 0.0013,
+    "num_phonetic_segments": 6
   },
   {
     "digest_id": "T17n0762",
@@ -14113,21 +14113,6 @@
     "has_docnumber_xref": true,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
-  },
-  {
-    "digest_id": "T21n1401",
-    "source_id": "T20n1170",
-    "classification": "digest",
-    "confidence": 0.3726,
-    "coverage": 0.4366,
-    "novel_fraction": 0.5602,
-    "avg_segment_length": 14.71,
-    "longest_segment": 66,
-    "num_source_regions": 10,
-    "source_span": 0.036683,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0158,
-    "num_phonetic_segments": 3
   },
   {
     "digest_id": "T03n0185",
@@ -14188,6 +14173,21 @@
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
+  },
+  {
+    "digest_id": "T21n1401",
+    "source_id": "T20n1170",
+    "classification": "digest",
+    "confidence": 0.3724,
+    "coverage": 0.4401,
+    "novel_fraction": 0.5558,
+    "avg_segment_length": 14.43,
+    "longest_segment": 66,
+    "num_source_regions": 8,
+    "source_span": 0.037081,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0202,
+    "num_phonetic_segments": 4
   },
   {
     "digest_id": "T01n0018",
@@ -14550,21 +14550,6 @@
     "num_phonetic_segments": 0
   },
   {
-    "digest_id": "T08n0235",
-    "source_id": "T11n0310",
-    "classification": "commentary",
-    "confidence": 0.3694,
-    "coverage": 0.4569,
-    "novel_fraction": 0.5428,
-    "avg_segment_length": 6.78,
-    "longest_segment": 31,
-    "num_source_regions": 220,
-    "source_span": 0.001897,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0016,
-    "num_phonetic_segments": 1
-  },
-  {
     "digest_id": "T22n1433",
     "source_id": "T40n1804",
     "classification": "digest",
@@ -14635,6 +14620,21 @@
     "longest_segment": 16,
     "num_source_regions": 15,
     "source_span": 0.022877,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0,
+    "num_phonetic_segments": 0
+  },
+  {
+    "digest_id": "T08n0235",
+    "source_id": "T11n0310",
+    "classification": "commentary",
+    "confidence": 0.3689,
+    "coverage": 0.4556,
+    "novel_fraction": 0.5444,
+    "avg_segment_length": 6.77,
+    "longest_segment": 31,
+    "num_source_regions": 219,
+    "source_span": 0.001888,
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
@@ -14715,21 +14715,6 @@
     "num_phonetic_segments": 0
   },
   {
-    "digest_id": "T08n0236a",
-    "source_id": "T07n0220",
-    "classification": "commentary",
-    "confidence": 0.3676,
-    "coverage": 0.4311,
-    "novel_fraction": 0.5687,
-    "avg_segment_length": 7.08,
-    "longest_segment": 33,
-    "num_source_regions": 168,
-    "source_span": 0.001127,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.001,
-    "num_phonetic_segments": 1
-  },
-  {
     "digest_id": "T14n0448b",
     "source_id": "T14n0440",
     "classification": "commentary",
@@ -14755,6 +14740,21 @@
     "longest_segment": 165,
     "num_source_regions": 111,
     "source_span": 0.00237,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0,
+    "num_phonetic_segments": 0
+  },
+  {
+    "digest_id": "T08n0236a",
+    "source_id": "T07n0220",
+    "classification": "commentary",
+    "confidence": 0.3673,
+    "coverage": 0.4303,
+    "novel_fraction": 0.5697,
+    "avg_segment_length": 7.08,
+    "longest_segment": 33,
+    "num_source_regions": 167,
+    "source_span": 0.001123,
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
@@ -14899,15 +14899,15 @@
     "source_id": "T55n2157",
     "classification": "commentary",
     "confidence": 0.3663,
-    "coverage": 0.5526,
-    "novel_fraction": 0.4473,
+    "coverage": 0.5528,
+    "novel_fraction": 0.447,
     "avg_segment_length": 8.21,
     "longest_segment": 112,
     "num_source_regions": 376,
-    "source_span": 0.048102,
+    "source_span": 0.048122,
     "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0005,
-    "num_phonetic_segments": 3
+    "phonetic_coverage": 0.0007,
+    "num_phonetic_segments": 4
   },
   {
     "digest_id": "T10n0296",
@@ -15504,7 +15504,7 @@
     "avg_segment_length": 8.29,
     "longest_segment": 184,
     "num_source_regions": 183,
-    "source_span": 0.138604,
+    "source_span": 0.138617,
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0013,
     "num_phonetic_segments": 6
@@ -16245,6 +16245,21 @@
     "num_phonetic_segments": 1
   },
   {
+    "digest_id": "T55n2148",
+    "source_id": "T55n2154",
+    "classification": "commentary",
+    "confidence": 0.3587,
+    "coverage": 0.5344,
+    "novel_fraction": 0.4654,
+    "avg_segment_length": 8.39,
+    "longest_segment": 167,
+    "num_source_regions": 335,
+    "source_span": 0.055951,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0006,
+    "num_phonetic_segments": 3
+  },
+  {
     "digest_id": "T14n0465",
     "source_id": "T11n0310",
     "classification": "commentary",
@@ -16258,21 +16273,6 @@
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
-  },
-  {
-    "digest_id": "T55n2148",
-    "source_id": "T55n2154",
-    "classification": "commentary",
-    "confidence": 0.3586,
-    "coverage": 0.5343,
-    "novel_fraction": 0.4656,
-    "avg_segment_length": 8.39,
-    "longest_segment": 167,
-    "num_source_regions": 335,
-    "source_span": 0.055926,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0004,
-    "num_phonetic_segments": 2
   },
   {
     "digest_id": "T08n0236a",
@@ -16905,6 +16905,21 @@
     "num_phonetic_segments": 0
   },
   {
+    "digest_id": "T19n0971",
+    "source_id": "T39n1803",
+    "classification": "digest",
+    "confidence": 0.3543,
+    "coverage": 0.4661,
+    "novel_fraction": 0.5333,
+    "avg_segment_length": 10.57,
+    "longest_segment": 40,
+    "num_source_regions": 48,
+    "source_span": 0.037053,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.003,
+    "num_phonetic_segments": 2
+  },
+  {
     "digest_id": "T08n0257",
     "source_id": "T13n0397",
     "classification": "commentary",
@@ -16948,21 +16963,6 @@
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
-  },
-  {
-    "digest_id": "T19n0971",
-    "source_id": "T39n1803",
-    "classification": "digest",
-    "confidence": 0.354,
-    "coverage": 0.4649,
-    "novel_fraction": 0.5348,
-    "avg_segment_length": 10.61,
-    "longest_segment": 40,
-    "num_source_regions": 47,
-    "source_span": 0.036931,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0015,
-    "num_phonetic_segments": 1
   },
   {
     "digest_id": "T55n2152",
@@ -18090,6 +18090,21 @@
     "num_phonetic_segments": 0
   },
   {
+    "digest_id": "T55n2151",
+    "source_id": "T55n2154",
+    "classification": "commentary",
+    "confidence": 0.3475,
+    "coverage": 0.5035,
+    "novel_fraction": 0.4964,
+    "avg_segment_length": 7.89,
+    "longest_segment": 139,
+    "num_source_regions": 242,
+    "source_span": 0.054595,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0004,
+    "num_phonetic_segments": 1
+  },
+  {
     "digest_id": "T02n0102",
     "source_id": "T02n0110",
     "classification": "shared_tradition",
@@ -18150,21 +18165,6 @@
     "num_phonetic_segments": 0
   },
   {
-    "digest_id": "T55n2151",
-    "source_id": "T55n2154",
-    "classification": "commentary",
-    "confidence": 0.3474,
-    "coverage": 0.5032,
-    "novel_fraction": 0.4968,
-    "avg_segment_length": 7.89,
-    "longest_segment": 139,
-    "num_source_regions": 242,
-    "source_span": 0.054551,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0,
-    "num_phonetic_segments": 0
-  },
-  {
     "digest_id": "T02n0132b",
     "source_id": "T02n0132a",
     "classification": "retranslation",
@@ -18193,6 +18193,21 @@
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
+  },
+  {
+    "digest_id": "T08n0237",
+    "source_id": "T07n0220",
+    "classification": "commentary",
+    "confidence": 0.3472,
+    "coverage": 0.3787,
+    "novel_fraction": 0.6211,
+    "avg_segment_length": 6.82,
+    "longest_segment": 35,
+    "num_source_regions": 171,
+    "source_span": 0.001076,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0009,
+    "num_phonetic_segments": 1
   },
   {
     "digest_id": "T14n0509",
@@ -18265,21 +18280,6 @@
     "longest_segment": 17,
     "num_source_regions": 6,
     "source_span": 0.000373,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0,
-    "num_phonetic_segments": 0
-  },
-  {
-    "digest_id": "T08n0237",
-    "source_id": "T07n0220",
-    "classification": "commentary",
-    "confidence": 0.3469,
-    "coverage": 0.3779,
-    "novel_fraction": 0.6221,
-    "avg_segment_length": 6.82,
-    "longest_segment": 35,
-    "num_source_regions": 170,
-    "source_span": 0.001072,
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
@@ -18423,16 +18423,16 @@
     "digest_id": "T55n2147",
     "source_id": "T55n2149",
     "classification": "commentary",
-    "confidence": 0.346,
-    "coverage": 0.5424,
-    "novel_fraction": 0.4573,
-    "avg_segment_length": 6.94,
+    "confidence": 0.3461,
+    "coverage": 0.5426,
+    "novel_fraction": 0.4571,
+    "avg_segment_length": 6.93,
     "longest_segment": 58,
     "num_source_regions": 139,
     "source_span": 0.082974,
     "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0014,
-    "num_phonetic_segments": 6
+    "phonetic_coverage": 0.0016,
+    "num_phonetic_segments": 7
   },
   {
     "digest_id": "T08n0241",
@@ -18870,6 +18870,21 @@
     "num_phonetic_segments": 0
   },
   {
+    "digest_id": "T18n0852b",
+    "source_id": "T18n0848",
+    "classification": "digest",
+    "confidence": 0.3432,
+    "coverage": 0.3822,
+    "novel_fraction": 0.6155,
+    "avg_segment_length": 16.41,
+    "longest_segment": 490,
+    "num_source_regions": 75,
+    "source_span": 0.089924,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0118,
+    "num_phonetic_segments": 23
+  },
+  {
     "digest_id": "T24n1465",
     "source_id": "T54n2123",
     "classification": "shared_tradition",
@@ -18988,36 +19003,6 @@
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
-  },
-  {
-    "digest_id": "T16n0688",
-    "source_id": "T11n0310",
-    "classification": "commentary",
-    "confidence": 0.343,
-    "coverage": 0.3238,
-    "novel_fraction": 0.6746,
-    "avg_segment_length": 6.63,
-    "longest_segment": 12,
-    "num_source_regions": 46,
-    "source_span": 0.000344,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0079,
-    "num_phonetic_segments": 1
-  },
-  {
-    "digest_id": "T18n0852b",
-    "source_id": "T18n0848",
-    "classification": "digest",
-    "confidence": 0.343,
-    "coverage": 0.3836,
-    "novel_fraction": 0.6137,
-    "avg_segment_length": 16.28,
-    "longest_segment": 490,
-    "num_source_regions": 76,
-    "source_span": 0.090144,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0135,
-    "num_phonetic_segments": 27
   },
   {
     "digest_id": "T85n2838",
@@ -19263,16 +19248,16 @@
     "digest_id": "T22n1434",
     "source_id": "T40n1804",
     "classification": "commentary",
-    "confidence": 0.3418,
-    "coverage": 0.4013,
-    "novel_fraction": 0.5986,
-    "avg_segment_length": 9.98,
+    "confidence": 0.3417,
+    "coverage": 0.4008,
+    "novel_fraction": 0.5992,
+    "avg_segment_length": 10.0,
     "longest_segment": 111,
-    "num_source_regions": 70,
-    "source_span": 0.007325,
+    "num_source_regions": 69,
+    "source_span": 0.007302,
     "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0006,
-    "num_phonetic_segments": 1
+    "phonetic_coverage": 0.0,
+    "num_phonetic_segments": 0
   },
   {
     "digest_id": "T17n0776",
@@ -19288,6 +19273,21 @@
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
+  },
+  {
+    "digest_id": "T18n0853",
+    "source_id": "T18n0848",
+    "classification": "digest",
+    "confidence": 0.3416,
+    "coverage": 0.4513,
+    "novel_fraction": 0.532,
+    "avg_segment_length": 12.79,
+    "longest_segment": 144,
+    "num_source_regions": 70,
+    "source_span": 0.112685,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0835,
+    "num_phonetic_segments": 153
   },
   {
     "digest_id": "T32n1666",
@@ -19365,21 +19365,6 @@
     "num_phonetic_segments": 0
   },
   {
-    "digest_id": "T18n0853",
-    "source_id": "T18n0848",
-    "classification": "digest",
-    "confidence": 0.3414,
-    "coverage": 0.4506,
-    "novel_fraction": 0.5328,
-    "avg_segment_length": 12.79,
-    "longest_segment": 144,
-    "num_source_regions": 71,
-    "source_span": 0.112758,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0827,
-    "num_phonetic_segments": 152
-  },
-  {
     "digest_id": "T03n0185",
     "source_id": "T50n2040",
     "classification": "shared_tradition",
@@ -19418,8 +19403,8 @@
     "novel_fraction": 0.5628,
     "avg_segment_length": 7.65,
     "longest_segment": 72,
-    "num_source_regions": 201,
-    "source_span": 0.009349,
+    "num_source_regions": 200,
+    "source_span": 0.009334,
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0013,
     "num_phonetic_segments": 2
@@ -19495,6 +19480,21 @@
     "longest_segment": 42,
     "num_source_regions": 81,
     "source_span": 0.000485,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0,
+    "num_phonetic_segments": 0
+  },
+  {
+    "digest_id": "T16n0688",
+    "source_id": "T11n0310",
+    "classification": "commentary",
+    "confidence": 0.3405,
+    "coverage": 0.3175,
+    "novel_fraction": 0.6825,
+    "avg_segment_length": 6.57,
+    "longest_segment": 12,
+    "num_source_regions": 45,
+    "source_span": 0.000333,
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
@@ -20205,21 +20205,6 @@
     "num_phonetic_segments": 0
   },
   {
-    "digest_id": "T18n0851",
-    "source_id": "T18n0848",
-    "classification": "digest",
-    "confidence": 0.3379,
-    "coverage": 0.4024,
-    "novel_fraction": 0.5954,
-    "avg_segment_length": 15.15,
-    "longest_segment": 207,
-    "num_source_regions": 73,
-    "source_span": 0.102349,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0112,
-    "num_phonetic_segments": 26
-  },
-  {
     "digest_id": "T22n1423",
     "source_id": "T22n1428",
     "classification": "commentary",
@@ -20248,6 +20233,21 @@
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
+  },
+  {
+    "digest_id": "T18n0851",
+    "source_id": "T18n0848",
+    "classification": "digest",
+    "confidence": 0.3378,
+    "coverage": 0.4026,
+    "novel_fraction": 0.5951,
+    "avg_segment_length": 15.12,
+    "longest_segment": 207,
+    "num_source_regions": 74,
+    "source_span": 0.102368,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0114,
+    "num_phonetic_segments": 27
   },
   {
     "digest_id": "T02n0133",
@@ -21165,21 +21165,6 @@
     "num_phonetic_segments": 0
   },
   {
-    "digest_id": "T23n1437",
-    "source_id": "T22n1421",
-    "classification": "commentary",
-    "confidence": 0.334,
-    "coverage": 0.4297,
-    "novel_fraction": 0.5699,
-    "avg_segment_length": 7.22,
-    "longest_segment": 34,
-    "num_source_regions": 190,
-    "source_span": 0.009416,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0022,
-    "num_phonetic_segments": 2
-  },
-  {
     "digest_id": "T26n1542",
     "source_id": "T27n1545",
     "classification": "commentary",
@@ -21285,21 +21270,6 @@
     "num_phonetic_segments": 0
   },
   {
-    "digest_id": "T14n0446a",
-    "source_id": "T14n0440",
-    "classification": "commentary",
-    "confidence": 0.3334,
-    "coverage": 0.4584,
-    "novel_fraction": 0.541,
-    "avg_segment_length": 7.87,
-    "longest_segment": 63,
-    "num_source_regions": 152,
-    "source_span": 0.030075,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0026,
-    "num_phonetic_segments": 4
-  },
-  {
     "digest_id": "T19n0974D",
     "source_id": "T19n0974E",
     "classification": "shared_tradition",
@@ -21313,6 +21283,36 @@
     "has_docnumber_xref": true,
     "phonetic_coverage": 0.0477,
     "num_phonetic_segments": 2
+  },
+  {
+    "digest_id": "T23n1437",
+    "source_id": "T22n1421",
+    "classification": "commentary",
+    "confidence": 0.3334,
+    "coverage": 0.4283,
+    "novel_fraction": 0.5716,
+    "avg_segment_length": 7.2,
+    "longest_segment": 34,
+    "num_source_regions": 190,
+    "source_span": 0.009379,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0005,
+    "num_phonetic_segments": 1
+  },
+  {
+    "digest_id": "T55n2147",
+    "source_id": "T49n2034",
+    "classification": "retranslation",
+    "confidence": 0.3334,
+    "coverage": 0.5002,
+    "novel_fraction": 0.4997,
+    "avg_segment_length": 8.3,
+    "longest_segment": 206,
+    "num_source_regions": 103,
+    "source_span": 0.11395,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0007,
+    "num_phonetic_segments": 3
   },
   {
     "digest_id": "T02n0131",
@@ -21330,6 +21330,21 @@
     "num_phonetic_segments": 0
   },
   {
+    "digest_id": "T14n0446a",
+    "source_id": "T14n0440",
+    "classification": "commentary",
+    "confidence": 0.3333,
+    "coverage": 0.4579,
+    "novel_fraction": 0.5417,
+    "avg_segment_length": 7.88,
+    "longest_segment": 63,
+    "num_source_regions": 151,
+    "source_span": 0.03002,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.002,
+    "num_phonetic_segments": 3
+  },
+  {
     "digest_id": "T46n1953",
     "source_id": "T44n1846",
     "classification": "shared_tradition",
@@ -21343,21 +21358,6 @@
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
-  },
-  {
-    "digest_id": "T55n2147",
-    "source_id": "T49n2034",
-    "classification": "retranslation",
-    "confidence": 0.3333,
-    "coverage": 0.5,
-    "novel_fraction": 0.4999,
-    "avg_segment_length": 8.3,
-    "longest_segment": 206,
-    "num_source_regions": 103,
-    "source_span": 0.113888,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0004,
-    "num_phonetic_segments": 2
   },
   {
     "digest_id": "T08n0249",
@@ -22381,18 +22381,18 @@
   },
   {
     "digest_id": "T55n2146",
-    "source_id": "T55n2145",
+    "source_id": "T55n2149",
     "classification": "commentary",
     "confidence": 0.3289,
-    "coverage": 0.4715,
-    "novel_fraction": 0.5282,
-    "avg_segment_length": 7.62,
-    "longest_segment": 165,
-    "num_source_regions": 59,
-    "source_span": 0.062639,
+    "coverage": 0.4935,
+    "novel_fraction": 0.5062,
+    "avg_segment_length": 6.92,
+    "longest_segment": 109,
+    "num_source_regions": 161,
+    "source_span": 0.078671,
     "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0013,
-    "num_phonetic_segments": 6
+    "phonetic_coverage": 0.0016,
+    "num_phonetic_segments": 7
   },
   {
     "digest_id": "T08n0251",
@@ -22426,18 +22426,18 @@
   },
   {
     "digest_id": "T55n2146",
-    "source_id": "T55n2149",
+    "source_id": "T55n2145",
     "classification": "commentary",
     "confidence": 0.3288,
-    "coverage": 0.4933,
-    "novel_fraction": 0.5064,
-    "avg_segment_length": 6.92,
-    "longest_segment": 109,
-    "num_source_regions": 161,
-    "source_span": 0.078661,
+    "coverage": 0.4713,
+    "novel_fraction": 0.5285,
+    "avg_segment_length": 7.62,
+    "longest_segment": 165,
+    "num_source_regions": 59,
+    "source_span": 0.0626,
     "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0014,
-    "num_phonetic_segments": 6
+    "phonetic_coverage": 0.0011,
+    "num_phonetic_segments": 5
   },
   {
     "digest_id": "T08n0252",
@@ -22605,6 +22605,21 @@
     "num_phonetic_segments": 0
   },
   {
+    "digest_id": "T40n1809",
+    "source_id": "T40n1804",
+    "classification": "commentary",
+    "confidence": 0.3276,
+    "coverage": 0.4245,
+    "novel_fraction": 0.5755,
+    "avg_segment_length": 9.79,
+    "longest_segment": 101,
+    "num_source_regions": 172,
+    "source_span": 0.019994,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0003,
+    "num_phonetic_segments": 2
+  },
+  {
     "digest_id": "T85n2810",
     "source_id": "T31n1585",
     "classification": "retranslation",
@@ -22615,21 +22630,6 @@
     "longest_segment": 308,
     "num_source_regions": 121,
     "source_span": 0.107018,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0,
-    "num_phonetic_segments": 0
-  },
-  {
-    "digest_id": "T40n1809",
-    "source_id": "T40n1804",
-    "classification": "commentary",
-    "confidence": 0.3275,
-    "coverage": 0.4242,
-    "novel_fraction": 0.5758,
-    "avg_segment_length": 9.79,
-    "longest_segment": 101,
-    "num_source_regions": 172,
-    "source_span": 0.019985,
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
@@ -22740,21 +22740,6 @@
     "num_phonetic_segments": 0
   },
   {
-    "digest_id": "T55n2146",
-    "source_id": "T49n2034",
-    "classification": "retranslation",
-    "confidence": 0.3265,
-    "coverage": 0.4793,
-    "novel_fraction": 0.5201,
-    "avg_segment_length": 8.59,
-    "longest_segment": 139,
-    "num_source_regions": 112,
-    "source_span": 0.104566,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0032,
-    "num_phonetic_segments": 14
-  },
-  {
     "digest_id": "T22n1429",
     "source_id": "T23n1435",
     "classification": "commentary",
@@ -22783,6 +22768,21 @@
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
+  },
+  {
+    "digest_id": "T55n2146",
+    "source_id": "T49n2034",
+    "classification": "retranslation",
+    "confidence": 0.3264,
+    "coverage": 0.4789,
+    "novel_fraction": 0.5205,
+    "avg_segment_length": 8.59,
+    "longest_segment": 139,
+    "num_source_regions": 112,
+    "source_span": 0.104566,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0028,
+    "num_phonetic_segments": 12
   },
   {
     "digest_id": "T01n0016",
@@ -23685,21 +23685,6 @@
     "num_phonetic_segments": 0
   },
   {
-    "digest_id": "T17n0823",
-    "source_id": "T11n0310",
-    "classification": "commentary",
-    "confidence": 0.3223,
-    "coverage": 0.3455,
-    "novel_fraction": 0.6541,
-    "avg_segment_length": 6.68,
-    "longest_segment": 35,
-    "num_source_regions": 281,
-    "source_span": 0.002307,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.002,
-    "num_phonetic_segments": 3
-  },
-  {
     "digest_id": "T20n1195",
     "source_id": "T53n2122",
     "classification": "shared_tradition",
@@ -23770,6 +23755,21 @@
     "longest_segment": 13,
     "num_source_regions": 33,
     "source_span": 0.000206,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0,
+    "num_phonetic_segments": 0
+  },
+  {
+    "digest_id": "T17n0823",
+    "source_id": "T11n0310",
+    "classification": "commentary",
+    "confidence": 0.3218,
+    "coverage": 0.3439,
+    "novel_fraction": 0.6561,
+    "avg_segment_length": 6.68,
+    "longest_segment": 35,
+    "num_source_regions": 278,
+    "source_span": 0.002288,
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
@@ -23970,21 +23970,6 @@
     "num_phonetic_segments": 0
   },
   {
-    "digest_id": "T22n1426",
-    "source_id": "T22n1428",
-    "classification": "commentary",
-    "confidence": 0.3208,
-    "coverage": 0.3441,
-    "novel_fraction": 0.6557,
-    "avg_segment_length": 7.41,
-    "longest_segment": 41,
-    "num_source_regions": 200,
-    "source_span": 0.003122,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0007,
-    "num_phonetic_segments": 1
-  },
-  {
     "digest_id": "T04n0211",
     "source_id": "T53n2122",
     "classification": "shared_tradition",
@@ -24025,6 +24010,36 @@
     "longest_segment": 67,
     "num_source_regions": 1,
     "source_span": 0.002011,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0,
+    "num_phonetic_segments": 0
+  },
+  {
+    "digest_id": "T20n1047",
+    "source_id": "T13n0397",
+    "classification": "shared_tradition",
+    "confidence": 0.3206,
+    "coverage": 0.25,
+    "novel_fraction": 0.7483,
+    "avg_segment_length": 6.08,
+    "longest_segment": 11,
+    "num_source_regions": 23,
+    "source_span": 0.000266,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0086,
+    "num_phonetic_segments": 1
+  },
+  {
+    "digest_id": "T22n1426",
+    "source_id": "T22n1428",
+    "classification": "commentary",
+    "confidence": 0.3206,
+    "coverage": 0.3435,
+    "novel_fraction": 0.6565,
+    "avg_segment_length": 7.41,
+    "longest_segment": 41,
+    "num_source_regions": 200,
+    "source_span": 0.00312,
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
@@ -24105,34 +24120,19 @@
     "num_phonetic_segments": 0
   },
   {
-    "digest_id": "T55n2147",
-    "source_id": "T55n2145",
-    "classification": "commentary",
-    "confidence": 0.3202,
-    "coverage": 0.4474,
-    "novel_fraction": 0.5523,
-    "avg_segment_length": 7.67,
-    "longest_segment": 60,
-    "num_source_regions": 48,
-    "source_span": 0.059988,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0014,
-    "num_phonetic_segments": 6
-  },
-  {
     "digest_id": "T55n2148",
     "source_id": "T49n2034",
     "classification": "retranslation",
     "confidence": 0.3201,
-    "coverage": 0.4723,
-    "novel_fraction": 0.5276,
+    "coverage": 0.4721,
+    "novel_fraction": 0.5278,
     "avg_segment_length": 8.3,
     "longest_segment": 207,
     "num_source_regions": 100,
-    "source_span": 0.118561,
+    "source_span": 0.1185,
     "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0006,
-    "num_phonetic_segments": 3
+    "phonetic_coverage": 0.0004,
+    "num_phonetic_segments": 2
   },
   {
     "digest_id": "T12n0386",
@@ -24148,6 +24148,21 @@
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
+  },
+  {
+    "digest_id": "T55n2147",
+    "source_id": "T55n2145",
+    "classification": "commentary",
+    "confidence": 0.32,
+    "coverage": 0.4467,
+    "novel_fraction": 0.5532,
+    "avg_segment_length": 7.68,
+    "longest_segment": 60,
+    "num_source_regions": 48,
+    "source_span": 0.059941,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0005,
+    "num_phonetic_segments": 2
   },
   {
     "digest_id": "T12n0358",
@@ -24480,21 +24495,6 @@
     "num_phonetic_segments": 0
   },
   {
-    "digest_id": "T20n1047",
-    "source_id": "T13n0397",
-    "classification": "shared_tradition",
-    "confidence": 0.3184,
-    "coverage": 0.2431,
-    "novel_fraction": 0.7569,
-    "avg_segment_length": 6.13,
-    "longest_segment": 11,
-    "num_source_regions": 22,
-    "source_span": 0.000256,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0,
-    "num_phonetic_segments": 0
-  },
-  {
     "digest_id": "T31n1586",
     "source_id": "T54n2131",
     "classification": "shared_tradition",
@@ -24660,6 +24660,21 @@
     "num_phonetic_segments": 0
   },
   {
+    "digest_id": "T22n1422b",
+    "source_id": "T22n1428",
+    "classification": "commentary",
+    "confidence": 0.3178,
+    "coverage": 0.3402,
+    "novel_fraction": 0.6597,
+    "avg_segment_length": 6.48,
+    "longest_segment": 20,
+    "num_source_regions": 163,
+    "source_span": 0.002185,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0008,
+    "num_phonetic_segments": 1
+  },
+  {
     "digest_id": "T22n1434",
     "source_id": "T23n1435",
     "classification": "commentary",
@@ -24715,21 +24730,6 @@
     "longest_segment": 23,
     "num_source_regions": 15,
     "source_span": 0.000347,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0,
-    "num_phonetic_segments": 0
-  },
-  {
-    "digest_id": "T22n1422b",
-    "source_id": "T22n1428",
-    "classification": "commentary",
-    "confidence": 0.3176,
-    "coverage": 0.3396,
-    "novel_fraction": 0.6604,
-    "avg_segment_length": 6.48,
-    "longest_segment": 20,
-    "num_source_regions": 162,
-    "source_span": 0.002176,
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
@@ -25740,6 +25740,21 @@
     "num_phonetic_segments": 0
   },
   {
+    "digest_id": "T20n1111",
+    "source_id": "T20n1112",
+    "classification": "shared_tradition",
+    "confidence": 0.3125,
+    "coverage": 0.1155,
+    "novel_fraction": 0.8557,
+    "avg_segment_length": 8.62,
+    "longest_segment": 16,
+    "num_source_regions": 3,
+    "source_span": 0.013636,
+    "has_docnumber_xref": true,
+    "phonetic_coverage": 0.1443,
+    "num_phonetic_segments": 21
+  },
+  {
     "digest_id": "T55n2162",
     "source_id": "T55n2176",
     "classification": "commentary",
@@ -26565,21 +26580,6 @@
     "num_phonetic_segments": 0
   },
   {
-    "digest_id": "T20n1111",
-    "source_id": "T20n1112",
-    "classification": "shared_tradition",
-    "confidence": 0.3092,
-    "coverage": 0.111,
-    "novel_fraction": 0.8612,
-    "avg_segment_length": 8.29,
-    "longest_segment": 16,
-    "num_source_regions": 3,
-    "source_span": 0.014146,
-    "has_docnumber_xref": true,
-    "phonetic_coverage": 0.1388,
-    "num_phonetic_segments": 21
-  },
-  {
     "digest_id": "T19n0994",
     "source_id": "T33n1709",
     "classification": "shared_tradition",
@@ -26963,8 +26963,8 @@
     "novel_fraction": 0.5895,
     "avg_segment_length": 5.99,
     "longest_segment": 25,
-    "num_source_regions": 154,
-    "source_span": 0.022914,
+    "num_source_regions": 155,
+    "source_span": 0.022969,
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0021,
     "num_phonetic_segments": 3
@@ -27825,6 +27825,21 @@
     "num_phonetic_segments": 0
   },
   {
+    "digest_id": "T55n2148",
+    "source_id": "T55n2145",
+    "classification": "commentary",
+    "confidence": 0.303,
+    "coverage": 0.4069,
+    "novel_fraction": 0.593,
+    "avg_segment_length": 7.73,
+    "longest_segment": 40,
+    "num_source_regions": 49,
+    "source_span": 0.057187,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0005,
+    "num_phonetic_segments": 3
+  },
+  {
     "digest_id": "T52n2108",
     "source_id": "T52n2102",
     "classification": "shared_tradition",
@@ -27840,19 +27855,19 @@
     "num_phonetic_segments": 0
   },
   {
-    "digest_id": "T55n2148",
-    "source_id": "T55n2145",
-    "classification": "commentary",
-    "confidence": 0.3029,
-    "coverage": 0.4066,
-    "novel_fraction": 0.5934,
-    "avg_segment_length": 7.74,
-    "longest_segment": 40,
-    "num_source_regions": 49,
-    "source_span": 0.057148,
+    "digest_id": "T21n1238",
+    "source_id": "T21n1336",
+    "classification": "shared_tradition",
+    "confidence": 0.3027,
+    "coverage": 0.1781,
+    "novel_fraction": 0.8216,
+    "avg_segment_length": 24.4,
+    "longest_segment": 395,
+    "num_source_regions": 28,
+    "source_span": 0.019578,
     "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0002,
-    "num_phonetic_segments": 1
+    "phonetic_coverage": 0.002,
+    "num_phonetic_segments": 3
   },
   {
     "digest_id": "T46n1944",
@@ -27898,21 +27913,6 @@
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
-  },
-  {
-    "digest_id": "T21n1238",
-    "source_id": "T21n1336",
-    "classification": "shared_tradition",
-    "confidence": 0.3026,
-    "coverage": 0.1776,
-    "novel_fraction": 0.8222,
-    "avg_segment_length": 24.73,
-    "longest_segment": 395,
-    "num_source_regions": 28,
-    "source_span": 0.019506,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0013,
-    "num_phonetic_segments": 2
   },
   {
     "digest_id": "T21n1382",
@@ -28308,16 +28308,16 @@
     "digest_id": "T12n0353",
     "source_id": "T85n2762",
     "classification": "retranslation",
-    "confidence": 0.3006,
-    "coverage": 0.4253,
-    "novel_fraction": 0.5745,
+    "confidence": 0.3005,
+    "coverage": 0.4248,
+    "novel_fraction": 0.575,
     "avg_segment_length": 7.15,
     "longest_segment": 36,
     "num_source_regions": 73,
-    "source_span": 0.110528,
+    "source_span": 0.110323,
     "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0012,
-    "num_phonetic_segments": 2
+    "phonetic_coverage": 0.0006,
+    "num_phonetic_segments": 1
   },
   {
     "digest_id": "T17n0778",
@@ -28578,16 +28578,16 @@
     "digest_id": "T22n1430",
     "source_id": "T23n1442",
     "classification": "shared_tradition",
-    "confidence": 0.2989,
-    "coverage": 0.2965,
-    "novel_fraction": 0.7013,
-    "avg_segment_length": 7.89,
+    "confidence": 0.299,
+    "coverage": 0.297,
+    "novel_fraction": 0.7007,
+    "avg_segment_length": 7.88,
     "longest_segment": 46,
     "num_source_regions": 141,
-    "source_span": 0.004538,
+    "source_span": 0.004551,
     "has_docnumber_xref": false,
-    "phonetic_coverage": 0.011,
-    "num_phonetic_segments": 18
+    "phonetic_coverage": 0.0116,
+    "num_phonetic_segments": 19
   },
   {
     "digest_id": "T26n1531",
@@ -30454,15 +30454,15 @@
     "source_id": "T53n2121",
     "classification": "digest",
     "confidence": 0.29,
-    "coverage": 0.3056,
-    "novel_fraction": 0.6944,
-    "avg_segment_length": 10.63,
+    "coverage": 0.306,
+    "novel_fraction": 0.6939,
+    "avg_segment_length": 10.61,
     "longest_segment": 244,
     "num_source_regions": 227,
     "source_span": 0.029569,
     "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0001,
-    "num_phonetic_segments": 1
+    "phonetic_coverage": 0.0006,
+    "num_phonetic_segments": 6
   },
   {
     "digest_id": "T55n2162",
@@ -30870,21 +30870,6 @@
     "num_phonetic_segments": 0
   },
   {
-    "digest_id": "T55n2174A",
-    "source_id": "T55n2157",
-    "classification": "shared_tradition",
-    "confidence": 0.2886,
-    "coverage": 0.2577,
-    "novel_fraction": 0.7415,
-    "avg_segment_length": 6.36,
-    "longest_segment": 20,
-    "num_source_regions": 57,
-    "source_span": 0.002414,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0038,
-    "num_phonetic_segments": 2
-  },
-  {
     "digest_id": "T55n2173",
     "source_id": "T55n2154",
     "classification": "shared_tradition",
@@ -30988,6 +30973,21 @@
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
+  },
+  {
+    "digest_id": "T55n2174A",
+    "source_id": "T55n2157",
+    "classification": "shared_tradition",
+    "confidence": 0.2881,
+    "coverage": 0.2562,
+    "novel_fraction": 0.7434,
+    "avg_segment_length": 6.37,
+    "longest_segment": 20,
+    "num_source_regions": 56,
+    "source_span": 0.002394,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0019,
+    "num_phonetic_segments": 1
   },
   {
     "digest_id": "T08n0254",
@@ -32820,21 +32820,6 @@
     "num_phonetic_segments": 0
   },
   {
-    "digest_id": "T38n1772",
-    "source_id": "T34n1723",
-    "classification": "shared_tradition",
-    "confidence": 0.2812,
-    "coverage": 0.1965,
-    "novel_fraction": 0.8035,
-    "avg_segment_length": 15.71,
-    "longest_segment": 1052,
-    "num_source_regions": 203,
-    "source_span": 0.026043,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0,
-    "num_phonetic_segments": 0
-  },
-  {
     "digest_id": "T47n1995",
     "source_id": "T51n2077",
     "classification": "shared_tradition",
@@ -32893,6 +32878,21 @@
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
+  },
+  {
+    "digest_id": "T38n1772",
+    "source_id": "T34n1723",
+    "classification": "shared_tradition",
+    "confidence": 0.2811,
+    "coverage": 0.1966,
+    "novel_fraction": 0.8033,
+    "avg_segment_length": 15.69,
+    "longest_segment": 1052,
+    "num_source_regions": 202,
+    "source_span": 0.026062,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0001,
+    "num_phonetic_segments": 1
   },
   {
     "digest_id": "T30n1580",
@@ -39795,21 +39795,6 @@
     "num_phonetic_segments": 0
   },
   {
-    "digest_id": "T19n0988",
-    "source_id": "T21n1332",
-    "classification": "shared_tradition",
-    "confidence": 0.2556,
-    "coverage": 0.1699,
-    "novel_fraction": 0.8265,
-    "avg_segment_length": 11.67,
-    "longest_segment": 114,
-    "num_source_regions": 16,
-    "source_span": 0.014873,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.018,
-    "num_phonetic_segments": 9
-  },
-  {
     "digest_id": "T14n0464",
     "source_id": "T30n1579",
     "classification": "shared_tradition",
@@ -39823,6 +39808,21 @@
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
+  },
+  {
+    "digest_id": "T19n0988",
+    "source_id": "T21n1332",
+    "classification": "shared_tradition",
+    "confidence": 0.2555,
+    "coverage": 0.1712,
+    "novel_fraction": 0.8248,
+    "avg_segment_length": 11.57,
+    "longest_segment": 114,
+    "num_source_regions": 16,
+    "source_span": 0.015065,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0197,
+    "num_phonetic_segments": 10
   },
   {
     "digest_id": "T20n1058",
@@ -41610,21 +41610,6 @@
     "num_phonetic_segments": 0
   },
   {
-    "digest_id": "T55n2148",
-    "source_id": "T54n2128",
-    "classification": "shared_tradition",
-    "confidence": 0.2496,
-    "coverage": 0.2826,
-    "novel_fraction": 0.7173,
-    "avg_segment_length": 6.11,
-    "longest_segment": 22,
-    "num_source_regions": 118,
-    "source_span": 0.045001,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0009,
-    "num_phonetic_segments": 5
-  },
-  {
     "digest_id": "T14n0454",
     "source_id": "T13n0397",
     "classification": "shared_tradition",
@@ -41668,6 +41653,21 @@
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
+  },
+  {
+    "digest_id": "T55n2148",
+    "source_id": "T54n2128",
+    "classification": "shared_tradition",
+    "confidence": 0.2495,
+    "coverage": 0.2823,
+    "novel_fraction": 0.7176,
+    "avg_segment_length": 6.12,
+    "longest_segment": 22,
+    "num_source_regions": 118,
+    "source_span": 0.044957,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0005,
+    "num_phonetic_segments": 3
   },
   {
     "digest_id": "T85n2737",
@@ -42555,6 +42555,21 @@
     "num_phonetic_segments": 0
   },
   {
+    "digest_id": "T85n2741",
+    "source_id": "T33n1709",
+    "classification": "shared_tradition",
+    "confidence": 0.247,
+    "coverage": 0.1913,
+    "novel_fraction": 0.8087,
+    "avg_segment_length": 15.74,
+    "longest_segment": 126,
+    "num_source_regions": 49,
+    "source_span": 0.026667,
+    "has_docnumber_xref": false,
+    "phonetic_coverage": 0.0,
+    "num_phonetic_segments": 0
+  },
+  {
     "digest_id": "T03n0176",
     "source_id": "T03n0190",
     "classification": "shared_tradition",
@@ -42598,21 +42613,6 @@
     "has_docnumber_xref": false,
     "phonetic_coverage": 0.0,
     "num_phonetic_segments": 0
-  },
-  {
-    "digest_id": "T85n2741",
-    "source_id": "T33n1709",
-    "classification": "shared_tradition",
-    "confidence": 0.2468,
-    "coverage": 0.1915,
-    "novel_fraction": 0.8085,
-    "avg_segment_length": 15.69,
-    "longest_segment": 126,
-    "num_source_regions": 50,
-    "source_span": 0.026705,
-    "has_docnumber_xref": false,
-    "phonetic_coverage": 0.0003,
-    "num_phonetic_segments": 1
   },
   {
     "digest_id": "T26n1541",

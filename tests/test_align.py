@@ -6,6 +6,7 @@ from digest_detector.align import (
     _find_seeds,
     _extend_seeds,
     _chain_seeds,
+    _phonetic_rescan,
     align_pair,
     align_candidates,
     _count_source_regions,
@@ -24,7 +25,7 @@ class TestFindSeeds:
         assert len(seeds) > 0
         # Should find a long match
         max_len = max(s[2] for s in seeds)
-        assert max_len >= 10  # "觀自在菩薩行深般若波羅蜜" is 13 chars, 10 overlap
+        assert max_len >= 12  # "觀自在菩薩行深般若波羅蜜" is 13 chars, 12 overlap
 
     def test_no_match(self):
         digest = "甲乙丙丁戊己庚辛"
@@ -67,7 +68,7 @@ class TestChainSeeds:
         chained = _chain_seeds(seeds, 30)
         # Should pick the longer one or a non-overlapping combination
         total_coverage = sum(s[1] - s[0] for s in chained)
-        assert total_coverage >= 15
+        assert total_coverage >= 20
 
     def test_empty(self):
         assert _chain_seeds([], 100) == []
@@ -290,3 +291,90 @@ class TestNumWorkersEdgeCases:
         # Should not crash — falls through to serial path
         candidates = generate_candidates(texts, ngram_sets, stopgrams, num_workers=0)
         assert isinstance(candidates, list)
+
+
+class TestPhoneticRescanIsolation:
+    """Test _phonetic_rescan directly with synthetic phonetic equivalence tables."""
+
+    def test_phonetic_match_found(self):
+        """_phonetic_rescan should find phonetically equivalent transliterations."""
+        # Synthetic phonetic table: 竭↔揭 and 帝↔帝 (same char, in same group)
+        table = {
+            "竭": {"gate"},
+            "揭": {"gate"},
+            "帝": {"ti"},
+        }
+        # Digest has 竭帝竭帝竭 (Kumārajīva style)
+        # Source has 揭帝揭帝揭 (Xuanzang style)
+        digest_text = "一般文字" + "竭帝竭帝竭" + "更多文字"
+        source_text = "其他佛經文字" + "揭帝揭帝揭" + "後面的內容"
+
+        # Create a single novel segment covering the entire digest
+        novel_seg = AlignmentSegment(
+            digest_start=0,
+            digest_end=len(digest_text),
+            source_start=-1,
+            source_end=-1,
+            match_type="novel",
+            digest_text=digest_text,
+            source_text="",
+        )
+
+        result = _phonetic_rescan(digest_text, source_text, [novel_seg], table)
+
+        # Should have found at least one phonetic match
+        phonetic_segs = [s for s in result if s.match_type == "phonetic"]
+        assert len(phonetic_segs) >= 1
+        assert phonetic_segs[0].digest_text == "竭帝竭帝竭"
+
+    def test_no_phonetic_chars_unchanged(self):
+        """Novel segments with no transliteration chars should pass through unchanged."""
+        table = {"竭": {"gate"}, "揭": {"gate"}}
+        digest = "觀自在菩薩行深般若波羅蜜"
+        source = "如是我聞觀自在菩薩行"
+
+        novel_seg = AlignmentSegment(
+            digest_start=0, digest_end=len(digest),
+            source_start=-1, source_end=-1,
+            match_type="novel", digest_text=digest, source_text="",
+        )
+
+        result = _phonetic_rescan(digest, source, [novel_seg], table)
+        assert len(result) == 1
+        assert result[0].match_type == "novel"
+
+    def test_existing_matches_preserved(self):
+        """Non-novel segments should pass through unchanged."""
+        table = {"竭": {"gate"}}
+        digest = "觀自在菩薩"
+        source = "觀自在菩薩"
+
+        exact_seg = AlignmentSegment(
+            digest_start=0, digest_end=5,
+            source_start=0, source_end=5,
+            match_type="exact", digest_text=digest, source_text=source,
+        )
+
+        result = _phonetic_rescan(digest, source, [exact_seg], table)
+        assert len(result) == 1
+        assert result[0].match_type == "exact"
+
+    def test_phonetic_match_splits_novel(self):
+        """A phonetic match in the middle should split the novel segment into
+        novel + phonetic + novel."""
+        # 6 chars of phonetic equivalence: 竭帝竭帝竭帝 ↔ 揭帝揭帝揭帝
+        table = {"竭": {"gate"}, "揭": {"gate"}, "帝": {"ti"}}
+        digest = "普通文字" + "竭帝竭帝竭帝" + "更多普通"
+        source = "前面" + "揭帝揭帝揭帝" + "後面"
+
+        novel_seg = AlignmentSegment(
+            digest_start=0, digest_end=len(digest),
+            source_start=-1, source_end=-1,
+            match_type="novel", digest_text=digest, source_text="",
+        )
+
+        result = _phonetic_rescan(digest, source, [novel_seg], table)
+        types = [s.match_type for s in result]
+        assert "phonetic" in types
+        # Should have novel parts before and after the phonetic match
+        assert types.count("novel") >= 2
