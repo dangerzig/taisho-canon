@@ -2,9 +2,9 @@
   "source": "mitra",
   "citation": "Nehrdich, Sebastian & Kurt Keutzer. 2025. MITRA: A Large-Scale Parallel Corpus and Multilingual Pretrained Language Model for Machine Translation and Semantic Retrieval for Pali, Sanskrit, Buddhist Chinese, and Tibetan. arXiv:2601.06400.",
   "min_sentences": 20,
-  "total_pairs": 2389,
-  "unique_taisho": 758,
-  "unique_tohoku": 666,
+  "total_pairs": 2147,
+  "unique_taisho": 733,
+  "unique_tohoku": 522,
   "entries": {
     "T01n0001_Toh_1": {
       "taisho": "T01n0001",
@@ -342,34 +342,6 @@
       "confidence": 0.7,
       "note": "61 aligned sentence pairs (MITRA-parallel)"
     },
-    "T01n2888_Toh_1135": {
-      "taisho": "T01n2888",
-      "tohoku": "Toh 1135",
-      "sentence_count": 38,
-      "confidence": 0.7,
-      "note": "38 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T01n2925_Toh_1118": {
-      "taisho": "T01n2925",
-      "tohoku": "Toh 1118",
-      "sentence_count": 127,
-      "confidence": 0.9,
-      "note": "127 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T01n2971_Toh_44": {
-      "taisho": "T01n2971",
-      "tohoku": "Toh 44",
-      "sentence_count": 56,
-      "confidence": 0.7,
-      "note": "56 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T01n2971_Toh_4377": {
-      "taisho": "T01n2971",
-      "tohoku": "Toh 4377",
-      "sentence_count": 57,
-      "confidence": 0.7,
-      "note": "57 aligned sentence pairs (MITRA-parallel)"
-    },
     "T02n0099_Toh_1": {
       "taisho": "T02n0099",
       "tohoku": "Toh 1",
@@ -678,524 +650,6 @@
       "confidence": 0.7,
       "note": "66 aligned sentence pairs (MITRA-parallel)"
     },
-    "T02n1402_Toh_1623": {
-      "taisho": "T02n1402",
-      "tohoku": "Toh 1623",
-      "sentence_count": 492,
-      "confidence": 0.9,
-      "note": "492 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1402_Toh_1643": {
-      "taisho": "T02n1402",
-      "tohoku": "Toh 1643",
-      "sentence_count": 72,
-      "confidence": 0.7,
-      "note": "72 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1403_Toh_1585": {
-      "taisho": "T02n1403",
-      "tohoku": "Toh 1585",
-      "sentence_count": 879,
-      "confidence": 0.9,
-      "note": "879 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1413_Toh_2256": {
-      "taisho": "T02n1413",
-      "tohoku": "Toh 2256",
-      "sentence_count": 851,
-      "confidence": 0.9,
-      "note": "851 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1414_Toh_1581": {
-      "taisho": "T02n1414",
-      "tohoku": "Toh 1581",
-      "sentence_count": 107,
-      "confidence": 0.9,
-      "note": "107 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1414_Toh_1582": {
-      "taisho": "T02n1414",
-      "tohoku": "Toh 1582",
-      "sentence_count": 29,
-      "confidence": 0.7,
-      "note": "29 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_488": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 488",
-      "sentence_count": 21,
-      "confidence": 0.7,
-      "note": "21 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1181": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1181",
-      "sentence_count": 21,
-      "confidence": 0.7,
-      "note": "21 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1251": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1251",
-      "sentence_count": 40,
-      "confidence": 0.7,
-      "note": "40 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1254": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1254",
-      "sentence_count": 26,
-      "confidence": 0.7,
-      "note": "26 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1270": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1270",
-      "sentence_count": 38,
-      "confidence": 0.7,
-      "note": "38 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1420": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1420",
-      "sentence_count": 28,
-      "confidence": 0.7,
-      "note": "28 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1430": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1430",
-      "sentence_count": 31,
-      "confidence": 0.7,
-      "note": "31 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1444": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1444",
-      "sentence_count": 26,
-      "confidence": 0.7,
-      "note": "26 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1470": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1470",
-      "sentence_count": 33,
-      "confidence": 0.7,
-      "note": "33 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1477": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1477",
-      "sentence_count": 20,
-      "confidence": 0.7,
-      "note": "20 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1486": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1486",
-      "sentence_count": 24,
-      "confidence": 0.7,
-      "note": "24 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1489": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1489",
-      "sentence_count": 21,
-      "confidence": 0.7,
-      "note": "21 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1499": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1499",
-      "sentence_count": 30,
-      "confidence": 0.7,
-      "note": "30 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1513": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1513",
-      "sentence_count": 33,
-      "confidence": 0.7,
-      "note": "33 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1521": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1521",
-      "sentence_count": 24,
-      "confidence": 0.7,
-      "note": "24 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1644": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1644",
-      "sentence_count": 39,
-      "confidence": 0.7,
-      "note": "39 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1671": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1671",
-      "sentence_count": 24,
-      "confidence": 0.7,
-      "note": "24 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1793": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1793",
-      "sentence_count": 33,
-      "confidence": 0.7,
-      "note": "33 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1798": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1798",
-      "sentence_count": 63,
-      "confidence": 0.7,
-      "note": "63 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1819": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1819",
-      "sentence_count": 53,
-      "confidence": 0.7,
-      "note": "53 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1848": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1848",
-      "sentence_count": 21,
-      "confidence": 0.7,
-      "note": "21 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1852": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1852",
-      "sentence_count": 53,
-      "confidence": 0.7,
-      "note": "53 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1855": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1855",
-      "sentence_count": 34,
-      "confidence": 0.7,
-      "note": "34 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1865": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1865",
-      "sentence_count": 601,
-      "confidence": 0.9,
-      "note": "601 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1874": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1874",
-      "sentence_count": 123,
-      "confidence": 0.9,
-      "note": "123 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1882": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1882",
-      "sentence_count": 68,
-      "confidence": 0.7,
-      "note": "68 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1911": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1911",
-      "sentence_count": 44,
-      "confidence": 0.7,
-      "note": "44 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1924": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1924",
-      "sentence_count": 72,
-      "confidence": 0.7,
-      "note": "72 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_1926": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 1926",
-      "sentence_count": 81,
-      "confidence": 0.7,
-      "note": "81 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_2024": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 2024",
-      "sentence_count": 53,
-      "confidence": 0.7,
-      "note": "53 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_2244": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 2244",
-      "sentence_count": 31,
-      "confidence": 0.7,
-      "note": "31 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_2529": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 2529",
-      "sentence_count": 20,
-      "confidence": 0.7,
-      "note": "20 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_2589": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 2589",
-      "sentence_count": 27,
-      "confidence": 0.7,
-      "note": "27 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_3140": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 3140",
-      "sentence_count": 32,
-      "confidence": 0.7,
-      "note": "32 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_3305": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 3305",
-      "sentence_count": 23,
-      "confidence": 0.7,
-      "note": "23 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1424_Toh_9584": {
-      "taisho": "T02n1424",
-      "tohoku": "Toh 9584",
-      "sentence_count": 100,
-      "confidence": 0.9,
-      "note": "100 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n1426_Toh_1840": {
-      "taisho": "T02n1426",
-      "tohoku": "Toh 1840",
-      "sentence_count": 22,
-      "confidence": 0.7,
-      "note": "22 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2877_Toh_1351": {
-      "taisho": "T02n2877",
-      "tohoku": "Toh 1351",
-      "sentence_count": 28,
-      "confidence": 0.7,
-      "note": "28 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2877_Toh_2249": {
-      "taisho": "T02n2877",
-      "tohoku": "Toh 2249",
-      "sentence_count": 21,
-      "confidence": 0.7,
-      "note": "21 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2884_Toh_1869": {
-      "taisho": "T02n2884",
-      "tohoku": "Toh 1869",
-      "sentence_count": 61,
-      "confidence": 0.7,
-      "note": "61 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2886_Toh_445": {
-      "taisho": "T02n2886",
-      "tohoku": "Toh 445",
-      "sentence_count": 41,
-      "confidence": 0.7,
-      "note": "41 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2886_Toh_1785": {
-      "taisho": "T02n2886",
-      "tohoku": "Toh 1785",
-      "sentence_count": 44,
-      "confidence": 0.7,
-      "note": "44 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2886_Toh_1809": {
-      "taisho": "T02n2886",
-      "tohoku": "Toh 1809",
-      "sentence_count": 434,
-      "confidence": 0.9,
-      "note": "434 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2886_Toh_1827": {
-      "taisho": "T02n2886",
-      "tohoku": "Toh 1827",
-      "sentence_count": 43,
-      "confidence": 0.7,
-      "note": "43 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2912_Toh_381": {
-      "taisho": "T02n2912",
-      "tohoku": "Toh 381",
-      "sentence_count": 60,
-      "confidence": 0.7,
-      "note": "60 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2912_Toh_2218": {
-      "taisho": "T02n2912",
-      "tohoku": "Toh 2218",
-      "sentence_count": 193,
-      "confidence": 0.9,
-      "note": "193 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2914_Toh_2223": {
-      "taisho": "T02n2914",
-      "tohoku": "Toh 2223",
-      "sentence_count": 62,
-      "confidence": 0.7,
-      "note": "62 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2918_Toh_2240": {
-      "taisho": "T02n2918",
-      "tohoku": "Toh 2240",
-      "sentence_count": 149,
-      "confidence": 0.9,
-      "note": "149 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2934_Toh_1198": {
-      "taisho": "T02n2934",
-      "tohoku": "Toh 1198",
-      "sentence_count": 68,
-      "confidence": 0.7,
-      "note": "68 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2934_Toh_1654": {
-      "taisho": "T02n2934",
-      "tohoku": "Toh 1654",
-      "sentence_count": 446,
-      "confidence": 0.9,
-      "note": "446 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2934_Toh_3709": {
-      "taisho": "T02n2934",
-      "tohoku": "Toh 3709",
-      "sentence_count": 36,
-      "confidence": 0.7,
-      "note": "36 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2955_Toh_2531": {
-      "taisho": "T02n2955",
-      "tohoku": "Toh 2531",
-      "sentence_count": 66,
-      "confidence": 0.7,
-      "note": "66 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2965_Toh_1383": {
-      "taisho": "T02n2965",
-      "tohoku": "Toh 1383",
-      "sentence_count": 103,
-      "confidence": 0.9,
-      "note": "103 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2974_Toh_3887": {
-      "taisho": "T02n2974",
-      "tohoku": "Toh 3887",
-      "sentence_count": 43,
-      "confidence": 0.7,
-      "note": "43 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2974_Toh_3903": {
-      "taisho": "T02n2974",
-      "tohoku": "Toh 3903",
-      "sentence_count": 45,
-      "confidence": 0.7,
-      "note": "45 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2988_Toh_1827": {
-      "taisho": "T02n2988",
-      "tohoku": "Toh 1827",
-      "sentence_count": 23,
-      "confidence": 0.7,
-      "note": "23 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2988_Toh_2219": {
-      "taisho": "T02n2988",
-      "tohoku": "Toh 2219",
-      "sentence_count": 706,
-      "confidence": 0.9,
-      "note": "706 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2998_Toh_1186": {
-      "taisho": "T02n2998",
-      "tohoku": "Toh 1186",
-      "sentence_count": 87,
-      "confidence": 0.7,
-      "note": "87 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2998_Toh_1351": {
-      "taisho": "T02n2998",
-      "tohoku": "Toh 1351",
-      "sentence_count": 87,
-      "confidence": 0.7,
-      "note": "87 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2998_Toh_1359": {
-      "taisho": "T02n2998",
-      "tohoku": "Toh 1359",
-      "sentence_count": 26,
-      "confidence": 0.7,
-      "note": "26 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2998_Toh_1364": {
-      "taisho": "T02n2998",
-      "tohoku": "Toh 1364",
-      "sentence_count": 117,
-      "confidence": 0.9,
-      "note": "117 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2998_Toh_1387": {
-      "taisho": "T02n2998",
-      "tohoku": "Toh 1387",
-      "sentence_count": 125,
-      "confidence": 0.9,
-      "note": "125 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2998_Toh_1402": {
-      "taisho": "T02n2998",
-      "tohoku": "Toh 1402",
-      "sentence_count": 1352,
-      "confidence": 0.9,
-      "note": "1352 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2998_Toh_1410": {
-      "taisho": "T02n2998",
-      "tohoku": "Toh 1410",
-      "sentence_count": 41,
-      "confidence": 0.7,
-      "note": "41 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2998_Toh_1426": {
-      "taisho": "T02n2998",
-      "tohoku": "Toh 1426",
-      "sentence_count": 161,
-      "confidence": 0.9,
-      "note": "161 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n2998_Toh_1557": {
-      "taisho": "T02n2998",
-      "tohoku": "Toh 1557",
-      "sentence_count": 31,
-      "confidence": 0.7,
-      "note": "31 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n3006_Toh_431": {
-      "taisho": "T02n3006",
-      "tohoku": "Toh 431",
-      "sentence_count": 63,
-      "confidence": 0.7,
-      "note": "63 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T02n3006_Toh_475": {
-      "taisho": "T02n3006",
-      "tohoku": "Toh 475",
-      "sentence_count": 67,
-      "confidence": 0.7,
-      "note": "67 aligned sentence pairs (MITRA-parallel)"
-    },
     "T03n0152_Toh_351": {
       "taisho": "T03n0152",
       "tohoku": "Toh 351",
@@ -1406,209 +860,6 @@
       "confidence": 0.9,
       "note": "283 aligned sentence pairs (MITRA-parallel)"
     },
-    "T03n1146_Toh_1182": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 1182",
-      "sentence_count": 36,
-      "confidence": 0.7,
-      "note": "36 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_1184": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 1184",
-      "sentence_count": 46,
-      "confidence": 0.7,
-      "note": "46 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_1190": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 1190",
-      "sentence_count": 33,
-      "confidence": 0.7,
-      "note": "33 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_2534": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 2534",
-      "sentence_count": 57,
-      "confidence": 0.7,
-      "note": "57 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_2690": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 2690",
-      "sentence_count": 32,
-      "confidence": 0.7,
-      "note": "32 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_3786": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 3786",
-      "sentence_count": 42,
-      "confidence": 0.7,
-      "note": "42 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_3787": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 3787",
-      "sentence_count": 179,
-      "confidence": 0.9,
-      "note": "179 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_3788": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 3788",
-      "sentence_count": 97,
-      "confidence": 0.7,
-      "note": "97 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_3791": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 3791",
-      "sentence_count": 6817,
-      "confidence": 0.9,
-      "note": "6817 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_3792": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 3792",
-      "sentence_count": 20,
-      "confidence": 0.7,
-      "note": "20 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_3793": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 3793",
-      "sentence_count": 233,
-      "confidence": 0.9,
-      "note": "233 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_3794": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 3794",
-      "sentence_count": 98,
-      "confidence": 0.7,
-      "note": "98 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_3799": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 3799",
-      "sentence_count": 95,
-      "confidence": 0.7,
-      "note": "95 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_3800": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 3800",
-      "sentence_count": 77,
-      "confidence": 0.7,
-      "note": "77 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_3801": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 3801",
-      "sentence_count": 34,
-      "confidence": 0.7,
-      "note": "34 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_3802": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 3802",
-      "sentence_count": 24,
-      "confidence": 0.7,
-      "note": "24 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_3803": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 3803",
-      "sentence_count": 82,
-      "confidence": 0.7,
-      "note": "82 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_3805": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 3805",
-      "sentence_count": 76,
-      "confidence": 0.7,
-      "note": "76 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_3811": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 3811",
-      "sentence_count": 53,
-      "confidence": 0.7,
-      "note": "53 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_3815": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 3815",
-      "sentence_count": 26,
-      "confidence": 0.7,
-      "note": "26 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_3886": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 3886",
-      "sentence_count": 57,
-      "confidence": 0.7,
-      "note": "57 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_3897": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 3897",
-      "sentence_count": 24,
-      "confidence": 0.7,
-      "note": "24 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_3903": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 3903",
-      "sentence_count": 26,
-      "confidence": 0.7,
-      "note": "26 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_3964": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 3964",
-      "sentence_count": 48,
-      "confidence": 0.7,
-      "note": "48 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_3982": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 3982",
-      "sentence_count": 21,
-      "confidence": 0.7,
-      "note": "21 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_3987": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 3987",
-      "sentence_count": 25,
-      "confidence": 0.7,
-      "note": "25 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_4026": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 4026",
-      "sentence_count": 21,
-      "confidence": 0.7,
-      "note": "21 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_4094": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 4094",
-      "sentence_count": 32,
-      "confidence": 0.7,
-      "note": "32 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T03n1146_Toh_4267": {
-      "taisho": "T03n1146",
-      "tohoku": "Toh 4267",
-      "sentence_count": 68,
-      "confidence": 0.7,
-      "note": "68 aligned sentence pairs (MITRA-parallel)"
-    },
     "T04n0192_Toh_4152": {
       "taisho": "T04n0192",
       "tohoku": "Toh 4152",
@@ -1735,397 +986,341 @@
       "confidence": 0.9,
       "note": "552 aligned sentence pairs (MITRA-parallel)"
     },
-    "T04n1002_Toh_3845": {
-      "taisho": "T04n1002",
-      "tohoku": "Toh 3845",
-      "sentence_count": 41,
-      "confidence": 0.7,
-      "note": "41 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T04n1002_Toh_3849": {
-      "taisho": "T04n1002",
-      "tohoku": "Toh 3849",
-      "sentence_count": 42,
-      "confidence": 0.7,
-      "note": "42 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T04n1003_Toh_3855": {
-      "taisho": "T04n1003",
-      "tohoku": "Toh 3855",
-      "sentence_count": 881,
-      "confidence": 0.9,
-      "note": "881 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T04n1003_Toh_3856": {
-      "taisho": "T04n1003",
-      "tohoku": "Toh 3856",
-      "sentence_count": 161,
-      "confidence": 0.9,
-      "note": "161 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T04n1047_Toh_3857": {
-      "taisho": "T04n1047",
-      "tohoku": "Toh 3857",
-      "sentence_count": 22,
-      "confidence": 0.7,
-      "note": "22 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T04n2980_Toh_8": {
-      "taisho": "T04n2980",
-      "tohoku": "Toh 8",
-      "sentence_count": 24,
-      "confidence": 0.7,
-      "note": "24 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T04n2980_Toh_3861": {
-      "taisho": "T04n2980",
-      "tohoku": "Toh 3861",
-      "sentence_count": 479,
-      "confidence": 0.9,
-      "note": "479 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T04n2980_Toh_3862": {
-      "taisho": "T04n2980",
-      "tohoku": "Toh 3862",
-      "sentence_count": 102,
-      "confidence": 0.9,
-      "note": "102 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T04n2980_Toh_3964": {
-      "taisho": "T04n2980",
-      "tohoku": "Toh 3964",
-      "sentence_count": 52,
-      "confidence": 0.7,
-      "note": "52 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T05n0220_Toh_8": {
-      "taisho": "T05n0220",
+    "T05n0220a_Toh_8": {
+      "taisho": "T05n0220a",
       "tohoku": "Toh 8",
       "sentence_count": 4834,
       "confidence": 0.9,
       "note": "4834 aligned sentence pairs (MITRA-parallel)"
     },
-    "T05n0220_Toh_9": {
-      "taisho": "T05n0220",
+    "T05n0220a_Toh_9": {
+      "taisho": "T05n0220a",
       "tohoku": "Toh 9",
       "sentence_count": 2244,
       "confidence": 0.9,
       "note": "2244 aligned sentence pairs (MITRA-parallel)"
     },
-    "T05n0220_Toh_10": {
-      "taisho": "T05n0220",
+    "T05n0220a_Toh_10": {
+      "taisho": "T05n0220a",
       "tohoku": "Toh 10",
       "sentence_count": 2180,
       "confidence": 0.9,
       "note": "2180 aligned sentence pairs (MITRA-parallel)"
     },
-    "T05n0220_Toh_11": {
-      "taisho": "T05n0220",
+    "T05n0220a_Toh_11": {
+      "taisho": "T05n0220a",
       "tohoku": "Toh 11",
       "sentence_count": 667,
       "confidence": 0.9,
       "note": "667 aligned sentence pairs (MITRA-parallel)"
     },
-    "T05n0220_Toh_12": {
-      "taisho": "T05n0220",
+    "T05n0220a_Toh_12": {
+      "taisho": "T05n0220a",
       "tohoku": "Toh 12",
       "sentence_count": 233,
       "confidence": 0.9,
       "note": "233 aligned sentence pairs (MITRA-parallel)"
     },
-    "T05n0220_Toh_2534": {
-      "taisho": "T05n0220",
+    "T05n0220a_Toh_2534": {
+      "taisho": "T05n0220a",
       "tohoku": "Toh 2534",
       "sentence_count": 55,
       "confidence": 0.7,
       "note": "55 aligned sentence pairs (MITRA-parallel)"
     },
-    "T05n0220_Toh_3790": {
-      "taisho": "T05n0220",
+    "T05n0220a_Toh_3790": {
+      "taisho": "T05n0220a",
       "tohoku": "Toh 3790",
       "sentence_count": 1402,
       "confidence": 0.9,
       "note": "1402 aligned sentence pairs (MITRA-parallel)"
     },
-    "T05n0220_Toh_3807": {
-      "taisho": "T05n0220",
+    "T05n0220a_Toh_3807": {
+      "taisho": "T05n0220a",
       "tohoku": "Toh 3807",
       "sentence_count": 207,
       "confidence": 0.9,
       "note": "207 aligned sentence pairs (MITRA-parallel)"
     },
-    "T05n1110_Toh_4005": {
-      "taisho": "T05n1110",
-      "tohoku": "Toh 4005",
-      "sentence_count": 419,
-      "confidence": 0.9,
-      "note": "419 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T06n0220_Toh_8": {
-      "taisho": "T06n0220",
+    "T06n0220b_Toh_8": {
+      "taisho": "T06n0220b",
       "tohoku": "Toh 8",
       "sentence_count": 6399,
       "confidence": 0.9,
       "note": "6399 aligned sentence pairs (MITRA-parallel)"
     },
-    "T06n0220_Toh_9": {
-      "taisho": "T06n0220",
+    "T06n0220b_Toh_9": {
+      "taisho": "T06n0220b",
       "tohoku": "Toh 9",
       "sentence_count": 3059,
       "confidence": 0.9,
       "note": "3059 aligned sentence pairs (MITRA-parallel)"
     },
-    "T06n0220_Toh_10": {
-      "taisho": "T06n0220",
+    "T06n0220b_Toh_10": {
+      "taisho": "T06n0220b",
       "tohoku": "Toh 10",
       "sentence_count": 2513,
       "confidence": 0.9,
       "note": "2513 aligned sentence pairs (MITRA-parallel)"
     },
-    "T06n0220_Toh_11": {
-      "taisho": "T06n0220",
+    "T06n0220b_Toh_11": {
+      "taisho": "T06n0220b",
       "tohoku": "Toh 11",
       "sentence_count": 511,
       "confidence": 0.9,
       "note": "511 aligned sentence pairs (MITRA-parallel)"
     },
-    "T06n0220_Toh_12": {
-      "taisho": "T06n0220",
+    "T06n0220b_Toh_12": {
+      "taisho": "T06n0220b",
       "tohoku": "Toh 12",
       "sentence_count": 537,
       "confidence": 0.9,
       "note": "537 aligned sentence pairs (MITRA-parallel)"
     },
-    "T06n0220_Toh_3790": {
-      "taisho": "T06n0220",
+    "T06n0220b_Toh_3790": {
+      "taisho": "T06n0220b",
       "tohoku": "Toh 3790",
       "sentence_count": 2476,
       "confidence": 0.9,
       "note": "2476 aligned sentence pairs (MITRA-parallel)"
     },
-    "T06n0220_Toh_3807": {
-      "taisho": "T06n0220",
+    "T06n0220b_Toh_3807": {
+      "taisho": "T06n0220b",
       "tohoku": "Toh 3807",
       "sentence_count": 39,
       "confidence": 0.7,
       "note": "39 aligned sentence pairs (MITRA-parallel)"
     },
-    "T06n0220_Toh_3940": {
-      "taisho": "T06n0220",
+    "T06n0220b_Toh_3940": {
+      "taisho": "T06n0220b",
       "tohoku": "Toh 3940",
       "sentence_count": 36,
       "confidence": 0.7,
       "note": "36 aligned sentence pairs (MITRA-parallel)"
     },
-    "T06n1290_Toh_4244": {
-      "taisho": "T06n1290",
-      "tohoku": "Toh 4244",
-      "sentence_count": 293,
-      "confidence": 0.9,
-      "note": "293 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T06n1394_Toh_4016": {
-      "taisho": "T06n1394",
-      "tohoku": "Toh 4016",
-      "sentence_count": 31,
-      "confidence": 0.7,
-      "note": "31 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T06n1394_Toh_4035": {
-      "taisho": "T06n1394",
-      "tohoku": "Toh 4035",
-      "sentence_count": 2688,
-      "confidence": 0.9,
-      "note": "2688 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T06n1394_Toh_4039": {
-      "taisho": "T06n1394",
-      "tohoku": "Toh 4039",
-      "sentence_count": 49,
-      "confidence": 0.7,
-      "note": "49 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T06n1394_Toh_4112": {
-      "taisho": "T06n1394",
-      "tohoku": "Toh 4112",
-      "sentence_count": 78,
-      "confidence": 0.7,
-      "note": "78 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T06n1394_Toh_4358": {
-      "taisho": "T06n1394",
-      "tohoku": "Toh 4358",
-      "sentence_count": 99,
-      "confidence": 0.7,
-      "note": "99 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T06n2994_Toh_4048": {
-      "taisho": "T06n2994",
-      "tohoku": "Toh 4048",
-      "sentence_count": 594,
-      "confidence": 0.9,
-      "note": "594 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T06n2994_Toh_4050": {
-      "taisho": "T06n2994",
-      "tohoku": "Toh 4050",
-      "sentence_count": 89,
-      "confidence": 0.7,
-      "note": "89 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T06n2994_Toh_4051": {
-      "taisho": "T06n2994",
-      "tohoku": "Toh 4051",
-      "sentence_count": 62,
-      "confidence": 0.7,
-      "note": "62 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T07n0220_Toh_8": {
-      "taisho": "T07n0220",
+    "T07n0220c_Toh_8": {
+      "taisho": "T07n0220c",
       "tohoku": "Toh 8",
-      "sentence_count": 8590,
+      "sentence_count": 7878,
       "confidence": 0.9,
-      "note": "8590 aligned sentence pairs (MITRA-parallel)"
+      "note": "7878 aligned sentence pairs (MITRA-parallel)"
     },
-    "T07n0220_Toh_9": {
-      "taisho": "T07n0220",
+    "T07n0220c_Toh_9": {
+      "taisho": "T07n0220c",
       "tohoku": "Toh 9",
-      "sentence_count": 8806,
+      "sentence_count": 8078,
       "confidence": 0.9,
-      "note": "8806 aligned sentence pairs (MITRA-parallel)"
+      "note": "8078 aligned sentence pairs (MITRA-parallel)"
     },
-    "T07n0220_Toh_10": {
-      "taisho": "T07n0220",
+    "T07n0220c_Toh_10": {
+      "taisho": "T07n0220c",
       "tohoku": "Toh 10",
-      "sentence_count": 9625,
+      "sentence_count": 8801,
       "confidence": 0.9,
-      "note": "9625 aligned sentence pairs (MITRA-parallel)"
+      "note": "8801 aligned sentence pairs (MITRA-parallel)"
     },
-    "T07n0220_Toh_11": {
-      "taisho": "T07n0220",
+    "T07n0220c_Toh_11": {
+      "taisho": "T07n0220c",
       "tohoku": "Toh 11",
-      "sentence_count": 2723,
+      "sentence_count": 2521,
       "confidence": 0.9,
-      "note": "2723 aligned sentence pairs (MITRA-parallel)"
+      "note": "2521 aligned sentence pairs (MITRA-parallel)"
     },
-    "T07n0220_Toh_12": {
-      "taisho": "T07n0220",
+    "T07n0220c_Toh_12": {
+      "taisho": "T07n0220c",
       "tohoku": "Toh 12",
-      "sentence_count": 2915,
+      "sentence_count": 723,
       "confidence": 0.9,
-      "note": "2915 aligned sentence pairs (MITRA-parallel)"
+      "note": "723 aligned sentence pairs (MITRA-parallel)"
     },
-    "T07n0220_Toh_14": {
-      "taisho": "T07n0220",
+    "T07n0220c_Toh_14": {
+      "taisho": "T07n0220c",
       "tohoku": "Toh 14",
-      "sentence_count": 1200,
-      "confidence": 0.9,
-      "note": "1200 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T07n0220_Toh_16": {
-      "taisho": "T07n0220",
-      "tohoku": "Toh 16",
-      "sentence_count": 438,
-      "confidence": 0.9,
-      "note": "438 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T07n0220_Toh_17": {
-      "taisho": "T07n0220",
-      "tohoku": "Toh 17",
-      "sentence_count": 22,
+      "sentence_count": 24,
       "confidence": 0.7,
-      "note": "22 aligned sentence pairs (MITRA-parallel)"
+      "note": "24 aligned sentence pairs (MITRA-parallel)"
     },
-    "T07n0220_Toh_24": {
-      "taisho": "T07n0220",
-      "tohoku": "Toh 24",
-      "sentence_count": 274,
-      "confidence": 0.9,
-      "note": "274 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T07n0220_Toh_47": {
-      "taisho": "T07n0220",
-      "tohoku": "Toh 47",
-      "sentence_count": 321,
-      "confidence": 0.9,
-      "note": "321 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T07n0220_Toh_56": {
-      "taisho": "T07n0220",
-      "tohoku": "Toh 56",
-      "sentence_count": 35,
-      "confidence": 0.7,
-      "note": "35 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T07n0220_Toh_90": {
-      "taisho": "T07n0220",
-      "tohoku": "Toh 90",
-      "sentence_count": 237,
-      "confidence": 0.9,
-      "note": "237 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T07n0220_Toh_181": {
-      "taisho": "T07n0220",
-      "tohoku": "Toh 181",
-      "sentence_count": 806,
-      "confidence": 0.9,
-      "note": "806 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T07n0220_Toh_228": {
-      "taisho": "T07n0220",
+    "T07n0220c_Toh_228": {
+      "taisho": "T07n0220c",
       "tohoku": "Toh 228",
       "sentence_count": 58,
       "confidence": 0.7,
       "note": "58 aligned sentence pairs (MITRA-parallel)"
     },
-    "T07n0220_Toh_231": {
-      "taisho": "T07n0220",
-      "tohoku": "Toh 231",
-      "sentence_count": 148,
-      "confidence": 0.9,
-      "note": "148 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T07n0220_Toh_317": {
-      "taisho": "T07n0220",
+    "T07n0220c_Toh_317": {
+      "taisho": "T07n0220c",
       "tohoku": "Toh 317",
       "sentence_count": 40,
       "confidence": 0.7,
       "note": "40 aligned sentence pairs (MITRA-parallel)"
     },
-    "T07n0220_Toh_489": {
-      "taisho": "T07n0220",
-      "tohoku": "Toh 489",
+    "T07n0220c_Toh_3790": {
+      "taisho": "T07n0220c",
+      "tohoku": "Toh 3790",
+      "sentence_count": 6899,
+      "confidence": 0.9,
+      "note": "6899 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T07n0220c_Toh_3807": {
+      "taisho": "T07n0220c",
+      "tohoku": "Toh 3807",
+      "sentence_count": 671,
+      "confidence": 0.9,
+      "note": "671 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T07n0220d_Toh_8": {
+      "taisho": "T07n0220d",
+      "tohoku": "Toh 8",
+      "sentence_count": 647,
+      "confidence": 0.9,
+      "note": "647 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T07n0220d_Toh_9": {
+      "taisho": "T07n0220d",
+      "tohoku": "Toh 9",
+      "sentence_count": 715,
+      "confidence": 0.9,
+      "note": "715 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T07n0220d_Toh_10": {
+      "taisho": "T07n0220d",
+      "tohoku": "Toh 10",
+      "sentence_count": 824,
+      "confidence": 0.9,
+      "note": "824 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T07n0220d_Toh_11": {
+      "taisho": "T07n0220d",
+      "tohoku": "Toh 11",
+      "sentence_count": 191,
+      "confidence": 0.9,
+      "note": "191 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T07n0220d_Toh_12": {
+      "taisho": "T07n0220d",
+      "tohoku": "Toh 12",
+      "sentence_count": 2192,
+      "confidence": 0.9,
+      "note": "2192 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T07n0220d_Toh_1803": {
+      "taisho": "T07n0220d",
+      "tohoku": "Toh 1803",
+      "sentence_count": 34,
+      "confidence": 0.7,
+      "note": "34 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T07n0220d_Toh_3790": {
+      "taisho": "T07n0220d",
+      "tohoku": "Toh 3790",
+      "sentence_count": 615,
+      "confidence": 0.9,
+      "note": "615 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T07n0220d_Toh_3807": {
+      "taisho": "T07n0220d",
+      "tohoku": "Toh 3807",
+      "sentence_count": 98,
+      "confidence": 0.7,
+      "note": "98 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T07n0220d_Toh_3940": {
+      "taisho": "T07n0220d",
+      "tohoku": "Toh 3940",
       "sentence_count": 22,
       "confidence": 0.7,
       "note": "22 aligned sentence pairs (MITRA-parallel)"
     },
-    "T07n0220_Toh_1803": {
-      "taisho": "T07n0220",
-      "tohoku": "Toh 1803",
-      "sentence_count": 41,
-      "confidence": 0.7,
-      "note": "41 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T07n0220_Toh_3790": {
-      "taisho": "T07n0220",
-      "tohoku": "Toh 3790",
-      "sentence_count": 7514,
+    "T07n0220e_Toh_47": {
+      "taisho": "T07n0220e",
+      "tohoku": "Toh 47",
+      "sentence_count": 321,
       "confidence": 0.9,
-      "note": "7514 aligned sentence pairs (MITRA-parallel)"
+      "note": "321 aligned sentence pairs (MITRA-parallel)"
     },
-    "T07n0220_Toh_3807": {
-      "taisho": "T07n0220",
-      "tohoku": "Toh 3807",
-      "sentence_count": 769,
-      "confidence": 0.9,
-      "note": "769 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T07n0220_Toh_3940": {
-      "taisho": "T07n0220",
-      "tohoku": "Toh 3940",
-      "sentence_count": 31,
+    "T07n0220e_Toh_56": {
+      "taisho": "T07n0220e",
+      "tohoku": "Toh 56",
+      "sentence_count": 22,
       "confidence": 0.7,
-      "note": "31 aligned sentence pairs (MITRA-parallel)"
+      "note": "22 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T07n0220e_Toh_231": {
+      "taisho": "T07n0220e",
+      "tohoku": "Toh 231",
+      "sentence_count": 148,
+      "confidence": 0.9,
+      "note": "148 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T07n0220f_Toh_24": {
+      "taisho": "T07n0220f",
+      "tohoku": "Toh 24",
+      "sentence_count": 274,
+      "confidence": 0.9,
+      "note": "274 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T07n0220f_Toh_90": {
+      "taisho": "T07n0220f",
+      "tohoku": "Toh 90",
+      "sentence_count": 237,
+      "confidence": 0.9,
+      "note": "237 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T07n0220h_Toh_16": {
+      "taisho": "T07n0220h",
+      "tohoku": "Toh 16",
+      "sentence_count": 432,
+      "confidence": 0.9,
+      "note": "432 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T07n0220i_Toh_17": {
+      "taisho": "T07n0220i",
+      "tohoku": "Toh 17",
+      "sentence_count": 22,
+      "confidence": 0.7,
+      "note": "22 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T07n0220k_Toh_181": {
+      "taisho": "T07n0220k",
+      "tohoku": "Toh 181",
+      "sentence_count": 341,
+      "confidence": 0.9,
+      "note": "341 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T07n0220l_Toh_181": {
+      "taisho": "T07n0220l",
+      "tohoku": "Toh 181",
+      "sentence_count": 102,
+      "confidence": 0.9,
+      "note": "102 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T07n0220m_Toh_181": {
+      "taisho": "T07n0220m",
+      "tohoku": "Toh 181",
+      "sentence_count": 113,
+      "confidence": 0.9,
+      "note": "113 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T07n0220n_Toh_181": {
+      "taisho": "T07n0220n",
+      "tohoku": "Toh 181",
+      "sentence_count": 250,
+      "confidence": 0.9,
+      "note": "250 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T07n0220o_Toh_8": {
+      "taisho": "T07n0220o",
+      "tohoku": "Toh 8",
+      "sentence_count": 58,
+      "confidence": 0.7,
+      "note": "58 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T07n0220o_Toh_14": {
+      "taisho": "T07n0220o",
+      "tohoku": "Toh 14",
+      "sentence_count": 1176,
+      "confidence": 0.9,
+      "note": "1176 aligned sentence pairs (MITRA-parallel)"
     },
     "T08n0221_Toh_8": {
       "taisho": "T08n0221",
@@ -2442,20 +1637,6 @@
       "confidence": 0.9,
       "note": "1662 aligned sentence pairs (MITRA-parallel)"
     },
-    "T08n0227_Toh_19": {
-      "taisho": "T08n0227",
-      "tohoku": "Toh 19",
-      "sentence_count": 21,
-      "confidence": 0.7,
-      "note": "21 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T08n0227_Toh_554": {
-      "taisho": "T08n0227",
-      "tohoku": "Toh 554",
-      "sentence_count": 21,
-      "confidence": 0.7,
-      "note": "21 aligned sentence pairs (MITRA-parallel)"
-    },
     "T08n0227_Toh_3790": {
       "taisho": "T08n0227",
       "tohoku": "Toh 3790",
@@ -2582,12 +1763,19 @@
       "confidence": 0.9,
       "note": "261 aligned sentence pairs (MITRA-parallel)"
     },
-    "T08n0236_Toh_16": {
-      "taisho": "T08n0236",
+    "T08n0236a_Toh_16": {
+      "taisho": "T08n0236a",
       "tohoku": "Toh 16",
-      "sentence_count": 969,
+      "sentence_count": 491,
       "confidence": 0.9,
-      "note": "969 aligned sentence pairs (MITRA-parallel)"
+      "note": "491 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T08n0236b_Toh_16": {
+      "taisho": "T08n0236b",
+      "tohoku": "Toh 16",
+      "sentence_count": 478,
+      "confidence": 0.9,
+      "note": "478 aligned sentence pairs (MITRA-parallel)"
     },
     "T08n0237_Toh_16": {
       "taisho": "T08n0237",
@@ -2610,13 +1798,6 @@
       "confidence": 0.7,
       "note": "76 aligned sentence pairs (MITRA-parallel)"
     },
-    "T08n0240_Toh_489": {
-      "taisho": "T08n0240",
-      "tohoku": "Toh 489",
-      "sentence_count": 76,
-      "confidence": 0.7,
-      "note": "76 aligned sentence pairs (MITRA-parallel)"
-    },
     "T08n0240_Toh_490": {
       "taisho": "T08n0240",
       "tohoku": "Toh 490",
@@ -2631,26 +1812,12 @@
       "confidence": 0.7,
       "note": "89 aligned sentence pairs (MITRA-parallel)"
     },
-    "T08n0241_Toh_470": {
-      "taisho": "T08n0241",
-      "tohoku": "Toh 470",
-      "sentence_count": 24,
-      "confidence": 0.7,
-      "note": "24 aligned sentence pairs (MITRA-parallel)"
-    },
     "T08n0241_Toh_487": {
       "taisho": "T08n0241",
       "tohoku": "Toh 487",
       "sentence_count": 24,
       "confidence": 0.7,
       "note": "24 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T08n0241_Toh_489": {
-      "taisho": "T08n0241",
-      "tohoku": "Toh 489",
-      "sentence_count": 89,
-      "confidence": 0.7,
-      "note": "89 aligned sentence pairs (MITRA-parallel)"
     },
     "T08n0241_Toh_490": {
       "taisho": "T08n0241",
@@ -2662,13 +1829,6 @@
     "T08n0242_Toh_17": {
       "taisho": "T08n0242",
       "tohoku": "Toh 17",
-      "sentence_count": 35,
-      "confidence": 0.7,
-      "note": "35 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T08n0242_Toh_489": {
-      "taisho": "T08n0242",
-      "tohoku": "Toh 489",
       "sentence_count": 35,
       "confidence": 0.7,
       "note": "35 aligned sentence pairs (MITRA-parallel)"
@@ -2687,26 +1847,12 @@
       "confidence": 0.9,
       "note": "109 aligned sentence pairs (MITRA-parallel)"
     },
-    "T08n0243_Toh_470": {
-      "taisho": "T08n0243",
-      "tohoku": "Toh 470",
-      "sentence_count": 44,
-      "confidence": 0.7,
-      "note": "44 aligned sentence pairs (MITRA-parallel)"
-    },
     "T08n0243_Toh_487": {
       "taisho": "T08n0243",
       "tohoku": "Toh 487",
       "sentence_count": 44,
       "confidence": 0.7,
       "note": "44 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T08n0243_Toh_489": {
-      "taisho": "T08n0243",
-      "tohoku": "Toh 489",
-      "sentence_count": 109,
-      "confidence": 0.9,
-      "note": "109 aligned sentence pairs (MITRA-parallel)"
     },
     "T08n0243_Toh_490": {
       "taisho": "T08n0243",
@@ -2722,13 +1868,6 @@
       "confidence": 0.7,
       "note": "35 aligned sentence pairs (MITRA-parallel)"
     },
-    "T08n0244_Toh_470": {
-      "taisho": "T08n0244",
-      "tohoku": "Toh 470",
-      "sentence_count": 257,
-      "confidence": 0.9,
-      "note": "257 aligned sentence pairs (MITRA-parallel)"
-    },
     "T08n0244_Toh_487": {
       "taisho": "T08n0244",
       "tohoku": "Toh 487",
@@ -2743,51 +1882,16 @@
       "confidence": 0.7,
       "note": "59 aligned sentence pairs (MITRA-parallel)"
     },
-    "T08n0244_Toh_489": {
-      "taisho": "T08n0244",
-      "tohoku": "Toh 489",
-      "sentence_count": 35,
-      "confidence": 0.7,
-      "note": "35 aligned sentence pairs (MITRA-parallel)"
-    },
     "T08n0249_Toh_19": {
       "taisho": "T08n0249",
       "tohoku": "Toh 19",
-      "sentence_count": 46,
-      "confidence": 0.7,
-      "note": "46 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T08n0249_Toh_554": {
-      "taisho": "T08n0249",
-      "tohoku": "Toh 554",
-      "sentence_count": 46,
-      "confidence": 0.7,
-      "note": "46 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T08n0251_Toh_21": {
-      "taisho": "T08n0251",
-      "tohoku": "Toh 21",
-      "sentence_count": 26,
-      "confidence": 0.7,
-      "note": "26 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T08n0251_Toh_531": {
-      "taisho": "T08n0251",
-      "tohoku": "Toh 531",
-      "sentence_count": 26,
-      "confidence": 0.7,
-      "note": "26 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T08n0252_Toh_21": {
-      "taisho": "T08n0252",
-      "tohoku": "Toh 21",
       "sentence_count": 23,
       "confidence": 0.7,
       "note": "23 aligned sentence pairs (MITRA-parallel)"
     },
-    "T08n0252_Toh_531": {
-      "taisho": "T08n0252",
-      "tohoku": "Toh 531",
+    "T08n0249_Toh_554": {
+      "taisho": "T08n0249",
+      "tohoku": "Toh 554",
       "sentence_count": 23,
       "confidence": 0.7,
       "note": "23 aligned sentence pairs (MITRA-parallel)"
@@ -2795,72 +1899,65 @@
     "T08n0253_Toh_21": {
       "taisho": "T08n0253",
       "tohoku": "Toh 21",
-      "sentence_count": 50,
+      "sentence_count": 24,
       "confidence": 0.7,
-      "note": "50 aligned sentence pairs (MITRA-parallel)"
+      "note": "24 aligned sentence pairs (MITRA-parallel)"
     },
     "T08n0253_Toh_531": {
       "taisho": "T08n0253",
       "tohoku": "Toh 531",
-      "sentence_count": 50,
+      "sentence_count": 26,
       "confidence": 0.7,
-      "note": "50 aligned sentence pairs (MITRA-parallel)"
+      "note": "26 aligned sentence pairs (MITRA-parallel)"
     },
     "T08n0254_Toh_21": {
       "taisho": "T08n0254",
       "tohoku": "Toh 21",
-      "sentence_count": 43,
+      "sentence_count": 22,
       "confidence": 0.7,
-      "note": "43 aligned sentence pairs (MITRA-parallel)"
+      "note": "22 aligned sentence pairs (MITRA-parallel)"
     },
     "T08n0254_Toh_531": {
       "taisho": "T08n0254",
       "tohoku": "Toh 531",
-      "sentence_count": 43,
+      "sentence_count": 21,
       "confidence": 0.7,
-      "note": "43 aligned sentence pairs (MITRA-parallel)"
+      "note": "21 aligned sentence pairs (MITRA-parallel)"
     },
     "T08n0255_Toh_21": {
       "taisho": "T08n0255",
       "tohoku": "Toh 21",
-      "sentence_count": 58,
+      "sentence_count": 30,
       "confidence": 0.7,
-      "note": "58 aligned sentence pairs (MITRA-parallel)"
+      "note": "30 aligned sentence pairs (MITRA-parallel)"
     },
     "T08n0255_Toh_531": {
       "taisho": "T08n0255",
       "tohoku": "Toh 531",
-      "sentence_count": 58,
+      "sentence_count": 28,
       "confidence": 0.7,
-      "note": "58 aligned sentence pairs (MITRA-parallel)"
+      "note": "28 aligned sentence pairs (MITRA-parallel)"
     },
     "T08n0257_Toh_21": {
       "taisho": "T08n0257",
       "tohoku": "Toh 21",
-      "sentence_count": 60,
+      "sentence_count": 30,
       "confidence": 0.7,
-      "note": "60 aligned sentence pairs (MITRA-parallel)"
+      "note": "30 aligned sentence pairs (MITRA-parallel)"
     },
     "T08n0257_Toh_531": {
       "taisho": "T08n0257",
       "tohoku": "Toh 531",
-      "sentence_count": 60,
+      "sentence_count": 30,
       "confidence": 0.7,
-      "note": "60 aligned sentence pairs (MITRA-parallel)"
+      "note": "30 aligned sentence pairs (MITRA-parallel)"
     },
     "T08n0258_Toh_22": {
       "taisho": "T08n0258",
       "tohoku": "Toh 22",
-      "sentence_count": 51,
+      "sentence_count": 33,
       "confidence": 0.7,
-      "note": "51 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T08n0258_Toh_530": {
-      "taisho": "T08n0258",
-      "tohoku": "Toh 530",
-      "sentence_count": 51,
-      "confidence": 0.7,
-      "note": "51 aligned sentence pairs (MITRA-parallel)"
+      "note": "33 aligned sentence pairs (MITRA-parallel)"
     },
     "T08n0260_Toh_15": {
       "taisho": "T08n0260",
@@ -3051,13 +2148,6 @@
       "confidence": 0.7,
       "note": "20 aligned sentence pairs (MITRA-parallel)"
     },
-    "T09n0278_Toh_847": {
-      "taisho": "T09n0278",
-      "tohoku": "Toh 847",
-      "sentence_count": 649,
-      "confidence": 0.9,
-      "note": "649 aligned sentence pairs (MITRA-parallel)"
-    },
     "T09n0278_Toh_2534": {
       "taisho": "T09n0278",
       "tohoku": "Toh 2534",
@@ -3155,13 +2245,6 @@
       "sentence_count": 193,
       "confidence": 0.9,
       "note": "193 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T10n0279_Toh_847": {
-      "taisho": "T10n0279",
-      "tohoku": "Toh 847",
-      "sentence_count": 841,
-      "confidence": 0.9,
-      "note": "841 aligned sentence pairs (MITRA-parallel)"
     },
     "T10n0279_Toh_2534": {
       "taisho": "T10n0279",
@@ -3478,13 +2561,6 @@
       "confidence": 0.9,
       "note": "850 aligned sentence pairs (MITRA-parallel)"
     },
-    "T10n0299_Toh_847": {
-      "taisho": "T10n0299",
-      "tohoku": "Toh 847",
-      "sentence_count": 850,
-      "confidence": 0.9,
-      "note": "850 aligned sentence pairs (MITRA-parallel)"
-    },
     "T10n0299_Toh_3940": {
       "taisho": "T10n0299",
       "tohoku": "Toh 3940",
@@ -3561,34 +2637,6 @@
       "sentence_count": 30,
       "confidence": 0.7,
       "note": "30 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T10n2902_Toh_1": {
-      "taisho": "T10n2902",
-      "tohoku": "Toh 1",
-      "sentence_count": 23,
-      "confidence": 0.7,
-      "note": "23 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T10n2902_Toh_341": {
-      "taisho": "T10n2902",
-      "tohoku": "Toh 341",
-      "sentence_count": 30,
-      "confidence": 0.7,
-      "note": "30 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T10n3009_Toh_3951": {
-      "taisho": "T10n3009",
-      "tohoku": "Toh 3951",
-      "sentence_count": 38,
-      "confidence": 0.7,
-      "note": "38 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T10n3009_Toh_4188": {
-      "taisho": "T10n3009",
-      "tohoku": "Toh 4188",
-      "sentence_count": 79,
-      "confidence": 0.7,
-      "note": "79 aligned sentence pairs (MITRA-parallel)"
     },
     "T11n0310_Toh_6": {
       "taisho": "T11n0310",
@@ -3684,9 +2732,9 @@
     "T11n0310_Toh_56": {
       "taisho": "T11n0310",
       "tohoku": "Toh 56",
-      "sentence_count": 4506,
+      "sentence_count": 4505,
       "confidence": 0.9,
-      "note": "4506 aligned sentence pairs (MITRA-parallel)"
+      "note": "4505 aligned sentence pairs (MITRA-parallel)"
     },
     "T11n0310_Toh_57": {
       "taisho": "T11n0310",
@@ -4178,12 +3226,19 @@
       "confidence": 0.7,
       "note": "54 aligned sentence pairs (MITRA-parallel)"
     },
-    "T11n0315_Toh_54": {
-      "taisho": "T11n0315",
+    "T11n0315a_Toh_54": {
+      "taisho": "T11n0315a",
       "tohoku": "Toh 54",
-      "sentence_count": 131,
-      "confidence": 0.9,
-      "note": "131 aligned sentence pairs (MITRA-parallel)"
+      "sentence_count": 66,
+      "confidence": 0.7,
+      "note": "66 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T11n0315b_Toh_54": {
+      "taisho": "T11n0315b",
+      "tohoku": "Toh 54",
+      "sentence_count": 65,
+      "confidence": 0.7,
+      "note": "65 aligned sentence pairs (MITRA-parallel)"
     },
     "T11n0316_Toh_47": {
       "taisho": "T11n0316",
@@ -4296,41 +3351,6 @@
       "sentence_count": 21,
       "confidence": 0.7,
       "note": "21 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T11n1226_Toh_4218": {
-      "taisho": "T11n1226",
-      "tohoku": "Toh 4218",
-      "sentence_count": 22,
-      "confidence": 0.7,
-      "note": "22 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T11n1226_Toh_4239": {
-      "taisho": "T11n1226",
-      "tohoku": "Toh 4239",
-      "sentence_count": 1872,
-      "confidence": 0.9,
-      "note": "1872 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T11n1226_Toh_4240": {
-      "taisho": "T11n1226",
-      "tohoku": "Toh 4240",
-      "sentence_count": 25,
-      "confidence": 0.7,
-      "note": "25 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T11n1242_Toh_4231": {
-      "taisho": "T11n1242",
-      "tohoku": "Toh 4231",
-      "sentence_count": 39,
-      "confidence": 0.7,
-      "note": "39 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T11n2992_Toh_4268": {
-      "taisho": "T11n2992",
-      "tohoku": "Toh 4268",
-      "sentence_count": 1403,
-      "confidence": 0.9,
-      "note": "1403 aligned sentence pairs (MITRA-parallel)"
     },
     "T12n0321_Toh_62": {
       "taisho": "T12n0321",
@@ -5809,34 +4829,6 @@
       "confidence": 0.7,
       "note": "30 aligned sentence pairs (MITRA-parallel)"
     },
-    "T14n1279_Toh_2531": {
-      "taisho": "T14n1279",
-      "tohoku": "Toh 2531",
-      "sentence_count": 26,
-      "confidence": 0.7,
-      "note": "26 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T14n1279_Toh_4316": {
-      "taisho": "T14n1279",
-      "tohoku": "Toh 4316",
-      "sentence_count": 87,
-      "confidence": 0.7,
-      "note": "87 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T14n1282_Toh_1420": {
-      "taisho": "T14n1282",
-      "tohoku": "Toh 1420",
-      "sentence_count": 22,
-      "confidence": 0.7,
-      "note": "22 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T14n1282_Toh_3305": {
-      "taisho": "T14n1282",
-      "tohoku": "Toh 3305",
-      "sentence_count": 63,
-      "confidence": 0.7,
-      "note": "63 aligned sentence pairs (MITRA-parallel)"
-    },
     "T15n0585_Toh_160": {
       "taisho": "T15n0585",
       "tohoku": "Toh 160",
@@ -6922,13 +5914,6 @@
       "confidence": 0.7,
       "note": "25 aligned sentence pairs (MITRA-parallel)"
     },
-    "T16n2959_Toh_2530": {
-      "taisho": "T16n2959",
-      "tohoku": "Toh 2530",
-      "sentence_count": 26,
-      "confidence": 0.7,
-      "note": "26 aligned sentence pairs (MITRA-parallel)"
-    },
     "T17n0721_Toh_60": {
       "taisho": "T17n0721",
       "tohoku": "Toh 60",
@@ -7419,20 +6404,6 @@
       "confidence": 0.7,
       "note": "30 aligned sentence pairs (MITRA-parallel)"
     },
-    "T17n0847_Toh_525": {
-      "taisho": "T17n0847",
-      "tohoku": "Toh 525",
-      "sentence_count": 50,
-      "confidence": 0.7,
-      "note": "50 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T17n0847_Toh_914": {
-      "taisho": "T17n0847",
-      "tohoku": "Toh 914",
-      "sentence_count": 50,
-      "confidence": 0.7,
-      "note": "50 aligned sentence pairs (MITRA-parallel)"
-    },
     "T17n0847_Toh_2534": {
       "taisho": "T17n0847",
       "tohoku": "Toh 2534",
@@ -7524,15 +6495,15 @@
       "confidence": 0.7,
       "note": "30 aligned sentence pairs (MITRA-parallel)"
     },
-    "T18n0852_Toh_494": {
-      "taisho": "T18n0852",
+    "T18n0852a_Toh_494": {
+      "taisho": "T18n0852a",
       "tohoku": "Toh 494",
       "sentence_count": 27,
       "confidence": 0.7,
       "note": "27 aligned sentence pairs (MITRA-parallel)"
     },
-    "T18n0852_Toh_2664": {
-      "taisho": "T18n0852",
+    "T18n0852b_Toh_2664": {
+      "taisho": "T18n0852b",
       "tohoku": "Toh 2664",
       "sentence_count": 46,
       "confidence": 0.7,
@@ -7727,61 +6698,61 @@
       "confidence": 0.7,
       "note": "82 aligned sentence pairs (MITRA-parallel)"
     },
-    "T18n0893_Toh_807": {
-      "taisho": "T18n0893",
+    "T18n0893a_Toh_807": {
+      "taisho": "T18n0893a",
       "tohoku": "Toh 807",
-      "sentence_count": 1102,
+      "sentence_count": 369,
       "confidence": 0.9,
-      "note": "1102 aligned sentence pairs (MITRA-parallel)"
+      "note": "369 aligned sentence pairs (MITRA-parallel)"
     },
-    "T18n0893_Toh_1919": {
-      "taisho": "T18n0893",
+    "T18n0893a_Toh_1919": {
+      "taisho": "T18n0893a",
       "tohoku": "Toh 1919",
-      "sentence_count": 90,
+      "sentence_count": 27,
       "confidence": 0.7,
-      "note": "90 aligned sentence pairs (MITRA-parallel)"
+      "note": "27 aligned sentence pairs (MITRA-parallel)"
     },
-    "T18n0893_Toh_2625": {
-      "taisho": "T18n0893",
-      "tohoku": "Toh 2625",
-      "sentence_count": 42,
-      "confidence": 0.7,
-      "note": "42 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T18n0893_Toh_2679": {
-      "taisho": "T18n0893",
-      "tohoku": "Toh 2679",
-      "sentence_count": 28,
-      "confidence": 0.7,
-      "note": "28 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T18n0895_Toh_805": {
-      "taisho": "T18n0895",
-      "tohoku": "Toh 805",
-      "sentence_count": 318,
+    "T18n0893b_Toh_807": {
+      "taisho": "T18n0893b",
+      "tohoku": "Toh 807",
+      "sentence_count": 358,
       "confidence": 0.9,
-      "note": "318 aligned sentence pairs (MITRA-parallel)"
+      "note": "358 aligned sentence pairs (MITRA-parallel)"
     },
-    "T18n0895_Toh_2589": {
-      "taisho": "T18n0895",
-      "tohoku": "Toh 2589",
-      "sentence_count": 25,
+    "T18n0893b_Toh_1919": {
+      "taisho": "T18n0893b",
+      "tohoku": "Toh 1919",
+      "sentence_count": 20,
       "confidence": 0.7,
-      "note": "25 aligned sentence pairs (MITRA-parallel)"
+      "note": "20 aligned sentence pairs (MITRA-parallel)"
     },
-    "T18n0895_Toh_2625": {
-      "taisho": "T18n0895",
-      "tohoku": "Toh 2625",
-      "sentence_count": 27,
-      "confidence": 0.7,
-      "note": "27 aligned sentence pairs (MITRA-parallel)"
+    "T18n0893c_Toh_807": {
+      "taisho": "T18n0893c",
+      "tohoku": "Toh 807",
+      "sentence_count": 375,
+      "confidence": 0.9,
+      "note": "375 aligned sentence pairs (MITRA-parallel)"
     },
-    "T18n0895_Toh_2673": {
-      "taisho": "T18n0895",
-      "tohoku": "Toh 2673",
-      "sentence_count": 27,
+    "T18n0893c_Toh_1919": {
+      "taisho": "T18n0893c",
+      "tohoku": "Toh 1919",
+      "sentence_count": 43,
       "confidence": 0.7,
-      "note": "27 aligned sentence pairs (MITRA-parallel)"
+      "note": "43 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T18n0895a_Toh_805": {
+      "taisho": "T18n0895a",
+      "tohoku": "Toh 805",
+      "sentence_count": 202,
+      "confidence": 0.9,
+      "note": "202 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T18n0895b_Toh_805": {
+      "taisho": "T18n0895b",
+      "tohoku": "Toh 805",
+      "sentence_count": 116,
+      "confidence": 0.9,
+      "note": "116 aligned sentence pairs (MITRA-parallel)"
     },
     "T18n0896_Toh_805": {
       "taisho": "T18n0896",
@@ -7888,13 +6859,6 @@
       "confidence": 0.7,
       "note": "23 aligned sentence pairs (MITRA-parallel)"
     },
-    "T19n0936_Toh_849": {
-      "taisho": "T19n0936",
-      "tohoku": "Toh 849",
-      "sentence_count": 22,
-      "confidence": 0.7,
-      "note": "22 aligned sentence pairs (MITRA-parallel)"
-    },
     "T19n0945_Toh_236": {
       "taisho": "T19n0945",
       "tohoku": "Toh 236",
@@ -7944,13 +6908,6 @@
       "confidence": 0.9,
       "note": "111 aligned sentence pairs (MITRA-parallel)"
     },
-    "T19n0967_Toh_984": {
-      "taisho": "T19n0967",
-      "tohoku": "Toh 984",
-      "sentence_count": 111,
-      "confidence": 0.9,
-      "note": "111 aligned sentence pairs (MITRA-parallel)"
-    },
     "T19n0968_Toh_594": {
       "taisho": "T19n0968",
       "tohoku": "Toh 594",
@@ -7965,23 +6922,9 @@
       "confidence": 0.7,
       "note": "90 aligned sentence pairs (MITRA-parallel)"
     },
-    "T19n0968_Toh_984": {
-      "taisho": "T19n0968",
-      "tohoku": "Toh 984",
-      "sentence_count": 90,
-      "confidence": 0.7,
-      "note": "90 aligned sentence pairs (MITRA-parallel)"
-    },
     "T19n0969_Toh_597": {
       "taisho": "T19n0969",
       "tohoku": "Toh 597",
-      "sentence_count": 41,
-      "confidence": 0.7,
-      "note": "41 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n0969_Toh_984": {
-      "taisho": "T19n0969",
-      "tohoku": "Toh 984",
       "sentence_count": 41,
       "confidence": 0.7,
       "note": "41 aligned sentence pairs (MITRA-parallel)"
@@ -7996,13 +6939,6 @@
     "T19n0971_Toh_597": {
       "taisho": "T19n0971",
       "tohoku": "Toh 597",
-      "sentence_count": 95,
-      "confidence": 0.7,
-      "note": "95 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n0971_Toh_984": {
-      "taisho": "T19n0971",
-      "tohoku": "Toh 984",
       "sentence_count": 95,
       "confidence": 0.7,
       "note": "95 aligned sentence pairs (MITRA-parallel)"
@@ -8035,13 +6971,6 @@
       "confidence": 0.7,
       "note": "50 aligned sentence pairs (MITRA-parallel)"
     },
-    "T19n0976_Toh_985": {
-      "taisho": "T19n0976",
-      "tohoku": "Toh 985",
-      "sentence_count": 40,
-      "confidence": 0.7,
-      "note": "40 aligned sentence pairs (MITRA-parallel)"
-    },
     "T19n0977_Toh_590": {
       "taisho": "T19n0977",
       "tohoku": "Toh 590",
@@ -8069,13 +6998,6 @@
       "sentence_count": 44,
       "confidence": 0.7,
       "note": "44 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n0977_Toh_985": {
-      "taisho": "T19n0977",
-      "tohoku": "Toh 985",
-      "sentence_count": 31,
-      "confidence": 0.7,
-      "note": "31 aligned sentence pairs (MITRA-parallel)"
     },
     "T19n0982_Toh_559": {
       "taisho": "T19n0982",
@@ -8108,86 +7030,58 @@
     "T19n0989_Toh_235": {
       "taisho": "T19n0989",
       "tohoku": "Toh 235",
-      "sentence_count": 85,
+      "sentence_count": 39,
       "confidence": 0.7,
-      "note": "85 aligned sentence pairs (MITRA-parallel)"
+      "note": "39 aligned sentence pairs (MITRA-parallel)"
     },
     "T19n0989_Toh_657": {
       "taisho": "T19n0989",
       "tohoku": "Toh 657",
-      "sentence_count": 85,
+      "sentence_count": 46,
       "confidence": 0.7,
-      "note": "85 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n0989_Toh_1063": {
-      "taisho": "T19n0989",
-      "tohoku": "Toh 1063",
-      "sentence_count": 85,
-      "confidence": 0.7,
-      "note": "85 aligned sentence pairs (MITRA-parallel)"
+      "note": "46 aligned sentence pairs (MITRA-parallel)"
     },
     "T19n0991_Toh_235": {
       "taisho": "T19n0991",
       "tohoku": "Toh 235",
-      "sentence_count": 109,
-      "confidence": 0.9,
-      "note": "109 aligned sentence pairs (MITRA-parallel)"
+      "sentence_count": 28,
+      "confidence": 0.7,
+      "note": "28 aligned sentence pairs (MITRA-parallel)"
     },
     "T19n0991_Toh_657": {
       "taisho": "T19n0991",
       "tohoku": "Toh 657",
-      "sentence_count": 109,
-      "confidence": 0.9,
-      "note": "109 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n0991_Toh_1063": {
-      "taisho": "T19n0991",
-      "tohoku": "Toh 1063",
-      "sentence_count": 109,
-      "confidence": 0.9,
-      "note": "109 aligned sentence pairs (MITRA-parallel)"
+      "sentence_count": 81,
+      "confidence": 0.7,
+      "note": "81 aligned sentence pairs (MITRA-parallel)"
     },
     "T19n0992_Toh_235": {
       "taisho": "T19n0992",
       "tohoku": "Toh 235",
-      "sentence_count": 191,
-      "confidence": 0.9,
-      "note": "191 aligned sentence pairs (MITRA-parallel)"
+      "sentence_count": 90,
+      "confidence": 0.7,
+      "note": "90 aligned sentence pairs (MITRA-parallel)"
     },
     "T19n0992_Toh_657": {
       "taisho": "T19n0992",
       "tohoku": "Toh 657",
-      "sentence_count": 191,
+      "sentence_count": 101,
       "confidence": 0.9,
-      "note": "191 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n0992_Toh_1063": {
-      "taisho": "T19n0992",
-      "tohoku": "Toh 1063",
-      "sentence_count": 191,
-      "confidence": 0.9,
-      "note": "191 aligned sentence pairs (MITRA-parallel)"
+      "note": "101 aligned sentence pairs (MITRA-parallel)"
     },
     "T19n0993_Toh_235": {
       "taisho": "T19n0993",
       "tohoku": "Toh 235",
-      "sentence_count": 129,
-      "confidence": 0.9,
-      "note": "129 aligned sentence pairs (MITRA-parallel)"
+      "sentence_count": 73,
+      "confidence": 0.7,
+      "note": "73 aligned sentence pairs (MITRA-parallel)"
     },
     "T19n0993_Toh_657": {
       "taisho": "T19n0993",
       "tohoku": "Toh 657",
-      "sentence_count": 129,
-      "confidence": 0.9,
-      "note": "129 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n0993_Toh_1063": {
-      "taisho": "T19n0993",
-      "tohoku": "Toh 1063",
-      "sentence_count": 129,
-      "confidence": 0.9,
-      "note": "129 aligned sentence pairs (MITRA-parallel)"
+      "sentence_count": 56,
+      "confidence": 0.7,
+      "note": "56 aligned sentence pairs (MITRA-parallel)"
     },
     "T19n0997_Toh_8": {
       "taisho": "T19n0997",
@@ -8301,13 +7195,6 @@
       "confidence": 0.9,
       "note": "553 aligned sentence pairs (MITRA-parallel)"
     },
-    "T19n1005A_Toh_885": {
-      "taisho": "T19n1005A",
-      "tohoku": "Toh 885",
-      "sentence_count": 553,
-      "confidence": 0.9,
-      "note": "553 aligned sentence pairs (MITRA-parallel)"
-    },
     "T19n1006_Toh_506": {
       "taisho": "T19n1006",
       "tohoku": "Toh 506",
@@ -8315,23 +7202,9 @@
       "confidence": 0.9,
       "note": "589 aligned sentence pairs (MITRA-parallel)"
     },
-    "T19n1006_Toh_885": {
-      "taisho": "T19n1006",
-      "tohoku": "Toh 885",
-      "sentence_count": 589,
-      "confidence": 0.9,
-      "note": "589 aligned sentence pairs (MITRA-parallel)"
-    },
     "T19n1007_Toh_506": {
       "taisho": "T19n1007",
       "tohoku": "Toh 506",
-      "sentence_count": 82,
-      "confidence": 0.7,
-      "note": "82 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n1007_Toh_885": {
-      "taisho": "T19n1007",
-      "tohoku": "Toh 885",
       "sentence_count": 82,
       "confidence": 0.7,
       "note": "82 aligned sentence pairs (MITRA-parallel)"
@@ -8350,37 +7223,9 @@
       "confidence": 0.9,
       "note": "200 aligned sentence pairs (MITRA-parallel)"
     },
-    "T19n1009_Toh_525": {
-      "taisho": "T19n1009",
-      "tohoku": "Toh 525",
-      "sentence_count": 200,
-      "confidence": 0.9,
-      "note": "200 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n1009_Toh_914": {
-      "taisho": "T19n1009",
-      "tohoku": "Toh 914",
-      "sentence_count": 200,
-      "confidence": 0.9,
-      "note": "200 aligned sentence pairs (MITRA-parallel)"
-    },
     "T19n1011_Toh_140": {
       "taisho": "T19n1011",
       "tohoku": "Toh 140",
-      "sentence_count": 28,
-      "confidence": 0.7,
-      "note": "28 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n1011_Toh_525": {
-      "taisho": "T19n1011",
-      "tohoku": "Toh 525",
-      "sentence_count": 28,
-      "confidence": 0.7,
-      "note": "28 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n1011_Toh_914": {
-      "taisho": "T19n1011",
-      "tohoku": "Toh 914",
       "sentence_count": 28,
       "confidence": 0.7,
       "note": "28 aligned sentence pairs (MITRA-parallel)"
@@ -8392,37 +7237,9 @@
       "confidence": 0.9,
       "note": "132 aligned sentence pairs (MITRA-parallel)"
     },
-    "T19n1012_Toh_525": {
-      "taisho": "T19n1012",
-      "tohoku": "Toh 525",
-      "sentence_count": 132,
-      "confidence": 0.9,
-      "note": "132 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n1012_Toh_914": {
-      "taisho": "T19n1012",
-      "tohoku": "Toh 914",
-      "sentence_count": 132,
-      "confidence": 0.9,
-      "note": "132 aligned sentence pairs (MITRA-parallel)"
-    },
     "T19n1013_Toh_140": {
       "taisho": "T19n1013",
       "tohoku": "Toh 140",
-      "sentence_count": 29,
-      "confidence": 0.7,
-      "note": "29 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n1013_Toh_525": {
-      "taisho": "T19n1013",
-      "tohoku": "Toh 525",
-      "sentence_count": 29,
-      "confidence": 0.7,
-      "note": "29 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n1013_Toh_914": {
-      "taisho": "T19n1013",
-      "tohoku": "Toh 914",
       "sentence_count": 29,
       "confidence": 0.7,
       "note": "29 aligned sentence pairs (MITRA-parallel)"
@@ -8434,37 +7251,9 @@
       "confidence": 0.9,
       "note": "222 aligned sentence pairs (MITRA-parallel)"
     },
-    "T19n1014_Toh_525": {
-      "taisho": "T19n1014",
-      "tohoku": "Toh 525",
-      "sentence_count": 222,
-      "confidence": 0.9,
-      "note": "222 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n1014_Toh_914": {
-      "taisho": "T19n1014",
-      "tohoku": "Toh 914",
-      "sentence_count": 222,
-      "confidence": 0.9,
-      "note": "222 aligned sentence pairs (MITRA-parallel)"
-    },
     "T19n1015_Toh_140": {
       "taisho": "T19n1015",
       "tohoku": "Toh 140",
-      "sentence_count": 119,
-      "confidence": 0.9,
-      "note": "119 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n1015_Toh_525": {
-      "taisho": "T19n1015",
-      "tohoku": "Toh 525",
-      "sentence_count": 119,
-      "confidence": 0.9,
-      "note": "119 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n1015_Toh_914": {
-      "taisho": "T19n1015",
-      "tohoku": "Toh 914",
       "sentence_count": 119,
       "confidence": 0.9,
       "note": "119 aligned sentence pairs (MITRA-parallel)"
@@ -8476,37 +7265,9 @@
       "confidence": 0.9,
       "note": "164 aligned sentence pairs (MITRA-parallel)"
     },
-    "T19n1016_Toh_525": {
-      "taisho": "T19n1016",
-      "tohoku": "Toh 525",
-      "sentence_count": 164,
-      "confidence": 0.9,
-      "note": "164 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n1016_Toh_914": {
-      "taisho": "T19n1016",
-      "tohoku": "Toh 914",
-      "sentence_count": 164,
-      "confidence": 0.9,
-      "note": "164 aligned sentence pairs (MITRA-parallel)"
-    },
     "T19n1018_Toh_140": {
       "taisho": "T19n1018",
       "tohoku": "Toh 140",
-      "sentence_count": 128,
-      "confidence": 0.9,
-      "note": "128 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n1018_Toh_525": {
-      "taisho": "T19n1018",
-      "tohoku": "Toh 525",
-      "sentence_count": 128,
-      "confidence": 0.9,
-      "note": "128 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n1018_Toh_914": {
-      "taisho": "T19n1018",
-      "tohoku": "Toh 914",
       "sentence_count": 128,
       "confidence": 0.9,
       "note": "128 aligned sentence pairs (MITRA-parallel)"
@@ -8518,23 +7279,9 @@
       "confidence": 0.9,
       "note": "120 aligned sentence pairs (MITRA-parallel)"
     },
-    "T19n1022A_Toh_883": {
-      "taisho": "T19n1022A",
-      "tohoku": "Toh 883",
-      "sentence_count": 120,
-      "confidence": 0.9,
-      "note": "120 aligned sentence pairs (MITRA-parallel)"
-    },
     "T19n1022B_Toh_507": {
       "taisho": "T19n1022B",
       "tohoku": "Toh 507",
-      "sentence_count": 92,
-      "confidence": 0.7,
-      "note": "92 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n1022B_Toh_883": {
-      "taisho": "T19n1022B",
-      "tohoku": "Toh 883",
       "sentence_count": 92,
       "confidence": 0.7,
       "note": "92 aligned sentence pairs (MITRA-parallel)"
@@ -8546,23 +7293,9 @@
       "confidence": 0.7,
       "note": "79 aligned sentence pairs (MITRA-parallel)"
     },
-    "T19n1023_Toh_883": {
-      "taisho": "T19n1023",
-      "tohoku": "Toh 883",
-      "sentence_count": 79,
-      "confidence": 0.7,
-      "note": "79 aligned sentence pairs (MITRA-parallel)"
-    },
     "T19n1024_Toh_510": {
       "taisho": "T19n1024",
       "tohoku": "Toh 510",
-      "sentence_count": 250,
-      "confidence": 0.9,
-      "note": "250 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n1024_Toh_982": {
-      "taisho": "T19n1024",
-      "tohoku": "Toh 982",
       "sentence_count": 250,
       "confidence": 0.9,
       "note": "250 aligned sentence pairs (MITRA-parallel)"
@@ -8574,37 +7307,16 @@
       "confidence": 0.9,
       "note": "235 aligned sentence pairs (MITRA-parallel)"
     },
-    "T19n1025_Toh_983": {
-      "taisho": "T19n1025",
-      "tohoku": "Toh 983",
-      "sentence_count": 235,
-      "confidence": 0.9,
-      "note": "235 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n1027_Toh_759": {
-      "taisho": "T19n1027",
+    "T19n1027b_Toh_759": {
+      "taisho": "T19n1027b",
       "tohoku": "Toh 759",
-      "sentence_count": 34,
+      "sentence_count": 26,
       "confidence": 0.7,
-      "note": "34 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T19n1027_Toh_964": {
-      "taisho": "T19n1027",
-      "tohoku": "Toh 964",
-      "sentence_count": 34,
-      "confidence": 0.7,
-      "note": "34 aligned sentence pairs (MITRA-parallel)"
+      "note": "26 aligned sentence pairs (MITRA-parallel)"
     },
     "T20n1037_Toh_699": {
       "taisho": "T20n1037",
       "tohoku": "Toh 699",
-      "sentence_count": 39,
-      "confidence": 0.7,
-      "note": "39 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T20n1037_Toh_904": {
-      "taisho": "T20n1037",
-      "tohoku": "Toh 904",
       "sentence_count": 39,
       "confidence": 0.7,
       "note": "39 aligned sentence pairs (MITRA-parallel)"
@@ -8637,40 +7349,47 @@
       "confidence": 0.7,
       "note": "49 aligned sentence pairs (MITRA-parallel)"
     },
-    "T20n1057_Toh_690": {
-      "taisho": "T20n1057",
+    "T20n1057a_Toh_690": {
+      "taisho": "T20n1057a",
       "tohoku": "Toh 690",
-      "sentence_count": 679,
+      "sentence_count": 355,
       "confidence": 0.9,
-      "note": "679 aligned sentence pairs (MITRA-parallel)"
+      "note": "355 aligned sentence pairs (MITRA-parallel)"
     },
-    "T20n1057_Toh_691": {
-      "taisho": "T20n1057",
+    "T20n1057a_Toh_691": {
+      "taisho": "T20n1057a",
       "tohoku": "Toh 691",
-      "sentence_count": 635,
+      "sentence_count": 323,
       "confidence": 0.9,
-      "note": "635 aligned sentence pairs (MITRA-parallel)"
+      "note": "323 aligned sentence pairs (MITRA-parallel)"
     },
-    "T20n1057_Toh_707": {
-      "taisho": "T20n1057",
+    "T20n1057a_Toh_707": {
+      "taisho": "T20n1057a",
       "tohoku": "Toh 707",
-      "sentence_count": 78,
+      "sentence_count": 40,
       "confidence": 0.7,
-      "note": "78 aligned sentence pairs (MITRA-parallel)"
+      "note": "40 aligned sentence pairs (MITRA-parallel)"
     },
-    "T20n1057_Toh_897": {
-      "taisho": "T20n1057",
-      "tohoku": "Toh 897",
-      "sentence_count": 635,
+    "T20n1057b_Toh_690": {
+      "taisho": "T20n1057b",
+      "tohoku": "Toh 690",
+      "sentence_count": 324,
       "confidence": 0.9,
-      "note": "635 aligned sentence pairs (MITRA-parallel)"
+      "note": "324 aligned sentence pairs (MITRA-parallel)"
     },
-    "T20n1057_Toh_919": {
-      "taisho": "T20n1057",
-      "tohoku": "Toh 919",
-      "sentence_count": 78,
+    "T20n1057b_Toh_691": {
+      "taisho": "T20n1057b",
+      "tohoku": "Toh 691",
+      "sentence_count": 312,
+      "confidence": 0.9,
+      "note": "312 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T20n1057b_Toh_707": {
+      "taisho": "T20n1057b",
+      "tohoku": "Toh 707",
+      "sentence_count": 38,
       "confidence": 0.7,
-      "note": "78 aligned sentence pairs (MITRA-parallel)"
+      "note": "38 aligned sentence pairs (MITRA-parallel)"
     },
     "T20n1058_Toh_690": {
       "taisho": "T20n1058",
@@ -8693,20 +7412,6 @@
       "confidence": 0.7,
       "note": "23 aligned sentence pairs (MITRA-parallel)"
     },
-    "T20n1058_Toh_897": {
-      "taisho": "T20n1058",
-      "tohoku": "Toh 897",
-      "sentence_count": 432,
-      "confidence": 0.9,
-      "note": "432 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T20n1058_Toh_919": {
-      "taisho": "T20n1058",
-      "tohoku": "Toh 919",
-      "sentence_count": 23,
-      "confidence": 0.7,
-      "note": "23 aligned sentence pairs (MITRA-parallel)"
-    },
     "T20n1059_Toh_690": {
       "taisho": "T20n1059",
       "tohoku": "Toh 690",
@@ -8717,13 +7422,6 @@
     "T20n1059_Toh_691": {
       "taisho": "T20n1059",
       "tohoku": "Toh 691",
-      "sentence_count": 52,
-      "confidence": 0.7,
-      "note": "52 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T20n1059_Toh_897": {
-      "taisho": "T20n1059",
-      "tohoku": "Toh 897",
       "sentence_count": 52,
       "confidence": 0.7,
       "note": "52 aligned sentence pairs (MITRA-parallel)"
@@ -8749,13 +7447,6 @@
       "confidence": 0.7,
       "note": "22 aligned sentence pairs (MITRA-parallel)"
     },
-    "T20n1060_Toh_897": {
-      "taisho": "T20n1060",
-      "tohoku": "Toh 897",
-      "sentence_count": 355,
-      "confidence": 0.9,
-      "note": "355 aligned sentence pairs (MITRA-parallel)"
-    },
     "T20n1060_Toh_2736": {
       "taisho": "T20n1060",
       "tohoku": "Toh 2736",
@@ -8777,23 +7468,9 @@
       "confidence": 0.7,
       "note": "63 aligned sentence pairs (MITRA-parallel)"
     },
-    "T20n1064_Toh_897": {
-      "taisho": "T20n1064",
-      "tohoku": "Toh 897",
-      "sentence_count": 63,
-      "confidence": 0.7,
-      "note": "63 aligned sentence pairs (MITRA-parallel)"
-    },
     "T20n1069_Toh_693": {
       "taisho": "T20n1069",
       "tohoku": "Toh 693",
-      "sentence_count": 44,
-      "confidence": 0.7,
-      "note": "44 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T20n1069_Toh_899": {
-      "taisho": "T20n1069",
-      "tohoku": "Toh 899",
       "sentence_count": 44,
       "confidence": 0.7,
       "note": "44 aligned sentence pairs (MITRA-parallel)"
@@ -8812,23 +7489,9 @@
       "confidence": 0.7,
       "note": "40 aligned sentence pairs (MITRA-parallel)"
     },
-    "T20n1071_Toh_899": {
-      "taisho": "T20n1071",
-      "tohoku": "Toh 899",
-      "sentence_count": 40,
-      "confidence": 0.7,
-      "note": "40 aligned sentence pairs (MITRA-parallel)"
-    },
     "T20n1080_Toh_692": {
       "taisho": "T20n1080",
       "tohoku": "Toh 692",
-      "sentence_count": 115,
-      "confidence": 0.9,
-      "note": "115 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T20n1080_Toh_898": {
-      "taisho": "T20n1080",
-      "tohoku": "Toh 898",
       "sentence_count": 115,
       "confidence": 0.9,
       "note": "115 aligned sentence pairs (MITRA-parallel)"
@@ -8840,13 +7503,6 @@
       "confidence": 0.7,
       "note": "37 aligned sentence pairs (MITRA-parallel)"
     },
-    "T20n1081_Toh_898": {
-      "taisho": "T20n1081",
-      "tohoku": "Toh 898",
-      "sentence_count": 37,
-      "confidence": 0.7,
-      "note": "37 aligned sentence pairs (MITRA-parallel)"
-    },
     "T20n1082_Toh_692": {
       "taisho": "T20n1082",
       "tohoku": "Toh 692",
@@ -8854,23 +7510,9 @@
       "confidence": 0.9,
       "note": "207 aligned sentence pairs (MITRA-parallel)"
     },
-    "T20n1082_Toh_898": {
-      "taisho": "T20n1082",
-      "tohoku": "Toh 898",
-      "sentence_count": 207,
-      "confidence": 0.9,
-      "note": "207 aligned sentence pairs (MITRA-parallel)"
-    },
     "T20n1083_Toh_692": {
       "taisho": "T20n1083",
       "tohoku": "Toh 692",
-      "sentence_count": 91,
-      "confidence": 0.7,
-      "note": "91 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T20n1083_Toh_898": {
-      "taisho": "T20n1083",
-      "tohoku": "Toh 898",
       "sentence_count": 91,
       "confidence": 0.7,
       "note": "91 aligned sentence pairs (MITRA-parallel)"
@@ -8931,13 +7573,6 @@
       "confidence": 0.7,
       "note": "87 aligned sentence pairs (MITRA-parallel)"
     },
-    "T20n1093_Toh_901": {
-      "taisho": "T20n1093",
-      "tohoku": "Toh 901",
-      "sentence_count": 26,
-      "confidence": 0.7,
-      "note": "26 aligned sentence pairs (MITRA-parallel)"
-    },
     "T20n1094_Toh_682": {
       "taisho": "T20n1094",
       "tohoku": "Toh 682",
@@ -8951,13 +7586,6 @@
       "sentence_count": 79,
       "confidence": 0.7,
       "note": "79 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T20n1094_Toh_901": {
-      "taisho": "T20n1094",
-      "tohoku": "Toh 901",
-      "sentence_count": 60,
-      "confidence": 0.7,
-      "note": "60 aligned sentence pairs (MITRA-parallel)"
     },
     "T20n1095_Toh_682": {
       "taisho": "T20n1095",
@@ -8973,13 +7601,6 @@
       "confidence": 0.9,
       "note": "107 aligned sentence pairs (MITRA-parallel)"
     },
-    "T20n1095_Toh_901": {
-      "taisho": "T20n1095",
-      "tohoku": "Toh 901",
-      "sentence_count": 122,
-      "confidence": 0.9,
-      "note": "122 aligned sentence pairs (MITRA-parallel)"
-    },
     "T20n1098_Toh_682": {
       "taisho": "T20n1098",
       "tohoku": "Toh 682",
@@ -8993,13 +7614,6 @@
       "sentence_count": 24,
       "confidence": 0.7,
       "note": "24 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T20n1098_Toh_901": {
-      "taisho": "T20n1098",
-      "tohoku": "Toh 901",
-      "sentence_count": 25,
-      "confidence": 0.7,
-      "note": "25 aligned sentence pairs (MITRA-parallel)"
     },
     "T20n1099_Toh_682": {
       "taisho": "T20n1099",
@@ -9015,30 +7629,9 @@
       "confidence": 0.7,
       "note": "86 aligned sentence pairs (MITRA-parallel)"
     },
-    "T20n1099_Toh_901": {
-      "taisho": "T20n1099",
-      "tohoku": "Toh 901",
-      "sentence_count": 74,
-      "confidence": 0.7,
-      "note": "74 aligned sentence pairs (MITRA-parallel)"
-    },
     "T20n1106_Toh_727": {
       "taisho": "T20n1106",
       "tohoku": "Toh 727",
-      "sentence_count": 45,
-      "confidence": 0.7,
-      "note": "45 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T20n1106_Toh_745": {
-      "taisho": "T20n1106",
-      "tohoku": "Toh 745",
-      "sentence_count": 45,
-      "confidence": 0.7,
-      "note": "45 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T20n1106_Toh_1000": {
-      "taisho": "T20n1106",
-      "tohoku": "Toh 1000",
       "sentence_count": 45,
       "confidence": 0.7,
       "note": "45 aligned sentence pairs (MITRA-parallel)"
@@ -9064,23 +7657,9 @@
       "confidence": 0.7,
       "note": "25 aligned sentence pairs (MITRA-parallel)"
     },
-    "T20n1117_Toh_909": {
-      "taisho": "T20n1117",
-      "tohoku": "Toh 909",
-      "sentence_count": 25,
-      "confidence": 0.7,
-      "note": "25 aligned sentence pairs (MITRA-parallel)"
-    },
     "T20n1127_Toh_637": {
       "taisho": "T20n1127",
       "tohoku": "Toh 637",
-      "sentence_count": 27,
-      "confidence": 0.7,
-      "note": "27 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T20n1127_Toh_877": {
-      "taisho": "T20n1127",
-      "tohoku": "Toh 877",
       "sentence_count": 27,
       "confidence": 0.7,
       "note": "27 aligned sentence pairs (MITRA-parallel)"
@@ -9106,13 +7685,6 @@
       "confidence": 0.7,
       "note": "23 aligned sentence pairs (MITRA-parallel)"
     },
-    "T20n1139_Toh_915": {
-      "taisho": "T20n1139",
-      "tohoku": "Toh 915",
-      "sentence_count": 23,
-      "confidence": 0.7,
-      "note": "23 aligned sentence pairs (MITRA-parallel)"
-    },
     "T20n1144_Toh_85": {
       "taisho": "T20n1144",
       "tohoku": "Toh 85",
@@ -9127,26 +7699,12 @@
       "confidence": 0.7,
       "note": "23 aligned sentence pairs (MITRA-parallel)"
     },
-    "T20n1147_Toh_270": {
-      "taisho": "T20n1147",
-      "tohoku": "Toh 270",
-      "sentence_count": 41,
-      "confidence": 0.7,
-      "note": "41 aligned sentence pairs (MITRA-parallel)"
-    },
     "T20n1147_Toh_512": {
       "taisho": "T20n1147",
       "tohoku": "Toh 512",
-      "sentence_count": 41,
+      "sentence_count": 22,
       "confidence": 0.7,
-      "note": "41 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T20n1147_Toh_852": {
-      "taisho": "T20n1147",
-      "tohoku": "Toh 852",
-      "sentence_count": 41,
-      "confidence": 0.7,
-      "note": "41 aligned sentence pairs (MITRA-parallel)"
+      "note": "22 aligned sentence pairs (MITRA-parallel)"
     },
     "T20n1153_Toh_561": {
       "taisho": "T20n1153",
@@ -9158,13 +7716,6 @@
     "T20n1153_Toh_751": {
       "taisho": "T20n1153",
       "tohoku": "Toh 751",
-      "sentence_count": 41,
-      "confidence": 0.7,
-      "note": "41 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T20n1153_Toh_946": {
-      "taisho": "T20n1153",
-      "tohoku": "Toh 946",
       "sentence_count": 41,
       "confidence": 0.7,
       "note": "41 aligned sentence pairs (MITRA-parallel)"
@@ -9190,23 +7741,9 @@
       "confidence": 0.7,
       "note": "65 aligned sentence pairs (MITRA-parallel)"
     },
-    "T20n1163_Toh_998": {
-      "taisho": "T20n1163",
-      "tohoku": "Toh 998",
-      "sentence_count": 65,
-      "confidence": 0.7,
-      "note": "65 aligned sentence pairs (MITRA-parallel)"
-    },
     "T20n1164_Toh_661": {
       "taisho": "T20n1164",
       "tohoku": "Toh 661",
-      "sentence_count": 51,
-      "confidence": 0.7,
-      "note": "51 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T20n1164_Toh_998": {
-      "taisho": "T20n1164",
-      "tohoku": "Toh 998",
       "sentence_count": 51,
       "confidence": 0.7,
       "note": "51 aligned sentence pairs (MITRA-parallel)"
@@ -9379,23 +7916,9 @@
       "confidence": 0.9,
       "note": "166 aligned sentence pairs (MITRA-parallel)"
     },
-    "T21n1243_Toh_947": {
-      "taisho": "T21n1243",
-      "tohoku": "Toh 947",
-      "sentence_count": 166,
-      "confidence": 0.9,
-      "note": "166 aligned sentence pairs (MITRA-parallel)"
-    },
     "T21n1245_Toh_656": {
       "taisho": "T21n1245",
       "tohoku": "Toh 656",
-      "sentence_count": 33,
-      "confidence": 0.7,
-      "note": "33 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T21n1245_Toh_1061": {
-      "taisho": "T21n1245",
-      "tohoku": "Toh 1061",
       "sentence_count": 33,
       "confidence": 0.7,
       "note": "33 aligned sentence pairs (MITRA-parallel)"
@@ -9424,13 +7947,6 @@
     "T21n1257_Toh_759": {
       "taisho": "T21n1257",
       "tohoku": "Toh 759",
-      "sentence_count": 24,
-      "confidence": 0.7,
-      "note": "24 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T21n1257_Toh_964": {
-      "taisho": "T21n1257",
-      "tohoku": "Toh 964",
       "sentence_count": 24,
       "confidence": 0.7,
       "note": "24 aligned sentence pairs (MITRA-parallel)"
@@ -9484,23 +8000,9 @@
       "confidence": 0.9,
       "note": "108 aligned sentence pairs (MITRA-parallel)"
     },
-    "T21n1302_Toh_997": {
-      "taisho": "T21n1302",
-      "tohoku": "Toh 997",
-      "sentence_count": 108,
-      "confidence": 0.9,
-      "note": "108 aligned sentence pairs (MITRA-parallel)"
-    },
     "T21n1303_Toh_660": {
       "taisho": "T21n1303",
       "tohoku": "Toh 660",
-      "sentence_count": 55,
-      "confidence": 0.7,
-      "note": "55 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T21n1303_Toh_997": {
-      "taisho": "T21n1303",
-      "tohoku": "Toh 997",
       "sentence_count": 55,
       "confidence": 0.7,
       "note": "55 aligned sentence pairs (MITRA-parallel)"
@@ -9519,20 +8021,6 @@
       "confidence": 0.7,
       "note": "28 aligned sentence pairs (MITRA-parallel)"
     },
-    "T21n1313_Toh_1079": {
-      "taisho": "T21n1313",
-      "tohoku": "Toh 1079",
-      "sentence_count": 28,
-      "confidence": 0.7,
-      "note": "28 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T21n1313_Toh_1080": {
-      "taisho": "T21n1313",
-      "tohoku": "Toh 1080",
-      "sentence_count": 46,
-      "confidence": 0.7,
-      "note": "46 aligned sentence pairs (MITRA-parallel)"
-    },
     "T21n1314_Toh_646": {
       "taisho": "T21n1314",
       "tohoku": "Toh 646",
@@ -9546,20 +8034,6 @@
       "sentence_count": 40,
       "confidence": 0.7,
       "note": "40 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T21n1314_Toh_1079": {
-      "taisho": "T21n1314",
-      "tohoku": "Toh 1079",
-      "sentence_count": 40,
-      "confidence": 0.7,
-      "note": "40 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T21n1314_Toh_1080": {
-      "taisho": "T21n1314",
-      "tohoku": "Toh 1080",
-      "sentence_count": 38,
-      "confidence": 0.7,
-      "note": "38 aligned sentence pairs (MITRA-parallel)"
     },
     "T21n1318_Toh_646": {
       "taisho": "T21n1318",
@@ -9575,20 +8049,6 @@
       "confidence": 0.7,
       "note": "27 aligned sentence pairs (MITRA-parallel)"
     },
-    "T21n1318_Toh_1079": {
-      "taisho": "T21n1318",
-      "tohoku": "Toh 1079",
-      "sentence_count": 27,
-      "confidence": 0.7,
-      "note": "27 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T21n1318_Toh_1080": {
-      "taisho": "T21n1318",
-      "tohoku": "Toh 1080",
-      "sentence_count": 44,
-      "confidence": 0.7,
-      "note": "44 aligned sentence pairs (MITRA-parallel)"
-    },
     "T21n1319_Toh_646": {
       "taisho": "T21n1319",
       "tohoku": "Toh 646",
@@ -9603,20 +8063,6 @@
       "confidence": 0.7,
       "note": "26 aligned sentence pairs (MITRA-parallel)"
     },
-    "T21n1319_Toh_1079": {
-      "taisho": "T21n1319",
-      "tohoku": "Toh 1079",
-      "sentence_count": 26,
-      "confidence": 0.7,
-      "note": "26 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T21n1319_Toh_1080": {
-      "taisho": "T21n1319",
-      "tohoku": "Toh 1080",
-      "sentence_count": 28,
-      "confidence": 0.7,
-      "note": "28 aligned sentence pairs (MITRA-parallel)"
-    },
     "T21n1332_Toh_691": {
       "taisho": "T21n1332",
       "tohoku": "Toh 691",
@@ -9624,54 +8070,33 @@
       "confidence": 0.7,
       "note": "21 aligned sentence pairs (MITRA-parallel)"
     },
-    "T21n1332_Toh_897": {
-      "taisho": "T21n1332",
-      "tohoku": "Toh 897",
-      "sentence_count": 21,
-      "confidence": 0.7,
-      "note": "21 aligned sentence pairs (MITRA-parallel)"
-    },
     "T21n1333_Toh_270": {
       "taisho": "T21n1333",
       "tohoku": "Toh 270",
-      "sentence_count": 87,
+      "sentence_count": 43,
       "confidence": 0.7,
-      "note": "87 aligned sentence pairs (MITRA-parallel)"
+      "note": "43 aligned sentence pairs (MITRA-parallel)"
     },
     "T21n1333_Toh_512": {
       "taisho": "T21n1333",
       "tohoku": "Toh 512",
-      "sentence_count": 87,
+      "sentence_count": 44,
       "confidence": 0.7,
-      "note": "87 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T21n1333_Toh_852": {
-      "taisho": "T21n1333",
-      "tohoku": "Toh 852",
-      "sentence_count": 87,
-      "confidence": 0.7,
-      "note": "87 aligned sentence pairs (MITRA-parallel)"
+      "note": "44 aligned sentence pairs (MITRA-parallel)"
     },
     "T21n1334_Toh_270": {
       "taisho": "T21n1334",
       "tohoku": "Toh 270",
-      "sentence_count": 164,
-      "confidence": 0.9,
-      "note": "164 aligned sentence pairs (MITRA-parallel)"
+      "sentence_count": 92,
+      "confidence": 0.7,
+      "note": "92 aligned sentence pairs (MITRA-parallel)"
     },
     "T21n1334_Toh_512": {
       "taisho": "T21n1334",
       "tohoku": "Toh 512",
-      "sentence_count": 164,
-      "confidence": 0.9,
-      "note": "164 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T21n1334_Toh_852": {
-      "taisho": "T21n1334",
-      "tohoku": "Toh 852",
-      "sentence_count": 164,
-      "confidence": 0.9,
-      "note": "164 aligned sentence pairs (MITRA-parallel)"
+      "sentence_count": 72,
+      "confidence": 0.7,
+      "note": "72 aligned sentence pairs (MITRA-parallel)"
     },
     "T21n1341_Toh_95": {
       "taisho": "T21n1341",
@@ -9693,20 +8118,6 @@
       "sentence_count": 172,
       "confidence": 0.9,
       "note": "172 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T21n1343_Toh_528": {
-      "taisho": "T21n1343",
-      "tohoku": "Toh 528",
-      "sentence_count": 23,
-      "confidence": 0.7,
-      "note": "23 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T21n1343_Toh_858": {
-      "taisho": "T21n1343",
-      "tohoku": "Toh 858",
-      "sentence_count": 23,
-      "confidence": 0.7,
-      "note": "23 aligned sentence pairs (MITRA-parallel)"
     },
     "T21n1344_Toh_139": {
       "taisho": "T21n1344",
@@ -9739,62 +8150,41 @@
     "T21n1348_Toh_273": {
       "taisho": "T21n1348",
       "tohoku": "Toh 273",
-      "sentence_count": 115,
-      "confidence": 0.9,
-      "note": "115 aligned sentence pairs (MITRA-parallel)"
+      "sentence_count": 57,
+      "confidence": 0.7,
+      "note": "57 aligned sentence pairs (MITRA-parallel)"
     },
     "T21n1348_Toh_511": {
       "taisho": "T21n1348",
       "tohoku": "Toh 511",
-      "sentence_count": 115,
-      "confidence": 0.9,
-      "note": "115 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T21n1348_Toh_853": {
-      "taisho": "T21n1348",
-      "tohoku": "Toh 853",
-      "sentence_count": 115,
-      "confidence": 0.9,
-      "note": "115 aligned sentence pairs (MITRA-parallel)"
+      "sentence_count": 58,
+      "confidence": 0.7,
+      "note": "58 aligned sentence pairs (MITRA-parallel)"
     },
     "T21n1354_Toh_528": {
       "taisho": "T21n1354",
       "tohoku": "Toh 528",
-      "sentence_count": 75,
+      "sentence_count": 28,
       "confidence": 0.7,
-      "note": "75 aligned sentence pairs (MITRA-parallel)"
+      "note": "28 aligned sentence pairs (MITRA-parallel)"
     },
     "T21n1354_Toh_858": {
       "taisho": "T21n1354",
       "tohoku": "Toh 858",
-      "sentence_count": 75,
+      "sentence_count": 47,
       "confidence": 0.7,
-      "note": "75 aligned sentence pairs (MITRA-parallel)"
+      "note": "47 aligned sentence pairs (MITRA-parallel)"
     },
     "T21n1355_Toh_528": {
       "taisho": "T21n1355",
       "tohoku": "Toh 528",
-      "sentence_count": 27,
+      "sentence_count": 22,
       "confidence": 0.7,
-      "note": "27 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T21n1355_Toh_858": {
-      "taisho": "T21n1355",
-      "tohoku": "Toh 858",
-      "sentence_count": 27,
-      "confidence": 0.7,
-      "note": "27 aligned sentence pairs (MITRA-parallel)"
+      "note": "22 aligned sentence pairs (MITRA-parallel)"
     },
     "T21n1356_Toh_516": {
       "taisho": "T21n1356",
       "tohoku": "Toh 516",
-      "sentence_count": 27,
-      "confidence": 0.7,
-      "note": "27 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T21n1356_Toh_886": {
-      "taisho": "T21n1356",
-      "tohoku": "Toh 886",
       "sentence_count": 27,
       "confidence": 0.7,
       "note": "27 aligned sentence pairs (MITRA-parallel)"
@@ -9805,34 +8195,6 @@
       "sentence_count": 28,
       "confidence": 0.7,
       "note": "28 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T21n1359_Toh_886": {
-      "taisho": "T21n1359",
-      "tohoku": "Toh 886",
-      "sentence_count": 28,
-      "confidence": 0.7,
-      "note": "28 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T21n1360_Toh_141": {
-      "taisho": "T21n1360",
-      "tohoku": "Toh 141",
-      "sentence_count": 26,
-      "confidence": 0.7,
-      "note": "26 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T21n1360_Toh_526": {
-      "taisho": "T21n1360",
-      "tohoku": "Toh 526",
-      "sentence_count": 26,
-      "confidence": 0.7,
-      "note": "26 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T21n1360_Toh_916": {
-      "taisho": "T21n1360",
-      "tohoku": "Toh 916",
-      "sentence_count": 26,
-      "confidence": 0.7,
-      "note": "26 aligned sentence pairs (MITRA-parallel)"
     },
     "T21n1361_Toh_2694": {
       "taisho": "T21n1361",
@@ -9848,30 +8210,9 @@
       "confidence": 0.7,
       "note": "37 aligned sentence pairs (MITRA-parallel)"
     },
-    "T21n1362_Toh_617": {
-      "taisho": "T21n1362",
-      "tohoku": "Toh 617",
-      "sentence_count": 37,
-      "confidence": 0.7,
-      "note": "37 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T21n1362_Toh_974": {
-      "taisho": "T21n1362",
-      "tohoku": "Toh 974",
-      "sentence_count": 37,
-      "confidence": 0.7,
-      "note": "37 aligned sentence pairs (MITRA-parallel)"
-    },
     "T21n1375_Toh_98": {
       "taisho": "T21n1375",
       "tohoku": "Toh 98",
-      "sentence_count": 47,
-      "confidence": 0.7,
-      "note": "47 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T21n1375_Toh_721": {
-      "taisho": "T21n1375",
-      "tohoku": "Toh 721",
       "sentence_count": 47,
       "confidence": 0.7,
       "note": "47 aligned sentence pairs (MITRA-parallel)"
@@ -9883,13 +8224,6 @@
       "confidence": 0.7,
       "note": "28 aligned sentence pairs (MITRA-parallel)"
     },
-    "T21n1377_Toh_907": {
-      "taisho": "T21n1377",
-      "tohoku": "Toh 907",
-      "sentence_count": 28,
-      "confidence": 0.7,
-      "note": "28 aligned sentence pairs (MITRA-parallel)"
-    },
     "T21n1380_Toh_619": {
       "taisho": "T21n1380",
       "tohoku": "Toh 619",
@@ -9897,23 +8231,9 @@
       "confidence": 0.7,
       "note": "21 aligned sentence pairs (MITRA-parallel)"
     },
-    "T21n1380_Toh_1008": {
-      "taisho": "T21n1380",
-      "tohoku": "Toh 1008",
-      "sentence_count": 21,
-      "confidence": 0.7,
-      "note": "21 aligned sentence pairs (MITRA-parallel)"
-    },
     "T21n1392_Toh_606": {
       "taisho": "T21n1392",
       "tohoku": "Toh 606",
-      "sentence_count": 23,
-      "confidence": 0.7,
-      "note": "23 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T21n1392_Toh_958": {
-      "taisho": "T21n1392",
-      "tohoku": "Toh 958",
       "sentence_count": 23,
       "confidence": 0.7,
       "note": "23 aligned sentence pairs (MITRA-parallel)"
@@ -9928,13 +8248,6 @@
     "T21n1417_Toh_750": {
       "taisho": "T21n1417",
       "tohoku": "Toh 750",
-      "sentence_count": 24,
-      "confidence": 0.7,
-      "note": "24 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T21n1417_Toh_949": {
-      "taisho": "T21n1417",
-      "tohoku": "Toh 949",
       "sentence_count": 24,
       "confidence": 0.7,
       "note": "24 aligned sentence pairs (MITRA-parallel)"
@@ -9967,8 +8280,8 @@
       "confidence": 0.7,
       "note": "25 aligned sentence pairs (MITRA-parallel)"
     },
-    "T22n1422_Toh_2": {
-      "taisho": "T22n1422",
+    "T22n1422a_Toh_2": {
+      "taisho": "T22n1422a",
       "tohoku": "Toh 2",
       "sentence_count": 58,
       "confidence": 0.7,
@@ -10201,9 +8514,9 @@
     "T23n1441_Toh_7": {
       "taisho": "T23n1441",
       "tohoku": "Toh 7",
-      "sentence_count": 902,
+      "sentence_count": 901,
       "confidence": 0.9,
-      "note": "902 aligned sentence pairs (MITRA-parallel)"
+      "note": "901 aligned sentence pairs (MITRA-parallel)"
     },
     "T23n1441_Toh_4111": {
       "taisho": "T23n1441",
@@ -11073,26 +9386,40 @@
       "confidence": 0.9,
       "note": "150 aligned sentence pairs (MITRA-parallel)"
     },
-    "T25n1510_Toh_16": {
-      "taisho": "T25n1510",
+    "T25n1510a_Toh_3816": {
+      "taisho": "T25n1510a",
+      "tohoku": "Toh 3816",
+      "sentence_count": 539,
+      "confidence": 0.9,
+      "note": "539 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T25n1510a_Toh_3817": {
+      "taisho": "T25n1510a",
+      "tohoku": "Toh 3817",
+      "sentence_count": 37,
+      "confidence": 0.7,
+      "note": "37 aligned sentence pairs (MITRA-parallel)"
+    },
+    "T25n1510b_Toh_16": {
+      "taisho": "T25n1510b",
       "tohoku": "Toh 16",
       "sentence_count": 133,
       "confidence": 0.9,
       "note": "133 aligned sentence pairs (MITRA-parallel)"
     },
-    "T25n1510_Toh_3816": {
-      "taisho": "T25n1510",
+    "T25n1510b_Toh_3816": {
+      "taisho": "T25n1510b",
       "tohoku": "Toh 3816",
-      "sentence_count": 913,
+      "sentence_count": 374,
       "confidence": 0.9,
-      "note": "913 aligned sentence pairs (MITRA-parallel)"
+      "note": "374 aligned sentence pairs (MITRA-parallel)"
     },
-    "T25n1510_Toh_3817": {
-      "taisho": "T25n1510",
+    "T25n1510b_Toh_3817": {
+      "taisho": "T25n1510b",
       "tohoku": "Toh 3817",
-      "sentence_count": 59,
+      "sentence_count": 22,
       "confidence": 0.7,
-      "note": "59 aligned sentence pairs (MITRA-parallel)"
+      "note": "22 aligned sentence pairs (MITRA-parallel)"
     },
     "T25n1511_Toh_16": {
       "taisho": "T25n1511",
@@ -13887,13 +12214,6 @@
       "confidence": 0.7,
       "note": "55 aligned sentence pairs (MITRA-parallel)"
     },
-    "T32n1636_Toh_847": {
-      "taisho": "T32n1636",
-      "tohoku": "Toh 847",
-      "sentence_count": 260,
-      "confidence": 0.9,
-      "note": "260 aligned sentence pairs (MITRA-parallel)"
-    },
     "T32n1636_Toh_2534": {
       "taisho": "T32n1636",
       "tohoku": "Toh 2534",
@@ -15364,13 +13684,6 @@
       "confidence": 0.7,
       "note": "34 aligned sentence pairs (MITRA-parallel)"
     },
-    "T46n1950_Toh_897": {
-      "taisho": "T46n1950",
-      "tohoku": "Toh 897",
-      "sentence_count": 34,
-      "confidence": 0.7,
-      "note": "34 aligned sentence pairs (MITRA-parallel)"
-    },
     "T47n1960_Toh_123": {
       "taisho": "T47n1960",
       "tohoku": "Toh 123",
@@ -16718,13 +15031,6 @@
     "T85n2910_Toh_633": {
       "taisho": "T85n2910",
       "tohoku": "Toh 633",
-      "sentence_count": 54,
-      "confidence": 0.7,
-      "note": "54 aligned sentence pairs (MITRA-parallel)"
-    },
-    "T85n2910_Toh_924": {
-      "taisho": "T85n2910",
-      "tohoku": "Toh 924",
       "sentence_count": 54,
       "confidence": 0.7,
       "note": "54 aligned sentence pairs (MITRA-parallel)"

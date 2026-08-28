@@ -36,22 +36,66 @@ MIN_SENTENCES = 20
 # Confidence tiers
 CONFIDENCE_STRONG = 0.9   # >=100 sentences
 CONFIDENCE_MODERATE = 0.7  # 20-99 sentences
+CONFIDENCE_WEAK = 0.4      # <20 sentences (filtered out before output)
 
-# Patterns
-TAISHO_PATTERN = re.compile(r'T(\d{2})n(\d{4}[A-Z]?)')
+# Patterns (matched against the segment-number columns, which are authoritative
+# for the text identity, NOT against the filename).
+TAISHO_PATTERN = re.compile(r'T(\d{2})n(\d{4}[A-Za-z]?)')
 DERGE_PATTERN = re.compile(r'D(\d{4})')
 
 
-def count_lines(filepath):
-    """Count data lines in a TSV file (excluding header)."""
+def _script_fracs(s):
+    """Return (cjk_fraction, tibetan_fraction) of a string."""
+    if not s:
+        return 0.0, 0.0
+    cjk = sum(1 for c in s if '一' <= c <= '鿿')
+    tib = sum(1 for c in s if 'ༀ' <= c <= '࿿')
+    n = len(s)
+    return cjk / n, tib / n
+
+
+def count_chinese_tibetan_pairs(filepath):
+    """Count only genuine Chinese<->Tibetan aligned rows in a TSV file, and
+    return {(taisho_id, toh_int): n_rows} extracted from the aligned columns.
+
+    Bug fixed here: the previous version keyed off the *filename* and counted
+    every row, so Tibetan<->Sanskrit Tengyur alignments (whose filenames also
+    carry a Taisho token) were miscounted as Chinese<->Tibetan. We now inspect
+    the actual script of each aligned row: a row counts only if one side is
+    CJK (Chinese) with a Taisho segment id and the other is Tibetan script with
+    a Derge segment id.
+    """
+    from collections import defaultdict
+    pairs = defaultdict(int)
     try:
         with open(filepath, 'r', encoding='utf-8') as f:
-            # Skip header
-            header = f.readline()
-            count = sum(1 for line in f if line.strip())
-        return count
+            f.readline()  # header: src_segmentnr, src_original, tgt_segmentnr, tgt_original
+            for line in f:
+                p = line.rstrip('\n').split('\t')
+                if len(p) < 4:
+                    continue
+                src_id, src_txt, tgt_id, tgt_txt = p[0], p[1], p[2], p[3]
+                if not src_txt.strip() or not tgt_txt.strip():
+                    continue
+                src_cjk, src_tib = _script_fracs(src_txt)
+                tgt_cjk, tgt_tib = _script_fracs(tgt_txt)
+                # Identify which side is Chinese and which is Tibetan by script.
+                if src_cjk > 0.3 and tgt_tib > 0.3:
+                    chinese_id, tibetan_id = src_id, tgt_id
+                elif tgt_cjk > 0.3 and src_tib > 0.3:
+                    chinese_id, tibetan_id = tgt_id, src_id
+                else:
+                    continue  # not a Chinese<->Tibetan row (Skt/Ch, Skt/Tib, etc.)
+                tm = TAISHO_PATTERN.search(chinese_id)
+                dm = DERGE_PATTERN.search(tibetan_id)
+                if not tm or not dm:
+                    continue
+                taisho_id = f"T{tm.group(1)}n{tm.group(2)}"
+                toh = int(dm.group(1))
+                pairs[(taisho_id, toh)] += 1
     except (OSError, UnicodeDecodeError):
-        return 0
+        return {}
+    return pairs
 
 
 def assign_confidence(sentence_count):
@@ -83,30 +127,16 @@ def parse_mitra():
         if (i + 1) % 2000 == 0:
             print(f"  {i + 1}/{total}...")
 
-        filename = filepath.name
-
-        # Extract Taishō and Derge IDs from filename
-        taisho_matches = TAISHO_PATTERN.findall(filename)
-        derge_matches = DERGE_PATTERN.findall(filename)
-
-        if not taisho_matches or not derge_matches:
-            skipped += 1
-            continue
-
-        # Count aligned sentences
-        n_sentences = count_lines(filepath)
-        if n_sentences < 1:
+        # Count only genuine Chinese<->Tibetan rows, keyed by the actual text
+        # ids found in the aligned columns (script-verified).
+        file_pairs = count_chinese_tibetan_pairs(filepath)
+        if not file_pairs:
             skipped += 1
             continue
 
         file_count += 1
-
-        # Create all (Taishō, Tohoku) pairs from this file
-        for t_vol, t_num in taisho_matches:
-            taisho_id = f"T{t_vol}n{t_num}"
-            for d_num in derge_matches:
-                toh = int(d_num)
-                pair_sentences[(taisho_id, toh)] += n_sentences
+        for (taisho_id, toh), n_rows in file_pairs.items():
+            pair_sentences[(taisho_id, toh)] += n_rows
 
     print(f"\nParsed {file_count} files with Taishō-Tohoku pairs "
           f"(skipped {skipped})")
