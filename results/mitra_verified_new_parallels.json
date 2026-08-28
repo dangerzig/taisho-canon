@@ -1,0 +1,591 @@
+{
+ "method": "script-verified Chinese<->Tibetan MITRA extraction + coverage>=0.30 filter",
+ "count": 73,
+ "wholly_new_texts": 28,
+ "parallels": [
+  {
+   "taisho": "T85n2908",
+   "toh": "Toh 4377",
+   "coverage": 1.057,
+   "aligned_sentences": 95,
+   "title": "大方廣佛華嚴經普賢菩薩行願王品",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T14n0499",
+   "toh": "Toh 4088",
+   "coverage": 1.029,
+   "aligned_sentences": 47,
+   "title": "佛為阿支羅迦葉自化作苦經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T02n0105",
+   "toh": "Toh 4094",
+   "coverage": 1.019,
+   "aligned_sentences": 46,
+   "title": "五陰譬喻經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T02n0124",
+   "toh": "Toh 4094",
+   "coverage": 1.014,
+   "aligned_sentences": 38,
+   "title": "緣起經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T32n1676",
+   "toh": "Toh 4395",
+   "coverage": 0.981,
+   "aligned_sentences": 23,
+   "title": "廣大發願頌",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T03n0163",
+   "toh": "Toh 343",
+   "coverage": 0.979,
+   "aligned_sentences": 63,
+   "title": "妙色王因緣經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T85n2907",
+   "toh": "Toh 4377",
+   "coverage": 0.971,
+   "aligned_sentences": 90,
+   "title": "普賢菩薩行願王經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T14n0499",
+   "toh": "Toh 340",
+   "coverage": 0.967,
+   "aligned_sentences": 43,
+   "title": "佛為阿支羅迦葉自化作苦經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T85n2900",
+   "toh": "Toh 206",
+   "coverage": 0.964,
+   "aligned_sentences": 58,
+   "title": "齋法清淨經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T10n0298",
+   "toh": "Toh 44",
+   "coverage": 0.957,
+   "aligned_sentences": 39,
+   "title": "大方廣普賢所說經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T17n0781",
+   "toh": "Toh 6",
+   "coverage": 0.949,
+   "aligned_sentences": 28,
+   "title": "佛說佛十力經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T32n1651",
+   "toh": "Toh 3837",
+   "coverage": 0.948,
+   "aligned_sentences": 50,
+   "title": "十二因緣論",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T01n0060",
+   "toh": "Toh 6",
+   "coverage": 0.872,
+   "aligned_sentences": 95,
+   "title": "瞿曇彌記果經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T17n0776",
+   "toh": "Toh 4094",
+   "coverage": 0.84,
+   "aligned_sentences": 49,
+   "title": "佛說四品法門經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T10n0282",
+   "toh": "Toh 4366",
+   "coverage": 0.812,
+   "aligned_sentences": 98,
+   "title": "諸菩薩求佛本業經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T20n1040",
+   "toh": "Toh 482",
+   "coverage": 0.805,
+   "aligned_sentences": 64,
+   "title": "金剛頂降三世大儀軌法王教中觀自在菩薩心真言一切如來蓮華大曼荼羅品",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T20n1182",
+   "toh": "Toh 543",
+   "coverage": 0.805,
+   "aligned_sentences": 47,
+   "title": "曼殊室利菩薩呪藏中一字呪王經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T14n0505",
+   "toh": "Toh 3",
+   "coverage": 0.805,
+   "aligned_sentences": 46,
+   "title": "佛說隨勇尊者經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T85n2783",
+   "toh": "Toh 4035",
+   "coverage": 0.782,
+   "aligned_sentences": 88,
+   "title": "大乘稻芉經隨聽疏決",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T32n1663",
+   "toh": "Toh 1801",
+   "coverage": 0.771,
+   "aligned_sentences": 37,
+   "title": "菩提心觀釋",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T01n0041",
+   "toh": "Toh 1",
+   "coverage": 0.751,
+   "aligned_sentences": 72,
+   "title": "頻婆娑羅王經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T20n1144",
+   "toh": "Toh 85",
+   "coverage": 0.748,
+   "aligned_sentences": 41,
+   "title": "佛說彌勒菩薩發願王偈",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T12n0389",
+   "toh": "Toh 4156",
+   "coverage": 0.74,
+   "aligned_sentences": 68,
+   "title": "佛垂般涅槃略說教誡經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T24n1491",
+   "toh": "Toh 556",
+   "coverage": 0.721,
+   "aligned_sentences": 96,
+   "title": "菩薩藏經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T14n0472",
+   "toh": "Toh 180",
+   "coverage": 0.685,
+   "aligned_sentences": 72,
+   "title": "佛說大乘善見變化文殊師利問法經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T16n0715",
+   "toh": "Toh 1",
+   "coverage": 0.652,
+   "aligned_sentences": 70,
+   "title": "佛說舊城喻經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T20n1163",
+   "toh": "Toh 661",
+   "coverage": 0.645,
+   "aligned_sentences": 65,
+   "title": "佛說雨寶陀羅尼經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T32n1654",
+   "toh": "Toh 475",
+   "coverage": 0.639,
+   "aligned_sentences": 46,
+   "title": "因緣心論頌因緣心論釋",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T31n1613",
+   "toh": "Toh 4059",
+   "coverage": 0.635,
+   "aligned_sentences": 199,
+   "title": "大乘廣五蘊論",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T08n0240",
+   "toh": "Toh 490",
+   "coverage": 0.629,
+   "aligned_sentences": 62,
+   "title": "實相般若波羅蜜經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T21n1396",
+   "toh": "Toh 543",
+   "coverage": 0.628,
+   "aligned_sentences": 20,
+   "title": "佛說拔除罪障呪王經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T85n2910",
+   "toh": "Toh 633",
+   "coverage": 0.624,
+   "aligned_sentences": 54,
+   "title": "金有陀羅尼經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T20n1195",
+   "toh": "Toh 100",
+   "coverage": 0.612,
+   "aligned_sentences": 61,
+   "title": "大聖文殊師利菩薩讚佛法身禮",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T02n0124",
+   "toh": "Toh 317",
+   "coverage": 0.612,
+   "aligned_sentences": 28,
+   "title": "緣起經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T24n1499",
+   "toh": "Toh 4037",
+   "coverage": 0.607,
+   "aligned_sentences": 48,
+   "title": "菩薩戒羯磨文",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T08n0243",
+   "toh": "Toh 490",
+   "coverage": 0.588,
+   "aligned_sentences": 46,
+   "title": "大樂金剛不空真實三麼耶經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T01n0041",
+   "toh": "Toh 340",
+   "coverage": 0.57,
+   "aligned_sentences": 54,
+   "title": "頻婆娑羅王經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T08n0241",
+   "toh": "Toh 490",
+   "coverage": 0.566,
+   "aligned_sentences": 52,
+   "title": "金剛頂瑜伽理趣般若經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T32n1651",
+   "toh": "Toh 475",
+   "coverage": 0.564,
+   "aligned_sentences": 40,
+   "title": "十二因緣論",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T14n0570",
+   "toh": "Toh 157",
+   "coverage": 0.562,
+   "aligned_sentences": 33,
+   "title": "佛說賢首經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T14n0577",
+   "toh": "Toh 4357",
+   "coverage": 0.556,
+   "aligned_sentences": 21,
+   "title": "佛說大乘流轉諸有經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T19n0971",
+   "toh": "Toh 597",
+   "coverage": 0.527,
+   "aligned_sentences": 95,
+   "title": "佛說佛頂尊勝陀羅尼經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T14n0575",
+   "toh": "Toh 60",
+   "coverage": 0.527,
+   "aligned_sentences": 30,
+   "title": "佛說大方等修多羅王經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T20n1040",
+   "toh": "Toh 724",
+   "coverage": 0.517,
+   "aligned_sentences": 41,
+   "title": "金剛頂降三世大儀軌法王教中觀自在菩薩心真言一切如來蓮華大曼荼羅品",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T16n0704",
+   "toh": "Toh 319",
+   "coverage": 0.498,
+   "aligned_sentences": 28,
+   "title": "佛說樓閣正法甘露鼓經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T16n0712",
+   "toh": "Toh 3986",
+   "coverage": 0.494,
+   "aligned_sentences": 94,
+   "title": "佛說大乘稻芉經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T01n0064",
+   "toh": "Toh 4094",
+   "coverage": 0.493,
+   "aligned_sentences": 21,
+   "title": "瞻婆比丘經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T17n0791",
+   "toh": "Toh 339",
+   "coverage": 0.484,
+   "aligned_sentences": 24,
+   "title": "佛說出家緣經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T14n0450",
+   "toh": "Toh 3132",
+   "coverage": 0.483,
+   "aligned_sentences": 52,
+   "title": "藥師琉璃光如來本願功德經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T24n1501",
+   "toh": "Toh 4083",
+   "coverage": 0.48,
+   "aligned_sentences": 92,
+   "title": "菩薩戒本",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T17n0845",
+   "toh": "Toh 4094",
+   "coverage": 0.473,
+   "aligned_sentences": 27,
+   "title": "佛說尊那經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T21n1380",
+   "toh": "Toh 619",
+   "coverage": 0.468,
+   "aligned_sentences": 21,
+   "title": "佛說善樂長者經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T10n0307",
+   "toh": "Toh 89",
+   "coverage": 0.465,
+   "aligned_sentences": 44,
+   "title": "佛說莊嚴菩提心經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T10n0308",
+   "toh": "Toh 89",
+   "coverage": 0.46,
+   "aligned_sentences": 53,
+   "title": "佛說大方廣菩薩十地經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T08n0242",
+   "toh": "Toh 490",
+   "coverage": 0.455,
+   "aligned_sentences": 33,
+   "title": "佛說遍照般若波羅蜜經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T16n0714",
+   "toh": "Toh 1",
+   "coverage": 0.454,
+   "aligned_sentences": 44,
+   "title": "緣起聖道經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T14n0449",
+   "toh": "Toh 3132",
+   "coverage": 0.44,
+   "aligned_sentences": 41,
+   "title": "佛說藥師如來本願經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T20n1059",
+   "toh": "Toh 691",
+   "coverage": 0.436,
+   "aligned_sentences": 52,
+   "title": "千手千眼觀世音菩薩治病合藥經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T10n0308",
+   "toh": "Toh 556",
+   "coverage": 0.427,
+   "aligned_sentences": 57,
+   "title": "佛說大方廣菩薩十地經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T02n0124",
+   "toh": "Toh 3996",
+   "coverage": 0.405,
+   "aligned_sentences": 20,
+   "title": "緣起經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T20n1164",
+   "toh": "Toh 661",
+   "coverage": 0.4,
+   "aligned_sentences": 51,
+   "title": "佛說大乘聖吉祥持世陀羅尼經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T24n1500",
+   "toh": "Toh 4037",
+   "coverage": 0.393,
+   "aligned_sentences": 81,
+   "title": "菩薩戒本",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T20n1064",
+   "toh": "Toh 691",
+   "coverage": 0.393,
+   "aligned_sentences": 63,
+   "title": "千手千眼觀世音菩薩大悲心陀羅尼",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T24n1491",
+   "toh": "Toh 555",
+   "coverage": 0.376,
+   "aligned_sentences": 28,
+   "title": "菩薩藏經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T24n1493",
+   "toh": "Toh 556",
+   "coverage": 0.369,
+   "aligned_sentences": 62,
+   "title": "大乘三聚懺悔經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T31n1612",
+   "toh": "Toh 4067",
+   "coverage": 0.341,
+   "aligned_sentences": 97,
+   "title": "大乘五蘊論",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T17n0831",
+   "toh": "Toh 3961",
+   "coverage": 0.338,
+   "aligned_sentences": 38,
+   "title": "謗佛經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T24n1500",
+   "toh": "Toh 4082",
+   "coverage": 0.331,
+   "aligned_sentences": 67,
+   "title": "菩薩戒本",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T09n0275",
+   "toh": "Toh 3961",
+   "coverage": 0.331,
+   "aligned_sentences": 77,
+   "title": "大乘方廣總持經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T46n1946",
+   "toh": "Toh 555",
+   "coverage": 0.313,
+   "aligned_sentences": 33,
+   "title": "金光明最勝懺儀",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T24n1499",
+   "toh": "Toh 4082",
+   "coverage": 0.313,
+   "aligned_sentences": 24,
+   "title": "菩薩戒羯磨文",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T15n0610",
+   "toh": "Toh 57",
+   "coverage": 0.311,
+   "aligned_sentences": 23,
+   "title": "佛說內身觀章句經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  },
+  {
+   "taisho": "T15n0610",
+   "toh": "Toh 6",
+   "coverage": 0.305,
+   "aligned_sentences": 21,
+   "title": "佛說內身觀章句經",
+   "provenance": "MITRA sentence-alignment, coverage-verified (>=0.30)"
+  }
+ ]
+}
