@@ -1,0 +1,289 @@
+{
+ "coverage_verified": 169,
+ "title_verified": 40,
+ "total": 209,
+ "distinct_taisho": 162,
+ "net_new_texts": 91,
+ "title_verified_parallels": [
+  {
+   "taisho": "T01n0002",
+   "toh": "Toh 270",
+   "sanskrit_title": "Saptabuddhaka",
+   "title": "七佛經",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T01n0002",
+   "toh": "Toh 512",
+   "sanskrit_title": "Saptabuddhaka",
+   "title": "七佛經",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T01n0002",
+   "toh": "Toh 852",
+   "sanskrit_title": "Saptabuddhaka",
+   "title": "七佛經",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T01n0005",
+   "toh": "Toh 121",
+   "sanskrit_title": "Mahāparinirvāṇasūtra",
+   "title": "佛般泥洹經",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T01n0006",
+   "toh": "Toh 121",
+   "sanskrit_title": "Mahāparinirvāṇasūtra",
+   "title": "般泥洹經",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T01n0007",
+   "toh": "Toh 121",
+   "sanskrit_title": "Mahāparinirvāṇasūtra",
+   "title": "大般涅槃經",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T01n0032",
+   "toh": "Toh 316",
+   "sanskrit_title": "Catuḥsatyasūtra",
+   "title": "四諦經",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T04n0173",
+   "toh": "Toh 347",
+   "sanskrit_title": "Puṇyabalāvadāna",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T04n0190",
+   "toh": "Toh 301",
+   "sanskrit_title": "Abhiniṣkramaṇasūtra",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T12n0313",
+   "toh": "Toh 50",
+   "sanskrit_title": "Akṣobhyatathāgatasyavyūhasūtra",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T15n0516",
+   "toh": "Toh 221",
+   "sanskrit_title": "Rājāvavādakasūtra",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T15n0545",
+   "toh": "Toh 217",
+   "sanskrit_title": "Śrīguptasūtra",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T15n0550",
+   "toh": "Toh 4144",
+   "sanskrit_title": "Suvarṇavarṇāvadāna",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T18n0821",
+   "toh": "Toh 258",
+   "sanskrit_title": "Tathāgatagarbhasūtra",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T18n0807",
+   "toh": "Toh 200",
+   "sanskrit_title": "Lokānuvartanasūtra",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T18n0810",
+   "toh": "Toh 228",
+   "sanskrit_title": "Buddhasaṅgītisūtra",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T18n0835",
+   "toh": "Toh 209",
+   "sanskrit_title": "Siṃhanādikasūtra",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T18n0836",
+   "toh": "Toh 209",
+   "sanskrit_title": "Siṃhanādikasūtra",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T19n1002",
+   "toh": "Toh 682",
+   "sanskrit_title": "Amoghapāśahṛdayasūtra",
+   "title": "不空羂索毘盧遮那佛大灌頂光真言",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T19n1002",
+   "toh": "Toh 901",
+   "sanskrit_title": "Amoghapāśahṛdayasūtra",
+   "title": "不空羂索毘盧遮那佛大灌頂光真言",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T21n1163",
+   "toh": "Toh 662",
+   "sanskrit_title": "Vasudhārādhāraṇī",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T21n1163",
+   "toh": "Toh 1007",
+   "sanskrit_title": "Vasudhārādhāraṇī",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T21n1167",
+   "toh": "Toh 277",
+   "sanskrit_title": "Aṣṭamaṇḍalakasūtra",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T21n1167",
+   "toh": "Toh 644",
+   "sanskrit_title": "Aṣṭamaṇḍalakasūtra",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T21n1167",
+   "toh": "Toh 882",
+   "sanskrit_title": "Aṣṭamaṇḍalakasūtra",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T21n1191",
+   "toh": "Toh 546",
+   "sanskrit_title": "Mañjuśrīmūlakalpa",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T21n1191",
+   "toh": "Toh 893",
+   "sanskrit_title": "Mañjuśrīmūlakalpa",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T21n1197",
+   "toh": "Toh 642",
+   "sanskrit_title": "Mañjuśrīnāmāṣṭaśataka",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T22n1217",
+   "toh": "Toh 604",
+   "sanskrit_title": "Krodhavijayakalpaguhyatantra",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T22n1243",
+   "toh": "Toh 757",
+   "sanskrit_title": "Mahābalasūtra",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T22n1243",
+   "toh": "Toh 947",
+   "sanskrit_title": "Mahābalasūtra",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T22n1252",
+   "toh": "Toh 740",
+   "sanskrit_title": "Mahāśrīsūtra",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T22n1252",
+   "toh": "Toh 1005",
+   "sanskrit_title": "Mahāśrīsūtra",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T22n1325",
+   "toh": "Toh 621",
+   "sanskrit_title": "Arśapraśamanasūtra",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T22n1325",
+   "toh": "Toh 1020",
+   "sanskrit_title": "Arśapraśamanasūtra",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T24n1444",
+   "toh": "Toh 336",
+   "sanskrit_title": "Vinayavastu",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T24n1445",
+   "toh": "Toh 336",
+   "sanskrit_title": "Vinayavastu",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T24n1446",
+   "toh": "Toh 336",
+   "sanskrit_title": "Vinayavastu",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T24n1447",
+   "toh": "Toh 336",
+   "sanskrit_title": "Vinayavastu",
+   "title": "",
+   "method": "sanskrit-title"
+  },
+  {
+   "taisho": "T24n1460",
+   "toh": "Toh 2",
+   "sanskrit_title": "Prātimokṣasūtra",
+   "title": "解脫戒經",
+   "method": "sanskrit-title"
+  }
+ ]
+}
