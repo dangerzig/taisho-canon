@@ -1,0 +1,580 @@
+{
+ "solid": [
+  {
+   "taisho": "T01n0041",
+   "toh": 1
+  },
+  {
+   "taisho": "T04n0219",
+   "toh": 1
+  },
+  {
+   "taisho": "T16n0714",
+   "toh": 1
+  },
+  {
+   "taisho": "T16n0715",
+   "toh": 1
+  },
+  {
+   "taisho": "T14n0505",
+   "toh": 3
+  },
+  {
+   "taisho": "T01n0060",
+   "toh": 6
+  },
+  {
+   "taisho": "T02n0100",
+   "toh": 41
+  },
+  {
+   "taisho": "T10n0298",
+   "toh": 44
+  },
+  {
+   "taisho": "T15n0610",
+   "toh": 57
+  },
+  {
+   "taisho": "T14n0575",
+   "toh": 60
+  },
+  {
+   "taisho": "T20n1144",
+   "toh": 85
+  },
+  {
+   "taisho": "T12n0348",
+   "toh": 86
+  },
+  {
+   "taisho": "T10n0307",
+   "toh": 89
+  },
+  {
+   "taisho": "T10n0308",
+   "toh": 89
+  },
+  {
+   "taisho": "T20n1195",
+   "toh": 100
+  },
+  {
+   "taisho": "T14n0570",
+   "toh": 157
+  },
+  {
+   "taisho": "T14n0472",
+   "toh": 180
+  },
+  {
+   "taisho": "T11n0310",
+   "toh": 197
+  },
+  {
+   "taisho": "T17n0748",
+   "toh": 206
+  },
+  {
+   "taisho": "T85n2900",
+   "toh": 206
+  },
+  {
+   "taisho": "T19n0990",
+   "toh": 235
+  },
+  {
+   "taisho": "T19n0997",
+   "toh": 242
+  },
+  {
+   "taisho": "T21n1341",
+   "toh": 245
+  },
+  {
+   "taisho": "T10n0289",
+   "toh": 268
+  },
+  {
+   "taisho": "T14n0459",
+   "toh": 284
+  },
+  {
+   "taisho": "T24n1493",
+   "toh": 285
+  },
+  {
+   "taisho": "T17n0781",
+   "toh": 295
+  },
+  {
+   "taisho": "T17n0794b",
+   "toh": 299
+  },
+  {
+   "taisho": "T02n0110",
+   "toh": 301
+  },
+  {
+   "taisho": "T17n0800",
+   "toh": 305
+  },
+  {
+   "taisho": "T32n1648",
+   "toh": 306
+  },
+  {
+   "taisho": "T02n0124",
+   "toh": 317
+  },
+  {
+   "taisho": "T16n0704",
+   "toh": 319
+  },
+  {
+   "taisho": "T24n1488",
+   "toh": 327
+  },
+  {
+   "taisho": "T17n0791",
+   "toh": 338
+  },
+  {
+   "taisho": "T17n0791",
+   "toh": 339
+  },
+  {
+   "taisho": "T20n1129",
+   "toh": 474
+  },
+  {
+   "taisho": "T32n1651",
+   "toh": 475
+  },
+  {
+   "taisho": "T32n1654",
+   "toh": 475
+  },
+  {
+   "taisho": "T20n1040",
+   "toh": 482
+  },
+  {
+   "taisho": "T21n1418",
+   "toh": 486
+  },
+  {
+   "taisho": "T08n0240",
+   "toh": 490
+  },
+  {
+   "taisho": "T08n0241",
+   "toh": 490
+  },
+  {
+   "taisho": "T08n0242",
+   "toh": 490
+  },
+  {
+   "taisho": "T08n0243",
+   "toh": 490
+  },
+  {
+   "taisho": "T14n0443",
+   "toh": 541
+  },
+  {
+   "taisho": "T20n1182",
+   "toh": 543
+  },
+  {
+   "taisho": "T21n1396",
+   "toh": 543
+  },
+  {
+   "taisho": "T24n1491",
+   "toh": 555
+  },
+  {
+   "taisho": "T24n1491",
+   "toh": 556
+  },
+  {
+   "taisho": "T24n1493",
+   "toh": 556
+  },
+  {
+   "taisho": "T19n1028A",
+   "toh": 558
+  },
+  {
+   "taisho": "T16n0664",
+   "toh": 569
+  },
+  {
+   "taisho": "T19n0971",
+   "toh": 597
+  },
+  {
+   "taisho": "T21n1403",
+   "toh": 610
+  },
+  {
+   "taisho": "T21n1380",
+   "toh": 619
+  },
+  {
+   "taisho": "T21n1405",
+   "toh": 629
+  },
+  {
+   "taisho": "T85n2910",
+   "toh": 633
+  },
+  {
+   "taisho": "T19n0990",
+   "toh": 657
+  },
+  {
+   "taisho": "T20n1163",
+   "toh": 661
+  },
+  {
+   "taisho": "T20n1164",
+   "toh": 661
+  },
+  {
+   "taisho": "T20n1059",
+   "toh": 691
+  },
+  {
+   "taisho": "T20n1064",
+   "toh": 691
+  },
+  {
+   "taisho": "T20n1051",
+   "toh": 700
+  },
+  {
+   "taisho": "T20n1057a",
+   "toh": 707
+  },
+  {
+   "taisho": "T20n1057b",
+   "toh": 707
+  },
+  {
+   "taisho": "T21n1236",
+   "toh": 752
+  },
+  {
+   "taisho": "T21n1288",
+   "toh": 766
+  },
+  {
+   "taisho": "T19n0997",
+   "toh": 809
+  },
+  {
+   "taisho": "T18n0893b",
+   "toh": 811
+  },
+  {
+   "taisho": "T19n0985",
+   "toh": 814
+  },
+  {
+   "taisho": "T32n1661",
+   "toh": 1800
+  },
+  {
+   "taisho": "T32n1663",
+   "toh": 1801
+  },
+  {
+   "taisho": "T21n1418",
+   "toh": 1904
+  },
+  {
+   "taisho": "T30n1574",
+   "toh": 2277
+  },
+  {
+   "taisho": "T30n1574",
+   "toh": 2279
+  },
+  {
+   "taisho": "T21n1361",
+   "toh": 2694
+  },
+  {
+   "taisho": "T17n0766",
+   "toh": 3077
+  },
+  {
+   "taisho": "T14n0449",
+   "toh": 3132
+  },
+  {
+   "taisho": "T14n0450",
+   "toh": 3132
+  },
+  {
+   "taisho": "T19n0927",
+   "toh": 3134
+  },
+  {
+   "taisho": "T21n1264b",
+   "toh": 3512
+  },
+  {
+   "taisho": "T32n1651",
+   "toh": 3837
+  },
+  {
+   "taisho": "T21n1361",
+   "toh": 3989
+  },
+  {
+   "taisho": "T24n1499",
+   "toh": 4037
+  },
+  {
+   "taisho": "T24n1500",
+   "toh": 4037
+  },
+  {
+   "taisho": "T31n1606",
+   "toh": 4072
+  },
+  {
+   "taisho": "T24n1473",
+   "toh": 4127
+  },
+  {
+   "taisho": "T32n1648",
+   "toh": 4175
+  },
+  {
+   "taisho": "T17n0804",
+   "toh": 4177
+  },
+  {
+   "taisho": "T04n0201",
+   "toh": 4196
+  },
+  {
+   "taisho": "T31n1614",
+   "toh": 4363
+  },
+  {
+   "taisho": "T10n0282",
+   "toh": 4366
+  },
+  {
+   "taisho": "T85n2907",
+   "toh": 4377
+  },
+  {
+   "taisho": "T85n2908",
+   "toh": 4377
+  },
+  {
+   "taisho": "T32n1676",
+   "toh": 4395
+  },
+  {
+   "taisho": "T04n0211",
+   "toh": 4400
+  },
+  {
+   "taisho": "T01n0032",
+   "toh": 316
+  },
+  {
+   "taisho": "T04n0173",
+   "toh": 347
+  },
+  {
+   "taisho": "T04n0190",
+   "toh": 301
+  },
+  {
+   "taisho": "T12n0313",
+   "toh": 50
+  },
+  {
+   "taisho": "T15n0516",
+   "toh": 221
+  },
+  {
+   "taisho": "T15n0545",
+   "toh": 217
+  },
+  {
+   "taisho": "T15n0550",
+   "toh": 4144
+  },
+  {
+   "taisho": "T18n0807",
+   "toh": 200
+  },
+  {
+   "taisho": "T18n0810",
+   "toh": 228
+  },
+  {
+   "taisho": "T18n0835",
+   "toh": 209
+  },
+  {
+   "taisho": "T18n0836",
+   "toh": 209
+  },
+  {
+   "taisho": "T21n1163",
+   "toh": 662
+  },
+  {
+   "taisho": "T21n1163",
+   "toh": 1007
+  },
+  {
+   "taisho": "T21n1167",
+   "toh": 277
+  },
+  {
+   "taisho": "T21n1167",
+   "toh": 644
+  },
+  {
+   "taisho": "T21n1167",
+   "toh": 882
+  },
+  {
+   "taisho": "T21n1197",
+   "toh": 642
+  },
+  {
+   "taisho": "T22n1217",
+   "toh": 604
+  },
+  {
+   "taisho": "T22n1243",
+   "toh": 757
+  },
+  {
+   "taisho": "T22n1243",
+   "toh": 947
+  },
+  {
+   "taisho": "T22n1252",
+   "toh": 740
+  },
+  {
+   "taisho": "T22n1252",
+   "toh": 1005
+  },
+  {
+   "taisho": "T22n1325",
+   "toh": 621
+  },
+  {
+   "taisho": "T22n1325",
+   "toh": 1020
+  }
+ ],
+ "quotation_witness": [
+  {
+   "taisho": "T09n0275",
+   "toh": 3961
+  },
+  {
+   "taisho": "T17n0831",
+   "toh": 3961
+  },
+  {
+   "taisho": "T17n0841",
+   "toh": 3961
+  },
+  {
+   "taisho": "T14n0499",
+   "toh": 4088
+  },
+  {
+   "taisho": "T01n0064",
+   "toh": 4094
+  },
+  {
+   "taisho": "T02n0105",
+   "toh": 4094
+  },
+  {
+   "taisho": "T02n0110",
+   "toh": 4094
+  },
+  {
+   "taisho": "T02n0124",
+   "toh": 4094
+  },
+  {
+   "taisho": "T17n0776",
+   "toh": 4094
+  },
+  {
+   "taisho": "T17n0781",
+   "toh": 4094
+  },
+  {
+   "taisho": "T17n0845",
+   "toh": 4094
+  },
+  {
+   "taisho": "T14n0575",
+   "toh": 4357
+  },
+  {
+   "taisho": "T14n0577",
+   "toh": 4357
+  }
+ ],
+ "refuted": [
+  {
+   "taisho": "T15n0610",
+   "toh": 6
+  },
+  {
+   "taisho": "T17n0781",
+   "toh": 6
+  },
+  {
+   "taisho": "T01n0041",
+   "toh": 340
+  },
+  {
+   "taisho": "T14n0499",
+   "toh": 340
+  },
+  {
+   "taisho": "T03n0163",
+   "toh": 343
+  },
+  {
+   "taisho": "T10n0308",
+   "toh": 556
+  },
+  {
+   "taisho": "T20n1040",
+   "toh": 724
+  },
+  {
+   "taisho": "T18n0848",
+   "toh": 830
+  },
+  {
+   "taisho": "T19n0982",
+   "toh": 4409
+  }
+ ]
+}
