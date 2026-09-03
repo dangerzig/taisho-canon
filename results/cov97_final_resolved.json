@@ -1,0 +1,883 @@
+{
+ "summary": {
+  "genuine": 47,
+  "whole": 16,
+  "section": 31,
+  "rejected": 50
+ },
+ "final": [
+  {
+   "i": 0,
+   "taisho": "T01n0041",
+   "toh": "Toh 1",
+   "zh": "頻婆娑羅王經",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 1,
+   "taisho": "T01n0060",
+   "toh": "Toh 6",
+   "zh": "瞿曇彌記果經",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 2,
+   "taisho": "T02n0100",
+   "toh": "Toh 41",
+   "zh": "別譯雜阿含經",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 3,
+   "taisho": "T02n0110",
+   "toh": "Toh 301",
+   "zh": "佛說三轉法輪經",
+   "relation": "REJECT",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 4,
+   "taisho": "T02n0124",
+   "toh": "Toh 317",
+   "zh": "緣起經",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 5,
+   "taisho": "T04n0201",
+   "toh": "Toh 4196",
+   "zh": "大莊嚴論經",
+   "relation": "REJECT",
+   "genuine": false,
+   "resolved_by": "tiebreak"
+  },
+  {
+   "i": 6,
+   "taisho": "T04n0211",
+   "toh": "Toh 4400",
+   "zh": "法句譬喻經",
+   "relation": "FORMULAIC",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 7,
+   "taisho": "T04n0219",
+   "toh": "Toh 1",
+   "zh": "醫喻經",
+   "relation": "FORMULAIC",
+   "genuine": false,
+   "resolved_by": "tiebreak"
+  },
+  {
+   "i": 8,
+   "taisho": "T08n0240",
+   "toh": "Toh 490",
+   "zh": "實相般若波羅蜜經",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 9,
+   "taisho": "T08n0241",
+   "toh": "Toh 490",
+   "zh": "金剛頂瑜伽理趣般若經",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 10,
+   "taisho": "T08n0242",
+   "toh": "Toh 490",
+   "zh": "佛說遍照般若波羅蜜經",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 11,
+   "taisho": "T08n0243",
+   "toh": "Toh 490",
+   "zh": "大樂金剛不空真實三麼耶經",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 12,
+   "taisho": "T10n0282",
+   "toh": "Toh 4366",
+   "zh": "諸菩薩求佛本業經",
+   "relation": "QUOTATION",
+   "genuine": false,
+   "resolved_by": "tiebreak"
+  },
+  {
+   "i": 13,
+   "taisho": "T10n0289",
+   "toh": "Toh 268",
+   "zh": "顯無邊佛土功德經",
+   "relation": "WHOLE",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 14,
+   "taisho": "T10n0298",
+   "toh": "Toh 44",
+   "zh": "大方廣普賢所說經",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 15,
+   "taisho": "T10n0307",
+   "toh": "Toh 89",
+   "zh": "佛說莊嚴菩提心經",
+   "relation": "FORMULAIC",
+   "genuine": false,
+   "resolved_by": "tiebreak"
+  },
+  {
+   "i": 16,
+   "taisho": "T10n0308",
+   "toh": "Toh 89",
+   "zh": "佛說大方廣菩薩十地經",
+   "relation": "FORMULAIC",
+   "genuine": false,
+   "resolved_by": "tiebreak"
+  },
+  {
+   "i": 17,
+   "taisho": "T11n0310",
+   "toh": "Toh 197",
+   "zh": "大寶積經",
+   "relation": "REJECT",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 18,
+   "taisho": "T12n0348",
+   "toh": "Toh 86",
+   "zh": "佛說大乘方等要慧經",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 19,
+   "taisho": "T14n0443",
+   "toh": "Toh 541",
+   "zh": "五千五百佛名神呪除障滅罪經",
+   "relation": "FORMULAIC",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 20,
+   "taisho": "T14n0449",
+   "toh": "Toh 3132",
+   "zh": "佛說藥師如來本願經",
+   "relation": "QUOTATION",
+   "genuine": false,
+   "resolved_by": "tiebreak"
+  },
+  {
+   "i": 21,
+   "taisho": "T14n0450",
+   "toh": "Toh 3132",
+   "zh": "藥師琉璃光如來本願功德經",
+   "relation": "QUOTATION",
+   "genuine": false,
+   "resolved_by": "tiebreak"
+  },
+  {
+   "i": 22,
+   "taisho": "T14n0459",
+   "toh": "Toh 284",
+   "zh": "佛說文殊悔過經",
+   "relation": "FORMULAIC",
+   "genuine": false,
+   "resolved_by": "tiebreak"
+  },
+  {
+   "i": 23,
+   "taisho": "T14n0472",
+   "toh": "Toh 180",
+   "zh": "佛說大乘善見變化文殊師利問法經",
+   "relation": "REJECT",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 24,
+   "taisho": "T14n0505",
+   "toh": "Toh 3",
+   "zh": "佛說隨勇尊者經",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 25,
+   "taisho": "T14n0570",
+   "toh": "Toh 157",
+   "zh": "佛說賢首經",
+   "relation": "REJECT",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 26,
+   "taisho": "T14n0575",
+   "toh": "Toh 60",
+   "zh": "佛說大方等修多羅王經",
+   "relation": "REJECT",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 27,
+   "taisho": "T15n0610",
+   "toh": "Toh 57",
+   "zh": "佛說內身觀章句經",
+   "relation": "FORMULAIC",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 28,
+   "taisho": "T16n0664",
+   "toh": "Toh 569",
+   "zh": "合部金光明經",
+   "relation": "FORMULAIC",
+   "genuine": false,
+   "resolved_by": "tiebreak"
+  },
+  {
+   "i": 29,
+   "taisho": "T16n0704",
+   "toh": "Toh 319",
+   "zh": "佛說樓閣正法甘露鼓經",
+   "relation": "REJECT",
+   "genuine": false,
+   "resolved_by": "tiebreak"
+  },
+  {
+   "i": 30,
+   "taisho": "T16n0714",
+   "toh": "Toh 1",
+   "zh": "緣起聖道經",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 31,
+   "taisho": "T16n0715",
+   "toh": "Toh 1",
+   "zh": "佛說舊城喻經",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 32,
+   "taisho": "T17n0748",
+   "toh": "Toh 206",
+   "zh": "佛說護淨經",
+   "relation": "WHOLE",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 33,
+   "taisho": "T17n0766",
+   "toh": "Toh 3077",
+   "zh": "佛說法身經",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 34,
+   "taisho": "T17n0781",
+   "toh": "Toh 295",
+   "zh": "佛說佛十力經",
+   "relation": "REJECT",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 35,
+   "taisho": "T17n0791",
+   "toh": "Toh 338",
+   "zh": "佛說出家緣經",
+   "relation": "REJECT",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 36,
+   "taisho": "T17n0791",
+   "toh": "Toh 339",
+   "zh": "佛說出家緣經",
+   "relation": "REJECT",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 37,
+   "taisho": "T17n0794b",
+   "toh": "Toh 299",
+   "zh": "佛說時非時經",
+   "relation": "WHOLE",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 38,
+   "taisho": "T17n0800",
+   "toh": "Toh 305",
+   "zh": "佛說無上處經",
+   "relation": "WHOLE",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 39,
+   "taisho": "T17n0804",
+   "toh": "Toh 4177",
+   "zh": "佛說解憂經",
+   "relation": "WHOLE",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 40,
+   "taisho": "T18n0893b",
+   "toh": "Toh 811",
+   "zh": "蘇悉地羯羅經",
+   "relation": "QUOTATION",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 41,
+   "taisho": "T19n0927",
+   "toh": "Toh 3134",
+   "zh": "藥師七佛供養儀軌如意王經",
+   "relation": "FORMULAIC",
+   "genuine": false,
+   "resolved_by": "tiebreak"
+  },
+  {
+   "i": 42,
+   "taisho": "T19n0971",
+   "toh": "Toh 597",
+   "zh": "佛說佛頂尊勝陀羅尼經",
+   "relation": "WHOLE",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 43,
+   "taisho": "T19n0985",
+   "toh": "Toh 814",
+   "zh": "佛說大孔雀呪王經",
+   "relation": "REJECT",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 44,
+   "taisho": "T19n0990",
+   "toh": "Toh 657",
+   "zh": "大雲經祈雨壇法",
+   "relation": "FORMULAIC",
+   "genuine": false,
+   "resolved_by": "tiebreak"
+  },
+  {
+   "i": 45,
+   "taisho": "T19n0990",
+   "toh": "Toh 235",
+   "zh": "大雲經祈雨壇法",
+   "relation": "FORMULAIC",
+   "genuine": false,
+   "resolved_by": "tiebreak"
+  },
+  {
+   "i": 46,
+   "taisho": "T19n0997",
+   "toh": "Toh 242",
+   "zh": "守護國界主陀羅尼經",
+   "relation": "QUOTATION",
+   "genuine": false,
+   "resolved_by": "tiebreak"
+  },
+  {
+   "i": 47,
+   "taisho": "T19n0997",
+   "toh": "Toh 809",
+   "zh": "守護國界主陀羅尼經",
+   "relation": "QUOTATION",
+   "genuine": false,
+   "resolved_by": "tiebreak"
+  },
+  {
+   "i": 48,
+   "taisho": "T19n1028A",
+   "toh": "Toh 558",
+   "zh": "佛說護諸童子陀羅尼經",
+   "relation": "FORMULAIC",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 49,
+   "taisho": "T20n1040",
+   "toh": "Toh 482",
+   "zh": "金剛頂降三世大儀軌法王教中觀自在菩薩心真言一切如來蓮華大曼荼羅品",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 50,
+   "taisho": "T20n1051",
+   "toh": "Toh 700",
+   "zh": "佛說一切佛攝相應大教王經聖觀自在菩薩念誦儀軌",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 51,
+   "taisho": "T20n1057a",
+   "toh": "Toh 707",
+   "zh": "千眼千臂觀世音菩薩陀羅尼神呪經",
+   "relation": "REJECT",
+   "genuine": false,
+   "resolved_by": "tiebreak"
+  },
+  {
+   "i": 52,
+   "taisho": "T20n1057b",
+   "toh": "Toh 707",
+   "zh": "千眼千臂觀世音菩薩陀羅尼神呪經",
+   "relation": "REJECT",
+   "genuine": false,
+   "resolved_by": "tiebreak"
+  },
+  {
+   "i": 53,
+   "taisho": "T20n1059",
+   "toh": "Toh 691",
+   "zh": "千手千眼觀世音菩薩治病合藥經",
+   "relation": "FORMULAIC",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 54,
+   "taisho": "T20n1064",
+   "toh": "Toh 691",
+   "zh": "千手千眼觀世音菩薩大悲心陀羅尼",
+   "relation": "FORMULAIC",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 55,
+   "taisho": "T20n1129",
+   "toh": "Toh 474",
+   "zh": "佛說金剛手菩薩降伏一切部多大教王經",
+   "relation": "REJECT",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 56,
+   "taisho": "T20n1144",
+   "toh": "Toh 85",
+   "zh": "佛說彌勒菩薩發願王偈",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 57,
+   "taisho": "T20n1163",
+   "toh": "Toh 661",
+   "zh": "佛說雨寶陀羅尼經",
+   "relation": "REJECT",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 58,
+   "taisho": "T20n1164",
+   "toh": "Toh 661",
+   "zh": "佛說大乘聖吉祥持世陀羅尼經",
+   "relation": "REJECT",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 59,
+   "taisho": "T20n1182",
+   "toh": "Toh 543",
+   "zh": "曼殊室利菩薩呪藏中一字呪王經",
+   "relation": "QUOTATION",
+   "genuine": false,
+   "resolved_by": "tiebreak"
+  },
+  {
+   "i": 60,
+   "taisho": "T20n1195",
+   "toh": "Toh 100",
+   "zh": "大聖文殊師利菩薩讚佛法身禮",
+   "relation": "QUOTATION",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 61,
+   "taisho": "T21n1236",
+   "toh": "Toh 752",
+   "zh": "聖無能勝金剛火陀羅尼經",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 62,
+   "taisho": "T21n1264b",
+   "toh": "Toh 3512",
+   "zh": "佛說穰麌梨童女經",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 63,
+   "taisho": "T21n1288",
+   "toh": "Toh 766",
+   "zh": "佛說最上祕密那拏天經",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 64,
+   "taisho": "T21n1341",
+   "toh": "Toh 245",
+   "zh": "大威德陀羅尼經",
+   "relation": "REJECT",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 65,
+   "taisho": "T21n1361",
+   "toh": "Toh 2694",
+   "zh": "六門陀羅尼經論",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 66,
+   "taisho": "T21n1361",
+   "toh": "Toh 3989",
+   "zh": "六門陀羅尼經論",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 67,
+   "taisho": "T21n1380",
+   "toh": "Toh 619",
+   "zh": "佛說善樂長者經",
+   "relation": "WHOLE",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 68,
+   "taisho": "T21n1396",
+   "toh": "Toh 543",
+   "zh": "佛說拔除罪障呪王經",
+   "relation": "QUOTATION",
+   "genuine": false,
+   "resolved_by": "tiebreak"
+  },
+  {
+   "i": 69,
+   "taisho": "T21n1403",
+   "toh": "Toh 610",
+   "zh": "佛說如意摩尼陀羅尼經",
+   "relation": "REJECT",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 70,
+   "taisho": "T21n1405",
+   "toh": "Toh 629",
+   "zh": "佛說息除賊難陀羅尼經",
+   "relation": "WHOLE",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 71,
+   "taisho": "T21n1418",
+   "toh": "Toh 486",
+   "zh": "佛說一切如來安像三昧儀軌經",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 72,
+   "taisho": "T21n1418",
+   "toh": "Toh 1904",
+   "zh": "佛說一切如來安像三昧儀軌經",
+   "relation": "FORMULAIC",
+   "genuine": false,
+   "resolved_by": "tiebreak"
+  },
+  {
+   "i": 73,
+   "taisho": "T24n1473",
+   "toh": "Toh 4127",
+   "zh": "佛說沙彌十戒儀則經",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 74,
+   "taisho": "T24n1488",
+   "toh": "Toh 327",
+   "zh": "優婆塞戒經",
+   "relation": "REJECT",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 75,
+   "taisho": "T24n1491",
+   "toh": "Toh 555",
+   "zh": "菩薩藏經",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 76,
+   "taisho": "T24n1491",
+   "toh": "Toh 556",
+   "zh": "菩薩藏經",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 77,
+   "taisho": "T24n1493",
+   "toh": "Toh 285",
+   "zh": "大乘三聚懺悔經",
+   "relation": "FORMULAIC",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 78,
+   "taisho": "T24n1493",
+   "toh": "Toh 556",
+   "zh": "大乘三聚懺悔經",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 79,
+   "taisho": "T24n1499",
+   "toh": "Toh 4037",
+   "zh": "菩薩戒羯磨文",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 80,
+   "taisho": "T24n1500",
+   "toh": "Toh 4037",
+   "zh": "菩薩戒本",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 81,
+   "taisho": "T30n1574",
+   "toh": "Toh 2279",
+   "zh": "大乘破有論",
+   "relation": "FORMULAIC",
+   "genuine": false,
+   "resolved_by": "tiebreak"
+  },
+  {
+   "i": 82,
+   "taisho": "T30n1574",
+   "toh": "Toh 2277",
+   "zh": "大乘破有論",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "tiebreak"
+  },
+  {
+   "i": 83,
+   "taisho": "T31n1606",
+   "toh": "Toh 4072",
+   "zh": "大乘阿毘達磨雜集論",
+   "relation": "REJECT",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 84,
+   "taisho": "T31n1614",
+   "toh": "Toh 4363",
+   "zh": "大乘百法明門論",
+   "relation": "FORMULAIC",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 85,
+   "taisho": "T32n1648",
+   "toh": "Toh 306",
+   "zh": "解脫道論",
+   "relation": "SECTION",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 86,
+   "taisho": "T32n1648",
+   "toh": "Toh 4175",
+   "zh": "解脫道論",
+   "relation": "REJECT",
+   "genuine": false,
+   "resolved_by": "tiebreak"
+  },
+  {
+   "i": 87,
+   "taisho": "T32n1651",
+   "toh": "Toh 475",
+   "zh": "十二因緣論",
+   "relation": "REJECT",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 88,
+   "taisho": "T32n1651",
+   "toh": "Toh 3837",
+   "zh": "十二因緣論",
+   "relation": "WHOLE",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 89,
+   "taisho": "T32n1654",
+   "toh": "Toh 475",
+   "zh": "因緣心論頌因緣心論釋",
+   "relation": "REJECT",
+   "genuine": false,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 90,
+   "taisho": "T32n1661",
+   "toh": "Toh 1800",
+   "zh": "菩提心離相論",
+   "relation": "WHOLE",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 91,
+   "taisho": "T32n1663",
+   "toh": "Toh 1801",
+   "zh": "菩提心觀釋",
+   "relation": "WHOLE",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 92,
+   "taisho": "T32n1676",
+   "toh": "Toh 4395",
+   "zh": "廣大發願頌",
+   "relation": "WHOLE",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 93,
+   "taisho": "T85n2900",
+   "toh": "Toh 206",
+   "zh": "齋法清淨經",
+   "relation": "WHOLE",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 94,
+   "taisho": "T85n2907",
+   "toh": "Toh 4377",
+   "zh": "普賢菩薩行願王經",
+   "relation": "WHOLE",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 95,
+   "taisho": "T85n2908",
+   "toh": "Toh 4377",
+   "zh": "大方廣佛華嚴經普賢菩薩行願王品",
+   "relation": "WHOLE",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  },
+  {
+   "i": 96,
+   "taisho": "T85n2910",
+   "toh": "Toh 633",
+   "zh": "金有陀羅尼經",
+   "relation": "WHOLE",
+   "genuine": true,
+   "resolved_by": "both-agree"
+  }
+ ]
+}
