@@ -355,29 +355,28 @@ class TestSourceCountsAgree:
 # ---- 9. Certainty mapping ----
 
 class TestCertaintyMapping:
-    def test_tei_cert_matches_own_source_count(self, tei_entries):
-        """TEI cert should match the number of sources in its own note element.
+    def test_tei_cert_matches_own_source_families(self, tei_entries):
+        """TEI cert should match the number of independent source *families*
+        named in its own note element, not the raw source count. Lineage
+        siblings (e.g. Lancaster, Muller, CBETA Sanskrit) collapse to one
+        witness, and the non-independent "existing" seed is never counted.
 
-        high = 3+ sources, medium = 2 sources, low = 0-1 sources.
+        high = 3+ families, medium = 2, low = 0-1.
         """
+        from digest_detector.export_tei import cert_from_sources
         for entry in tei_entries:
             xmlid = entry.get(f"{{{XML_NS}}}id")
             for link in entry.findall(f"{{{TEI_NS}}}link[@type='tibetan']"):
                 cert = link.get("cert")
                 note = link.find(f"{{{TEI_NS}}}note[@type='sources']")
                 if note is not None and note.text:
-                    count = len(note.text.split("; "))
+                    sources = set(note.text.split("; "))
                 else:
-                    count = 0
-                if count >= 3:
-                    expected = "high"
-                elif count == 2:
-                    expected = "medium"
-                else:
-                    expected = "low"
+                    sources = set()
+                expected = cert_from_sources(sources)
                 assert cert == expected, (
                     f"{xmlid} {link.get('target')}: "
-                    f"count={count} but cert={cert} (expected {expected})"
+                    f"sources={sorted(sources)} but cert={cert} (expected {expected})"
                 )
 
 

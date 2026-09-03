@@ -32,8 +32,55 @@ TEI_NS = "http://www.tei-c.org/ns/1.0"
 XML_NS = "http://www.w3.org/XML/1998/namespace"
 
 
-def cert_from_count(n):
-    """Map source count to TEI certainty attribute value."""
+# Source families for independence-aware certainty (see the "Source Family
+# Weighting" discussion in the accompanying paper). Naively counting sources
+# overstates confidence because several catalogs share a derivation chain:
+# Muller and CBETA Jinglu Sanskrit both take their Tohoku numbers from
+# Lancaster's K-number pages, so their agreement with Lancaster is not
+# independent confirmation. We collapse each lineage to a single witness
+# before mapping to a TEI certainty value. The "existing" seed concordance
+# re-packages the other catalogs and is never counted as an independent
+# witness.
+SOURCE_FAMILY = {
+    # Family A: Lancaster-derived lineage (single witness)
+    "lancaster": "A",
+    "lancaster_full": "A",
+    "acmuller_tohoku": "A",
+    "cbeta_sanskrit": "A",
+    # Family B: CBETA Jinglu Chinese-language tradition
+    "cbeta_tibetan": "B",
+    "cbeta_crossref": "B",
+    # Family C: parallel-based
+    "suttacentral_parallels": "C",
+    # Family D: expert-curated / scholarly, each an independent witness
+    "rkts": "D:rkts",
+    "rkts_concordance": "D:rkts",
+    "84000_tei_refs": "D:84000",
+    "silk2019": "D:silk2019",
+    "li2021": "D:li2021",
+    "conze1978": "D:conze1978",
+    "frauwallner1956": "D:frauwallner1956",
+    "nattier1992": "D:nattier1992",
+    "shimoda1997": "D:shimoda1997",
+    "peking_only": "D:peking",
+    # Computational witnesses (independent, but not catalog attestations)
+    "mitra": "COMP:mitra",
+    "sanskrit_title_match": "COMP:sktitle",
+    # Non-independent seed / error markers: never counted
+    "existing": None,
+    "standard_parallels:error": None,
+}
+
+
+def cert_from_sources(sources):
+    """Map a set of source names to a TEI certainty value, collapsing each
+    derivation lineage to a single independent witness (see SOURCE_FAMILY)."""
+    families = set()
+    for s in sources:
+        fam = SOURCE_FAMILY.get(s, s)  # unknown source -> its own family
+        if fam is not None:
+            families.add(fam)
+    n = len(families)
     if n >= 3:
         return "high"
     elif n == 2:
@@ -129,7 +176,7 @@ def build_tei(expanded, provenance, titles, nanjio_map, otani_map,
 
         for toh in toh_entries:
             sources = provenance.get((taisho_id, toh), set())
-            cert = cert_from_count(len(sources))
+            cert = cert_from_sources(sources)
             link = SubElement(
                 entry, "link",
                 type="tibetan",
@@ -155,7 +202,7 @@ def build_tei(expanded, provenance, titles, nanjio_map, otani_map,
         all_otani = sorted(set(otani_entries) | otani_map.get(taisho_id, set()))
         for ot in all_otani:
             sources = provenance.get((taisho_id, ot), set())
-            cert = cert_from_count(len(sources)) if sources else "low"
+            cert = cert_from_sources(sources) if sources else "low"
             link = SubElement(
                 entry, "link",
                 type="otani",
@@ -196,7 +243,7 @@ def build_tei(expanded, provenance, titles, nanjio_map, otani_map,
             pali_list = pali_refs if isinstance(pali_refs, list) else [pali_refs]
             for p_ref in sorted(pali_list):
                 sources = provenance.get((taisho_id, p_ref), set())
-                cert = cert_from_count(len(sources)) if sources else "low"
+                cert = cert_from_sources(sources) if sources else "low"
                 link = SubElement(
                     entry, "link",
                     type="pali",
@@ -251,18 +298,18 @@ def export_tei():
     print(f"  Total <entry> elements: {entry_count}")
     print(f"  Total <link> elements: {link_count}")
 
-    # Certainty distribution
+    # Certainty distribution (family-aware, matching cert_from_sources)
     high = sum(
         1 for (_, _), sources in provenance.items()
-        if len(sources) >= 3
+        if cert_from_sources(sources) == "high"
     )
     medium = sum(
         1 for (_, _), sources in provenance.items()
-        if len(sources) == 2
+        if cert_from_sources(sources) == "medium"
     )
     low = sum(
         1 for (_, _), sources in provenance.items()
-        if len(sources) == 1
+        if cert_from_sources(sources) == "low"
     )
     print(f"  Certainty distribution: high={high}, medium={medium}, low={low}")
 
