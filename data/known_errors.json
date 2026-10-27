@@ -26,22 +26,6 @@
       "note": "Lancaster transposes digits: Toh 3809 → Toh 3908. Propagated to Muller."
     },
     {
-      "taisho_id": "T09n0278",
-      "erroneous_toh": "Toh 0",
-      "correct_toh": null,
-      "originating_source": "lancaster",
-      "error_type": "spurious_zero",
-      "note": "Lancaster records Toh 0, which is not a valid Tohoku number. No correct Tohoku assignment is known."
-    },
-    {
-      "taisho_id": "T13n0397",
-      "erroneous_toh": "Toh 0",
-      "correct_toh": null,
-      "originating_source": "lancaster",
-      "error_type": "spurious_zero",
-      "note": "Lancaster records Toh 0, which is not a valid Tohoku number. No correct Tohoku assignment is known."
-    },
-    {
       "taisho_id": "T31n1612",
       "erroneous_toh": "Toh 4066",
       "correct_toh": "Toh 4059",

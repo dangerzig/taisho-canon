@@ -131,6 +131,8 @@ def build_concordance(d_kanjur, q_kanjur, d_tanjur, q_tanjur):
     # Format output, sorted by Tohoku number
     concordance = {}
     for toh_ref in sorted(toh_to_otani.keys(), key=_ref_sort_key):
+        if str(toh_ref).strip() in ("0", "", "None"):
+            continue  # guard: a 0/null Derge placeholder must never become "Toh 0"
         toh_key = f"Toh {toh_ref}"
         otani_list = sorted(
             (f"Otani {n}" for n in toh_to_otani[toh_ref]),

@@ -53302,16 +53302,6 @@
           "source": "rkts_concordance"
         }
       ],
-      "Toh 0": [
-        {
-          "source": "existing",
-          "flagged_error": true
-        },
-        {
-          "source": "lancaster",
-          "flagged_error": true
-        }
-      ],
       "Toh 104": [
         {
           "source": "acmuller_tohoku"
@@ -60650,16 +60640,6 @@
         },
         {
           "source": "rkts_concordance"
-        }
-      ],
-      "Toh 0": [
-        {
-          "source": "existing",
-          "flagged_error": true
-        },
-        {
-          "source": "lancaster",
-          "flagged_error": true
         }
       ],
       "Toh 10": [
@@ -100854,26 +100834,6 @@
       "note": "Lancaster transposes digits: Toh 3809 → Toh 3908. Propagated to Muller."
     },
     {
-      "taisho_id": "T09n0278",
-      "erroneous_toh": "Toh 0",
-      "correct_toh": null,
-      "error_type": "spurious_zero",
-      "flagged_attestations": 2,
-      "removed_from_parallels": true,
-      "correct_toh_present": false,
-      "note": "Lancaster records Toh 0, which is not a valid Tohoku number. No correct Tohoku assignment is known."
-    },
-    {
-      "taisho_id": "T13n0397",
-      "erroneous_toh": "Toh 0",
-      "correct_toh": null,
-      "error_type": "spurious_zero",
-      "flagged_attestations": 2,
-      "removed_from_parallels": true,
-      "correct_toh_present": false,
-      "note": "Lancaster records Toh 0, which is not a valid Tohoku number. No correct Tohoku assignment is known."
-    },
-    {
       "taisho_id": "T31n1612",
       "erroneous_toh": "Toh 4066",
       "correct_toh": "Toh 4059",
@@ -104074,10 +104034,6 @@
         "type": "parallel",
         "basis": "inherited from Toh 187"
       },
-      "Toh 0": {
-        "type": "error:flagged",
-        "basis": "all attestations flagged as known catalog errors"
-      },
       "Toh 104": {
         "type": "parallel",
         "basis": "catalog-attested"
@@ -106449,10 +106405,6 @@
       "Otani 923": {
         "type": "parallel",
         "basis": "inherited from Toh 257"
-      },
-      "Toh 0": {
-        "type": "error:flagged",
-        "basis": "all attestations flagged as known catalog errors"
       },
       "Toh 10": {
         "type": "indirect:quotation",

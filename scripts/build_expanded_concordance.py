@@ -354,6 +354,8 @@ def merge_sources():
 
             # Tohoku
             for toh in (data.get("tohoku") or []):
+                if str(toh).strip() in ("0", "", "None"):
+                    continue  # guard: skip 0/null placeholders, never emit "Toh 0"
                 toh_id = f"Toh {toh}"
                 concordance[text_id]["tibetan"].add(toh_id)
                 provenance.add(text_id, toh_id, "lancaster")
