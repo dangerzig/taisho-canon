@@ -78,7 +78,8 @@ raw["CBETA Jinglu Sanskrit"] = len(load("results", "cbeta_jinglu_sanskrit.json")
 raw["Muller Tohoku index"] = len(load("results", "tohoku_taisho_crossref.json")["entries"])
 raw["SuttaCentral"] = load("results", "sc_pali_parallels.json")["total_links"]
 raw["rKTs"] = len(load("results", "rkts_taisho.json")["entries"])
-raw["84000 TEI titles"] = load("results", "84000_tohoku_extract.json")["summary"]["total_toh"]
+# 84000 contributes title-enrichment only; the Table-1 cell reports its Kangyur titles
+raw["84000 TEI titles"] = load("results", "84000_tohoku_extract.json")["summary"]["kangyur_toh"]
 _xr = load("results", "84000_taisho_refs.json")
 raw["84000 TEI cross-refs"] = sum(len(e.get("taisho_nums", [])) for e in _xr["entries"].values())
 
@@ -99,7 +100,7 @@ PAPER = {
     "Muller Tohoku index": (382, 559, 359),
     "SuttaCentral": (4616, 171, None),
     "rKTs": (26, 20, 23),
-    "84000 TEI titles": (1108, None, None),
+    "84000 TEI titles": (1129, None, None),
     "84000 TEI cross-refs": (457, 350, 193),
     "Scholarly citations": (40, 29, 29),
 }
